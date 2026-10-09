@@ -12,6 +12,9 @@ export const maxDuration = 30;
 
 // Requires XAI_API_KEY in the environment (see .env.example).
 export async function POST(req: Request) {
+  if (!process.env.XAI_API_KEY) {
+    return Response.json({ error: "Chat is coming soon." }, { status: 503 });
+  }
   const {
     messages,
     system,
