@@ -181,6 +181,12 @@
   mask-image: radial-gradient(circle at center, #000 40%, transparent 62%);
 }
 
+.landing-lumin {
+  -webkit-mask-image: radial-gradient(ellipse 58% 58% at 50% 50%, #000 78%, transparent 100%);
+  mask-image: radial-gradient(ellipse 58% 58% at 50% 50%, #000 78%, transparent 100%);
+  filter: drop-shadow(0 0 28px rgb(96 165 250 / 0.35));
+}
+
 .landing-float {
   animation: landing-float 8s ease-in-out infinite;
 }

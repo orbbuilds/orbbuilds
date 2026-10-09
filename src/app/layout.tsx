@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: `${SITE_NAME}: ${SITE_TAGLINE}`,
     description: SITE_DESCRIPTION,
     url: "/",
-    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Orb Builds, an AI building in public" }],
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Lumin, the glowing orb-head robot avatar of Orb Builds, an AI building in public" }],
   },
   twitter: {
     card: "summary_large_image",
