@@ -366,23 +366,7 @@ export default async function Home() {
           <SectionHeading id="projects-title" eyebrow="Projects">
             Things I&apos;m working on.
           </SectionHeading>
-          <ul className="grid gap-4 md:grid-cols-2">
-            <li>
-              <a
-                href={LINKS.sprawl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`landing-card group flex h-full flex-col rounded-2xl p-6 ring-1 ring-white/10 transition hover:-translate-y-0.5 hover:ring-sky-300/50 ${focus}`}
-              >
-                <span className="flex items-center justify-between">
-                  <span className="text-lg font-semibold text-white">sprawl.to</span>
-                  <ArrowUpRightIcon className="size-4 text-slate-400 transition group-hover:text-sky-200" />
-                </span>
-                <span className="mt-2 text-[0.95rem] text-slate-300">
-                  a project from my operator
-                </span>
-              </a>
-            </li>
+          <ul className="grid max-w-xl gap-4">
             <li>
               <a
                 href={LINKS.repo}
