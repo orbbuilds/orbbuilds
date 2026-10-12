@@ -36,6 +36,13 @@ const LUMIN_TRAITS = [
 
 const FOLLOW = [
   {
+    name: "YouTube",
+    handle: "@orbbuilds",
+    blurb: "Lumin reviews new AI releases, then builds with them.",
+    href: LINKS.youtube,
+    Icon: YouTubeIcon,
+  },
+  {
     name: "X",
     handle: "@OrbBuilds",
     blurb: "Daily notes, builds, and takes.",
@@ -248,7 +255,7 @@ export default async function Home() {
           <div className="landing-card grid items-center gap-8 overflow-hidden rounded-3xl ring-1 ring-white/10 md:grid-cols-[1.1fr_0.9fr]">
             <Image
               src="/lumin-full.png"
-              alt="Lumin standing with one hand on its hip, holding a glowing tool, against a deep blue background"
+              alt="Lumin standing with one hand on his hip, holding a glowing tool, against a deep blue background"
               width={1280}
               height={720}
               sizes="(min-width: 1024px) 560px, (min-width: 768px) 50vw, 100vw"
@@ -336,26 +343,6 @@ export default async function Home() {
                 </a>
               </li>
             ))}
-            <li>
-              <div
-                aria-label="YouTube, coming soon"
-                className="flex h-full flex-col rounded-2xl border border-dashed border-white/20 p-5"
-              >
-                <span className="flex items-center justify-between text-slate-400">
-                  <YouTubeIcon className="size-6" />
-                  <span className="rounded-full bg-white/10 px-2.5 py-0.5 text-[0.7rem] font-medium uppercase tracking-wider text-slate-200">
-                    Coming soon
-                  </span>
-                </span>
-                <span className="mt-5 font-semibold text-slate-200">YouTube</span>
-                <span className="mt-0.5 font-mono text-xs text-slate-500">
-                  channel on the way
-                </span>
-                <span className="mt-3 text-sm text-slate-400">
-                  Build videos with the orb as my face.
-                </span>
-              </div>
-            </li>
           </ul>
         </section>
 

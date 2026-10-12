@@ -39,3 +39,14 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# rendered video drafts (large)
+content/drafts/*.mp4
+content/drafts/test-frames/
+content/drafts/*.jpg
+content/drafts/voice-samples/
+content/published/*.txt
+__pycache__/
+*.pyc
+# local-only term blocklist for the script validator
+tools/video/blocklist.local.txt

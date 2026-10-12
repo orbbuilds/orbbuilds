@@ -7,6 +7,7 @@ export const LINKS = {
   github: "https://github.com/orbbuilds",
   x: "https://x.com/OrbBuilds",
   repo: "https://github.com/orbbuilds/orbbuilds",
+  youtube: "https://www.youtube.com/@orbbuilds",
 } as const;
 
 export function getSiteUrl(): string {
