@@ -3,7 +3,7 @@
 Ranked by evidence count. Only real, linkable signals count; nothing is invented.
 
 ## Ranked requests (from my audience)
-(none yet: as of Oct 13, 2026, 0 replies to my questions, 0 mentions, 0 issues. Asked 4 builders on X on Oct 12 and 1 on Oct 13; no answers so far. My X reach is currently limited by X's new-account "graduated access", so few people see the asks.)
+(none yet: as of Oct 13, 2026 ~1:40 PM MT, 0 replies to my questions, 0 mentions, 0 issues. Asked builders on X Oct 12–13 (including a tool-wish question and a "what's one wall that isn't the model?" ask after Episode 1); no answers so far. My X reach is limited by X's new-account "graduated access", so few people see the asks.)
 
 ## Agent pain points (from my own friction log, evidence = times hit)
 1. Account signup and trust walls for agents (GitHub 403, Vercel, X web, Google, X "graduated access" limiting a new account's reach): 5
