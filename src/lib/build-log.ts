@@ -58,7 +58,9 @@ export async function getBuildLog(limit = 3): Promise<BuildLogEntry[]> {
     flushList();
 
     entries.push({ date: match[1], title: match[2].trim(), blocks });
-    if (entries.length >= limit) break;
   }
-  return entries;
+  // Newest first by date, even if the file gets out of order. Sort is stable,
+  // so same-day entries keep their file order.
+  entries.sort((a, b) => b.date.localeCompare(a.date));
+  return entries.slice(0, limit);
 }

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { getBuildLog, type BuildLogBlock } from "@/lib/build-log";
+import { LATEST_EPISODE } from "@/lib/episodes";
 import { LINKS } from "@/lib/site";
 import {
   ArrowUpRightIcon,
@@ -167,6 +168,9 @@ export default async function Home() {
           Orb Builds
         </Link>
         <nav aria-label="Primary" className="flex items-center gap-0.5 whitespace-nowrap text-sm sm:gap-1">
+          <a href="#watch" className={`hidden rounded-md px-2.5 py-2 hover:text-white sm:inline-block sm:px-3 ${focus}`}>
+            Watch
+          </a>
           <a href="#log" className={`rounded-md px-2.5 py-2 hover:text-white sm:px-3 ${focus}`}>
             Build log
           </a>
@@ -243,6 +247,65 @@ export default async function Home() {
             </div>
           </div>
         </section>
+
+        {/* Latest episode */}
+        {LATEST_EPISODE ? (
+          <section
+            id="watch"
+            aria-labelledby="watch-title"
+            className="mx-auto w-full max-w-5xl scroll-mt-6 px-6 py-14"
+          >
+            <SectionHeading id="watch-title" eyebrow="Latest episode">
+              Watch the newest one.
+            </SectionHeading>
+            <a
+              href={LATEST_EPISODE.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`landing-card group grid items-center gap-6 overflow-hidden rounded-3xl ring-1 ring-white/10 transition hover:ring-sky-300/50 md:grid-cols-[1.1fr_0.9fr] ${focus}`}
+            >
+              <span className="relative block">
+                <Image
+                  src={LATEST_EPISODE.thumbnail}
+                  alt={`Thumbnail for ${LATEST_EPISODE.title}`}
+                  width={1280}
+                  height={720}
+                  sizes="(min-width: 1024px) 560px, (min-width: 768px) 50vw, 100vw"
+                  className="aspect-video w-full object-cover"
+                />
+                <span
+                  aria-hidden
+                  className="absolute inset-0 flex items-center justify-center bg-black/0 transition group-hover:bg-black/20"
+                >
+                  <span className="flex size-16 items-center justify-center rounded-full bg-white/90 text-slate-900 shadow-lg transition group-hover:scale-105">
+                    <svg viewBox="0 0 24 24" className="ml-1 size-7" fill="currentColor">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </span>
+                </span>
+              </span>
+              <span className="block p-6 md:py-8 md:pl-0 md:pr-8">
+                <span className="font-mono text-xs uppercase tracking-wider text-sky-300/80">
+                  {LATEST_EPISODE.code} ·{" "}
+                  <time dateTime={LATEST_EPISODE.publishedAt}>
+                    {LATEST_EPISODE.publishedAt}
+                  </time>
+                </span>
+                <span className="mt-2 block text-xl font-semibold text-white">
+                  {LATEST_EPISODE.title}
+                </span>
+                <span className="mt-3 block text-[0.95rem] leading-relaxed text-slate-300">
+                  {LATEST_EPISODE.summary}
+                </span>
+                <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-sky-200">
+                  <YouTubeIcon className="size-4" />
+                  Watch on YouTube
+                  <ArrowUpRightIcon className="size-3.5" />
+                </span>
+              </span>
+            </a>
+          </section>
+        ) : null}
 
         {/* Meet Lumin */}
         <section
