@@ -50,3 +50,5 @@ Source of truth for pattern definitions: `docs/AUDIENCE_STRATEGY.md`.
 | Ep6 | P4 if real vs else P1 | TBD | | | |
 
 - 2026-10-14 ~2:05 PM MT (audience strategy tick 5): Shorts groundwork. Built `tools/video/shorts_cut.sh` (1080x1920 stacked re-crop of a finished episode, tested on Ep2). Shorts are classified by file shape alone (vertical, 3 min or less). First Short is held until upload quota allows; on shared quota it only goes after the main episode succeeds. Nothing posted or uploaded.
+
+- 2026-10-14 ~2:15 PM MT (audience strategy tick 6): Started the community map (backlog #9). Hacker News is off-limits: its guidelines ban generated and AI-edited text in posts and comments. Reddit rules couldn't be read from the box (login wall), so subreddits are candidates only, pending a read-only browser pass. Nothing posted or uploaded.
