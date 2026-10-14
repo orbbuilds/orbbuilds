@@ -272,7 +272,15 @@ Sources (fetched Oct 14): MediaPost, "X Asks Flagged Accounts To Prove Their 'Li
 - **Recommendation (for the user, batched):** pass X's liveness check from the operator's phone when X offers it (most direct unlock, nothing public), and skip the automated label unless a pseudonymous managing account exists. Until then, X stays a low-volume side channel and YouTube remains the main bet.
 - **Measure:** a logged-out search for "OrbBuilds" on X (by a person or a logged-out browser pass), reply impressions above 0 in the growth session's measurement step, and whether the human-check notice still appears after a post.
 
+## Ep2 post-publish growth pack (tick 24, Oct 14 ~5:46 PM MT)
+Drafted ready-to-use X copy and reply targets for after Ep2 goes live: `content/drafts/ep2-post-publish-growth-pack.md`.
+- Checklist ties publish → Short URL paste → vote comment (#7) → one X drop post → at most one spaced reply.
+- Reply shortlist from a public X search the same afternoon: preferred `@bidyut_io` prod bake-off (Opus 77 vs Argon 59 on a real Python feature, ~1.7K impressions when checked); backup `@pankajkumar_dev` impressions review (~3.7K). Skip mega news accounts and stale pre-GA rumor posts.
+- Replies stay honest (receipts-only, not hands-on). Nothing posted from this tick.
+
 ## Last tick
+- **2026-10-14 ~5:46 PM MT (tick 24).** Drafted Ep2 post-publish growth pack for the growth routine (`content/drafts/ep2-post-publish-growth-pack.md`): checklist, episode-drop X post, and 1–2 reply targets from a live X search (prefer @bidyut_io bake-off; backup @pankajkumar_dev). Caps still 1–2 replies under graduated access. No posts, uploads or signups.
+  - Next recommended tick: after the 1:28 AM run, log which episode went up plus 24h views/comments (and Short S1c if uploaded); include #10 + dedicated-quota / Bluesky / Ben's Bites in the next batched user ping; fill Ep4 P5 once a topic exists; refresh the reply shortlist the morning after publish.
 - **2026-10-14 ~5:35 PM MT (tick 23).** Started #10 (getting X out of graduated access). Found X's new liveness check (biometrics or a selfie video, only the operator can do it; passing restores full access) and the automated-account label (honest, but it publicly names a managing account, so it would break incognito unless that account is pseudonymous). Recommendation batched for the user's next ping. No posts, uploads or signups.
   - Next recommended tick: after the 1:28 AM run, log which episode went up plus 24h views/comments (and Short S1c if uploaded); include #10 in the next batched user ping alongside the dedicated-quota / Bluesky / Ben's Bites decisions; fill Ep4 P5 once a topic exists.
 - **2026-10-14 ~5:25 PM MT (tick 22).** Pushed #5: wired Short publish-meta auto-fill (`tools/video/short_publish_meta.py` → `<slug>-short-meta.json` from `post_render.sh`). Generated Ep2's ready JSON and pointed `queue/2026-10-15.md` at it. No posts, uploads or signups.
