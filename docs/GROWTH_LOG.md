@@ -25,6 +25,7 @@ An honest record of what I try to grow an audience, and whether it works. Number
 | 2026-10-14 | Audience-strategy tick 4: speed-to-publish (backlog #3). Ep2 GA Oct 13 → publish Oct 15 ~1:28 AM MT (~1.5–2 days); competitors 2h–1d. Shared Composio upload quota is the floor; own Google OAuth app in Composio would give a dedicated 100 uploads/day (Google docs) | Find what blocks same-day reviews | Research only; recommendation to user. Also: set containsSyntheticMedia=true on uploads | pending user decision |
 | 2026-10-14 | Audience-strategy tick 19: Shorts now end on the like/subscribe click animation (`short_windows.py --cta`, default in `post_render.sh`); Ep2 CTA Short rendered, 52.6 s | Shorts are where small channels pick up subscribers, so every Short should end on the ask | pending (subscriber delta 24h after each Short, logged as S1c vs S1) | pending |
 | 2026-10-14 | Audience-strategy tick 20: drafted Short publish meta (`content/drafts/shorts-publish-meta.md`) — Ep2 title/desc/tags + Ep3 templates; preferred file is the CTA Short | Publish run needs ready metadata so a Short can go up in the same post-reset window if quota remains | pending upload after main episode | pending |
+| 2026-10-14 | Audience-strategy tick 21: started #4 (openly-AI angle); drafted Ep4 P5 pack (`content/drafts/ep4-p5-openly-ai-title-pack.md`) | Test AI-as-primary-hook titles vs secondary brand tag | pending Ep4 publish + 24h/72h views vs Ep1/Ep3 | pending |
 
 ## Learnings
 - 2026-10-11: The Composio-hosted YouTube connector shares a daily upload quota with other users of the same Google API project. A publish can fail through no fault of mine, so the pipeline needs a retry after the reset and I should not schedule a launch around a single attempt.
@@ -47,7 +48,7 @@ Source of truth for pattern definitions: `docs/AUDIENCE_STRATEGY.md`.
 | Ep1 | P1 | GPT-6 Intelligent UI is WILD (an AI reacts) | — | 6 (as of Oct 14 growth session; age >24h) | Data API earlier Oct 14 |
 | Ep2 | P2 | Gemini 4 Argon is INSANE? An AI reads the receipts | pending publish | pending | queued for ~1:28 AM MT Oct 15 |
 | Ep3 | P1 | TBD when topic locks | | | |
-| Ep4 | P5 | TBD | | | |
+| Ep4 | P5 | TBD (pack ready: `content/drafts/ep4-p5-openly-ai-title-pack.md`) | | | |
 | Ep5 | P3 if real N else P2 | TBD | | | |
 | Ep6 | P4 if real vs else P1 | TBD | | | |
 
@@ -74,3 +75,4 @@ Source of truth for pattern definitions: `docs/AUDIENCE_STRATEGY.md`.
 - 2026-10-14 ~4:20 PM MT, strategy tick 16: `make_review.sh` now ends with `tools/video/post_render.sh`, which renders the P6 thumbnail (from a new `meta.thumbnail` block) and the vertical Short automatically. Tested on Ep2 (thumbnail identical to queued v2; Short 1080x1920, 57.5 s). No data yet; nothing posted or uploaded.
 - 2026-10-14 ~4:35 PM MT, strategy tick 17: tonight's fresh 9:28 PM render and the queued Ep2 compete for the one reliable 1:28 AM upload slot on shared quota. Default rule written: freshest release first, Ep2 second if quota remains or next night, no queue overwrite. Flag added to queue/2026-10-15.md. No posts, uploads or signups.
 - 2026-10-14 ~4:40 PM MT, strategy tick 18: drafted the Ep3 P1 title pack for tonight's production run (`content/drafts/ep3-p1-title-pack.md`): Chainguard Harness (preferred, announced today) and ScaleDown Classify as backup, each with title, P6 thumbnail (rendered locally, gitignored), 5-second hook, description line, caveats and vote prompt. No data yet; nothing posted or uploaded.
+- 2026-10-14 ~5:10 PM MT, strategy tick 21: started experiment #4. Drafted Ep4 P5 openly-AI title pack (gates, titles, thumbs, hooks, measure vs Ep1/Ep3). Nothing posted or uploaded.
