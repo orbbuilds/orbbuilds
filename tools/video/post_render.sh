@@ -4,6 +4,7 @@
 # - Thumbnail: if meta.thumbnail = {product, line1, line2?, hl?, tag?} exists, renders <name>-thumb.jpg (P6 grammar).
 # - Short: picks fact+verdict windows from timing.json and splices <name>-short.mp4 (vertical, <=58 s). Skip with NO_SHORT=1.
 #   Appends the like/subscribe line (button-click animation) as an end card when it costs <=1 fact line; NO_SHORT_CTA=1 turns that off.
+# - Short publish meta: writes <name>-short-meta.json (title/description/tags/S1c) for the publish routine. Skip with NO_SHORT_META=1.
 # Failures here only warn; they never block the main episode.
 set -u
 SCRIPT="$(realpath "$1")"; EP="$(realpath "$2")"; NAME="$(basename "$SCRIPT" .json)"
@@ -27,13 +28,34 @@ if [ -n "$THUMB_ARGS" ]; then
 else
   echo "WARN: no meta.thumbnail (or placeholders left); thumbnail skipped" >&2
 fi
+SHORT_OUT=""
+CTA_USED=0
 if [ -z "${NO_SHORT:-}" ]; then
   CTA_FLAG="--cta"; [ -n "${NO_SHORT_CTA:-}" ] && CTA_FLAG=""
   WIN=$(python3 short_windows.py "$WORK/timing.json" $CTA_FLAG) || WIN=""
   if [ -n "$WIN" ]; then
-    bash shorts_splice.sh "$EP" "$OUTDIR/${NAME}-short.mp4" $WIN \
-      && echo "short: $OUTDIR/${NAME}-short.mp4 ($WIN)" || echo "WARN: short failed" >&2
+    SHORT_OUT="$OUTDIR/${NAME}-short.mp4"
+    if bash shorts_splice.sh "$EP" "$SHORT_OUT" $WIN; then
+      echo "short: $SHORT_OUT ($WIN)"
+      # Detect whether the CTA window was included (third start:end from --cta).
+      if [ -n "$CTA_FLAG" ]; then
+        NWIN=$(echo "$WIN" | wc -w | tr -d ' ')
+        [ "$NWIN" -ge 3 ] && CTA_USED=1
+      fi
+    else
+      echo "WARN: short failed" >&2
+      SHORT_OUT=""
+    fi
   else
     echo "WARN: no short windows from $WORK/timing.json; short skipped" >&2
   fi
+fi
+if [ -z "${NO_SHORT_META:-}" ]; then
+  META_OUT="$OUTDIR/${NAME}-short-meta.json"
+  META_ARGS=(python3 short_publish_meta.py "$SCRIPT" "$META_OUT" --cta "$CTA_USED")
+  # Prefer an existing CTA Short next to drafts if we didn't just render one with CTA.
+  if [ -n "$SHORT_OUT" ] && [ -f "$SHORT_OUT" ]; then
+    META_ARGS+=(--short-file "$SHORT_OUT")
+  fi
+  "${META_ARGS[@]}" && echo "short-meta: $META_OUT" || echo "WARN: short-meta failed" >&2
 fi

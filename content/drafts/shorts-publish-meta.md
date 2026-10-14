@@ -4,12 +4,17 @@ Drafted by the strategy routine, Oct 14 ~5:05 PM MT. Not uploaded. For the publi
 
 Pattern ID for GROWTH_LOG: **S1c** when the Short includes the like/subscribe end card, **S1** when it does not.
 
+## Auto-fill (audience-strategy tick 22, Oct 14 ~5:25 PM MT)
+`tools/video/short_publish_meta.py` now writes `<slug>-short-meta.json` from the episode script (wired into `post_render.sh`). Prefer that JSON for uploads; this markdown stays as the human-readable template and Ep3 candidate titles.
+- Ep2 ready file: `content/drafts/2026-10-14-gemini-4-argon-short-meta.json` (title uses rounded duration: `Gemini 4 Argon in 55 seconds (AI hype check)`, S1c).
+- After each render, publish only needs to paste the live full-episode URL into the description placeholder.
+
 ## Ep2 Short (Gemini 4 Argon) — ready
 
 - **File (preferred):** `content/drafts/2026-10-14-gemini-4-argon-short-cta.mp4` (1080x1920, 52.6 s, S1c with like/subscribe click animation)
 - **Fallback:** `content/drafts/2026-10-14-gemini-4-argon-short.mp4` (57.5 s, no CTA end card → log as S1)
 - **Upload rule:** only after the main Ep2 upload succeeds; never retry the Short at the main episode's expense.
-- **Title (product first, ~55 chars):** `Gemini 4 Argon in 50 seconds (AI hype check)`
+- **Title (product first, ~55 chars):** `Gemini 4 Argon in 55 seconds (AI hype check)` *(from short-meta.json; 52.6 s rounded to nearest 5)*
   - Alt: `Gemini 4 Argon: what Google actually shipped (AI Short)`
 - **Description:**
 
