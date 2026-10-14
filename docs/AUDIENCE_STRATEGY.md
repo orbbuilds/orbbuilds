@@ -24,7 +24,7 @@ Numbers here are measured or quoted from a named public source, with the date se
 |---|-----------|-----------|----------------|--------|
 | 1 | Competitive study of titles, thumbnails and hooks on similar channels | Proven patterns from AI-news and AI-character channels can be borrowed honestly and get more clicks than our current generic titles | Patterns library below; then rotate patterns via #2 | **Done (tick 1, Oct 14)** |
 | 2 | Rotate one title pattern per daily episode (patterns P1–P5 below) | Some patterns get much better click-through at our size than others | **Proxy (confirmed):** views / likes / comments at ~24h and ~72h via Data API (`YOUTUBE_GET_VIDEO_DETAILS_BATCH`). CTR/impressions/traffic source are **not** available through Composio (no Analytics API tools). Log each row with pattern ID in GROWTH_LOG | **In progress (tick 2):** measurement locked; rotation schedule assigned |
-| 3 | Speed-to-publish: ship reviews of big releases within ~24h of general availability | Search and Browse demand peaks in the first day; most top results for "Gemini 4 Argon" were under 24h old when checked | Hours from GA to our publish, compared with 72h views | **In progress (tick 4):** bottleneck mapped; dedicated-quota recommendation sent to user |
+| 3 | Speed-to-publish: ship reviews of big releases within ~24h of general availability | Search and Browse demand peaks in the first day; most top results for "Gemini 4 Argon" were under 24h old when checked | Hours from GA to our publish, compared with 72h views | **In progress (tick 11):** bottleneck mapped (tick 4); first-day velocity data (tick 11) shows <5h-old videos growing 79–156% in ~2h vs 2–12% for 9h+; dedicated-quota decision still pending with user |
 | 4 | Lean into the openly-AI angle ("an AI reviews the AI…") | Being an AI is our only edge over human reviewers. Neuro-sama's titles that make the AI itself the hook get above-median views | Compare views and CTR of AI-angle titles with plain titles inside #2 | Queued |
 | 5 | Vertical Shorts cut from each episode (30–45 s hook + verdict) | Shorts are the discovery surface for small channels. About 70% of Neuro-sama's uploads are Shorts | Shorts views, and subscribers gained from Shorts. Watch the upload quota cost first | **In progress (tick 5):** vertical cut tool built and tested on Ep2; first Short waits on upload headroom |
 | 6 | Thumbnail A/B with YouTube Test & Compare (reaction face + logo vs scoreboard/versus) | A versus or scoreboard layout reads faster in a crowded feed | Test & Compare winner and watch-time share | Queued |
@@ -175,7 +175,30 @@ Ep2's outro already asks "tell me in the comments" what to throw at Argon, which
 - **Also spotted:** the toolkit lists `YOUTUBE_WEB_*` tools (web search, channel info, related videos). If they scrape rather than call the Data API, they could pull competitor view counts without touching the shared quota. Not tested yet; worth one check in a later tick.
 - From Ep3 on, the video routine should write the 3 options into the outro itself ("reply 1, 2 or 3") so the video and the comment match.
 
+## Competitor stats source + first-day velocity (tick 11, Oct 14 ~3:06 PM MT)
+**Correction to tick 10:** there are no `YOUTUBE_WEB_*` tools in the connected Composio YouTube toolkit. Asking for `YOUTUBE_WEB_SEARCH`, `YOUTUBE_WEB_CHANNEL_INFO` and `YOUTUBE_WEB_RELATED_VIDEOS` by slug returned "not found" (Oct 14). The only search tool is `YOUTUBE_SEARCH_YOU_TUBE` (Data API `search.list`, 100 units a call, shared quota).
+
+**Scraping youtube.com is off the table.** A single public fetch of the search page works technically, but YouTube's Terms of Service (youtube.com/static?template=terms, fetched Oct 14) forbid it: you may not "access the Service using any automated means (such as robots, botnets or scrapers) except (a) in the case of public search engines... or (b) with YouTube's prior written permission." Since we publish on YouTube, we shouldn't risk the channel over this. Don't build a scraper tool. One read-only check of a search page was done this tick to confirm this, and that snapshot is logged below. It won't be repeated.
+- **Sanctioned path for competitor stats:** one `YOUTUBE_SEARCH_YOU_TUBE` call (100 units) plus one `YOUTUBE_GET_VIDEO_DETAILS_BATCH` for up to 50 IDs (1 unit), run only after the main upload succeeds in the post-reset window. With our own OAuth app (tick 4), it can run any time.
+
+**First-day velocity (same videos, two snapshots ~1h45m apart, Oct 14 ~1:20 PM and ~3:06 PM MT; ages as YouTube showed them):**
+| Video | Snapshot 1 | Snapshot 2 | Gain |
+|---|---|---|---|
+| Theo, "So I've been testing Gemini 4..." | 43,239 (3h) | 77,334 (5h) | +34,095 (+79%) |
+| The AI Automators, "...vs Opus 5.5 (No Hype)" | 1,985 (2h) | 5,076 (4h) | +3,091 (+156%) |
+| AI Coding Daily, "...23 Coding Prompts" | 26,187 (9h) | 27,832 (11h) | +1,645 (+6%) |
+| Creator Magic, "...My Losing AI Trading Bots" | 10,721 (7h) | 12,040 (9h) | +1,319 (+12%) |
+| AICodeKing, "...6 Hard Apps" | 11,709 (10h) | 12,639 (12h) | +930 (+8%) |
+| Wes Roth, "GEMINI 4 ARGON IS WEIRD..." | 158,392 (15h) | 164,899 (17h) | +6,507 (+4%) |
+| Bijan Bowen, "...Is INSANE – Hands-On..." | 111,657 (23h) | 113,881 (1d) | +2,224 (+2%) |
+
+What this shows: videos under ~5h old grew 79–156% in under two hours. Videos 9h and older grew 2–12%. This is a small sample of established channels, so it shows a trend, not a law. It still backs experiment #3: demand for a release is front-loaded into its first hours, and Ep2 (publishing ~1.5–2 days after GA) arrives in the tail. That makes the dedicated-quota decision (tick 4) the main growth lever we know of, because it's the only way to publish a few hours after a release instead of the next morning.
+
+Also new in this snapshot: Paul J Lipsky's "Gemini 4 Argon Is Here (Fully Tested)" had 216,275 views at 1d (P3-style "fully tested"), and Google Cloud Tech's "10 incredible AI demos" had 143,338 at 23h (P3 count). Both add to the proof-of-work pattern.
+
 ## Last tick
+- **2026-10-14 ~3:06 PM MT (tick 11).** Checked tick 10's `YOUTUBE_WEB_*` lead. Those tools don't exist. Scraping youtube.com works but breaks YouTube's ToS (quoted), so it's ruled out, and competitor stats will come from Data API search+batch after a successful upload. A one-off snapshot gave first-day velocity data: videos under 5h old grew 79–156% in ~1h45m, while 9h+ videos grew 2–12%. That strengthens #3 and the dedicated-quota ask. No posts, uploads or signups.
+  - Next recommended tick: Reddit rules via a read-only browser pass (computerUse); or two-window splicing for Shorts; after Ep2 is live (~1:28 AM MT Oct 15), log its 24h views (P2 + #8) and comments (#7).
 - **2026-10-14 ~3:05 PM MT (tick 10).** Pushed #7 (audience vote loop): drafted the Ep2 numbered-vote comment and its counting rules; confirmed Composio has comment post/list tools but no pin. Noted `YOUTUBE_WEB_*` tools as a possible quota-free competitor-stats source (untested). Sent the batched decisions to the user. No posts, uploads or signups.
   - Next recommended tick: test one `YOUTUBE_WEB_*` call to see if it avoids the shared quota (read-only); or the Reddit rules browser pass; after Ep2 is live (~1:28 AM MT Oct 15), log its 24h views (P2 + #8) and comments (#7).
 - **2026-10-14 ~2:40 PM MT (tick 9).** Pushed #9: Discord ruled out for automated user accounts (Community Guidelines §14 + self-bots article); mapped newsletter options — Ben's Bites News is the only free submit-and-maybe-digest path found, draft in `content/drafts/bens-bites-submit-draft.md`; TLDR AI is paid-only; The Beat is tip-not-promo. No signups, posts or uploads. Pending user decisions (still batched, not re-pinged this tick): (1) dedicated Google OAuth for YouTube quota, (2) Bluesky account, (3) Ben's Bites News account for occasional episode/launch submits.
