@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Render a release-review episode:  make_review.sh content/scripts/<script>.json [out.mp4]
 #   validate -> TTS (Kokoro, local) + word-aligned captions -> music bed -> render frames -> duck music under voice -> mp4
+#   then post_render.sh: P6 thumbnail from meta.thumbnail + vertical Short (NO_SHORT=1 to skip)
 # Needs: tools/video/setup_tts.sh run once (venv at $ORB_TTS_DIR, default /workspace/tts), ffmpeg.
 set -e
 cd "$(dirname "$0")"
@@ -14,3 +15,4 @@ DUR=$("$PY" -c "import json;print(json.load(open('$WORK/timing.json'))['duration
 "$PY" music_bed.py "$WORK/music.wav" "$DUR"
 "$PY" review_render.py "$SCRIPT" "$WORK" "$OUT" --music "$WORK/music.wav"
 echo "draft (NOT published): $OUT"
+bash post_render.sh "$SCRIPT" "$OUT" || true

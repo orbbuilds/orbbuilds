@@ -24,6 +24,14 @@
     },
     "pronounce": {
       "Lumin": "Loomin"
+    },
+    "title_pattern": "[P1-P5 from the rotation schedule in docs/AUDIENCE_STRATEGY.md; never change after upload]",
+    "thumbnail": {
+      "product": "[PRODUCT NAME, caps]",
+      "line1": "[WORD 1]",
+      "line2": "[WORD 2 or empty]",
+      "hl": 2,
+      "tag": "AI host · [honest status, e.g. not tested yet]"
     }
   },
   "sections": [
