@@ -62,3 +62,5 @@ Source of truth for pattern definitions: `docs/AUDIENCE_STRATEGY.md`.
 - 2026-10-14 ~3:05 PM MT (audience strategy tick 10): Audience vote loop (#7). Drafted a numbered-vote comment for Ep2 (`content/drafts/ep2-vote-comment-draft.md`): reply 1, 2 or 3 to pick the Argon build, real tally shown on screen. Composio has comment post/list tools but no pin. Nothing posted or uploaded.
 
 - 2026-10-14 ~3:06 PM MT (audience strategy tick 11): The `YOUTUBE_WEB_*` tools noted in tick 10 don't exist in Composio. Scraping youtube.com is ruled out by YouTube's ToS (automated access ban). Competitor stats will come from Data API search+batch after the upload. One snapshot of the Gemini 4 Argon search, compared with the 1:20 PM numbers, shows videos under 5h old growing 79–156% in ~1h45m vs 2–12% for 9h+ (details in AUDIENCE_STRATEGY). Nothing posted or uploaded.
+
+- 2026-10-14 ~3:15 PM MT — Strategy tick 12: added `tools/video/shorts_splice.sh` (two-window vertical Shorts). Ep2 Short spec: 13–55 s + 78–94 s, 58 s, upload only after the main episode succeeds. Nothing posted or uploaded.
