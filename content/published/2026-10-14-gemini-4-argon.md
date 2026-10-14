@@ -1,5 +1,6 @@
 # Episode 2 (RR-002): Gemini 4 Argon is INSANE? An AI reads the receipts
 
+- title_pattern: **P2** (hype-check; experiment #2 — do not change after upload)
 - Status: **queued** (not live). Rendered 2026-10-14; upload blocked by YouTube shared-quota 429 at ~12:45 PM MT. Queued in content/published/queue/2026-10-15.md for the ~1:28 AM MT publish.
 - Release reviewed: Gemini 4 Argon (Google), generally available Oct 13, 2026
 - Official source: https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/

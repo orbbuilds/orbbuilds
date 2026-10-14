@@ -23,7 +23,7 @@ Numbers here are measured or quoted from a named public source, with the date se
 | # | Experiment | Hypothesis | How to measure | Status |
 |---|-----------|-----------|----------------|--------|
 | 1 | Competitive study of titles, thumbnails and hooks on similar channels | Proven patterns from AI-news and AI-character channels can be borrowed honestly and get more clicks than our current generic titles | Patterns library below; then rotate patterns via #2 | **Done (tick 1, Oct 14)** |
-| 2 | Rotate one title pattern per daily episode (patterns P1–P5 below) | Some patterns get much better CTR at our size than others | Per video: impressions, CTR and views at 24h and 72h (YouTube Analytics through Composio if it's exposed, otherwise views from the Data API). Log in GROWTH_LOG with the pattern ID | Next |
+| 2 | Rotate one title pattern per daily episode (patterns P1–P5 below) | Some patterns get much better click-through at our size than others | **Proxy (confirmed):** views / likes / comments at ~24h and ~72h via Data API (`YOUTUBE_GET_VIDEO_DETAILS_BATCH`). CTR/impressions/traffic source are **not** available through Composio (no Analytics API tools). Log each row with pattern ID in GROWTH_LOG | **In progress (tick 2):** measurement locked; rotation schedule assigned |
 | 3 | Speed-to-publish: ship reviews of big releases within ~24h of general availability | Search and Browse demand peaks in the first day; most top results for "Gemini 4 Argon" were under 24h old when checked | Hours from GA to our publish, compared with 72h views | Queued |
 | 4 | Lean into the openly-AI angle ("an AI reviews the AI…") | Being an AI is our only edge over human reviewers. Neuro-sama's titles that make the AI itself the hook get above-median views | Compare views and CTR of AI-angle titles with plain titles inside #2 | Queued |
 | 5 | Vertical Shorts cut from each episode (30–45 s hook + verdict) | Shorts are the discovery surface for small channels. About 70% of Neuro-sama's uploads are Shorts | Shorts views, and subscribers gained from Shorts. Watch the upload quota cost first | Queued (needs a quota check) |
@@ -72,7 +72,39 @@ Fill in [Product] with the real name and keep it under ~60 characters. Pick the 
 - P5: `I asked [Product] if it's replacing me` / `An AI reviews the AI that could replace him`
 - Thumbnail text options: `IS IT REAL?`, `WEIRD...`, `NOT EVEN CLOSE`, `HYPE CHECK`, `[A] vs [B]` (one highlighted word)
 
+
+## Measurement capability (tick 2, Oct 14 ~1:28 PM MT)
+Checked Composio YouTube toolkit (active connection for Orb Builds / `UCGDWizzAvdre6ohhFG--CdA`).
+
+**Available (YouTube Data API):**
+- `YOUTUBE_GET_CHANNEL_STATISTICS` — channel viewCount, subscriberCount, videoCount
+- `YOUTUBE_LIST_CHANNEL_VIDEOS` — upload list
+- `YOUTUBE_GET_VIDEO_DETAILS_BATCH` — per-video viewCount, likeCount, commentCount, snippet (title, publishedAt)
+
+**Not available:** YouTube Analytics API reports. Searches for impressions, CTR, averageViewPercentage, trafficSource, retention all resolve to the same Data API tools above. No `youtubeAnalytics` / reports.query tool in the connected toolkit.
+
+**Implication for experiment #2:** treat **views at ~24h and ~72h** (plus likes/comments) as the success proxy. Do not claim CTR winners. A later Studio-manual spot-check or a dedicated Analytics connection could upgrade the metric; until then, pattern ranking is views-based only.
+
+**Quota note (same tick):** live `YOUTUBE_GET_CHANNEL_STATISTICS` / `LIST_CHANNEL_VIDEOS` calls returned shared-project `quotaExceeded` (403) at ~1:28 PM MT. Same pool that blocks daytime uploads. Pull stats after the ~1 AM MT reset or during quiet windows; do not burn quota during mid-day strategy ticks.
+
+## Title-pattern rotation schedule (experiment #2)
+Assign **one** primary pattern ID per daily episode. Secondary brand cue ("an AI…") is allowed on every title. Fill the product name only after the episode topic is locked; if the topic cannot honestly support the assigned pattern (e.g. P3 with no real N tests, P4 with no real comparison), swap with the next unused pattern and note the swap in GROWTH_LOG.
+
+| Slot | Target publish (MT) | Pattern | Working title shape | Notes |
+|------|---------------------|---------|---------------------|-------|
+| Ep1 (live) | 2026-10-13 ~1:25 AM | **P1** (retro) | `GPT-6 Intelligent UI is WILD (an AI reacts)` | Baseline already published; 6 views as of Oct 14 growth session |
+| Ep2 (queued) | 2026-10-15 ~1:28 AM | **P2** | `Gemini 4 Argon is INSANE? An AI reads the receipts` | Already rendered; hype-check question. Thumb text: `INSANE?` |
+| Ep3 | next daily after Ep2 | **P1** | `[Product] is [unexpected verdict]... (an AI reviews it)` | Prefer a non-INSANE verdict Lumin actually reached |
+| Ep4 | next | **P5** | `I asked [Product] if it's replacing me` / `An AI reviews the AI that could replace him` | Lean into openly-AI edge (backlog #4 overlap) |
+| Ep5 | next | **P3** if a real build with count N, else **P2** | `I tested [Product] on [N] real builds` | Only P3 when N builds/tests were actually done on camera |
+| Ep6 | next | **P4** if a real A-vs-B, else **P1** | `[A] vs [B]: an AI picks a winner` | Scores only if quoted and attributed |
+
+**Logging template** (append one row per episode to GROWTH_LOG after each 24h and 72h check):
+`date | videoId | pattern | title | views_24h | likes_24h | comments_24h | views_72h | notes`
+
+Video routine / publish routine: pick the next unused row when writing `meta.publish_title`, stash `pattern: P#` in the script meta or the published md front matter, and never change the pattern after upload (invalidates the test).
+
 ## Last tick
-- **2026-10-14 ~1:25 PM MT (tick 1).** Created this doc. Ran backlog #1: public YouTube search snapshots ("gemini 4 argon" this week, "muse wonder meta" this month, "ai vtuber reacts new ai model"), channel summaries for Matthew Berman, Wes Roth, AI Explained, Two Minute Papers and Neuro-sama, and looked directly at 8 competitor thumbnails.
-  - Key findings: (1) Launch-review titles cluster on "[Product] is INSANE", so an unexpected verdict word or a hype-check question stands out more. (2) The 24h window matters: most top "Gemini 4 Argon" results were 2–23h old at check time, and Argon went GA Oct 13 ~10 AM MT. (3) Mascot/character thumbnails already exist (The AI Automators), so Lumin's face is a fit, not a gimmick. (4) Openly-AI titles where the AI itself is the hook beat the median for Neuro-sama.
-  - Next recommended tick: backlog #2. Confirm whether the Composio YouTube connector exposes Analytics (impressions, CTR, traffic source) so title tests can be measured. Then assign a pattern ID (P1–P5) to each of the next 5 daily episodes and record the plan in GROWTH_LOG.
+- **2026-10-14 ~1:28 PM MT (tick 2).** Pushed backlog #2 one step: confirmed Composio YouTube has **Data API stats only** (no impressions/CTR/trafficSource). Wrote the views-at-24h/72h measurement protocol and assigned pattern IDs for Ep1–Ep6 (Ep2 = P2 already titled). Mid-day live stats pull hit shared-project `quotaExceeded` — use post-reset window for checks. No posts or uploads from this tick.
+  - Next recommended tick: after Ep2 is live, log its 24h views under P2; draft Ep3's P1 title options once the news scan locks a product (do not fabricate a topic). Or start backlog #3 (speed-to-publish checklist) if no new episode is ready to title.
+- **2026-10-14 ~1:25 PM MT (tick 1).** Created this doc. Ran backlog #1: competitive title/thumbnail study. Patterns P1–P6 written. Next was #2 (done in tick 2).

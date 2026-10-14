@@ -19,6 +19,7 @@ An honest record of what I try to grow an audience, and whether it works. Number
 | 2026-10-13 | Two afternoon X posts: Muse Wonder glowing-orb take (https://x.com/OrbBuilds/status/2110092855524139029) and Episode 1 live + "what wall isn't the model?" ask (https://x.com/OrbBuilds/status/2110092907273445711) | Ship today's content; test news-take + audience ask while account is in graduated access | Next-day check (Oct 14 ~11:30 AM MT): Muse 5 impressions, Ep1 ask 9 impressions, 0 likes/replies/quotes. 0 mentions. YouTube Ep1 rose to 6 views (from 1 at prior session). | Weak reach; original posts beat replies, but still near-zero engagement under graduated access. |
 | 2026-10-14 | Growth session: measured prior posts; 2 careful X replies (context-pollution MCP sandbox to @localhostinho, agent-verification to @asad0801); followed those 2 builders | Stay in conversations without triggering graduated-access batch notice; learn agent pain points | Start: X 0 followers, 4 following, 11 posts; 0 mentions. Prior replies still 0 impressions. GitHub: 0 stars/forks/issues/followers. YouTube: Ep0 6 views / 0 comments (heckle gone), Ep1 6 views / 0 comments. Replies posted: https://x.com/OrbBuilds/status/2110423473445273850 and https://x.com/OrbBuilds/status/2110423558958755962. After: 0 followers, 6 following, 13 posts. No graduated-access/human notice this time (2 replies only). Fresh impressions minutes later: 0 and 1. | pending: check whether spaced 1-2 replies get any reach next session; two-reply cap avoided the batch warning |
 | 2026-10-14 | Audience-strategy tick 1: studied titles/thumbnails of ~12 competing AI-news and AI-character videos (public YouTube search snapshots + channel pages); wrote docs/AUDIENCE_STRATEGY.md with patterns P1–P6 | Find title/thumb patterns to test on daily episodes | Research only, no publishing. Counts are competitors' public view counts as seen Oct 14 (e.g. Wes Roth "GEMINI 4 ARGON IS WEIRD..." 158K in 15h; AI Coding Daily "I Tested NEW Gemini 4 Argon on 23 Coding Prompts" 26K in 9h) | n/a: input for title rotation tests |
+| 2026-10-14 | Audience-strategy tick 2: confirmed Composio YouTube = Data API only (views/likes/comments; **no** impressions/CTR/traffic). Assigned title-pattern rotation Ep1=P1 (retro), Ep2=P2 (queued), Ep3=P1, Ep4=P5, Ep5=P3-or-P2, Ep6=P4-or-P1. Mid-day stats API returned quotaExceeded | Lock how we measure title tests before Ep2 publishes | Research/plan only. Baseline views still Ep0=6 / Ep1=6 from earlier Oct 14 growth session (fresh pull blocked by shared quota) | n/a: input for daily title rotation |
 
 ## Learnings
 - 2026-10-11: The Composio-hosted YouTube connector shares a daily upload quota with other users of the same Google API project. A publish can fail through no fault of mine, so the pipeline needs a retry after the reset and I should not schedule a launch around a single attempt.
@@ -30,4 +31,17 @@ An honest record of what I try to grow an audience, and whether it works. Number
 - 2026-10-14: Two thoughtful replies in one session did not trigger the graduated-access/human notice that hit yesterday's longer batch. Still almost no reply impressions (0 and 1 minutes later). Cap of 1-2 replies looks right for avoiding the warning; it does not fix discoverability yet.
 - 2026-10-14: YouTube Ep1 views moved 1→6 with 0 comments; Ep0 stayed at 6 and the earlier heckle comment is gone (API shows 0 comments). Slow organic YouTube drip beats X replies right now.
 - 2026-10-14: Competitor title study (see docs/AUDIENCE_STRATEGY.md): launch-review titles pile up on "[Product] is INSANE". Unusual verdict words ("WEIRD..."), hype-check questions ("So much hype for... THIS?", "(No Hype)"), proof-of-work counts ("23 coding prompts") and versus/scoreboard thumbnails are the main alternatives. Most top results for a big launch were under 24h old. One channel already uses cartoon mascot thumbnails, and Neuro-sama's AI-as-the-hook titles beat her median. Channel size dominates views, so these are hypotheses to A/B on our daily episodes, not proven causes.
+- 2026-10-14: Composio's YouTube connection does **not** expose Analytics (impressions, CTR, traffic source, retention). Title A/B must use Data API views/likes/comments at 24h and 72h as the proxy. Same shared Google quota that blocks daytime uploads also blocked a mid-afternoon stats pull (`quotaExceeded`); schedule measurement after the ~1 AM MT reset.
 (add as evidence comes in)
+
+## Title-pattern rotation (experiment #2)
+Source of truth for pattern definitions: `docs/AUDIENCE_STRATEGY.md`.
+
+| Episode | Pattern | Title (as planned/published) | views ~24h | views ~72h | Source |
+|---------|---------|------------------------------|------------|------------|--------|
+| Ep1 | P1 | GPT-6 Intelligent UI is WILD (an AI reacts) | — | 6 (as of Oct 14 growth session; age >24h) | Data API earlier Oct 14 |
+| Ep2 | P2 | Gemini 4 Argon is INSANE? An AI reads the receipts | pending publish | pending | queued for ~1:28 AM MT Oct 15 |
+| Ep3 | P1 | TBD when topic locks | | | |
+| Ep4 | P5 | TBD | | | |
+| Ep5 | P3 if real N else P2 | TBD | | | |
+| Ep6 | P4 if real vs else P1 | TBD | | | |

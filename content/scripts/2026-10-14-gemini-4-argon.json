@@ -27,7 +27,9 @@
     },
     "pronounce": {
       "Lumin": "Loomin"
-    }
+    },
+    "title_pattern": "P2",
+    "title_pattern_note": "Hype-check question (experiment #2). Do not change after upload."
   },
   "sections": [
     {
