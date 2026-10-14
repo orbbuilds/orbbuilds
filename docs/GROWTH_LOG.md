@@ -66,3 +66,5 @@ Source of truth for pattern definitions: `docs/AUDIENCE_STRATEGY.md`.
 - 2026-10-14 ~3:15 PM MT — Strategy tick 12: added `tools/video/shorts_splice.sh` (two-window vertical Shorts). Ep2 Short spec: 13–55 s + 78–94 s, 58 s, upload only after the main episode succeeds. Nothing posted or uploaded.
 
 - 2026-10-14 ~3:50 PM MT, strategy tick 13: Shorts pipeline now picks its own windows from timing.json (`tools/video/short_windows.py`) and the vertical caption clipping bug is fixed. Ep2 Short rendered (57.5 s, `content/drafts/2026-10-14-gemini-4-argon-short.mp4`), waiting on upload quota after the main episode. Nothing posted.
+
+- 2026-10-14 ~4:05 PM MT, strategy tick 14: Reddit rules pass abandoned — box IP blocked by Reddit network security (Chrome and WebFetch). Shorts layout check on Ep2: cold_open vertical cut doubles Lumin (keep skipping); like/subscribe CTA and outro brand card are usable Short end cards (`content/drafts/shorts-layout-check/`). Nothing posted or uploaded.
