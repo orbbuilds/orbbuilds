@@ -3,6 +3,7 @@
 #   post_render.sh content/scripts/<script>.json <episode.mp4> [outdir]
 # - Thumbnail: if meta.thumbnail = {product, line1, line2?, hl?, tag?} exists, renders <name>-thumb.jpg (P6 grammar).
 # - Short: picks fact+verdict windows from timing.json and splices <name>-short.mp4 (vertical, <=58 s). Skip with NO_SHORT=1.
+#   Appends the like/subscribe line (button-click animation) as an end card when it costs <=1 fact line; NO_SHORT_CTA=1 turns that off.
 # Failures here only warn; they never block the main episode.
 set -u
 SCRIPT="$(realpath "$1")"; EP="$(realpath "$2")"; NAME="$(basename "$SCRIPT" .json)"
@@ -27,7 +28,8 @@ else
   echo "WARN: no meta.thumbnail (or placeholders left); thumbnail skipped" >&2
 fi
 if [ -z "${NO_SHORT:-}" ]; then
-  WIN=$(python3 short_windows.py "$WORK/timing.json") || WIN=""
+  CTA_FLAG="--cta"; [ -n "${NO_SHORT_CTA:-}" ] && CTA_FLAG=""
+  WIN=$(python3 short_windows.py "$WORK/timing.json" $CTA_FLAG) || WIN=""
   if [ -n "$WIN" ]; then
     bash shorts_splice.sh "$EP" "$OUTDIR/${NAME}-short.mp4" $WIN \
       && echo "short: $OUTDIR/${NAME}-short.mp4 ($WIN)" || echo "WARN: short failed" >&2
