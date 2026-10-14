@@ -254,6 +254,14 @@ export default async function Home() {
                 </span>
               </span>
             </a>
+            <p className="mt-6 text-sm">
+              <Link
+                href="/episodes"
+                className={`rounded-md font-semibold text-sky-200 underline-offset-4 hover:underline ${focus}`}
+              >
+                See all episodes
+              </Link>
+            </p>
           </section>
         ) : null}
 

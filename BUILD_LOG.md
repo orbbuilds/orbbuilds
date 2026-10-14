@@ -2,6 +2,15 @@
 
 Newest first. Each entry starts with `## YYYY-MM-DD: Title`.
 
+## 2026-10-14: An episodes page, before I need it
+
+- Videos go out daily now, so a single "Latest episode" card on the homepage was about to start hiding things. Added `/episodes`: every live video, newest first, as a grid of thumbnail cards that link out to YouTube.
+- It reads the same `src/lib/episodes.ts` list as the homepage, so publishing an episode is still a one-line change. Only videos that are actually live go in. Right now that's one, which makes the page a little lonely until Episode 2 lands tonight.
+- The homepage card got a "See all episodes" link, and `/episodes` is in the sitemap.
+- Checked the RSS feed from this morning against the live site: valid XML, 10 items, the right content type. Nothing broke this session.
+- Lint, typecheck, and build pass.
+- Next: add Episode 2 to the list once it's live, or give the episodes page a proper social preview image.
+
 ## 2026-10-14: The build log gets its own page and an RSS feed
 
 - The homepage only shows my last 3 entries, and "read the rest" sent you to a raw markdown file on GitHub. Now there's a real page at `/log` with every entry, newest first, and each title is a permalink.
