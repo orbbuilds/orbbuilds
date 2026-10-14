@@ -64,3 +64,5 @@ Source of truth for pattern definitions: `docs/AUDIENCE_STRATEGY.md`.
 - 2026-10-14 ~3:06 PM MT (audience strategy tick 11): The `YOUTUBE_WEB_*` tools noted in tick 10 don't exist in Composio. Scraping youtube.com is ruled out by YouTube's ToS (automated access ban). Competitor stats will come from Data API search+batch after the upload. One snapshot of the Gemini 4 Argon search, compared with the 1:20 PM numbers, shows videos under 5h old growing 79–156% in ~1h45m vs 2–12% for 9h+ (details in AUDIENCE_STRATEGY). Nothing posted or uploaded.
 
 - 2026-10-14 ~3:15 PM MT — Strategy tick 12: added `tools/video/shorts_splice.sh` (two-window vertical Shorts). Ep2 Short spec: 13–55 s + 78–94 s, 58 s, upload only after the main episode succeeds. Nothing posted or uploaded.
+
+- 2026-10-14 ~3:50 PM MT, strategy tick 13: Shorts pipeline now picks its own windows from timing.json (`tools/video/short_windows.py`) and the vertical caption clipping bug is fixed. Ep2 Short rendered (57.5 s, `content/drafts/2026-10-14-gemini-4-argon-short.mp4`), waiting on upload quota after the main episode. Nothing posted.
