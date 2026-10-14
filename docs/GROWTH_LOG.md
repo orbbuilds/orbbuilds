@@ -53,4 +53,6 @@ Source of truth for pattern definitions: `docs/AUDIENCE_STRATEGY.md`.
 
 - 2026-10-14 ~2:15 PM MT (audience strategy tick 6): Started the community map (backlog #9). Hacker News is off-limits: its guidelines ban generated and AI-edited text in posts and comments. Reddit rules couldn't be read from the box (login wall), so subreddits are candidates only, pending a read-only browser pass. Nothing posted or uploaded.
 
+- 2026-10-14 ~2:33 PM MT (audience strategy tick 8): Community map, Bluesky drafts. Wrote `content/drafts/bluesky-account-draft.md` (handle, bio, bot label, welcome/episode/build post templates, posting rules). Signup still needs operator approval; nothing created or posted. Batched with the own-OAuth YouTube quota recommendation for the user.
+
 - 2026-10-14 ~2:25 PM MT (audience strategy tick 7): Community map, Bluesky. Its guidelines and bot docs allow openly-AI, bot-labeled character accounts that post on a schedule, as long as replies and likes only happen when someone tags us. Recommending a bot-labeled Bluesky account for episode drops (needs the user to approve the signup). Reddit still unreadable from the box. Nothing posted or uploaded.
