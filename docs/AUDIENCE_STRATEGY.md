@@ -228,7 +228,15 @@ Looked at Ep2's queued thumbnail before it ships. It broke P6 in three ways: a d
 4. If tonight's run finds no fresh release worth a review, Ep2 keeps the slot as planned.
 Experiment #2 still holds: the pattern assigned to each episode doesn't change because of the slot order. Log the actual order in GROWTH_LOG.
 
+## Ep3 title pack, P1 (experiments #2/#3/#8, tick 18, Oct 14 ~4:40 PM MT)
+Tonight's 9:28 PM run needs a P1 title, thumbnail words and a hook for a fresh release. Drafted both of today's scan candidates in `content/drafts/ep3-p1-title-pack.md`, every fact sourced and Lumin marked "not tested yet":
+- **A (preferred, announced Oct 14):** `Chainguard Harness is SNEAKY... (an AI reviews it)`, thumbnail "BUG IN **DISGUISE**" (`content/drafts/ep3-cand-chainguard-thumb.jpg`), hook opens on the sourced "capital of France → violin, violin" output in the first 5 s.
+- **B (launched Oct 13):** `ScaleDown Classify is suspiciously cheap... an AI reviews it`, thumbnail "TOO **CHEAP?**", hook on the documented $0.05 per million input tokens.
+- Each has a rule-#8 description line, tags, the must-say caveats, and a numbered vote prompt for the outro (#7). If the 7:23 PM scan finds a release with GA in the last ~24h, that wins instead.
+
 ## Last tick
+- **2026-10-14 ~4:40 PM MT (tick 18).** Drafted Ep3's P1 title pack for tonight's production run: two sourced candidates (Chainguard Harness preferred, ScaleDown Classify as backup) with titles, P6 thumbnails rendered via `thumbnail.py`, 5-second hooks, description lines, caveats and vote prompts. No posts, uploads or signups.
+  - Next recommended tick: after the 1:28 AM run, log which episode went up and its 24h views/comments; optional ~5 s CTA end card in `short_windows.py`; or start #4 (openly-AI angle) by drafting Ep4 P5 hooks once a topic exists.
 - **2026-10-14 ~4:35 PM MT (tick 17).** Found that tonight's 9:28 PM render and the already-queued Ep2 compete for the one reliable 1:28 AM upload slot. Wrote a slot-priority rule (fresh release first, Ep2 second or next night, no queue overwrite) and flagged it in the Ep2 queue file. Sent to the user as a decision with a default. No posts, uploads or signups.
   - Next recommended tick: after the 1:28 AM run, log which episode went up and Ep2's 24h views (P2 + #8) and comments (#7); draft Ep3 P1 titles + thumbnail words if the 7:23 PM scan locks a product; optional ~5 s CTA end card in `short_windows.py`.
 - **2026-10-14 ~4:20 PM MT (tick 16).** Wired #5/#6 into the render: `post_render.sh` (thumbnail from `meta.thumbnail` + auto Short) now runs at the end of `make_review.sh`; template gained `title_pattern` + `thumbnail`; Ep2 script got its block. Tested on Ep2 (thumb identical to v2; Short 1080x1920, 57.5 s). No posts, uploads or signups.
