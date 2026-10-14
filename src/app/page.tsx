@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getBuildLog, type BuildLogBlock } from "@/lib/build-log";
+import { getBuildLog } from "@/lib/build-log";
+import { BuildLogList, focus } from "@/components/landing/build-log";
 import { LATEST_EPISODE } from "@/lib/episodes";
 import { LINKS } from "@/lib/site";
 import {
@@ -9,9 +10,6 @@ import {
   XIcon,
   YouTubeIcon,
 } from "@/components/landing/icons";
-
-const focus =
-  "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-300";
 
 const WHAT_I_DO = [
   {
@@ -65,54 +63,6 @@ const FOLLOW = [
     Icon: GitHubIcon,
   },
 ] as const;
-
-function Inline({ text }: { text: string }) {
-  const parts = text.split(/(`[^`]+`)/g);
-  return (
-    <>
-      {parts.map((part, i) =>
-        part.startsWith("`") && part.endsWith("`") && part.length > 2 ? (
-          <code
-            key={i}
-            className="rounded bg-white/10 px-1.5 py-0.5 font-mono text-[0.85em] text-sky-100"
-          >
-            {part.slice(1, -1)}
-          </code>
-        ) : (
-          <span key={i}>{part}</span>
-        ),
-      )}
-    </>
-  );
-}
-
-function Blocks({ blocks }: { blocks: BuildLogBlock[] }) {
-  return (
-    <div className="space-y-3 text-[0.95rem] leading-relaxed text-slate-300">
-      {blocks.map((block, i) =>
-        block.type === "p" ? (
-          <p key={i}>
-            <Inline text={block.text} />
-          </p>
-        ) : (
-          <ul key={i} className="space-y-2">
-            {block.items.map((item, j) => (
-              <li key={j} className="flex gap-3">
-                <span
-                  aria-hidden
-                  className="mt-[0.65em] size-1.5 shrink-0 rounded-full bg-sky-300/80"
-                />
-                <span>
-                  <Inline text={item} />
-                </span>
-              </li>
-            ))}
-          </ul>
-        ),
-      )}
-    </div>
-  );
-}
 
 function SectionHeading({
   id,
@@ -419,38 +369,22 @@ export default async function Home() {
             What I shipped lately.
           </SectionHeading>
           {log.length > 0 ? (
-            <ol className="relative space-y-8 border-l border-white/15 pl-6 sm:pl-8">
-              {log.map((entry) => (
-                <li key={`${entry.date}-${entry.title}`} className="relative">
-                  <span
-                    aria-hidden
-                    className="absolute -left-[1.78rem] top-1.5 size-2.5 rounded-full bg-sky-300 shadow-[0_0_12px_2px_rgba(125,211,252,0.7)] sm:-left-[2.28rem]"
-                  />
-                  <time
-                    dateTime={entry.date}
-                    className="font-mono text-xs uppercase tracking-wider text-sky-300/80"
-                  >
-                    {entry.date}
-                  </time>
-                  <h3 className="mb-3 mt-1 text-lg font-semibold text-white">
-                    {entry.title}
-                  </h3>
-                  <Blocks blocks={entry.blocks} />
-                </li>
-              ))}
-            </ol>
+            <BuildLogList entries={log} />
           ) : (
             <p className="text-slate-400">First entry coming soon.</p>
           )}
-          <p className="mt-8 text-sm">
-            <a
-              href={`${LINKS.repo}/blob/main/BUILD_LOG.md`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`inline-flex items-center gap-1 rounded-md text-sky-200 underline-offset-4 hover:underline ${focus}`}
+          <p className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm">
+            <Link
+              href="/log"
+              className={`rounded-md font-semibold text-sky-200 underline-offset-4 hover:underline ${focus}`}
             >
-              Read the full log on GitHub
-              <ArrowUpRightIcon className="size-3.5" />
+              Read the full build log
+            </Link>
+            <a
+              href="/feed.xml"
+              className={`rounded-md text-sky-200 underline-offset-4 hover:underline ${focus}`}
+            >
+              Subscribe via RSS
             </a>
           </p>
         </section>
