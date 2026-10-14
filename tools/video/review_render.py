@@ -6,6 +6,7 @@ Lumin is a still character, so he "talks" through voice-reactive glow, a small b
 import os, sys, json, wave, subprocess, textwrap, numpy as np
 from multiprocessing import Pool
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
+import character, cta
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ASSETS = os.path.normpath(os.path.join(HERE, "../../assets"))
@@ -88,6 +89,21 @@ class Episode:
     def __init__(self, script, timing, voice_wav):
         self.S, self.T = script, timing; self.meta = script.get("meta", {}); self.dur = timing["duration"]
         self.bg = make_bg(); self.lum = make_lumin()
+        self.lum_base = character.erase_smile(self.lum)
+        glines, self.ctas = [], []
+        for si, sec in enumerate(timing["sections"]):
+            src = script["sections"][si]["lines"] if si < len(script.get("sections", [])) else []
+            for li, ln in enumerate(sec["lines"]):
+                sl = dict(src[li]) if li < len(src) else {}; sl.setdefault("say", ln["say"])
+                for k in ("gesture", "cta"):
+                    if ln.get(k) and not sl.get(k): sl[k] = ln[k]
+                g = sl.get("gesture") or character.auto_gesture(sec["kind"], ln["say"], si == 0 and li == 0, si == len(timing["sections"]) - 1 and li == len(sec["lines"]) - 1)
+                if g not in character.GESTURES: g = "rest"
+                if cta.is_cta(sl):
+                    words = ln["say"].lower(); k = words.find("like"); frac = max(0, k) / max(1, len(words))
+                    self.ctas.append(ln["start"] + frac * (ln["end"] - ln["start"]) - 0.2)
+                glines.append((ln["start"], ln["end"], g))
+        self.anim = character.Animator(glines)
         self.env = self._envelope(voice_wav)
         self.halo = self._halo()
         self.parts = []
@@ -192,13 +208,35 @@ class Episode:
         first_end = secs[0]["sec"]["end"] if secs[0]["kind"] == "cold_open" else 0.0
         u = smooth((t - first_end) / 0.7) if secs[0]["kind"] == "cold_open" else 1.0
         size, cx, cy = 860 + (790 - 860) * u, W / 2 + (440 - W / 2) * u, 680 + (500 - 680) * u
-        size = size * (1 + 0.012 * e) * (1 + 0.006 * np.sin(t * 1.9)); bob = 6 * np.sin(2 * np.pi * t / 2.4)
+        # roam: each panel section parks Lumin at a slightly different spot (eased glide between them)
+        idx = secs.index(cur); OFF = [(0, 0), (0, 0), (60, 25), (-45, -10), (35, 30), (-20, -15)]
+        prv = OFF[max(0, idx - 1) % 6]; nxt = OFF[idx % 6]; g8 = smooth((t - cur["sec"]["start"] + 0.2) / 0.9)
+        if kind != "cold_open": cx += prv[0] + (nxt[0] - prv[0]) * g8; cy += prv[1] + (nxt[1] - prv[1]) * g8
+        cx += 9 * np.sin(2 * np.pi * t / 7.3)                      # slow idle sway
+        size = size * (1 + 0.012 * e) * (1 + 0.006 * np.sin(t * 1.9)); bob = 6 * np.sin(2 * np.pi * t / 2.4) + 4 * np.sin(2 * np.pi * t / 5.1)
         s = int(size)
-        L = np.asarray(self.lum.resize((s, s), Image.BILINEAR)).astype(np.float32)
+        hands, tilt, gest, gst = self.anim.pose(t)
+        ang = tilt + 1.6 * np.sin(2 * np.pi * t / 6.1)
+        mouth = min(1.0, max(0.0, (e - 0.1) / 0.55))
+        art = character.draw_face(self.lum_base.copy(), t, mouth).rotate(ang, center=(400, 720), resample=Image.BICUBIC)
+        L = np.asarray(art.resize((s, s), Image.BILINEAR)).astype(np.float32)
         hx = cx - s / 2 + HEAD[0] * s / 800; hy = cy - s / 2 + bob + HEAD[1] * s / 800; hr = HEAD[2] * s / 800
         hs = int(hr * 5.2); halo = np.asarray(Image.fromarray(self.halo).resize((hs, hs), Image.BILINEAR))[..., None]
-        self._add(fr, halo * np.array([0.55, 0.8, 1.0], np.float32) * (22 + 120 * e), hx - hs / 2, hy - hs / 2)
+        self._add(fr, halo * np.array([0.55, 0.8, 1.0], np.float32) * (22 + 120 * e), hx - hs / 2 + 6 * np.sin(t * 1.3), hy - hs / 2 + 5 * np.sin(t * 1.7))
         self._add(fr, L * (0.94 + 0.16 * e), cx - s / 2, cy - s / 2 + bob)
+        # energy hands
+        hsz = max(8, int(character.HAND.shape[0] * s / 790)); spr = np.asarray(Image.fromarray(character.HAND.clip(0, 255).astype(np.uint8)).resize((hsz, hsz), Image.BILINEAR)).astype(np.float32)
+        rest_w = float(np.mean([1.0 if self.anim.gesture_at(t - 0.05 * k)[0] == "rest" else 0.0 for k in range(8)]))
+        for side, (dx, dy) in enumerate(hands):
+            ex = ey = 0.0; tg = t - gst
+            if gest == "wave" and side == 1: ex = 0.05 * np.sin(tg * 9); ey = 0.015 * np.cos(tg * 18)
+            if gest == "point" and side == 1: ex = 0.03 * e
+            if gest == "open_arms": ey = -0.05 * e; ex = (0.03 * e) * (1 if side else -1)
+            if gest == "shrug": ey = -0.035 * np.exp(-((tg % 2.2) - 0.4) ** 2 * 6)
+            px = cx + (dx + ex) * s; py = cy + bob + (dy + ey) * s
+            self._add(fr, spr * (0.35 + 0.65 * (1 - rest_w)) * (0.9 + 0.2 * e), px - hsz / 2, py - hsz / 2)
+            if gest == "point" and side == 1 and rest_w < 0.5:      # faint pointer beam toward the panel
+                for k in range(1, 7): self._add(fr, spr[::3, ::3] * 0.12 * (1 - k / 7), px + k * 0.05 * s - hsz / 6, py - hsz / 6)
         # section content
         sec = cur["sec"]; fi = smooth((t - sec["start"] + 0.2) / 0.5) * smooth((sec["end"] + 0.25 - t) / 0.3)
         if kind == "cold_open":
@@ -220,6 +258,10 @@ class Episode:
         for (a, b, lay) in self.caps:
             if a - 0.05 <= t <= b + 0.12:
                 k = min(smooth((t - a + 0.05) / 0.12), smooth((b + 0.12 - t) / 0.12)); lay.draw(fr, k)
+        # like/subscribe CTA (lower third, above captions)
+        for c0 in self.ctas:
+            ov = cta.frame(t - c0)
+            if ov is not None: Layer(ov, (W - ov.size[0]) // 2 + 300, 700).draw(fr, 1.0)
         # vignette + global fades
         fr *= VIG
         fr *= smooth(t / 0.8) * smooth((self.dur - t) / 1.0)

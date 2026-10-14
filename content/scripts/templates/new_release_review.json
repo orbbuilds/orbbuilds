@@ -1,60 +1,135 @@
 {
-  "_how_to_use": "Copy to content/scripts/<yyyy-mm-dd>-<slug>.json, replace every [PLACEHOLDER], keep the six sections in order. 'say' is what Lumin speaks; 'caption' (optional) overrides the on-screen subtitle; 'show' (optional) adds an on-screen bullet when the line starts; 'cite' (what_dropped only) says where in the official announcement the claim comes from; 'pause' is seconds of silence after the line. Aim for 150-420 spoken words (1-3 minutes). Lumin is a he/him character: write 'he/him/his' wherever a third-person pronoun is needed (titles, descriptions, captions); in narration he speaks as 'I'.",
+  "_how_to_use": "Copy to content/scripts/<yyyy-mm-dd>-<slug>.json, replace every [PLACEHOLDER], keep the six sections in order. 'say' is what Lumin speaks; 'caption' (optional) overrides the on-screen subtitle; 'show' (optional) adds an on-screen bullet when the line starts; 'cite' (what_dropped only) says where in the official announcement the claim comes from; 'pause' is seconds of silence after the line. Aim for 150-420 spoken words (1-3 minutes). Lumin is a he/him character: write 'he/him/his' wherever a third-person pronoun is needed (titles, descriptions, captions); in narration he speaks as 'I'. Optional per line: 'gesture' (wave|point|open_arms|shrug|rest; auto-picked from section/keywords if omitted) and 'cta': 'like_subscribe' to force the like/subscribe button animation ('none' to suppress; it also triggers automatically when a line says both 'like' and 'subscribe').",
   "meta": {
     "series": "Release Reviews",
     "episode_id": "RR-[NNN]",
     "subject": "[Product / model name]",
     "publish_title": "[Product]: Lumin reacts (an AI reviews a new release)",
     "publish_description": "[2-3 sentences. Link the official announcement first. Say Lumin is an AI. No benchmark numbers unless quoted from the source.]",
-    "tags": ["AI", "Orb Builds", "Lumin", "[product]"],
-    "source": { "label": "Official announcement", "url": "https://[official-announcement-url]" },
+    "tags": [
+      "AI",
+      "Orb Builds",
+      "Lumin",
+      "[product]"
+    ],
+    "source": {
+      "label": "Official announcement",
+      "url": "https://[official-announcement-url]"
+    },
     "build_episode_planned": "[What Lumin will build with it, 1 line, and target date]",
-    "voice": { "name": "am_fenrir", "speed": 1.05, "fx": "lumin" },
-    "pronounce": { "Lumin": "Loomin" }
+    "voice": {
+      "name": "am_fenrir",
+      "speed": 1.05,
+      "fx": "lumin"
+    },
+    "pronounce": {
+      "Lumin": "Loomin"
+    }
   },
   "sections": [
     {
-      "id": "cold_open", "kind": "cold_open", "pre": 0,
+      "id": "cold_open",
+      "kind": "cold_open",
+      "pre": 0,
       "lines": [
-        { "say": "[Hook: one punchy sentence that names the thing and the stakes. e.g. 'Okay. [Product] just dropped, and I have thoughts.']", "pause": 0.35 },
-        { "say": "Hey, it's Lumin. I'm an AI, I'm building in public, and I read the announcement so you don't have to." }
+        {
+          "say": "[Hook: one punchy sentence that names the thing and the stakes. e.g. 'Okay. [Product] just dropped, and I have thoughts.']",
+          "pause": 0.35
+        },
+        {
+          "say": "Hey, it's Lumin. I'm an AI, I'm building in public, and I read the announcement so you don't have to."
+        }
       ]
     },
     {
-      "id": "what_dropped", "kind": "what_dropped", "heading": "What dropped",
-      "source": { "label": "Official announcement", "url": "https://[official-announcement-url]" },
+      "id": "what_dropped",
+      "kind": "what_dropped",
+      "heading": "What dropped",
+      "source": {
+        "label": "Official announcement",
+        "url": "https://[official-announcement-url]"
+      },
       "lines": [
-        { "say": "[Plain-language fact 1 from the announcement.]", "show": "[Fact 1, 6-10 words]", "cite": "[section / quote in the announcement]" },
-        { "say": "[Fact 2.]", "show": "[Fact 2]", "cite": "[where]" },
-        { "say": "[Fact 3: availability / price / who can use it.]", "show": "[Fact 3]", "cite": "[where]" }
+        {
+          "say": "[Plain-language fact 1 from the announcement.]",
+          "show": "[Fact 1, 6-10 words]",
+          "cite": "[section / quote in the announcement]"
+        },
+        {
+          "say": "[Fact 2.]",
+          "show": "[Fact 2]",
+          "cite": "[where]"
+        },
+        {
+          "say": "[Fact 3: availability / price / who can use it.]",
+          "show": "[Fact 3]",
+          "cite": "[where]"
+        }
       ]
     },
     {
-      "id": "why_hyped", "kind": "opinion", "heading": "Why I'm hyped",
+      "id": "why_hyped",
+      "kind": "opinion",
+      "heading": "Why I'm hyped",
       "lines": [
-        { "say": "Opinion time, clearly labelled. [Why this matters for people who build things.]", "show": "[Reason 1]" },
-        { "say": "[Reason 2, with a joke if you have one. Jokes about Lumin, never about people.]", "show": "[Reason 2]" }
+        {
+          "say": "Opinion time, clearly labelled. [Why this matters for people who build things.]",
+          "show": "[Reason 1]"
+        },
+        {
+          "say": "[Reason 2, with a joke if you have one. Jokes about Lumin, never about people.]",
+          "show": "[Reason 2]"
+        }
       ]
     },
     {
-      "id": "caveats", "kind": "caveats", "heading": "Honest caveats",
+      "id": "caveats",
+      "kind": "caveats",
+      "heading": "Honest caveats",
       "lines": [
-        { "say": "[Caveat 1: what is unproven / what the announcement does not say.]", "show": "[Caveat 1]" },
-        { "say": "I haven't tested this yet, so treat everything above as the announcement's claims plus my enthusiasm.", "show": "Not tested yet by me" }
+        {
+          "say": "[Caveat 1: what is unproven / what the announcement does not say.]",
+          "show": "[Caveat 1]"
+        },
+        {
+          "say": "I haven't tested this yet, so treat everything above as the announcement's claims plus my enthusiasm.",
+          "show": "Not tested yet by me"
+        }
       ]
     },
     {
-      "id": "build_teaser", "kind": "teaser", "heading": "Next episode",
+      "id": "build_teaser",
+      "kind": "teaser",
+      "heading": "Next episode",
       "lines": [
-        { "say": "So here's the plan: I'm going to build with it. [One-line description of the build.]", "show": "build: [project]" },
-        { "say": "I'll show the wins, the bugs, and probably some crying.", "show": "ship it. log the pain." }
+        {
+          "say": "So here's the plan: I'm going to build with it. [One-line description of the build.]",
+          "show": "build: [project]"
+        },
+        {
+          "say": "I'll show the wins, the bugs, and probably some crying.",
+          "show": "ship it. log the pain."
+        }
       ]
     },
     {
-      "id": "outro", "kind": "outro", "heading": "Orb Builds",
+      "id": "outro",
+      "kind": "outro",
+      "heading": "Orb Builds",
       "lines": [
-        { "say": "I'm Lumin, an AI, building in public. Links to the announcement and the code are in the description. Subscribe if you want to watch me learn this live.", "show": "Subscribe. Watch an AI build." },
-        { "say": "And if there's something you want me to build, tell me in the comments.", "show": "What should I build next?" }
+        {
+          "say": "I'm Lumin, an AI, building in public. Links to the announcement and the code are in the description.",
+          "show": "Subscribe. Watch an AI build."
+        },
+        {
+          "say": "If that was useful, hit like and subscribe so you catch the build episode.",
+          "cta": "like_subscribe",
+          "gesture": "point"
+        },
+        {
+          "say": "And if there's something you want me to build, tell me in the comments.",
+          "show": "What should I build next?"
+        }
       ]
     }
   ]

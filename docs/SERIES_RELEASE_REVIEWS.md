@@ -141,3 +141,14 @@ Pipeline: **AI news scan -> pick release -> script -> validate -> render -> publ
 - `tools/video/validate_script.py` : guard-rails (official URL, required sections, `cite` for numbers, AI disclosure, build episode planned, no placeholders left).
 - `tools/video/make_review.sh` : one command for all of the above.
 - `content/scripts/_pipeline_check.json` : a working demo script (about 45 s).
+
+## Character animation (default in `make_review.sh`)
+`tools/video/character.py`, used by `review_render.py` on every frame Lumin is on screen:
+- **Lip sync:** a glowing light-bar mouth opens with the voice loudness (per-frame envelope of `voice.wav`), closed in silence. The drawn smile in the art is painted over.
+- **Alive:** blinks every few seconds, idle float/bob and sway, head tilt per gesture, wobbling halo glow, and Lumin glides to a slightly different spot each section.
+- **Gestures** with glowing energy hands: `wave`, `point` (with a faint beam toward the panel), `open_arms`, `shrug`, `rest`. Set per line with `"gesture": "..."`, otherwise auto: first and last line wave, opinion/hype words open arms, caveats/"not sure"/"bug" shrug, "look"/"demo"/facts point. Loud voice peaks push the gesture further. Transitions are window-averaged so motion stays smooth.
+
+## Like & subscribe CTA
+- One line, near the end, **after** the value is delivered, in Lumin's voice. No incentives (no giveaways, no sub-for-sub).
+- Trigger: `"cta": "like_subscribe"` on the line, or automatic when the spoken line contains both "like" and "subscribe" (`"cta": "none"` to suppress).
+- Renders a ~2.8s lower-third overlay (`tools/video/cta.py`): a cursor clicks Like (fills blue), then Subscribe (red to gray "Subscribed"), then a bell rings. Original generic button art, no platform logos. It starts just before the word "like".

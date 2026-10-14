@@ -125,7 +125,7 @@ def build(script_path, outdir, align=True):
             cap = ln.get("caption") or ln["say"]
             chunks = chunk_caption(cap)
             ct = chunk_times(chunks, dur, ln["say"], wt)
-            sdict["lines"].append({"say": ln["say"], "show": ln.get("show"), "cite": ln.get("cite"), "start": t, "end": t + dur,
+            sdict["lines"].append({"say": ln["say"], "show": ln.get("show"), "cite": ln.get("cite"), "gesture": ln.get("gesture"), "cta": ln.get("cta"), "start": t, "end": t + dur,
                                    "captions": [{"text": c, "start": t + a, "end": t + b} for c, (a, b) in zip(chunks, ct)]})
             pieces.append((t, x)); t += dur + ln.get("pause", 0.28)
         sdict["end"] = t; sections.append(sdict)
