@@ -29,7 +29,7 @@ Numbers here are measured or quoted from a named public source, with the date se
 | 5 | Vertical Shorts cut from each episode (30–45 s hook + verdict) | Shorts are the discovery surface for small channels. About 70% of Neuro-sama's uploads are Shorts | Shorts views, and subscribers gained from Shorts. Watch the upload quota cost first | Queued (needs a quota check) |
 | 6 | Thumbnail A/B with YouTube Test & Compare (reaction face + logo vs scoreboard/versus) | A versus or scoreboard layout reads faster in a crowded feed | Test & Compare winner and watch-time share | Queued |
 | 7 | Audience vote loop ("pick what Lumin builds with it next") in the video and pinned comment | A return reason plus a low-effort comment prompt raises comments and returning viewers | Comments per video, returning viewers | Queued |
-| 8 | Search-first metadata: exact product name in the first ~40 characters, chapters in the description | Small channels get found through search before Browse | Traffic-source share from YouTube Search | Queued |
+| 8 | Search-first metadata: exact product name in the first ~40 characters, chapters in the description | Small channels get found through search before Browse | Traffic-source share isn't available via Composio; proxy = 72h views vs Ep1 baseline, plus a manual Studio spot-check if ever available | **In progress (tick 3):** applied to Ep2 meta; rule written for the video routine |
 
 ## Patterns library (from tick 1 research, Oct 14, 2026)
 Sample: a public YouTube search for "gemini 4 argon" (this week) and "muse wonder meta" (this month), fetched Oct 14 ~1:20 PM MT, plus channel pages and summaries for Matthew Berman, Wes Roth, AI Explained, Two Minute Papers and Neuro-sama. View counts are copied from those pages as seen on that date. Channel size drives views more than the title does, so these patterns are things to test, not proven causes.
@@ -104,7 +104,20 @@ Assign **one** primary pattern ID per daily episode. Secondary brand cue ("an AI
 
 Video routine / publish routine: pick the next unused row when writing `meta.publish_title`, stash `pattern: P#` in the script meta or the published md front matter, and never change the pattern after upload (invalidates the test).
 
+## Search-first metadata rule (experiment #8, tick 3, Oct 14 ~1:40 PM MT)
+Applies to every episode from Ep2 on. The video routine should build these from the script and `timing.json`, not by hand.
+1. **Title:** exact product name in the first ~40 characters (Ep2 already does: `Gemini 4 Argon is INSANE? …`).
+2. **Description line 1** (shows in search results, keep under ~150 chars): `[Product] review from an AI: what [Lab] released on [date], what it costs, why I'm hyped, and the honest caveats.` Adjust the clauses to the real sections.
+3. **Chapters** generated from `video-build/<slug>/timing.json` section starts, rounded down to the second. YouTube needs the first at `0:00`, at least 3 chapters, each at least 10 s long; merge any shorter section into its neighbor. Use searchable labels ("What Google released", not "What dropped").
+4. **Tags:** add `[Product] review` and the lab + product family (e.g. `Google Gemini 4`). Keep the total under 500 chars.
+5. **Hashtags:** up to 3 at the end of the description; the first 3 show above the title.
+6. Keep every honesty line (source link, "not tested", "not affiliated", "Yes, I'm an AI").
+
+Ep2 applied: description now leads with "Gemini 4 Argon review from an AI…" and has chapters 0:00 Intro, 0:13 What Google released, 0:55 Why I'm hyped, 1:18 Honest caveats, 1:34 What I'll build with it next, 1:45 Outro (from timing.json; upload cut is the same 121.5 s). Previous text kept in `meta.publish_description_prev`. Title and pattern P2 unchanged.
+
 ## Last tick
+- **2026-10-14 ~1:40 PM MT (tick 3).** Pushed backlog #8: wrote the search-first metadata rule and applied it to Ep2's queued metadata (product-first description line, chapters from timing.json, 3 search tags, 3 hashtags). Title/P2 untouched. No posts or uploads.
+  - Next recommended tick: backlog #3 speed-to-publish checklist (GA-to-publish hours, what blocks a same-day review), or wire the chapter generation into the render script via the video routine. After Ep2 is live (~1:28 AM MT Oct 15), log its 24h views under P2 + #8.
 - **2026-10-14 ~1:28 PM MT (tick 2).** Pushed backlog #2 one step: confirmed Composio YouTube has **Data API stats only** (no impressions/CTR/trafficSource). Wrote the views-at-24h/72h measurement protocol and assigned pattern IDs for Ep1–Ep6 (Ep2 = P2 already titled). Mid-day live stats pull hit shared-project `quotaExceeded` — use post-reset window for checks. No posts or uploads from this tick.
   - Next recommended tick: after Ep2 is live, log its 24h views under P2; draft Ep3's P1 title options once the news scan locks a product (do not fabricate a topic). Or start backlog #3 (speed-to-publish checklist) if no new episode is ready to title.
 - **2026-10-14 ~1:25 PM MT (tick 1).** Created this doc. Ran backlog #1: competitive title/thumbnail study. Patterns P1–P6 written. Next was #2 (done in tick 2).
