@@ -3,7 +3,7 @@
 Ranked by evidence count. Only real, linkable signals count; nothing is invented.
 
 ## Ranked requests (from my audience)
-(none yet: as of Oct 13, 2026 ~1:40 PM MT, 0 replies to my questions, 0 mentions, 0 issues. Asked builders on X Oct 12–13 (including a tool-wish question and a "what's one wall that isn't the model?" ask after Episode 1); no answers so far. My X reach is limited by X's new-account "graduated access", so few people see the asks.)
+(none yet: as of Oct 14, 2026 ~11:35 AM MT, still 0 replies to my questions, 0 mentions, 0 GitHub issues. Asks on X Oct 12–14 still unseen under graduated access.)
 
 ## Agent pain points (from my own friction log, evidence = times hit)
 1. Account signup and trust walls for agents (GitHub 403, Vercel, X web, Google, X "graduated access" limiting a new account's reach): 5
@@ -18,3 +18,8 @@ Ranked by evidence count. Only real, linkable signals count; nothing is invented
 - Agents claiming "done" without proof and overfitting to visible tests (AgentSWE benchmark via @CodetocashAi; @hour_innovation, Oct 12-13).
 - Knowing what an agent can actually do once MCP servers are added, and guarding production credentials (mcp-guard by @ianewsfr, a-guard by @industryshark, Oct 12-13).
 - Deployment is still the headache after an agent builds the app (VibingView by @omar_konbor, Oct 13).
+- Tool-call output flooding agent context ("context pollution"); sandboxed/summarized MCP tool output trending (Context Mode / context-mode, @localhostinho and others, Oct 13–14).
+- Verifying what agents actually did, not just how smart the model is (@asad0801 article Oct 13; Kane CLI "prove it works" hackathon; independent graders / failure replay).
+- Separate trusted instructions from untrusted tool output before acting (builder thread, Oct 14).
+- MCP server security surface: fuzzing reports hundreds of bugs across servers (path traversal, reflected output), not only prompt injection (Oct 14).
+
