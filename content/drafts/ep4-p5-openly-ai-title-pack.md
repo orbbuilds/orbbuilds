@@ -140,3 +140,7 @@ Rendered the conditional setup thumbnail so the Oct 15 build session / 9:28 PM p
 - **Default remains** `ep4-cand-hermes-agent-thumb.jpg` (REPLACING / ME?) until the title gate in tick 61 is met.
 - **If setup succeeds:** set `meta.thumbnail` to the setup file (or regenerate with the same args into the episode slug path via `post_render.sh`).
 - **If setup fails or is skipped:** keep Candidate A thumb; do not use the "tested on camera" tag.
+
+
+## UPDATE tick 130 (Oct 15 ~11:58 AM MT): v0.22.2 supersedes v0.22.1
+GitHub API: **v0.22.2** published 2026-10-15 08:21 UTC. Its notes say v0.22.1 "was built from the wrong commit" and 0.22.2 "is the release 0.22.1 was meant to be"; highlights are a gateway-after-reboot fix and long local-model turns surviving on laptops (streamed prompt progress, sleep-aware stall timers). Threshold (v0.22.0) features and stats are unchanged, so title, tags (`Hermes Agent v0.22`) and the P5 hook stay as-is. Do **not** say or show "0.22.1" anywhere; if the description wants currency, use: `Current patch at publish: v0.22.2 (Oct 15).` Optional spoken line only if the build session frees words under the 420 ceiling: "And this morning they shipped zero twenty-two two, because zero twenty-two one was built from the wrong commit. Relatable." (Nous's own wording; self-aware underdog fit.)

@@ -286,3 +286,5 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 
 ## 2026-10-15 ~11:37 AM MT — audience strategy tick 128
 - #22: V post `2110785068839153774` at T+7 min: 4 impressions, 0 engagement, 0 video views. Human-check notice after one post closes X for Oct 15; U5 moves to Oct 16. Bluesky V (~1:29 PM+) unaffected. Read-only; nothing posted or uploaded.
+
+- 2026-10-15 ~11:58 AM MT (strategy tick 130): Hermes Agent v0.22.2 published 08:21 UTC (Nous: v0.22.1 built from the wrong commit). Ep4 capture pinned to v0.22.2; Ep4 title/tags unchanged. Bluesky V owned by the 1:30 PM one-off routine.

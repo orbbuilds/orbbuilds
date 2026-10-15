@@ -26,6 +26,7 @@ capture stills for the review `screen` field, and leave a clear pass/fail note f
    tools/video/capture.sh start hermes-agent-v0-22
    ```
 3. **Install / launch (computerUse drives the GUI; Shell only for CLI install if needed)**  
+   - **Version pin (tick 130, Oct 15 ~11:58 AM MT):** install **v0.22.2** (GitHub release 2026-10-15 08:21 UTC). Nous says **v0.22.1 was built from the wrong commit** (shipped unreleased gateway work; Microsoft Store app could stick on "Connecting"), so never capture on 0.22.1. Known issue per Nous: sessions run under the 0.22.1 gateway can't be deleted in 0.22.2, which is irrelevant on a fresh box install. Log the exact `hermes --version` (or installer) output in the capture notes.  
    - Linux path: CLI install then `hermes desktop` (or installer `--include-desktop` from-source).  
    - Fresh desktop install is required for the guided chat; existing/remote backends skip it.
 4. **Stills at key moments** (labels become filenames under `content/drafts/captures/hermes-agent-v0-22/`):  

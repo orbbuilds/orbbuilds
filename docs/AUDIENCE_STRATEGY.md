@@ -1031,7 +1031,17 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - WakeParent: ask parent to have the 1:23 PM run post Bluesky V from the handoff (time-sensitive; window closes 2 PM MT).
 - No posts, uploads, comments, channel edits or signups from this tick.
 
+## Hermes v0.22.2 landed overnight: capture must pin it (experiments #4/#20/#8, tick 130, Oct 15 ~11:58 AM MT)
+- Bluesky V ownership from tick 129 is resolved: the parent created a one-off routine "Bluesky Ultramarine clip (one-off Oct 15)" for ~1:30 PM MT. Nothing else needed from this routine; confirm the URL after it runs.
+- Pre-capture currency check (GitHub public API, ~11:57 AM MT): **v0.22.2** published 2026-10-15 08:21 UTC (2:21 AM MT). Nous's notes: "v0.22.1 was built from the wrong commit… 0.22.2 is the release 0.22.1 was meant to be"; highlights = gateway starts after reboot again + long local-model turns survive on laptops. Known issue: sessions from the 0.22.1 gateway can't be deleted in 0.22.2. Repo ~254K stars, last push 17:51 UTC. No v0.23 yet (Nous says main-only work ships there).
+- **Changes:** capture checklist now pins **v0.22.2** and logs the exact version (never capture on the mis-built 0.22.1). Title pack gained a tick-130 note: title/tags/P5 unchanged (Threshold features are the same), never say "0.22.1", optional description currency line, and an optional self-aware spoken line ("built from the wrong commit. Relatable.") only if the build session frees words under the 420 ceiling.
+- Why it matters: tonight's video would otherwise show or recommend a build its own maker calls wrong, which is exactly the kind of error a receipts-only review can't afford; it is also a free fresh hook ~2 days after GA.
+- Read-only (3 GitHub API calls). No uploads, posts, comments, channel edits or signups.
+
 ## Last tick
+- **2026-10-15 ~11:58 AM MT (tick 130).** #4/#20/#8: Hermes Agent **v0.22.2** shipped 2:21 AM MT (Nous: 0.22.1 was built from the wrong commit). Pinned the 3:23 PM capture to v0.22.2 and added a currency note to the Ep4 title pack (title/tags unchanged; never say 0.22.1). Bluesky V now owned by the parent's 1:30 PM one-off routine. No WakeParent (in-remit prep; no user decision). Read-only.
+  - Next recommended tick: after ~1:30 PM confirm the Bluesky V URL (or log the miss). ~3:30–5:30 PM X V ~4–6h read (impressions vs best U 26). 3:23 PM: Hermes capture on v0.22.2 + site hero (no X). 7:23 PM: Fable launch-signal once. After 9:28 PM: Ep4 `-xclip.mp4`. Oct 16 ~10 AM–noon: Ep1 Analytics. Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot without operator OK.
+
 - **2026-10-15 ~11:46 AM MT (tick 129).** #22: Bluesky V ownership gap. Wrote afternoon handoff for 1:23 PM (window 1:29–2:00 PM MT); X V still 4 impressions at T+17 min; WakeParent for the time-sensitive post. No posts/uploads from this routine.
   - Next recommended tick: confirm Bluesky V URL after ~1:29 PM (or log miss if window closed). ~3:30–5:30 PM X V ~4–6h read (impressions vs best U 26). 3:23 PM: Hermes capture + site hero (no X). 7:23 PM: Fable launch-signal once. After 9:28 PM: Ep4 `-xclip.mp4`. Oct 16 ~10 AM–noon: Ep1 Analytics. Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot without operator OK.
 
