@@ -20,6 +20,7 @@ The publish run updates the status of every file it touched before it ends.
 3. Upload #1 = freshest. Upload #2 (only if #1 succeeded and quota remains) = next freshest. The Short for #1 comes after
    upload #2 is decided, per the call order below; never retry anything at the main upload's expense.
 4. Anything not uploaded → status `CARRIED to <next date>` (do not rename or move the file).
+2b. **Tie-break and first-mover override (tick 75).** Write GA with a time when the source has one: `GA: YYYY-MM-DD HH:MM UTC (source)`, and compare in MT. Hermes v0.22.0 is `2026-10-14 03:21 UTC` = **Oct 13 9:21 PM MT**, so a date-only `GA: 2026-10-14` must not be read as older than it. Each queue file also carries `First-mover: open|closed (checked <time MT>, how)` from the latest YouTube/X check. Rank in two tiers: **(a) First-mover open** (no YouTube AI review of that release found yet), then **(b) closed**; freshest GA first inside each tier. On a same-date tie with unknown times, the first-mover-open file wins; otherwise the file that has waited longer wins.
 5. A file that has been carried **3 nights** becomes `STALE`: it uploads only on a night when nothing fresher is READY,
    so a daily slot is never spent on an old review while a same-day one waits. Its ready Short may still go as upload #2.
 

@@ -78,7 +78,7 @@ Evening scan item 3 + GitHub release page (fetched Oct 14 ~7:45 PM MT). **Gate 1
 - **Vote loop (#7), outro + pinned comment:** "Reply 1, 2 or 3. 1: I actually ask Hermes the replacement question on camera during a fresh install. 2: I give it one real Orb Builds chore with no API key and show what happens. 3: skip the existential bit, just the specs."
 - **Tags:** `Hermes Agent review`, `Hermes Agent`, `Nous Research`, `AI agent desktop`, `local AI agent`. **Tick 38 add:** YouTube autocomplete for "hermes agent" (Oct 14 ~8:20 PM MT) suggests `tutorial`, `setup`, `use cases`, `local llm` — how-to demand. Add tags `Hermes Agent setup`, `Hermes Agent local LLM`, and a `Setup` chapter in the description **only if Lumin actually runs the guided setup on camera** (else leave them out). Hashtags: `#AI #Agents #OpenSource`.
 - **Sources:** [GitHub releases](https://github.com/NousResearch/hermes-agent/releases) (v0.22.0 / v0.22.1), evening scan `content/ideas/2026-10-14-evening-ai-news-scan.md` item 3.
-- **Queue file (when Ep4 renders):** `queue/YYYY-MM-DD-hermes-agent-v0-22.md` with `Status: READY`, `GA: 2026-10-14 (GitHub v0.22.0 03:21 UTC)`, `title_pattern: P5`.
+- **Queue file (when Ep4 renders):** `queue/YYYY-MM-DD-hermes-agent-v0-22.md` with `Status: READY`, `GA: 2026-10-14 (GitHub v0.22.0 03:21 UTC)`, `title_pattern: P5`. **Tick 75:** write it as `GA: 2026-10-14 03:21 UTC (GitHub v0.22.0) = Oct 13 9:21 PM MT` plus `First-mover: closed (BoxminingAI v0.22 recap up, tick 60)` so slot rule 2b ranks it behind a still-open Ep3.
 - **Measure (#4):** GROWTH_LOG row with pattern P5; compare 24h/72h views to Ep1 and Ep3 (both P1 + secondary AI tag).
 
 ### Candidate B (parked for a different pattern): Ling-3.1-flash weights

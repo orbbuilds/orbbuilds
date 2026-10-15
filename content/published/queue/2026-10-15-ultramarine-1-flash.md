@@ -10,6 +10,7 @@
 - Title: `Ultramarine 1 Flash is a 5-person flex... (an AI reviews it)` (alt in pack: `weirdly cheap...`)
 - title_pattern: **P1** (keep after upload; log 24h/72h views in GROWTH_LOG; not a clean #8 search test — autocomplete still Warhammer/iPhone for "ultramarine*")
 - GA: 2026-10-14 (Paper Instruments blog: https://www.paperinstruments.com/blog/ultramarine)
+- First-mover: open (checked Oct 15 ~2:07 AM MT: X search `Ultramarine 1 Flash (youtube.com OR youtu.be)` = 0 posts; YouTube SERP empty of AI reviews at tick 58 ~11:41 PM MT). Ranks tier (a) under slot rule 2b.
 - Upload file: content/drafts/2026-10-14-ultramarine-1-flash-upload.mp4 (1280x720, 167.9 s, 18.2 MB). Full render: content/drafts/2026-10-14-ultramarine-1-flash.mp4 (1080p, 61 MB). Metadata copy: content/drafts/2026-10-14-ultramarine-1-flash-meta.md
 - Thumbnail: **content/drafts/2026-10-14-ultramarine-1-flash-thumb.jpg** (1280x720, post_render output; fallback `content/drafts/ep3-cand-ultramarine-thumb.jpg`) (`meta.thumbnail`: product `ULTRAMARINE 1 FLASH`, line1 `5 PEOPLE`, line2 `$300K?`, hl 2). Title/P1 unchanged.
 - categoryId 28, privacyStatus public

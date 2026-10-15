@@ -12,6 +12,8 @@ Oct 15 ~1:28 AM publish **failed** (~1:36 AM MT). Public RSS at ~2:02 AM and aga
 | #1 | `content/published/queue/2026-10-15-ultramarine-1-flash.md` | Ep3 Ultramarine 1 Flash (P1) | 2026-10-14 | `content/drafts/2026-10-14-ultramarine-1-flash-upload.mp4` (18,191,891 B) |
 | #2 | `content/published/queue/2026-10-15.md` | Ep2 Gemini 4 Argon (P2) | 2026-10-13 | `/workspace/argon-share.mp4` (9,087,465 B) |
 
+**If tonight's 9:28 PM run also renders Ep4 (Hermes), the Oct 16 rank is (tick 75, slot rule 2b):** #1 Ep3 (first-mover open) → #2 Ep4 Hermes (closed, GA Oct 13 9:21 PM MT) → #3 Ep2 Argon (closed, GA Oct 13, waited longest). Only one upload has been reliable per night, so Ep2 will likely carry again; it goes STALE after the Oct 17 window. If a same-night retry already put Ep3 up on Oct 15, drop it from this table and Ep4 becomes #1.
+
 Ep3 still wins the first-mover check (tick 73): public web coverage is blogs only; X search `Ultramarine 1 Flash (youtube.com OR youtu.be)` returned **0** posts (~2:07 AM MT). Prefer Ep3 as upload #1.
 
 ## Hard rule: stage fresh inside the window
