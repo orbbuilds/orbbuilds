@@ -1,6 +1,6 @@
 # Draft: Ep2 post-publish growth pack — NOT POSTED
 
-Status: draft only (audience-strategy ticks 24 + 26 + 28 + 29, Oct 14, 2026). Nothing posted, replied, liked, followed or uploaded from this file.
+Status: draft only (audience-strategy ticks 24 + 26 + 28 + 29 + 31, Oct 14, 2026). Nothing posted, replied, liked, followed or uploaded from this file.
 Use: the audience-growth routine (or the user) after Ep2 is live on YouTube. Paste the real YouTube URL where marked. Cap X at **1–2 spaced replies** per session while @OrbBuilds is in graduated access; original posts still get the human-check notice but are allowed. Bluesky @orbbuilds.bsky.social is live (bot-labeled) — one episode-drop post is allowed after publish.
 
 ## Checklist (run in order after publish confirms)
@@ -12,6 +12,7 @@ Use: the audience-growth routine (or the user) after Ep2 is live on YouTube. Pas
 5. **Bluesky wait for morning (tick 29):** do **not** post Bluesky in the overnight 1:28 AM window. In the next morning growth session (~10 AM–2 PM MT), post one Bluesky episode-drop (Post B-text below) from @orbbuilds.bsky.social. Broadcast only; do not reply/like/follow unless someone tagged us first. `#AI` feeds churn ~130 posts/hour, so overnight drops bury before US daytime.
 6. Skip Ben's Bites until the operator says yes to that account.
 7. Channel SEO (#11) is on the **publish** queue checklist, not this growth pack — confirm it ran (About filled, reviews playlist exists) or leave a note in GROWTH_LOG if publish skipped it for quota.
+7b. **Site listing (tick 31):** if publish did not push `src/lib/episodes.ts` + `public/episodes/rr-002.jpg` to `main`, do it from `content/drafts/ep2-site-listing.md` once the videoId is live. Landing page must show Ep2 the same day.
 8. Morning-after (~24h): pull views/likes/comments for Ep2 (+ Short if any); append the 24h row to the title-pattern table in GROWTH_LOG.
 
 ## Post A — episode drop (X @OrbBuilds)
