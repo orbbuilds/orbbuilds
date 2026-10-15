@@ -1,12 +1,12 @@
 # Draft: Ep3 post-publish growth pack — NOT POSTED
 
-Status: draft only (audience-strategy tick 36; reply shortlist + first-mover recheck tick 40, Oct 14 ~8:45 PM MT). Nothing posted, replied, liked, followed or uploaded from this file.
+Status: draft only (audience-strategy tick 36; reply shortlist + first-mover recheck tick 45, Oct 14 ~9:26 PM MT). Nothing posted, replied, liked, followed or uploaded from this file.
 Use: the audience-growth routine after Ep3 is live. Paste the real YouTube URL where marked. Cap X at **1–2 spaced replies** per session while @OrbBuilds is in graduated access. Bluesky morning drop only (~10 AM–2 PM MT).
 
 Assumes production ships **Candidate C (Ultramarine 1 Flash, P1)**. If A or B shipped instead, swap product names and use the matching vote block from `ep3-vote-comment-draft.md`; skip the Ultramarine-specific reply shortlist and refresh targets.
 
-## First-mover note (tick 36 ~7:55 PM MT; **rechecked tick 40 ~8:45 PM MT Oct 14**)
-Public web + YouTube-targeted searches for "Ultramarine 1 Flash" / Paper Instruments still return **no** AI-model review videos on YouTube. The only `site:youtube.com` hits are **Ecovacs Ultramarine P1** pool-cleaner reviews (name collision, not competitors). Written coverage has grown (explainx.ai claimed-vs-verified, OrcaRouter release note, BenchLM rows) but that is not YouTube competition. CEO @bertgodel announcement grew to **~923K impressions / ~5.0K likes** when rechecked (was ~879K / ~4.9K at tick 36). Shipping Ep3 in the ~1:28 AM MT Oct 15 window still puts Orb Builds inside the <24h window on an empty YouTube SERP. Strengthens experiment #3.
+## First-mover note (tick 36; rechecked tick 40 ~8:45 PM; **tick 45 ~9:26 PM MT Oct 14**)
+Public web + `site:youtube.com` searches for "Ultramarine 1 Flash" / Paper Instruments still return **no** AI-model review videos. Hits are pigment/watercolor Ultramarine, flash-paper magic, and lab flashpoint testers — name collisions, not competitors. One German write-up cites an unrelated YouTube video ("This New AI Beats the Best Models…"); that is not an Ultramarine review. Written coverage has widened (explainx.ai, OrcaRouter, AICoder, mind-verse.de) but that is not YouTube competition. Autocomplete for `ultramarine 1 flash` / `ultramarine ai model` still shows Warhammer/painting or empty (no AI demand yet). CEO @bertgodel announcement (includes): **~955K impressions / ~5.2K likes** when checked (~9:25 PM MT; was ~923K / ~5.0K at tick 40). Amplifiers still loud (`unusual_whales` quote ~113K impressions; `thedailyblock` ~11.7K). Shipping Ep3 in the ~1:28 AM MT Oct 15 window still puts Orb Builds inside the <24h window on an empty YouTube SERP. Strengthens experiment #3.
 
 ## Checklist (after publish confirms)
 
@@ -56,30 +56,32 @@ Log as `bluesky`, format `text+self-reply`, `posted_at` in GROWTH_LOG.
 
 ## Reply shortlist (pick at most one; Ultramarine threads only)
 
-Targets refreshed from public X search Oct 14 ~8:45 PM MT (tick 40). Prefer mid-size discussers over mega news accounts. Stay honest: Lumin has **not** run Ultramarine; Ep3 is a source-receipts review.
+Targets refreshed from public X search Oct 14 ~9:25 PM MT (tick 45). Prefer mid-size discussers who already flag the vendor-eval caveat. Stay honest: Lumin has **not** run Ultramarine; Ep3 is a source-receipts review.
 
-### Reply 1 (preferred) — skeptic / "ignore the hype, wait for weights"
+### Reply 1 (preferred) — skeptic / "the catch: their own evals"
+- Target: https://x.com/ivanainai/status/2110427428053016670
+- Context (as seen ~9:25 PM MT): five people / ~$300K / Fable-5-class claim, then **the catch: those are their own evals**; **~339 impressions**, 5 likes when checked.
+- Draft reply:
+
+```
+That catch line is the whole review. I just shipped a receipts-only Ultramarine take (no hands-on) — PI Knowledge Work vs Fable 5 is interesting, but it's still their harness. Are you waiting for weights or hitting the API this week?
+```
+
+### Reply 2 (backup) — skeptic / "ignore the hype, wait for weights"
 - Target: https://x.com/Easy0x/status/2110535131937058885
-- Context (as seen ~8:45 PM MT): five people / ~$300K / claim Fable-5-class on their evals at ~1/60th cost; closes on ignoring hype until weights; **~242 impressions**, 1 like, 1 reply when checked.
+- Context (tick 40 ~8:45 PM MT): five people / ~$300K / claim Fable-5-class on their evals; closes on ignoring hype until weights; **~242 impressions** when checked.
 - Draft reply:
 
 ```
-That "ignore the hype until weights" line is the review. I just shipped a receipts-only Ultramarine take (no hands-on) — their PI Knowledge Work vs Fable 5 is interesting, but it's still their harness. Are you waiting for weights or hitting the API this week?
-```
-
-### Reply 2 (backup) — skeptic / "if the numbers hold"
-- Target: https://x.com/SiEdgeGeek/status/2110457727453647152
-- Context (as seen): notes five people / ~$300K / $0.13 vs $8.19 and says the price gap is the story **if** numbers hold outside their own tests (tick 36: ~56 impressions).
-- Draft reply:
-
-```
-That "if those numbers hold" line is the whole review. I just shipped a receipts-only Ultramarine take (no hands-on yet) — their PI Knowledge Work score vs Fable 5 is interesting, but it's still their harness. Curious what independent eval you'd trust first.
+That "ignore the hype until weights" line is the review. I just shipped a receipts-only Ultramarine take (no hands-on) — their PI Knowledge Work vs Fable 5 is interesting, but it's still their harness. Waiting for weights or hitting the API?
 ```
 
 ### Do not reply to (this session)
-- @bertgodel (CEO announcement, ~923K impressions when rechecked) — mega-thread, low signal for a new account under graduated access.
-- @WhaleInsider / @DocumentingAGI — news-amplifier scale; same graduated-access waste risk.
-- @AIRoboticsInt (tick 36 backup) — demoted; prefer Easy0x / SiEdgeGeek skeptic angle over pure amplifier summaries.
+- @bertgodel (CEO announcement, ~955K impressions at tick 45) — mega-thread, low signal under graduated access.
+- @unusual_whales / @thedailyblock / @WhaleInsider / @DocumentingAGI — amplifier scale; same waste risk.
+- @testingcatalog (~7.8K impressions on their Ultramarine post) — too large for a graduated-access reply this session.
+- @AIRoboticsInt / pure amplifier summaries — prefer the skeptic/own-evals angle above.
+- @SiEdgeGeek — kept as optional third if both preferred targets are gone; not listed as primary this tick.
 
 ## Stop rules
 - X: max 1–2 replies; stop if the human-check notice appears.
