@@ -31,6 +31,8 @@ Without `--post` it only auth-checks. Creds: `/home/box/secrets/bluesky.txt` (do
 - No "first", no "I tested", no Grok Bot naming, no invented numbers.
 - If upload fails (format detection / 400): stop Bluesky for the day; do **not** fall back to Welcome A now that X V already shipped (profile no longer blank on X; Bluesky can stay empty one more day rather than burn a text post that confounds #22).
 
-## After
-- Strategy tick ~3:30–5:30 PM MT: X V ~4–6h read (impressions + video views if API returns them) vs best U 26.
-- Bluesky V ~4–6h read when mature (likes/reposts/replies; Bluesky has no impressions API we use).
+## After (tick 137/138 measurement)
+- Immediately after post (~1:30–1:55 PM): `cd /workspace/orbbuilds && python3 tools/social/bluesky_read.py` — confirm URL / at:// URI or log miss/exact error. Baseline was 1 follower / 0 posts.
+- ~T+2h (~3:30 PM if posted ~1:30): same command. **Win rule:** ≥2 engagements (likes+reposts+quotes+replies) OR ≥1 new follower = Bluesky clearly beats X V (X V: **0 eng / +0 followers** at T+95). 0/0 by T+2h = both cold (audience size, not just X throttle).
+- X V: one cheap confirm call only (~4–5 PM); log unless impressions moved ≥3× from 4. Full re-analysis is not worth it on graduated access.
+- If Bluesky wins: batch "Bluesky primary for episode drops until X graduates" with #10 for the next user ping.
