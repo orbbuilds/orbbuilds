@@ -25,6 +25,7 @@ Nothing here has been sent, signed up for, or spent.
    episodes waiting forever, and Ep2 never ships before it goes stale. A morning slot that runs only when a
    CARRIED main exists (main upload only, exact error logged) doubles capacity on the free shared quota.
    If item 0 fails on quota, skip this and lean on decision 1 instead.
+   Paste-ready routine: `content/drafts/catchup-upload-routine-draft.md` (tick 98).
 
 ## Decisions, ranked
 1. **Own Google OAuth app for YouTube (dedicated quota).** [tick 4, #3/#13]
