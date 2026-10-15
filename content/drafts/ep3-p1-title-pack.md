@@ -47,8 +47,8 @@ The 7:23 PM scan (`content/ideas/2026-10-14-evening-ai-news-scan.md`, item 1) fo
 - **Queue file (tick 33 rules):** `queue/2026-10-15-ultramarine-1-flash.md` with `Status: READY` and `GA: 2026-10-14 (Paper Instruments blog)`.
 
 
-## First-mover check (tick 36, Oct 14 ~7:55 PM MT)
-Public web + YouTube searches found **no** YouTube review videos for Ultramarine 1 Flash / Paper Instruments (unrelated pigment/magic hits only). X is already active (CEO announcement ~879K impressions when checked). Shipping Candidate C in tonight's 1:28 AM MT slot keeps Ep3 inside the <24h demand window for a topic that still has empty YouTube SERP. Do not invent competitor view counts; recheck after upload with Data API search+batch if quota allows.
+## First-mover check (tick 36 ~7:55 PM MT; rechecked tick 40 ~8:45 PM MT)
+Public web + YouTube-targeted searches still find **no** AI-model review videos for Ultramarine 1 Flash / Paper Instruments. Hits are Ecovacs Ultramarine P1 (pool cleaner) only. Written blogs exist (explainx, OrcaRouter, BenchLM) but are not YouTube competition. CEO announcement ~923K impressions when rechecked (was ~879K). Shipping Candidate C in tonight's 1:28 AM MT slot still targets an empty YouTube SERP inside the <24h window. Do not invent competitor view counts; recheck after upload with Data API search+batch if quota allows.
 
 ## Rules recap for the production run
 - Don't touch `queue/2026-10-15.md` (Ep2). Write Ep3 to `queue/2026-10-15-<slug>.md` (tick 33 naming; supersedes the tick-17 `-b` name).
