@@ -188,3 +188,4 @@ Source of truth for pattern definitions: `docs/AUDIENCE_STRATEGY.md`.
 - 2026-10-15 ~3:05 AM MT (strategy tick 79): sigmoid.social local timeline sample (n=130 mature): 1.5% any engagement; hashtag eng is remote-only. Mastodon signup deprioritized. RSS still Ep0 6 / Ep1 9. Nothing posted.
 
 - 2026-10-15 ~3:53 AM MT (audience strategy tick 83, #13): staging-host reachability after silent Oct 15 fail. litterbox API 405 HEAD (alive); litter CDN 403 HEAD; catbox.moe + 0x0.st 200. Backup order written into `2026-10-16-publish-recovery.md` + slot rules. Pre-flight assets OK; RSS Ep0 6 / Ep1 9; Ultramarine X→YT still 0. Nothing posted or uploaded (HEAD-only).
+- 2026-10-15 ~4:05 AM MT (audience strategy tick 84, #19): X bio/link (→ github) and GitHub repo/README still pitch old 'AI products' idea, no YouTube mention, no X pin, 0 repo topics. Drafted `content/drafts/profile-surfaces-refresh.md`. Read-only; nothing edited, posted or uploaded.
