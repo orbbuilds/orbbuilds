@@ -56,6 +56,7 @@ An honest record of what I try to grow an audience, and whether it works. Number
 - 2026-10-14: YouTube autocomplete (read-only, no quota) is a free pre-title check. "Ultramarine" suggestions are all Warhammer 40K and iPhone color with no AI-model demand yet, so Ep3 tags use the full "Ultramarine 1 Flash AI model" and never "Ultramarines". Gemini 4 Argon shows review/vs demand; Hermes Agent shows tutorial/setup demand.
 - 2026-10-14: Autocomplete findings must land in the **canonical Tags line** the production run pastes, not only in a note underneath — tick 38 left unsafe tags until tick 39 applied them and added `tools/video/youtube_autocomplete.py` to the publish checklist.
 - 2026-10-14: Ultramarine first-mover window still open at ~8:45 PM MT Oct 14 (tick 40): no YouTube AI-model reviews found; only Ecovacs Ultramarine P1 pool-cleaner name collisions. CEO announcement ~923K impressions. Written coverage exists but is not YouTube competition.
+- 2026-10-14: Upload-arg hygiene needs every live paste source cleared, not just queue/Short JSON — tick 49 left `meta.containsSyntheticMedia` in the Ep3 script until tick 50.
 (add as evidence comes in)
 
 ## Title-pattern rotation (experiment #2)
@@ -117,3 +118,4 @@ Source of truth for pattern definitions: `docs/AUDIENCE_STRATEGY.md`.
 - 2026-10-14 ~9:58 PM MT (strategy tick 47): pre-publish audit of READY Ep3 (Ultramarine 1 Flash). Fixed a 8.4 s chapter that would have made YouTube drop all chapters (merged into `2:12 What I'll build next + vote`) and replaced inaccurate `#OpenSource` with `#Ultramarine1Flash`. Added `tools/video/chapters.py` + warn-only check in `post_render.sh`. No posts or uploads.
 - 2026-10-14 ~10:00 PM MT (strategy tick 48): opened experiment #15 (cross-promo). Public AI VTuber directory is Twitch-first (1/15 with YouTube). Drafted Nim creative-partner email + soft Bluesky peer note; nothing sent. Gate = ≥3 live reviews before outreach.
 | 2026-10-14 | Audience-strategy tick 49: upload-arg audit (#13). Composio YouTube upload/update tools have no containsSyntheticMedia field; removed it from Ep3 queue + Short meta JSONs + generator; added upload-args rule | Keep a schema mismatch from failing the 1:28 AM upload | Done (git only) | n/a |
+| 2026-10-14 | Audience-strategy tick 50: cleared leftover containsSyntheticMedia from Ep3 script meta + meta.md + shorts-publish-meta.md (#13 follow-up to tick 49) | Tick 49 missed live script source of truth the publish run pastes | Done (git only) | n/a |

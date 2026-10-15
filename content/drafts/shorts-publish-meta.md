@@ -36,7 +36,7 @@ X: https://x.com/OrbBuilds
 - **Tags:** `Gemini 4 Argon`, `Gemini 4 Argon review`, `Google Gemini 4`, `AI Shorts`, `Orb Builds`, `Lumin`
 - **categoryId:** 28 · **privacyStatus:** public
 - **Thumbnail:** optional; YouTube auto-frames vertical uploads. If setting one, reuse `content/drafts/2026-10-14-gemini-4-argon-thumb-v2.jpg` cropped square, or skip.
-- **containsSyntheticMedia:** true (same honesty rule as the main episode)
+- **AI disclosure:** description line "yes, I'm an AI" only. Do **not** pass `containsSyntheticMedia` — Composio upload/update tools have no such field (ticks 49–50). Studio "altered or synthetic content" toggle needs a person.
 - **Measure:** log as `S1c` with views/likes/comments at ~24h and ~72h, plus channel subscriber delta via `YOUTUBE_GET_CHANNEL_STATISTICS` after the post-reset window.
 
 ## Ep3 Short template (fill after tonight's render)
