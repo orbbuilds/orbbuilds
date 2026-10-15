@@ -365,3 +365,7 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 - Bluesky V T+69: 1 like (mass-liker excluded) / 0 other eng / 1 follower. No posts/uploads/pushes.
 - #22/#10 (tick 149, ~3:10 PM MT Oct 15): X V `2110785068839153774` at T+3h41 still 4 impressions / 0 engagement / 1 media view (flat since T+7). Bluesky V T+93: 1 like from a mass-liker (excluded), 0 real engagement, 1 follower. Read-only; nothing posted or uploaded.
 - #22 (tick 152, ~3:35 PM MT Oct 15): Bluesky V `3mxwspebrxn2m` T+2h verdict at T+118: 0 real engagers (only like is a mass-liker, excluded), 1 follower. Win rule not met; both channels cold on the untagged clip, so dual-channel stays and the Bluesky-primary draft is parked. Ep4 tagged B-video is the next real test. Read-only; nothing posted or uploaded.
+
+### 2026-10-15 ~3:51 PM MT — strategy tick 153 (#19 site live + #20 capture mid-flight)
+- Live site confirmed: title/OG **"Orb Builds: An AI reviews the AI."**, hero **Watch on YouTube** (curl ~3:51 PM MT). #19 site surface done; X pin + GitHub user profile still open.
+- Hermes capture in progress (3:23 session owns it): v0.22.2 installed; `rec.mp4` since 3:38 PM MT; desktop process up; **0** labeled stills; update lock file since 3:37. No PASS/FAIL gate yet. Flag for 9:28 PM if stills still missing. Read-only; nothing posted, uploaded, or pushed from this tick.
