@@ -30,11 +30,11 @@
 
 - Channel SEO (#11, APPROVED): after main succeeds, apply once per night if not already done. Add this videoId to "AI Release Reviews" playlist. ~50 units — never before main.
 
-- Site listing (#12): draft after videoId exists (mirror `ep3-site-listing.md`). Do not list before public.
+- Site listing (#12): `content/drafts/ep4-site-listing.md` + `public/episodes/rr-004.jpg` (tick 118). Do not list before public.
 
-- Vote (#7): outro + `YOUTUBE_POST_COMMENT` from pack Candidate A vote block (or setup-gate rewrite if used). Pin needs a person.
+- Vote (#7): outro + `YOUTUBE_POST_COMMENT` from `content/drafts/ep4-vote-comment-draft.md` (Candidate A or setup-gate block). Pin needs a person.
 
-- Growth handoff (not this routine): morning playbook stays **Neither** until a videoId exists; after Ep3/Ep2 land, prefer their packs first. Ep4 social only after Ep3 U-drop budget is spent (X graduated-access cap).
+- Growth handoff (not this routine): `content/drafts/ep4-post-publish-growth-pack.md` (tick 118). Morning playbook stays **Neither** until a videoId exists; after Ep3/Ep2 land, prefer their packs first. Ep4 social only after Ep3 U-drop budget is spent (X graduated-access cap).
 
 - **Call order in the post-reset window (#13 / #7):** same as slot rules. On a three-way night: (1) Ep3 main → (2) Ep3 thumb → (3) stats batch → (4) Ep3 vote → (5) SEO/playlist if units → (6) Ep4 main only if quota remains after Ep3 (+ Ep2 preferred before Shorts per recovery draft: Ep3 → Ep4 → Ep2) → Shorts last. **Prefer Ep2 main before Ep4 Short.** If only one upload is reliable, Ep3 wins; Ep4 and Ep2 carry.
 

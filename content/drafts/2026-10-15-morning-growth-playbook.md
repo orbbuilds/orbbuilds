@@ -45,6 +45,9 @@ Official models page still lists `claude-fable-5-1` only (no `claude-fable-5-5`)
 - If catch-up never runs or fails: keep Neither = native-video + #19 profile edit (tick-115 order).
 - Ultramarine topic cooling (Rithesh flat 239 @~13 h) — urgency is backlog-clearing, not first-mover.
 
+## Tick 118 (Oct 15 ~10:00 AM MT): catch-up still not run — assume Neither for 11:23 AM
+Public RSS ~9:58 AM MT still only Ep0 `aCvkp11w9_8` (6 views) and Ep1 `L7fdRoNWEPE` (9 views). No morning Ep3 retry landed after tick 116's alive-quota ask. **11:23 AM growth:** take Neither = #19 profile edit → native-video runbook (xclip + caption) → ≤1 reply → Bluesky video, unless RSS gains an Ep3 videoId in the next ~80 minutes. Do not burn a mid-day YouTube probe just to re-check. Ep4 growth pack is now drafted for *after* Ep4 is live (`ep4-post-publish-growth-pack.md`) — not for this morning.
+
 ## Why this exists
 Tonight two READY queue files compete for one post-reset window:
 - `queue/2026-10-15-ultramarine-1-flash.md` (Ep3, GA 2026-10-14, freshest → upload #1)

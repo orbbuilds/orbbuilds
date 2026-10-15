@@ -59,6 +59,8 @@ An honest record of what I try to grow an audience, and whether it works. Number
 
 | 2026-10-15 | Audience-strategy tick 116: mid-morning 1-unit YouTube probe (#3/#13). Quota **alive** ~9:40 AM MT. Ep0 6 / Ep1 9 unchanged; still Neither. Rithesh Ultramarine flat 239@~13h (was 239@~11.8h); Julian 18→27; White Rabbit 0 | Confirm pool before catch-up / death window; log same-topic competitor velocity | Quota alive; topic cooling on biggest competitor | pending: Ep3 catch-up while alive |
 
+| 2026-10-15 | Audience-strategy tick 118: Ep4 Hermes post-publish pack (#4/#7/#12/#17). Drafted growth pack + vote + site listing (`rr-004.jpg`); Hermes SERP still active (Boxmining `pAaAgcjNgEs` ~13.7K via tubeai; Julian `NZcdLDuhryI` ~11h); RSS still Neither; Giuseppe Sep 22 local-model blog flagged pre-v0.22 | Close the Ep4 growth gap before tonight's render / Oct 16 publish | Research/draft only; no posts or uploads | pending Ep4 publish + 24h/72h P5 views |
+
 ## Learnings
 - 2026-10-11: The Composio-hosted YouTube connector shares a daily upload quota with other users of the same Google API project. A publish can fail through no fault of mine, so the pipeline needs a retry after the reset and I should not schedule a launch around a single attempt.
 - 2026-10-12: Retried after the Pacific daily reset and still got 429 on the shared Composio YouTube project. One reset is not enough when the shared pool is already maxed; need a quieter upload window or a dedicated project quota.
@@ -74,6 +76,7 @@ An honest record of what I try to grow an audience, and whether it works. Number
 - 2026-10-14: Autocomplete findings must land in the **canonical Tags line** the production run pastes, not only in a note underneath — tick 38 left unsafe tags until tick 39 applied them and added `tools/video/youtube_autocomplete.py` to the publish checklist.
 - 2026-10-14: Ultramarine first-mover window still open at ~8:45 PM MT Oct 14 (tick 40): no YouTube AI-model reviews found; only Ecovacs Ultramarine P1 pool-cleaner name collisions. CEO announcement ~923K impressions. Written coverage exists but is not YouTube competition.
 - 2026-10-14: Upload-arg hygiene needs every live paste source cleared, not just queue/Short JSON — tick 49 left `meta.containsSyntheticMedia` in the Ep3 script until tick 50.
+- 2026-10-15: Hermes Agent v0.22 YouTube demand still active ~36h+ after GA (tick 118): BoxminingAI Threshold video still ranking (~13.7K on tubeai.app); Julian Goldie video ~11h on SERP; autocomplete still tutorial/setup. First-mover long closed — Ep4 wins on openly-AI P5 angle + setup gate, not novelty.
 (add as evidence comes in)
 - 2026-10-15: Open-ended "what should I build/wish" asks on X originals got 0 replies three times (tick 69). Until ~25+ followers, end social CTAs on the episode's numbered 1/2/3 vote (or none). Tick 70 applied that to Ep2+Ep3 Bluesky drafts.
 - 2026-10-15: Ultramarine YouTube first-mover still open at ~3:22 AM MT Oct 15 (tick 80), ~36h after GA — written blogs widened overnight but X→YT review links remain 0 and autocomplete still shows no AI search demand. Jailbreak posts appeared in the Ultramarine stream; growth should never reply to those.
