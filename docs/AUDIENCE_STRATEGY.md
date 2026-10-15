@@ -1057,7 +1057,19 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - Updated Bluesky V handoff **After** with tick 137 win rule + paste-ready `bluesky_read.py` (T+0 confirm + T+2h). Clip still on disk 1080×1920 / 52.6 s; public profile still **0 posts** / 1 follower.
 - No WakeParent (ops handoff for 3:23; Bluesky one-off already owns the post; no new user decision). No posts, uploads, comments, channel edits, pushes or signups.
 
+## Bluesky tag + naming hygiene from live search (experiments #22/#9, tick 139, Oct 15 ~1:33 PM MT)
+- ~1:31 PM MT `bluesky_read.py`: still **0 posts** / 1 follower; the 1:30 PM one-off hasn't fired yet (window runs to ~1:55). Nothing to confirm this tick.
+- Live Bluesky search (`api.bsky.app` searchPosts works; `public.api.bsky.app` search now returns 403), latest 50 per query:
+  - "Ultramarine": mostly Warhammer (Boltgun 2 shipped today); AI-side posts exist (one at 14 likes / 3 reposts). Our V caption already says "Ultramarine 1 Flash", which keeps it findable on the AI side.
+  - "Hermes Agent": 50 posts in ~43h, 26 total engagements, 7 with video; `#hermesagent` is the dominant tag (10/50), then `#opensource`/`#ai`/`#aiagents`.
+  - `#AI` latest: 50 posts in ~22 min, heavy NSFW spam, 13 engagements total. `#LLM`: 50 posts in ~5h, real AI posts.
+- **Changes:** Ep4 Bluesky B-text tags `#AI #HermesAgent #Agents` → `#HermesAgent #AIagents #LLM`; POSTING_RULES Bluesky rule 4 (topic tag + #LLM/#AIagents, never #AI; disambiguate model names).
+- Read-only (4 search calls + 1 profile read). No posts, uploads, comments, channel edits or signups.
+
 ## Last tick
+- **2026-10-15 ~1:33 PM MT (tick 139).** #22/#9: Bluesky still 0 posts at 1:31 PM (one-off not fired yet). Live Bluesky search: #AI latest is spam-flooded, #HermesAgent is the topic's live tag, "Ultramarine" is mostly Warhammer. Retagged Ep4 B-text (#HermesAgent #AIagents #LLM) + POSTING_RULES rule. No WakeParent. Read-only.
+  - Next recommended tick: after ~1:55 PM `python3 tools/social/bluesky_read.py` (confirm V URL or log miss). ~3:30 PM T+2h applies ≥2 eng / ≥1 follower rule; if Bluesky wins, batch "Bluesky primary until X graduates" with #10. 3:23 PM: follow `2026-10-15-1523-build-session-brief.md` (push ahead-9 + verify, then Hermes; no X). ~4–5 PM one X V confirm. 7:23 PM Fable launch-signal once. After 9:28 PM Ep4 `-xclip.mp4`. Oct 16 ~10 AM–noon Ep1 Analytics. Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot without operator OK.
+
 - **2026-10-15 ~1:15 PM MT (tick 138).** #19: live site still stale ("building AI products"); local ahead **7**. Wrote `2026-10-15-1523-build-session-brief.md` (push+curl-verify before Hermes) and pointed the capture checklist at it; refreshed Bluesky V handoff After with T+2h win rule. Bluesky still 0 posts pre-one-off. No WakeParent. No posts, uploads, comments, channel edits, pushes or signups.
   - Next recommended tick: after ~1:30–1:55 PM `python3 tools/social/bluesky_read.py` (confirm V URL or log miss). ~3:30 PM T+2h applies ≥2 eng / ≥1 follower rule; if Bluesky wins, batch "Bluesky primary until X graduates" with #10. 3:23 PM: follow the new brief (push+verify then Hermes; no X). ~4–5 PM one X V confirm. 7:23 PM Fable launch-signal once. After 9:28 PM Ep4 `-xclip.mp4`. Oct 16 ~10 AM–noon Ep1 Analytics. Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot without operator OK.
 
