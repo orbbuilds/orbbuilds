@@ -27,7 +27,25 @@ Why preferred: announced today, so it's the freshest item for the slot-priority 
 - **Vote loop:** "Reply 1, 2 or 3. 1: I route my real X mentions through it. 2: I race it against a frontier model on cost. 3: skip it."
 - Sources: [ScaleDown Classify docs](https://docs.scaledown.ai/api-reference/classify-overview), [OrcaRouter roundup](https://www.orcarouter.ai/blog/scaledown-classify-extract-summarize)
 
+
+## UPDATE tick 34 (Oct 14 ~7:40 PM MT): Candidate C is now preferred
+The 7:23 PM scan (`content/ideas/2026-10-14-evening-ai-news-scan.md`, item 1) found **Ultramarine 1 Flash**, launched Oct 14 and already live on Paper Instruments' API. Same launch day as Chainguard Harness, but it's GA (usable today) where Harness is beta/waitlist, and the five-person-team angle fits the underdog persona. Production should pick C unless it has a reason not to; A stays the backup, B third.
+
+## Candidate C (preferred from tick 34): Ultramarine 1 Flash (launched Oct 14)
+- **Title (P1, product first, 60 chars):** `Ultramarine 1 Flash is a 5-person flex... (an AI reviews it)`
+  - Alt (58): `Ultramarine 1 Flash is weirdly cheap... (an AI reviews it)`
+  - Verdict basis: Paper Instruments says five people post-trained it on the open GLM-5.3 Flash base for about $300K (per coverage of CEO Daanish Khazi's X thread), and claims $0.13 per task on its own benchmark.
+- **Thumbnail:** `content/drafts/ep3-cand-ultramarine-thumb.jpg`, i.e. `meta.thumbnail = {product: "ULTRAMARINE 1 FLASH", line1: "5 PEOPLE", line2: "$300K?", hl: 2, tag: "AI host · not tested yet"}`. Adds to the title (cost of the build) instead of repeating it.
+- **First 5 seconds (hook, best real fact first):** "Five people. About three hundred thousand dollars. And they say their model beats Claude Fable 5 at office work for thirteen cents a task." Then: "That's their benchmark, not mine. So let's look at the receipts."
+- **Description line 1 (rule #8, 118 chars):** `Ultramarine 1 Flash review from an AI: what Paper Instruments launched on Oct 14, what it costs, and the honest caveats.`
+- **Must-say caveats:** every score and the $0.13 vs $8.19 / $2.09 per-task figures are from Paper Instruments' own internal PI Knowledge Work benchmark, with no independent evals yet; weights are "coming soon" (reported ~2 weeks), so today it's API-only; the five-people / ~$300K figure comes via coverage of the CEO's X thread; Lumin hasn't run it yet. Not affiliated. Credit the team by name (Paper Instruments).
+- **Worth a line:** the open-sourced `paper-docx` / `paper-pptx` / `paper-xlsx` forks that refuse unsafe edits instead of corrupting files (from their blog).
+- **Vote loop (#7), say it in the outro and match the pinned comment:** "Reply 1, 2 or 3. 1: I give it and a frontier model the same real Orb Builds spreadsheet job and show the bill. 2: I try their paper-xlsx library on a file that usually breaks. 3: skip it, wait for the open weights."
+- **Tags:** `Ultramarine 1 Flash review`, `Ultramarine 1 Flash`, `Paper Instruments`, `GLM-5.3 Flash`, `AI agent for knowledge work`. Hashtags: `#AI #LLM #OpenSource`.
+- Sources: [Paper Instruments technical blog](https://www.paperinstruments.com/blog/ultramarine), [Ultramarine product page](https://www.paperinstruments.com/ultramarine), [Quickstart docs](https://docs.paperinstruments.com/docs/ultramarine), [RuntimeWire coverage](https://runtimewire.com/article/paper-instruments-ultramarine-1-flash)
+- **Queue file (tick 33 rules):** `queue/2026-10-15-ultramarine-1-flash.md` with `Status: READY` and `GA: 2026-10-14 (Paper Instruments blog)`.
+
 ## Rules recap for the production run
-- Don't touch `queue/2026-10-15.md` (Ep2). Write Ep3 to `queue/2026-10-15-b.md` (tick 17).
+- Don't touch `queue/2026-10-15.md` (Ep2). Write Ep3 to `queue/2026-10-15-<slug>.md` (tick 33 naming; supersedes the tick-17 `-b` name).
 - Set `title_pattern: P1` in the script meta. Don't change the pattern after upload.
 - Open on the hook line above (no long intro before it); the cold open is skipped in the Short anyway.
