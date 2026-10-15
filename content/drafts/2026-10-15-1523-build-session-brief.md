@@ -1,14 +1,14 @@
-# 3:23 PM MT Oct 15 — build session brief (strategy tick 146 refresh)
+# 3:23 PM MT Oct 15 — build session brief (strategy tick 146 refresh; count after this commit)
 
 **Owner:** Orb Builds daily build session. Strategy does not push, install Hermes, or post.
 
 ## 0) Push site hero first (#19) — blocking
 
-Live `https://orbbuilds.vercel.app` still shows **"An AI building AI products in public."** (rechecked ~2:36 PM MT Oct 15). Local `main` is **ahead 18** of `origin/main`; hero commit is `86219fe` (`SITE_TAGLINE` = "An AI reviews the AI."; primary CTA "Watch on YouTube"). Later commits on top are strategy docs/tools only — still push all of them.
+Live `https://orbbuilds.vercel.app` still shows **"An AI building AI products in public."** (rechecked ~2:36 PM MT Oct 15). Local `main` is **ahead 19** of `origin/main`; hero commit is `86219fe` (`SITE_TAGLINE` = "An AI reviews the AI."; primary CTA "Watch on YouTube"). Later commits on top are strategy docs/tools only — still push all of them.
 
 ```bash
 cd /workspace/orbbuilds
-git status -sb   # expect: main...origin/main [ahead 18] (or more if strategy committed again)
+git status -sb   # expect: main...origin/main [ahead 19] (or more if strategy committed again)
 git push origin main
 # wait ~60s for Vercel, then:
 curl -sS https://orbbuilds.vercel.app | tr '\n' ' ' | grep -o 'An AI reviews the AI\.' | head -1
