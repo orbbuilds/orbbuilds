@@ -1008,7 +1008,17 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - Autocomplete for bare `ultramarine 1 flash` still Warhammer/painting collision (unchanged).
 - No uploads, posts, comments, channel edits or signups. No WakeParent (ops prep for growth; no new user decision).
 
+## Fable 5.5 rumor plateau vs a real launch's X volume (experiments #3/#4, tick 127, Oct 15 ~11:31 AM MT)
+- Official models overview ~11:30 AM MT still lists **Claude Fable 5.1** (`claude-fable-5-1`) as current; no 5.5. Morning scan also logged it as leak chatter only.
+- X recent counts for `"Fable 5.5"` (hourly, MT): 4 AM 126, 5 AM 156, 6 AM 183, 7 AM 166, 8 AM 176, 9 AM 140, 10 AM 176, 11:00–11:30 AM 75. So the rumor has **plateaued at ~140–185/hr for 7+ h**; no step change.
+- Reference scale from a real launch in-window: Ultramarine (`"1 Flash"` OR `"Paper Instruments"`) Oct 14 went 0 → 68/92/99/77 per hour in its first four hours (10 AM–1 PM MT), 538 total over 12 h. The Fable rumor alone already runs ~2× that launch's peak, so an official Fable 5.5 drop would be a far bigger demand moment than Ep3's topic.
+- **Rule for the scans:** treat a jump to roughly **≥3× the plateau (~500+/hr)** in `"Fable 5.5"` counts, or a 5.5 row on the models overview, as the launch signal that triggers `content/drafts/fable-5-5-drop-day-plan.md` + WakeParent. A plateau in the 140–185 band is still rumor; do not pivot Ep4 off Hermes on it. Threshold is a heuristic from one comparison, not a measured law.
+- Read-only (2 X count calls, 1 docs fetch). No uploads, posts, comments, channel edits or signups.
+
 ## Last tick
+- **2026-10-15 ~11:31 AM MT (tick 127).** #3/#4: Fable 5.5 still not official (models overview 5.1 only). X rumor plateaued at ~140–185 posts/hr since 4 AM MT, about 2× the real Ultramarine launch's first-hours peak (68–99/hr). Added a launch-signal rule (~500+/hr or a 5.5 row on the models page) so scans stop re-checking a flat rumor; Ep4 stays Hermes. No WakeParent (no launch, no decision). Read-only; no uploads, posts, comments, channel edits or signups.
+  - Next recommended tick: ~4–6h after growth posts V, read impressions vs tick-122 baseline (#22). 3:23 PM: Hermes capture + site hero refresh. 7:23 PM scan: apply the Fable launch-signal rule once (one counts call). After 9:28 PM confirm Ep4 `-xclip.mp4`. Oct 16 ~10 AM–noon: Ep1 Analytics read. Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot without operator OK.
+
 - **2026-10-15 ~11:20 AM MT (tick 126).** #22/#17: Neither preflight for 11:23 AM growth. RSS still Ep0 6 / Ep1 9; xclip OK; $0.13 reconfirmed on official Ultramarine page; reply shortlist prefer @somi_ai (APEX miss + self-reported). No WakeParent (ops prep; no user decision). No uploads, posts, comments, channel edits or signups.
   - Next recommended tick: ~4–6h after growth posts V, read impressions vs tick-122 U baseline (#22). 3:23 PM: Hermes capture + site hero refresh. After 9:28 PM confirm Ep4 `-xclip.mp4`. Oct 16 ~10 AM–noon: Ep1 Analytics read. Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot without operator OK.
 

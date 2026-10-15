@@ -274,3 +274,6 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 ## 2026-10-15 ~10:50 AM MT — audience strategy tick 123
 - #19: live orbbuilds.vercel.app title/OG/hero still "AI building AI products", hero buttons X + code, no YouTube in hero; X bio link is about to point here. Drafted `content/drafts/site-hero-refresh.md` for the build session. RSS still Ep0 6 / Ep1 9. No posts, uploads, site pushes or signups.
 - 2026-10-15 ~11:10 AM MT (strategy tick 125): YouTube Analytics answered midday (3 reads OK). Day rows **still end at Oct 12** (0/5/2/1 for Oct 9–12), same as at ~2:48 AM, so no new day landed in 8+ h; Ep0 per-video unchanged (8 views, 27 s avg, 126.42%, 0 subs); Ep1 `L7fdRoNWEPE` traffic-source rows still empty. Moved the Ep1 Analytics read **out of the Oct 16 post-reset window** into a daytime strategy tick (~10 AM–noon MT Oct 16). Read-only; nothing posted or uploaded.
+
+## 2026-10-15 ~11:31 AM MT — audience strategy tick 127
+- #3/#4: `"Fable 5.5"` X counts plateaued at ~140–185/hr from 4 AM to 11 AM MT (75 in 11:00–11:30); official models overview still Fable 5.1. Reference: Ultramarine launch Oct 14 peaked at 99/hr in its first hours (538 over 12 h). Launch signal for scans = ~500+/hr or a 5.5 models-page row. Ep4 stays Hermes. Read-only; nothing posted or uploaded.
