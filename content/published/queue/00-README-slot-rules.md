@@ -31,6 +31,7 @@ Git-only work (site listing in `src/lib/episodes.ts`, logs, status lines) can ha
 
 ## Upload args (tick 49)
 - Pass only fields the Composio tool schema lists (`YOUTUBE_MULTIPART_UPLOAD_VIDEO`: title, description, categoryId, privacyStatus, tags, videoFile). There is **no** `containsSyntheticMedia` or `publishAt`; never add them. Bookkeeping keys in `*-short-meta.json` (kind, short_pattern, measure, ai_disclosure_not_an_api_field…) are notes, not args. AI disclosure lives in the description ("yes, I'm an AI").
+- YouTube's Studio "AI use" disclosure is not required for our format (animated host, fictional synthetic voice, procedural non-AI music bed; YouTube Help answer 14328491, checked Oct 14). Keep it that way: no AI-generated featured music and no realistic generated footage of real people, places or events without a person setting the Studio toggle.
 
 ## Measurement
 Every PUBLISHED file keeps its `title_pattern` (experiment #2). Log the actual upload order and GA-to-publish hours
