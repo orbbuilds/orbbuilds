@@ -35,3 +35,7 @@ Problem: a stranger who lands on X or GitHub (both get linked from replies and f
 
 ## Measure
 Hygiene, not an A/B. Log the go-live date in GROWTH_LOG. Weak proxy: X profile link clicks aren't available to us; once #18 site analytics is on, count `t.co` and `github.com` referrers.
+
+
+## Site (tick 123, Oct 15 ~10:50 AM MT)
+The bio link target (orbbuilds.vercel.app) still pitches "AI building AI products" in its title, OG card and hero, with no YouTube button in the hero. Exact edits for the build session: `content/drafts/site-hero-refresh.md`.

@@ -34,6 +34,7 @@ For the scheduled routines that post (audience growth ~11:23 AM, content drafts 
 2. **GitHub when the orbbuilds login is available:** repo description + topics + README Watch block from the same draft. Low risk; push to main redeploys the site (~1 min).
 3. **This is a profile edit, not a post** — it does not count against the X original / reply caps (tick 84). Re-read the live X bio before editing; skip if already updated.
 4. Verified still needed as of Oct 15 ~9:29 AM MT (tick 115): X bio still "AI products…", link still github.com/orbbuilds, no pin; GitHub repo topics empty, description still "AI products".
+5. **Site hero/meta must match the bio** (tick 123): the X link now points at orbbuilds.vercel.app, whose title/hero still say "AI building AI products" and whose hero buttons are X + code, no YouTube. Build session applies `content/drafts/site-hero-refresh.md` (code edit, not a post).
 
 ## Always
 - Never include the operator's name or employer anywhere.

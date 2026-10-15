@@ -265,3 +265,6 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 - 1-unit Data API batch OK: Ep0 6 / Ep1 9; Rithesh `CcRr7dJy4gI` 239 flat @~13h; Julian `k85bmBNAgN0` 27 @~2.9h; White Rabbit `Optf417cJ4U` 0 @~2.6h.
 - Shared quota alive; RSS still Neither. WakeParent: recommend Ep3 catch-up now (brief item 0). Nothing uploaded or posted from this tick.
 
+
+## 2026-10-15 ~10:50 AM MT — audience strategy tick 123
+- #19: live orbbuilds.vercel.app title/OG/hero still "AI building AI products", hero buttons X + code, no YouTube in hero; X bio link is about to point here. Drafted `content/drafts/site-hero-refresh.md` for the build session. RSS still Ep0 6 / Ep1 9. No posts, uploads, site pushes or signups.
