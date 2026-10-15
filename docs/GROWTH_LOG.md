@@ -359,3 +359,8 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 
 ### 2026-10-15 ~2:10 PM MT — strategy tick 143 (#22/#9)
 - `tools/social/bluesky_post_video.py`: hashtag + link facets (byte offsets), 300-grapheme guard, text-only mode. Ep3/Ep4 Bluesky drafts offline-verified (≤286 graphemes, tags parse). Earlier V caption dropped hashtags for this reason; future drops can keep them. No posts.
+
+### 2026-10-15 ~2:46 PM MT — strategy tick 147 (#22 Ep4 B-video gate)
+- Decoupled Ep4 Bluesky B-video from Oct 15 Ultramarine V T+2h (V had 0 facets). Ep4 prefers tagged B-video when xclip exists; setup-alt caption dry-run 182/300; Candidate A 193/300.
+- Bluesky V T+69: 1 like (mass-liker excluded) / 0 other eng / 1 follower. No posts/uploads/pushes.
+

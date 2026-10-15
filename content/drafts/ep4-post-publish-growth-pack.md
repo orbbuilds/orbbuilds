@@ -1,6 +1,6 @@
 # Draft: Ep4 post-publish growth pack — NOT POSTED
 
-Status: draft only (audience-strategy tick 118, Oct 15 ~10:00 AM MT). Nothing posted, replied, liked, followed or uploaded from this file.
+Status: draft only (audience-strategy tick 118; Bluesky B-video rule tick 147, Oct 15 ~2:46 PM MT). Nothing posted, replied, liked, followed or uploaded from this file.
 Use: the audience-growth routine **after Ep4 is live** (expected earliest ~1:28 AM MT Oct 16, and only if Ep3 did not consume the whole night). Paste the real YouTube URL where marked. Cap X at **1–2 spaced replies** per session while @OrbBuilds is in graduated access. Bluesky morning drop only (~10 AM–2 PM MT). Standing rules: `docs/POSTING_RULES.md`.
 
 **Rank vs older packs:** if Ep3 (or Ep2) also went live the same night, follow `2026-10-15-morning-growth-playbook.md` / freshest-first — Ep3 social wins that morning; defer this pack one growth session. Do not fire Ep3 + Ep4 X originals the same morning.
@@ -23,7 +23,7 @@ Autocomplete + written pages show `Hermes Agent vs Grok Bot` search interest. Ep
 2. If Short uploaded: paste full-episode URL into `*-short-meta.json` description; log **S1c**.
 3. Post the matching vote comment from `content/drafts/ep4-vote-comment-draft.md`. Pin needs a human in Studio.
 4. One X episode-drop (Post A). Optional: one reply from the shortlist (Reply 1 preferred). Do not fire two replies in the same session if Post A also went out.
-5. Bluesky: wait for ~10 AM–2 PM MT; Post B-text (text-first + self-reply with link). No overnight Bluesky.
+5. Bluesky: wait for ~10 AM–2 PM MT. Prefer **B-video** when `<slug>-xclip.mp4` exists (tagged; #22 clean sample — tick 147). Else B-text. Self-reply with YouTube link. Never post both. No overnight Bluesky.
 6. Site listing: apply `content/drafts/ep4-site-listing.md` (thumb `public/episodes/rr-004.jpg`) once videoId is public.
 7. Channel SEO / playlist: only if publish left it and quota remains.
 8. ~24h / ~72h later: views/likes/comments (+ Analytics retention/traffic if units allow) for P5 vs Ep1/Ep3 (#4 / #2).
@@ -73,10 +73,25 @@ vote on YouTube: 1 replacement question, 2 real task, 3 local models. link below
 #HermesAgent #AIagents #LLM
 ```
 
-Alt B-video, **only if** the ~3:36 PM Bluesky V T+2h read met the win rule (≥2 engagements or ≥1 new follower) **and** `<slug>-xclip.mp4` exists from the 9:28 PM render (195 graphemes; use the Candidate A framing, or swap the first line for the setup alt's if the gate passed). Post with `tools/social/bluesky_post_video.py --file <xclip> --text "<caption>" --post`, then the same own-thread reply. If the rule was not met, use B-text. Never post both.
+### B-video (preferred when xclip exists) — tick 147
+
+Do **not** gate this on the Oct 15 Ultramarine V T+2h result. That V had **0 facets / no hashtags** (posted before tick-143 tooling), so it is not a valid A/B for tagged native video. Today's T+2h only decides the channel-priority draft (`bluesky-primary-recommendation.md`). Ep4's tagged B-video is experiment **#22**'s first clean discovery sample.
+
+**When:** `<slug>-xclip.mp4` exists from the 9:28 PM render, and Bluesky is in the morning window. Post with `python3 tools/social/bluesky_post_video.py --file <xclip> --text "<caption>" --post`, then the own-thread reply with the YouTube URL. If no xclip, use B-text above. Never post B-text and B-video the same morning.
+
+Candidate A framing (dry-run tick 147: **193**/300 graphemes; tags `HermesAgent`, `AIagents`, `LLM`):
 
 ```
 an AI asked Hermes Agent v0.22 if it's replacing him. the cut: no-key desktop trial, caveats from Nous's own notes, verdict.
+
+full review + vote 1/2/3 in the reply 👇
+#HermesAgent #AIagents #LLM
+```
+
+Setup-gate alt (dry-run tick 147: **182**/300; same tags) — use if Lumin actually ran the desktop trial on camera:
+
+```
+an AI ran Hermes Agent v0.22 desktop setup on camera — no API key (nous/welcome). once per OS user, desktop-only.
 
 full review + vote 1/2/3 in the reply 👇
 #HermesAgent #AIagents #LLM
