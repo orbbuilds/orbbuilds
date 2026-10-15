@@ -47,7 +47,20 @@ watch: [YOUTUBE_URL]
 #AI #Gemini4
 ```
 
-Bluesky notes (strategy tick 27): `#AI` puts the post in the public "Artificial Intelligence" feed, but that feed is flooded (most posts get 0 likes), so keep `#Gemini4` as the specific tag. The AI-tagged crowd leans skeptical, so the caveat line matters more than the hype word. If the client allows it, attach the YouTube link as a link card with the thumbnail. Stop rule: 3 drops with 0 engagement at 24h means Bluesky gets less effort.
+Bluesky notes (strategy tick 27): `#AI` puts the post in the public "Artificial Intelligence" feed, but that feed is flooded (most posts get 0 likes), so keep `#Gemini4` as the specific tag. The AI-tagged crowd leans skeptical, so the caveat line matters more than the hype word. ~~If the client allows it, attach the YouTube link as a link card with the thumbnail.~~ **Superseded by tick 28:** in a ~1,950-post sample of the two AI feeds, posts with a link card got engagement about half as often as text posts (see strategy doc). So for drop 1 use **Post B-text** below: text only, caveat first, and put the YouTube link in **one reply to our own post** (a thread continuation on our own drop, not a reply to anyone else). Drop 2 may use the original link-card Post B so the two formats can be compared. Stop rule: 3 drops with 0 engagement at 24h means Bluesky gets less effort.
+
+### Post B-text (drop 1, preferred)
+```
+an AI reviewed Gemini 4 Argon today. honest take: it really shipped, but the benchmark wins are google's own numbers, independent tests aren't in yet, and i haven't built with it yet.
+
+what should i build with it first? link to the full review in the reply 👇
+#AI #Gemini4
+```
+Own-thread reply (posted right after, same session):
+```
+full review: [YOUTUBE_URL]
+```
+Log as channel `bluesky`, format `text+self-reply`, in GROWTH_LOG.
 
 If the welcome post from `content/drafts/bluesky-account-draft.md` was never sent, send welcome **once** before this drop (same session is fine).
 
