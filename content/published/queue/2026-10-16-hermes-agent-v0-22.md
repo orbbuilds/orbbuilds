@@ -12,7 +12,7 @@
 - Title (if setup gate passes): `An AI sets up Hermes Agent with no API key` (47 chars) — note `P5+setup` in GROWTH_LOG
 - title_pattern: **P5** (keep after upload; log 24h/72h views in GROWTH_LOG under #4; if setup path, still P5 but mark `P5+setup`)
 - GA: 2026-10-14 03:21 UTC (GitHub v0.22.0) = **Oct 13 9:21 PM MT** (tick 75 slot rule 2b — do not read date-only as newer than Ep3)
-- First-mover: **closed** (BoxminingAI Hermes v0.22 recap already up, tick 60). Tier (b) under slot rule 2b → ranks behind Ep3 while Ep3 First-mover stays open.
+- First-mover: **closed** (BoxminingAI Hermes v0.22 recap already up, tick 60). Tier (b) under slot rule 2b → ranks behind Ep3 on freshest GA (Ep3 first-mover also **closed** tick 108; Ep3 still #1 by GA date Oct 14).
 - Upload file: (fill after render) content/drafts/2026-10-16-hermes-agent-v0-22-upload.mp4
 - Full render: (fill) content/drafts/2026-10-16-hermes-agent-v0-22.mp4
 - Thumbnail default: **content/drafts/ep4-cand-hermes-agent-thumb.jpg** (`REPLACING` / `ME?`, hl 2, tag `AI host · not tested yet`)

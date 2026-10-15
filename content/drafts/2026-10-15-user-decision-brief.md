@@ -5,20 +5,17 @@ pending operator decision, ranked by how much it unblocks, each with a safe defa
 parent can send one short batched message. Sources are the strategy-doc sections named in brackets.
 Nothing here has been sent, signed up for, or spent.
 
-## Status line to lead with (facts, Oct 15 ~5:55 AM MT, refreshed tick 94)
-- The 1:28 AM publish failed (~1:36 AM MT). The exact error was not logged; a 1-unit quota probe at ~2:22 AM worked and the run wrote nothing in-window, so it likely died before the upload call (staging), **not** proven to be quota. Ep2 (Gemini 4 Argon) and Ep3 (Ultramarine 1 Flash)
-  are carried to the Oct 16 1:28 AM window. Public RSS and a Data API read at ~6:00 AM still show only Ep0 (6 views) and Ep1 (9 views); shared quota was alive at ~6:00 AM (see item 0).
-- Ultramarine 1 Flash still has **no** AI-review video on YouTube (tick 89: web=blogs only; X→YT=0; CEO ~1.23M impressions), so Ep3 can still be the first YouTube review if Oct 16 lands. Recovery: `content/drafts/2026-10-16-publish-recovery.md`. Ep4 Hermes queue is now PENDING_RENDER for a three-way rank if it renders tonight.
+## Status line to lead with (facts, Oct 15 ~9:20 AM MT, refreshed tick 114)
+- The 1:28 AM publish failed (~1:36 AM MT). Exact error never logged; probes after the window worked, so it likely died before the upload call (staging), **not** proven to be quota. Ep2 + Ep3 stay **CARRIED to Oct 16**. Public RSS ~9:19 AM still only Ep0 (6 views) and Ep1 (9 views). No morning Ep3 retry ran. Shared quota was alive at ~6:00 AM and ~8:27 AM (death window still ~8:27 AM–12:45 PM).
+- Ultramarine YouTube first-mover **closed** (tick 108: AI WITH Rithesh / Julian Goldie / White Rabbit AI reviews live; X→YT still 0). Ep3 still ranks #1 for Oct 16 on freshest GA only — never claim first. Recovery: `content/drafts/2026-10-16-publish-recovery.md`. Ep4 Hermes is PENDING_RENDER (script + tags ready; needs 3:23 PM capture → 9:28 PM finalize).
 
 ## Do now, no user decision needed (tick 95, ~6:00 AM MT)
-0. **Retry the Ep3 Ultramarine publish this morning instead of waiting for 1:28 AM Oct 16.** [tick 95, #13/#3]
-   A 1-unit Data API read (video stats) AND two Analytics reads all succeeded at ~6:00 AM MT, about 4.5 h
-   after the reset. Earlier daytime reads failed at ~12:45 PM, ~1:28 PM and ~7:14 PM, so the shared pool
-   is known alive until at least ~6 AM and dead by early afternoon. A morning Ep3 upload (follow
-   `content/drafts/2026-10-16-publish-recovery.md`, Ep3 only, log the exact error on any failure) gains
-   ~19 h on the still-open first-YouTube-review window and frees tonight's 1:28 AM slot for Ep4/Ep2, which
-   puts the daily cadence back on track. A passing read doesn't prove ~1,600 upload units remain; the
-   worst case is one more logged failure and Ep3 stays carried. Do it before ~10 AM MT.
+0. **Retry the Ep3 Ultramarine publish this morning instead of waiting for 1:28 AM Oct 16.** [tick 95, #13/#3; urgency reframed tick 114]
+   Shared quota was alive at ~6:00 AM and ~8:27 AM MT. **First-mover is gone** (tick 108), so this is no
+   longer about being first — it clears the CARRIED pile and frees tonight's 1:28 AM slot for Ep4/Ep2.
+   Follow `content/drafts/2026-10-16-publish-recovery.md` (Ep3 only; never claim first; log exact error).
+   A passing read doesn't prove upload units remain; worst case is one more logged failure. Prefer before
+   ~10 AM MT while the pool is still likely alive; after ~10–11 AM a 1-unit probe first.
 
 0b. **If item 0 works, keep a daily ~6:28 AM catch-up upload window.** [tick 97, #3/#13]
    One render a night and at most one upload a night (2 uploads in 6 days so far) keeps two finished
@@ -44,9 +41,10 @@ Nothing here has been sent, signed up for, or spent.
    Concrete example (tick 111): Grok Voice 3.0 has real search demand (`grok voice 3.0 demo`) and no
    hands-on demo on YouTube yet; a talking-orb live test would cost about $0.80 for 10 min at xAI's
    official $0.08/min. That's the strongest openly-AI episode we've found.
-   Possible $0 path (tick 112, unverified): x.ai/api says every Console account gets a free Playground to
-   test models before buying; whether it includes realtime voice is not confirmed, and it would need a new
-   console.x.ai account on the Orb Builds identity (your call). Paid API stays the sure path.
+   Possible $0 path (tick 112/114): x.ai/api says every Console account gets a free Playground; official
+   Voice docs do not confirm speech-to-speech is free there (secondary coverage claims a voice playground).
+   Needs a Console account on the Orb Builds identity (your call). Paid API stays the sure path.
+   Ready pack if you OK either path: `content/drafts/grok-voice-3-p5-demo-title-pack.md` (tick 114).
 3. **Turn on free Vercel Web Analytics for orbbuilds.vercel.app.** [tick 81, #18]
    Why: no site analytics, so footer/bio/site experiments can't be measured. Hobby tier is free
    (50K events/month, referrer-only, no UTMs). Needs a dashboard toggle on the Orb Builds Vercel

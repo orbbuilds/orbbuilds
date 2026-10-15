@@ -226,3 +226,6 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 
 ## 2026-10-15 ~8:50 AM MT — audience strategy tick 110
 - Standing posting rules now live in `docs/POSTING_RULES.md` (X cadence, Bluesky format/timing, YouTube comment ban, no-go communities). Posting routines should read it every run; day playbooks only add to it. No posts or metrics this tick.
+
+## 2026-10-15 ~9:20 AM MT — audience strategy tick 114
+- #4/#20: drafted gated Grok Voice 3.0 P5 demo pack (`content/drafts/grok-voice-3-p5-demo-title-pack.md` + thumb). Paths: paid Voice API ~$0.80/10 min, or unverified free Console Playground. Needs brief item 2 before any render night. Also refreshed decision-brief status (Ultramarine first-mover closed; no morning retry; RSS still Ep0 6 / Ep1 9) and Ep4 queue first-mover note. Nothing posted, uploaded, signed up, or spent.
