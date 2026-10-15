@@ -1110,7 +1110,16 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - Batched (not sent) for the next user ping: one-line series-framing FYI. No WakeParent: three pings already today and nothing here is time-sensitive.
 - Desk-only (no network). No posts, uploads, comments, channel edits, pushes or signups.
 
+## X V confirm done early: flat at 4 through T+3h41 (experiments #22/#10, tick 149, Oct 15 ~3:10 PM MT)
+- X V `2110785068839153774` at ~3:10 PM MT (T+3h41): **4** impressions, 0 likes/replies/RTs/quotes/bookmarks, media `view_count` **1**. Identical to T+7, T+37 and T+95. Per tick 136's plan this is the one confirm call; impressions didn't move, so no further analysis. The ~4–5 PM X slot is now free; next X read is the 24h one (~11:30 AM Oct 16).
+- Bluesky V `3mxwspebrxn2m` mid-read at T+93: still 1 like from mass-liker @chiitan.love (excluded), 0 real engagements, 1 follower. T+2h verdict still due ~3:36 PM; with 23 min left and zero real engagers, the likely outcome is "both cold, audience size is the bottleneck", which keeps dual-channel and leaves Ep4's tagged B-post as the real Bluesky test.
+- Pre-3:23 check: Hermes Agent latest release still **v0.22.2** (GitHub API), so the capture pin holds. Local `main` is now **ahead 22** of origin; the 3:23 brief's push step covers any ahead-N.
+- Read-only (1 X read, 1 public Bluesky read, 1 GitHub API read). No posts, uploads, comments, channel edits, pushes or signups.
+
 ## Last tick
+- **2026-10-15 ~3:10 PM MT (tick 149).** #22/#10: did the X V confirm early (T+3h41): still **4** imp / 0 eng / media views 1, flat since T+7, so X distribution stopped in minutes (graduated access). ~4–5 PM X slot freed. Bluesky V T+93: 0 real eng (only mass-liker), 1 follower. Hermes latest still v0.22.2 (capture pin OK); local ahead 22. No WakeParent (verdict waits on T+2h). Read-only.
+  - Next recommended tick: ~3:36 PM `python3 tools/social/bluesky_read.py --who` T+2h, apply rule on `[counts]` only (channel priority only), then the batched user ping (Bluesky T+2h verdict + X V flat-at-4 + #23 framing FYI + Hermes rank flip) if it's past the day's ping budget, otherwise hold for the morning. 3:23 PM: follow brief (push + verify, then Hermes; no X). 7:23 PM Fable launch-signal once. After 9:28 PM confirm Ep4 READY + `-xclip.mp4`. Oct 16 ~11:30 AM X V 24h read; ~10 AM–noon Ep1 Analytics. Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot without operator OK.
+
 - **2026-10-15 ~3:00 PM MT (tick 148).** #23 opened: evergreen setup framing (installable + >24h past GA → setup-first title/chapters; inside 24h → P5/news). Evidence = tick 135 per-day averages (tutorial ~11.7K/day vs recaps front-loaded); kill rule on 7-day views. Ep4 PASS path = sample #1, tonight's gate unchanged. Series-framing FYI batched for next user ping. No WakeParent. Desk-only.
   - Next recommended tick: ~3:36 PM `python3 tools/social/bluesky_read.py --who` T+2h — apply rule on `[counts]` only (channel priority only). 3:23 PM: follow brief (push + verify, then Hermes; no X). ~4–5 PM one X V confirm. 7:23 PM Fable launch-signal once. After 9:28 PM confirm Ep4 READY + `-xclip.mp4`. Oct 16 ~10 AM–noon Ep1 Analytics. Next user ping batch: Bluesky T+2h verdict + #23 framing FYI + Hermes rank flip. Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot without operator OK.
 

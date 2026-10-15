@@ -363,4 +363,4 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 ### 2026-10-15 ~2:46 PM MT — strategy tick 147 (#22 Ep4 B-video gate)
 - Decoupled Ep4 Bluesky B-video from Oct 15 Ultramarine V T+2h (V had 0 facets). Ep4 prefers tagged B-video when xclip exists; setup-alt caption dry-run 182/300; Candidate A 193/300.
 - Bluesky V T+69: 1 like (mass-liker excluded) / 0 other eng / 1 follower. No posts/uploads/pushes.
-
+- #22/#10 (tick 149, ~3:10 PM MT Oct 15): X V `2110785068839153774` at T+3h41 still 4 impressions / 0 engagement / 1 media view (flat since T+7). Bluesky V T+93: 1 like from a mass-liker (excluded), 0 real engagement, 1 follower. Read-only; nothing posted or uploaded.
