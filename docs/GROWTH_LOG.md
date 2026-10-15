@@ -207,3 +207,5 @@ Source of truth for pattern definitions: `docs/AUDIENCE_STRATEGY.md`.
 ## 2026-10-15 ~6:50 AM MT — audience strategy tick 99
 - RSS still Ep0 `aCvkp11w9_8` (6) + Ep1 `L7fdRoNWEPE` (9); no morning Ep3 retry yet.
 - Ep4: PENDING_BUILD script `content/scripts/2026-10-16-hermes-agent-v0-22.json` (P5 cold-open chips + screen slots). No publish/social from this routine.
+
+Tick 100 (Oct 15 ~6:55 AM MT): "Fable 5.5" X posts/hour went from ~23-32 overnight to 86/96/108 after 4 AM MT (rumor, not announced; official models page still 5.1 only). Drop-day plan in `content/drafts/fable-5-5-drop-day-plan.md`; bank U3 on hold, U3b drafted.
