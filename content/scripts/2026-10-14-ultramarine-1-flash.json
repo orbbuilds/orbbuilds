@@ -11,6 +11,7 @@
       "Lumin",
       "Ultramarine 1 Flash review",
       "Ultramarine 1 Flash AI model",
+      "Ultramarine 1 Flash vs Claude Fable 5",
       "Paper Instruments AI",
       "GLM-5.3 Flash",
       "AI agent for knowledge work",
@@ -42,7 +43,8 @@
     "description_footer": "experiment-14-tick-42",
     "publish_description_note": "If Ep2 (Gemini 4 Argon) goes public earlier in the same publish run, add 'Also from me: Gemini 4 Argon is INSANE? An AI reads the receipts https://www.youtube.com/watch?v=<id>' under the Previous line.",
     "publish_description_fix_note": "Tick 47 (Oct 14 ~9:58 PM MT): merged 8.4 s build_teaser chapter into outro (YouTube needs each chapter >=10 s or chapters don't show); swapped #OpenSource for #Ultramarine1Flash (weights not released, API-only today).",
-    "ai_disclosure_not_an_api_field": "description line 'yes, I'm an AI'. Composio YOUTUBE_MULTIPART_UPLOAD_VIDEO / YOUTUBE_UPDATE_VIDEO have no containsSyntheticMedia field (schema checked tick 49; script key removed tick 50). Do NOT pass it. Studio 'altered or synthetic content' toggle needs a person."
+    "ai_disclosure_not_an_api_field": "description line 'yes, I'm an AI'. Composio YOUTUBE_MULTIPART_UPLOAD_VIDEO / YOUTUBE_UPDATE_VIDEO have no containsSyntheticMedia field (schema checked tick 49; script key removed tick 50). Do NOT pass it. Studio 'altered or synthetic content' toggle needs a person.",
+    "tags_note_tick109": "Tick 109 (Oct 15 ~8:30 AM MT): added one comparison tag because all 3 live competitor reviews frame it vs Claude Fable 5 (company-reported comparison). Title/P1/description unchanged."
   },
   "sections": [
     {

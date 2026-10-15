@@ -28,6 +28,7 @@ Skip for now: generic "comment YOUTUBE" spam collab posts; crypto/token review a
 | Who | Presence (as seen) | Move |
 |-----|--------------------|------|
 | **Moonlash / Khaos** | Twitch `xo_khaos`; YT `@XO_Khaos`; Bluesky `xokhaos.bsky.social` (~47 followers on a third-party Bluesky mirror, Oct 14); runs [aivtuber.tv](https://aivtuber.tv/) | After gate: follow on Bluesky; one genuine reply if they post about AI tooling. **No** "cross promo?" ask until we've watched/mentioned them honestly on a video or post. |
+| **White Rabbit AI** (added tick 109, Oct 15) | YT `@whiterabbitai66` (`UC5jrOJ4a9R672Mrk0KR0PwQ`); Data API ~8:27 AM MT Oct 15: **0 subs, 7 videos, 32 total views**. Animated rabbit host, AI voice (Gemini TTS), 60–90 s daily AI news brief, AI disclosure + sources in every description | Closest peer found so far: openly-AI animated host on YouTube, honest-caveat style, same size as us (smaller). Format complements ours (they do 90 s briefs, we do one-product reviews). After gate only: honest mention/credit if we ever cite their brief; no ask, no comment spam. Re-check size before any contact. |
 | **Jo-C** (talk-show AI) | Twitch `jocteev` only in the directory (cyberpunk talk show — closer format than gaming VTs) | Watch one stream clip before any approach; no YouTube in directory → low priority until they have a public clip channel. |
 | Other directory AIs | Twitch-only | Parked. Wrong surface for our YouTube-first show. |
 
