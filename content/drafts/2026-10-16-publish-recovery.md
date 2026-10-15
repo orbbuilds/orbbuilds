@@ -56,5 +56,5 @@ Update the touched queue file status to `FAILED (<exact error string truncated t
 ## Measure after success
 - Experiment #3: GA→publish hours for Ep3 and Ep2 (use actual upload time).
 - Experiment #2: start the 24h clock; same-night pair still confound if both go up.
-- Experiment #2/#16 (tick 78): after the mains, one read-only `YOUTUBE_QUERY_ANALYTICS` for Ep1 `L7fdRoNWEPE` + Ep0 (`ids=channel==MINE`, `dimensions=video`: views, averageViewDuration, averageViewPercentage, subscribersGained; plus `dimensions=insightTrafficSourceType`, `filters=video==L7fdRoNWEPE`). Log in GROWTH_LOG Ep1 row. Separate API from upload quota; if it errors or returns no Ep1 row yet, log that and move on.
+- Experiment #2/#16 (tick 78): after the mains, one read-only `YOUTUBE_QUERY_ANALYTICS` for Ep1 `L7fdRoNWEPE` + Ep0 (`ids=channel==MINE`, `dimensions=video`, `sort=-views`, `maxResults=10` (sort+maxResults are required or it 400s, tick 82): views, averageViewDuration, averageViewPercentage, subscribersGained; plus `dimensions=insightTrafficSourceType`, `filters=video==L7fdRoNWEPE`). Log in GROWTH_LOG Ep1 row. Separate API from upload quota; if it errors or returns no Ep1 row yet, log that and move on.
 - First-mover: re-check X→YT Ultramarine links once after Ep3 is public.
