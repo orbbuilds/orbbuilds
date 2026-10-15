@@ -133,6 +133,7 @@ Success signal (weak, n=1 first sample): impressions clearly above 26, or any vi
 |-------------|-------------|-------|-----|---------|-----------|------------------|--------|-------|
 | ~0.12 (T+7 min, tick 128) | 4 | 0 | 0 | 0 | 0 | 0 | below | human-check after post; X closed for day |
 | ~0.6 (T+37 min, tick 131) | **4** | 0 | 0 | 0 | 0 | **1** | below | impressions flat; first media view landed. ~4–6h read still due ~3:30–5:30 PM |
+| ~1.6 (T+95 min, tick 136, ~1:04 PM MT) | **4** | 0 | 0 | 0 | 0 | **1** | below | fully flat since T+7 min; reach capped, not format-limited. One ~4–6h confirm read, then 24h |
 
 ## X original post-type tags (experiment #17)
 Tag each original when logging: **U** = useful-news (concrete fact + who should act + source), **P** = persona joke, **S** = status/episode promo. Measure impressions + likes/reposts at ~24h. Need ≥3 of each before ranking. Replies stay uncapped-type but still under the 1–2 session cap.
@@ -314,3 +315,4 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 - Auth dry-run: `createSession` 200, `emailConfirmed=True`, `getServiceAuth` OK for PDS `fibercap.us-west.host.bsky.network`.
 - Shipped `tools/social/bluesky_post_video.py` (default dry-run; `--post` publishes). Handoff `content/drafts/2026-10-15-bluesky-v-afternoon-handoff.md` updated with paste-ready command for the 1:30 PM one-off.
 - **No post/upload from this tick.** X still closed for Oct 15 after human-check.
+- #22 X V T+95 min (tick 136, ~1:04 PM MT): still 4 impressions / 0 eng / media views 1 — flat since T+7 min. Early read: native video did not break the graduated-access cap on X; Bluesky V is the real format test.
