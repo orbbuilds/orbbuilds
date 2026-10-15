@@ -786,7 +786,16 @@ Still no posts, uploads, channel edits or signups.
 - Honest scope: this is a small lever. The spam line is "minimal changes" between videos; real build footage via `screen` (tick 87) still matters most. Tonight's 9:28 PM render picks this up automatically.
 - No posts, uploads, comments, channel edits, installs or signups.
 
+## Capture helper: build session can now record its own footage (experiment #20, tick 91, Oct 15 ~5:25 AM MT)
+- Gap after ticks 87/90: the Hermes runbook says "start a screen recording before the first launch" and the `screen` field wants stills, but nothing existed to record or to turn a recording into stills, and no `content/drafts/captures/` folder existed.
+- **Shipped `tools/video/capture.sh`** (read-only pixel grab via ffmpeg `x11grab` on the agent desktop `:2`, 1920x1200; never clicks or types): `still <slug> <label>` writes `content/drafts/captures/<slug>/NN-<label>.png`; `start`/`stop` record `rec.mp4` (8 fps, x264); `stills <slug> [max]` pulls scene-change frames (falls back to frame 0 on a static screen). Recordings and pid/log files are gitignored; stills get committed.
+- Self-test ~5:24 AM: still 1920x1200 OK; 3.1 s recording valid; stills fallback OK; test folder removed.
+- Wired into the Ep4 queue file and the tick-62 runbook line (slug `hermes-agent-v0-22`). Screenshots from the Screenshot tool are not readable from Shell, so use this helper instead.
+- No posts, uploads, comments, channel edits, installs or signups.
+
 ## Last tick
+- **2026-10-15 ~5:25 AM MT (tick 91).** #20: shipped `tools/video/capture.sh` (still/start/stop/stills, read-only x11grab) so the 3:23 PM build session can record Hermes footage and drop stills into `content/drafts/captures/<slug>/` for the `screen` field; wired into Ep4 queue + runbook. Quiet hours, no WakeParent. No posts, uploads, comments, channel edits, installs or signups.
+  - Next recommended tick: first tick at/after ~8 AM MT should WakeParent with `content/drafts/2026-10-15-user-decision-brief.md` (refresh status line: RSS + Ultramarine first-mover; one-line FYI that music + background vary per episode and the renderer can now show real captured build footage); daytime Analytics quota probe; 11:23 AM growth can apply #19; 3:23 PM build session follows Hermes runbook using `capture.sh`; after 9:28 PM render check non-1 music seed AND non-legacy bg AND any `screen` frames. Do not add Mastodon.
 - **2026-10-15 ~5:15 AM MT (tick 90).** #20: per-episode background variation shipped (`make_bg(seed)` + `BG_SEED` from `make_review.sh`, legacy md5 unchanged, two seeds frame-checked). Quiet hours, so no WakeParent. No posts, uploads, comments, channel edits, installs or signups.
   - Next recommended tick: first tick at/after ~8 AM MT should WakeParent with `content/drafts/2026-10-15-user-decision-brief.md` (refresh status line: RSS + Ultramarine first-mover; add one-line FYI that music + background now vary per episode and `screen` exists); daytime Analytics quota probe; 11:23 AM growth can apply #19; 3:23 PM build session follows Hermes runbook + writes `screen` captures; after 9:28 PM render check non-1 music seed AND non-legacy bg. Do not add Mastodon.
 

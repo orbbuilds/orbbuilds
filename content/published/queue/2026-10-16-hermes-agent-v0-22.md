@@ -21,7 +21,7 @@
 - Tags if setup gate: also `Hermes Agent setup`, `Hermes Agent local LLM` + a `Setup` chapter ≥10 s.
 - Description: product-first line 1 from pack + chapters from timing.json + honesty lines + **footer** from `content/drafts/description-footer.md` (Previous = newest live review that night: Ep3 if up, else Ep1 `L7fdRoNWEPE`; skip playlist line on first night if playlist not created yet). Do **NOT** pass `containsSyntheticMedia` (tick 49).
 - Cold open (#16): fill sourced `show` chips — preferred `600 PLUGINS · ~2,520 CONTRIBUTORS · NO API KEY` (tick 56); frame-check 1/3/5/8 s; fallback `600 PLUGINS · NO API KEY` if chip collides.
-- Build captures (#20 / tick 87): if the 3:23 PM session records Hermes desktop frames, wire them via the script `screen` line field (repo-relative path). No-`screen` frames stay unchanged. Do not invent screenshots.
+- Build captures (#20 / tick 87): if the 3:23 PM session records Hermes desktop frames, wire them via the script `screen` line field (repo-relative path). No-`screen` frames stay unchanged. Do not invent screenshots. Capture with `tools/video/capture.sh` (tick 91): `start hermes-agent-v0-22` before the first `hermes desktop` launch, `still hermes-agent-v0-22 <label>` at key moments, `stop` + `stills` after; files land in `content/drafts/captures/hermes-agent-v0-22/NN-<label>.png`.
 - Music (#20 / tick 85): confirm `video-build/<slug>/music.wav` came from a **non-1** seed (seed from script name in `make_review.sh`). Log seed in episode notes.
 - Facts from Nous GitHub v0.22.0 release notes only. Allowed: "a third smaller" (Nous claim). Forbidden: AICoder 34%/LOC. Not affiliated.
 
