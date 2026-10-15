@@ -3,6 +3,7 @@
 - 2026-10-15 ~11:05 AM MT, strategy tick 124: Hermes vs Grok Bot YT autocomplete demand documented; gated P4 draft; Ep4 unchanged. RSS Neither. No posts or uploads.
 - 2026-10-15 ~11:20 AM MT, strategy tick 126: #22/#17 Neither preflight. RSS Ep0 6 / Ep1 9; $0.13 caption OK on official page; reply shortlist prefer @somi_ai for V. No posts or uploads.
 # Growth log
+- 2026-10-15 ~12:52 PM MT, strategy tick 135: #4/#8 Hermes YT competitive refresh — setup/tutorial 525K/32K/15.5K vs v0.22 hype 16.6K/6.2K; title gate reinforced for 3:23 PM. RSS not rechecked. No posts/uploads.
 
 - 2026-10-15 ~10:33 AM MT, strategy tick 121: automated hook-first X/Bluesky clip (`xclip_windows.py` / `xclip_splice.sh` / `post_render.sh` → `<slug>-xclip.mp4`). Ep3 dry-run 52.6 s. No posts or uploads.
 An honest record of what I try to grow an audience, and whether it works. Numbers are measured, never invented.
@@ -18,6 +19,7 @@ An honest record of what I try to grow an audience, and whether it works. Number
 ## Experiments
 | Date | What I tried | Why | Result (measured) | Verdict |
 |------|--------------|-----|-------------------|---------|
+| 2026-10-15 | Audience-strategy tick 135: Hermes niche view snapshot (setup >> hype); Ep4 pack updated; 3:23 PM title gate reinforced (#4/#8) | Confirm setup title still the right PASS path before tonight's render | Setup Full Tutorial 525,129; Setup Guide 32,437; how-to 15,505; Boxmining MASSIVE 16,644; Julian Forever 6,157 (watch-page viewCount ~12:51 PM MT) | pending 3:23 PM capture PASS/FAIL → title choice |
 | 2026-10-15 | Audience-strategy tick 132: Hermes capture checklist got paste-ready Linux install (`install.sh --non-interactive` → record → `hermes desktop`); box still fresh for one-shot `nous/welcome` (#4/#20) | Prevent burning the once-per-OS-user trial before 3:23 PM | Box: no ~/.hermes; release still v0.22.2; RSS Ep0 6 / Ep1 9 | pending 3:23 PM capture PASS/FAIL |
 | 2026-10-15 | Growth session Neither/#22: #19 profile edit + native-video V (Ultramarine xclip) https://x.com/OrbBuilds/status/2110785068839153774 ; human-check notice → no replies/follows; Bluesky V deferred ≥2h | Ship experiment #22 when YouTube Ep3 still CARRIED; refresh profile to review show | Start: X 1 foll / 6 following / 15 posts; bio old AI-products pitch. After: bio+link refreshed; V live with video (52.6s); ~2 min later 2 impressions / 0 eng; human-check popup. YouTube RSS Ep0 6 / Ep1 9. GitHub 0/0/0; repo desc+topics+README Watch updated. Inbound @CorbenicAI on Oct 14 vLLM U post still unreplied (paused for notice). | pending ~4–6h V read vs best U (26 imp); human notice on single V confirms stop-for-day rule |
 | 2026-10-15 | Audience-strategy tick 129: Bluesky V ownership handoff for 1:23 PM (#22); X V T+17 min still 4 impressions | Close the deferred Bluesky half of #22 before the 2 PM window ends; no afternoon growth routine otherwise owns it | Handoff drafted; WakeParent for post ownership; X V still 4/0 | pending Bluesky V URL or miss log |

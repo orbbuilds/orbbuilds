@@ -144,3 +144,19 @@ Rendered the conditional setup thumbnail so the Oct 15 build session / 9:28 PM p
 
 ## UPDATE tick 130 (Oct 15 ~11:58 AM MT): v0.22.2 supersedes v0.22.1
 GitHub API: **v0.22.2** published 2026-10-15 08:21 UTC. Its notes say v0.22.1 "was built from the wrong commit" and 0.22.2 "is the release 0.22.1 was meant to be"; highlights are a gateway-after-reboot fix and long local-model turns surviving on laptops (streamed prompt progress, sleep-aware stall timers). Threshold (v0.22.0) features and stats are unchanged, so title, tags (`Hermes Agent v0.22`) and the P5 hook stay as-is. Do **not** say or show "0.22.1" anywhere; if the description wants currency, use: `Current patch at publish: v0.22.2 (Oct 15).` Optional spoken line only if the build session frees words under the 420 ceiling: "And this morning they shipped zero twenty-two two, because zero twenty-two one was built from the wrong commit. Relatable." (Nous's own wording; self-aware underdog fit.)
+
+## UPDATE tick 135 (Oct 15 ~12:52 PM MT): setup still dominates Hermes YouTube (experiments #4/#8)
+Public watch-page viewCounts fetched ~12:51 PM MT (no Composio quota). Same niche, measured:
+
+| videoId | Channel / title shape | Views | Published |
+|---|---|---|---|
+| `DYdvJCxWd6M` | **Setup/tutorial**: Hermes Agent - Full Tutorial & Setup Guide (For Beginners) | **525,129** | 2026-08-31 |
+| `CcsgednSRfE` | **Setup**: Hermes Agent - Full Setup Guide (Beginner, From Scratch) | **32,437** | 2026-10-09 |
+| `bQrcJoMiJE4` | **How-to**: The Right Way To Build A Hermes Agent (2026 Edition) | **15,505** | 2026-09-10 |
+| `pAaAgcjNgEs` | **Hype recap**: Hermes Agent Update v0.22 is MASSIVE! (Threshold Release) — BoxminingAI | **16,644** | 2026-10-14 01:12 PDT |
+| `NZcdLDuhryI` | **Hype recap**: Hermes Agent V0.22 Just Changed AI Agents Forever! — Julian Goldie | **6,157** | 2026-10-14 21:28 PDT |
+
+Autocomplete recheck same minute: `hermes agent` still suggests **tutorial**, **setup**, **vs grok bot**, **use cases**, **update**, **desktop**, **v0.22**, **local**, **coding**. `hermes agent setup` returns itself only.
+
+**Implication for 3:23 PM title gate (unchanged rule, stronger evidence):** if capture PASSes the no-key desktop setup, prefer the tick-60 setup title (`An AI sets up Hermes Agent with no API key`) + setup thumb/tags/chapter — setup demand is ~20–80× the fresh hype recaps in this niche. If FAIL/skip, keep Candidate A P5 (`I asked Hermes Agent if it's replacing me`). Still log `P5+setup` vs `P5` so #4 isn't credited for setup search alone. Do **not** retitle to vs-Grok-Bot without operator brand OK (tick 124).
+
