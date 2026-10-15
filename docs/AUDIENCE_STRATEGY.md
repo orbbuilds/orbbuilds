@@ -595,7 +595,16 @@ Pulled all 15 @OrbBuilds posts with public metrics (X public read, ~11:27 PM MT)
 - **Applied (draft only):** Ep4 pack tick-60 block: the Oct 15 build session should really run the v0.22 no-key guided setup (`nous/welcome`) on the box (no connectors, which create a Nous identity), and if it ran, Ep4 uses `An AI sets up Hermes Agent with no API key` (P5 kept, logged as "P5+setup"), a "NO API KEY / SETUP" thumb, setup tags and a Setup chapter. Otherwise Candidate A stays unchanged.
 - Still no posts, uploads, channel edits or signups.
 
+## Ep4 Hermes setup: the no-key trial is desktop-only (experiment #4, tick 61, Oct 15 ~12:10 AM MT)
+- Read the v0.22.0 release body, README and install docs (~12:08 AM MT). The free `nous/welcome` trial only applies to a **fresh desktop install**; the notes say verbatim "The CLI, TUI and gateway get no account or free model." So tick 60's plan would have failed (or tempted a key/signup) if the build session just ran the README one-liner and `hermes`.
+- On Linux the docs path is the CLI install, then `hermes desktop`. A second no-key path is the desktop's one-click local llama.cpp model (CPU-only on the box, so slow).
+- Off-limits without the parent's OK: `hermes setup --portal`, `hermes auth upgrade`, `/login`, connecting any app (creates a Nous identity).
+- Tightened the Ep4 title gate in `content/drafts/ep4-p5-openly-ai-title-pack.md`: "no API key" title only if the desktop guided setup or a local model actually ran with no account created.
+- Still no posts, uploads, channel edits or signups.
+
 ## Last tick
+- **2026-10-15 ~12:10 AM MT (tick 61).** Verified the Ep4 Hermes setup plan against the source: the no-key `nous/welcome` trial is desktop-only (CLI/TUI get no free model), so the build session must go through `hermes desktop` or the local-model path, and must not use `setup --portal`/`auth upgrade`/`/login`. Tightened the Ep4 title gate. No posts, uploads, channel edits or signups.
+  - Next recommended tick: after the 1:28 AM run, read which file(s) went up, status lines, first stats rows, vote comments; morning growth posts the U-tagged Ep3 drop; check the build session used the desktop path for Hermes; ~24h X metrics on the vLLM U post (~1:32 PM MT). Pending user decisions unchanged.
 - **2026-10-14 ~11:58 PM MT (tick 60).** Ep4 first-mover check: BoxminingAI already has a Hermes v0.22 recap, so no first-mover edge; their data shows Hermes setup guides beat release recaps. Added a conditional "really run the no-key setup, then title it as a setup" plan to the Ep4 pack for the Oct 15 build session. No posts, uploads, channel edits or signups.
   - Next recommended tick: after the 1:28 AM run, read which file(s) went up, status lines, first stats rows, vote comments; morning growth posts the U-tagged Ep3 drop; check whether the morning scan keeps Ep4 on Hermes and whether the build session ran the setup; ~24h X metrics on the vLLM U post (~1:32 PM MT). Pending user decisions unchanged.
 - **2026-10-14 ~11:48 PM MT (tick 59).** Corrected experiment #4 source hygiene: Hermes v0.22.0 release notes *do* say "a codebase a third smaller" (tick 56 false-negative). Restored in Ep4 P5 pack; forbade AICoder 34%/line counts; noted evening scan. Upload files present for 1:28 AM. No posts, uploads, channel edits or signups.
