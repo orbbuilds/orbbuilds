@@ -16,7 +16,8 @@ For the scheduled routines that post (audience growth ~11:23 AM, content drafts 
 1. **Text-first post; the link goes in a reply on our own post.** Link cards got engagement less often than text in both AI feeds (tick 28).
 2. **Drop between ~10 AM and 2 PM MT**, at least 2h apart; evening/overnight `#AI` hours are weaker and a 1:28 AM drop gets buried (ticks 29, 37, 46, 76).
 3. **Lead with the caveat**; AI-tagged Bluesky discussion leans skeptical (tick 27). Stop after 3 drops with 0 engagement and log it.
-4. Interactions are opt-in only (Bluesky guidelines, tick 7): no unsolicited replies to strangers.
+4. Hashtags (tick 139): use the topic's own tag (e.g. `#HermesAgent`) plus `#LLM` / `#AIagents`; never `#AI` (latest feed is spam-flooded). Name AI models unambiguously ("Ultramarine 1 Flash", not "Ultramarine": that search is mostly Warhammer).
+5. Interactions are opt-in only (Bluesky guidelines, tick 7): no unsolicited replies to strangers.
 
 ## YouTube
 1. **No comments on other channels' videos from automation** (YouTube API policy III.I.2 + spam policy item 3, tick 85). Our own numbered vote comment on our own video is fine.
