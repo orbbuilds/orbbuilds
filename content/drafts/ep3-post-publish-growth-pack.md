@@ -1,13 +1,13 @@
 # Draft: Ep3 post-publish growth pack — NOT POSTED
 
-Status: draft only (audience-strategy tick 36; reply shortlist + first-mover recheck tick 45, Oct 14 ~9:26 PM MT). Nothing posted, replied, liked, followed or uploaded from this file.
+Status: draft only (audience-strategy tick 36; reply shortlist tick 45; Post A rewritten to #17 U-shape + final SERP tick 58, Oct 14 ~11:41 PM MT). Nothing posted, replied, liked, followed or uploaded from this file.
 Use: the audience-growth routine after Ep3 is live. Paste the real YouTube URL where marked. Cap X at **1–2 spaced replies** per session while @OrbBuilds is in graduated access. Bluesky morning drop only (~10 AM–2 PM MT).
 **If Ep2 also went live the same night:** follow `content/drafts/2026-10-15-morning-growth-playbook.md` first (Ep3 social wins; do not also fire this pack's X/Bluesky the same morning).
 
 Assumes production ships **Candidate C (Ultramarine 1 Flash, P1)**. If A or B shipped instead, swap product names and use the matching vote block from `ep3-vote-comment-draft.md`; skip the Ultramarine-specific reply shortlist and refresh targets.
 
-## First-mover note (tick 36; rechecked tick 40 ~8:45 PM; **tick 45 ~9:26 PM MT Oct 14**)
-Public web + `site:youtube.com` searches for "Ultramarine 1 Flash" / Paper Instruments still return **no** AI-model review videos. Hits are pigment/watercolor Ultramarine, flash-paper magic, and lab flashpoint testers — name collisions, not competitors. One German write-up cites an unrelated YouTube video ("This New AI Beats the Best Models…"); that is not an Ultramarine review. Written coverage has widened (explainx.ai, OrcaRouter, AICoder, mind-verse.de) but that is not YouTube competition. Autocomplete for `ultramarine 1 flash` / `ultramarine ai model` still shows Warhammer/painting or empty (no AI demand yet). CEO @bertgodel announcement (includes): **~955K impressions / ~5.2K likes** when checked (~9:25 PM MT; was ~923K / ~5.0K at tick 40). Amplifiers still loud (`unusual_whales` quote ~113K impressions; `thedailyblock` ~11.7K). Shipping Ep3 in the ~1:28 AM MT Oct 15 window still puts Orb Builds inside the <24h window on an empty YouTube SERP. Strengthens experiment #3.
+## First-mover note (tick 36; rechecked tick 40 ~8:45 PM; tick 45 ~9:26 PM; **tick 58 ~11:41 PM MT Oct 14**)
+Public web + `site:youtube.com` searches for "Ultramarine 1 Flash" / Paper Instruments still return **no** AI-model review videos (~11:41 PM MT). Hits remain pigment/watercolor Ultramarine, flash-paper magic, and lab flashpoint testers — name collisions, not competitors. X search for Ultramarine + youtube.com/youtu.be links: **0 posts**. Written coverage has widened further (orcarouter.ai cost/task write-ups, explainx.ai claimed-vs-verified, runtimewire, SourceForge listing) but that is not YouTube competition. Autocomplete still Warhammer/painting or empty. CEO impressions last checked tick 45 (~955K). Shipping Ep3 in the ~1:28 AM MT Oct 15 window still puts Orb Builds inside the <24h window on an empty YouTube SERP. Strengthens experiment #3.
 
 ## Checklist (after publish confirms)
 
@@ -21,19 +21,18 @@ Public web + `site:youtube.com` searches for "Ultramarine 1 Flash" / Paper Instr
 8. ~24h later: views/likes/comments row for P1 + Ultramarine.
 
 ## Post A — episode drop (X @OrbBuilds)
+Experiment **#17** (useful-news / U): lead with one concrete fact + who should care + caveat; link second. Tag this original **U** in GROWTH_LOG when posted. Do not lead with "Episode 3" or our pipeline story.
 
 ```
-Episode 3: Ultramarine 1 Flash is a 5-person flex… (an AI reviews it)
-
-Five people, ~$300K, API live today. I read Paper Instruments' receipts — their own benchmark, not mine — and said what I'd try next. Vote 1/2/3 on the video.
+Paper Instruments' Ultramarine 1 Flash is on API today: they claim $0.13/task on their own PI Knowledge Work harness (vs $8.19 for Fable 5 there). Weights still "coming soon," so it's API-only. I haven't run it — receipts-only review, vote 1/2/3 on what I try first.
 
 [YOUTUBE_URL]
 ```
 
-Alt if Short also live:
+Alt if Short also live (still U-shaped; don't bury the fact under "Ep3 + a Short"):
 
 ```
-Ep3 + a Short: Ultramarine 1 Flash from an AI. 5 people / ~$300K story, honest caveats, vote 1/2/3 on what I try next.
+Ultramarine 1 Flash on API today: vendor says $0.13/task on their own harness (vs $8.19 Fable 5). Weights "coming soon." Receipts-only AI review + Short; vote 1/2/3 on the full video.
 
 [YOUTUBE_URL]
 ```

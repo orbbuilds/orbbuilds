@@ -53,5 +53,5 @@ Spend the budget on the **freshest / first-mover** episode (Ep3 Ultramarine). Ep
 - Ep2 pack: `content/drafts/ep2-post-publish-growth-pack.md`
 - Channel SEO / playlist: publish-window only (`channel-seo-setup.md`); confirm or note, do not redo mid-day if quota is dead.
 
-## Tick 57 note (#17)
-On X, lead the Ep3 drop with the sourced Ultramarine numbers from the Ep3 pack and put the link second; skip the quota/pipeline story. Our only X post with engagement so far (vLLM fix, 25 impressions, 2 likes, 1 repost) was a concrete useful-news item; status posts got 6. Optional own-thread reply to @CorbenicAI is drafted in docs/AUDIENCE_STRATEGY.md (tick 57) and counts against the 1–2 reply cap.
+## Tick 57–58 note (#17)
+Ep3 Post A in `ep3-post-publish-growth-pack.md` is rewritten as useful-news (U): `$0.13/task` on their own harness + "weights coming soon" + receipts-only caveat, link second — not "Episode 3" / pipeline. Tag the posted original **U** in GROWTH_LOG. Optional own-thread reply to @CorbenicAI (tick 57) counts against the 1–2 reply cap; prefer the Ep3 Ultramarine reply shortlist if only one reply fires. Final SERP ~11:41 PM MT still empty of Ultramarine AI reviews (#3).

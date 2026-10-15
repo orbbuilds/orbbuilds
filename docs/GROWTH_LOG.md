@@ -44,6 +44,7 @@ An honest record of what I try to grow an audience, and whether it works. Number
 | 2026-10-14 | Audience-strategy tick 48: opened #15 cross-promo. AI VTuber directory Twitch-first (only Moonlash has YT); drafted Nim/Eden Tier A + Moonlash soft Bluesky in `content/drafts/cross-promo-shortlist.md` (not sent). Gate ≥3 live reviews | Fill pending cross-promo decision with evidence; inbound review programs > cold VTuber collabs | Research/draft only; no emails or posts | pending operator OK after gate |
 | 2026-10-14 | Audience-strategy tick 52: dual-READY morning playbook (`content/drafts/2026-10-15-morning-growth-playbook.md`) + vote comment in post-reset call order (#7) | Two READY episodes same night would overspend X graduated-access + bury Bluesky; vote comment must not wait for mid-day quota | Research/draft only; no posts or uploads | pending use after ~1:28 AM MT Oct 15 publish / morning growth |
 | 2026-10-14 | Audience-strategy tick 57: pulled all @OrbBuilds X post metrics (~11:27 PM MT) | Find which post types get any reach under graduated access (#17) | 1 follower (was 0), 6 following, 15 posts. vLLM security-fix post: 25 impressions, 2 likes, 1 repost (@asif1806), 1 bookmark, 1 reply (@CorbenicAI vendor plug). Ep2 status post 6, Ep1 live 10, Muse 6, intro 18, Oct 12 originals 5 and 5. Oct 14 replies: @asad0801 2, @localhostinho 0; all 8 replies total 3 impressions | First engagement ever came from a concrete, actionable news post; weak signal (n=1, low-quality engagers). Lead originals/episode drops with the useful fact |
+| 2026-10-14 | Audience-strategy tick 58: final Ultramarine YouTube SERP (~11:41 PM MT) still empty of AI reviews; 0 X posts linking youtube.com/youtu.be to Ultramarine; rewrote Ep3 X Post A to #17 U-shape ($0.13/task + weights caveat) | Lock first-mover (#3) into the last hour before 1:28 AM publish; make tomorrow's episode drop match the only post type that got engagement | Research/draft only; no posts or uploads. Written coverage widened (orcarouter, explainx, runtimewire) but not YT competition | pending: morning growth posts U-tagged Ep3 drop; log impressions ~24h |
 ## Learnings
 - 2026-10-11: The Composio-hosted YouTube connector shares a daily upload quota with other users of the same Google API project. A publish can fail through no fault of mine, so the pipeline needs a retry after the reset and I should not schedule a launch around a single attempt.
 - 2026-10-12: Retried after the Pacific daily reset and still got 429 on the shared Composio YouTube project. One reset is not enough when the shared pool is already maxed; need a quieter upload window or a dedicated project quota.
@@ -60,6 +61,25 @@ An honest record of what I try to grow an audience, and whether it works. Number
 - 2026-10-14: Ultramarine first-mover window still open at ~8:45 PM MT Oct 14 (tick 40): no YouTube AI-model reviews found; only Ecovacs Ultramarine P1 pool-cleaner name collisions. CEO announcement ~923K impressions. Written coverage exists but is not YouTube competition.
 - 2026-10-14: Upload-arg hygiene needs every live paste source cleared, not just queue/Short JSON — tick 49 left `meta.containsSyntheticMedia` in the Ep3 script until tick 50.
 (add as evidence comes in)
+
+- 2026-10-14: Final pre-publish Ultramarine YouTube SERP (~11:41 PM MT, tick 58) still empty of AI-model reviews; X had 0 posts linking youtube.com/youtu.be to Ultramarine. Written blogs do not count as YouTube competition for experiment #3. Ep3 X Post A rewritten to useful-news (U) shape for #17.
+
+
+## X original post-type tags (experiment #17)
+Tag each original when logging: **U** = useful-news (concrete fact + who should act + source), **P** = persona joke, **S** = status/episode promo. Measure impressions + likes/reposts at ~24h. Need ≥3 of each before ranking. Replies stay uncapped-type but still under the 1–2 session cap.
+
+| Post (approx) | Type | Impressions (as of tick 57 ~11:27 PM MT) | Engagement | Notes |
+|---------------|------|------------------------------------------|------------|-------|
+| vLLM / Chainguard security fix (Oct 14 afternoon) | **U** | 25 | 2 likes, 1 RT, 1 bookmark, 1 reply (vendor) | Best so far; engagers partly low-quality |
+| Intro / hello | **P** | 18 | 0 | Persona |
+| Ep1 live + ask | **S** | 10 | 0 | Episode/status |
+| Muse Wonder joke | **P** | 6 | 0 | Persona |
+| Ep2 quota / build ask | **S** | 6 | 0 | Status |
+| Oct 12 Claude-vs-quota joke | **P** | 5 | 0 | Persona |
+| Oct 12 tool-wish ask | **S** | 5 | 0 | Ask/status |
+| Ep3 morning drop (queued) | **U** | pending | pending | Tick 58 rewrite; post after 1:28 AM live |
+
+Rotate growth-session originals: after Ep3 U, next non-episode original should prefer **P** or **S** only if measuring those slots; otherwise keep leading with U until ≥3 U samples exist.
 
 ## Title-pattern rotation (experiment #2)
 Source of truth for pattern definitions: `docs/AUDIENCE_STRATEGY.md`.
