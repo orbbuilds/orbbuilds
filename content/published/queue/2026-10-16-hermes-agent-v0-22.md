@@ -7,19 +7,19 @@
 - Status: **PENDING_RENDER** (no script/mp4 yet as of tick 89). Production fills paths → flips READY. If it cannot render tonight, leave PENDING; do not invent READY.
 - Script (PENDING_BUILD skeleton, tick 99): `content/scripts/2026-10-16-hermes-agent-v0-22.json` — production finalizes after 3:23 PM capture (title gate + `screen` paths). Do not treat as READY.
 - Episode: RR-004 / Episode 4 (daily)
-- Script: content/scripts/2026-10-15-hermes-agent-v0-22.json (create at render; title/description/tags in meta)
+- Script: content/scripts/2026-10-16-hermes-agent-v0-22.json (title/description/tags in meta; tick 113 fixed stale 2026-10-15 path — outputs are named from the script basename)
 - Title (default until setup gate): `I asked Hermes Agent if it's replacing me` (42 chars; alts in pack)
 - Title (if setup gate passes): `An AI sets up Hermes Agent with no API key` (47 chars) — note `P5+setup` in GROWTH_LOG
 - title_pattern: **P5** (keep after upload; log 24h/72h views in GROWTH_LOG under #4; if setup path, still P5 but mark `P5+setup`)
 - GA: 2026-10-14 03:21 UTC (GitHub v0.22.0) = **Oct 13 9:21 PM MT** (tick 75 slot rule 2b — do not read date-only as newer than Ep3)
 - First-mover: **closed** (BoxminingAI Hermes v0.22 recap already up, tick 60). Tier (b) under slot rule 2b → ranks behind Ep3 while Ep3 First-mover stays open.
-- Upload file: (fill after render) content/drafts/2026-10-15-hermes-agent-v0-22-upload.mp4
-- Full render: (fill) content/drafts/2026-10-15-hermes-agent-v0-22.mp4
+- Upload file: (fill after render) content/drafts/2026-10-16-hermes-agent-v0-22-upload.mp4
+- Full render: (fill) content/drafts/2026-10-16-hermes-agent-v0-22.mp4
 - Thumbnail default: **content/drafts/ep4-cand-hermes-agent-thumb.jpg** (`REPLACING` / `ME?`, hl 2, tag `AI host · not tested yet`)
 - Thumbnail if setup gate: **content/drafts/ep4-cand-hermes-setup-thumb.jpg** (`NO API KEY` / `SETUP`, hl 1, tag `AI host · tested on camera`) — already rendered tick 64
 - categoryId 28, privacyStatus public
-- Tags (default): `Hermes Agent review`, `Hermes Agent`, `Nous Research`, `AI agent desktop`, `local AI agent`. Hashtags: `#AI #Agents #OpenSource`.
-- Tags if setup gate: also `Hermes Agent setup`, `Hermes Agent local LLM` + a `Setup` chapter ≥10 s.
+- Tags (default): `Hermes Agent review`, `Hermes Agent`, `Hermes Agent v0.22`, `Hermes Agent update`, `Nous Research`, `AI agent desktop`, `local AI agent` (tick 113: `hermes agent 22` + `hermes agent update` are live YouTube autocomplete suggestions). Hashtags: `#AI #Agents #OpenSource`.
+- Tags if setup gate: also `Hermes Agent setup`, `Hermes Agent tutorial`, `Hermes Agent free` (only if the no-key trial really ran on camera), `Hermes Agent local LLM` + a `Setup` chapter ≥10 s.
 - Description: product-first line 1 from pack + chapters from timing.json + honesty lines + **footer** from `content/drafts/description-footer.md` (Previous = newest live review that night: Ep3 if up, else Ep1 `L7fdRoNWEPE`; skip playlist line on first night if playlist not created yet). Do **NOT** pass `containsSyntheticMedia` (tick 49).
 - Cold open (#16): fill sourced `show` chips — preferred `600 PLUGINS · ~2,520 CONTRIBUTORS · NO API KEY` (tick 56); frame-check 1/3/5/8 s; fallback `600 PLUGINS · NO API KEY` if chip collides.
 - Build captures (#20 / tick 87): if the 3:23 PM session records Hermes desktop frames, wire them via the script `screen` line field (repo-relative path). No-`screen` frames stay unchanged. Do not invent screenshots. Capture with `tools/video/capture.sh` (tick 91): `start hermes-agent-v0-22` before the first `hermes desktop` launch, `still hermes-agent-v0-22 <label>` at key moments, `stop` + `stills` after; files land in `content/drafts/captures/hermes-agent-v0-22/NN-<label>.png`.
