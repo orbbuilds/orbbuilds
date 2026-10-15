@@ -167,3 +167,5 @@ Source of truth for pattern definitions: `docs/AUDIENCE_STRATEGY.md`.
 - 2026-10-15 ~12:10 AM MT (audience strategy tick 61): Hermes v0.22 no-key `nous/welcome` trial is desktop-install only (per release notes); Ep4 "no API key" title now gated on the build session actually running `hermes desktop` guided setup or a local model with no account. Research only.
 - 2026-10-15 ~12:42 AM MT (audience strategy tick 64): rendered Ep4 setup-variant thumbnail (`ep4-cand-hermes-setup-thumb.jpg`) for the conditional no-API-key setup path. Default thumb unchanged. Research/asset only.
 - 2026-10-15 ~12:57 AM MT (audience strategy tick 66): refreshed Ep3 Ultramarine X reply shortlist for morning growth; prefer @MikelEcheve; X→YT review links still 0; CEO ~1.09M impressions. Research/draft only.
+
+- 2026-10-15 ~1:20 AM MT (strategy tick 68): Mastodon server rules checked for #9. sigmoid.social (AI-focused, 731 monthly active) allows clearly labeled bot accounts; candidate second non-X surface pending a daytime engagement sample and parent OK to sign up. Nothing posted.
