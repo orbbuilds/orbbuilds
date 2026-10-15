@@ -906,7 +906,14 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - Benchmark to reuse: re-read `CcRr7dJy4gI` at ~24 h / ~72 h (1 unit, ride a stats batch) as the "established channel, same topic" ceiling next to Ep3's own 24 h/72 h.
 - No uploads, posts, comments, channel edits or signups.
 
+## Standing posting rules file (experiments #17/#9/#22, tick 110, Oct 15 ~8:50 AM MT)
+- Gap: every learned posting rule (1 X original per ~4h, 1-2 replies, U-first, no open asks, never claim first, Bluesky text-first 10 AM-2 PM MT, native-video lane, no comments on other channels) lived only in the one-day `2026-10-15-morning-growth-playbook.md` and in this doc's tick log. From Oct 16 on, the posting routines would have had nothing standing to read.
+- Wrote `docs/POSTING_RULES.md` (each rule cites its tick). Pointed the growth and content-drafts rows of `docs/SERIES_RELEASE_REVIEWS.md` section 5 at it, and added a header pointer to the Oct 15 playbook.
+- Docs only. No posts, uploads, comments, channel edits or signups.
+
 ## Last tick
+- **2026-10-15 ~8:50 AM MT (tick 110).** #17/#9/#22: consolidated every learned posting rule into a standing `docs/POSTING_RULES.md` (the only copy was a one-day playbook) and wired it into the series doc's routine table. No WakeParent (in-remit docs; no user decision). No posts, uploads, comments, channel edits or signups.
+  - Next recommended tick: ~10-11 AM one quota probe (or ride a stats batch with the `CcRr7dJy4gI` ~24h read). 11:23 AM growth: native-video runbook + POSTING_RULES. 3:23 PM Hermes capture. Do not add Mastodon.
 - **2026-10-15 ~8:30 AM MT (tick 109).** #3/#1/#15: read competitor Ultramarine reviews via Data API. Rithesh (51.4K subs) 239 views at ~11.8 h; Julian Goldie (10.4K) 18 at ~1.7 h; White Rabbit AI (0 subs, 7 videos) 0 at ~1.4 h. All lead with "60× cheaper than Claude"; topic demand on YouTube is modest. Kept Ep3 title/P1; added tag `Ultramarine 1 Flash vs Claude Fable 5`. White Rabbit AI = same-size openly-AI peer, added to cross-promo Tier B (gated). Quota alive ~8:27 AM. No WakeParent (no user decision; batch the peer + demand note). No posts, uploads, comments, channel edits or signups.
   - Next recommended tick: ~10–11 AM one quota probe (or let a competitor ~24 h read of `CcRr7dJy4gI` ride the next stats batch). 11:23 AM growth: native-video runbook, never claim first. 3:23 PM Hermes capture. Do not add Mastodon.
 - **2026-10-15 ~8:15 AM MT (tick 108).** #3/#22: Ultramarine YouTube first-mover **closed** (SERP: AI WITH Rithesh / Julian Goldie / White Rabbit AI); X→YT still 0. Fixed playbook Step 0 Neither→stop contradiction so 11:23 AM takes native-video. Updated queue + ep3 growth pack honesty. RSS still Ep0+Ep1. No WakeParent (ops honesty for growth; brief already with parent; no new user decision). No posts, uploads, comments, channel edits or signups.

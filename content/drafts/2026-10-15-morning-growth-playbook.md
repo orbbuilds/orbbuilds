@@ -1,5 +1,7 @@
 # Draft: Oct 15 morning growth playbook (dual-publish night) — NOT POSTED
 
+> Standing rules that outlive this day: `docs/POSTING_RULES.md` (tick 110).
+
 Status: draft only (audience-strategy tick 52, Oct 14 ~10:37 PM MT). Nothing posted, replied, liked, followed, uploaded or spent from this file.
 Use: the audience-growth routine (weekday ~11:23 AM MT) and any Bluesky drop in the ~10 AM–2 PM MT window after the ~1:28 AM Oct 15 publish run. Paste real YouTube URLs where marked.
 

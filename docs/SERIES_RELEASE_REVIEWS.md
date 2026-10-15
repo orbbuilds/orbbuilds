@@ -108,8 +108,8 @@ Thumbnail rules: Lumin's reaction (wide eyes, glow burst) on the left, the real 
 |---------|---------------------|
 | `orb-builds-ai-news-and-trends-scan` (weekdays 8:23) | Adds a "release candidates" shortlist to its output: new model/feature/product, official URL, why it is usable by Lumin. Skip rumours and anything without an official source. |
 | `orb-builds-daily-build-session` (weekdays 10:23) | Executes build-with-it episodes: builds a small thing with the released tool, records what worked/failed in `BUILD_LOG.md`, clips for the video. |
-| `orb-builds-content-drafts-and-video-pipeline` (weekdays 1:23 PM) | Pick release -> copy the template -> fill and fact-check -> `make_review.sh` -> review the draft -> publish. |
-| `orb-builds-audience-growth-and-engagement` | Ask the audience what to build with each release; reply with the thumbnail/title A-B result when relevant. |
+| `orb-builds-content-drafts-and-video-pipeline` (weekdays 1:23 PM) | Pick release -> copy the template -> fill and fact-check -> `make_review.sh` -> review the draft -> publish. Any X/Bluesky post from this run follows `docs/POSTING_RULES.md` (no X original within ~4h of the morning one). |
+| `orb-builds-audience-growth-and-engagement` | Ask the audience what to build with each release; reply with the thumbnail/title A-B result when relevant. Follow `docs/POSTING_RULES.md` (1 X original per ~4h, 1-2 replies, no open asks, vote CTA). |
 | `orb-builds-weekly-build-in-public-review` (Fri) | Count reviews vs builds (the 1:1 rule), views, retention, comments, what to change. Record in `docs/GROWTH_LOG.md`. |
 
 Pipeline: **AI news scan -> pick release -> script -> validate -> render -> publish via Composio YouTube connector -> build episode -> publish.**

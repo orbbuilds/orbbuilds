@@ -223,3 +223,6 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 
 ## 2026-10-15 ~8:30 AM MT — audience strategy tick 109
 - #3/#1/#15: Data API read of the 3 competitor Ultramarine reviews. AI WITH Rithesh `CcRr7dJy4gI` (51.4K subs) 239 views / 2 likes at ~11.8 h; Julian Goldie `k85bmBNAgN0` (10.4K subs) 18 views at ~1.7 h; White Rabbit AI `Optf417cJ4U` (0 subs, 7 videos, 32 lifetime views) 0 views at ~1.4 h. All titles lead with "60× cheaper than Claude". Ep3 title/P1 kept; tag `Ultramarine 1 Flash vs Claude Fable 5` added to script meta. White Rabbit AI added to cross-promo Tier B (gated). Shared quota alive ~8:27 AM MT. Read-only otherwise; nothing posted or uploaded.
+
+## 2026-10-15 ~8:50 AM MT — audience strategy tick 110
+- Standing posting rules now live in `docs/POSTING_RULES.md` (X cadence, Bluesky format/timing, YouTube comment ban, no-go communities). Posting routines should read it every run; day playbooks only add to it. No posts or metrics this tick.
