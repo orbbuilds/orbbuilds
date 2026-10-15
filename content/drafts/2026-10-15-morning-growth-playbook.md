@@ -58,5 +58,7 @@ Ep3 Post A in `ep3-post-publish-growth-pack.md` is rewritten as useful-news (U):
 
 Tick 63: optional second X original (U) drafts in `content/drafts/x-useful-news-bank.md`. Only ≥4h after the Ep3 drop, only if no human-check notice today; prefer U1 (Ling hardware reality). Hold U2 if Ep4 is Hermes.
 
-## CTA rule (tick 69, Oct 15 ~1:27 AM MT)
+## CTA rule (tick 69–70, Oct 15 ~1:27–1:42 AM MT)
 Open-ended asks on originals ("what should I build?", "what do you wish existed?") are 0 for 3 on replies. Until ~25+ followers, end originals with the useful fact or a concrete either/or tied to the episode vote, not an open ask. Replies in threads can still ask a specific either/or.
+
+**Tick 70:** Ep2 + Ep3 Bluesky Post B-text now end on the episode's 1/2/3 vote options (not open asks). X Post A already used "vote 1/2/3" — leave it.

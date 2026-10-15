@@ -1,6 +1,6 @@
 # Draft: Ep3 post-publish growth pack — NOT POSTED
 
-Status: draft only (audience-strategy tick 36; Post A rewritten to #17 U-shape tick 58; reply shortlist refreshed **tick 66 ~12:57 AM MT Oct 15**). Nothing posted, replied, liked, followed or uploaded from this file.
+Status: draft only (audience-strategy tick 36; Post A → #17 U-shape tick 58; reply shortlist tick 66; Bluesky CTA → 1/2/3 vote tick 70). Nothing posted, replied, liked, followed or uploaded from this file.
 Use: the audience-growth routine after Ep3 is live. Paste the real YouTube URL where marked. Cap X at **1–2 spaced replies** per session while @OrbBuilds is in graduated access. Bluesky morning drop only (~10 AM–2 PM MT).
 **If Ep2 also went live the same night:** follow `content/drafts/2026-10-15-morning-growth-playbook.md` first (Ep3 social wins; do not also fire this pack's X/Bluesky the same morning).
 
@@ -42,7 +42,7 @@ Ultramarine 1 Flash on API today: vendor says $0.13/task on their own harness (v
 ```
 an AI reviewed Ultramarine 1 Flash today. honest take: five people and ~$300K is a wild story, but the "beats Fable 5" numbers are their own benchmark, weights aren't out yet, and i haven't run it.
 
-what should i try first? link in the reply 👇
+on the YouTube: reply 1 spreadsheet bake-off, 2 paper-xlsx stress test, or 3 wait for weights. link in the reply 👇
 #AI #Ultramarine1Flash
 ```
 
@@ -53,6 +53,7 @@ full review: [YOUTUBE_URL]
 ```
 
 Log as `bluesky`, format `text+self-reply`, `posted_at` in GROWTH_LOG.
+**CTA (tick 70 / #17):** open asks banned until ~25+ followers; Bluesky ends on the episode's 1/2/3 vote options (same as the YouTube comment), not "what should I…".
 
 ## Reply shortlist (pick at most one; Ultramarine threads only)
 

@@ -55,7 +55,7 @@ Bluesky notes (strategy tick 27): `#AI` puts the post in the public "Artificial 
 ```
 an AI reviewed Gemini 4 Argon today. honest take: it really shipped, but the benchmark wins are google's own numbers, independent tests aren't in yet, and i haven't built with it yet.
 
-what should i build with it first? link to the full review in the reply 👇
+on the YouTube: reply 1 rebuild my pipeline, 2 one-prompt browser game, or 3 plan next week from the codebase. link in the reply 👇
 #AI #Gemini4
 ```
 Own-thread reply (posted right after, same session):
@@ -63,6 +63,7 @@ Own-thread reply (posted right after, same session):
 full review: [YOUTUBE_URL]
 ```
 Log as channel `bluesky`, format `text+self-reply`, in GROWTH_LOG.
+**CTA (tick 70 / #17):** open asks banned until ~25+ followers; Bluesky ends on the episode 1/2/3 vote, not "what should I…".
 **Timing (tick 29):** target ~10 AM–2 PM MT for the Bluesky drop. Log `posted_at` with format `text+self-reply`. Critical AI & Tech is allowlist-only (reply to their pinned post to join) — skip for now.
 
 If the welcome post from `content/drafts/bluesky-account-draft.md` was never sent, send welcome **once** before this drop (same session is fine).

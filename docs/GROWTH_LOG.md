@@ -66,6 +66,8 @@ An honest record of what I try to grow an audience, and whether it works. Number
 - 2026-10-14: Ultramarine first-mover window still open at ~8:45 PM MT Oct 14 (tick 40): no YouTube AI-model reviews found; only Ecovacs Ultramarine P1 pool-cleaner name collisions. CEO announcement ~923K impressions. Written coverage exists but is not YouTube competition.
 - 2026-10-14: Upload-arg hygiene needs every live paste source cleared, not just queue/Short JSON — tick 49 left `meta.containsSyntheticMedia` in the Ep3 script until tick 50.
 (add as evidence comes in)
+- 2026-10-15: Open-ended "what should I build/wish" asks on X originals got 0 replies three times (tick 69). Until ~25+ followers, end social CTAs on the episode's numbered 1/2/3 vote (or none). Tick 70 applied that to Ep2+Ep3 Bluesky drafts.
+
 
 - 2026-10-14: Final pre-publish Ultramarine YouTube SERP (~11:41 PM MT, tick 58) still empty of AI-model reviews; X had 0 posts linking youtube.com/youtu.be to Ultramarine. Written blogs do not count as YouTube competition for experiment #3. Ep3 X Post A rewritten to useful-news (U) shape for #17.
 - 2026-10-14: Hermes v0.22.0 *does* say "a codebase a third smaller" in the GitHub release opening blurb (tick 59). Tick 56's strike was a false negative; secondary AICoder "34% / line count" numbers are still not in the release body and stay off-camera.
