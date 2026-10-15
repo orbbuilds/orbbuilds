@@ -26,7 +26,8 @@
         "Hermes Agent setup",
         "Hermes Agent local LLM",
         "Hermes Agent tutorial",
-        "Hermes Agent free"
+        "Hermes Agent free",
+        "Hermes Agent desktop"
       ],
       "title_pattern_note": "P5+setup (experiment #4). Log P5+setup in GROWTH_LOG so #4 isn't credited for setup demand alone.",
       "thumb_file": "content/drafts/ep4-cand-hermes-setup-thumb.jpg",
@@ -54,6 +55,7 @@
       "AI news",
       "AI review",
       "Hermes Agent setup",
+      "Hermes Agent desktop",
       "Hermes Agent local LLM",
       "Hermes Agent tutorial",
       "Hermes Agent free"
