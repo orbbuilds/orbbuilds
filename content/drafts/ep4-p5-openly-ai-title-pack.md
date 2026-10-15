@@ -131,3 +131,12 @@ Read the Hermes installation and Hermes Desktop docs pages (~12:18 AM MT) and ch
 - **One shot, so record it the first time.** The `nous/welcome` trial is once per OS user and the box is shared, so there's no rehearsal. Start a screen recording of the desktop before the first launch, and don't test-launch the desktop in a scratch run first. If the guided chat doesn't appear, that footage is the honest-failure angle.
 - **Driving the window** is GUI work (computerUse on the agent's own desktop), not Shell automation. Still off-limits without the parent's OK: `setup --portal`, `auth upgrade`, `/login`, Hermes Cloud sign-in, connecting any app or messaging channel.
 - Side note for the script (sourced, desktop docs): Hermes Desktop ships a built-in "Bot Mode", a roster of agents with their own chats and routines that message each other. Fair one-line comparison for Lumin ("it has a bot roster, like the one I live in"), no claims beyond the docs.
+
+## UPDATE tick 64 (Oct 15 ~12:42 AM MT): setup thumb rendered (experiments #4/#6)
+Rendered the conditional setup thumbnail so the Oct 15 build session / 9:28 PM production don't invent words mid-render:
+- **File:** `content/drafts/ep4-cand-hermes-setup-thumb.jpg` (1280x720, 204 KB)
+- **Command used:** `python3 tools/video/thumbnail.py content/drafts/ep4-cand-hermes-setup-thumb.jpg --product "HERMES AGENT" --line1 "NO API KEY" --line2 "SETUP" --hl 1 --tag "AI host · tested on camera"`
+- **Visual check:** product chip top-left; "NO API KEY" yellow (hl 1); "SETUP" white; Lumin face clear on the right; tag "AI host · tested on camera" at bottom.
+- **Default remains** `ep4-cand-hermes-agent-thumb.jpg` (REPLACING / ME?) until the title gate in tick 61 is met.
+- **If setup succeeds:** set `meta.thumbnail` to the setup file (or regenerate with the same args into the episode slug path via `post_render.sh`).
+- **If setup fails or is skipped:** keep Candidate A thumb; do not use the "tested on camera" tag.
