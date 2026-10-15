@@ -145,6 +145,15 @@ class Episode:
             subj = self.meta.get("subject", "")
             P["pill"] = Layer(self._pill("NEW RELEASE", (255, 120, 140), 34), 0, 0)
             P["subject"] = Layer(rgba_text(wrap_px(subj, inter(84, 780), 1500), inter(84, 780), (240, 248, 255), 100), 0, 0) if subj else None
+            # hook cards: a cold-open line's `show` ("5 PEOPLE · 13¢ / TASK") becomes big stacked chips in the
+            # right column, so muted viewers can read the sourced hook numbers too (max 3 chips, staggered in)
+            P["hook"] = []; yy = 330
+            for ln in sec["lines"]:
+                parts = [x.strip() for x in str(ln.get("show") or "").split("·") if x.strip()]
+                for i, txt in enumerate(parts):
+                    if len(P["hook"]) >= 3: break
+                    chip = self._hook_chip(txt); st = ln["start"] + i * min(0.9, (ln["end"] - ln["start"]) * 0.6 / max(1, len(parts)))
+                    P["hook"].append((st, Layer(chip, 1655 - chip.size[0] // 2, yy))); yy += chip.size[1] + 26
             return P
         label, col = BADGES.get(kind, BADGES["info"]); label = sec.get("badge") or label
         px, py, pw, ph = 830, 120, 1010, 700
@@ -187,6 +196,14 @@ class Episode:
             P["bul"][ln["start"]] = (Layer(im, px + 44, yy), ln["end"])
             yy += h + 36
         return P
+
+    def _hook_chip(self, text, col=(255, 120, 140)):
+        f = inter(66, 800); lines = wrap_px(text, f, 400); lh = 78
+        d0 = ImageDraw.Draw(Image.new("L", (4, 4))); tw = max(int(d0.textlength(l, font=f)) for l in lines)
+        im = Image.new("RGBA", (tw + 64, len(lines) * lh + 34), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+        d.rounded_rectangle((0, 0, im.size[0] - 1, im.size[1] - 1), 26, fill=(8, 18, 46, 200), outline=col + (220,), width=3)
+        for i, l in enumerate(lines): d.text((32, 12 + i * lh), l, font=f, fill=(250, 252, 255, 255))
+        return im
 
     def _pill(self, text, col, size):
         f = inter(size, 700); d0 = ImageDraw.Draw(Image.new("L", (4, 4))); tw = int(d0.textlength(text, font=f))
@@ -244,6 +261,8 @@ class Episode:
             cur["pill"].x = int(W / 2 - cur["pill"].w / 2); cur["pill"].y = 70; cur["pill"].draw(fr, a, dy=-20 * (1 - a))
             if cur["subject"]:
                 sj = cur["subject"]; sj.x = int(W / 2 - sj.w / 2); sj.y = 135; sj.draw(fr, smooth((t - 0.7) / 0.6), dy=14 * (1 - smooth((t - 0.7) / 0.6)))
+            for st, lay in cur.get("hook", []):
+                a = smooth((t - st) / 0.3) * fi; lay.draw(fr, a, dy=18 * (1 - a))
         else:
             cur["panel"].draw(fr, fi * 0.97)
             for k in ("badge", "head", "src_tag", "src"):

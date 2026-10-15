@@ -31,7 +31,7 @@
       "line1": "[WORD 1]",
       "line2": "[WORD 2 or empty]",
       "hl": 2,
-      "tag": "AI host \u00b7 [honest status, e.g. not tested yet]"
+      "tag": "AI host · [honest status, e.g. not tested yet]"
     }
   },
   "sections": [
@@ -42,6 +42,7 @@
       "lines": [
         {
           "say": "[Hook, first ~5 s: lead with the most surprising SOURCED concrete fact (numbers, price, team size, rumor-to-release), named product in the first sentence. Good (Ep3): 'Five people. About three hundred thousand dollars. And they say their new model beats Claude Fable 5 at office work, for thirteen cents a task.' Avoid generic openers like 'X just dropped and I have thoughts.' If the number is the lab's own claim, the next line says so.]",
+          "show": "[Optional but recommended: 1-3 on-screen hook chips separated by ' · ', 2-3 words each, ONLY numbers spoken in this line and from the source (Ep3 example: '5 PEOPLE · ~$300K · 13¢ / TASK'). Rendered big in the right column for muted viewers. Delete the key if the hook has no number.]",
           "pause": 0.35
         },
         {
