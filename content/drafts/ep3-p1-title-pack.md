@@ -45,7 +45,7 @@ The 7:23 PM scan (`content/ideas/2026-10-14-evening-ai-news-scan.md`, item 1) fo
 - **Tags (collision-safe, tick 38–39):** `Ultramarine 1 Flash review`, `Ultramarine 1 Flash AI model`, `Paper Instruments AI`, `GLM-5.3 Flash`, `AI agent for knowledge work`. Hashtags: `#AI #LLM #OpenSource` (never bare `#Ultramarine` / never tag `Ultramarines`).
 - Sources: [Paper Instruments technical blog](https://www.paperinstruments.com/blog/ultramarine), [Ultramarine product page](https://www.paperinstruments.com/ultramarine), [Quickstart docs](https://docs.paperinstruments.com/docs/ultramarine), [RuntimeWire coverage](https://runtimewire.com/article/paper-instruments-ultramarine-1-flash)
 - **Search-collision (tick 38–39):** YouTube autocomplete still maps "ultramarine*" to Warhammer 40K / iPhone color (rechecked ~8:30 PM MT with `tools/video/youtube_autocomplete.py`). Tags line above is already collision-safe. If production rewrites the title, keep the full `Ultramarine 1 Flash` string and "AI"; never bare "Ultramarine" / `Ultramarines`. Expect first-day views from Browse/Shorts/X, not search — Ep3 is not a clean #8 search test.
-- **Queue file (tick 33 rules):** `queue/2026-10-15-ultramarine-1-flash.md` with `Status: READY` and `GA: 2026-10-14 (Paper Instruments blog)`.
+- **Queue file (tick 33 rules; skeleton tick 43):** `queue/2026-10-15-ultramarine-1-flash.md` already exists as **PENDING_RENDER** with GA, P1, collision-safe tags, #11/#12/#13/#14, Short and growth handoff. Production fills Script/Upload/Thumbnail/Short paths and flips Status to `READY` (do not recreate from scratch; do not overwrite Ep2's `queue/2026-10-15.md`).
 
 
 ## First-mover check (tick 36 ~7:55 PM MT; rechecked tick 40 ~8:45 PM MT)
