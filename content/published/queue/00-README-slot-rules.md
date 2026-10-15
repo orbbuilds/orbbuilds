@@ -37,6 +37,7 @@ Composio YouTube uploads need an `s3key` from `COMPOSIO_REMOTE_WORKBENCH` (`uplo
 - Stage **inside** the post-reset run, not hours ahead.
 - One episode at a time: stage → workbench → multipart → thumb before starting the next episode's staging.
 - Never reuse a staging URL across attempts or across nights.
+- **Host order (tick 83):** (1) litterbox.catbox.moe 1h (Ep1-proven) → (2) 0x0.st on POST/download fail → (3) catbox.moe permanent. `litter.catbox.moe` CDN HEAD was 403 from the box; if workbench download 403s, switch hosts. Log which host staged each file.
 - On any fail, write the **exact** tool error into the queue status line (`FAILED (...)` or `CARRIED to … (...)`) and GROWTH_LOG — never leave "failed" without the string.
 
 ## Upload args (tick 49)

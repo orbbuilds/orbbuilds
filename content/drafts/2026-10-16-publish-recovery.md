@@ -16,16 +16,24 @@ Oct 15 ~1:28 AM publish **failed** (~1:36 AM MT). Public RSS at ~2:02 AM and aga
 
 Ep3 still wins the first-mover check (tick 73): public web coverage is blogs only; X search `Ultramarine 1 Flash (youtube.com OR youtu.be)` returned **0** posts (~2:07 AM MT). Prefer Ep3 as upload #1.
 
-## Hard rule: stage fresh inside the window
-Ep2's own queue step already says litter.catbox.moe links **expire after ~1 hour**. Do **not** pre-stage hours before 1:28 AM. For each upload:
+## Hard rule: stage fresh inside the window (backup order, tick 83)
+Do **not** pre-stage hours before 1:28 AM. Litterbox links expire ~1h; MCP still needs a public URL → workbench → `s3key` (local paths are not valid `s3key`s).
 
-1. Stage the local mp4 (and thumb JPG if needed) to a fresh public URL **after** the run starts.
+**Host order (try next on POST or workbench-download failure):**
+1. **litterbox.catbox.moe** (1h) — Ep1-proven; API host reachable from box (tick 83).
+2. **0x0.st** — box allowlist; HEAD 200 from box (tick 83).
+3. **catbox.moe** (permanent) — HEAD 200; use when 1h expiry is the problem or litterbox fails. Note: `litter.catbox.moe` CDN returned **403** on HEAD from this box — if a litterbox download URL 403s in workbench, skip straight to 0x0/catbox.
+
+For each upload:
+1. Stage the local mp4 (and thumb JPG if needed) to a fresh public URL **after** the run starts, using the host order above. Log which host returned the URL.
 2. In `COMPOSIO_REMOTE_WORKBENCH`: download that URL → `upload_local_file` → keep the returned `s3key`.
 3. Call `YOUTUBE_MULTIPART_UPLOAD_VIDEO` with **only** schema fields: `title`, `description`, `categoryId` (`28`), `privacyStatus` (`public`), `tags`, `videoFile` `{name, mimetype: video/mp4, s3key}`. Never pass `containsSyntheticMedia` or `publishAt`.
-4. Thumbnail: stage a fresh public JPG URL, then `YOUTUBE_UPDATE_THUMBNAIL` with that URL (channel is phone-verified; Ep1 custom thumbs work).
-5. If staging or download takes long, re-stage before the 1h expiry — never reuse a URL from an earlier attempt or from daytime prep.
+4. Thumbnail: stage a fresh public JPG URL (same host order), then `YOUTUBE_UPDATE_THUMBNAIL` with that URL (channel is phone-verified; Ep1 custom thumbs work).
+5. If staging or download takes long on a 1h host, re-stage or fall through to catbox — never reuse a URL from an earlier attempt or from daytime prep.
 
 Proven path (Ep1, `EP1_RETRY_NOTE.txt`): litterbox → workbench download + `upload_local_file` → multipart → thumbnail.
+
+**Pre-flight (tick 83, ~3:53 AM MT):** Ep3 upload `content/drafts/2026-10-14-ultramarine-1-flash-upload.mp4` 18,191,891 B; thumb 211,917 B; Ep2 `/workspace/argon-share.mp4` 9,087,465 B; both script `publish_*` fields present with footers; no forbidden upload args.
 
 ## Call order (experiment #13 / #7)
 Same as `00-README-slot-rules.md`, one episode at a time:
