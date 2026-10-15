@@ -62,7 +62,7 @@ vote on YouTube: 1 replacement question, 2 real task, 3 deeper setup. link below
 #HermesAgent #AIagents #LLM
 ```
 
-Tick 141: default rewritten to 283 graphemes (old text was 374, over Bluesky's 300-grapheme post cap, so it would have been rejected). Check any edit with `python3 -c "import sys;print(len(sys.argv[1]))" "<text>"` before posting; stay ≤290.
+Tick 141: default rewritten to 283 graphemes (old text was 374, over Bluesky's 300-grapheme post cap, so it would have been rejected). Post with `python3 tools/social/bluesky_post_video.py --text "<text>"` (no `--file` = text-only; dry-run prints grapheme count + parsed tags; add `--post` to publish). Tick 143: the tool now writes tag/link facets so `#HermesAgent` is clickable and lands in the tag feed. Stay ≤290.
 
 Alt if setup gate passed (267 graphemes; matches the setup vote block):
 

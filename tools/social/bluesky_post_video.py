@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Post one vertical MP4 to Bluesky via the video service (ATProto).
+"""Post one vertical MP4 (or a text-only post) to Bluesky via ATProto.
+
+Writes hashtag + link facets (UTF-8 byte offsets) so #tags are clickable and
+show in tag feeds, and refuses text over the 300-grapheme cap.
 
 Default is dry-run: createSession + getServiceAuth + file probe. Pass --post
 to upload and create the feed record. Never prints passwords or JWTs.
@@ -34,6 +37,58 @@ LABELS = {
     "pw",
     "bluesky",
 }
+
+
+# --- rich-text facets (hashtags + links) --------------------------------
+# Bluesky does not auto-link #tags or URLs in raw text: the client must send
+# app.bsky.richtext.facet entries with UTF-8 *byte* offsets. Without them tags
+# are not clickable and the post does not show up in tag feeds.
+import re
+import unicodedata
+
+TAG_RE = re.compile(r"(?:^|\s)(#[^\d\s\W][\w]*)", re.UNICODE)
+URL_RE = re.compile(r"(?:^|\s|\()(https?://[^\s)]+)")
+MAX_GRAPHEMES = 300
+
+
+def grapheme_len(text: str) -> int:
+    """Approximate grapheme count: code points minus combining marks / ZWJ / VS."""
+    n = 0
+    for ch in text:
+        if unicodedata.combining(ch) or ch in "\u200d\ufe0f\ufe0e":
+            continue
+        n += 1
+    return n
+
+
+def _byte_span(text: str, start: int, end: int) -> tuple[int, int]:
+    b0 = len(text[:start].encode("utf-8"))
+    b1 = b0 + len(text[start:end].encode("utf-8"))
+    return b0, b1
+
+
+def build_facets(text: str) -> list[dict]:
+    facets: list[dict] = []
+    for m in URL_RE.finditer(text):
+        url = m.group(1).rstrip(".,;:!?")
+        start = m.start(1)
+        b0, b1 = _byte_span(text, start, start + len(url))
+        facets.append({
+            "index": {"byteStart": b0, "byteEnd": b1},
+            "features": [{"$type": "app.bsky.richtext.facet#link", "uri": url}],
+        })
+    for m in TAG_RE.finditer(text):
+        tag = m.group(1).rstrip(".,;:!?")
+        if len(tag) > 65:  # lexicon: tag maxGraphemes 64 (without '#')
+            continue
+        start = m.start(1)
+        b0, b1 = _byte_span(text, start, start + len(tag))
+        facets.append({
+            "index": {"byteStart": b0, "byteEnd": b1},
+            "features": [{"$type": "app.bsky.richtext.facet#tag", "tag": tag[1:]}],
+        })
+    facets.sort(key=lambda f: f["index"]["byteStart"])
+    return facets
 
 
 def load_creds(path: Path) -> tuple[str, str]:
@@ -180,18 +235,20 @@ def poll_job(job_id: str, timeout_s: int = 300) -> dict:
     raise SystemExit(f"video job timed out after {timeout_s}s; last={json.dumps(last)[:300]}")
 
 
-def create_post(access_jwt: str, did: str, text: str, blob: dict, width: int, height: int) -> dict:
+def create_post(access_jwt: str, did: str, text: str, blob: dict | None, width: int, height: int) -> dict:
     record = {
         "$type": "app.bsky.feed.post",
         "text": text,
         "createdAt": time.strftime("%Y-%m-%dT%H:%M:%S.000Z", time.gmtime()),
         "langs": ["en"],
-        "embed": {
+        "facets": build_facets(text),
+    }
+    if blob is not None:
+        record["embed"] = {
             "$type": "app.bsky.embed.video",
             "video": blob,
             "aspectRatio": {"width": width, "height": height},
-        },
-    }
+        }
     r = requests.post(
         f"{PDS}/xrpc/com.atproto.repo.createRecord",
         headers={"Authorization": f"Bearer {access_jwt}"},
@@ -241,7 +298,7 @@ def probe_video(path: Path) -> tuple[int, int, float]:
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--creds", type=Path, default=CRED_DEFAULT)
-    ap.add_argument("--file", type=Path, required=True)
+    ap.add_argument("--file", type=Path, default=None, help="vertical MP4; omit for a text-only post (B-text drops)")
     ap.add_argument("--text", required=True)
     ap.add_argument("--width", type=int, default=0)
     ap.add_argument("--height", type=int, default=0)
@@ -252,15 +309,27 @@ def main() -> None:
     )
     args = ap.parse_args()
 
-    if not args.file.is_file():
-        raise SystemExit(f"missing video: {args.file}")
-    size = args.file.stat().st_size
-    w, h, dur = probe_video(args.file)
-    if args.width:
-        w = args.width
-    if args.height:
-        h = args.height
-    print(f"file ok: {args.file} ({size} bytes, {w}x{h}, {dur:.1f}s)")
+    w = h = 0
+    if args.file is not None:
+        if not args.file.is_file():
+            raise SystemExit(f"missing video: {args.file}")
+        size = args.file.stat().st_size
+        w, h, dur = probe_video(args.file)
+        if args.width:
+            w = args.width
+        if args.height:
+            h = args.height
+        print(f"file ok: {args.file} ({size} bytes, {w}x{h}, {dur:.1f}s)")
+    else:
+        print("no --file: text-only post")
+
+    glen = grapheme_len(args.text)
+    facets = build_facets(args.text)
+    tags = [f["features"][0].get("tag") for f in facets if f["features"][0]["$type"].endswith("#tag")]
+    links = [f["features"][0].get("uri") for f in facets if f["features"][0]["$type"].endswith("#link")]
+    print(f"text ok: {glen}/{MAX_GRAPHEMES} graphemes; tags={tags} links={links}")
+    if glen > MAX_GRAPHEMES:
+        raise SystemExit(f"text is {glen} graphemes, over Bluesky's {MAX_GRAPHEMES} cap; shorten it")
 
     ident, password = load_creds(args.creds)
     session = create_session(ident, password)
@@ -277,6 +346,13 @@ def main() -> None:
 
     if not args.post:
         print("dry-run complete (pass --post to upload + publish)")
+        return
+
+    if args.file is None:
+        result = create_post(session["accessJwt"], did, args.text, None, 0, 0)
+        rkey = result.get("uri", "").rsplit("/", 1)[-1]
+        print(f"posted uri={result.get('uri','')}")
+        print(f"public https://bsky.app/profile/{handle}/post/{rkey}")
         return
 
     print("uploading to video.bsky.app …")

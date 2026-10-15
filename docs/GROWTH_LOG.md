@@ -335,3 +335,6 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 - Bluesky V `3mxwspebrxn2m` at T+23 min: **1** like / 0 reposts / 0 quotes / 0 replies; profile still **1** follower / 1 post. URL: https://bsky.app/profile/orbbuilds.bsky.social/post/3mxwspebrxn2m
 - X V same clip still **0** eng / **4** impressions (lifetime). Early signal: Bluesky already > X on engagement for the identical Ultramarine Short.
 - Win rule still T+2h (~3:36 PM): ≥2 eng or ≥1 new follower. Halfway on eng; no call yet. Read-only; nothing posted or uploaded.
+
+### 2026-10-15 ~2:10 PM MT — strategy tick 143 (#22/#9)
+- `tools/social/bluesky_post_video.py`: hashtag + link facets (byte offsets), 300-grapheme guard, text-only mode. Ep3/Ep4 Bluesky drafts offline-verified (≤286 graphemes, tags parse). Earlier V caption dropped hashtags for this reason; future drops can keep them. No posts.
