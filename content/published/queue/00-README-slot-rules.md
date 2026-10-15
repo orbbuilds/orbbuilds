@@ -29,6 +29,9 @@ The publish run updates the status of every file it touched before it ends.
 (4) approved channel/playlist writes, add the new videoId to the reviews playlist → (5) second upload or Short.
 Git-only work (site listing in `src/lib/episodes.ts`, logs, status lines) can happen anytime after the video is public.
 
+## Upload args (tick 49)
+- Pass only fields the Composio tool schema lists (`YOUTUBE_MULTIPART_UPLOAD_VIDEO`: title, description, categoryId, privacyStatus, tags, videoFile). There is **no** `containsSyntheticMedia` or `publishAt`; never add them. Bookkeeping keys in `*-short-meta.json` (kind, short_pattern, measure, ai_disclosure_not_an_api_field…) are notes, not args. AI disclosure lives in the description ("yes, I'm an AI").
+
 ## Measurement
 Every PUBLISHED file keeps its `title_pattern` (experiment #2). Log the actual upload order and GA-to-publish hours
 (experiment #3) in GROWTH_LOG. Never invent a videoId or a stat.

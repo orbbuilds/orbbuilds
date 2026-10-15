@@ -13,7 +13,7 @@
 - Thumbnail: **content/drafts/2026-10-14-ultramarine-1-flash-thumb.jpg** (1280x720, post_render output; fallback `content/drafts/ep3-cand-ultramarine-thumb.jpg`) (`meta.thumbnail`: product `ULTRAMARINE 1 FLASH`, line1 `5 PEOPLE`, line2 `$300K?`, hl 2). Title/P1 unchanged.
 - categoryId 28, privacyStatus public
 - Tags (collision-safe): `Ultramarine 1 Flash review`, `Ultramarine 1 Flash AI model`, `Paper Instruments AI`, `GLM-5.3 Flash`, `AI agent for knowledge work`. Hashtags: `#Ultramarine1Flash #AI #LLM` (tick 47: #OpenSource dropped, weights not released) (never bare `#Ultramarine` / never `Ultramarines`).
-- Description: product-first line 1 + chapters from timing.json + honesty lines + **footer** from `content/drafts/description-footer.md` (Previous = Ep1 `L7fdRoNWEPE`; skip playlist line tonight; if Ep2 already public in the same run, also link Ep2). Set `containsSyntheticMedia: true`.
+- Description: product-first line 1 + chapters from timing.json + honesty lines + **footer** from `content/drafts/description-footer.md` (Previous = Ep1 `L7fdRoNWEPE`; skip playlist line tonight; if Ep2 already public in the same run, also link Ep2). Do **NOT** pass `containsSyntheticMedia`: Composio's upload/update tools have no such field (schema checked tick 49), so an extra arg could fail the only upload window. AI disclosure = the "yes, I'm an AI" description line.
 - Facts from Paper Instruments sources in the title pack. Not tested by Lumin. Vendor benchmark / $0.13-per-task / five-people / ~$300K claims stay attributed.
 
 - Short file: content/drafts/2026-10-14-ultramarine-1-flash-short.mp4 (vertical, 46.8 s, CTA end card) with content/drafts/2026-10-14-ultramarine-1-flash-short-meta.json (paste full-episode URL where marked).

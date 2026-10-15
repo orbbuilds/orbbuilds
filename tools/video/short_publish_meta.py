@@ -4,7 +4,7 @@
   short_publish_meta.py <script.json> <out.json> [--duration SEC] [--cta 0|1] [--short-file PATH]
 
 Writes JSON the publish routine can upload with (title, description template,
-tags, containsSyntheticMedia, pattern S1/S1c). Does not upload.
+tags, AI-disclosure note, pattern S1/S1c). Does not upload.
 See docs/AUDIENCE_STRATEGY.md experiment #5 and content/drafts/shorts-publish-meta.md.
 """
 from __future__ import annotations
@@ -103,7 +103,9 @@ def build(meta: dict, *, duration_s: float | None, cta: bool, short_file: str | 
         "tags": tags,
         "categoryId": "28",
         "privacyStatus": "public",
-        "containsSyntheticMedia": True,
+        # Composio upload/update tools have no containsSyntheticMedia field (checked
+        # Oct 14, 2026); disclosure rides in the description. Not an API param.
+        "ai_disclosure_not_an_api_field": "description line 'yes, I'm an AI'; do NOT pass containsSyntheticMedia (no Composio field); Studio toggle needs a person",
         "upload_after_main": True,
         "never_retry_at_main_expense": True,
         "product": product,

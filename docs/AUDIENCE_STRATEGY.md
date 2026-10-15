@@ -133,7 +133,7 @@ Ep2 applied: description now leads with "Gemini 4 Argon review from an AI…" an
 - Needs: a Google Cloud project under the Orb Builds Google account (the user has to do the sign-in; Google blocks the box browser), YouTube Data API enabled, an OAuth client with Composio's redirect URI, then a Composio YOUTUBE auth config with "use your own developer credentials" and a fresh connection.
 - Risk to check when set up: a Google OAuth app left in "Testing" status has refresh tokens that expire after about 7 days (Google OAuth policy, not re-verified this tick). Publish the consent screen to "In production" or plan a weekly reconnect.
 
-**Also noticed:** `videos.insert` has a `status.containsSyntheticMedia` field. Lumin is openly AI, so the publish routine should set it to `true` on every upload (consistent with the honesty rules).
+**Also noticed:** `videos.insert` has a `status.containsSyntheticMedia` field. ~~Set it to `true`~~ **Superseded tick 49:** Composio's upload/update tools don't expose it, so don't pass it; disclosure stays in the description, and the Studio toggle needs a person.
 
 **Metric to log per episode:** `GA date/time (if the source gives one) | publish time | hours GA→publish | views_72h`.
 
@@ -493,7 +493,15 @@ Goal: fill the pending cross-promo decision with something concrete instead of a
 
 **Rule drafted:** no outreach until ≥3 live reviews with real URLs; prefer independent review over paid verdict; use email for Tier A and Bluesky for soft Tier B; never from this routine. Full shortlist + email draft: `content/drafts/cross-promo-shortlist.md`.
 
+## Upload-arg audit: synthetic-media flag (experiment #13, tick 49, Oct 14 ~10:08 PM MT)
+Tick 4 told the publish run to set `containsSyntheticMedia: true`, and the Ep3 queue file plus both Short meta JSONs carried it. Read-only schema check: `YOUTUBE_MULTIPART_UPLOAD_VIDEO` accepts only title, description, categoryId, privacyStatus, tags, videoFile; `YOUTUBE_UPDATE_VIDEO` only title/description/tags/category/privacy; a tool search for the disclosure flag found nothing else. Passing the flag would at best be dropped and at worst fail the single post-reset upload.
+- **Fixed:** removed the key from both `*-short-meta.json` files and `short_publish_meta.py` (replaced by a clearly-named note key), rewrote the Ep3 queue line to "do NOT pass", added an "Upload args" rule to `queue/00-README-slot-rules.md`.
+- AI disclosure stays where it already is: "yes, I'm an AI" in every description. The Studio "altered or synthetic content" toggle is Studio-only (needs a person); whether YouTube requires it for a clearly animated character was not checked this tick.
+- Still no posts, uploads, channel edits or signups.
+
 ## Last tick
+- **2026-10-14 ~10:08 PM MT (tick 49).** Pre-publish arg audit (#13): `containsSyntheticMedia` isn't a field on Composio's YouTube upload/update tools, but the Ep3 queue and both Short JSONs told the 1:28 AM run to pass it. Removed it and added an upload-args rule so a schema mismatch can't burn the only window. No posts, uploads, channel edits or signups.
+  - Next recommended tick: after the 1:28 AM run, read which file(s) went up, status lines, first stats rows (Ep1 views as #14 baseline); morning Bluesky drop ~10 AM–2 PM MT (Ep3 pack). Pending user decisions unchanged (own OAuth, Ben's Bites, X liveness, cross-promo).
 - **2026-10-14 ~10:00 PM MT (tick 48).** Opened #15 (cross-promo) to fill the pending "cross-promo confirmation" with evidence. Public AI VTuber directory (15 entries) is Twitch-first; only Moonlash lists YouTube. Better near-term path: review-partner programs that already want AI reviewers (Nim creative-partner email drafted; Eden AI secondary). Soft peer: Moonlash/Khaos on Bluesky after ≥3 live reviews. Draft in `content/drafts/cross-promo-shortlist.md`. No posts, emails, DMs, uploads, channel edits or signups.
   - Next recommended tick: after the 1:28 AM run, read which file(s) went up, status lines, first stats rows (Ep1 views as #14 baseline); morning Bluesky drop ~10 AM–2 PM MT (Ep3 pack); optionally include #15 Nim email in the next batched user ping with own-OAuth / Ben's Bites / X liveness. Pending user decisions unchanged until that batch.
 - **2026-10-14 ~9:58 PM MT (tick 47).** Ep3 flipped READY (~9:50 PM). Pre-publish audit found chapters that YouTube would reject (8.4 s teaser chapter) and an inaccurate `#OpenSource` hashtag; fixed both in the script meta + queue. Built `tools/video/chapters.py` and a warn-only check in `post_render.sh`. No posts, uploads, channel edits or signups.

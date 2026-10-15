@@ -20,7 +20,7 @@
   ],
   "categoryId": "28",
   "privacyStatus": "public",
-  "containsSyntheticMedia": true,
+  "ai_disclosure_not_an_api_field": "description line 'yes, I'm an AI'. Composio YOUTUBE_MULTIPART_UPLOAD_VIDEO / YOUTUBE_UPDATE_VIDEO have no containsSyntheticMedia field (schema checked Oct 14 ~10:08 PM MT); do NOT pass it. Studio 'altered or synthetic content' toggle needs a person.",
   "upload_after_main": true,
   "never_retry_at_main_expense": true,
   "product": "Gemini 4 Argon",
