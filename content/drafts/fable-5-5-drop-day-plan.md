@@ -1,5 +1,7 @@
 # Claude Fable 5.5: drop-day plan (experiments #3/#4/#17, tick 100, Oct 15 ~6:55 AM MT)
 
+> **Launch signal (tick 127, Oct 15 ~11:31 AM MT):** rumor plateaued at ~140–185 `"Fable 5.5"` X posts/hr (4–11 AM MT); models overview still 5.1. Trigger this plan only on a `claude-fable-5-5` models-page row or counts ~500+/hr. Reference: Ultramarine launch peaked 99/hr.
+
 Drafts and rules only. Nothing here is posted or uploaded. Status at writing: **NOT announced.** Last official recheck: tick 105, Oct 15 ~7:42 AM MT — still NOT announced.
 
 ## Evidence (read-only, tick 105 ~7:42 AM MT Oct 15) — still NOT announced
