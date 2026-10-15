@@ -377,3 +377,10 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 - Hermes capture gate already PASS; live Ep4 script still had Candidate A title and "setup pending" caveats with no `screen`.
 - Applied pass_setup to live meta + caveats screens (`01-welcome.png`, `04-reply.png`); queue notes flip done. 9:28 PM renders without re-copying `_on_pass`.
 - No posts, uploads, or pushes from this tick.
+
+### 2026-10-15 ~5:00 PM MT — strategy tick 160 (#23/#4/#7/#22 social defaults)
+- Ep4 capture already PASS; live title `An AI sets up Hermes Agent with no API key`.
+- Flipped `ep4-post-publish-growth-pack.md` + `ep4-vote-comment-draft.md` so setup Post A / B-text / B-video / vote / replies are **default**; Candidate A + "receipts-only" replies moved to rollback-only (would have contradicted the video).
+- Oct 16 morning playbook note: when Ep4 is live, Ep4 social wins over Ep3 the same morning (tick 140 rank).
+- Dry-run: setup B-video **182**/300, setup B-text **267**/300, tags HermesAgent/AIagents/LLM.
+- No posts, uploads, or pushes from this tick.

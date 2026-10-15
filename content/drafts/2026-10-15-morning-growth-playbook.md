@@ -195,3 +195,14 @@ Standing rules: `docs/POSTING_RULES.md` (now includes #19).
 ## Tick 129 (Oct 15 ~11:46 AM MT): Bluesky V ownership for 1:23 PM
 ~~X V is live; human-check closed X for Oct 15. **1:23 PM content-drafts (or parent dispatch) owns Bluesky V**~~ — **superseded tick 131:** sole owner is the **1:30 PM one-off** routine (Bluesky Ultramarine clip). Content-drafts must **skip** Bluesky V. Follow `content/drafts/2026-10-15-bluesky-v-afternoon-handoff.md`. Window **1:29–2:00 PM MT**. Skip Welcome/U1. No X today.
 - 4–6 h V read (~3:30–5:30 PM MT): log impressions **and** media `view_count` vs best U (26 impressions). T+7 min was 4 impressions / 0 video views.
+
+## Tick 160 (Oct 15 ~5:00 PM MT): Oct 16 morning — Ep4 setup PASS is the primary pack
+Capture gate **PASS**; live Ep4 title is setup-first (`An AI sets up Hermes Agent with no API key`). Upload rank remains **Ep4 → Ep3 → Ep2** (tick 140).
+
+**Oct 16 ~11:23 AM growth branch (after RSS/API confirm):**
+1. **Ep4 live** (alone or with Ep3/Ep2) → use `ep4-post-publish-growth-pack.md` **setup defaults** (Post A setup, Bluesky B-video setup caption if xclip, setup vote block). Defer Ep3/Ep2 social one session. Pattern log: `P5+setup`.
+2. **Only Ep3 live** (Ep4 missed) → `ep3-post-publish-growth-pack.md` (say review, never first).
+3. **Only Ep2 live** → `ep2-post-publish-growth-pack.md` (Bluesky text-first).
+4. **Neither** → do **not** re-post today's Ultramarine V; prefer one U-bank original (U5 or U2) under tick-71 spacing + ≤1 reply, or hold. Human-check closed X originals after the Oct 15 V.
+
+Do not use Candidate A / "receipts-only" Ep4 copy on Oct 16 morning unless the live title is still the FAIL/news path.
