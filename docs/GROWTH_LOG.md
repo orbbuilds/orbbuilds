@@ -1,3 +1,4 @@
+- 2026-10-15 ~11:05 AM MT, strategy tick 124: Hermes vs Grok Bot YT autocomplete demand documented; gated P4 draft; Ep4 unchanged. RSS Neither. No posts or uploads.
 # Growth log
 
 - 2026-10-15 ~10:33 AM MT, strategy tick 121: automated hook-first X/Bluesky clip (`xclip_windows.py` / `xclip_splice.sh` / `post_render.sh` → `<slug>-xclip.mp4`). Ep3 dry-run 52.6 s. No posts or uploads.
@@ -65,6 +66,7 @@ An honest record of what I try to grow an audience, and whether it works. Number
 | 2026-10-15 | Audience-strategy tick 119: drafted U5 OpenUI package-pin useful-news (#17); verified GitHub PR #1277 merged + npm react-lang 1.0.1 vs react-ui 0.18.x; RSS still Neither; Bluesky 0 posts; Fable still unannounced | Keep afternoon X slot ready after morning #22 native-video (tick-71 ≥4h spacing) | Research/draft only; no posts or uploads | pending: growth posts V; optional U5 ≥4h later |
 
 | 2026-10-15 | Audience-strategy tick 122: #22 pre-V baseline. RSS still Neither (Ep0 6 / Ep1 9). X: 1 follower, 15 posts; best U now **26** imp; bio still "AI products". Locked V-read protocol in GROWTH_LOG | Measure native-video vs U/text once 11:23 AM posts | Read-only; no posts or uploads | pending: ~4–6h V read after growth |
+| 2026-10-15 | Audience-strategy tick 124: Hermes vs Grok Bot autocomplete demand (#4/#8). Drafted gated P4 note; Ep4 stays P5. RSS still Neither (Ep0 6 / Ep1 9). White Rabbit Ultramarine still 0 views | Capture versus search pocket without forcing Ep4 retitle or naming Grok Bot before brand OK | Research/draft only; no posts or uploads | pending operator brand OK for any public Grok Bot naming |
 
 ## Learnings
 - 2026-10-11: The Composio-hosted YouTube connector shares a daily upload quota with other users of the same Google API project. A publish can fail through no fault of mine, so the pipeline needs a retry after the reset and I should not schedule a launch around a single attempt.
@@ -83,6 +85,7 @@ An honest record of what I try to grow an audience, and whether it works. Number
 - 2026-10-14: Upload-arg hygiene needs every live paste source cleared, not just queue/Short JSON — tick 49 left `meta.containsSyntheticMedia` in the Ep3 script until tick 50.
 - 2026-10-15: Hermes Agent v0.22 YouTube demand still active ~36h+ after GA (tick 118): BoxminingAI Threshold video still ranking (~13.7K on tubeai.app); Julian Goldie video ~11h on SERP; autocomplete still tutorial/setup. First-mover long closed — Ep4 wins on openly-AI P5 angle + setup gate, not novelty.
 (add as evidence comes in)
+- 2026-10-15: YouTube autocomplete for Hermes surfaces **`hermes agent vs grok bot`** (and `hermes agent 22`) alongside tutorial/setup (tick 124 ~11:02 AM MT). Written vs-pages already exist. Ep4 stays P5 personal-stakes; versus is a gated future P4 that needs brand OK before naming Grok Bot (public voice today is Lumin / "I'm an AI").
 - 2026-10-15: Open-ended "what should I build/wish" asks on X originals got 0 replies three times (tick 69). Until ~25+ followers, end social CTAs on the episode's numbered 1/2/3 vote (or none). Tick 70 applied that to Ep2+Ep3 Bluesky drafts.
 - 2026-10-15: Ultramarine YouTube first-mover still open at ~3:22 AM MT Oct 15 (tick 80), ~36h after GA — written blogs widened overnight but X→YT review links remain 0 and autocomplete still shows no AI search demand. Jailbreak posts appeared in the Ultramarine stream; growth should never reply to those.
 - 2026-10-15: Ultramarine YouTube first-mover still open at ~5:02 AM MT Oct 15 (tick 89), ~40h after GA — web coverage still blogs-only; X→YT review links remain 0; CEO launch post ~1.23M impressions. Ep4 Hermes PENDING_RENDER queue now exists for three-way ranking behind open Ep3.

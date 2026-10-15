@@ -13,6 +13,10 @@ Assumes production ships **Candidate A (Hermes Agent v0.22, P5)**. If the setup 
 - Autocomplete (tick 118 recheck): `hermes agent tutorial`, `hermes agent setup`, `hermes agent update`, `hermes agent local` — keep product-full tags; bare `hermes agent v0.22` still collides off-niche.
 - Nous Research launch post still the mega-thread (~515K impressions when sampled earlier) — do **not** reply there under graduated access.
 
+## Tick 124 add (Oct 15 ~11:05 AM MT): vs-Grok-Bot demand exists — do not use on Ep4 drop
+Autocomplete + written pages show `Hermes Agent vs Grok Bot` search interest. Ep4 Post A stays P5/U as written above. Versus copy waits on `content/drafts/p4-hermes-vs-grok-bot-candidate.md` + operator brand OK. Do not add Grok Bot hashtags to the Ep4 drop.
+
+
 ## Checklist (after publish confirms)
 
 1. Confirm Ep4 live via RSS/Data API; log `videoId`, title, pattern **P5** (or `P5+setup`), publish time, `GA: 2026-10-14 03:21 UTC`, hours GA→publish in GROWTH_LOG.

@@ -64,6 +64,11 @@ Public RSS ~10:37 AM MT still only Ep0 `aCvkp11w9_8` (6) and Ep1 `L7fdRoNWEPE` (
 3. Afternoon U5 only ≥4h after V (tick-119 schedule).
 
 
+
+## Tick 124 (Oct 15 ~11:05 AM MT): still Neither; vs-Grok-Bot is NOT this morning
+Public RSS ~11:01 AM MT still only Ep0 `aCvkp11w9_8` (6) and Ep1 `L7fdRoNWEPE` (9). **11:23 AM growth:** unchanged Neither → #19 profile edit → native-video runbook → ≤1 reply → Bluesky video (≥2h after X). Never claim first.
+Afternoon research only: `content/drafts/p4-hermes-vs-grok-bot-candidate.md` is a **future** P4 candidate (brand gate). Do not mention Grok Bot in today's V caption, U5, or profile bio.
+
 ## Why this exists
 Tonight two READY queue files compete for one post-reset window:
 - `queue/2026-10-15-ultramarine-1-flash.md` (Ep3, GA 2026-10-14, freshest → upload #1)

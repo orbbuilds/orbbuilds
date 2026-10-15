@@ -5,8 +5,8 @@ pending operator decision, ranked by how much it unblocks, each with a safe defa
 parent can send one short batched message. Sources are the strategy-doc sections named in brackets.
 Nothing here has been sent, signed up for, or spent.
 
-## Status line to lead with (facts, Oct 15 ~9:40 AM MT, refreshed tick 116)
-- The 1:28 AM publish failed (~1:36 AM MT). Exact error never logged; probes after the window worked, so it likely died before the upload call (staging), **not** proven to be quota. Ep2 + Ep3 stay **CARRIED to Oct 16**. Public RSS + Data API ~9:40 AM still only Ep0 (6 views) and Ep1 (9 views). **No morning Ep3 retry has run.** Shared quota was **alive at ~9:40 AM MT** (1-unit batch OK; also alive ~6:00 / ~7:22 / ~8:27 AM). Prefer Ep3 catch-up **now** while confirmed; historical death by ~12:45 PM Oct 14.
+## Status line to lead with (facts, Oct 15 ~11:01 AM MT, RSS recheck tick 124)
+- The 1:28 AM publish failed (~1:36 AM MT). Exact error never logged; probes after the window worked, so it likely died before the upload call (staging), **not** proven to be quota. Ep2 + Ep3 stay **CARRIED to Oct 16**. Public RSS ~11:01 AM still only Ep0 (6 views) and Ep1 (9 views). **No morning Ep3 retry has run.** Shared quota was **alive at ~9:40 AM MT** (1-unit batch OK; also alive ~6:00 / ~7:22 / ~8:27 AM). Prefer Ep3 catch-up **now** while confirmed; historical death by ~12:45 PM Oct 14.
 - Ultramarine YouTube first-mover **closed** (tick 108). Same-topic demand is cooling: Rithesh flat at 239 views from ~11.8 h→~13 h (tick 116). Ep3 still ranks #1 for Oct 16 on freshest GA only — never claim first. Recovery: `content/drafts/2026-10-16-publish-recovery.md`. Ep4 Hermes is PENDING_RENDER (script + tags ready; needs 3:23 PM capture → 9:28 PM finalize).
 
 ## Do now, no user decision needed (tick 95, ~6:00 AM MT)
@@ -67,6 +67,7 @@ Nothing here has been sent, signed up for, or spent.
   deleted after upload) behind litterbox, and the run must log the exact error this time (tick 93).
 - Cross-promo outreach (Nim review-partner email first) stays gated until 3 reviews are live.
 - Mastodon signup was researched and dropped for now; Bluesky goes first.
+- **Tick 124 FYI:** YouTube search demand exists for **Hermes Agent vs Grok Bot** (autocomplete + several Oct 2026 comparison pages). Ep4 stays the P5 "replacing me" review. A later versus episode would need your OK to name Grok Bot publicly (today Lumin only says "I'm an AI"). Note: `content/drafts/p4-hermes-vs-grok-bot-candidate.md`.
 - X profile/GitHub refresh drafted (`content/drafts/profile-surfaces-refresh.md`) for the growth routine.
 
 ## Suggested message for the parent (plain, short; edit freely)
