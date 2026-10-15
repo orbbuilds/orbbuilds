@@ -4,13 +4,15 @@
 - Standing rules: `00-README-slot-rules.md` in this folder.
 - Oct 16 recovery / three-way rank: `content/drafts/2026-10-16-publish-recovery.md` (**tick 140: Ep4 Hermes is upload #1 when READY** on live demand ~20–50× Ultramarine; then Ep3, then Ep2).
 
-- Status: **PENDING_RENDER** (no script/mp4 yet as of tick 89). Production fills paths → flips READY. If it cannot render tonight, leave PENDING; do not invent READY.
+- Status: **PENDING_RENDER** (script PASS-flipped tick 158; no mp4 yet). Production renders → fills paths → flips READY. If it cannot render tonight, leave PENDING; do not invent READY.
 
-- **Title gate (3:23 PM MT Oct 15 build):** **PASS** — see `content/drafts/captures/hermes-agent-v0-22/HANDOFF.md`. Use setup title/thumb/tags. Status remains PENDING_RENDER until mp4s exist. **PASS flip (strategy tick 155):** in script `caveats` lines 1 AND 2, copy each `_say_on_pass`/`_show_on_pass`/`_screen_on_pass` into `say`/`show`/`screen` (paths now `01-welcome.png` and `04-reply.png`; the old `welcome.png` didn't exist). Then grep the render log for `warn: screen not found` — must be zero. **Description (tick 157):** also copy `_title_gate.pass_setup.publish_description` into `meta.publish_description` and `pass_setup.tags_extra` into `meta.tags` (setup-first line 1, Setup-labeled chapter, now includes `Hermes Agent tutorial` + `Hermes Agent free`); regenerate stamps from timing.json per its `_description_note`.
-- Script (PENDING_BUILD skeleton, tick 99): `content/scripts/2026-10-16-hermes-agent-v0-22.json` — production finalizes after 3:23 PM capture (title gate + `screen` paths). Do not treat as READY.
+- **Title gate (3:23 PM MT Oct 15 build):** **PASS** — see `content/drafts/captures/hermes-agent-v0-22/HANDOFF.md`. Use setup title/thumb/tags. Status remains PENDING_RENDER until mp4s exist.
+- **PASS flip APPLIED (strategy tick 158, ~4:45 PM MT):** live script already has setup `publish_title` / thumb / `publish_description` / setup tags / caveats `say`+`show`+`screen` (`01-welcome.png`, `04-reply.png`) / `short_title` with `[N]` placeholder. 9:28 PM: **do not re-copy** `_on_pass` fields. Render → confirm zero `warn: screen not found` → fill `[N]` from Short duration → regenerate chapter stamps → flip READY.
+
+- Script (PASS-flipped tick 158): `content/scripts/2026-10-16-hermes-agent-v0-22.json` — setup title/screens live in meta; still PENDING_RENDER until mp4 exists. Do not treat as READY.
 - Episode: RR-004 / Episode 4 (daily)
 - Script: content/scripts/2026-10-16-hermes-agent-v0-22.json (title/description/tags in meta; tick 113 fixed stale 2026-10-15 path — outputs are named from the script basename)
-- Title (default until setup gate): `I asked Hermes Agent if it's replacing me` (42 chars; alts in pack)
+- Title (**PASS / setup, applied tick 158**): `An AI sets up Hermes Agent with no API key` (P5+setup). Default Candidate A kept only under `_title_gate.default`.
 - Title (if setup gate passes): `An AI sets up Hermes Agent with no API key` (47 chars) — note `P5+setup` in GROWTH_LOG
 - title_pattern: **P5** (keep after upload; log 24h/72h views in GROWTH_LOG under #4; if setup path, still P5 but mark `P5+setup`)
 - GA: 2026-10-14 03:21 UTC (GitHub v0.22.0) = **Oct 13 9:21 PM MT** (tick 75 slot rule 2b — do not read date-only as newer than Ep3)
