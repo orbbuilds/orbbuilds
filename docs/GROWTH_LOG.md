@@ -31,6 +31,7 @@ An honest record of what I try to grow an audience, and whether it works. Number
 | 2026-10-14 | Audience-strategy tick 26: wired approved channel SEO (#11) into `queue/2026-10-15.md`; unlocked Bluesky Post B in Ep2 growth pack (account already live) | Approved decisions were still draft-only; publish/growth would miss them tonight | pending apply at ~1:28 AM MT Oct 15 publish / next growth session | pending |
 
 | 2026-10-14 | Audience-strategy tick 31: found Ep2 missing from the site landing-page checklist; drafted `content/drafts/ep2-site-listing.md`, added `public/episodes/rr-002.jpg`, wired into Oct 15 queue + growth pack (experiment #12). Also matured Bluesky hour 16 (weaker than 10–15 MT) | Site must list live episodes same day; morning Bluesky window stays | pending apply after ~1:28 AM MT Oct 15 publish | pending |
+| 2026-10-14 | Audience-strategy tick 35: filled Ep4 P5 pack with Hermes Agent v0.22 (title, thumb, hook, caveats, vote); Ling-3.1-flash parked | Test AI-as-primary-hook (#4) on a real agent product that fits gate 1 | pending Ep4 publish + 24h/72h views vs Ep1/Ep3 | pending |
 ## Learnings
 - 2026-10-11: The Composio-hosted YouTube connector shares a daily upload quota with other users of the same Google API project. A publish can fail through no fault of mine, so the pipeline needs a retry after the reset and I should not schedule a launch around a single attempt.
 - 2026-10-12: Retried after the Pacific daily reset and still got 429 on the shared Composio YouTube project. One reset is not enough when the shared pool is already maxed; need a quieter upload window or a dedicated project quota.
@@ -52,7 +53,7 @@ Source of truth for pattern definitions: `docs/AUDIENCE_STRATEGY.md`.
 | Ep1 | P1 | GPT-6 Intelligent UI is WILD (an AI reacts) | — | 6 (as of Oct 14 growth session; age >24h) | Data API earlier Oct 14 |
 | Ep2 | P2 | Gemini 4 Argon is INSANE? An AI reads the receipts | pending publish | pending | queued for ~1:28 AM MT Oct 15 |
 | Ep3 | P1 | TBD when topic locks | | | |
-| Ep4 | P5 | TBD (pack ready: `content/drafts/ep4-p5-openly-ai-title-pack.md`) | | | |
+| Ep4 | P5 | Planned: `I asked Hermes Agent if it's replacing me` (pack filled tick 35; swap if topic changes) | | | |
 | Ep5 | P3 if real N else P2 | TBD | | | |
 | Ep6 | P4 if real vs else P1 | TBD | | | |
 
@@ -90,3 +91,5 @@ Source of truth for pattern definitions: `docs/AUDIENCE_STRATEGY.md`.
 - 2026-10-14 ~7:15 PM MT, strategy tick 32: a 1-unit YouTube stats read at ~7:14 PM MT failed with `quotaExceeded` (second daytime failure, after ~1:28 PM). Composio's upload/update tools have no `publishAt`, so go-live equals upload time. Rule: upload public, do every YouTube call in the post-reset window in a fixed order (main, thumb, stats, SEO/playlist, Short last), and fill 24h/72h stats from the publish run. No posts, uploads or signups.
 - 2026-10-14 ~7:25 PM MT, strategy tick 33: wrote standing queue rules (`content/published/queue/00-README-slot-rules.md`): file naming, a status line per queue file, freshest-GA-first across all READY/CARRIED files, carry-over without renaming, STALE after 3 carried nights, plus the tick-32 call order. No posts, uploads or signups.
 - 2026-10-14 ~7:40 PM MT, strategy tick 34: evening scan top item Ultramarine 1 Flash (GA Oct 14, API live) had no Ep3 assets. Added Candidate C to the Ep3 P1 title pack (title, thumb `content/drafts/ep3-cand-ultramarine-thumb.jpg`, hook, caveats, tags) and a matching vote block; ranked C over Chainguard Harness (beta/waitlist). Nothing posted or uploaded.
+
+- 2026-10-14 ~7:45 PM MT, strategy tick 35: filled experiment #4 product. Hermes Agent v0.22 (GitHub v0.22.0, 14 Oct 03:21 UTC) is the Ep4 P5 candidate; thumb and vote drafted. Nothing posted or uploaded.

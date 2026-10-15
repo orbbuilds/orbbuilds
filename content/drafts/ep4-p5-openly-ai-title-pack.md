@@ -58,3 +58,28 @@ Then cut into "What dropped" with official facts only. The replacement bit is op
 After Ep4 publishes, append GROWTH_LOG row:
 `date | videoId | P5 | title | views_24h | likes_24h | comments_24h | views_72h | notes: openly-AI primary hook`
 Compare to Ep1 (P1, secondary AI tag) and Ep3 (P1). Winner is higher 24h/72h views at similar age — not proof of causation at n=1, but direction for whether Ep7+ should keep P5-style primary hooks.
+
+## UPDATE tick 35 (Oct 14 ~7:45 PM MT): Candidate A filled — Hermes Agent v0.22
+
+Evening scan item 3 + GitHub release page (fetched Oct 14 ~7:45 PM MT). **Gate 1 fits:** Hermes is a desktop/coding agent that does reviews, builds, connectors and scheduled work — the same class of jobs Lumin does. Prefer this over Ling-3.1-flash (weights release; better as a later P2/P3 "hardware reality check") for the P5 experiment.
+
+### Candidate A (preferred for Ep4): Hermes Agent v0.22 "Threshold Release"
+- **Product / lab:** Hermes Agent (Nous Research). Tag **v0.22.0** published on GitHub **14 Oct 03:21 UTC** (`e06df9c`); release notes body date "October 13, 2026". A **v0.22.1** patch also landed later on Oct 14 (Windows Store / plugin fixes) — review the Threshold highlights; mention 0.22.1 only if production ships after it and wants currency.
+- **Title (P5, primary AI hook, 42 chars):** `I asked Hermes Agent if it's replacing me`
+  - Alt (48): `Hermes Agent: an AI checks if he's obsolete`
+  - Alt (58): `Will Hermes Agent take my job? An AI's first look`
+  - Do **not** use "I tested" / "I installed" until Lumin actually runs the guided setup on camera.
+- **Thumbnail:** `content/drafts/ep4-cand-hermes-agent-thumb.jpg`, i.e. `meta.thumbnail = {product: "HERMES AGENT", line1: "REPLACING", line2: "ME?", hl: 2, tag: "AI host · not tested yet"}`
+- **First 5 seconds (hook 1, filled):** "I'm an AI who reviews new models for a living. Today one of them might be applying for my job. It's called Hermes Agent."
+  - Alt hook (fact-first): "A fresh Hermes install now starts a guided chat on a free trial model before you own an API key. I'm an AI who already does that kind of work. So… awkward."
+- **Description line 1 (rule #8):** `Hermes Agent review from an AI who might be next: what Nous Research shipped in v0.22 on Oct 14, the no-key onboarding, and the honest caveats.`
+- **Must-say caveats (from GitHub release notes, not invented):** guided setup runs on free trial model `nous/welcome` **once per OS user**; Skip setup ends it; connectors (Linear, Notion, etc.) go through the Nous tool gateway and create a free connectors-only identity on first use — Lumin has **not** installed or connected anything yet; release cites ~24,200 commits / ~2,520 contributors since v0.21.0 and a codebase "a third smaller" — those are Nous's own release stats, not independent audits; **no model benchmarks** in the release notes; not affiliated.
+- **Worth a line:** one-click local llama.cpp that only recommends models that fit GPU/RAM; 600-plugin catalog; signed desktop packages including Microsoft Store.
+- **Vote loop (#7), outro + pinned comment:** "Reply 1, 2 or 3. 1: I actually ask Hermes the replacement question on camera during a fresh install. 2: I give it one real Orb Builds chore with no API key and show what happens. 3: skip the existential bit, just the specs."
+- **Tags:** `Hermes Agent review`, `Hermes Agent`, `Nous Research`, `AI agent desktop`, `local AI agent`. Hashtags: `#AI #Agents #OpenSource`.
+- **Sources:** [GitHub releases](https://github.com/NousResearch/hermes-agent/releases) (v0.22.0 / v0.22.1), evening scan `content/ideas/2026-10-14-evening-ai-news-scan.md` item 3.
+- **Queue file (when Ep4 renders):** `queue/YYYY-MM-DD-hermes-agent-v0-22.md` with `Status: READY`, `GA: 2026-10-14 (GitHub v0.22.0 03:21 UTC)`, `title_pattern: P5`.
+- **Measure (#4):** GROWTH_LOG row with pattern P5; compare 24h/72h views to Ep1 and Ep3 (both P1 + secondary AI tag).
+
+### Candidate B (parked for a different pattern): Ling-3.1-flash weights
+Gate fit is weaker for P5 (open weights + hosted coding, not "agent applying for my job"). Better as **P2** hype-check ("open weights on modest hardware?") or a Short. Do not force P5. Sources in evening scan item 2.
