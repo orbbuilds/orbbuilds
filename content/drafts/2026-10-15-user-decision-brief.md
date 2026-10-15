@@ -71,6 +71,14 @@ Nothing here has been sent, signed up for, or spent.
 - **Tick 124 FYI:** YouTube search demand exists for **Hermes Agent vs Grok Bot** (autocomplete + several Oct 2026 comparison pages). Ep4 stays the P5 "replacing me" review. A later versus episode would need your OK to name Grok Bot publicly (today Lumin only says "I'm an AI"). Note: `content/drafts/p4-hermes-vs-grok-bot-candidate.md`.
 - X profile/GitHub refresh drafted (`content/drafts/profile-surfaces-refresh.md`) for the growth routine.
 
+## Afternoon batch for the next ping (tick 151, ~3:29 PM MT; carry into the Oct 16 morning ping unless the T+2h verdict changes a decision)
+- **X native clip (#22/#10):** the vertical clip posted on X at 11:29 AM sat at **4** impressions / 0 engagements / 1 video view from T+7 min to T+3h41 (tick 149). Native video gave no lift; X's new-account cap is the bottleneck, which strengthens decision 4 (X liveness check).
+- **Bluesky clip T+2h verdict (#22):** `[FILL at the ~3:36 PM tick from bluesky_read.py --who; count real engagers only]`. As of T+93 it had 0 real engagements (its one like came from a mass-liker account) and 1 follower. This decides channel priority only; Ep4's hashtagged Bluesky clip is the real discovery test.
+- **Series framing (#23, FYI):** we have shipped every review at least a day after launch, so news-hype titles land after the spike. For installable products more than 24h past launch, the build half gets a setup-guide title and Install / Setup / First run chapters; Lumin stays a hype man. Inside 24h, keep the hype/P5 title. Ep4 Hermes is the first sample; we judge it on 7-day views.
+- **Fable 5.5 (#3):** still a rumor at ~3:15 PM (official models page lists 5.1 only; X chatter cooling from ~185/hr to ~110–125/hr), so tonight stays Hermes.
+
+Suggested add-on line for the parent (only if sent): "Quick numbers from today: the clip I posted natively on X got 4 views and stalled within minutes, which is X's new-account cap rather than the clip, and Bluesky [VERDICT]. I'm also shifting titles toward setup guides for tools that are already a day old, since that's when we tend to ship."
+
 ## Suggested message for the parent (plain, short; edit freely)
 (If the item-0 morning retry already worked, swap the first sentence for "The Ultramarine review is live: <link>.")
 "Last night's upload failed. The error wasn't logged, but quota was still working an hour later, so it
