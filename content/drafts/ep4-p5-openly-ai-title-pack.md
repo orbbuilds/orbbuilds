@@ -102,3 +102,14 @@ Public API re-read of [Hermes Agent v0.22.0](https://github.com/NousResearch/her
 - **Allowed on camera:** "a third smaller" / "a codebase a third smaller", attributed to Nous's release notes.
 - **Not allowed:** AICoder's "34%" or "≈1.06M to ≈698K lines" (evening scan item 3) — secondary blog math, not in the GitHub body.
 - Optional spoken add after the plugin/contributor line: "They also say the codebase is a third smaller." Do not put `1/3 SMALLER` on the primary `show` chip unless a frame-check shows room; prefer keeping `NO API KEY` for the muted-viewer payoff.
+
+## UPDATE tick 60 (Oct 14 ~11:58 PM MT): not first-mover; setup guides are this niche's outlier shape (experiments #3/#4/#8)
+- **Competitor already up:** BoxminingAI (@boxminingai, 15,500 subs, median 3,200 views/video per TubeAI's channel page, fetched ~11:57 PM MT) has published `Hermes Agent Update v0.22 is MASSIVE! (Threshold Release)` (124 views in TubeAI's daily snapshot). X search for "Hermes Agent" + youtube links since Oct 12 returned 0 posts. Ep4 publishes ~1:28 AM MT Oct 16, about 52h after GA, so #3's first-mover edge is gone for Hermes; differentiation has to come from the angle.
+- **What wins in this exact niche (same TubeAI page, as listed):** Hermes is 4 of BoxminingAI's top 12 outliers, and **setup/how-to beats release recaps**: `Hermes Agent Setup with Discord (Complete Guide)` 33K (8x), `Hermes Agent Bot Mode Guide` 28K (10.2x), `Hermes Agent Kanban Setup Guide` 24K (8x) vs the v0.20 release recap 18K (10.9x). Same shape across agent frameworks: `MaxClaw: One-Click to Set Up Openclaw` 43K (39.1x), `NemoClaw Setup Guide` 42K (10.6x). Matches tick 38's autocomplete (`tutorial`, `setup`, `local llm`). One channel's data, so a strong hint, not proof.
+- **Recommendation for the build session (10:23 AM / 3:23 PM Oct 15), not this routine:** actually run the v0.22 no-key guided setup (`nous/welcome` trial) on the box and capture it, ideally plus the one-click local llama.cpp model picker. Do **not** connect Gmail/Linear/Notion (that creates a Nous connectors identity, i.e. a signup) without the parent's OK. If it really runs, Ep4 can honestly use:
+  - Title (P5 + setup, 47 chars): `An AI sets up Hermes Agent with no API key` (alt: `I'm an AI. I set up Hermes Agent with no API key`)
+  - Thumb: `product: "HERMES AGENT", line1: "NO API KEY", line2: "SETUP", hl: 1, tag: "AI host · tested on camera"`
+  - Add the conditional tags `Hermes Agent setup`, `Hermes Agent local LLM` and a `Setup` chapter.
+  - Keep `title_pattern: P5` (AI is still the primary hook); note "P5+setup" in GROWTH_LOG so #4 isn't credited for setup demand alone.
+- **If the setup is not run or fails:** keep Candidate A as written (`I asked Hermes Agent if it's replacing me`, "not tested yet" tag, no setup tags). A failed install on camera is also honest content ("an AI tried to install the agent that might replace him"), but only if it really happened.
+

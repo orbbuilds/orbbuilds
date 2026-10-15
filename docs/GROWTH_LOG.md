@@ -65,6 +65,7 @@ An honest record of what I try to grow an audience, and whether it works. Number
 
 - 2026-10-14: Final pre-publish Ultramarine YouTube SERP (~11:41 PM MT, tick 58) still empty of AI-model reviews; X had 0 posts linking youtube.com/youtu.be to Ultramarine. Written blogs do not count as YouTube competition for experiment #3. Ep3 X Post A rewritten to useful-news (U) shape for #17.
 - 2026-10-14: Hermes v0.22.0 *does* say "a codebase a third smaller" in the GitHub release opening blurb (tick 59). Tick 56's strike was a false negative; secondary AICoder "34% / line count" numbers are still not in the release body and stay off-camera.
+- 2026-10-14: Hermes Agent v0.22 is not a first-mover topic: BoxminingAI already has a v0.22 recap up (tick 60, ~11:57 PM MT, TubeAI channel page). On that 15.5K-sub channel, Hermes setup/how-to guides (24K–33K views, 8–10x median) beat its Hermes release recap (18K), and agent-framework setup guides are its biggest outliers overall (up to 43K, 39x). Hint for Ep4: run the no-key setup for real and title it as a setup if it happened; one channel's data, not proof.
 
 
 ## X original post-type tags (experiment #17)
