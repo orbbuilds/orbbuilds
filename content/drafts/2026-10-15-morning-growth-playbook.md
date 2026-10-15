@@ -189,4 +189,7 @@ Standing rules: `docs/POSTING_RULES.md` (now includes #19).
 ## Tick 128 (Oct 15 ~11:37 AM MT): X CLOSED for the rest of today
 - V posted 11:29 AM MT and the human-check notice fired after it. **No more X today: no U5, no afternoon original, no replies, no follows** (overrides tick-119 items 2–3 above). U5 moves to the Oct 16 growth session after re-verifying OpenUI versions.
 - Bluesky V is still on: earliest ~1:29 PM MT, inside 10 AM–2 PM. Use the native-video runbook.
+
+## Tick 129 (Oct 15 ~11:46 AM MT): Bluesky V ownership for 1:23 PM
+X V is live; human-check closed X for Oct 15. **1:23 PM content-drafts (or parent dispatch) owns Bluesky V** — there is no afternoon growth routine. Follow `content/drafts/2026-10-15-bluesky-v-afternoon-handoff.md` (clip + caption + ATProto steps). Window **1:29–2:00 PM MT**. Skip Welcome/U1. No X today.
 - 4–6 h V read (~3:30–5:30 PM MT): log impressions **and** media `view_count` vs best U (26 impressions). T+7 min was 4 impressions / 0 video views.
