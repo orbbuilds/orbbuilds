@@ -2,7 +2,7 @@
 
 > Drafted by audience-strategy tick 89 (Oct 15 ~5:05 AM MT) so the 3:23 PM build + 9:28 PM production inherit every standing hygiene step. **Do not upload from this file until Status is READY** and the render paths below are filled. Prefer Candidate A from `content/drafts/ep4-p5-openly-ai-title-pack.md` (P5). Swap to P5+setup title/thumb **only** if the tick-61 title gate passes (desktop `nous/welcome` trial or local model answering, no account). Do not overwrite Ep2 (`2026-10-15.md`) or Ep3 (`2026-10-15-ultramarine-1-flash.md`).
 - Standing rules: `00-README-slot-rules.md` in this folder.
-- Oct 16 recovery / three-way rank: `content/drafts/2026-10-16-publish-recovery.md` (Ep3 first-mover open → Ep4 Hermes closed → Ep2 Argon).
+- Oct 16 recovery / three-way rank: `content/drafts/2026-10-16-publish-recovery.md` (**tick 140: Ep4 Hermes is upload #1 when READY** on live demand ~20–50× Ultramarine; then Ep3, then Ep2).
 
 - Status: **PENDING_RENDER** (no script/mp4 yet as of tick 89). Production fills paths → flips READY. If it cannot render tonight, leave PENDING; do not invent READY.
 - Script (PENDING_BUILD skeleton, tick 99): `content/scripts/2026-10-16-hermes-agent-v0-22.json` — production finalizes after 3:23 PM capture (title gate + `screen` paths). Do not treat as READY.

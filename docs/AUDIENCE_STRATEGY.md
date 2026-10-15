@@ -1066,7 +1066,16 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - **Changes:** Ep4 Bluesky B-text tags `#AI #HermesAgent #Agents` → `#HermesAgent #AIagents #LLM`; POSTING_RULES Bluesky rule 4 (topic tag + #LLM/#AIagents, never #AI; disambiguate model names).
 - Read-only (4 search calls + 1 profile read). No posts, uploads, comments, channel edits or signups.
 
+## Tonight's upload #1 flips to Ep4 Hermes on live demand (experiments #3/#13/#4, tick 140, Oct 15 ~1:36 PM MT)
+- Bluesky: 0 posts at ~1:35 PM MT; the one-off then posted V (`3mxwspebrxn2m`, logged in GROWTH_LOG by that run). T+2h read due ~3:36 PM MT.
+- Public watch-page view counts (no quota) vs earlier reads: Hermes v0.22 recaps Julian `NZcdLDuhryI` 6,157 → **6,341** (~44 min, ~250/h at ~15 h old) and BoxminingAI `pAaAgcjNgEs` 16,644 → **16,752** (~147/h at ~1.5 d). Ultramarine: AI WITH Rithesh `CcRr7dJy4gI` 239 → **282** (~11/h at ~17 h, 51K channel), Julian `k85bmBNAgN0` 27 → **47** (~5/h). Live demand gap ~20–50×.
+- **Change:** the Oct 16 recovery rank put Ep3 first on freshest GA date. With one reliable upload a night, that spends the slot on the cold topic. Rank is now **Ep4 Hermes (if READY) → Ep3 → Ep2**, still consistent with "fresh release first" since Hermes v0.22.2 shipped Oct 15. Call-order steps generalized to "#1-ranked episode"; Ep4 queue pointer updated; Ep2 prefers the native-video lane (#22) over a main slot.
+- Read-only (4 public page fetches + 1 Bluesky read). No posts, uploads, comments, channel edits, pushes or signups.
+
 ## Last tick
+- **2026-10-15 ~1:36 PM MT (tick 140).** #3/#13/#4: live view velocity shows Hermes ~20–50× Ultramarine, so the Oct 16 1:28 AM rank flips to Ep4 Hermes (if READY) → Ep3 → Ep2; recovery draft + Ep4 queue updated. Bluesky V went live via the one-off during this tick. Batched FYI for the next user ping (no WakeParent). Read-only.
+  - Next recommended tick: ~3:36 PM `python3 tools/social/bluesky_read.py` T+2h read, apply ≥2 eng / ≥1 follower rule (V URL already confirmed). 3:23 PM: `2026-10-15-1523-build-session-brief.md` (push ahead-12+ + verify, then Hermes; no X) — Ep4 capture now matters more since it leads tonight's slot. ~4–5 PM one X V confirm. 7:23 PM Fable launch-signal once. After 9:28 PM confirm Ep4 queue READY + `-xclip.mp4`. Oct 16 ~10 AM–noon Ep1 Analytics. Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot without operator OK.
+
 - **2026-10-15 ~1:33 PM MT (tick 139).** #22/#9: Bluesky still 0 posts at 1:31 PM (one-off not fired yet). Live Bluesky search: #AI latest is spam-flooded, #HermesAgent is the topic's live tag, "Ultramarine" is mostly Warhammer. Retagged Ep4 B-text (#HermesAgent #AIagents #LLM) + POSTING_RULES rule. No WakeParent. Read-only.
   - Next recommended tick: after ~1:55 PM `python3 tools/social/bluesky_read.py` (confirm V URL or log miss). ~3:30 PM T+2h applies ≥2 eng / ≥1 follower rule; if Bluesky wins, batch "Bluesky primary until X graduates" with #10. 3:23 PM: follow `2026-10-15-1523-build-session-brief.md` (push ahead-10+ + verify, then Hermes; no X). ~4–5 PM one X V confirm. 7:23 PM Fable launch-signal once. After 9:28 PM Ep4 `-xclip.mp4`. Oct 16 ~10 AM–noon Ep1 Analytics. Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot without operator OK.
 

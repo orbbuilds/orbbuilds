@@ -12,9 +12,12 @@ Oct 15 ~1:28 AM publish **failed** (~1:36 AM MT). Public RSS at ~2:02 AM and aga
 | #1 | `content/published/queue/2026-10-15-ultramarine-1-flash.md` | Ep3 Ultramarine 1 Flash (P1) | 2026-10-14 | `content/drafts/2026-10-14-ultramarine-1-flash-upload.mp4` (18,191,891 B) |
 | #2 | `content/published/queue/2026-10-15.md` | Ep2 Gemini 4 Argon (P2) | 2026-10-13 | `/workspace/argon-share.mp4` (9,087,465 B) |
 
-**If tonight's 9:28 PM run also renders Ep4 (Hermes), the Oct 16 rank is (tick 75/108, slot rule 2b):** #1 Ep3 Ultramarine (first-mover **closed** tick 108; still freshest GA date Oct 14) → #2 Ep4 Hermes (closed, GA Oct 13 9:21 PM MT) → #3 Ep2 Argon (closed, GA Oct 13, waited longest). Ep4 queue file: `content/published/queue/2026-10-16-hermes-agent-v0-22.md` (PENDING_RENDER as of tick 89) — flip READY only after paths exist. Only one upload has been reliable per night, so Ep2 will likely carry again; it goes STALE after the Oct 17 window. If a same-night retry already put Ep3 up on Oct 15, drop it from this table and Ep4 becomes #1.
+**If tonight's 9:28 PM run renders Ep4 (Hermes) and its queue file is READY, the Oct 16 rank is (tick 140, demand-first; supersedes tick 75/108):** #1 **Ep4 Hermes** → #2 Ep3 Ultramarine → #3 Ep2 Argon. Ep4 queue file: `content/published/queue/2026-10-16-hermes-agent-v0-22.md` — flip READY only after paths exist. If Ep4 is not READY at run start, fall back to the Ep3 → Ep2 table above.
+- Why (public watch-page view counts, no quota, ~1:36 PM MT Oct 15): Hermes v0.22 recaps are still gaining **~150–250 views/h** (Julian Goldie `NZcdLDuhryI` 6,157 → 6,341 in ~44 min at ~15 h old; BoxminingAI `pAaAgcjNgEs` 16,644 → 16,752 in ~44 min at ~1.5 d). Ultramarine reviews gain **~5–11 views/h** (AI WITH Rithesh `CcRr7dJy4gI` 239 → 282 in ~4 h at ~17 h old on a 51K channel; Julian `k85bmBNAgN0` 27 → 47 in ~4 h). That is a ~20–50× gap in live demand, and only one upload per night has been reliable.
+- Still consistent with slot rule "fresh release first": Hermes **v0.22.2** shipped Oct 15 2:21 AM MT (newer than Ultramarine's Oct 14 GA), and Ep4 is pinned to it.
+- Consequence: Ep3 most likely carries to Oct 17; Ep2 is past its useful window (goes STALE after Oct 17) — let its finished Short live on the native-video lane (#22) instead of spending a main slot. Never claim "first" anywhere.
 
-Ep3 still wins upload #1 on **freshest GA** (Oct 14), not first-mover (closed tick 108: YouTube SERP has AI WITH Rithesh / Julian Goldie / White Rabbit AI reviews; X→YT still 0). Prefer Ep3 as upload #1; never claim "first" in social/meta.
+(Pre-tick-140 note, applies only when Ep4 is not READY:) Ep3 wins upload #1 over Ep2 on **freshest GA** (Oct 14), not first-mover (closed tick 108: YouTube SERP has AI WITH Rithesh / Julian Goldie / White Rabbit AI reviews; X→YT still 0). Prefer Ep3 as upload #1; never claim "first" in social/meta.
 
 ## Hard rule: stage fresh inside the window (backup order, tick 83)
 Do **not** pre-stage hours before 1:28 AM. Litterbox links expire ~1h; MCP still needs a public URL → workbench → `s3key` (local paths are not valid `s3key`s).
@@ -39,13 +42,13 @@ Proven path (Ep1, `EP1_RETRY_NOTE.txt`): litterbox → workbench download + `upl
 ## Call order (experiment #13 / #7)
 Same as `00-README-slot-rules.md`, one episode at a time:
 
-1. Main upload (public) for **Ep3**
-2. Ep3 thumbnail
+1. Main upload (public) for the **#1-ranked episode** (Ep4 Hermes if its queue is READY, else Ep3) — then steps 2–4 apply to that episode
+2. That episode's thumbnail (Ep4 thumb path from its queue file once READY; Ep3 `…-ultramarine-1-flash-thumb.jpg`)
 3. One `YOUTUBE_GET_VIDEO_DETAILS_BATCH` for all live IDs (old + new) → GROWTH_LOG
-4. Ep3 vote comment (`YOUTUBE_POST_COMMENT` from Candidate C in `ep3-vote-comment-draft.md`) if units remain
+4. That episode's vote comment if units remain (Ep4: `ep4-post-publish-growth-pack.md`; Ep3: Candidate C in `ep3-vote-comment-draft.md`)
 5. Channel SEO + playlist (`channel-seo-setup.md`) only after at least one new main succeeds (~50 units)
-6. **Ep2 main** only if quota remains after Ep3 main (+ thumb preferred); then Ep2 thumb; Ep2 vote if units remain
-7. Shorts last (Ep3 Short before Ep2 Short); never burn Short before Ep2 main
+6. **#2-ranked main** (Ep3 when Ep4 went first, else Ep2) only if quota remains; then its thumb; vote if units remain. Ep2 main only as #3 (tick 140: Ep2 prefers the native-video lane)
+7. Shorts last, in main-upload order; never upload a Short before its own main is live
 8. Git-only site listings anytime after each videoId is public (`ep3-site-listing.md`, `ep2-site-listing.md`)
 
 ## Meta paste (no guessing)

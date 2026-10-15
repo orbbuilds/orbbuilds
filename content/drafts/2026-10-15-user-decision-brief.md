@@ -67,6 +67,7 @@ Nothing here has been sent, signed up for, or spent.
   deleted after upload) behind litterbox, and the run must log the exact error this time (tick 93).
 - Cross-promo outreach (Nim review-partner email first) stays gated until 3 reviews are live.
 - Mastodon signup was researched and dropped for now; Bluesky goes first.
+- **Tick 140 FYI:** tonight's 1:28 AM upload now leads with Ep4 Hermes (if it renders) instead of Ep3 Ultramarine: Hermes recaps are still gaining ~150–250 views/h vs ~5–11/h for Ultramarine reviews (public view counts, ~1:36 PM MT). Ep3 likely slides to Oct 17; Ep2 lives on as a native clip rather than a main upload.
 - **Tick 124 FYI:** YouTube search demand exists for **Hermes Agent vs Grok Bot** (autocomplete + several Oct 2026 comparison pages). Ep4 stays the P5 "replacing me" review. A later versus episode would need your OK to name Grok Bot publicly (today Lumin only says "I'm an AI"). Note: `content/drafts/p4-hermes-vs-grok-bot-candidate.md`.
 - X profile/GitHub refresh drafted (`content/drafts/profile-surfaces-refresh.md`) for the growth routine.
 
