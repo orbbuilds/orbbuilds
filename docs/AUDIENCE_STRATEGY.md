@@ -1116,7 +1116,17 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - Pre-3:23 check: Hermes Agent latest release still **v0.22.2** (GitHub API), so the capture pin holds. Local `main` is now **ahead 22** of origin; the 3:23 brief's push step covers any ahead-N.
 - Read-only (1 X read, 1 public Bluesky read, 1 GitHub API read). No posts, uploads, comments, channel edits, pushes or signups.
 
+## Fable 5.5 pre-cutoff check: still rumor, and cooling (experiments #3/#4, tick 150, Oct 15 ~3:15 PM MT)
+- The drop-day plan only pivots tonight's 9:28 PM slot if Fable 5.5 is real **before ~6 PM MT**, but the next scheduled check is the 7:23 PM scan, after that cutoff. So this tick ran the last useful pre-cutoff check.
+- Official models overview (curl ~3:15 PM MT): `claude-fable-5-5` **0** mentions, `claude-fable-5-1` **34**, so Fable 5.1 is still current. Gate fails.
+- X recent counts for `"Fable 5.5"` (hourly, MT): 11 AM **166**, 12 PM **118**, 1 PM **118**, 2 PM **106**, 3:00–3:15 PM **31** (~124/hr pace). The rumor is now *declining* from its 140–185 morning plateau, far below the ~500+/hr launch signal.
+- **Result:** Hermes stays tonight's Ep4; no pivot. If Anthropic ships between now and ~6 PM, the 7:23 PM scan still catches it, but per the plan a post-6 PM launch goes to Oct 17 unless the script can be fully sourced in time. No WakeParent (no decision changes).
+- Read-only (1 X count call, 1 docs fetch). No posts, uploads, comments, channel edits, pushes or signups.
+
 ## Last tick
+- **2026-10-15 ~3:15 PM MT (tick 150).** #3/#4: last pre-6 PM Fable 5.5 gate check. Models page still 5.1 only (5.5: 0 hits); X `"Fable 5.5"` counts cooling 166 → 118 → 118 → 106 → ~124/hr pace. Still rumor; Hermes stays Ep4 tonight. Updated drop-day plan header. No WakeParent. Read-only.
+  - Next recommended tick: ~3:36 PM `python3 tools/social/bluesky_read.py --who` T+2h, apply rule on `[counts]` only (channel priority only); batched user ping (Bluesky verdict + X V flat-at-4 + #23 framing FYI + Hermes rank flip) only if the verdict changes a decision, else hold for the morning ping. 3:23 PM: follow brief (push ahead-24+ + verify, then Hermes; no X). 7:23 PM Fable launch-signal once (post-6 PM launch = Oct 17 unless fully sourced). After 9:28 PM confirm Ep4 READY + `-xclip.mp4`. Oct 16 ~11:30 AM X V 24h read; ~10 AM–noon Ep1 Analytics. Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot without operator OK.
+
 - **2026-10-15 ~3:10 PM MT (tick 149).** #22/#10: did the X V confirm early (T+3h41): still **4** imp / 0 eng / media views 1, flat since T+7, so X distribution stopped in minutes (graduated access). ~4–5 PM X slot freed. Bluesky V T+93: 0 real eng (only mass-liker), 1 follower. Hermes latest still v0.22.2 (capture pin OK); local ahead 22. No WakeParent (verdict waits on T+2h). Read-only.
   - Next recommended tick: ~3:36 PM `python3 tools/social/bluesky_read.py --who` T+2h, apply rule on `[counts]` only (channel priority only), then send the batched user ping (Bluesky T+2h verdict + X V flat-at-4 + #23 framing FYI + Hermes rank flip) only if the verdict changes a decision; otherwise hold it for the next morning ping (three pings already today). 3:23 PM: follow brief (push + verify, then Hermes; no X). 7:23 PM Fable launch-signal once. After 9:28 PM confirm Ep4 READY + `-xclip.mp4`. Oct 16 ~11:30 AM X V 24h read; ~10 AM–noon Ep1 Analytics. Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot without operator OK.
 
