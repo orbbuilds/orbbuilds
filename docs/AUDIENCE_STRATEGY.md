@@ -30,7 +30,7 @@ Numbers here are measured or quoted from a named public source, with the date se
 | 6 | Thumbnail A/B with YouTube Test & Compare (reaction face + logo vs scoreboard/versus) | A versus or scoreboard layout reads faster in a crowded feed | Test & Compare winner and watch-time share | **Prepped (tick 15):** P6 thumbnail tool built; Ep2 v2 swapped in (v1 kept as B). Test & Compare is Studio-only (no Composio tool), so measuring it needs a person |
 | 7 | Audience vote loop ("pick what Lumin builds with it next") in the video and pinned comment | A return reason plus a low-effort comment prompt raises comments and returning viewers | Comments per video at 24h/72h vs Ep1's 0 (returning viewers not available via Composio) | **In progress (tick 52):** drafts ready; template wired; **post-reset call order now includes `YOUTUBE_POST_COMMENT`** after stats (pin still Studio-only). Dual-READY mornings ranked in `content/drafts/2026-10-15-morning-growth-playbook.md` |
 | 8 | Search-first metadata: exact product name in the first ~40 characters, chapters in the description | Small channels get found through search before Browse | **Tick 77: traffic source IS available** via `YOUTUBE_QUERY_ANALYTICS` (`insightTrafficSourceType`, ~2–3 day lag); measure YT_SEARCH share per video at the ~72h read. Old proxy = 72h views vs Ep1 baseline, plus a manual Studio spot-check if ever available | **In progress (tick 47):** chapters checker `tools/video/chapters.py` in post_render (Ep3 had a 9 s chapter, fixed); Ep2 meta (tick 3); autocomplete tool + series checklist (tick 39); Ep3 Candidate C tags/hashtags now collision-safe in the pack copy production will paste |
-| 9 | Community map: places beyond X where an openly-AI show is allowed and wanted | X is throttled (graduated access), so a second outside channel matters more than more X replies. Some communities ban AI-written posts outright; picking ones that allow them avoids bans and wasted effort | A table of communities with size, self-promo rule and AI-content rule, each quoted from the community's own rules page; later, referral views per channel (proxy: views in 24h after a share) | **In progress (tick 48):** HN/Discord out; Bluesky live; morning drop locked; Ben's Bites pending; Reddit parked; **cross-promo branched to #15**; tick 68: Mastodon rules read, sigmoid.social best fit (labeled bots OK), signup needs parent OK |
+| 9 | Community map: places beyond X where an openly-AI show is allowed and wanted | X is throttled (graduated access), so a second outside channel matters more than more X replies. Some communities ban AI-written posts outright; picking ones that allow them avoids bans and wasted effort | A table of communities with size, self-promo rule and AI-content rule, each quoted from the community's own rules page; later, referral views per channel (proxy: views in 24h after a share) | **In progress (tick 79):** HN/Discord out; Bluesky live; morning drop locked; Ben's Bites pending; Reddit parked; **cross-promo → #15**; **Mastodon/sigmoid signup DEPRIORITIZED** (local timeline 1.5% eng on 130 mature posts; hashtag eng is federated/remote; #LLM culture includes no-slop). Prove Bluesky first |
 | 10 | Get @OrbBuilds out of X graduated access the sanctioned way | Reach on X is capped by the account's limited state, not by post quality (replies 0 impressions, posts 3–9). Lifting it is worth more than any X copy tweak | Logged-out handle search shows the account; reply impressions above 0; no human-check notice after posting | **Researched (tick 23):** two operator-only paths found (liveness check, automated-account label); needs a user decision, batched |
 | 11 | Channel-level discovery: fill the blank channel About, keywords, and a public "AI Release Reviews" playlist | A blank About and no playlists waste search surface and session time; filling them costs no upload slot | Hygiene, not an A/B test: log the go-live date so later view changes aren't credited to the wrong experiment; channel views/subs via Data API | **Ready for publish (tick 26):** APPROVED. Steps wired into `content/published/queue/2026-10-15.md`. Draft in `content/drafts/channel-seo-setup.md`. Apply after tonight's main upload (+ Short) succeed |
 | 12 | Site landing page lists each live episode the same day (`src/lib/episodes.ts` + `public/episodes/`) | orbbuilds.vercel.app is a second discovery surface; Ep1 is listed but Ep2 was missing from the publish checklist, so a successful YouTube upload would still leave the site stale | Hygiene: site shows the new episode within ~1 day of YouTube publish (auto-deploy on push to main). No site analytics yet, so no referral claim | **Ready for publish:** Ep2 draft + `rr-002.jpg` (tick 31); **Ep3** draft `content/drafts/ep3-site-listing.md` + `rr-003.jpg` (tick 40). Apply each only after that videoId is public |
@@ -695,7 +695,36 @@ Tick 2 said Composio had Data API stats only. Composio's YouTube toolkit (versio
 - Daytime Analytics quota probe still open (needs a daytime tick).
 - Doc edits only. No posts, uploads, channel edits or signups.
 
+## sigmoid.social engagement sample → deprioritize signup (experiment #9, tick 79, Oct 15 ~3:05 AM MT)
+Public API only (no account). Local timeline paginated to mature posts (age 6–48h), plus hashtag feeds.
+
+**Local timeline (n=130 mature posts, 7 pages):**
+- Any engagement: **2/130 (1.5%)**. Median eng 0. Mean favs 0.04 / reblogs 0.00 / replies 0.02.
+- Both engaged posts were from one AI-art bot (`TTAships`, 1384 followers): 1 reply + 4 favs, and 1 reply + 1 fav. Zero human local posts in the sample got a like, boost or reply.
+- Link posts (n=47): **0%** any engagement. Text (n=83): 2.4%. Media (n=82): 2.4% (same two bot posts).
+- Timeline noise: many 0–3 follower accounts dumping news/spam; afternoon/evening MT hours (13–21) dominate this mature window and still show near-zero eng.
+- Instance: 12,229 registered users, `approval_required: true` (confirms tick 68).
+
+**Hashtag feeds (federated; mature 6–48h):**
+| Tag | n | eng% | mean eng | local posts in sample |
+|-----|---|------|----------|------------------------|
+| MachineLearning | 123 | 73.2 | 1.11 | **0** |
+| LLM | 154 | 93.5 | 1.27 | **0** |
+| ArtificialIntelligence | 147 | 87.8 | 1.03 | **0** |
+| OpenSource | 153 | 84.3 | 2.43 | **0** |
+| agents | 81 | 95.1 | 0.99 | **0** |
+| AI | 0 mature in window | — | — | — |
+
+Hashtag engagement lives on **remote** accounts. Joining sigmoid does not unlock a unique discovery surface we can't reach from any other Mastodon home. Top `#LLM` posts in this sample included project "no-slop" / ban-LLM-contributions policies — a hostile frame for an openly-AI host.
+
+**Decision for #9 (research only, no signup ask):** deprioritize a sigmoid.social (or other Mastodon) signup. Bluesky is already live and empty of Welcome posts; prove that second surface before opening a third. Revisit Mastodon only if Bluesky fails and X stays graduated.
+
+RSS check same tick (~3:05 AM MT): still Ep0 6 views / Ep1 9 views; no same-night retry landed. Oct 16 recovery draft stands.
+Still no posts, uploads, channel edits or signups.
+
 ## Last tick
+- **2026-10-15 ~3:05 AM MT (tick 79).** #9: matured sigmoid.social engagement sample. Local timeline 1.5% eng (2/130, both one AI-art bot); hashtag eng is federated with 0 local posts; #LLM top posts include no-slop bans. **Deprioritized Mastodon signup** — prove Bluesky first. RSS still Ep0 6 / Ep1 9. No posts, uploads, channel edits or signups.
+  - Next recommended tick: daytime (~10 AM–4 PM MT) Analytics quota probe; ~4–6h Bluesky reads if Welcome/U1 go out; Ultramarine first-mover recheck before morning growth; Oct 16 recovery draft stands. Pending user decisions unchanged (own-OAuth, Ben's Bites, X liveness, cross-promo after ≥3 live) — **do not add Mastodon**.
 - **2026-10-15 ~2:57 AM MT (tick 78).** #2/#16: GROWTH_LOG read schedule still assumed an Oct 15 upload; corrected Ep2/Ep3 rows and dates (Ep3 24h Oct 17 / 72h Oct 19 if Oct 16 lands). Ep1 Analytics read (retention + traffic sources) moved up to the Oct 16 window and added to the recovery draft. RSS ~2:55 AM still Ep0 6 / Ep1 9. No posts, uploads, channel edits or signups.
   - Next recommended tick: daytime (~10 AM–4 PM MT) Analytics probe to test whether shared quota starves it; daytime sigmoid.social sample; ~4–6h Bluesky reads if Welcome/U1 go out. Pending user decisions unchanged.
 - **2026-10-15 ~2:48 AM MT (tick 77).** #2/#8/#16: `YOUTUBE_QUERY_ANALYTICS` works on our Composio connection. Per-video retention and traffic sources come back (Ep0: 8 views, 27 s average view duration, 126% average view percentage; sources: 2 search, 2 no-link, 1 channel, 1 related). Impressions/CTR are "not supported". Data lags ~2–3 days (Ep1 not in yet). Added Analytics calls to the ~72h read. No same-night retry seen (RSS still Ep0+Ep1). No posts, uploads, channel edits or signups.
@@ -857,3 +886,4 @@ Tick 2 said Composio had Data API stats only. Composio's YouTube toolkit (versio
 - 2026-10-14: Bluesky APPROVED and CREATED: @orbbuilds.bsky.social (bot label on, creds /home/box/secrets/bluesky.txt, email unverified). Do not re-ask.
 - 2026-10-14: Channel About/keywords/reviews playlist APPROVED by parent; publish run applies after main upload succeeds (read branding first).
 - Pending with user: own Google OAuth app, Ben's Bites account, X liveness check, cross-promo (shortlist drafted tick 48 — Nim Tier A recommended first; wait for ≥3 live reviews).
+- 2026-10-15 (tick 79): Mastodon/sigmoid.social signup **deprioritized** after engagement sample (local 1.5% eng). Do not batch a Mastodon ask; prove Bluesky first.
