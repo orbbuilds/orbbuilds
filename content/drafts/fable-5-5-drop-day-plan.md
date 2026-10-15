@@ -1,0 +1,28 @@
+# Claude Fable 5.5: drop-day plan (experiments #3/#4/#17, tick 100, Oct 15 ~6:55 AM MT)
+
+Drafts and rules only. Nothing here is posted or uploaded. Status at writing: **NOT announced.**
+
+## Evidence (read-only, ~6:52 AM MT Oct 15)
+- Anthropic's [models overview](https://platform.claude.com/docs/en/models/overview) (curl, ~6:53 AM MT): `claude-fable-5-1` is the newest Fable (34 mentions), `claude-fable-5-5` appears 0 times.
+- X post counts for `"Fable 5.5" -is:retweet` (recent counts API): ~23-32/hour overnight, then **86** (4-5 AM MT), **96** (5-6 AM MT), **108** in the first 51 min of 6 AM MT. Chatter is "dropping today" rumor plus an MLflow/Azure catalog row that copies 5.1 pricing ($10/$50) with an Oct 14 date. No official source.
+- Rumor volume tripled in 3 hours. That is not proof of a launch, but it is the biggest pending AI release in our window, and the first YouTube review of a top-tier Anthropic model would have far more search demand than Hermes (first-mover already closed) or Ultramarine.
+
+## How a run decides it is real (all from official pages only)
+Real = an Anthropic newsroom/product-announcement post naming Fable 5.5 **and** a `claude-fable-5-5` row on the models overview. A catalog row, LiteLLM/MLflow entry, leak, or someone's screenshot is NOT enough.
+
+## If it is real before ~6 PM MT today (production at 9:28 PM)
+- Tonight's Ep4 slot goes to Fable 5.5 (queue file `content/published/queue/2026-10-16-claude-fable-5-5.md`, `GA:` with the announcement's UTC time, `First-mover: open` until a YouTube review with the model name exists). Hermes keeps its PENDING_BUILD script and becomes CARRIED; Ep2 Argon likely goes STALE (already expected per tick 97).
+- Ranking under slot rule 2b already puts an open first-mover above Ep3 only if its GA is fresher; Fable 5.5 would be freshest, so Oct 16 1:28 AM order becomes Fable 5.5, then Ep3, then Ep4 Hermes. One upload a night means Ep3's own first-mover window is the cost; say so in the queue file.
+- Title pattern P1 (product + one sourced number/claim), thumbnail P6. Hook facts come only from the launch post, system card and rate card, with `show` chips citing them. No benchmark we didn't read on an official page; no "beats GPT-x" unless Anthropic's post says it with a number.
+- Hands-on: real API calls cost money and the build-budget decision (#20) is still with the user; until it's approved, the episode is a review of the official materials, and the title must not say "I tested".
+- If it lands after ~6 PM MT: still try tonight if the script can be sourced in time; otherwise Oct 17, and mark it in the queue, don't rush unsourced claims.
+
+## If it is still not announced
+- Nothing changes; Hermes stays Ep4. Re-check at the 8:23 AM and 7:23 PM scans (official pages only).
+
+## X (for the growth routine; still max one original per ~4h)
+- **Do not use bank U3** today (its "treat it as not released" framing can flip within hours). Replacement U3b below is safe either way only while the models page still shows 5.1; re-check right before posting and drop it the moment 5.5 is announced.
+- U3b (~266 chars with link as 23):
+  > Seeing "Fable 5.5 drops today"? As of [TIME] MT, Anthropic's models page still lists claude-fable-5-1 as the newest Fable. A real launch brings a newsroom post, a new model ID, a rate card and a system card. Until those appear, it's a rumor.
+  > platform.claude.com/docs/en/models/overview
+- If it is announced: no hot take on X before the episode exists; the episode drop post (U-shape, one sourced fact) is the post.

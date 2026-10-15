@@ -842,7 +842,15 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - Default title Candidate A; `_title_gate.pass_setup` holds the P5+setup title/thumb/tags for a PASS handoff.
 - Capture checklist + Ep4 queue now point at this script.
 
+## Fable 5.5 rumor spike: drop-day plan + U3 held (experiments #3/#4/#17, tick 100, Oct 15 ~6:55 AM MT)
+- X recent counts for `"Fable 5.5" -is:retweet`: ~23-32/h overnight, then 86, 96 and 108 (first 51 min) per hour from 4 AM MT. Chatter is "dropping today" plus an Azure/MLflow catalog row copying 5.1 pricing. Anthropic's models overview (curl ~6:53 AM MT) still lists only `claude-fable-5-1` (0 hits for `claude-fable-5-5`). Not announced.
+- Wrote `content/drafts/fable-5-5-drop-day-plan.md`: "real" = newsroom post AND models-overview row (catalog/LiteLLM rows don't count); if real before ~6 PM MT, Ep4 slot pivots to Fable 5.5 (Hermes CARRIED), P1/P6, hook facts from official launch materials only, no "I tested" while the build budget (#20) is undecided; else nothing changes.
+- Put bank U3 on HOLD (its framing may flip today) and drafted U3b, a "how you'll know it's real" post safe only while the models page still shows 5.1.
+- No posts, uploads, comments, channel edits or signups.
+
 ## Last tick
+- **2026-10-15 ~6:55 AM MT (tick 100).** #3/#4/#17: Fable 5.5 rumor volume tripled since 4 AM MT; official models page still 5.1 only. Drop-day plan drafted (`content/drafts/fable-5-5-drop-day-plan.md`), U3 held, U3b drafted. RSS ~6:50 AM still Ep0 6 / Ep1 9 (no morning retry). No WakeParent (contingency only; no announcement). No posts, uploads, comments, channel edits or signups.
+  - Next recommended tick: re-check the official models page / Anthropic announcements around the 8:23 AM scan; if Fable 5.5 is announced, WakeParent (time-sensitive pivot of tonight's Ep4 + it needs the build-budget answer) and write the queue file. If no retry by ~8-9 AM, one 1-unit quota probe. 11:23 AM growth: U3b only if still unannounced. Do not add Mastodon.
 - **2026-10-15 ~6:50 AM MT (tick 99).** #4/#16/#20: moved off publish recovery (RSS ~6:47 AM still Ep0 6 / Ep1 9; no morning retry). Drafted PENDING_BUILD Ep4 script `content/scripts/2026-10-16-hermes-agent-v0-22.json` with tick-56 cold-open `show` chips re-verified on the GitHub release API, Candidate A default + `_title_gate` PASS swap, caveat `_screen_on_pass/fail` slots mapped to `capture.sh` still labels, vote 1/2/3, footer. Wired queue + capture checklist. Validator OK (~420 spoken words). No WakeParent (prep only; brief already with parent). No uploads, posts, comments, channel edits, installs or signups.
   - Next recommended tick: if a retry ran, read RSS + queue and drop Ep3 from Oct 16 rank if live. If no retry by ~8–9 AM, one 1-unit quota probe (don't re-send the brief). Else keep off recovery: #17 X ~24h of the vLLM U post near 1:30 PM, or daytime Analytics probe (~10 AM–4 PM). 11:23 AM growth follows tick-96; 3:23 PM follows Hermes checklist then fills script `screen`/title gate; after 9:28 PM render finalize script → READY and check music≠1 + non-legacy bg + any `screen` frames. Do not add Mastodon.
 

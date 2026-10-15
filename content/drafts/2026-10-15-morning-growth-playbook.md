@@ -99,3 +99,6 @@ So the Neither branch now allows, in the ~10 AM–2 PM MT Bluesky window, at mos
 Public RSS ~3:20 AM MT: still Neither (Ep0 6 views / Ep1 9 views only). Ultramarine YouTube first-mover still **open** (web = blogs only; X→YT links = 0; autocomplete still Warhammer/no AI demand). CEO announcement ~1.18M impressions. Reply shortlist refreshed in `ep3-post-publish-growth-pack.md` (prefer @MikelEcheve, new backup @OCTAMEM; **never** @Ubannoblesse jailbreak). Neither gate + Bluesky Welcome/U1 allowance unchanged. Oct 16 recovery draft stands.
 
 **Tick 84 add (Neither-day, optional):** one X profile edit is allowed today (not a post): bio + link from `content/drafts/profile-surfaces-refresh.md` (link → orbbuilds.vercel.app). Hold the pin until the Oct 16 episode drop exists. GitHub description/topics/README block can go in any session with the orbbuilds GitHub login.
+
+## Tick 100 note (Oct 15 ~6:55 AM MT)
+- Do not post bank U3 (Fable 5.5 correction). If an optional second U original is used, U3b in `content/drafts/fable-5-5-drop-day-plan.md` is allowed only after re-checking that the official models page still shows `claude-fable-5-1` as newest; fill [TIME]. If Fable 5.5 has been announced, follow that plan instead (no hot take before the episode).
