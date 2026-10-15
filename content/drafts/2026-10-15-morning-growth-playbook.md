@@ -86,3 +86,6 @@ So the Neither branch now allows, in the ~10 AM–2 PM MT Bluesky window, at mos
    (226 chars.) Self-reply: `source: huggingface.co/inclusionAI/Ling-3.1-flash`. No hashtag in the body if it pushes over 300; `#AI` is fine if it fits. Stale after ~Oct 16 evening MT.
 - X spacing is unaffected: if the X U1 also goes out, Bluesky U1 is a separate surface, not a second X original.
 - Log both in GROWTH_LOG with post time; tag U1-bsky as U for #17/#9 (likes/reposts/replies at ~4–6h).
+
+## Tick 80 (Oct 15 ~3:22 AM MT): overnight first-mover recheck (#3)
+Public RSS ~3:20 AM MT: still Neither (Ep0 6 views / Ep1 9 views only). Ultramarine YouTube first-mover still **open** (web = blogs only; X→YT links = 0; autocomplete still Warhammer/no AI demand). CEO announcement ~1.18M impressions. Reply shortlist refreshed in `ep3-post-publish-growth-pack.md` (prefer @MikelEcheve, new backup @OCTAMEM; **never** @Ubannoblesse jailbreak). Neither gate + Bluesky Welcome/U1 allowance unchanged. Oct 16 recovery draft stands.
