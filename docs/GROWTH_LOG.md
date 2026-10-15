@@ -209,3 +209,4 @@ Source of truth for pattern definitions: `docs/AUDIENCE_STRATEGY.md`.
 - Ep4: PENDING_BUILD script `content/scripts/2026-10-16-hermes-agent-v0-22.json` (P5 cold-open chips + screen slots). No publish/social from this routine.
 
 Tick 100 (Oct 15 ~6:55 AM MT): "Fable 5.5" X posts/hour went from ~23-32 overnight to 86/96/108 after 4 AM MT (rumor, not announced; official models page still 5.1 only). Drop-day plan in `content/drafts/fable-5-5-drop-day-plan.md`; bank U3 on hold, U3b drafted.
+Tick 102 (Oct 15 ~7:15 AM MT): opened #22 native-video lane. Ep3 Short (47 s) can be the 11:23 AM session's one X original on the Neither branch, zero YouTube quota; Bluesky video needs the account email verified first. Logged as tag `V`. Nothing posted or uploaded.
