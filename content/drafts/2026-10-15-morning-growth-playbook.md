@@ -65,6 +65,10 @@ Public RSS ~10:37 AM MT still only Ep0 `aCvkp11w9_8` (6) and Ep1 `L7fdRoNWEPE` (
 
 
 
+## Tick 126 (Oct 15 ~11:20 AM MT): Neither confirmed; reply shortlist refreshed for V
+Public RSS ~11:19 AM MT still only Ep0 `aCvkp11w9_8` (**6** views) and Ep1 `L7fdRoNWEPE` (**9** views). xclip on disk (52.6 s, 1080×1920). **$0.13/task** reconfirmed on paperinstruments.com/ultramarine (PI Knowledge Work internal; Fable 5 $8.19; weights coming soon) — V caption stays.
+**11:23 AM growth:** Neither → #19 profile edit → native-video runbook → **≤1 reply from tick-126 shortlist (prefer @somi_ai)** → Bluesky video (≥2h after X). Never claim first. Do not mention Grok Bot.
+
 ## Tick 124 (Oct 15 ~11:05 AM MT): still Neither; vs-Grok-Bot is NOT this morning
 Public RSS ~11:01 AM MT still only Ep0 `aCvkp11w9_8` (6) and Ep1 `L7fdRoNWEPE` (9). **11:23 AM growth:** unchanged Neither → #19 profile edit → native-video runbook → ≤1 reply → Bluesky video (≥2h after X). Never claim first.
 Afternoon research only: `content/drafts/p4-hermes-vs-grok-bot-candidate.md` is a **future** P4 candidate (brand gate). Do not mention Grok Bot in today's V caption, U5, or profile bio.
@@ -175,7 +179,7 @@ Public RSS ~9:29 AM still Ep0 6 / Ep1 9 (no morning retry). First-mover still cl
    - Pin: leave empty (no live episode-drop post yet).
    - Optional same session if GitHub login available: repo description + topics + README Watch block from that draft.
 3. **Native-video original** — follow `native-video-posting-runbook.md` with `2026-10-14-ultramarine-1-flash-xclip.mp4` + the paste-ready caption in ticks 102–103. Never claim first. Tag `V` in GROWTH_LOG.
-4. **At most one X reply** after the video (Ultramarine shortlist in `ep3-post-publish-growth-pack.md`; prefer @MikelEcheve). Skip if the human-check notice appears.
+4. **At most one X reply** after the video (Ultramarine shortlist in `ep3-post-publish-growth-pack.md`; prefer **@somi_ai** tick 126, then @MikelEcheve). Skip if the human-check notice appears.
 5. **Bluesky video** in the 10 AM–2 PM MT window, ≥2h after the X original; same clip + caption. Skip Welcome/U1 if the video goes out.
 6. **Fallbacks:** xclip attach skipped → U3b only if Fable 5.5 still unannounced (recheck models page first); else U4 from `x-useful-news-bank.md` (not U1+U4 same day). Do not also post a second X original.
 
