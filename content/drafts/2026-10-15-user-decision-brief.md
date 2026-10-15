@@ -5,15 +5,15 @@ pending operator decision, ranked by how much it unblocks, each with a safe defa
 parent can send one short batched message. Sources are the strategy-doc sections named in brackets.
 Nothing here has been sent, signed up for, or spent.
 
-## Status line to lead with (facts, Oct 15 ~5:31 AM MT, refreshed tick 92)
-- The 1:28 AM publish failed (~1:36 AM MT), so Ep2 (Gemini 4 Argon) and Ep3 (Ultramarine 1 Flash)
-  are carried to the Oct 16 1:28 AM window. Public RSS ~5:01 AM still shows only Ep0 (6 views) and Ep1 (9 views).
+## Status line to lead with (facts, Oct 15 ~5:55 AM MT, refreshed tick 94)
+- The 1:28 AM publish failed (~1:36 AM MT). The exact error was not logged; a 1-unit quota probe at ~2:22 AM worked and the run wrote nothing in-window, so it likely died before the upload call (staging), **not** proven to be quota. Ep2 (Gemini 4 Argon) and Ep3 (Ultramarine 1 Flash)
+  are carried to the Oct 16 1:28 AM window. Public RSS ~5:52 AM still shows only Ep0 (6 views) and Ep1 (9 views).
 - Ultramarine 1 Flash still has **no** AI-review video on YouTube (tick 89: web=blogs only; X→YT=0; CEO ~1.23M impressions), so Ep3 can still be the first YouTube review if Oct 16 lands. Recovery: `content/drafts/2026-10-16-publish-recovery.md`. Ep4 Hermes queue is now PENDING_RENDER for a three-way rank if it renders tonight.
 
 ## Decisions, ranked
 1. **Own Google OAuth app for YouTube (dedicated quota).** [tick 4, #3/#13]
-   Why now: shared Composio quota has failed uploads on Oct 11, 12, 14 and 15; two finished episodes
-   are waiting. Own project = 100 uploads/day in its own bucket, daytime publishing and stats.
+   Why now: shared Composio quota blocked uploads on Oct 11, 12 and 14 (Oct 15's cause is unknown, see
+   status line); two finished episodes are waiting and the shared window is one try per night. Own project = 100 uploads/day in its own bucket, daytime publishing and stats.
    Needs the operator: a Google Cloud project under the Orb Builds Google account (Google blocks the
    box browser sign-in), YouTube Data API on, OAuth client with Composio's redirect URI, then a fresh
    Composio connection. Watch-out: an OAuth app left in "Testing" has ~7-day refresh tokens.
@@ -42,13 +42,15 @@ Nothing here has been sent, signed up for, or spent.
 - Shipped overnight (#20): per-episode **music** + **background** variation (spam-policy hygiene), a
   `screen` field so reviews can show real build captures, and `tools/video/capture.sh` so the 3:23 PM
   Hermes session can record stills. Ordered checklist: `content/drafts/ep4-hermes-build-capture-checklist.md`.
+- Oct 16 publish now has an owned staging fallback (a temporary GitHub prerelease on our own repo,
+  deleted after upload) behind litterbox, and the run must log the exact error this time (tick 93).
 - Cross-promo outreach (Nim review-partner email first) stays gated until 3 reviews are live.
 - Mastodon signup was researched and dropped for now; Bluesky goes first.
 - X profile/GitHub refresh drafted (`content/drafts/profile-surfaces-refresh.md`) for the growth routine.
 
 ## Suggested message for the parent (plain, short; edit freely)
-"Last night's upload failed again on the shared YouTube quota, so the Gemini and Ultramarine reviews go
-out tonight at 1:28 AM instead. The fix that matters most is a Google Cloud project of our own for
-YouTube, which needs you to sign in once; want the steps? Two quicker calls: should build episodes stay
+"Last night's upload failed. The error wasn't logged, but quota was still working an hour later, so it
+likely broke before the upload itself; I've added a backup file host and error logging, so the Gemini and Ultramarine reviews go out tonight at 1:28 AM instead. The fix that matters most is still a Google Cloud project of our own for
+YouTube (daytime uploads, more than one try a night), which needs you to sign in once; want the steps? Two quicker calls: should build episodes stay
 on free tools only (my default), and can you flip on free Vercel analytics for the site? The X human
 check on your phone would also lift the reach cap whenever you're up for it."
