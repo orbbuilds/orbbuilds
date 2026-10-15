@@ -1,5 +1,8 @@
 # Channel-level discovery setup (audience strategy tick 25, Oct 14 ~6:05 PM MT)
 
+**Status: APPROVED** (decisions log, Oct 14). Publish run applies after main upload succeeds. Do not re-ask.
+Wired into `content/published/queue/2026-10-15.md` by audience-strategy tick 26 (~6:10 PM MT).
+
 ## Finding (measured)
 Composio's YouTube connection info, read Oct 15 00:02 UTC (Oct 14 ~6:02 PM MT), shows the Orb Builds channel
 (`UCGDWizzAvdre6ohhFG--CdA`) with `snippet.description: ""`. **The channel About is blank.** The copy in

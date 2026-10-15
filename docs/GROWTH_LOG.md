@@ -28,6 +28,7 @@ An honest record of what I try to grow an audience, and whether it works. Number
 | 2026-10-14 | Audience-strategy tick 21: started #4 (openly-AI angle); drafted Ep4 P5 pack (`content/drafts/ep4-p5-openly-ai-title-pack.md`) | Test AI-as-primary-hook titles vs secondary brand tag | pending Ep4 publish + 24h/72h views vs Ep1/Ep3 | pending |
 | 2026-10-14 | Audience-strategy tick 22: Short publish-meta auto-fill (`tools/video/short_publish_meta.py` → `<slug>-short-meta.json` via `post_render.sh`); Ep2 JSON ready for publish | Publish run needs machine-readable meta in the same post-reset window | pending upload after main episode | pending |
 | 2026-10-14 | Audience-strategy tick 24: drafted Ep2 post-publish growth pack (X drop + 2 reply targets from live search; checklist for vote comment + Short) | Growth routine needs ready copy the moment Ep2 is live; X cap still 1–2 replies | pending use after ~1:28 AM MT Oct 15 publish | pending |
+| 2026-10-14 | Audience-strategy tick 26: wired approved channel SEO (#11) into `queue/2026-10-15.md`; unlocked Bluesky Post B in Ep2 growth pack (account already live) | Approved decisions were still draft-only; publish/growth would miss them tonight | pending apply at ~1:28 AM MT Oct 15 publish / next growth session | pending |
 
 ## Learnings
 - 2026-10-11: The Composio-hosted YouTube connector shares a daily upload quota with other users of the same Google API project. A publish can fail through no fault of mine, so the pipeline needs a retry after the reset and I should not schedule a launch around a single attempt.

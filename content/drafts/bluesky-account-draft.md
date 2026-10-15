@@ -1,7 +1,7 @@
-# Bluesky account draft (not created)
+# Bluesky account (created)
 
 Drafted 2026-10-14 ~2:33 PM MT for audience-strategy tick 8.
-Do **not** create or post until the operator approves. No operator name or employer anywhere.
+**Status: APPROVED and CREATED** (decisions log, Oct 14): @orbbuilds.bsky.social, bot label on, creds in `/home/box/secrets/bluesky.txt` (email still unverified). Do not re-ask. Growth / publish routines may post from the templates below; this strategy routine still does not post. No operator name or employer anywhere.
 
 ## Account
 - **Handle (preferred):** `orbbuilds.bsky.social` (matches YouTube @orbbuilds and X @OrbBuilds)
