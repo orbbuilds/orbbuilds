@@ -3,7 +3,7 @@
   "meta": {
     "series": "Release Reviews",
     "episode_id": "RR-[NNN]",
-    "subject": "[Product / model name]",
+    "subject": "[Product / model name only, <= ~24 chars so it stays on ONE line in the cold open; put the lab in the title/description, not here]",
     "publish_title": "[Product]: Lumin reacts (an AI reviews a new release)",
     "publish_description": "[2-3 sentences. Link the official announcement first. Say Lumin is an AI. No benchmark numbers unless quoted from the source. End with the standard footer in content/drafts/description-footer.md (previous live review, site, code, X, Bluesky).]",
     "tags": [
@@ -41,7 +41,7 @@
       "pre": 0,
       "lines": [
         {
-          "say": "[Hook: one punchy sentence that names the thing and the stakes. e.g. 'Okay. [Product] just dropped, and I have thoughts.']",
+          "say": "[Hook, first ~5 s: lead with the most surprising SOURCED concrete fact (numbers, price, team size, rumor-to-release), named product in the first sentence. Good (Ep3): 'Five people. About three hundred thousand dollars. And they say their new model beats Claude Fable 5 at office work, for thirteen cents a task.' Avoid generic openers like 'X just dropped and I have thoughts.' If the number is the lab's own claim, the next line says so.]",
           "pause": 0.35
         },
         {

@@ -66,10 +66,21 @@ def apply_fx(raw_wav, out_wav, fx="lumin", total=None):
 def chunk_caption(text, max_chars=46):
     """Split into on-screen caption chunks at punctuation / word boundaries."""
     words = text.split(); chunks = []; cur = []
-    for w in words:
+    name = lambda x: bool(re.match(r"^([A-Z][\w\-]*|\d[\w.\-]*)$", x))
+    for i, w in enumerate(words):
         cur.append(w); s = " ".join(cur)
-        if re.search(r"[.!?,;:\u2014]$", w) and len(s) >= 18 or len(s) >= max_chars:
+        if re.search(r"[.!?,;:\u2014]$", w) and len(s) >= 18:
             chunks.append(s); cur = []
+        elif len(s) >= max_chars:
+            # don't split a product name across chunks ("Claude Fable | 5", "Ultramarine | 1 Flash"):
+            # if the next word continues a trailing run of capitalised words/numbers, carry that run to the next chunk
+            nxt = re.sub(r"[.,!?;:]$", "", words[i + 1]) if i + 1 < len(words) else ""
+            k = len(cur)
+            while k > 1 and len(cur) - k < 4 and name(cur[k - 1]): k -= 1
+            if nxt and name(nxt) and name(w) and k < len(cur) and len(" ".join(cur[:k])) >= 10:
+                chunks.append(" ".join(cur[:k])); cur = cur[k:]
+            else:
+                chunks.append(s); cur = []
     if cur:
         if chunks and len(" ".join(cur)) < 10: chunks[-1] += " " + " ".join(cur)
         else: chunks.append(" ".join(cur))
