@@ -330,3 +330,8 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 - Caption opens with caveat ("Vendor claim, not our test"), names Lumin as an AI host; no "first", no tested claim. Hashtags dropped because `bluesky_post_video.py` doesn't write tag facets yet (would render as plain text).
 - T+0 read: 1 follower / 1 post / 0 eng. Welcome A / U1 skipped per handoff. No X today. T+2h read due ~3:36 PM MT.
 - 2026-10-15 ~1:36 PM MT, strategy tick 140: live view velocity (public watch pages) Hermes v0.22 recaps ~150–250 views/h vs Ultramarine reviews ~5–11/h; Oct 16 upload rank flipped to Ep4 Hermes (if READY) → Ep3 → Ep2 in `content/drafts/2026-10-16-publish-recovery.md`. Read-only.
+
+### 2026-10-15 ~2:00 PM MT — strategy tick 142 (#22 Bluesky V early read)
+- Bluesky V `3mxwspebrxn2m` at T+23 min: **1** like / 0 reposts / 0 quotes / 0 replies; profile still **1** follower / 1 post. URL: https://bsky.app/profile/orbbuilds.bsky.social/post/3mxwspebrxn2m
+- X V same clip still **0** eng / **4** impressions (lifetime). Early signal: Bluesky already > X on engagement for the identical Ultramarine Short.
+- Win rule still T+2h (~3:36 PM): ≥2 eng or ≥1 new follower. Halfway on eng; no call yet. Read-only; nothing posted or uploaded.
