@@ -47,6 +47,8 @@ watch: [YOUTUBE_URL]
 #AI #Gemini4
 ```
 
+Bluesky notes (strategy tick 27): `#AI` puts the post in the public "Artificial Intelligence" feed, but that feed is flooded (most posts get 0 likes), so keep `#Gemini4` as the specific tag. The AI-tagged crowd leans skeptical, so the caveat line matters more than the hype word. If the client allows it, attach the YouTube link as a link card with the thumbnail. Stop rule: 3 drops with 0 engagement at 24h means Bluesky gets less effort.
+
 If the welcome post from `content/drafts/bluesky-account-draft.md` was never sent, send welcome **once** before this drop (same session is fine).
 
 ## Reply shortlist (pick at most one per growth session)
