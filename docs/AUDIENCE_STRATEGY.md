@@ -1128,7 +1128,16 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - Checked state for the 3:23 PM session (it is running now): local `main` **ahead 25**, live site still says "building AI products" (14 hits), Hermes not yet installed on the box. Not touched; the session owns push and capture.
 - Desk-only plus one site curl and git fetch. No posts, uploads, comments, channel edits, pushes or signups.
 
+## Bluesky V T+2h verdict: both cold, dual-channel stays (experiment #22, tick 152, Oct 15 ~3:35 PM MT)
+- `bluesky_read.py --who` at T+118 min: 1 like (mass-liker @chiitan.love, excluded), 0 reposts/quotes/replies, **0 real engagers**, followers still **1**. Win rule (≥2 real eng or ≥1 new follower) **not met**. X V same clip: 4 imp / 0 eng.
+- **Verdict:** both channels cold on an untagged clip; audience size is the bottleneck, not format. Dual-channel stays; `bluesky-primary-recommendation.md` marked PARKED. Ep4's tagged Bluesky B-video remains the first real tag-discovery test (unchanged, per tick 147).
+- Filled the `[FILL]`/`[VERDICT]` slots in `2026-10-15-user-decision-brief.md`. No decision changed, so no WakeParent; the batch holds for the Oct 16 morning ping.
+- Read-only (1 public Bluesky read). No posts, uploads, comments, channel edits, pushes or signups.
+
 ## Last tick
+- **2026-10-15 ~3:35 PM MT (tick 152).** #22: Bluesky V T+2h verdict = both cold (0 real engagers, 1 follower). Dual-channel stays; Bluesky-primary draft PARKED; brief slots filled. No WakeParent (no decision change; batch holds for morning ping). Read-only.
+  - Next recommended tick: ~4:30 PM confirm the 3:23 session pushed (ahead 0, live site shows "An AI reviews the AI") and Hermes capture stills exist; if not, flag for 9:28 PM. 7:23 PM Fable launch-signal once. After 9:28 PM confirm Ep4 READY + `-xclip.mp4` + tagged B-video caption. Oct 16 ~11:30 AM X V 24h read + Bluesky V 24h read (same rule); ~10 AM–noon Ep1 Analytics; morning ping sends the brief batch. Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot without operator OK.
+
 - **2026-10-15 ~3:29 PM MT (tick 151).** #22/#10/#23/#3: staged the afternoon ping batch (X V flat 4, Bluesky T+2h `[FILL]`, #23 framing FYI, Fable cooling) plus a plain add-on line in `2026-10-15-user-decision-brief.md`. 3:23 session in flight (ahead 25, site still stale, Hermes not installed yet), left alone. No WakeParent. Desk-only.
   - Next recommended tick: ~3:36 PM+ `python3 tools/social/bluesky_read.py --who` T+2h, apply rule on `[counts]` (real engagers only), then **fill the `[FILL]`/`[VERDICT]` slots** in the brief; WakeParent only if the verdict changes a decision, else hold for the Oct 16 morning ping. ~4:30 PM: confirm the 3:23 session pushed (ahead 0, live site shows "An AI reviews the AI") and Hermes capture stills exist; if not, flag for 9:28 PM. 7:23 PM Fable launch-signal once. After 9:28 PM confirm Ep4 READY + `-xclip.mp4`. Oct 16 ~11:30 AM X V 24h read; ~10 AM–noon Ep1 Analytics. Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot without operator OK.
 
