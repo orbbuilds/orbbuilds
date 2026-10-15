@@ -3,7 +3,7 @@
 > Drafted by audience-strategy tick 43 (Oct 14 ~9:08 PM MT) so the 9:28 PM production run inherits every standing hygiene step. **Do not upload from this file until Status is READY** and the render paths below are filled. Prefer Candidate C from `content/drafts/ep3-p1-title-pack.md`. If production ships A or B instead, write a different `YYYY-MM-DD-<slug>.md` and leave this as PENDING or mark STALE. Do not overwrite `queue/2026-10-15.md` (Ep2).
 - Standing rules: `00-README-slot-rules.md` in this folder.
 
-- Status: READY. Rendered + validated 2026-10-14 ~9:50 PM MT by the daily video production run (script validator OK, private blocklist 0 hits, -14.9 LUFS). Publish run (~1:28 AM MT) ranks READY/CARRIED by freshest `GA:` first — this GA (2026-10-14) beats Ep2's GA (2026-10-13), so this file should win upload #1 when READY.
+- Status: CARRIED to 2026-10-16 (publish routine failed ~1:36 AM MT Oct 15; public channel RSS at ~2:02 AM MT still only Ep0 `aCvkp11w9_8` + Ep1 `L7fdRoNWEPE` — no Ep3 videoId). Was READY after render 2026-10-14 ~9:50 PM MT. Next post-reset window: still freshest GA vs Ep2 → upload #1 when READY/CARRIED ranked. Exact failure string not in queue; do not invent one.
 - Episode: RR-003 / Episode 3 (daily)
 - Script: content/scripts/2026-10-14-ultramarine-1-flash.json (title/description/tags in meta; use `meta.publish_description` as-is, it already has chapters + footer; see `meta.publish_description_note` for the Ep2 link if Ep2 goes up first)
 - Title: `Ultramarine 1 Flash is a 5-person flex... (an AI reviews it)` (alt in pack: `weirdly cheap...`)

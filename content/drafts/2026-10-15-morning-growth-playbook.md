@@ -3,6 +3,11 @@
 Status: draft only (audience-strategy tick 52, Oct 14 ~10:37 PM MT). Nothing posted, replied, liked, followed, uploaded or spent from this file.
 Use: the audience-growth routine (weekday ~11:23 AM MT) and any Bluesky drop in the ~10 AM–2 PM MT window after the ~1:28 AM Oct 15 publish run. Paste real YouTube URLs where marked.
 
+## Tick 72 gate (Oct 15 ~2:05 AM MT) — NEITHER LIVE
+Public channel RSS (`channel_id=UCGDWizzAvdre6ohhFG--CdA`) at ~2:02 AM MT still lists only Ep0 `aCvkp11w9_8` (6 views) and Ep1 `L7fdRoNWEPE` (9 views). The ~1:28 AM MT publish routine **failed** (~1:36 AM MT per automation status). Both queue files are **CARRIED to 2026-10-16**.
+
+**Morning growth must take the Neither branch:** no Ep2/Ep3 X posts, no Bluesky episode drops, no vote comments, no site listings. Optional non-episode work only (e.g. one U-bank original from `x-useful-news-bank.md` under tick-71 spacing, still ≤1–2 replies total). Retry uploads only in the next ~1:28 AM MT window (or after own-OAuth if approved). Do not invent videoIds.
+
 ## Why this exists
 Tonight two READY queue files compete for one post-reset window:
 - `queue/2026-10-15-ultramarine-1-flash.md` (Ep3, GA 2026-10-14, freshest → upload #1)
