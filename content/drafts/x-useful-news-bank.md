@@ -33,3 +33,9 @@ Drafts only. Nothing here is posted. The growth routine decides if and when.
 > huggingface.co/stepfun-ai/Step-5-Preview
 
 ~250 chars counting the link as 23. Source: model card params table + serving table (FP8 vLLM/SGLang rows). Same hardware-reality shape as U1 (Ling). Don't post U1 and U4 the same day; pick one. No "first" claims (YouTube already has 2–7-day-old Step 5 tests from the API launch).
+
+## U5: OpenUI "1.0" is the lang/spec — UI packages still 0.x (verified tick 119, Oct 15 ~10:12 AM MT)
+> Seeing OpenUI 1.0 posts? The 1.0 **spec** PR (#1277) merged on GitHub Oct 14, and `@openuidev/react-lang` is on npm at **1.0.1**. The React UI packages (`@openuidev/react-ui`, `react-headless`) are still **0.18.x**. Pin the package you mean, not the headline.
+> github.com/thesysdev/openui
+
+~275 chars counting the link as 23. Sources (same morning): GitHub API `pulls/1277` merged_at `2026-10-14T11:44:18Z`; npm `@openuidev/react-lang@1.0.1` and `@openuidev/react-ui@0.18.1`; repo ~10.9K stars. Same correction-shape as U1/U4 (vLLM-style useful news). Prefer U5 over U4 for today's optional second original if the morning V post goes out — OpenUI is fresher (spec merged yesterday). Don't post U4 and U5 the same day. Do not invent download counts.

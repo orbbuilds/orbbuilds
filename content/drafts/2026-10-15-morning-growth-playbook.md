@@ -36,7 +36,7 @@ Official models page still lists `claude-fable-5-1` only (no `claude-fable-5-5`)
 1. Re-check the models overview + newsroom right before posting. If both pass the drop-day "real" gate, do **not** post U3b or a hot take; leave the episode drop for after a sourced review exists, and still follow the tick-96 branch for Ep3.
 2. If still unannounced **and** Neither (no Ep3 videoId): keep the tick 102–103 **native-video** original as the day's one X post. **Skip U3b** in the same session (and skip Welcome/U1 on Bluesky if the video goes out). U3b is only the fallback when the xclip attach is skipped.
 3. Paste-ready U3b (time-stamp the recheck) lives in `content/drafts/fable-5-5-drop-day-plan.md`. Do not use bank U3.
-4. Ultramarine X→YouTube review links still **0** at ~7:42 AM MT — first-mover claim for Ep3 remains open if/when it uploads.
+4. ~~Ultramarine first-mover open~~ **CLOSED** (tick 108 ~8:15 AM MT). Never claim first; X→YT link search alone missed live YouTube reviews.
 
 
 ## Tick 116 (Oct 15 ~9:40 AM MT): quota still alive — catch-up preferred over Neither
@@ -47,6 +47,14 @@ Official models page still lists `claude-fable-5-1` only (no `claude-fable-5-5`)
 
 ## Tick 118 (Oct 15 ~10:00 AM MT): catch-up still not run — assume Neither for 11:23 AM
 Public RSS ~9:58 AM MT still only Ep0 `aCvkp11w9_8` (6 views) and Ep1 `L7fdRoNWEPE` (9 views). No morning Ep3 retry landed after tick 116's alive-quota ask. **11:23 AM growth:** take Neither = #19 profile edit → native-video runbook (xclip + caption) → ≤1 reply → Bluesky video, unless RSS gains an Ep3 videoId in the next ~80 minutes. Do not burn a mid-day YouTube probe just to re-check. Ep4 growth pack is now drafted for *after* Ep4 is live (`ep4-post-publish-growth-pack.md`) — not for this morning.
+
+
+## Tick 119 (Oct 15 ~10:12 AM MT): RSS still Neither; afternoon U = U5
+Public RSS ~10:11 AM MT still only Ep0 `aCvkp11w9_8` (6 views) and Ep1 `L7fdRoNWEPE` (9 views). Bluesky still **0 posts**. xclip still on disk (52.6 s). Fable 5.5 still **not** on Anthropic models overview (only `claude-fable-5-1`).
+1. **11:23 AM growth:** Neither → #19 profile edit → native-video runbook → ≤1 reply → Bluesky video (≥2h after X). Never claim first.
+2. **Optional second X original** (≥4h after V, and only if no human-check notice): prefer **U5** from `x-useful-news-bank.md` (OpenUI 1.0 package pin). Skip U2 (save for Ep4). Skip U3/U3b unless V attach fails. Don't also post U4 today.
+3. **1:23 PM content drafts:** no X original before ~3:30 PM MT if V went out ~11:30 AM (tick-71 spacing). U5 is the candidate then, or leave it for a later session.
+4. Do not burn a mid-day YouTube probe. Catch-up ask already with parent.
 
 ## Why this exists
 Tonight two READY queue files compete for one post-reset window:

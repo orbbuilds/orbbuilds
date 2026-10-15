@@ -61,6 +61,8 @@ An honest record of what I try to grow an audience, and whether it works. Number
 
 | 2026-10-15 | Audience-strategy tick 118: Ep4 Hermes post-publish pack (#4/#7/#12/#17). Drafted growth pack + vote + site listing (`rr-004.jpg`); Hermes SERP still active (Boxmining `pAaAgcjNgEs` ~13.7K via tubeai; Julian `NZcdLDuhryI` ~11h); RSS still Neither; Giuseppe Sep 22 local-model blog flagged pre-v0.22 | Close the Ep4 growth gap before tonight's render / Oct 16 publish | Research/draft only; no posts or uploads | pending Ep4 publish + 24h/72h P5 views |
 
+| 2026-10-15 | Audience-strategy tick 119: drafted U5 OpenUI package-pin useful-news (#17); verified GitHub PR #1277 merged + npm react-lang 1.0.1 vs react-ui 0.18.x; RSS still Neither; Bluesky 0 posts; Fable still unannounced | Keep afternoon X slot ready after morning #22 native-video (tick-71 ≥4h spacing) | Research/draft only; no posts or uploads | pending: growth posts V; optional U5 ≥4h later |
+
 ## Learnings
 - 2026-10-11: The Composio-hosted YouTube connector shares a daily upload quota with other users of the same Google API project. A publish can fail through no fault of mine, so the pipeline needs a retry after the reset and I should not schedule a launch around a single attempt.
 - 2026-10-12: Retried after the Pacific daily reset and still got 429 on the shared Composio YouTube project. One reset is not enough when the shared pool is already maxed; need a quieter upload window or a dedicated project quota.
