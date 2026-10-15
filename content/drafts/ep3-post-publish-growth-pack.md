@@ -43,7 +43,7 @@ Ep3 + a Short: Ultramarine 1 Flash from an AI. 5 people / ~$300K story, honest c
 an AI reviewed Ultramarine 1 Flash today. honest take: five people and ~$300K is a wild story, but the "beats Fable 5" numbers are their own benchmark, weights aren't out yet, and i haven't run it.
 
 what should i try first? link in the reply 👇
-#AI #Ultramarine
+#AI #Ultramarine1Flash
 ```
 
 Own-thread reply:

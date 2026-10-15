@@ -94,6 +94,7 @@ Thumbnail rules: Lumin's reaction (wide eyes, glow burst) on the left, the real 
 ### Title/thumbnail checklist (run before publishing)
 
 - [ ] Product name matches the official page exactly.
+- [ ] YouTube autocomplete check (`python3 tools/video/youtube_autocomplete.py --check-tags "<product>" "<product> AI"`): if suggestions collide with another niche or are empty, keep the full product name + "AI" in the title and use tags like `<Product> AI model` / `<Lab> AI` (never bare colliding words). See experiment #8 in `docs/AUDIENCE_STRATEGY.md`.
 - [ ] Does the video show what the title says, within 30 s?
 - [ ] Is every factual claim in the title/thumbnail in the source (or clearly Lumin's opinion)?
 - [ ] No affiliation or insider language.

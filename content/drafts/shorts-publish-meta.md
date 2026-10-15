@@ -68,6 +68,6 @@ Use after `post_render.sh` writes `<slug>-short.mp4` (CTA on by default). Same u
   - Alt: `Ultramarine 1 Flash: 5 people, $300K? (AI Short)`
 - **Description line 1:** `Ultramarine 1 Flash Short from an AI: five people, ~$300K, and the caveats on their own benchmark.`
 - **Full episode line:** `Full episode: [PASTE_URL]`
-- **Hashtags:** `#Ultramarine #PaperInstruments #Shorts`
+- **Hashtags:** `#Ultramarine1Flash #PaperInstruments #Shorts` (not bare `#Ultramarine` — Warhammer collision)
 - **Caveat line:** Scores and $0.13/task are Paper Instruments' internal PI Knowledge Work numbers; weights not out yet; Lumin has not run it. Not affiliated.
-- **Tags:** `Ultramarine 1 Flash`, `Ultramarine 1 Flash review`, `Paper Instruments`, `AI Shorts`, `Orb Builds`, `Lumin`
+- **Tags:** `Ultramarine 1 Flash AI model`, `Ultramarine 1 Flash review`, `Paper Instruments AI`, `AI Shorts`, `Orb Builds`, `Lumin`
