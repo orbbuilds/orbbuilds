@@ -391,3 +391,13 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 - Queue handoff/thumb/vote/site lines now match tick 140 Ep4-first rank + tick 160 social defaults (no longer "prefer Ep3 packs first").
 - No posts, uploads, comments, channel edits, or pushes from this tick.
 - 2026-10-15 ~5:20 PM MT (strategy tick 162): removed an unfilled placeholder line from Ep4's YouTube description before tonight's publish; validator now checks publish metadata. No posts/uploads.
+
+### 2026-10-15 ~5:45 PM MT — strategy tick 164 (#23/#8 setup SERP baseline)
+- Pre-publish competitor snapshot for Ep4 setup framing (public oEmbed + returnyoutubedislikeapi.com; no YouTube API quota):
+  - `DYdvJCxWd6M` Metics Media "Full Tutorial & Setup Guide" — **520,807** views (pub 2026-09-15) ≈ **17.4K/day**
+  - `1ve4Atbqmoo` Tech With Tim "Full Tutorial… Setup Guide" — **97,441** (2026-09-11) ≈ **2.9K/day**
+  - `THA8Fov44QY` Bart Slodyczka "Full Setup Tutorial (Gemma 4)" — **92,224** (2026-09-02) ≈ **2.1K/day**
+  - `CcsgednSRfE` Sharbel A. "Full Setup Guide" — **29,681** (2026-10-09) ≈ **4.9K/day**
+- Web search: no YouTube video found for Hermes Agent **v0.22** / **no API key** / `nous/welcome` — Ep4's niche looks open vs long full-install tutorials.
+- Live Ep4 chapter label → `Setup: no-key desktop on camera`. Short-meta dry-run (52.6 s) → `Hermes Agent v0.22 setup in 55 seconds (no API key)`.
+- No posts, uploads, comments, channel edits, or pushes from this tick.
