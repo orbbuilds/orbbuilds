@@ -84,6 +84,18 @@ def short_url(u, n=62):
     u = u.replace("https://", "").replace("http://", "").rstrip("/")
     return u if len(u) <= n else u[:n - 1] + "\u2026"
 
+
+def resolve_screen(path):
+    """Repo-relative or absolute path to a screenshot/clip frame. Missing -> None + warn."""
+    if not path: return None
+    path = str(path)
+    if os.path.isabs(path) and os.path.isfile(path): return path
+    root = os.path.normpath(os.path.join(HERE, "../.."))
+    for cand in (os.path.join(root, path), path, os.path.join(os.getcwd(), path)):
+        if os.path.isfile(cand): return os.path.abspath(cand)
+    print(f"warn: screen not found: {path}", flush=True)
+    return None
+
 # ---------- episode ----------
 class Episode:
     def __init__(self, script, timing, voice_wav):
@@ -106,6 +118,12 @@ class Episode:
         self.anim = character.Animator(glines)
         self.env = self._envelope(voice_wav)
         self.halo = self._halo()
+        # overlay script visual fields onto timing (so --frames picks up screen without re-tts)
+        for si, sec in enumerate(timing["sections"]):
+            src_lines = script["sections"][si]["lines"] if si < len(script.get("sections", [])) else []
+            for li, ln in enumerate(sec["lines"]):
+                if li < len(src_lines) and src_lines[li].get("screen"):
+                    ln["screen"] = src_lines[li]["screen"]
         self.parts = []
         for sec in timing["sections"]: self.parts.append(self._build_section(sec))
         self.caps = []
@@ -175,27 +193,90 @@ class Episode:
             im = rgba_text([short_url(src["url"])], f, (150, 200, 255), 32, shadow=False)
             tag = rgba_text([(src.get("label") or "Source") + ":"], f, (110, 150, 200), 32, shadow=False)
             P["src_tag"] = Layer(tag, px + 44, py + ph - 96); P["src"] = Layer(im, px + 44, py + ph - 62); foot = 110
-        bullets = [ln["show"] for ln in sec["lines"] if ln.get("show")]
-        avail = py + ph - foot - y - 20
-        for fs in (58, 54, 50, 46, 42, 38, 34, 30):
-            font = inter(fs, 500); lh = int(fs * 1.3)
-            wr = [wrap_px(b, font, pw - 150) for b in bullets]
-            need = sum(len(w) * lh + 36 for w in wr)
-            if need <= avail: break
-        mono = kind == "teaser"
-        if mono: font = ImageFont.truetype(MONO, fs - 4)
+        text_lines = [ln for ln in sec["lines"] if not ln.get("screen") and ln.get("show")]
+        screen_lines = [ln for ln in sec["lines"] if ln.get("screen")]
+        content_bottom = py + ph - foot - 20
         P["bul"] = {}
         yy = y + 8
-        for ln in sec["lines"]:
-            if not ln.get("show"): continue
-            wl = wrap_px(ln["show"], font, pw - 150); h = len(wl) * lh
-            im = Image.new("RGBA", (pw - 80, h + 6), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
-            if mono: d.text((0, 0), ">", font=font, fill=(110, 235, 170, 255))
-            else: d.ellipse((2, lh // 2 - 7, 16, lh // 2 + 7), fill=col + (255,))
-            for i, l in enumerate(wl): d.text((44 if not mono else 40, i * lh), l, font=font, fill=(228, 238, 255, 255))
-            P["bul"][ln["start"]] = (Layer(im, px + 44, yy), ln["end"])
-            yy += h + 36
+        if screen_lines and text_lines:
+            # mixed: shrink bullets into the top strip; screens keep >=55% of the content area
+            total_h = max(80, content_bottom - yy)
+            reserve = int(total_h * 0.55)
+            bullets = [ln["show"] for ln in text_lines]
+            avail = max(60, total_h - reserve - 16)
+            for fs in (58, 54, 50, 46, 42, 38, 34, 28, 24):
+                font = inter(fs, 500); lh = int(fs * 1.3)
+                wr = [wrap_px(b, font, pw - 150) for b in bullets]
+                need = sum(len(w) * lh + 28 for w in wr)
+                if need <= avail: break
+            mono = kind == "teaser"
+            if mono: font = ImageFont.truetype(MONO, max(18, fs - 4))
+            for ln in text_lines:
+                wl = wrap_px(ln["show"], font, pw - 150); h = len(wl) * lh
+                im = Image.new("RGBA", (pw - 80, h + 6), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+                if mono: d.text((0, 0), ">", font=font, fill=(110, 235, 170, 255))
+                else: d.ellipse((2, lh // 2 - 7, 16, lh // 2 + 7), fill=col + (255,))
+                for i, l in enumerate(wl): d.text((44 if not mono else 40, i * lh), l, font=font, fill=(228, 238, 255, 255))
+                P["bul"][ln["start"]] = (Layer(im, px + 44, yy), ln["end"])
+                yy += h + 28
+        elif text_lines:
+            # ORIGINAL no-screen bullet path (must stay byte-identical for regression)
+            bullets = [ln["show"] for ln in text_lines]
+            avail = content_bottom - yy - 20
+            for fs in (58, 54, 50, 46, 42, 38, 34, 30):
+                font = inter(fs, 500); lh = int(fs * 1.3)
+                wr = [wrap_px(b, font, pw - 150) for b in bullets]
+                need = sum(len(w) * lh + 36 for w in wr)
+                if need <= avail: break
+            mono = kind == "teaser"
+            if mono: font = ImageFont.truetype(MONO, fs - 4)
+            for ln in text_lines:
+                wl = wrap_px(ln["show"], font, pw - 150); h = len(wl) * lh
+                im = Image.new("RGBA", (pw - 80, h + 6), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+                if mono: d.text((0, 0), ">", font=font, fill=(110, 235, 170, 255))
+                else: d.ellipse((2, lh // 2 - 7, 16, lh // 2 + 7), fill=col + (255,))
+                for i, l in enumerate(wl): d.text((44 if not mono else 40, i * lh), l, font=font, fill=(228, 238, 255, 255))
+                P["bul"][ln["start"]] = (Layer(im, px + 44, yy), ln["end"])
+                yy += h + 36
+        # real screenshots / capture frames (experiment #20): line.screen = path relative to repo root
+        P["screens"] = {}
+        screen_top = yy + (10 if text_lines and screen_lines else 0)
+        max_h = max(160, content_bottom - screen_top)
+        max_w = pw - 80
+        for ln in screen_lines:
+            path = resolve_screen(ln.get("screen"))
+            if not path: continue
+            card = self._screen_card(path, max_w, max_h - (44 if ln.get("show") else 0), col)
+            if ln.get("show"):
+                cap = rgba_text(wrap_px(ln["show"], inter(32, 600), max_w - 40), inter(32, 600), (200, 220, 255), 40, shadow=False)
+                combined = Image.new("RGBA", (max(card.size[0], cap.size[0] + 16), card.size[1] + cap.size[1] + 14), (0, 0, 0, 0))
+                combined.alpha_composite(card, ((combined.size[0] - card.size[0]) // 2, 0))
+                combined.alpha_composite(cap, ((combined.size[0] - cap.size[0]) // 2, card.size[1] + 10))
+                card = combined
+            lx = px + (pw - card.size[0]) // 2
+            P["screens"][ln["start"]] = (Layer(card, lx, screen_top), ln["end"])
         return P
+
+    def _screen_card(self, path, max_w, max_h, col):
+        """Fit a real screenshot into the panel with a rounded frame (no upscale past native size)."""
+        src = Image.open(path).convert("RGB")
+        sw, sh = src.size
+        scale = min(max_w / max(1, sw), max_h / max(1, sh), 1.0)
+        # if the image is tiny, allow mild upscale so it isn't a postage stamp
+        if scale < 0.5 and max(sw, sh) < 400:
+            scale = min(max_w / max(1, sw), max_h / max(1, sh))
+        nw, nh = max(1, int(sw * scale)), max(1, int(sh * scale))
+        src = src.resize((nw, nh), Image.LANCZOS)
+        pad = 8
+        im = Image.new("RGBA", (nw + 2 * pad, nh + 2 * pad), (0, 0, 0, 0))
+        d = ImageDraw.Draw(im)
+        d.rounded_rectangle((0, 0, im.size[0] - 1, im.size[1] - 1), 18, fill=(4, 10, 30, 230), outline=col + (200,), width=2)
+        photo = src.convert("RGBA")
+        mask = Image.new("L", (nw, nh), 0)
+        ImageDraw.Draw(mask).rounded_rectangle((0, 0, nw - 1, nh - 1), 12, fill=255)
+        photo.putalpha(mask)
+        im.alpha_composite(photo, (pad, pad))
+        return im
 
     def _hook_chip(self, text, col=(255, 120, 140)):
         f = inter(66, 800); lines = wrap_px(text, f, 400); lh = 78
@@ -268,11 +349,14 @@ class Episode:
             for k in ("badge", "head", "src_tag", "src"):
                 if k in cur: cur[k].draw(fr, fi, dy=10 * (1 - fi))
             teaser = kind == "teaser"
-            for st, (lay, en) in cur["bul"].items():
+            for st, (lay, en) in cur.get("bul", {}).items():
                 a = smooth((t - st) / 0.35)
                 if teaser:
                     prog = min(1.0, max(0.0, (t - st) / max(0.4, (en - st) * 0.8))); lay.draw(fr, 1.0 if prog > 0 else 0, reveal=prog)
                 else: lay.draw(fr, a * fi, dy=14 * (1 - a))
+            for st, (lay, en) in cur.get("screens", {}).items():
+                a = smooth((t - st) / 0.35) * fi
+                lay.draw(fr, a, dy=14 * (1 - a))
         # captions
         for (a, b, lay) in self.caps:
             if a - 0.05 <= t <= b + 0.12:
