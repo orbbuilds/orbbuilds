@@ -5,7 +5,7 @@
     "episode_id": "RR-[NNN]",
     "subject": "[Product / model name]",
     "publish_title": "[Product]: Lumin reacts (an AI reviews a new release)",
-    "publish_description": "[2-3 sentences. Link the official announcement first. Say Lumin is an AI. No benchmark numbers unless quoted from the source.]",
+    "publish_description": "[2-3 sentences. Link the official announcement first. Say Lumin is an AI. No benchmark numbers unless quoted from the source. End with the standard footer in content/drafts/description-footer.md (previous live review, site, code, X, Bluesky).]",
     "tags": [
       "AI",
       "Orb Builds",

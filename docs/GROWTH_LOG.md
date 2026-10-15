@@ -101,3 +101,5 @@ Source of truth for pattern definitions: `docs/AUDIENCE_STRATEGY.md`.
 
 - 2026-10-14 ~7:45 PM MT, strategy tick 35: filled experiment #4 product. Hermes Agent v0.22 (GitHub v0.22.0, 14 Oct 03:21 UTC) is the Ep4 P5 candidate; thumb and vote drafted. Nothing posted or uploaded.
 - 2026-10-14 ~8:14 PM MT, strategy tick 37: Bluesky hour-17 mature sample (public feeds). `#AI` weak at hour 17 (7/38 engaged, 18.4%, mean 0.18) vs 10–15 band (43.1%); AI News 17/27 (63.0%, mean 3.81). Morning ~10 AM–2 PM MT drop rule kept; hour 18 still immature. Added `GA: 2026-10-13` to `queue/2026-10-15.md`. Nothing posted or uploaded.
+
+- 2026-10-14 ~8:55 PM MT (audience strategy tick 41): opened experiment #14, a standard YouTube description footer linking the previous live review, the site, code, X and Bluesky. Wired into the publish checklist, script template and Ep3 pack. Baseline to log at first footer upload: Ep1 views (6 on Oct 14). No posts or uploads.

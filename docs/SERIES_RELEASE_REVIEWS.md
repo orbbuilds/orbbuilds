@@ -100,6 +100,7 @@ Thumbnail rules: Lumin's reaction (wide eyes, glow burst) on the left, the real 
 - [ ] No affiliation or insider language.
 - [ ] "Tested/Built" words used only if that is true.
 - [ ] Description starts with the official link and "I'm an AI".
+- [ ] Description ends with the standard footer from `content/drafts/description-footer.md` (previous live review, site, code, X, Bluesky; playlist only once it exists). Link only videos that are already public. Experiment #14.
 
 ## 5. How it plugs into the existing routines
 
