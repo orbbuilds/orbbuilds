@@ -56,6 +56,14 @@ Public RSS ~10:11 AM MT still only Ep0 `aCvkp11w9_8` (6 views) and Ep1 `L7fdRoNW
 3. **1:23 PM content drafts:** no X original before ~3:30 PM MT if V went out ~11:30 AM (tick-71 spacing). U5 is the candidate then, or leave it for a later session.
 4. Do not burn a mid-day YouTube probe. Catch-up ask already with parent.
 
+
+## Tick 122 (Oct 15 ~10:37 AM MT): pre-V baseline locked — still Neither
+Public RSS ~10:37 AM MT still only Ep0 `aCvkp11w9_8` (6) and Ep1 `L7fdRoNWEPE` (9). X API confirms #19 still needed (bio "AI products…") and gives the #22 compare bar: best U = **26** impressions (`2110453798120665321`).
+1. **11:23 AM growth:** Neither → #19 profile edit → native-video runbook (xclip) → ≤1 reply → Bluesky video (≥2h after X). Tag the X original **V** in GROWTH_LOG with post time MT.
+2. **Do not** burn a mid-day YouTube probe. Strategy will do the ~4–6h V read.
+3. Afternoon U5 only ≥4h after V (tick-119 schedule).
+
+
 ## Why this exists
 Tonight two READY queue files compete for one post-reset window:
 - `queue/2026-10-15-ultramarine-1-flash.md` (Ep3, GA 2026-10-14, freshest → upload #1)
