@@ -316,3 +316,4 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 - Shipped `tools/social/bluesky_post_video.py` (default dry-run; `--post` publishes). Handoff `content/drafts/2026-10-15-bluesky-v-afternoon-handoff.md` updated with paste-ready command for the 1:30 PM one-off.
 - **No post/upload from this tick.** X still closed for Oct 15 after human-check.
 - #22 X V T+95 min (tick 136, ~1:04 PM MT): still 4 impressions / 0 eng / media views 1 — flat since T+7 min. Early read: native video did not break the graduated-access cap on X; Bluesky V is the real format test.
+- #22 Bluesky pre-post baseline (tick 137, ~1:10 PM MT): 1 follower / 0 follows / 0 posts via new read-only `tools/social/bluesky_read.py`. Bluesky has no impression counts; compare engagements + follower delta (X V: 0 / +0). Win rule: ≥2 eng or ≥1 follower by T+2h.
