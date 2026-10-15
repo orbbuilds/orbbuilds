@@ -14,7 +14,7 @@ def check(S, allow_placeholders=False):
     if not str(src.get("url", "")).startswith("https://"): err.append("meta.source.url must be the official announcement (https://...)")
     if not meta.get("subject"): err.append("meta.subject missing")
     if not meta.get("build_episode_planned"): err.append("meta.build_episode_planned must say which build-with-it episode follows (rule: every review gets one)")
-    text_all = []
+    text_all = []; spoken = 0
     for s in secs:
         kind = s.get("kind", s.get("id"))
         if not s.get("lines"): err.append(f"section {kind}: no lines"); continue
@@ -22,6 +22,7 @@ def check(S, allow_placeholders=False):
         for i, ln in enumerate(s["lines"]):
             if not ln.get("say"): err.append(f"{kind}[{i}]: empty 'say'")
             blob = " ".join(str(ln.get(k, "")) for k in ("say", "caption", "show")); text_all.append(blob)
+            spoken += len(str(ln.get("say", "")).split())
             if kind == "what_dropped" and re.search(r"\d", ln.get("say", "") + ln.get("show", "")) and not ln.get("cite"):
                 err.append(f"what_dropped[{i}]: contains a number/claim but no 'cite' (where in the announcement does it say this?)")
             if HYPE_TRAPS.search(blob) and kind != "opinion": warn.append(f"{kind}[{i}]: superlative outside the labelled opinion section - is it sourced?")
@@ -32,8 +33,9 @@ def check(S, allow_placeholders=False):
     if not allow_placeholders and "[" in str(src.get("url", "")): err.append("meta.source.url: unfilled placeholder")
     for term in _blocklist():
         if any(term in t.lower() for t in text_all): err.append("script mentions a blocklisted term - not allowed")
-    words = sum(len(t.split()) for t in text_all)
-    if words > 520: warn.append(f"~{words} words: over ~3.5 min of speech; trim for retention")
+    # Count only spoken 'say' text (caption/show duplicate it on screen). Series limit: 150-420 spoken words.
+    if spoken > 420: warn.append(f"~{spoken} spoken words: over the 420-word series limit (~3 min); trim for retention")
+    elif spoken < 150: warn.append(f"~{spoken} spoken words: under the 150-word series minimum")
     return err, warn
 
 def _blocklist():
