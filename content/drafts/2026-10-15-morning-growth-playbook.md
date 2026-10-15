@@ -54,6 +54,6 @@ Spend the budget on the **freshest / first-mover** episode (Ep3 Ultramarine). Ep
 - Channel SEO / playlist: publish-window only (`channel-seo-setup.md`); confirm or note, do not redo mid-day if quota is dead.
 
 ## Tick 57–58 note (#17)
-Ep3 Post A in `ep3-post-publish-growth-pack.md` is rewritten as useful-news (U): `$0.13/task` on their own harness + "weights coming soon" + receipts-only caveat, link second — not "Episode 3" / pipeline. Tag the posted original **U** in GROWTH_LOG. Optional own-thread reply to @CorbenicAI (tick 57) counts against the 1–2 reply cap; prefer the Ep3 Ultramarine reply shortlist if only one reply fires. Final SERP ~11:41 PM MT still empty of Ultramarine AI reviews (#3).
+Ep3 Post A in `ep3-post-publish-growth-pack.md` is rewritten as useful-news (U): `$0.13/task` on their own harness + "weights coming soon" + receipts-only caveat, link second — not "Episode 3" / pipeline. Tag the posted original **U** in GROWTH_LOG. Optional own-thread reply to @CorbenicAI (tick 57) counts against the 1–2 reply cap; prefer the Ep3 Ultramarine reply shortlist if only one reply fires. Final pre-publish SERP ~12:47 AM MT (tick 65) still empty of Ultramarine AI reviews (#3). Written blogs exist — if citing first-mover, say **first YouTube AI review**, not first coverage anywhere.
 
 Tick 63: optional second X original (U) drafts in `content/drafts/x-useful-news-bank.md`. Only ≥4h after the Ep3 drop, only if no human-check notice today; prefer U1 (Ling hardware reality). Hold U2 if Ep4 is Hermes.
