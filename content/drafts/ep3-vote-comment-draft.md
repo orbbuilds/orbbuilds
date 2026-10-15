@@ -2,6 +2,8 @@
 
 Status: draft only (audience-strategy tick 30, Oct 14, 2026 ~6:55 PM MT). Nothing posted.
 Use: channel comment on Ep3 right after it goes live, then pin in YouTube Studio (no Composio pin tool).
+
+**Publish-window preferred (tick 52):** the ~1:28 AM call order now includes `YOUTUBE_POST_COMMENT` right after the stats batch so the vote is on the video before mid-day quota dies. Morning growth only posts this if publish skipped it. Dual-publish mornings: see `2026-10-15-morning-growth-playbook.md`.
 Pick the block that matches which candidate the 9:28 PM production run actually ships. Options match
 `content/drafts/ep3-p1-title-pack.md` and the spoken outro (template now requires reply 1/2/3).
 

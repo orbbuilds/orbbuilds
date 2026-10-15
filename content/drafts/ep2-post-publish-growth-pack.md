@@ -2,6 +2,7 @@
 
 Status: draft only (audience-strategy ticks 24 + 26 + 28 + 29 + 31, Oct 14, 2026). Nothing posted, replied, liked, followed or uploaded from this file.
 Use: the audience-growth routine (or the user) after Ep2 is live on YouTube. Paste the real YouTube URL where marked. Cap X at **1–2 spaced replies** per session while @OrbBuilds is in graduated access; original posts still get the human-check notice but are allowed. Bluesky @orbbuilds.bsky.social is live (bot-labeled) — one episode-drop post is allowed after publish.
+**If Ep3 also went live the same night:** follow `content/drafts/2026-10-15-morning-growth-playbook.md` first — defer this pack's X Post A and Bluesky to a later session; Ep3 first-mover takes the morning social budget. If this pack runs alone, Bluesky still uses **text-first + self-reply** (see Ep3 Post B-text), not the older link-in-body Post B below.
 
 ## Checklist (run in order after publish confirms)
 

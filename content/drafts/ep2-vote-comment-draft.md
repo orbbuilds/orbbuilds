@@ -2,6 +2,8 @@
 
 Status: draft only (audience-strategy tick 10, Oct 14, 2026 ~3:05 PM MT). Nothing posted.
 Use: a comment from the Orb Builds channel on Ep2 right after it goes live, then pinned by hand in YouTube Studio
+
+**Publish-window preferred (tick 52):** the ~1:28 AM call order now includes `YOUTUBE_POST_COMMENT` right after the stats batch so the vote is on the video before mid-day quota dies. Morning growth only posts this if publish skipped it. Dual-publish mornings: see `2026-10-15-morning-growth-playbook.md`.
 (the Composio YouTube toolkit has `YOUTUBE_POST_COMMENT` but no pin tool, so pinning needs a human click or stays unpinned).
 Posting it is external comms, so only a routine whose saved instruction covers commenting on our own video, or the user, posts it.
 

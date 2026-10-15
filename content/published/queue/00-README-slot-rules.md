@@ -23,11 +23,13 @@ The publish run updates the status of every file it touched before it ends.
 5. A file that has been carried **3 nights** becomes `STALE`: it uploads only on a night when nothing fresher is READY,
    so a daily slot is never spent on an old review while a same-day one waits. Its ready Short may still go as upload #2.
 
-## Call order inside the post-reset window (tick 32, #13)
+## Call order inside the post-reset window (tick 32, #13; vote comment tick 52)
 (1) main upload, `privacyStatus` public (no `publishAt` in Composio; never private-then-flip) → (2) thumbnail →
 (3) one `YOUTUBE_GET_VIDEO_DETAILS_BATCH` statistics read for every live videoId, logged in GROWTH_LOG →
-(4) approved channel/playlist writes, add the new videoId to the reviews playlist → (5) second upload or Short.
+(4) **vote comment** on the episode just uploaded (`YOUTUBE_POST_COMMENT` with the matching draft in `content/drafts/ep*-vote-comment-draft.md`; experiment #7). No Composio pin tool — pin in Studio needs a person. Skip if units are almost gone; morning growth can retry once. →
+(5) approved channel/playlist writes, add the new videoId to the reviews playlist → (6) second upload or Short.
 Git-only work (site listing in `src/lib/episodes.ts`, logs, status lines) can happen anytime after the video is public.
+Dual-READY nights: morning social ranking is `content/drafts/2026-10-15-morning-growth-playbook.md` (generalize the same freshest-first social budget on later nights).
 
 ## Upload args (tick 49)
 - Pass only fields the Composio tool schema lists (`YOUTUBE_MULTIPART_UPLOAD_VIDEO`: title, description, categoryId, privacyStatus, tags, videoFile). There is **no** `containsSyntheticMedia` or `publishAt`; never add them. Bookkeeping keys in `*-short-meta.json` (kind, short_pattern, measure, ai_disclosure_not_an_api_field…) are notes, not args. AI disclosure lives in the description ("yes, I'm an AI").
