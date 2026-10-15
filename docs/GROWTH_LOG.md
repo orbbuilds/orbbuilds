@@ -229,3 +229,7 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 
 ## 2026-10-15 ~9:20 AM MT — audience strategy tick 114
 - #4/#20: drafted gated Grok Voice 3.0 P5 demo pack (`content/drafts/grok-voice-3-p5-demo-title-pack.md` + thumb). Paths: paid Voice API ~$0.80/10 min, or unverified free Console Playground. Needs brief item 2 before any render night. Also refreshed decision-brief status (Ultramarine first-mover closed; no morning retry; RSS still Ep0 6 / Ep1 9) and Ep4 queue first-mover note. Nothing posted, uploaded, signed up, or spent.
+
+## 2026-10-15 ~9:29 AM MT — audience strategy tick 115
+- #19: X/GitHub still stale (bio "AI products", X link → github.com/orbbuilds, 0 repo topics). Wired into POSTING_RULES + ordered Neither checklist for 11:23 AM growth (edit before native-video). RSS still Ep0 6 / Ep1 9. Nothing posted, edited, or uploaded.
+

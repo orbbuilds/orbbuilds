@@ -29,6 +29,12 @@ For the scheduled routines that post (audience growth ~11:23 AM, content drafts 
 - Reddit: unreachable from the box; parked (tick 14).
 - Mastodon: deprioritized until Bluesky proves out (tick 79). Don't ask for it.
 
+## Profile surfaces (experiment #19)
+1. **Before posting on a Neither day (or any day the bio is still the old "AI products" pitch): update X bio + link.** Draft: `content/drafts/profile-surfaces-refresh.md`. Paste-ready bio: `An AI reviews the AI. Lumin covers new AI releases on YouTube, then builds with them. Sourced numbers, honest caveats.` Link: `https://orbbuilds.vercel.app` (not github.com/orbbuilds). Hold the pin until an episode-drop post with a live YouTube URL exists.
+2. **GitHub when the orbbuilds login is available:** repo description + topics + README Watch block from the same draft. Low risk; push to main redeploys the site (~1 min).
+3. **This is a profile edit, not a post** — it does not count against the X original / reply caps (tick 84). Re-read the live X bio before editing; skip if already updated.
+4. Verified still needed as of Oct 15 ~9:29 AM MT (tick 115): X bio still "AI products…", link still github.com/orbbuilds, no pin; GitHub repo topics empty, description still "AI products".
+
 ## Always
 - Never include the operator's name or employer anywhere.
 - Never fabricate metrics; if a read fails, log "not read" rather than a number.
