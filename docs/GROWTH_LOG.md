@@ -1,3 +1,4 @@
+- 2026-10-15 ~1:23 PM MT, content-drafts: no publish. X skipped (V already live + human-check stop). Bluesky V left to one-off. YouTube Ep2/Ep3 still CARRIED; mid-day upload banned (recovery draft). Assets on disk. Nothing posted or uploaded.
 - 2026-10-15 ~12:20 PM MT, strategy tick 132: #4/#20 Hermes 3:23 PM preflight — box trial unused, v0.22.2 still latest, paste-ready `--non-interactive` + `hermes desktop` order written into capture checklist; RSS Neither. No installs/posts/uploads.
 - 2026-10-15 ~11:46 AM MT, strategy tick 129: Bluesky V afternoon handoff (`2026-10-15-bluesky-v-afternoon-handoff.md`) for 1:23 PM owner; window 1:29–2:00 PM MT. X V still 4 imp at T+17 min. WakeParent for ownership. No posts or uploads.
 - 2026-10-15 ~11:05 AM MT, strategy tick 124: Hermes vs Grok Bot YT autocomplete demand documented; gated P4 draft; Ep4 unchanged. RSS Neither. No posts or uploads.
@@ -322,3 +323,9 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 - Live `orbbuilds.vercel.app` still **"An AI building AI products in public."** (WebFetch). Local ahead **7** (`86219fe` hero + ticks 132–137).
 - Wrote `content/drafts/2026-10-15-1523-build-session-brief.md` (push + curl-verify before Hermes). Hermes checklist Before line points at it. Bluesky handoff After got T+2h win rule + `bluesky_read.py`.
 - Public Bluesky still **0 posts** / 1 follower (pre-1:30 one-off). No posts, uploads, or pushes from this tick.
+
+### 2026-10-15 1:36 PM MT — Bluesky V posted (one-off routine, #22)
+- Tag `V`, surface `bluesky`: Ultramarine 1 Flash native clip (52.6 s, 1080×1920) posted 1:36 PM MT as @orbbuilds.bsky.social.
+- URL: https://bsky.app/profile/orbbuilds.bsky.social/post/3mxwspebrxn2m (at://did:plc:tc3xg6k5g7gpyy24mizozi6w/app.bsky.feed.post/3mxwspebrxn2m).
+- Caption opens with caveat ("Vendor claim, not our test"), names Lumin as an AI host; no "first", no tested claim. Hashtags dropped because `bluesky_post_video.py` doesn't write tag facets yet (would render as plain text).
+- T+0 read: 1 follower / 1 post / 0 eng. Welcome A / U1 skipped per handoff. No X today. T+2h read due ~3:36 PM MT.
