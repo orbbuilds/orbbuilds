@@ -18,6 +18,9 @@ Tick 95 recommended (decision brief item 0) a **morning Ep3-only retry** before 
 
 ## Tick 102–103 (Oct 15 ~7:15–7:25 AM MT): Neither branch ships Ep3 as native video (experiment #22)
 Only applies if step 4 of the tick-96 block holds (no Ep3 videoId in RSS at growth time). This replaces the optional U-bank original as the session's **one** X original (tick-71 spacing; still ≤1 reply total).
+
+**How to attach (tick 106):** follow `content/drafts/native-video-posting-runbook.md`. X = signed-in browser (Composio `twitter` toolkit still has no active connection as of ~7:46 AM MT Oct 15 — do not call `TWITTER_*` mid-session). Bluesky = ATProto video service (`uploadVideo` → poll job → `app.bsky.embed.video`) using `/home/box/secrets/bluesky.txt`. If attach fails → U3b fallback per tick 105.
+
 1. Attach **`/workspace/orbbuilds/content/drafts/2026-10-14-ultramarine-1-flash-xclip.mp4`** (tick 104: 52.6 s, 1080x1920, opens on the cold-open hook "Five people. About three hundred thousand dollars… thirteen cents a task. That's their benchmark, not mine", then all three caveat lines incl. "I haven't tested it yet", then the like/subscribe card; burned-in captions so it works on muted autoplay) to one X post. The YouTube Short (`…-short.mp4`, 47 s) opens on the dry "On October fourteenth…" launch line and drops the $0.13 hook, so keep it for YouTube only. Use the same xclip for Bluesky. **Paste-ready caption** (U-shape, sourced from Ep3 growth pack; ~214 chars, no YouTube URL, no "I tested", no "first"):
    > Ultramarine 1 Flash on API: Paper Instruments claims $0.13/task on their own PI Knowledge Work harness (vs $8.19 Fable 5). Weights still "coming soon." Full YouTube review soon — receipts only for now.
    Optional X self-reply: `orbbuilds.vercel.app` (no invented videoId). Do not invent other numbers.

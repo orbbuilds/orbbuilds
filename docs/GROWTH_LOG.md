@@ -214,3 +214,6 @@ Tick 102 (Oct 15 ~7:15 AM MT): opened #22 native-video lane. Ep3 Short (47 s) ca
 Tick 103 (Oct 15 ~7:25 AM MT): #22 unlock. Bluesky `@orbbuilds.bsky.social` emailConfirmed True (ATProto confirmEmail after fresh request; Oct 14 welcome token was expired). Paste-ready native-video caption locked in morning playbook ($0.13/task + weights caveat). 1-unit Data API probe OK ~7:22 AM (Ep0 6 / Ep1 9); shared quota alive ~5.9 h after reset; no morning retry yet; Fable 5.5 still unannounced; Ultramarine X→YT still 0. Nothing posted or uploaded.
 
 Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only). X rumor ~171/hr at 7 AM MT (Theo ~146K impressions) — not a launch. RSS Ep0 6 / Ep1 9; Ultramarine X→YT still 0. Neither-branch: native-video (#22) outranks U3b for the 11:23 AM original. Nothing posted or uploaded.
+
+## 2026-10-15 ~7:45 AM MT — audience strategy tick 106
+- #22: drafted `content/drafts/native-video-posting-runbook.md` (X = signed-in browser; Composio twitter disconnected; Bluesky ATProto uploadVideo). Morning playbook points at it. Clip still 52.6 s / 13 MB. Nothing posted or uploaded.
