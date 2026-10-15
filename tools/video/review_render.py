@@ -29,11 +29,27 @@ BADGES = {  # kind -> (label, colour)
 }
 
 # ---------- static art ----------
-def make_bg():
+BG_PALETTES = [  # (base, glow) RGB; index 0 is the legacy Episode 0 look
+    ((3, 8, 32), (8, 26, 80)), ((2, 14, 28), (6, 48, 72)), ((10, 6, 34), (34, 16, 84)),
+    ((4, 10, 24), (12, 34, 64)), ((3, 10, 36), (10, 38, 96)),
+]
+def bg_seed(meta=None):
+    """Per-episode background seed: meta.bg_seed > env BG_SEED > None (legacy bg). Spam-policy hygiene (#20)."""
+    v = (meta or {}).get("bg_seed", os.environ.get("BG_SEED"))
+    try: return int(v) if v not in (None, "") else None
+    except ValueError: return None
+
+def make_bg(seed=None):
+    """seed None/1 -> legacy blueprint bg byte-for-byte; other seeds vary palette, glow centre and grid pitch (brand stays dark-blue glass)."""
+    cx, cy, base, glow, pitch = 700, 480, BG_PALETTES[0][0], BG_PALETTES[0][1], 96
+    if seed not in (None, 1):
+        rng = np.random.default_rng(int(seed))
+        base, glow = BG_PALETTES[int(rng.integers(1, len(BG_PALETTES)))]
+        cx, cy = int(rng.integers(560, 841)), int(rng.integers(400, 561)); pitch = int(rng.choice([80, 88, 104, 112]))
     yy, xx = np.mgrid[0:H, 0:W]
-    r = np.sqrt(((xx - 700) / 1100.) ** 2 + ((yy - 480) / 800.) ** 2)
-    bg = np.array([3, 8, 32], np.float32) * (1.25 - r[..., None]).clip(0.2, 1.25) + np.array([8, 26, 80], np.float32) * np.exp(-r[..., None] ** 2 * 3)
-    g = ((xx % 96 < 1) | (yy % 96 < 1)).astype(np.float32)[..., None] * 6        # faint blueprint grid
+    r = np.sqrt(((xx - cx) / 1100.) ** 2 + ((yy - cy) / 800.) ** 2)
+    bg = np.array(base, np.float32) * (1.25 - r[..., None]).clip(0.2, 1.25) + np.array(glow, np.float32) * np.exp(-r[..., None] ** 2 * 3)
+    g = ((xx % pitch < 1) | (yy % pitch < 1)).astype(np.float32)[..., None] * 6        # faint blueprint grid
     return (bg + g * np.exp(-r[..., None] ** 2 * 1.5)).astype(np.float32)
 
 def make_lumin():
@@ -100,7 +116,7 @@ def resolve_screen(path):
 class Episode:
     def __init__(self, script, timing, voice_wav):
         self.S, self.T = script, timing; self.meta = script.get("meta", {}); self.dur = timing["duration"]
-        self.bg = make_bg(); self.lum = make_lumin()
+        self.bg = make_bg(bg_seed(self.meta)); self.lum = make_lumin()
         self.lum_base = character.erase_smile(self.lum)
         glines, self.ctas = [], []
         for si, sec in enumerate(timing["sections"]):

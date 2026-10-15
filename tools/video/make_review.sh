@@ -14,6 +14,6 @@ WORK="/workspace/video-build/${NAME}"; mkdir -p "$WORK"
 DUR=$("$PY" -c "import json;print(json.load(open('$WORK/timing.json'))['duration'])")
 SEED=$(( $(printf %s "$NAME" | cksum | cut -d" " -f1) % 2147483646 + 2 ))   # per-episode music variation (never 1 = legacy bed)
 "$PY" music_bed.py "$WORK/music.wav" "$DUR" "${MUSIC_SEED:-$SEED}"
-"$PY" review_render.py "$SCRIPT" "$WORK" "$OUT" --music "$WORK/music.wav"
+BG_SEED="${BG_SEED:-$SEED}" "$PY" review_render.py "$SCRIPT" "$WORK" "$OUT" --music "$WORK/music.wav"   # per-episode background variation (#20); BG_SEED=1 = legacy bg
 echo "draft (NOT published): $OUT"
 bash post_render.sh "$SCRIPT" "$OUT" || true
