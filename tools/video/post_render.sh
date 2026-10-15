@@ -5,6 +5,7 @@
 # - Short: picks fact+verdict windows from timing.json and splices <name>-short.mp4 (vertical, <=58 s). Skip with NO_SHORT=1.
 #   Appends the like/subscribe line (button-click animation) as an end card when it costs <=1 fact line; NO_SHORT_CTA=1 turns that off.
 # - Short publish meta: writes <name>-short-meta.json (title/description/tags/S1c) for the publish routine. Skip with NO_SHORT_META=1.
+# - Chapters: checks meta.publish_description chapters against timing.json (>=10 s each). Warn only.
 # Failures here only warn; they never block the main episode.
 set -u
 SCRIPT="$(realpath "$1")"; EP="$(realpath "$2")"; NAME="$(basename "$SCRIPT" .json)"
@@ -58,4 +59,9 @@ if [ -z "${NO_SHORT_META:-}" ]; then
     META_ARGS+=(--short-file "$SHORT_OUT")
   fi
   "${META_ARGS[@]}" && echo "short-meta: $META_OUT" || echo "WARN: short-meta failed" >&2
+fi
+# Chapters check (AUDIENCE_STRATEGY #8, tick 47): YouTube hides ALL chapters if any is <10 s.
+if [ -f "$WORK/timing.json" ]; then
+  python3 chapters.py check "$WORK/timing.json" "$SCRIPT" >&2 \
+    || echo "WARN: fix Chapters in meta.publish_description (suggested: python3 tools/video/chapters.py gen $WORK/timing.json '<Lab>')" >&2
 fi
