@@ -335,3 +335,9 @@ The Composio connection info shows the channel's `snippet.description` is **empt
 - **2026-10-14 ~1:28 PM MT (tick 2).** Pushed backlog #2 one step: confirmed Composio YouTube has **Data API stats only** (no impressions/CTR/trafficSource). Wrote the views-at-24h/72h measurement protocol and assigned pattern IDs for Ep1–Ep6 (Ep2 = P2 already titled). Mid-day live stats pull hit shared-project `quotaExceeded` — use post-reset window for checks. No posts or uploads from this tick.
   - Next recommended tick: after Ep2 is live, log its 24h views under P2; draft Ep3's P1 title options once the news scan locks a product (do not fabricate a topic). Or start backlog #3 (speed-to-publish checklist) if no new episode is ready to title.
 - **2026-10-14 ~1:25 PM MT (tick 1).** Created this doc. Ran backlog #1: competitive title/thumbnail study. Patterns P1–P6 written. Next was #2 (done in tick 2).
+
+
+## Decisions log (parent)
+- 2026-10-14: Bluesky APPROVED and CREATED: @orbbuilds.bsky.social (bot label on, creds /home/box/secrets/bluesky.txt, email unverified). Do not re-ask.
+- 2026-10-14: Channel About/keywords/reviews playlist APPROVED by parent; publish run applies after main upload succeeds (read branding first).
+- Pending with user: own Google OAuth app, Ben's Bites account, X liveness check, cross-promo confirmation.
