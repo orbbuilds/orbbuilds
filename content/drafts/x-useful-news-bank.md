@@ -27,3 +27,9 @@ Drafts only. Nothing here is posted. The growth routine decides if and when.
 > bytefwd.com/fable-5-5-leak-litellm-correction/
 
 ~264 chars. Highest risk of going stale: if Anthropic ships or confirms Fable 5.5, delete this draft. Never imply it's released.
+
+## U4: Step 5 Preview weights are out, but they're node-sized (verified tick 111 against the HF model card, Oct 15 ~8:52 AM MT)
+> StepFun's Step 5 Preview open weights are live on Hugging Face. Before you pull them: 600B total / 27B active, and the smallest serving setup on the card is FP8 on one 4-GPU B300 node or one 8-GPU H200 node. Not a laptop model.
+> huggingface.co/stepfun-ai/Step-5-Preview
+
+~250 chars counting the link as 23. Source: model card params table + serving table (FP8 vLLM/SGLang rows). Same hardware-reality shape as U1 (Ling). Don't post U1 and U4 the same day; pick one. No "first" claims (YouTube already has 2–7-day-old Step 5 tests from the API launch).

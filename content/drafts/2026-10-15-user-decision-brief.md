@@ -41,6 +41,9 @@ Nothing here has been sent, signed up for, or spent.
    real hands-on footage is what makes each episode ours. The renderer can now show build screenshots.
    Default if no answer: free paths only (Hermes no-key desktop trial for Ep4, open-source paper-xlsx
    for Ultramarine), and stop promising paid builds in `build_teaser`.
+   Concrete example (tick 111): Grok Voice 3.0 has real search demand (`grok voice 3.0 demo`) and no
+   hands-on demo on YouTube yet; a talking-orb live test would cost about $0.80 for 10 min at xAI's
+   official $0.08/min. That's the strongest openly-AI episode we've found, and it's only possible with a budget.
 3. **Turn on free Vercel Web Analytics for orbbuilds.vercel.app.** [tick 81, #18]
    Why: no site analytics, so footer/bio/site experiments can't be measured. Hobby tier is free
    (50K events/month, referrer-only, no UTMs). Needs a dashboard toggle on the Orb Builds Vercel
