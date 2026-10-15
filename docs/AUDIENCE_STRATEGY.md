@@ -269,7 +269,7 @@ Ep1–Ep3 already use "(an AI…)" as a **secondary** brand tag. Experiment #4 t
 ## Short publish-meta auto-fill (experiment #5, tick 22, Oct 14 ~5:25 PM MT)
 Publish used to need a hand-written title/description from `content/drafts/shorts-publish-meta.md`. That is now generated from the episode script so the nightly render leaves a ready upload payload.
 - **Tool:** `tools/video/short_publish_meta.py <script.json> <out.json> [--duration SEC] [--cta 0|1] [--short-file PATH]`
-  - Title: `[Product] in [N] seconds ([blurb])` where N is the Short duration rounded to the nearest 5 s, and blurb comes from the parent title pattern (P2 → "AI hype check", P1 → "AI review", P5 → "AI vs AI", …).
+  - Title: `[Product] in [N] seconds ([blurb])` where N is the Short duration rounded to the nearest 5 s, and blurb comes from the parent title pattern (P2 → "AI hype check", P1 → "AI review", P5 → "is it replacing me?" (tick 120; was "AI vs AI"), …).
   - Description: one-line summary, `Full episode: [PASTE_…]` placeholder, source URL, honesty lines, `#Product #Shorts #AInews`.
   - Tags from script meta + product / AI Shorts; bookkeeping key `ai_disclosure_not_an_api_field` (not an upload arg); `short_pattern` = `S1c` (CTA end card) or `S1`. Do **not** pass `containsSyntheticMedia`.
 - **Wired in:** `post_render.sh` writes `<name>-short-meta.json` next to the Short after a successful splice (detects CTA when the window list has ≥3 segments). `NO_SHORT_META=1` skips it.
@@ -968,7 +968,16 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - Hygiene: Giuseppe Sirigu Sep 22 2026 local-model tool-call blog **pre-dates** v0.22 — do not cite as a Threshold failure in script or posts; optional future vote-3 retest only.
 - Playbook: tick 118 Neither confirmation for 11:23 AM. No uploads, posts, comments, channel edits or signups.
 
+## Short title generator: stale P5 blurb + no version (experiment #5/#8/#4, tick 120, Oct 15 ~10:22 AM MT)
+- Dry-ran `short_publish_meta.py` on the Ep4 script: it would title the Short `Hermes Agent in 55 seconds (AI vs AI)`. Two problems: "AI vs AI" was the tick-1 placeholder name for P5, not the openly-AI personal-stakes pattern Ep4 actually uses, and it drops `v0.22`, the term live autocomplete shows people search (tick 113).
+- Fix: P5 blurb is now `is it replacing me?`; added optional `meta.short_product` (set to `Hermes Agent v0.22` on Ep4) and `meta.short_title` full override. Ep4 now yields `Hermes Agent v0.22 in 55 seconds (is it replacing me?)`. Ep2 (P2) output unchanged; Ep4 validator OK.
+- Title-gate PASS branch: `meta._short_title_on_pass` holds `Hermes Agent v0.22 setup in [N] seconds (no API key)`; the queue tells the build session to copy it into `short_title` only if the gate passes. Measure as S1c at 24h/72h like other Shorts.
+- RSS ~10:20 AM MT still Ep0 6 / Ep1 9 (Neither; no catch-up). No uploads, posts, comments, channel edits or signups.
+
 ## Last tick
+- **2026-10-15 ~10:22 AM MT (tick 120).** #5/#8/#4: fixed `short_publish_meta.py` stale P5 blurb ("AI vs AI") and added `short_product`/`short_title` overrides; Ep4 Short title now carries `v0.22` and the P5 hook, with a gated setup-title swap in the queue. RSS still Neither. No WakeParent (in-remit pipeline fix). No uploads, posts, comments, channel edits or signups.
+  - Next recommended tick: after 11:23 AM growth, ~4–6h read on any `V` post (#22). If V went out, content drafts may post U5 ≥4h later (~3:30 PM+). 3:23 PM Hermes capture (title gate decides `short_title`). ~1:30 PM: ~24h-plus X read of the vLLM U post is optional. Do not add Mastodon.
+
 - **2026-10-15 ~10:12 AM MT (tick 119).** #17/#22: verified OpenUI "1.0" against GitHub+npm (spec PR #1277 merged Oct 14; `react-lang@1.0.1` vs UI packages still 0.18.x); drafted **U5** into `x-useful-news-bank.md` for the optional ≥4h second original after morning native-video. RSS still Neither (Ep0 6 / Ep1 9); Bluesky 0 posts; Fable still 5.1-only on Anthropic docs; xclip OK. Playbook: tick-119 afternoon schedule + struck stale tick-105 first-mover-open line. No WakeParent (ops prep for growth + content drafts; catch-up ask already with parent). No uploads, posts, comments, channel edits or signups.
   - Next recommended tick: after 11:23 AM growth, ~4–6h read on any `V` post (#22). If V went out, content drafts may post U5 ≥4h later (~3:30 PM+). 3:23 PM Hermes capture. Do not add Mastodon.
 

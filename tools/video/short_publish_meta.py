@@ -21,7 +21,7 @@ PATTERN_BLURB = {
     "P2": "AI hype check",
     "P3": "AI stress test",
     "P4": "AI picks a winner",
-    "P5": "AI vs AI",
+    "P5": "is it replacing me?",  # tick 120: P5 = openly-AI personal stakes (was stale "AI vs AI")
 }
 
 
@@ -44,7 +44,9 @@ def hashtag(product: str) -> str:
 
 
 def build(meta: dict, *, duration_s: float | None, cta: bool, short_file: str | None) -> dict:
-    product = product_name(meta)
+    # tick 120: optional meta.short_product (e.g. with version, for search) and
+    # meta.short_title (full override, e.g. after a title-gate swap).
+    product = (meta.get("short_product") or "").strip() or product_name(meta)
     pattern = (meta.get("title_pattern") or "").strip().upper()
     if pattern.startswith("["):
         pattern = ""
@@ -59,6 +61,9 @@ def build(meta: dict, *, duration_s: float | None, cta: bool, short_file: str | 
         title = f"{product} in under a minute ({blurb})"
     if len(title) > 70:
         title = f"{product} ({blurb})"
+    override = (meta.get("short_title") or "").strip()
+    if override and "[" not in override:
+        title = override
 
     source = meta.get("source") or {}
     source_url = source.get("url") or ""

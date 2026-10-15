@@ -26,7 +26,7 @@
 - Music (#20 / tick 85): confirm `video-build/<slug>/music.wav` came from a **non-1** seed (seed from script name in `make_review.sh`). Log seed in episode notes.
 - Facts from Nous GitHub v0.22.0 release notes only. Allowed: "a third smaller" (Nous claim). Forbidden: AICoder 34%/LOC. Not affiliated.
 
-- Short file: (fill after post_render) `…-hermes-agent-v0-22-short.mp4` + `…-short-meta.json` (CTA end card via `post_render.sh`). Paste full-episode URL. Never burn Short before older CARRIED mains (Ep3, then Ep2).
+- Short file: (fill after post_render) `…-hermes-agent-v0-22-short.mp4` + `…-short-meta.json` (CTA end card via `post_render.sh`). Paste full-episode URL. Never burn Short before older CARRIED mains (Ep3, then Ep2). Short title (tick 120): generator now gives `Hermes Agent v0.22 in [N] seconds (is it replacing me?)` via `meta.short_product`. If the build-session title gate PASSES (setup title), copy `meta._short_title_on_pass` into `meta.short_title` with the real N before `post_render.sh`; on FAIL leave it unset.
 
 - Channel SEO (#11, APPROVED): after main succeeds, apply once per night if not already done. Add this videoId to "AI Release Reviews" playlist. ~50 units — never before main.
 

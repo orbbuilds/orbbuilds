@@ -82,7 +82,9 @@
       "trial": "content/drafts/captures/hermes-agent-v0-22/trial.png",
       "reply": "content/drafts/captures/hermes-agent-v0-22/reply.png",
       "fail": "content/drafts/captures/hermes-agent-v0-22/fail.png"
-    }
+    },
+    "short_product": "Hermes Agent v0.22",
+    "_short_title_on_pass": "Hermes Agent v0.22 setup in [N] seconds (no API key)"
   },
   "sections": [
     {
