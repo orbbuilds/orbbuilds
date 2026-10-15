@@ -5,7 +5,7 @@ pending operator decision, ranked by how much it unblocks, each with a safe defa
 parent can send one short batched message. Sources are the strategy-doc sections named in brackets.
 Nothing here has been sent, signed up for, or spent.
 
-## Status line to lead with (facts, Oct 15 ~5:05 AM MT, refreshed tick 89)
+## Status line to lead with (facts, Oct 15 ~5:31 AM MT, refreshed tick 92)
 - The 1:28 AM publish failed (~1:36 AM MT), so Ep2 (Gemini 4 Argon) and Ep3 (Ultramarine 1 Flash)
   are carried to the Oct 16 1:28 AM window. Public RSS ~5:01 AM still shows only Ep0 (6 views) and Ep1 (9 views).
 - Ultramarine 1 Flash still has **no** AI-review video on YouTube (tick 89: web=blogs only; X→YT=0; CEO ~1.23M impressions), so Ep3 can still be the first YouTube review if Oct 16 lands. Recovery: `content/drafts/2026-10-16-publish-recovery.md`. Ep4 Hermes queue is now PENDING_RENDER for a three-way rank if it renders tonight.
@@ -39,8 +39,9 @@ Nothing here has been sent, signed up for, or spent.
    Default if no answer: skip.
 
 ## FYI only (no decision needed)
-- Shipped overnight: per-episode music variation (spam-policy risk) and a `screen` field so reviews
-  can show real build captures.
+- Shipped overnight (#20): per-episode **music** + **background** variation (spam-policy hygiene), a
+  `screen` field so reviews can show real build captures, and `tools/video/capture.sh` so the 3:23 PM
+  Hermes session can record stills. Ordered checklist: `content/drafts/ep4-hermes-build-capture-checklist.md`.
 - Cross-promo outreach (Nim review-partner email first) stays gated until 3 reviews are live.
 - Mastodon signup was researched and dropped for now; Bluesky goes first.
 - X profile/GitHub refresh drafted (`content/drafts/profile-surfaces-refresh.md`) for the growth routine.

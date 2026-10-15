@@ -37,4 +37,4 @@
 
 - **Call order in the post-reset window (#13 / #7):** same as slot rules. On a three-way night: (1) Ep3 main → (2) Ep3 thumb → (3) stats batch → (4) Ep3 vote → (5) SEO/playlist if units → (6) Ep4 main only if quota remains after Ep3 (+ Ep2 preferred before Shorts per recovery draft: Ep3 → Ep4 → Ep2) → Shorts last. **Prefer Ep2 main before Ep4 Short.** If only one upload is reliable, Ep3 wins; Ep4 and Ep2 carry.
 
-- Build-session runbook (ticks 61–62, not this routine): Linux = from-source Electron via `hermes desktop`; trial once per OS user — record first launch; no `setup --portal` / `auth upgrade` / `/login` / connectors without parent OK. Free-path-only until operator picks a build budget (#20).
+- Build-session runbook (ticks 61–62 + **tick 92 checklist**, not this routine): follow `content/drafts/ep4-hermes-build-capture-checklist.md` (record first with `capture.sh`, stills, gate PASS/FAIL note). Linux = from-source Electron via `hermes desktop`; trial once per OS user; no `setup --portal` / `auth upgrade` / `/login` / connectors without parent OK. Free-path-only until operator picks a build budget (#20).
