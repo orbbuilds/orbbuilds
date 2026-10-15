@@ -107,6 +107,7 @@ Source of truth for pattern definitions: `docs/AUDIENCE_STRATEGY.md`.
 | Ep6 | P4 if real vs else P1 | TBD | | | |
 
 **When to read each row (tick 67, Oct 15 ~1:15 AM MT).** Daytime YouTube reads fail on shared quota, so the ~24h and ~72h reads ride the nightly post-reset window, after that night's uploads succeed (one `YOUTUBE_GET_VIDEO_DETAILS_BATCH` call covers every live episode, ~1 unit):
+- **Tick 77 add-on (~72h read only):** one `YOUTUBE_QUERY_ANALYTICS` call per live video, `ids=channel==MINE`: `dimensions=video` with views, averageViewDuration, averageViewPercentage, subscribersGained; and `dimensions=insightTrafficSourceType` with `filters=video==<id>` (log YT_SEARCH share). Analytics lags ~2–3 days, so it is useless at 24h. Impressions/CTR are "not supported" by the API.
 - Ep2 + Ep3 (uploaded ~1:30 AM Oct 15): ~24h read in the **Oct 16** window, ~72h read in the **Oct 18** window. Ep1 rides the same batch so its row keeps a dated running total (6 views on Oct 14).
 - Each later episode: +1 night for ~24h, +3 nights for ~72h. Log the actual read time next to the number; a read that slips to the next night goes in as ~48h, not ~24h.
 - Also log GA-to-publish hours per row for #3 (Ep3: GA Oct 14, upload ~Oct 15 1:30 AM MT; Ep2: GA Oct 13). Use the upload time the publish run records, not the planned 1:28.
@@ -178,3 +179,4 @@ Source of truth for pattern definitions: `docs/AUDIENCE_STRATEGY.md`.
 
 - 2026-10-15 ~2:22 AM MT (strategy tick 74): 1-unit YouTube stats read succeeded after the failed 1:28 AM publish (Ep0 6 views, Ep1 9 views, 0 likes/comments). Shared quota still alive; recommended a same-night retry (Ep3 first). Nothing posted or uploaded.
 - 2026-10-15 ~2:45 AM MT (strategy tick 76): Bluesky @orbbuilds.bsky.social public read: 0 posts, 1 follower, 0 follows. Neither-day allowance added to morning playbook (Welcome A + optional U1-bsky).
+- 2026-10-15 ~2:48 AM MT (strategy tick 77): YouTube Analytics via Composio works. Ep0 `aCvkp11w9_8` Oct 10–14: 8 views, 27 s avg view duration, 126.42% avg view percentage, 0 subs gained. Channel traffic sources: NO_LINK_OTHER 2, YT_SEARCH 2, YT_CHANNEL 1, RELATED_VIDEO 1. Daily rows only through Oct 12 (5/2/1), so Ep1 not in yet. Impressions/CTR query returned 400 not supported. Read-only; nothing posted or uploaded.
