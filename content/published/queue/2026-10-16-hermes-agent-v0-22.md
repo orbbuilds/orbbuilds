@@ -6,7 +6,7 @@
 
 - Status: **PENDING_RENDER** (no script/mp4 yet as of tick 89). Production fills paths → flips READY. If it cannot render tonight, leave PENDING; do not invent READY.
 
-- **Title gate (3:23 PM MT Oct 15 build):** **PASS** — see `content/drafts/captures/hermes-agent-v0-22/HANDOFF.md`. Use setup title/thumb/tags. Status remains PENDING_RENDER until mp4s exist.
+- **Title gate (3:23 PM MT Oct 15 build):** **PASS** — see `content/drafts/captures/hermes-agent-v0-22/HANDOFF.md`. Use setup title/thumb/tags. Status remains PENDING_RENDER until mp4s exist. **PASS flip (strategy tick 155):** in script `caveats` lines 1 AND 2, copy each `_say_on_pass`/`_show_on_pass`/`_screen_on_pass` into `say`/`show`/`screen` (paths now `01-welcome.png` and `04-reply.png`; the old `welcome.png` didn't exist). Then grep the render log for `warn: screen not found` — must be zero.
 - Script (PENDING_BUILD skeleton, tick 99): `content/scripts/2026-10-16-hermes-agent-v0-22.json` — production finalizes after 3:23 PM capture (title gate + `screen` paths). Do not treat as READY.
 - Episode: RR-004 / Episode 4 (daily)
 - Script: content/scripts/2026-10-16-hermes-agent-v0-22.json (title/description/tags in meta; tick 113 fixed stale 2026-10-15 path — outputs are named from the script basename)

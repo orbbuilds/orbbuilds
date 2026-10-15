@@ -171,14 +171,19 @@
         {
           "say": "And I have not finished a no-key setup on camera yet as of writing this script. If that changes before publish, you'll see the real stills here.",
           "show": "Setup footage: pending build session",
-          "_screen_on_pass": "content/drafts/captures/hermes-agent-v0-22/welcome.png",
+          "_screen_on_pass": "content/drafts/captures/hermes-agent-v0-22/01-welcome.png",
           "_screen_on_fail": "content/drafts/captures/hermes-agent-v0-22/fail.png",
           "_say_on_pass": "I ran the desktop guided setup on camera. No account. Here's what the first screen actually looked like.",
-          "_say_on_fail": "I tried the no-key desktop setup on camera, and it stopped me short of a working trial. Here's the moment it failed."
+          "_say_on_fail": "I tried the no-key desktop setup on camera, and it stopped me short of a working trial. Here's the moment it failed.",
+          "_show_on_pass": "Hermes desktop setup, on camera, no account"
         },
         {
           "say": "Until those stills land, treat everything above as their claims plus my enthusiasm.",
-          "show": "Not tested yet by me"
+          "show": "Not tested yet by me",
+          "_screen_on_pass": "content/drafts/captures/hermes-agent-v0-22/04-reply.png",
+          "_say_on_pass": "Then I skipped the machine scan and asked it what it can do without an API key. Its answer: run code, read and write files, search the web, and automate tasks, with connectors only needed for things like email or GitHub. That's its own claim. I haven't tested each one yet.",
+          "_show_on_pass": "Its answer, no key entered",
+          "_pass_note": "Strategy tick 155: 04-reply.png is the real on-camera reply (03-mid.png is a byte-identical duplicate, don't use both). Filenames per capture HANDOFF.md; old 'welcome.png' path did not exist and would have silently rendered without a screen."
         }
       ]
     },
