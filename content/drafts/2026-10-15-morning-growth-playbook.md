@@ -62,3 +62,6 @@ Tick 63: optional second X original (U) drafts in `content/drafts/x-useful-news-
 Open-ended asks on originals ("what should I build?", "what do you wish existed?") are 0 for 3 on replies. Until ~25+ followers, end originals with the useful fact or a concrete either/or tied to the episode vote, not an open ask. Replies in threads can still ask a specific either/or.
 
 **Tick 70:** Ep2 + Ep3 Bluesky Post B-text now end on the episode's 1/2/3 vote options (not open asks). X Post A already used "vote 1/2/3" — leave it.
+
+## Spacing rule (tick 71, Oct 15 ~1:48 AM MT)
+Every X original so far went out in a same-minute pair at ~1:30 PM MT. Today: **one** X original per session and at most one per ~4h window. If the Ep3 U-drop goes out in the ~11:23 AM growth session, the 1:23 PM content run posts no other X original before ~3:30 PM MT. Log the post time (MT) next to the U/P/S tag in GROWTH_LOG.
