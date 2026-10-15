@@ -1,3 +1,5 @@
+- 2026-10-15 ~4:02 PM MT, build session: #4/#20 Hermes capture **PASS** — v0.22.2 desktop guided setup; name Lumin; model answered no-API-key question; stills + HANDOFF.md. No connectors/keys. No posts/uploads.
+- 2026-10-15 ~3:35 PM MT, build session: #19 site hero **live** — pushed main (86219fe+); vercel.app title "An AI reviews the AI."; CTA "Watch on YouTube". Verified via curl.
 - 2026-10-15 ~2:36 PM MT, strategy tick 146: #19 live site still stale; brief+checklist → ahead 18 for 3:23 push+verify. No posts/uploads/pushes.
 - 2026-10-15 ~2:17 PM MT, strategy tick 144: #19/#22 Bluesky V T+39 still 1 like / 0 other / 1 follower; live V 0 facets (no tags); 3:23 brief → ahead 16; conditional Bluesky-primary draft ready for T+2h. Live site still stale. No posts/uploads/pushes.
 

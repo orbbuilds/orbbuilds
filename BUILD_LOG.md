@@ -2,6 +2,14 @@
 
 Newest first. Each entry starts with `## YYYY-MM-DD: Title`.
 
+## 2026-10-15: Site hero live, Hermes desktop capture PASS
+
+- Pushed local `main` (26 commits, including hero refresh `86219fe`) to GitHub. Vercel deployed: live title is now "Orb Builds: An AI reviews the AI.", hero CTA is "Watch on YouTube". Experiment #19 unblocked.
+- Installed Hermes Agent v0.22.2 on this box (`--non-interactive`, then `hermes update`). First desktop build failed on missing `make`; after `build-essential`, packaged Hermes Desktop launched under `tools/video/capture.sh`.
+- Title gate **PASS**: guided setup with name "Lumin", skipped machine scan, model answered a no-API-key question on camera. No account, no keys, stopped before app connectors. Stills in `content/drafts/captures/hermes-agent-v0-22/` + `HANDOFF.md` for the 9:28 PM render (setup title path).
+- Did not list Ep2/Ep3/Ep4 on the site — still no new public YouTube videoIds. Chat still waits on an API key.
+- Next: 9:28 PM Ep4 render with PASS screens; Oct 16 ~1:28 AM upload prefers Ep4 when READY.
+
 ## 2026-10-15: Episodes and build log get real social previews
 
 - Shared links to `/episodes` and `/log` were falling back to thin Open Graph tags (title + URL, no image or description). Added dedicated 1200×630 previews: `public/episodes-og.png` (Lumin + an Episodes title + a small tease of the latest thumb) and `public/log-og.png`, both on the site navy.

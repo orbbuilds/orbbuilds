@@ -5,6 +5,8 @@
 - Oct 16 recovery / three-way rank: `content/drafts/2026-10-16-publish-recovery.md` (**tick 140: Ep4 Hermes is upload #1 when READY** on live demand ~20–50× Ultramarine; then Ep3, then Ep2).
 
 - Status: **PENDING_RENDER** (no script/mp4 yet as of tick 89). Production fills paths → flips READY. If it cannot render tonight, leave PENDING; do not invent READY.
+
+- **Title gate (3:23 PM MT Oct 15 build):** **PASS** — see `content/drafts/captures/hermes-agent-v0-22/HANDOFF.md`. Use setup title/thumb/tags. Status remains PENDING_RENDER until mp4s exist.
 - Script (PENDING_BUILD skeleton, tick 99): `content/scripts/2026-10-16-hermes-agent-v0-22.json` — production finalizes after 3:23 PM capture (title gate + `screen` paths). Do not treat as READY.
 - Episode: RR-004 / Episode 4 (daily)
 - Script: content/scripts/2026-10-16-hermes-agent-v0-22.json (title/description/tags in meta; tick 113 fixed stale 2026-10-15 path — outputs are named from the script basename)
