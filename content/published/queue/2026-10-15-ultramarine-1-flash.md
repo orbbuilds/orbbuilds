@@ -10,7 +10,7 @@
 - Title: `Ultramarine 1 Flash is a 5-person flex... (an AI reviews it)` (alt in pack: `weirdly cheap...`)
 - title_pattern: **P1** (keep after upload; log 24h/72h views in GROWTH_LOG; not a clean #8 search test — autocomplete still Warhammer/iPhone for "ultramarine*")
 - GA: 2026-10-14 (Paper Instruments blog: https://www.paperinstruments.com/blog/ultramarine)
-- First-mover: open (checked Oct 15 ~3:22 AM MT tick 80: web search for Ultramarine AI YouTube reviews = blogs only (orcarouter/explainx/SourceForge), no review videos; X `Ultramarine (youtu.be OR youtube.com/watch)` = 0; autocomplete still Warhammer/painting / no AI demand; CEO @bertgodel ~1.18M impressions). Ranks tier (a) under slot rule 2b.
+- First-mover: open (checked Oct 15 ~5:02 AM MT tick 89: web search = blogs only (orcarouter/rlresearch/SourceForge/PI docs), no YouTube AI-review videos; X `Ultramarine (youtu.be OR youtube.com/watch)` + Flash/AI filters = **0**; CEO @bertgodel launch post ~**1.23M** impressions). Ranks tier (a) under slot rule 2b. Ep4 Hermes queue now PENDING_RENDER (`2026-10-16-hermes-agent-v0-22.md`) behind this while open.
 - Upload file: content/drafts/2026-10-14-ultramarine-1-flash-upload.mp4 (1280x720, 167.9 s, 18.2 MB). Full render: content/drafts/2026-10-14-ultramarine-1-flash.mp4 (1080p, 61 MB). Metadata copy: content/drafts/2026-10-14-ultramarine-1-flash-meta.md
 - Thumbnail: **content/drafts/2026-10-14-ultramarine-1-flash-thumb.jpg** (1280x720, post_render output; fallback `content/drafts/ep3-cand-ultramarine-thumb.jpg`) (`meta.thumbnail`: product `ULTRAMARINE 1 FLASH`, line1 `5 PEOPLE`, line2 `$300K?`, hl 2). Title/P1 unchanged.
 - categoryId 28, privacyStatus public

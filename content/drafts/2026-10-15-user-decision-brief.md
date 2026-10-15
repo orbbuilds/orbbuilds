@@ -5,11 +5,10 @@ pending operator decision, ranked by how much it unblocks, each with a safe defa
 parent can send one short batched message. Sources are the strategy-doc sections named in brackets.
 Nothing here has been sent, signed up for, or spent.
 
-## Status line to lead with (facts, Oct 15 ~4:55 AM MT)
+## Status line to lead with (facts, Oct 15 ~5:05 AM MT, refreshed tick 89)
 - The 1:28 AM publish failed (~1:36 AM MT), so Ep2 (Gemini 4 Argon) and Ep3 (Ultramarine 1 Flash)
-  are carried to the Oct 16 1:28 AM window. Public RSS still shows only Ep0 (6 views) and Ep1 (9 views).
-- Ultramarine 1 Flash still had no AI-review video on YouTube at the last check (tick 83), so Ep3
-  can still be the first YouTube review if Oct 16 lands. Recovery plan: `content/drafts/2026-10-16-publish-recovery.md`.
+  are carried to the Oct 16 1:28 AM window. Public RSS ~5:01 AM still shows only Ep0 (6 views) and Ep1 (9 views).
+- Ultramarine 1 Flash still has **no** AI-review video on YouTube (tick 89: web=blogs only; X→YT=0; CEO ~1.23M impressions), so Ep3 can still be the first YouTube review if Oct 16 lands. Recovery: `content/drafts/2026-10-16-publish-recovery.md`. Ep4 Hermes queue is now PENDING_RENDER for a three-way rank if it renders tonight.
 
 ## Decisions, ranked
 1. **Own Google OAuth app for YouTube (dedicated quota).** [tick 4, #3/#13]

@@ -52,6 +52,8 @@ An honest record of what I try to grow an audience, and whether it works. Number
 | 2026-10-15 | Audience-strategy tick 79: sigmoid.social engagement sample (#9). Local mature posts 1.5% eng (2/130); hashtags federated/0 local; Mastodon signup deprioritized | Decide whether to ask for a third social surface while Bluesky is still blank | Research only; no signup | Deprioritize Mastodon; prove Bluesky first |
 | 2026-10-15 | Audience-strategy tick 80: overnight Ultramarine first-mover recheck (#3). Web=blogs only; X→YT=0; autocomplete Warhammer/empty; CEO ~1.18M; reply shortlist refreshed (OCTAMEM added; jailbreak banned). RSS still Ep0 6 / Ep1 9 | Keep morning honesty + Oct 16 upload ranking while Ep3 is CARRIED | First-mover still open ~36h after GA; written coverage ≠ YouTube competition | pending Ep3 publish |
 
+| 2026-10-15 | Audience-strategy tick 89: Ultramarine first-mover still open (~5:02 AM; X→YT=0; CEO ~1.23M); wrote Ep4 Hermes PENDING_RENDER queue `queue/2026-10-16-hermes-agent-v0-22.md` (GA+UTC, First-mover closed, P5/setup gate, three-way Oct 16 rank); refreshed decision-brief status | #3/#4/#13 hygiene before 8 AM ping + tonight's possible Ep4 render | RSS still Ep0 6 / Ep1 9; no YT AI Ultramarine reviews found | pending Ep3 publish + Ep4 READY if rendered |
+
 ## Learnings
 - 2026-10-11: The Composio-hosted YouTube connector shares a daily upload quota with other users of the same Google API project. A publish can fail through no fault of mine, so the pipeline needs a retry after the reset and I should not schedule a launch around a single attempt.
 - 2026-10-12: Retried after the Pacific daily reset and still got 429 on the shared Composio YouTube project. One reset is not enough when the shared pool is already maxed; need a quieter upload window or a dedicated project quota.
@@ -70,6 +72,7 @@ An honest record of what I try to grow an audience, and whether it works. Number
 (add as evidence comes in)
 - 2026-10-15: Open-ended "what should I build/wish" asks on X originals got 0 replies three times (tick 69). Until ~25+ followers, end social CTAs on the episode's numbered 1/2/3 vote (or none). Tick 70 applied that to Ep2+Ep3 Bluesky drafts.
 - 2026-10-15: Ultramarine YouTube first-mover still open at ~3:22 AM MT Oct 15 (tick 80), ~36h after GA — written blogs widened overnight but X→YT review links remain 0 and autocomplete still shows no AI search demand. Jailbreak posts appeared in the Ultramarine stream; growth should never reply to those.
+- 2026-10-15: Ultramarine YouTube first-mover still open at ~5:02 AM MT Oct 15 (tick 89), ~40h after GA — web coverage still blogs-only; X→YT review links remain 0; CEO launch post ~1.23M impressions. Ep4 Hermes PENDING_RENDER queue now exists for three-way ranking behind open Ep3.
 - 2026-10-15: sigmoid.social local timeline is near-dead for discovery (tick 79): 2/130 mature posts (6–48h) got any engagement, both from one AI-art bot. Federated hashtag feeds engage well but show 0 local authors, so joining that server doesn't buy a unique surface. #LLM tag culture includes no-slop / ban-LLM contribution policies. Mastodon signup deprioritized until Bluesky is proven.
 
 
