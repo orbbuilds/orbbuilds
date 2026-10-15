@@ -338,6 +338,11 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 - Bluesky V `3mxwspebrxn2m` at T+39 min: still **1** like / 0 RT/quote/reply; profile still **1** follower / 1 post. Halfway to ≥2-eng win; T+2h ~3:36 PM still decides.
 - Public AppView record: **facet_count=0**, caption has no hashtags/links (posted by one-off before tick-143 `build_facets`). Ep4 tagged B-video path already documented in the growth pack.
 - Live site still stale ("building AI products"); local **ahead 16**. Refreshed `2026-10-15-1523-build-session-brief.md` + Hermes checklist Before line. Conditional draft: `content/drafts/bluesky-primary-recommendation.md`.
+
+### 2026-10-15 ~2:35 PM MT — strategy tick 145 (#22 who-engaged)
+- Bluesky V `3mxwspebrxn2m` at T+56 min: **1** like / 0 RT/quote/reply; profile **1** follower / 1 post.
+- The single like is **@chiitan.love** (194,518 followers / 0 follows / 32,397 posts), a mass-liker shape → excluded. Real-audience engagement so far: **0**.
+- `bluesky_read.py --who` now flags mass-engagers; T+2h win rule counts `[counts]` rows only.
 - No posts, uploads, or pushes from this tick.
 
 ### 2026-10-15 ~2:00 PM MT — strategy tick 142 (#22 Bluesky V early read)

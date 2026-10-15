@@ -33,6 +33,6 @@ Without `--post` it only auth-checks. Creds: `/home/box/secrets/bluesky.txt` (do
 
 ## After (tick 137/138 measurement)
 - Immediately after post (~1:30–1:55 PM): `cd /workspace/orbbuilds && python3 tools/social/bluesky_read.py` — confirm URL / at:// URI or log miss/exact error. Baseline was 1 follower / 0 posts.
-- ~T+2h (~3:30 PM if posted ~1:30): same command. **Win rule:** ≥2 engagements (likes+reposts+quotes+replies) OR ≥1 new follower = Bluesky clearly beats X V (X V: **0 eng / +0 followers** at T+95). 0/0 by T+2h = both cold (audience size, not just X throttle).
+- ~T+2h (~3:36 PM): `python3 tools/social/bluesky_read.py --who` (tick 145: exclude `[MASS-ENGAGER]` rows from the count). **Win rule:** ≥2 engagements (likes+reposts+quotes+replies) OR ≥1 new follower = Bluesky clearly beats X V (X V: **0 eng / +0 followers** at T+95). 0/0 by T+2h = both cold (audience size, not just X throttle).
 - X V: one cheap confirm call only (~4–5 PM); log unless impressions moved ≥3× from 4. Full re-analysis is not worth it on graduated access.
 - If Bluesky wins: batch "Bluesky primary for episode drops until X graduates" with #10 for the next user ping.

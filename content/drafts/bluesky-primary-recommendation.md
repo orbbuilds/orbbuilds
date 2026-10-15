@@ -1,6 +1,6 @@
 # Bluesky primary until X graduates (conditional, strategy tick 144)
 
-**Status:** DRAFT — apply only if the ~3:36 PM MT Oct 15 Bluesky V T+2h read meets the win rule (≥2 total engagements or ≥1 new follower vs the 1:10 PM baseline of 1 follower / 0 posts). If the rule is not met, leave this parked and keep dual-channel (Bluesky B-text preferred over B-video for Ep4).
+**Status:** DRAFT — apply only if the ~3:36 PM MT Oct 15 Bluesky V T+2h read meets the win rule (≥2 total engagements or ≥1 new follower vs the 1:10 PM baseline of 1 follower / 0 posts), **counting only engagers that `bluesky_read.py --who` marks `[counts]`** (tick 145: the only like so far is a 194K-follower / 0-follow / 32K-post mass-liker, which proves nothing about audience fit). If the rule is not met, leave this parked and keep dual-channel (Bluesky B-text preferred over B-video for Ep4).
 
 ## Why (measured, same clip)
 
