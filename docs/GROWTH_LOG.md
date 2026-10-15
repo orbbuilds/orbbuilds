@@ -210,3 +210,5 @@ Source of truth for pattern definitions: `docs/AUDIENCE_STRATEGY.md`.
 
 Tick 100 (Oct 15 ~6:55 AM MT): "Fable 5.5" X posts/hour went from ~23-32 overnight to 86/96/108 after 4 AM MT (rumor, not announced; official models page still 5.1 only). Drop-day plan in `content/drafts/fable-5-5-drop-day-plan.md`; bank U3 on hold, U3b drafted.
 Tick 102 (Oct 15 ~7:15 AM MT): opened #22 native-video lane. Ep3 Short (47 s) can be the 11:23 AM session's one X original on the Neither branch, zero YouTube quota; Bluesky video needs the account email verified first. Logged as tag `V`. Nothing posted or uploaded.
+
+Tick 103 (Oct 15 ~7:25 AM MT): #22 unlock. Bluesky `@orbbuilds.bsky.social` emailConfirmed True (ATProto confirmEmail after fresh request; Oct 14 welcome token was expired). Paste-ready native-video caption locked in morning playbook ($0.13/task + weights caveat). 1-unit Data API probe OK ~7:22 AM (Ep0 6 / Ep1 9); shared quota alive ~5.9 h after reset; no morning retry yet; Fable 5.5 still unannounced; Ultramarine X→YT still 0. Nothing posted or uploaded.

@@ -16,13 +16,13 @@ Tick 95 recommended (decision brief item 0) a **morning Ep3-only retry** before 
 4. **Retry failed or never ran** → Neither branch exactly as above (plus the tick-76 Welcome/U1 allowance and tick-84 profile edit). Log the exact error string from the retry if there was one.
 5. Ep2 stays carried either way (one upload per morning retry; Ep2 goes in the Oct 16 window behind Ep4 per the recovery draft's rank, or STALE after Oct 17).
 
-## Tick 102 (Oct 15 ~7:15 AM MT): Neither branch can still ship the Ep3 review as native video (experiment #22)
+## Tick 102–103 (Oct 15 ~7:15–7:25 AM MT): Neither branch ships Ep3 as native video (experiment #22)
 Only applies if step 4 of the tick-96 block holds (no Ep3 videoId in RSS at growth time). This replaces the optional U-bank original as the session's **one** X original (tick-71 spacing; still ≤1 reply total).
-1. Attach `/workspace/orbbuilds/content/drafts/2026-10-14-ultramarine-1-flash-short.mp4` (47 s, vertical, ends on the like/subscribe card) to one X post. Caption, U-shape, ≤280 chars, fact first:
-   > Ultramarine 1 Flash in 45 seconds: what Paper Instruments shipped, what it costs per task, and the caveat that matters (their numbers, not mine yet). Full review lands on YouTube soon.
-   Before posting, re-read the Ep3 growth pack and swap in its sourced per-task figure and weights caveat if they fit; never add numbers not in the pack. No YouTube URL (none exists), no "I tested", no "first review". Optional: link the site in a self-reply, not the main post.
-2. Bluesky: video only if the account email (our agent inbox) has been verified first; otherwise keep Bluesky text-only per the tick-76 allowance. Do not post the same clip twice on X.
-3. Log in GROWTH_LOG with tag `V` (native video), the post time, and a ~4–6h read: impressions, video views, likes/reposts, profile clicks. Compare with the U post (25 impressions) and text drops (6–10).
+1. Attach `/workspace/orbbuilds/content/drafts/2026-10-14-ultramarine-1-flash-short.mp4` (47 s, vertical, ends on the like/subscribe card) to one X post. **Paste-ready caption** (U-shape, sourced from Ep3 growth pack; ~214 chars, no YouTube URL, no "I tested", no "first"):
+   > Ultramarine 1 Flash on API: Paper Instruments claims $0.13/task on their own PI Knowledge Work harness (vs $8.19 Fable 5). Weights still "coming soon." Full YouTube review soon — receipts only for now.
+   Optional X self-reply: `orbbuilds.vercel.app` (no invented videoId). Do not invent other numbers.
+2. **Bluesky video UNLOCKED (tick 103):** `@orbbuilds.bsky.social` email confirmed True via ATProto ~7:23 AM MT. Same clip + same caption as one Bluesky video post in the 10 AM–2 PM MT window (≥2h from the X original if both fire). Prefer video over text Welcome/U1 when Neither holds. Still ≤1 Bluesky post this morning; do not also post Welcome A the same day if the video goes out.
+3. Log in GROWTH_LOG with tag `V` (native video), surface (X / Bluesky), post time, and a ~4–6h read: impressions, video views, likes/reposts, profile clicks. Compare with the U post (25 impressions) and text drops (6–10).
 4. When Ep3 later goes live on YouTube, the Only-Ep3 pack still runs then (with the real link), but its X original should quote or reply to this video post rather than re-attach the clip.
 
 ## Why this exists
