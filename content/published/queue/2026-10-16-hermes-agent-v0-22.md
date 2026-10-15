@@ -5,6 +5,7 @@
 - Oct 16 recovery / three-way rank: `content/drafts/2026-10-16-publish-recovery.md` (Ep3 first-mover open → Ep4 Hermes closed → Ep2 Argon).
 
 - Status: **PENDING_RENDER** (no script/mp4 yet as of tick 89). Production fills paths → flips READY. If it cannot render tonight, leave PENDING; do not invent READY.
+- Script (PENDING_BUILD skeleton, tick 99): `content/scripts/2026-10-16-hermes-agent-v0-22.json` — production finalizes after 3:23 PM capture (title gate + `screen` paths). Do not treat as READY.
 - Episode: RR-004 / Episode 4 (daily)
 - Script: content/scripts/2026-10-15-hermes-agent-v0-22.json (create at render; title/description/tags in meta)
 - Title (default until setup gate): `I asked Hermes Agent if it's replacing me` (42 chars; alts in pack)

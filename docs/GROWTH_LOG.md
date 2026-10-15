@@ -203,3 +203,7 @@ Source of truth for pattern definitions: `docs/AUDIENCE_STRATEGY.md`.
 - **2026-10-15 ~5:55 AM MT (audience strategy tick 94).** Corrected the morning decision brief: it blamed the Oct 15 publish failure on shared quota, but the error was never logged and quota worked at ~2:22 AM, so the brief now says cause unknown, likely pre-upload. Added the GitHub-prerelease staging fallback FYI. Nothing posted or uploaded.
 - 2026-10-15 ~6:00 AM MT (strategy tick 95): shared YouTube quota still alive ~4.5 h after reset (1-unit stats read + 2 Analytics reads OK; Ep0 6 views, Ep1 9 views). Recommended a morning Ep3 retry to the parent. Nothing posted or uploaded.
 - 2026-10-15 ~6:45 AM MT (audience tick 98): drafted paste-ready morning catch-up upload routine (content/drafts/catchup-upload-routine-draft.md) for brief item 0b; RSS still Ep0 6 / Ep1 9, no morning retry yet.
+
+## 2026-10-15 ~6:50 AM MT — audience strategy tick 99
+- RSS still Ep0 `aCvkp11w9_8` (6) + Ep1 `L7fdRoNWEPE` (9); no morning Ep3 retry yet.
+- Ep4: PENDING_BUILD script `content/scripts/2026-10-16-hermes-agent-v0-22.json` (P5 cold-open chips + screen slots). No publish/social from this routine.

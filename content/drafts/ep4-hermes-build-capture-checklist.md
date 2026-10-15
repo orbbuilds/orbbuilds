@@ -45,6 +45,13 @@ capture stills for the review `screen` field, and leave a clear pass/fail note f
    - Paths of 1–3 best PNGs for script `screen` (repo-relative).  
    - Do not invent screenshots if capture failed.
 
+## Script skeleton (tick 99)
+Production starts from `content/scripts/2026-10-16-hermes-agent-v0-22.json` (PENDING_BUILD).
+- Cold-open `show` already filled: `600 PLUGINS · ~2,520 CONTRIBUTORS · NO API KEY` (re-verified on GitHub API this tick).
+- Caveat line 2 has `_screen_on_pass` / `_screen_on_fail` / `_say_on_*` keys — production swaps them into real `screen`/`say` after this handoff.
+- Still label → intended slot: `welcome`/`trial`/`reply` → PASS path; `fail` → FAIL path.
+- Default title stays Candidate A until gate PASS.
+
 ## After a PASS (for 9:28 PM production, not this build session)
 - Prefer setup title + `ep4-cand-hermes-setup-thumb.jpg`.  
 - Cold-open `show`: `600 PLUGINS · ~2,520 CONTRIBUTORS · NO API KEY` (tick 56; sourced).  
