@@ -83,3 +83,6 @@ Evening scan item 3 + GitHub release page (fetched Oct 14 ~7:45 PM MT). **Gate 1
 
 ### Candidate B (parked for a different pattern): Ling-3.1-flash weights
 Gate fit is weaker for P5 (open weights + hosted coding, not "agent applying for my job"). Better as **P2** hype-check ("open weights on modest hardware?") or a Short. Do not force P5. Sources in evening scan item 2.
+
+## UPDATE tick 55 (Oct 14 ~11:08 PM MT): cold-open `show` chips (experiment #16)
+Tomorrow's Ep4 cold-open first line should include a sourced `show` chip string so the tick-54 hook chips render on screen (muted viewers). Production fills `show` from a real source number already in the script (Hermes release stats, free-trial model name, etc.) — **do not invent numbers**. Template placeholder and renderer path are in `review_render.py` / script template (ticks 53–54). If Ep4 topic swaps off Hermes, still attach `show` to whatever sourced hook the cold open uses.
