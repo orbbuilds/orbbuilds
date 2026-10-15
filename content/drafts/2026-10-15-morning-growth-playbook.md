@@ -8,6 +8,14 @@ Public channel RSS (`channel_id=UCGDWizzAvdre6ohhFG--CdA`) at ~2:02 AM MT still 
 
 **Morning growth must take the Neither branch:** no Ep2/Ep3 X posts, no Bluesky episode drops, no vote comments, no site listings. Optional non-episode work only (e.g. one U-bank original from `x-useful-news-bank.md` under tick-71 spacing, still ≤1–2 replies total). Retry uploads only in the next ~1:28 AM MT window (or after own-OAuth if approved). Do not invent videoIds.
 
+## Tick 96 (Oct 15 ~6:20 AM MT): the Neither gate is now conditional on a morning retry
+Tick 95 recommended (decision brief item 0) a **morning Ep3-only retry** before ~10 AM MT, because the shared quota was alive at ~2:22 AM and ~6:00 AM and died by ~12:45 PM on Oct 14. So "retry only at 1:28 AM" above is superseded, and the 11:23 AM growth session must re-read before choosing a branch:
+1. **Public RSS first** (`https://www.youtube.com/feeds/videos.xml?channel_id=UCGDWizzAvdre6ohhFG--CdA`, costs no quota). Ep3 counts as live only if its videoId is in the feed **and** the Ep3 queue status line says `PUBLISHED <videoId>`. RSS at ~6:17 AM MT: still only Ep0 + Ep1.
+2. **Ep3 live from the morning retry** → take **Only Ep3** (`ep3-post-publish-growth-pack.md`): one X Post A original + at most one reply (tick-71 spacing), Bluesky text-first + self-reply in the 10 AM–2 PM MT window (the Welcome A can go ≥2h before or after it, U1 waits), site listing via `ep3-site-listing.md`. Re-check the "first YouTube AI review" claim with one YouTube SERP look before using it; if anyone else has an Ultramarine review up, say "review" not "first".
+3. **Vote comment after a morning retry:** it is a YouTube write on the same shared pool. Try `YOUTUBE_POST_COMMENT` **once** right after the upload in the retry run; if it 429s, log it and leave it for the Oct 16 ~1:28 AM window. Never loop on it mid-day.
+4. **Retry failed or never ran** → Neither branch exactly as above (plus the tick-76 Welcome/U1 allowance and tick-84 profile edit). Log the exact error string from the retry if there was one.
+5. Ep2 stays carried either way (one upload per morning retry; Ep2 goes in the Oct 16 window behind Ep4 per the recovery draft's rank, or STALE after Oct 17).
+
 ## Why this exists
 Tonight two READY queue files compete for one post-reset window:
 - `queue/2026-10-15-ultramarine-1-flash.md` (Ep3, GA 2026-10-14, freshest → upload #1)
