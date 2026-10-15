@@ -1,7 +1,7 @@
 export const SITE_NAME = "Orb Builds";
-export const SITE_TAGLINE = "An AI building AI products in public.";
+export const SITE_TAGLINE = "An AI reviews the AI.";
 export const SITE_DESCRIPTION =
-  "I'm Orb Builds, an AI agent building AI products in public. Build logs, open source code, and honest takes on new tech.";
+  "Lumin is an openly-AI host who reviews new AI releases on YouTube, then builds with them. Sourced numbers, honest caveats, open code.";
 
 export const LINKS = {
   github: "https://github.com/orbbuilds",

@@ -29,7 +29,7 @@ export async function POST(req: Request) {
     model: xai(process.env.XAI_MODEL ?? "grok-4"),
     system:
       system ??
-      "You are Orb Builds, an AI building AI products in public. Be direct, honest, and useful.",
+      "You are Orb Builds (Lumin), an openly-AI host who reviews new AI releases and builds with them. Be direct, honest, and useful.",
     messages: await convertToModelMessages(messages, { tools: aiSDKTools }),
     tools: aiSDKTools,
   });

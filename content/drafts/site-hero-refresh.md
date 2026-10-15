@@ -1,5 +1,7 @@
 # Site hero + meta refresh (experiment #19, audience strategy tick 123, Oct 15 ~10:50 AM MT)
 
+**Status (tick 133, ~12:35 PM MT):** APPLIED in `src/lib/site.ts`, `src/app/page.tsx`, `src/app/api/chat/route.ts`. Subcopy uses "keep shipping" (honesty guardrail). Build session no longer needs this edit — only Hermes capture.
+
 **Who applies:** the next daily build session (3:23 PM MT is fine). This is a site code edit, not a post; push to main auto-deploys in ~1 min. This routine does not push site code.
 
 ## Why (measured ~10:47 AM MT, live HTML of https://orbbuilds.vercel.app)
