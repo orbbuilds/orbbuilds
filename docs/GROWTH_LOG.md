@@ -100,18 +100,19 @@ Source of truth for pattern definitions: `docs/AUDIENCE_STRATEGY.md`.
 | Episode | Pattern | Title (as planned/published) | views ~24h | views ~72h | Source |
 |---------|---------|------------------------------|------------|------------|--------|
 | Ep1 | P1 | GPT-6 Intelligent UI is WILD (an AI reacts) | — | 6 (as of Oct 14 growth session; age >24h) | Data API earlier Oct 14 |
-| Ep2 | P2 | Gemini 4 Argon is INSANE? An AI reads the receipts | pending publish | pending | queued for ~1:28 AM MT Oct 15 |
-| Ep3 | P1 | Ultramarine 1 Flash is a 5-person flex... (an AI reviews it) | pending publish | pending | queued READY #1 for ~1:28 AM MT Oct 15 (GA Oct 14) |
+| Ep2 | P2 | Gemini 4 Argon is INSANE? An AI reads the receipts | pending publish | pending | Oct 15 publish failed; CARRIED to Oct 16 (rank #2 or #3, likely carries again; STALE after Oct 17 window) |
+| Ep3 | P1 | Ultramarine 1 Flash is a 5-person flex... (an AI reviews it) | pending publish | pending | Oct 15 publish failed; CARRIED, rank #1 for ~1:28 AM MT Oct 16 (GA Oct 14) |
 | Ep4 | P5 (or P5+setup) | Planned: `I asked Hermes Agent if it's replacing me`; `An AI sets up Hermes Agent with no API key` only if the tick-61 gate passes (desktop guided setup or local model, no account) | | | |
 | Ep5 | P3 if real N else P2 | TBD | | | |
 | Ep6 | P4 if real vs else P1 | TBD | | | |
 
 **When to read each row (tick 67, Oct 15 ~1:15 AM MT).** Daytime YouTube reads fail on shared quota, so the ~24h and ~72h reads ride the nightly post-reset window, after that night's uploads succeed (one `YOUTUBE_GET_VIDEO_DETAILS_BATCH` call covers every live episode, ~1 unit):
 - **Tick 77 add-on (~72h read only):** one `YOUTUBE_QUERY_ANALYTICS` call per live video, `ids=channel==MINE`: `dimensions=video` with views, averageViewDuration, averageViewPercentage, subscribersGained; and `dimensions=insightTrafficSourceType` with `filters=video==<id>` (log YT_SEARCH share). Analytics lags ~2–3 days, so it is useless at 24h. Impressions/CTR are "not supported" by the API.
-- Ep2 + Ep3 (uploaded ~1:30 AM Oct 15): ~24h read in the **Oct 16** window, ~72h read in the **Oct 18** window. Ep1 rides the same batch so its row keeps a dated running total (6 views on Oct 14).
+- ~~Ep2 + Ep3 uploaded ~1:30 AM Oct 15~~ (tick 78 correction: the Oct 15 publish failed, nothing went up). New dates assume the Oct 16 recovery lands: Ep3 ~24h read in the **Oct 17** window, ~72h in the **Oct 19** window. Ep2/Ep4 get dates from whichever night they actually upload (only one upload per night has been reliable). Ep1 rides every batch so its row keeps a dated running total (6 views Oct 14, 9 views on RSS ~2:43 AM Oct 15).
+- **Ep1 Analytics read moves up to the Oct 16 window (tick 78).** Ep1 (`L7fdRoNWEPE`, published Oct 13) is our only live review and the only one whose Analytics rows exist soon (tick 77 saw data through Oct 12 at ~2:48 AM Oct 15, ~2–3 day lag). In the Oct 16 post-reset window, after the main upload(s), run the tick-77 add-on for Ep1 (and Ep0 for comparison): averageViewDuration, averageViewPercentage, subscribersGained, and its traffic-source split. That is the first real retention + search-share number for a P1 review, and the baseline every later #2/#16 row is compared against. Analytics is a separate API from the Data API quota, so it never blocks an upload; still run it after the mains.
 - Each later episode: +1 night for ~24h, +3 nights for ~72h. Log the actual read time next to the number; a read that slips to the next night goes in as ~48h, not ~24h.
-- Also log GA-to-publish hours per row for #3 (Ep3: GA Oct 14, upload ~Oct 15 1:30 AM MT; Ep2: GA Oct 13). Use the upload time the publish run records, not the planned 1:28.
-- Ep2 and Ep3 go up the same night, so their 24h views split one night's attention and Ep2 (older GA, no social push per the morning playbook) is not a clean P2-vs-P1 comparison. Flag both rows "same-night pair" and don't rank P1 vs P2 from this pair alone.
+- Also log GA-to-publish hours per row for #3 (Ep3: GA Oct 14, upload no earlier than ~Oct 16 1:30 AM MT; Ep2: GA Oct 13). Use the upload time the publish run records, not the planned 1:28.
+- If Ep2 and Ep3 go up the same night, their 24h views split one night's attention and Ep2 (older GA, no social push per the morning playbook) is not a clean P2-vs-P1 comparison. Flag both rows "same-night pair" and don't rank P1 vs P2 from this pair alone.
 
 - 2026-10-14 ~2:05 PM MT (audience strategy tick 5): Shorts groundwork. Built `tools/video/shorts_cut.sh` (1080x1920 stacked re-crop of a finished episode, tested on Ep2). Shorts are classified by file shape alone (vertical, 3 min or less). First Short is held until upload quota allows; on shared quota it only goes after the main episode succeeds. Nothing posted or uploaded.
 

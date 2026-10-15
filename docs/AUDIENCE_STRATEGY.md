@@ -689,7 +689,15 @@ Tick 2 said Composio had Data API stats only. Composio's YouTube toolkit (versio
 - **Protocol change for #2:** at each ~72h read, add one Analytics call per batch: `dimensions=video` (views, averageViewDuration, averageViewPercentage, subscribersGained) plus `dimensions=insightTrafficSourceType` with `filters=video==<id>`, and log YT_SEARCH share next to the pattern ID. #16 gets a real retention proxy (average view percentage) instead of "if a person checks Studio".
 - Read-only. No posts, uploads, channel edits or signups.
 
+## Read schedule corrected for the carried publish; Ep1 Analytics first (experiments #2/#16, tick 78, Oct 15 ~2:57 AM MT)
+- GROWTH_LOG still said Ep2 + Ep3 "uploaded ~1:30 AM Oct 15" with 24h/72h reads on Oct 16/18. Nothing went up (RSS ~2:55 AM: Ep0 6, Ep1 9 views). Rewrote the rows and dates: Ep3 ~24h on Oct 17, ~72h on Oct 19 if the Oct 16 recovery lands; Ep2/Ep4 dated by their real upload night.
+- Moved Ep1's Analytics read up to the Oct 16 window and added it to the recovery draft's logging list. Ep1 is the only live review, published Oct 13, so with the ~2–3 day lag its retention and traffic-source rows should exist by then. That gives the first real P1 retention + search-share baseline two days before any new episode can.
+- Daytime Analytics quota probe still open (needs a daytime tick).
+- Doc edits only. No posts, uploads, channel edits or signups.
+
 ## Last tick
+- **2026-10-15 ~2:57 AM MT (tick 78).** #2/#16: GROWTH_LOG read schedule still assumed an Oct 15 upload; corrected Ep2/Ep3 rows and dates (Ep3 24h Oct 17 / 72h Oct 19 if Oct 16 lands). Ep1 Analytics read (retention + traffic sources) moved up to the Oct 16 window and added to the recovery draft. RSS ~2:55 AM still Ep0 6 / Ep1 9. No posts, uploads, channel edits or signups.
+  - Next recommended tick: daytime (~10 AM–4 PM MT) Analytics probe to test whether shared quota starves it; daytime sigmoid.social sample; ~4–6h Bluesky reads if Welcome/U1 go out. Pending user decisions unchanged.
 - **2026-10-15 ~2:48 AM MT (tick 77).** #2/#8/#16: `YOUTUBE_QUERY_ANALYTICS` works on our Composio connection. Per-video retention and traffic sources come back (Ep0: 8 views, 27 s average view duration, 126% average view percentage; sources: 2 search, 2 no-link, 1 channel, 1 related). Impressions/CTR are "not supported". Data lags ~2–3 days (Ep1 not in yet). Added Analytics calls to the ~72h read. No same-night retry seen (RSS still Ep0+Ep1). No posts, uploads, channel edits or signups.
   - Next recommended tick: daytime Analytics probe to see whether shared quota starves it too (if not, stats reads can move out of the 1:28 AM window); fold the Analytics calls into the GROWTH_LOG read schedule; Oct 16 recovery draft stands. Pending user decisions unchanged.
 - **2026-10-15 ~2:45 AM MT (tick 76).** #9/#17: Bluesky profile has 0 posts ~12h after creation; Neither gate would keep it blank. Morning playbook now allows Welcome A + optional U1-bsky (Ling hardware, re-verified on the HF card) in the 10 AM–2 PM MT window, ≥2h apart. RSS still Ep0+Ep1; no same-night retry seen. No uploads, posts, channel edits or signups.
