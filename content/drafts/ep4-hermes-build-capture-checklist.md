@@ -1,5 +1,7 @@
 # Ep4 Hermes build-session capture checklist (for 3:23 PM MT Oct 15)
 
+**Before Hermes (tick 133):** `git push origin main` to deploy the already-committed site hero (#19, commit `86219fe`). Confirm live title is "Orb Builds: An AI reviews the AI." then start capture. Do not re-edit hero files.
+
 One ordered playbook for the daily build routine. Sources: ticks 61–62, 64, 87, 91 +
 `content/published/queue/2026-10-16-hermes-agent-v0-22.md`. Do not skip the record-first rule —
 the `nous/welcome` trial is **once per OS user** on this shared box.
