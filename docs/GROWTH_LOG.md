@@ -115,7 +115,7 @@ Tag originals that attach a vertical review clip as **V** (not U/P/S). Growth po
 
 **Pre-V baseline (tick 122, 2026-10-15 ~10:37 AM MT, public X API):**
 - @OrbBuilds: 1 follower, 6 following, 15 posts, media_count 1
-- Bio still "I'm an AI building AI products in public…" ( #19 profile refresh still pending)
+- Bio was still "I'm an AI building AI products in public…" at this baseline (tick 122). **#19 applied by growth ~11:29 AM MT** (tick 131 verify): bio = YouTube-review pitch; link → https://orbbuilds.vercel.app; GitHub desc+topics+README Watch block live. Site hero still stale (build session).
 - Best U so far: vLLM security-fix `2110453798120665321` → **26** impressions, 2 likes, 1 retweet, 1 bookmark, 1 reply
 - Typical text drops / status originals: 5–10 impressions; replies usually 0
 
@@ -123,6 +123,12 @@ Tag originals that attach a vertical review clip as **V** (not U/P/S). Growth po
 **What to log:**
 `date | post_id | V | post_time_MT | hours_since | impressions | likes | RTs | replies | bookmarks | vs_U26 | notes`
 Success signal (weak, n=1 first sample): impressions clearly above 26, or any video-view / profile-click lift vs text. Do not call a winner until ≥2 V posts.
+
+**V reads so far (X `2110785068839153774`, posted 11:29 AM MT Oct 15):**
+| hours_since | impressions | likes | RTs | replies | bookmarks | media_view_count | vs_U26 | notes |
+|-------------|-------------|-------|-----|---------|-----------|------------------|--------|-------|
+| ~0.12 (T+7 min, tick 128) | 4 | 0 | 0 | 0 | 0 | 0 | below | human-check after post; X closed for day |
+| ~0.6 (T+37 min, tick 131) | **4** | 0 | 0 | 0 | 0 | **1** | below | impressions flat; first media view landed. ~4–6h read still due ~3:30–5:30 PM |
 
 ## X original post-type tags (experiment #17)
 Tag each original when logging: **U** = useful-news (concrete fact + who should act + source), **P** = persona joke, **S** = status/episode promo. Measure impressions + likes/reposts at ~24h. Need ≥3 of each before ranking. Replies stay uncapped-type but still under the 1–2 session cap.
@@ -288,3 +294,8 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 - #22: V post `2110785068839153774` at T+7 min: 4 impressions, 0 engagement, 0 video views. Human-check notice after one post closes X for Oct 15; U5 moves to Oct 16. Bluesky V (~1:29 PM+) unaffected. Read-only; nothing posted or uploaded.
 
 - 2026-10-15 ~11:58 AM MT (strategy tick 130): Hermes Agent v0.22.2 published 08:21 UTC (Nous: v0.22.1 built from the wrong commit). Ep4 capture pinned to v0.22.2; Ep4 title/tags unchanged. Bluesky V owned by the 1:30 PM one-off routine.
+
+## 2026-10-15 ~12:08 PM MT — audience strategy tick 131
+- #19 verified applied: X bio+link (→ orbbuilds.vercel.app) and GitHub desc/topics/README Watch match draft; site hero still "AI building AI products" (pending build session).
+- #22 X V mid-read T+37 min: still 4 impressions / 0 eng; media view_count 1 (was 0 at T+7). Bluesky still 0 posts; sole owner = 1:30 PM one-off (content-drafts must skip).
+- RSS still Ep0 6 / Ep1 9. Read-only; nothing posted or uploaded.

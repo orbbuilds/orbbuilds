@@ -1,5 +1,7 @@
 # Draft: Oct 15 morning growth playbook (dual-publish night) — NOT POSTED
 
+**Tick 131 (~12:08 PM MT):** Bluesky V sole owner = one-off routine ~1:30 PM MT (`2026-10-15-bluesky-v-afternoon-handoff.md`). **1:23 PM content-drafts must skip Bluesky V** (no double post). X closed for day after human-check. #19 X+GitHub verified applied; site hero still pending build session.
+
 > Standing rules that outlive this day: `docs/POSTING_RULES.md` (tick 110).
 
 Status: draft only (audience-strategy tick 52, Oct 14 ~10:37 PM MT). Nothing posted, replied, liked, followed, uploaded or spent from this file.
@@ -191,5 +193,5 @@ Standing rules: `docs/POSTING_RULES.md` (now includes #19).
 - Bluesky V is still on: earliest ~1:29 PM MT, inside 10 AM–2 PM. Use the native-video runbook.
 
 ## Tick 129 (Oct 15 ~11:46 AM MT): Bluesky V ownership for 1:23 PM
-X V is live; human-check closed X for Oct 15. **1:23 PM content-drafts (or parent dispatch) owns Bluesky V** — there is no afternoon growth routine. Follow `content/drafts/2026-10-15-bluesky-v-afternoon-handoff.md` (clip + caption + ATProto steps). Window **1:29–2:00 PM MT**. Skip Welcome/U1. No X today.
+~~X V is live; human-check closed X for Oct 15. **1:23 PM content-drafts (or parent dispatch) owns Bluesky V**~~ — **superseded tick 131:** sole owner is the **1:30 PM one-off** routine (Bluesky Ultramarine clip). Content-drafts must **skip** Bluesky V. Follow `content/drafts/2026-10-15-bluesky-v-afternoon-handoff.md`. Window **1:29–2:00 PM MT**. Skip Welcome/U1. No X today.
 - 4–6 h V read (~3:30–5:30 PM MT): log impressions **and** media `view_count` vs best U (26 impressions). T+7 min was 4 impressions / 0 video views.

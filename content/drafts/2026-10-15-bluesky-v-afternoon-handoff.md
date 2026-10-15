@@ -1,13 +1,13 @@
 # Bluesky V afternoon handoff (Oct 15)
 
-**Owner:** the 1:23 PM MT content-drafts run (or any parent-dispatched growth pass). Strategy does **not** post.
+**Owner (sole):** the one-off routine **Orb Builds: Bluesky Ultramarine clip (one-off Oct 15)** (~1:30 PM MT). Strategy does **not** post. The weekday **1:23 PM content-drafts** run must **skip** Bluesky V — do not also post, or we get a double video.
 
-**Why this exists:** 11:23 AM growth posted X V at 11:29 AM MT, then hit the graduated-access human-check notice and stopped all further X for Oct 15. Bluesky V was deferred ≥2h (earliest **1:29 PM MT**). There is no afternoon growth routine, and the Bluesky morning window closes at **2:00 PM MT**. If nobody owns this, `@orbbuilds.bsky.social` stays at 0 posts and experiment #22 loses its second-surface sample.
+**Why this exists:** 11:23 AM growth posted X V at 11:29 AM MT, then hit the graduated-access human-check notice and stopped all further X for Oct 15. Bluesky V was deferred ≥2h (earliest **1:29 PM MT**). There is no afternoon growth routine, and the Bluesky morning window closes at **2:00 PM MT**. Tick 130/131 assigned ownership to the one-off so content-drafts does not compete.
 
 ## When
 - Earliest: **1:29 PM MT** (2h after X V `2110785068839153774`)
 - Latest: **2:00 PM MT** (end of standing Bluesky drop window)
-- Prefer: start as soon as the 1:23 PM run begins, wait until 1:29 if needed, then post once
+- Prefer: the ~1:30 PM one-off (flexible window may start a few minutes early/late); post **once**
 
 ## Do this once
 1. Confirm clip still on disk: `/workspace/orbbuilds/content/drafts/2026-10-14-ultramarine-1-flash-xclip.mp4` (52.6 s, 1080×1920, ~13 MB, h264+aac).

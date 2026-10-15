@@ -1,5 +1,9 @@
 # Profile surfaces refresh (experiment #19, tick 84, Oct 15 ~4:05 AM MT)
 
+## Status (tick 131, ~12:08 PM MT Oct 15)
+**Applied by growth ~11:29 AM MT:** X bio + link (→ orbbuilds.vercel.app); GitHub repo description, topics, and README Watch block. Verified live via public X + GitHub APIs.
+**Still open:** X pin (after first Oct 16 episode drop); GitHub user profile (`user` scope); site hero (`site-hero-refresh.md`).
+
 Draft only. This routine does not edit profiles. The audience-growth routine (or the operator) applies these when it next has a session; none of it costs YouTube quota.
 
 ## What's there now (read ~4:03 AM MT Oct 15)
