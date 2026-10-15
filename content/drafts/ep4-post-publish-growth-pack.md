@@ -56,9 +56,29 @@ Hermes Agent v0.22: no-key desktop onboarding is real (Nous's notes; trial once 
 ## Post B-text — Bluesky (morning MT only)
 
 ```
-an AI just reviewed Hermes Agent v0.22. honest take: the no-key desktop trial is a big deal for first launch, but it's once per OS user, desktop-only, and the plugin/contributor counts are Nous's own release notes.
+an AI reviewed Hermes Agent v0.22. the no-key desktop trial is a big first-launch win, but it's once per OS user, desktop-only, and the plugin counts are Nous's own notes.
 
-on the YouTube: reply 1 ask-the-replacement-question, 2 real Orb Builds task, or 3 deeper setup / local model. link in the reply 👇
+vote on YouTube: 1 replacement question, 2 real task, 3 deeper setup. link below 👇
+#HermesAgent #AIagents #LLM
+```
+
+Tick 141: default rewritten to 283 graphemes (old text was 374, over Bluesky's 300-grapheme post cap, so it would have been rejected). Check any edit with `python3 -c "import sys;print(len(sys.argv[1]))" "<text>"` before posting; stay ≤290.
+
+Alt if setup gate passed (267 graphemes; matches the setup vote block):
+
+```
+an AI ran the Hermes Agent v0.22 desktop setup on camera with no API key (nous/welcome trial). it's once per OS user and desktop-only, so you get one shot.
+
+vote on YouTube: 1 replacement question, 2 real task, 3 local models. link below 👇
+#HermesAgent #AIagents #LLM
+```
+
+Alt B-video, **only if** the ~3:36 PM Bluesky V T+2h read met the win rule (≥2 engagements or ≥1 new follower) **and** `<slug>-xclip.mp4` exists from the 9:28 PM render (195 graphemes; use the Candidate A framing, or swap the first line for the setup alt's if the gate passed). Post with `tools/social/bluesky_post_video.py --file <xclip> --text "<caption>" --post`, then the same own-thread reply. If the rule was not met, use B-text. Never post both.
+
+```
+an AI asked Hermes Agent v0.22 if it's replacing him. the cut: no-key desktop trial, caveats from Nous's own notes, verdict.
+
+full review + vote 1/2/3 in the reply 👇
 #HermesAgent #AIagents #LLM
 ```
 

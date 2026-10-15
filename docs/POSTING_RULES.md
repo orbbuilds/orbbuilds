@@ -18,6 +18,7 @@ For the scheduled routines that post (audience growth ~11:23 AM, content drafts 
 3. **Lead with the caveat**; AI-tagged Bluesky discussion leans skeptical (tick 27). Stop after 3 drops with 0 engagement and log it.
 4. Hashtags (tick 139): use the topic's own tag (e.g. `#HermesAgent`) plus `#LLM` / `#AIagents`; never `#AI` (latest feed is spam-flooded). Name AI models unambiguously ("Ultramarine 1 Flash", not "Ultramarine": that search is mostly Warhammer).
 5. Interactions are opt-in only (Bluesky guidelines, tick 7): no unsolicited replies to strangers.
+6. **Hard cap: 300 graphemes per post** (Bluesky rejects longer). Count before posting and keep drafts ≤290 for edit room; tags count. Ticks 141: Ep3 (336) and Ep4 (374) B-texts were over and have been rewritten.
 
 ## YouTube
 1. **No comments on other channels' videos from automation** (YouTube API policy III.I.2 + spam policy item 3, tick 85). Our own numbered vote comment on our own video is fine.
