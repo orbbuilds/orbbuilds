@@ -11,14 +11,19 @@
 
 ## Do this once
 1. Confirm clip still on disk: `/workspace/orbbuilds/content/drafts/2026-10-14-ultramarine-1-flash-xclip.mp4` (52.6 s, 1080×1920, ~13 MB, h264+aac).
-2. Follow **Bluesky path** in `content/drafts/native-video-posting-runbook.md` (ATProto `uploadVideo` → poll → `app.bsky.embed.video`). Creds: `/home/box/secrets/bluesky.txt`. Do not print the password.
-3. Caption (same as X V, paste exactly):
+2. **Preferred (tick 134):** run the one-shot script (dry-run already passed ~12:45 PM MT — session + service auth + file OK; emailConfirmed True). From `/workspace/orbbuilds`:
 
-> Ultramarine 1 Flash on API: Paper Instruments claims $0.13/task on their own PI Knowledge Work harness (vs $8.19 Fable 5). Weights still "coming soon." Full YouTube review soon — receipts only for now.
+```bash
+python3 tools/social/bluesky_post_video.py \
+  --file content/drafts/2026-10-14-ultramarine-1-flash-xclip.mp4 \
+  --text 'Ultramarine 1 Flash on API: Paper Instruments claims $0.13/task on their own PI Knowledge Work harness (vs $8.19 Fable 5). Weights still "coming soon." Full YouTube review soon — receipts only for now.' \
+  --post
+```
 
-4. Aspect ratio embed: `{ width: 1080, height: 1920 }`.
-5. Log in `docs/GROWTH_LOG.md`: tag `V`, surface `bluesky`, post time MT, public URL / at:// URI.
-6. Optional self-reply with `https://orbbuilds.vercel.app` only (no invented YouTube videoId).
+Without `--post` it only auth-checks. Creds: `/home/box/secrets/bluesky.txt` (do not print). Manual XRPC path remains in `native-video-posting-runbook.md` if the script fails.
+3. Aspect ratio is read from the file (1080×1920).
+4. Log in `docs/GROWTH_LOG.md`: tag `V`, surface `bluesky`, post time MT, public URL / at:// URI (script prints both).
+5. Optional self-reply with `https://orbbuilds.vercel.app` only (no invented YouTube videoId).
 
 ## Hard bans
 - **No X** today (human-check after V). No U5, no replies, no follows, no second original.

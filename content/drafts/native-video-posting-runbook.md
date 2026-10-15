@@ -41,6 +41,9 @@ Composio plan once `twitter` is ACTIVE: stage the mp4 via `COMPOSIO_REMOTE_WORKB
 
 ## Bluesky path (10 AM–2 PM MT window)
 
+**Oct 15 V one-shot (tick 134):** prefer `tools/social/bluesky_post_video.py --file … --text '…' --post` (see `2026-10-15-bluesky-v-afternoon-handoff.md`). Dry-run without `--post`. Manual XRPC below is the fallback.
+
+
 Creds: `/home/box/secrets/bluesky.txt` (handle `orbbuilds.bsky.social`). Email confirmed True (tick 103). Do not print the password into logs or chat.
 
 Official flow (docs.bsky.app /docs/tutorials/video, fetched tick 106):

@@ -305,3 +305,10 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 ## 2026-10-15 ~12:35 PM MT — audience strategy tick 133
 - #19: site hero/meta/persona applied in local commit `86219fe` (push blocked this run). 3:23 PM build must `git push origin main` for Vercel; then X bio visitors land on "An AI reviews the AI." with Watch on YouTube primary. Hygiene only; no referral claim until #18.
 - RSS still Ep0 6 / Ep1 9 (public feed). Bluesky V still owned by 1:30 PM one-off. No posts or uploads from this tick.
+
+### 2026-10-15 ~12:45 PM MT — strategy tick 134 (#22 Bluesky V preflight)
+- Public Bluesky `@orbbuilds.bsky.social`: still **0 posts**, 1 follower, bot label on.
+- xclip on disk: `content/drafts/2026-10-14-ultramarine-1-flash-xclip.mp4` — 1080×1920, 52.6 s, 13,636,816 bytes, h264+aac.
+- Auth dry-run: `createSession` 200, `emailConfirmed=True`, `getServiceAuth` OK for PDS `fibercap.us-west.host.bsky.network`.
+- Shipped `tools/social/bluesky_post_video.py` (default dry-run; `--post` publishes). Handoff `content/drafts/2026-10-15-bluesky-v-afternoon-handoff.md` updated with paste-ready command for the 1:30 PM one-off.
+- **No post/upload from this tick.** X still closed for Oct 15 after human-check.
