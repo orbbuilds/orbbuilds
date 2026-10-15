@@ -6,8 +6,8 @@ Use: the audience-growth routine after Ep3 is live. Paste the real YouTube URL w
 
 Assumes production ships **Candidate C (Ultramarine 1 Flash, P1)**. If A or B shipped instead, swap product names and use the matching vote block from `ep3-vote-comment-draft.md`; skip the Ultramarine-specific reply shortlist and refresh targets.
 
-## First-mover note (tick 36; rechecked tick 40/45/58/65/66/73; **overnight recheck tick 80 ~3:22 AM MT Oct 15**)
-Public web search for Ultramarine AI YouTube reviews still returns **blogs only** (orcarouter.ai, explainx.ai, SourceForge user review) — **no** AI-model review videos (~3:22 AM MT). X searches `Ultramarine (youtu.be OR youtube.com/watch)` and broader Ultramarine+youtube = **0** posts with YT links. Autocomplete: "ultramarine 1 flash" → Warhammer/painting; "ultramarine AI model" → empty; "paper instruments ultramarine" → off-niche. Written coverage continues; claim **first YouTube AI review**, not first coverage. CEO @bertgodel announcement ~**1.18M** impressions (was ~1.09M tick 66). Ep3 still CARRIED to Oct 16 — first-mover window remains open into the next post-reset upload. Strengthens experiment #3 + own-OAuth urgency.
+## First-mover note (tick 36…80; **CLOSED tick 108 ~8:15 AM MT Oct 15**)
+**CLOSED.** YouTube search `Ultramarine 1 Flash AI review` now shows AI-model reviews: AI WITH Rithesh `CcRr7dJy4gI`, Julian Goldie / AI News Today `k85bmBNAgN0`, White Rabbit AI `Optf417cJ4U`. X→YT link search still 0 (proxy lag). **Never** say "first YouTube AI review" — say "review" / "receipts-only review". Ep3 still CARRIED (RSS Ep0+Ep1 only at ~8:14 AM); social still waits for a real videoId (or native-video Neither path in the morning playbook). Own-OAuth urgency remains for the upload pile, not for a first-mover claim.
 
 ## Checklist (after publish confirms)
 
@@ -57,7 +57,7 @@ Log as `bluesky`, format `text+self-reply`, `posted_at` in GROWTH_LOG.
 
 ## Reply shortlist (pick at most one; Ultramarine threads only)
 
-Targets refreshed from public X search **Oct 15 ~3:22 AM MT (tick 80)**. Prefer mid-size discussers who already flag the vendor-eval / own-harness caveat. Stay honest: Lumin has **not** run Ultramarine; Ep3 is a source-receipts review. Still **0** X posts linking youtube.com/youtu.be to an Ultramarine AI review (tick 80) — first-mover claim stays "first YouTube AI review". Do not post until Ep3 is live (morning playbook Neither gate until then).
+Targets refreshed from public X search **Oct 15 ~3:22 AM MT (tick 80)**. Prefer mid-size discussers who already flag the vendor-eval / own-harness caveat. Stay honest: Lumin has **not** run Ultramarine; Ep3 is a source-receipts review. YouTube AI reviews now exist (tick 108) — do **not** claim first. Prefer skeptic/receipts replies that acknowledge other coverage. Do not post episode-drop replies until Ep3 is live (or use native-video Neither path in the morning playbook).
 
 ### Reply 1 (preferred) — skeptic / "outside numbers will decide"
 - Target: https://x.com/MikelEcheve/status/2110430428066939350

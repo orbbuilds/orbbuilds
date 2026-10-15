@@ -13,7 +13,7 @@ Tick 95 recommended (decision brief item 0) a **morning Ep3-only retry** before 
 1. **Public RSS first** (`https://www.youtube.com/feeds/videos.xml?channel_id=UCGDWizzAvdre6ohhFG--CdA`, costs no quota). Ep3 counts as live only if its videoId is in the feed **and** the Ep3 queue status line says `PUBLISHED <videoId>`. RSS at ~6:17 AM MT: still only Ep0 + Ep1.
 2. **Ep3 live from the morning retry** → take **Only Ep3** (`ep3-post-publish-growth-pack.md`): one X Post A original + at most one reply (tick-71 spacing), Bluesky text-first + self-reply in the 10 AM–2 PM MT window (the Welcome A can go ≥2h before or after it, U1 waits), site listing via `ep3-site-listing.md`. Re-check the "first YouTube AI review" claim with one YouTube SERP look before using it; if anyone else has an Ultramarine review up, say "review" not "first".
 3. **Vote comment after a morning retry:** it is a YouTube write on the same shared pool. Try `YOUTUBE_POST_COMMENT` **once** right after the upload in the retry run; if it 429s, log it and leave it for the Oct 16 ~1:28 AM window. Never loop on it mid-day.
-4. **Retry failed or never ran** → Neither branch exactly as above (plus the tick-76 Welcome/U1 allowance and tick-84 profile edit). Log the exact error string from the retry if there was one.
+4. **Retry failed or never ran** → Neither = **native-video** (ticks 102–106), not the tick-72 "no social" line. Tick-76 Welcome/U1 only if the video attach is skipped; tick-84 profile edit still allowed. Log the exact error string from the retry if there was one.
 5. Ep2 stays carried either way (one upload per morning retry; Ep2 goes in the Oct 16 window behind Ep4 per the recovery draft's rank, or STALE after Oct 17).
 
 ## Tick 102–103 (Oct 15 ~7:15–7:25 AM MT): Neither branch ships Ep3 as native video (experiment #22)
@@ -46,11 +46,11 @@ Running **both** full growth packs the same morning would burn X graduated-acces
 ## Step 0 — read what actually went live (no guessing)
 1. Read status lines on both queue files (`PUBLISHED <videoId>` / `CARRIED` / `FAILED`).
 2. Prefer Data API batch stats only if the publish run already logged them in GROWTH_LOG; do **not** burn mid-day YouTube quota just to re-check.
-3. Branch:
+3. Branch (tick 108: Step 0 was stale — Neither→stop contradicted ticks 102–105):
    - **Both live** → follow "Both live" below.
-   - **Only Ep3** → use `ep3-post-publish-growth-pack.md` (+ this file's Bluesky timing).
+   - **Only Ep3** → use `ep3-post-publish-growth-pack.md` (+ this file's Bluesky timing). Say **review**, never first YouTube AI review (first-mover **closed** ~8:15 AM MT Oct 15).
    - **Only Ep2** → use `ep2-post-publish-growth-pack.md`, but Bluesky must use **text-first + self-reply** (Ep3 format), not Ep2's older link-in-body Post B.
-   - **Neither** → no social; note in GROWTH_LOG and stop.
+   - **Neither** → **native-video path** (ticks 102–106 + runbook `native-video-posting-runbook.md`): one X original with the Ultramarine xclip + caption; Bluesky video in the 10 AM–2 PM MT window (≥2h from X); U3b only if attach skipped; optional #19 profile edit. Do **not** stop with zero social.
 
 ## Both live (preferred path)
 
@@ -122,3 +122,13 @@ Public RSS ~3:20 AM MT: still Neither (Ep0 6 views / Ep1 9 views only). Ultramar
 
 ## Tick 100 note (Oct 15 ~6:55 AM MT)
 - Do not post bank U3 (Fable 5.5 correction). If an optional second U original is used, U3b in `content/drafts/fable-5-5-drop-day-plan.md` is allowed only after re-checking that the official models page still shows `claude-fable-5-1` as newest; fill [TIME]. If Fable 5.5 has been announced, follow that plan instead (no hot take before the episode).
+
+
+## Tick 108 (Oct 15 ~8:15 AM MT): Ultramarine YouTube first-mover CLOSED + Step 0 fixed
+Public YouTube search `Ultramarine 1 Flash AI review` (~8:15 AM MT) now returns real AI-model reviews (not Warhammer):
+- [AI WITH Rithesh](https://www.youtube.com/watch?v=CcRr7dJy4gI) — "Ultramarine 1 Flash Is WILD… Claude-Level AI at 60× Lower Cost!" (Paper Instruments / $0.13 / five-person / waitlist; no hands-on)
+- [Julian Goldie Podcast / AI News Today](https://www.youtube.com/watch?v=k85bmBNAgN0) — "Ultramarine AI Is INSANE! 60X Cheaper Than Claude?!"
+- [White Rabbit AI](https://www.youtube.com/watch?v=Optf417cJ4U) — "… Ultramarine 1 Flash | AI News in 90s"
+
+X search for Ultramarine→youtu.be/youtube.com links still **0** (old proxy alone is no longer enough). **Do not claim "first YouTube AI review"** on X, Bluesky, titles, or descriptions. Say "review" / "receipts-only review". Ep3 queue `First-mover:` → **closed**. Oct 16 rank still Ep3→Ep4→Ep2 by freshest GA (Ultramarine GA date Oct 14 still beats Hermes Oct 13 9:21 PM MT). RSS ~8:14 AM still Ep0 6 / Ep1 9 (no morning retry). Step 0 Neither line corrected above so 11:23 AM does not skip #22.
+

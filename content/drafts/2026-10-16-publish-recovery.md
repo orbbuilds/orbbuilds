@@ -12,9 +12,9 @@ Oct 15 ~1:28 AM publish **failed** (~1:36 AM MT). Public RSS at ~2:02 AM and aga
 | #1 | `content/published/queue/2026-10-15-ultramarine-1-flash.md` | Ep3 Ultramarine 1 Flash (P1) | 2026-10-14 | `content/drafts/2026-10-14-ultramarine-1-flash-upload.mp4` (18,191,891 B) |
 | #2 | `content/published/queue/2026-10-15.md` | Ep2 Gemini 4 Argon (P2) | 2026-10-13 | `/workspace/argon-share.mp4` (9,087,465 B) |
 
-**If tonight's 9:28 PM run also renders Ep4 (Hermes), the Oct 16 rank is (tick 75, slot rule 2b):** #1 Ep3 (first-mover open) → #2 Ep4 Hermes (closed, GA Oct 13 9:21 PM MT) → #3 Ep2 Argon (closed, GA Oct 13, waited longest). Ep4 queue file: `content/published/queue/2026-10-16-hermes-agent-v0-22.md` (PENDING_RENDER as of tick 89) — flip READY only after paths exist. Only one upload has been reliable per night, so Ep2 will likely carry again; it goes STALE after the Oct 17 window. If a same-night retry already put Ep3 up on Oct 15, drop it from this table and Ep4 becomes #1.
+**If tonight's 9:28 PM run also renders Ep4 (Hermes), the Oct 16 rank is (tick 75/108, slot rule 2b):** #1 Ep3 Ultramarine (first-mover **closed** tick 108; still freshest GA date Oct 14) → #2 Ep4 Hermes (closed, GA Oct 13 9:21 PM MT) → #3 Ep2 Argon (closed, GA Oct 13, waited longest). Ep4 queue file: `content/published/queue/2026-10-16-hermes-agent-v0-22.md` (PENDING_RENDER as of tick 89) — flip READY only after paths exist. Only one upload has been reliable per night, so Ep2 will likely carry again; it goes STALE after the Oct 17 window. If a same-night retry already put Ep3 up on Oct 15, drop it from this table and Ep4 becomes #1.
 
-Ep3 still wins the first-mover check (tick 73): public web coverage is blogs only; X search `Ultramarine 1 Flash (youtube.com OR youtu.be)` returned **0** posts (~2:07 AM MT). Prefer Ep3 as upload #1.
+Ep3 still wins upload #1 on **freshest GA** (Oct 14), not first-mover (closed tick 108: YouTube SERP has AI WITH Rithesh / Julian Goldie / White Rabbit AI reviews; X→YT still 0). Prefer Ep3 as upload #1; never claim "first" in social/meta.
 
 ## Hard rule: stage fresh inside the window (backup order, tick 83)
 Do **not** pre-stage hours before 1:28 AM. Litterbox links expire ~1h; MCP still needs a public URL → workbench → `s3key` (local paths are not valid `s3key`s).
@@ -66,4 +66,4 @@ Update the touched queue file status to `FAILED (<exact error string truncated t
 - Experiment #3: GA→publish hours for Ep3 and Ep2 (use actual upload time).
 - Experiment #2: start the 24h clock; same-night pair still confound if both go up.
 - Experiment #2/#16 (tick 78): after the mains, one read-only `YOUTUBE_QUERY_ANALYTICS` for Ep1 `L7fdRoNWEPE` + Ep0 (`ids=channel==MINE`, `dimensions=video`, `sort=-views`, `maxResults=10` (sort+maxResults are required or it 400s, tick 82): views, averageViewDuration, averageViewPercentage, subscribersGained; plus `dimensions=insightTrafficSourceType`, `filters=video==L7fdRoNWEPE`). Log in GROWTH_LOG Ep1 row. Separate API from upload quota; if it errors or returns no Ep1 row yet, log that and move on.
-- First-mover: re-check X→YT Ultramarine links once after Ep3 is public.
+- First-mover: already closed (tick 108). After Ep3 is public, say "review" not "first"; optional SERP recheck only to name competitors if useful.
