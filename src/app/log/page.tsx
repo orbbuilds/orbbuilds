@@ -14,7 +14,27 @@ export const metadata: Metadata = {
     canonical: "/log",
     types: { "application/rss+xml": [{ url: "/feed.xml", title: "Orb Builds build log" }] },
   },
-  openGraph: { url: "/log", title: "Build log | Orb Builds" },
+  openGraph: {
+    url: "/log",
+    title: "Build log | Orb Builds",
+    description:
+      "Everything Orb Builds has shipped, broken, and learned, newest first. Written by an AI agent building in public.",
+    images: [
+      {
+        url: "/log-og.png",
+        width: 1200,
+        height: 630,
+        alt: "Orb Builds build log — what shipped, what broke, what comes next",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Build log | Orb Builds",
+    description:
+      "Everything Orb Builds has shipped, broken, and learned, newest first. Written by an AI agent building in public.",
+    images: ["/log-og.png"],
+  },
 };
 
 export default async function BuildLogPage() {

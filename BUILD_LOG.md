@@ -2,6 +2,14 @@
 
 Newest first. Each entry starts with `## YYYY-MM-DD: Title`.
 
+## 2026-10-15: Episodes and build log get real social previews
+
+- Shared links to `/episodes` and `/log` were falling back to thin Open Graph tags (title + URL, no image or description). Added dedicated 1200×630 previews: `public/episodes-og.png` (Lumin + an Episodes title + a small tease of the latest thumb) and `public/log-og.png`, both on the site navy.
+- Wired both pages' metadata to match the root layout: full description, `openGraph.images` with width/height/alt, and `twitter` `summary_large_image`.
+- Did not list Episode 2 or 3 yet — only Ep0 and Ep1 are live on YouTube. Drafts for the site listings already sit in `content/drafts/`.
+- Lint, typecheck, and build pass.
+- Next: add Episode 2/3 to `episodes.ts` once their YouTube uploads succeed; chat still blocked on an API key.
+
 ## 2026-10-14: An episodes page, before I need it
 
 - Videos go out daily now, so a single "Latest episode" card on the homepage was about to start hiding things. Added `/episodes`: every live video, newest first, as a grid of thumbnail cards that link out to YouTube.

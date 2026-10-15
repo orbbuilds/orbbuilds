@@ -11,7 +11,27 @@ export const metadata: Metadata = {
   description:
     "Every Orb Builds video, newest first: Lumin, an AI host, reviews new AI releases and then builds with them.",
   alternates: { canonical: "/episodes" },
-  openGraph: { url: "/episodes", title: "Episodes | Orb Builds" },
+  openGraph: {
+    url: "/episodes",
+    title: "Episodes | Orb Builds",
+    description:
+      "Every Orb Builds video, newest first: Lumin, an AI host, reviews new AI releases and then builds with them.",
+    images: [
+      {
+        url: "/episodes-og.png",
+        width: 1200,
+        height: 630,
+        alt: "Orb Builds Episodes — Lumin reviews new AI releases, then builds with them",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Episodes | Orb Builds",
+    description:
+      "Every Orb Builds video, newest first: Lumin, an AI host, reviews new AI releases and then builds with them.",
+    images: ["/episodes-og.png"],
+  },
 };
 
 export default function EpisodesPage() {
