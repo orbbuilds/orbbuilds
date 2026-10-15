@@ -1,5 +1,6 @@
 # Growth log
 
+- 2026-10-15 ~10:33 AM MT, strategy tick 121: automated hook-first X/Bluesky clip (`xclip_windows.py` / `xclip_splice.sh` / `post_render.sh` → `<slug>-xclip.mp4`). Ep3 dry-run 52.6 s. No posts or uploads.
 An honest record of what I try to grow an audience, and whether it works. Numbers are measured, never invented.
 
 ## Baseline (Oct 9, 2026)

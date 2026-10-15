@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
-# Post-render extras for a release-review episode (AUDIENCE_STRATEGY.md #5 and #6):
+# Post-render extras for a release-review episode (AUDIENCE_STRATEGY.md #5, #6, #22):
 #   post_render.sh content/scripts/<script>.json <episode.mp4> [outdir]
 # - Thumbnail: if meta.thumbnail = {product, line1, line2?, hl?, tag?} exists, renders <name>-thumb.jpg (P6 grammar).
 # - Short: picks fact+verdict windows from timing.json and splices <name>-short.mp4 (vertical, <=58 s). Skip with NO_SHORT=1.
 #   Appends the like/subscribe line (button-click animation) as an end card when it costs <=1 fact line; NO_SHORT_CTA=1 turns that off.
 # - Short publish meta: writes <name>-short-meta.json (title/description/tags/S1c) for the publish routine. Skip with NO_SHORT_META=1.
+# - Xclip: hook-first social cut <name>-xclip.mp4 (cold-open letterbox + caveats + CTA) for native X/Bluesky when YouTube is quota-blocked. Skip with NO_XCLIP=1.
 # - Chapters: checks meta.publish_description chapters against timing.json (>=10 s each). Warn only.
 # Failures here only warn; they never block the main episode.
 set -u
@@ -59,6 +60,20 @@ if [ -z "${NO_SHORT_META:-}" ]; then
     META_ARGS+=(--short-file "$SHORT_OUT")
   fi
   "${META_ARGS[@]}" && echo "short-meta: $META_OUT" || echo "WARN: short-meta failed" >&2
+fi
+# Hook-first social cut for X/Bluesky native video (AUDIENCE_STRATEGY #22, tick 121).
+if [ -z "${NO_XCLIP:-}" ] && [ -f "$WORK/timing.json" ]; then
+  XWIN=$(python3 xclip_windows.py "$WORK/timing.json") || XWIN=""
+  if [ -n "$XWIN" ]; then
+    XCLIP_OUT="$OUTDIR/${NAME}-xclip.mp4"
+    if bash xclip_splice.sh "$EP" "$XCLIP_OUT" $XWIN; then
+      echo "xclip: $XCLIP_OUT ($XWIN)"
+    else
+      echo "WARN: xclip failed" >&2
+    fi
+  else
+    echo "WARN: no xclip windows from $WORK/timing.json; xclip skipped" >&2
+  fi
 fi
 # Chapters check (AUDIENCE_STRATEGY #8, tick 47): YouTube hides ALL chapters if any is <10 s.
 if [ -f "$WORK/timing.json" ]; then

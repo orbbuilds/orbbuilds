@@ -63,3 +63,7 @@ Notes:
 - No YouTube upload, no invented videoId, no "first on YouTube" claim in the caption.
 - No Composio Twitter connect card mid-growth unless the operator already said yes.
 - No second X original within ~4h (tick 71).
+
+## Auto-render (tick 121)
+From Ep4 on, `tools/video/post_render.sh` writes `<slug>-xclip.mp4` next to the Short (hook-first letterbox cold open + caveats + CTA). Prefer that path over a hand cut. Skip with `NO_XCLIP=1`. Today's Ep3 post still uses the hand-made file below.
+
