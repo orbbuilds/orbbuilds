@@ -384,3 +384,9 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 - Oct 16 morning playbook note: when Ep4 is live, Ep4 social wins over Ep3 the same morning (tick 140 rank).
 - Dry-run: setup B-video **182**/300, setup B-text **267**/300, tags HermesAgent/AIagents/LLM.
 - No posts, uploads, or pushes from this tick.
+
+### 2026-10-15 ~5:10 PM MT — strategy tick 161 (#12/#23/#4 site + queue honesty)
+- Ep4 capture already PASS; live title setup-first.
+- Flipped `ep4-site-listing.md` so setup title/summary is default (Candidate A = rollback only); copied setup thumb onto `public/episodes/rr-004.jpg`.
+- Queue handoff/thumb/vote/site lines now match tick 140 Ep4-first rank + tick 160 social defaults (no longer "prefer Ep3 packs first").
+- No posts, uploads, comments, channel edits, or pushes from this tick.

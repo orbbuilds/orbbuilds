@@ -19,8 +19,8 @@
 - First-mover: **closed** (BoxminingAI Hermes v0.22 recap already up, tick 60). Tier (b) under slot rule 2b → ranks behind Ep3 on freshest GA (Ep3 first-mover also **closed** tick 108; Ep3 still #1 by GA date Oct 14).
 - Upload file: (fill after render) content/drafts/2026-10-16-hermes-agent-v0-22-upload.mp4
 - Full render: (fill) content/drafts/2026-10-16-hermes-agent-v0-22.mp4
-- Thumbnail default: **content/drafts/ep4-cand-hermes-agent-thumb.jpg** (`REPLACING` / `ME?`, hl 2, tag `AI host · not tested yet`)
-- Thumbnail if setup gate: **content/drafts/ep4-cand-hermes-setup-thumb.jpg** (`NO API KEY` / `SETUP`, hl 1, tag `AI host · tested on camera`) — already rendered tick 64
+- Thumbnail (**PASS / setup, applied tick 158; site asset tick 161**): **content/drafts/ep4-cand-hermes-setup-thumb.jpg** (`NO API KEY` / `SETUP`, hl 1, tag `AI host · tested on camera`) — also copied to `public/episodes/rr-004.jpg`
+- Thumbnail FAIL/rollback only: **content/drafts/ep4-cand-hermes-agent-thumb.jpg** (`REPLACING` / `ME?`, hl 2, tag `AI host · not tested yet`)
 - categoryId 28, privacyStatus public
 - Tags (default): `Hermes Agent review`, `Hermes Agent`, `Hermes Agent v0.22`, `Hermes Agent update`, `Nous Research`, `AI agent desktop`, `local AI agent` (tick 113: `hermes agent 22` + `hermes agent update` are live YouTube autocomplete suggestions). Hashtags: `#AI #Agents #OpenSource`.
 - Tags if setup gate: also `Hermes Agent setup`, `Hermes Agent tutorial`, `Hermes Agent free` (tick 156: **qualifies**, HANDOFF confirms the no-key reply ran on camera with no account or key), `Hermes Agent local LLM` + a `Setup` chapter ≥10 s.
@@ -34,11 +34,11 @@
 
 - Channel SEO (#11, APPROVED): after main succeeds, apply once per night if not already done. Add this videoId to "AI Release Reviews" playlist. ~50 units — never before main.
 
-- Site listing (#12): `content/drafts/ep4-site-listing.md` + `public/episodes/rr-004.jpg` (tick 118). Do not list before public.
+- Site listing (#12): `content/drafts/ep4-site-listing.md` + `public/episodes/rr-004.jpg` (**setup thumb + setup title default**, tick 161). Do not list before public.
 
-- Vote (#7): outro + `YOUTUBE_POST_COMMENT` from `content/drafts/ep4-vote-comment-draft.md` (Candidate A or setup-gate block). Pin needs a person.
+- Vote (#7): outro + `YOUTUBE_POST_COMMENT` from `content/drafts/ep4-vote-comment-draft.md` (**setup PASS block is default**, tick 160; Candidate A = rollback only). Pin needs a person.
 
-- Growth handoff (not this routine): `content/drafts/ep4-post-publish-growth-pack.md` (tick 118). Morning playbook stays **Neither** until a videoId exists; after Ep3/Ep2 land, prefer their packs first. Ep4 social only after Ep3 U-drop budget is spent (X graduated-access cap).
+- Growth handoff (not this routine): `content/drafts/ep4-post-publish-growth-pack.md` (**setup PASS defaults**, ticks 160–161). Oct 16 morning playbook (`2026-10-15-morning-growth-playbook.md` tick-160 branch): when Ep4 is live, **Ep4 social wins** over Ep3/Ep2 the same morning (tick 140 upload rank). Site listing: `ep4-site-listing.md` setup-primary (tick 161). Neither until a videoId exists.
 
 - **Call order in the post-reset window (#13 / #7) — tick 156 fix:** the old three-way order below is **superseded** by tick 140 (`content/drafts/2026-10-16-publish-recovery.md` line 15). When this file is READY: (1) **Ep4 main** → (2) Ep4 setup thumb → (3) stats batch → (4) Ep4 vote → (5) SEO/playlist if units → (6) Ep3 main only if quota remains → Ep2 → Shorts last. If only one upload is reliable, **Ep4 wins**. Use the old order only if this file is NOT READY at run start.
   - (Superseded, pre-tick-140:) On a three-way night: (1) Ep3 main → (2) Ep3 thumb → (3) stats batch → (4) Ep3 vote → (5) SEO/playlist if units → (6) Ep4 main only if quota remains after Ep3 (+ Ep2 preferred before Shorts per recovery draft: Ep3 → Ep4 → Ep2) → Shorts last. **Prefer Ep2 main before Ep4 Short.** If only one upload is reliable, Ep3 wins; Ep4 and Ep2 carry.
