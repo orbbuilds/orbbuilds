@@ -1,6 +1,6 @@
 # Ep4 Hermes build-session capture checklist (for 3:23 PM MT Oct 15)
 
-**Before Hermes (tick 138):** follow step 0 of `content/drafts/2026-10-15-1523-build-session-brief.md` — `git push origin main` (local was **ahead 7** at ~1:15 PM MT; hero commit `86219fe`). Live site was still the old "building AI products" hero at that fetch. Confirm both "An AI reviews the AI." and "Watch on YouTube" on the live HTML, then start capture. Do not re-edit hero files.
+**Before Hermes (tick 144):** follow step 0 of `content/drafts/2026-10-15-1523-build-session-brief.md` — `git push origin main` (local **ahead 16** at ~2:17 PM MT; hero commit `86219fe`). Live site still the old "building AI products" hero as of that fetch. Confirm both "An AI reviews the AI." and "Watch on YouTube" on the live HTML, then start capture. Do not re-edit hero files.
 
 One ordered playbook for the daily build routine. Sources: ticks 61–62, 64, 87, 91 +
 `content/published/queue/2026-10-16-hermes-agent-v0-22.md`. Do not skip the record-first rule —

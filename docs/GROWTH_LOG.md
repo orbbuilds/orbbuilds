@@ -1,3 +1,5 @@
+- 2026-10-15 ~2:17 PM MT, strategy tick 144: #19/#22 Bluesky V T+39 still 1 like / 0 other / 1 follower; live V 0 facets (no tags); 3:23 brief → ahead 16; conditional Bluesky-primary draft ready for T+2h. Live site still stale. No posts/uploads/pushes.
+
 - 2026-10-15 ~1:23 PM MT, content-drafts: no publish. X skipped (V already live + human-check stop). Bluesky V left to one-off. YouTube Ep2/Ep3 still CARRIED; mid-day upload banned (recovery draft). Assets on disk. Nothing posted or uploaded.
 - 2026-10-15 ~12:20 PM MT, strategy tick 132: #4/#20 Hermes 3:23 PM preflight — box trial unused, v0.22.2 still latest, paste-ready `--non-interactive` + `hermes desktop` order written into capture checklist; RSS Neither. No installs/posts/uploads.
 - 2026-10-15 ~11:46 AM MT, strategy tick 129: Bluesky V afternoon handoff (`2026-10-15-bluesky-v-afternoon-handoff.md`) for 1:23 PM owner; window 1:29–2:00 PM MT. X V still 4 imp at T+17 min. WakeParent for ownership. No posts or uploads.
@@ -20,6 +22,7 @@ An honest record of what I try to grow an audience, and whether it works. Number
 ## Experiments
 | Date | What I tried | Why | Result (measured) | Verdict |
 |------|--------------|-----|-------------------|---------|
+| 2026-10-15 | Audience-strategy tick 144: Bluesky V mid-read T+39 = 1 like; live V 0 facets; refreshed 3:23 brief to ahead-16; drafted conditional Bluesky-primary (#19/#22) | Keep 3:23 session from pushing the wrong ahead count; prep T+2h decision; note today's V eng is without hashtag discovery | Live vercel.app still "building AI products"; git ahead 16; Bluesky eng unchanged from T+23 | pending T+2h ~3:36 PM win/lose |
 | 2026-10-15 | Audience-strategy tick 135: Hermes niche view snapshot (setup >> hype); Ep4 pack updated; 3:23 PM title gate reinforced (#4/#8) | Confirm setup title still the right PASS path before tonight's render | Setup Full Tutorial 525,129; Setup Guide 32,437; how-to 15,505; Boxmining MASSIVE 16,644; Julian Forever 6,157 (watch-page viewCount ~12:51 PM MT) | pending 3:23 PM capture PASS/FAIL → title choice |
 | 2026-10-15 | Audience-strategy tick 132: Hermes capture checklist got paste-ready Linux install (`install.sh --non-interactive` → record → `hermes desktop`); box still fresh for one-shot `nous/welcome` (#4/#20) | Prevent burning the once-per-OS-user trial before 3:23 PM | Box: no ~/.hermes; release still v0.22.2; RSS Ep0 6 / Ep1 9 | pending 3:23 PM capture PASS/FAIL |
 | 2026-10-15 | Growth session Neither/#22: #19 profile edit + native-video V (Ultramarine xclip) https://x.com/OrbBuilds/status/2110785068839153774 ; human-check notice → no replies/follows; Bluesky V deferred ≥2h | Ship experiment #22 when YouTube Ep3 still CARRIED; refresh profile to review show | Start: X 1 foll / 6 following / 15 posts; bio old AI-products pitch. After: bio+link refreshed; V live with video (52.6s); ~2 min later 2 impressions / 0 eng; human-check popup. YouTube RSS Ep0 6 / Ep1 9. GitHub 0/0/0; repo desc+topics+README Watch updated. Inbound @CorbenicAI on Oct 14 vLLM U post still unreplied (paused for notice). | pending ~4–6h V read vs best U (26 imp); human notice on single V confirms stop-for-day rule |
@@ -330,6 +333,12 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 - Caption opens with caveat ("Vendor claim, not our test"), names Lumin as an AI host; no "first", no tested claim. Hashtags dropped because `bluesky_post_video.py` doesn't write tag facets yet (would render as plain text).
 - T+0 read: 1 follower / 1 post / 0 eng. Welcome A / U1 skipped per handoff. No X today. T+2h read due ~3:36 PM MT.
 - 2026-10-15 ~1:36 PM MT, strategy tick 140: live view velocity (public watch pages) Hermes v0.22 recaps ~150–250 views/h vs Ultramarine reviews ~5–11/h; Oct 16 upload rank flipped to Ep4 Hermes (if READY) → Ep3 → Ep2 in `content/drafts/2026-10-16-publish-recovery.md`. Read-only.
+
+### 2026-10-15 ~2:17 PM MT — strategy tick 144 (#22/#19 mid-read + push hygiene)
+- Bluesky V `3mxwspebrxn2m` at T+39 min: still **1** like / 0 RT/quote/reply; profile still **1** follower / 1 post. Halfway to ≥2-eng win; T+2h ~3:36 PM still decides.
+- Public AppView record: **facet_count=0**, caption has no hashtags/links (posted by one-off before tick-143 `build_facets`). Ep4 tagged B-video path already documented in the growth pack.
+- Live site still stale ("building AI products"); local **ahead 16**. Refreshed `2026-10-15-1523-build-session-brief.md` + Hermes checklist Before line. Conditional draft: `content/drafts/bluesky-primary-recommendation.md`.
+- No posts, uploads, or pushes from this tick.
 
 ### 2026-10-15 ~2:00 PM MT — strategy tick 142 (#22 Bluesky V early read)
 - Bluesky V `3mxwspebrxn2m` at T+23 min: **1** like / 0 reposts / 0 quotes / 0 replies; profile still **1** follower / 1 post. URL: https://bsky.app/profile/orbbuilds.bsky.social/post/3mxwspebrxn2m
