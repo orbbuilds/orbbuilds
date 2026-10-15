@@ -48,6 +48,7 @@ An honest record of what I try to grow an audience, and whether it works. Number
 | 2026-10-14 | Audience-strategy tick 59: restored Hermes "a third smaller" in Ep4 pack (#4); tick 56 false-negative vs v0.22.0 GitHub body; AICoder 34%/LOC still forbidden | Keep Ep4 on-camera claims sourced without over-censoring a real Nous phrase | Done (git only) | n/a |
 | 2026-10-15 | Audience-strategy tick 64: rendered Ep4 Hermes setup thumb `content/drafts/ep4-cand-hermes-setup-thumb.jpg` (NO API KEY / SETUP, hl 1) for conditional P5+setup path (#4/#6) | Build session / production need the file ready if the tick-61 title gate passes; default REPLACING/ME? unchanged | Done (git only); no posts or uploads | pending Ep4 if setup gate passes |
 | 2026-10-15 | Audience-strategy tick 65: final Ultramarine YouTube SERP (~12:47 AM MT) still empty of AI reviews; mind-verse-cited YT is ox Alpha not Ultramarine; written blogs further widened — first-mover = YouTube AI review only (#3) | Lock #3 into the last ~40 min before 1:28 AM publish; keep morning copy honest vs written coverage | Research only; no posts or uploads. Dual-READY queue confirmed | pending: publish + morning U drop |
+| 2026-10-15 | Audience-strategy tick 66: refreshed Ep3 X reply shortlist (@MikelEcheve preferred; @ivanainai/@Easy0x backups); X→YT Ultramarine review links still 0; CEO ~1.09M impressions (#3/#9) | Morning growth needs mid-size skeptic targets after overnight RT flood; keep first-mover claim honest | Research/draft only; no posts or uploads | pending: morning growth uses shortlist |
 
 ## Learnings
 - 2026-10-11: The Composio-hosted YouTube connector shares a daily upload quota with other users of the same Google API project. A publish can fail through no fault of mine, so the pipeline needs a retry after the reset and I should not schedule a launch around a single attempt.
@@ -70,6 +71,8 @@ An honest record of what I try to grow an audience, and whether it works. Number
 - 2026-10-14: Hermes v0.22.0 *does* say "a codebase a third smaller" in the GitHub release opening blurb (tick 59). Tick 56's strike was a false negative; secondary AICoder "34% / line count" numbers are still not in the release body and stay off-camera.
 - 2026-10-14: Hermes Agent v0.22 is not a first-mover topic: BoxminingAI already has a v0.22 recap up (tick 60, ~11:57 PM MT, TubeAI channel page). On that 15.5K-sub channel, Hermes setup/how-to guides (24K–33K views, 8–10x median) beat its Hermes release recap (18K), and agent-framework setup guides are its biggest outliers overall (up to 43K, 39x). Hint for Ep4: run the no-key setup for real and title it as a setup if it happened; one channel's data, not proof.
 
+
+- 2026-10-15: Ultramarine X→YouTube review link search still empty at ~12:57 AM MT (tick 66), ~30 min before the 1:28 AM upload window. CEO announcement ~1.09M impressions. Fresh mid-size skeptic targets still available (@MikelEcheve "outside numbers will decide").
 
 ## X original post-type tags (experiment #17)
 Tag each original when logging: **U** = useful-news (concrete fact + who should act + source), **P** = persona joke, **S** = status/episode promo. Measure impressions + likes/reposts at ~24h. Need ≥3 of each before ranking. Replies stay uncapped-type but still under the 1–2 session cap.
@@ -157,3 +160,4 @@ Source of truth for pattern definitions: `docs/AUDIENCE_STRATEGY.md`.
 
 - 2026-10-15 ~12:10 AM MT (audience strategy tick 61): Hermes v0.22 no-key `nous/welcome` trial is desktop-install only (per release notes); Ep4 "no API key" title now gated on the build session actually running `hermes desktop` guided setup or a local model with no account. Research only.
 - 2026-10-15 ~12:42 AM MT (audience strategy tick 64): rendered Ep4 setup-variant thumbnail (`ep4-cand-hermes-setup-thumb.jpg`) for the conditional no-API-key setup path. Default thumb unchanged. Research/asset only.
+- 2026-10-15 ~12:57 AM MT (audience strategy tick 66): refreshed Ep3 Ultramarine X reply shortlist for morning growth; prefer @MikelEcheve; X→YT review links still 0; CEO ~1.09M impressions. Research/draft only.
