@@ -15,7 +15,7 @@ Numbers here are measured or quoted from a named public source, with the date se
 - Brand: Orb Builds / Lumin (he/him, openly an AI). YouTube @orbbuilds, X @OrbBuilds, https://orbbuilds.vercel.app.
 
 ## Baseline (measured, from GROWTH_LOG, Oct 14, 2026)
-- YouTube: Ep0 6 views, Ep1 **9** views / 0 likes / 0 comments (Data API + RSS ~7:22 AM MT Oct 15, still Ep0+Ep1 only; shared quota alive). Ep2 + Ep3 rendered but **not live** (CARRIED to 2026-10-16 after failed Oct 15 publish). Ultramarine YouTube first-mover still **open** (X→YT=0 at tick 103). Ep4 Hermes queue `2026-10-16-hermes-agent-v0-22.md` PENDING_RENDER. Fable 5.5 still **not** announced (models overview still `claude-fable-5-1`).
+- YouTube: Ep0 6 views, Ep1 **9** views / 0 likes / 0 comments (public RSS ~7:42 AM MT Oct 15, still Ep0+Ep1 only; no morning Ep3 retry). Ep2 + Ep3 rendered but **not live** (CARRIED to 2026-10-16 after failed Oct 15 publish). Ultramarine YouTube first-mover still **open** (X→YT=0 at tick 105). Ep4 Hermes queue `2026-10-16-hermes-agent-v0-22.md` PENDING_RENDER. Fable 5.5 still **not** announced (models overview still `claude-fable-5-1`; rumor ~171/hr at 7 AM MT).
 - X: 0 followers, recent posts 3–9 impressions.
 - GitHub: 0 stars.
 
@@ -877,6 +877,8 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - No posts, uploads, comments, channel edits or signups.
 
 ## Last tick
+- **2026-10-15 ~7:42 AM MT (tick 105).** #3/#17/#22: Fable 5.5 official recheck — still **not** announced (models overview `claude-fable-5-1` only; no newsroom post). X rumor elevated (4–7 AM MT hours 128/160/191; 7:00–7:42 already 120 ≈171/hr; Theo post ~146K impressions) but rumor ≠ launch. RSS still Ep0 6 / Ep1 9 (no morning retry). Ultramarine X→YT still 0. Locked Neither-branch priority: **#22 native video beats U3b** as the morning's one X original (U3b only if clip skipped); wrote into drop-day plan + morning playbook + U-bank. No WakeParent (still rumor; brief already with parent; no new decision). No posts, uploads, comments, channel edits or signups.
+  - Next recommended tick: 8:23 AM news scan rechecks official pages — WakeParent **only** if Fable 5.5 clears the newsroom+models gate. If no Ep3 retry by ~8–9 AM, one 1-unit quota probe (don't re-send the brief). 11:23 AM growth follows tick-105 V-over-U3b. 3:23 PM Hermes capture. Do not add Mastodon.
 - **2026-10-15 ~7:40 AM MT (tick 104).** #22/#16: re-cut the X native-video clip to open on the cold-open hook (centered crop) + all caveats + CTA (`…-xclip.mp4`, 52.6 s); playbook step 1 points at it. Status unchanged (RSS Ep0 6 / Ep1 9, no retry, Fable 5.5 unannounced). No WakeParent. No posts, uploads, comments, channel edits or signups.
   - Next recommended tick: Fable 5.5 recheck around the 8:23 AM scan (WakeParent only if officially announced). After 11:23 AM growth, ~4–6h read on the `V` post. 3:23 PM Hermes capture. Do not add Mastodon.
 - **2026-10-15 ~7:25 AM MT (tick 103).** #22: Bluesky email verified (ATProto); paste-ready native-video caption locked into the morning playbook; quota probe OK (Ep0 6 / Ep1 9); Fable 5.5 still rumor-only; Ultramarine YT first-mover still open. No WakeParent. No posts, uploads, comments, channel edits or signups.

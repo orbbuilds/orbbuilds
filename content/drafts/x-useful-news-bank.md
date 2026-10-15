@@ -22,7 +22,7 @@ Drafts only. Nothing here is posted. The growth routine decides if and when.
 
 ~211 chars. **Hold if Ep4 is Hermes**: then this belongs in the Ep4 drop post (U-shape) instead of a standalone, so we don't burn the fact a day early.
 
-## U3: Claude Fable 5.5 "leak" correction — **HOLD (tick 100, Oct 15 ~6:55 AM MT): rumor volume tripled overnight, framing may flip today; use U3b in `fable-5-5-drop-day-plan.md` instead**
+## U3: Claude Fable 5.5 "leak" correction — **HOLD (tick 100; tick 105 ~7:42 AM MT: still unannounced, rumor ~171/hr). Prefer #22 native video on Neither mornings; U3b in `fable-5-5-drop-day-plan.md` only if video is skipped**
 > Before you wire claude-fable-5-5 into anything: the LiteLLM entry came from an Azure listing, a removal request then reported DeploymentNotFound in six regions, and neither Anthropic's nor Microsoft's docs list it. Treat it as not released.
 > bytefwd.com/fable-5-5-leak-litellm-correction/
 

@@ -25,6 +25,14 @@ Only applies if step 4 of the tick-96 block holds (no Ep3 videoId in RSS at grow
 3. Log in GROWTH_LOG with tag `V` (native video), surface (X / Bluesky), post time, and a ~4–6h read: impressions, video views, likes/reposts, profile clicks. Compare with the U post (25 impressions) and text drops (6–10).
 4. When Ep3 later goes live on YouTube, the Only-Ep3 pack still runs then (with the real link), but its X original should quote or reply to this video post rather than re-attach the clip.
 
+
+## Tick 105 (Oct 15 ~7:42 AM MT): Fable still rumor — V beats U3b on Neither
+Official models page still lists `claude-fable-5-1` only (no `claude-fable-5-5`); Anthropic newsroom has no Fable 5.5 post. X rumor volume is high (~171/hr pace at 7 AM MT; Theo's "drops today" post ~146K impressions) but that is **not** a launch. Rules for this morning:
+1. Re-check the models overview + newsroom right before posting. If both pass the drop-day "real" gate, do **not** post U3b or a hot take; leave the episode drop for after a sourced review exists, and still follow the tick-96 branch for Ep3.
+2. If still unannounced **and** Neither (no Ep3 videoId): keep the tick 102–103 **native-video** original as the day's one X post. **Skip U3b** in the same session (and skip Welcome/U1 on Bluesky if the video goes out). U3b is only the fallback when the xclip attach is skipped.
+3. Paste-ready U3b (time-stamp the recheck) lives in `content/drafts/fable-5-5-drop-day-plan.md`. Do not use bank U3.
+4. Ultramarine X→YouTube review links still **0** at ~7:42 AM MT — first-mover claim for Ep3 remains open if/when it uploads.
+
 ## Why this exists
 Tonight two READY queue files compete for one post-reset window:
 - `queue/2026-10-15-ultramarine-1-flash.md` (Ep3, GA 2026-10-14, freshest → upload #1)
