@@ -390,3 +390,4 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 - Flipped `ep4-site-listing.md` so setup title/summary is default (Candidate A = rollback only); copied setup thumb onto `public/episodes/rr-004.jpg`.
 - Queue handoff/thumb/vote/site lines now match tick 140 Ep4-first rank + tick 160 social defaults (no longer "prefer Ep3 packs first").
 - No posts, uploads, comments, channel edits, or pushes from this tick.
+- 2026-10-15 ~5:20 PM MT (strategy tick 162): removed an unfilled placeholder line from Ep4's YouTube description before tonight's publish; validator now checks publish metadata. No posts/uploads.

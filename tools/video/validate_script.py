@@ -31,6 +31,13 @@ def check(S, allow_placeholders=False):
     for k in ("subject",):
         if not allow_placeholders and re.search(r"\[[A-Z]", str(meta.get(k, ""))): err.append(f"meta.{k}: unfilled placeholder")
     if not allow_placeholders and "[" in str(src.get("url", "")): err.append("meta.source.url: unfilled placeholder")
+    # Publish metadata ships verbatim to YouTube: no bracket notes-to-self, no "<>" (API rejects), no private terms.
+    pub = {k: meta.get(k) for k in ("publish_title", "publish_description", "tags", "short_title")}
+    for k, v in pub.items():
+        v = " ".join(v) if isinstance(v, list) else str(v or "")
+        if not allow_placeholders and re.search(r"\[[A-Z][^\]]*\]", v): err.append(f"meta.{k}: unfilled [placeholder] would ship publicly")
+        if re.search(r"[<>]", v): err.append(f"meta.{k}: contains '<' or '>' (YouTube rejects these)")
+        if any(term in v.lower() for term in _blocklist()): err.append(f"meta.{k}: mentions a blocklisted term - not allowed")
     for term in _blocklist():
         if any(term in t.lower() for t in text_all): err.append("script mentions a blocklisted term - not allowed")
     # Count only spoken 'say' text (caption/show duplicate it on screen). Series limit: 150-420 spoken words.
