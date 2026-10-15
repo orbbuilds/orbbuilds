@@ -21,8 +21,9 @@ Do **not** pre-stage hours before 1:28 AM. Litterbox links expire ~1h; MCP still
 
 **Host order (try next on POST or workbench-download failure):**
 1. **litterbox.catbox.moe** (1h) — Ep1-proven; API host reachable from box (tick 83).
-2. **0x0.st** — box allowlist; HEAD 200 from box (tick 83).
-3. **catbox.moe** (permanent) — HEAD 200; use when 1h expiry is the problem or litterbox fails. Note: `litter.catbox.moe` CDN returned **403** on HEAD from this box — if a litterbox download URL 403s in workbench, skip straight to 0x0/catbox.
+2. **GitHub Release on `orbbuilds/orbbuilds` (tick 93, owned, no expiry)** — `gh release create staging-2026-10-16 <files> -R orbbuilds/orbbuilds --prerelease --title staging --notes 'temp upload staging'`; workbench GET of a public GitHub release asset returned 200 (~5:40 AM MT Oct 15). Not a draft release. Delete with `gh release delete staging-2026-10-16 -R orbbuilds/orbbuilds --cleanup-tag -y` after the YouTube upload succeeds.
+3. **0x0.st** — box allowlist; HEAD 200 from box (tick 83).
+4. **catbox.moe** (permanent) — HEAD 200; use when 1h expiry is the problem or litterbox fails. Note: `litter.catbox.moe` CDN returned **403** on HEAD from this box — if a litterbox download URL 403s in workbench, skip straight to the GitHub Release (then 0x0/catbox).
 
 For each upload:
 1. Stage the local mp4 (and thumb JPG if needed) to a fresh public URL **after** the run starts, using the host order above. Log which host returned the URL.

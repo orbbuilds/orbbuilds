@@ -37,7 +37,8 @@ Composio YouTube uploads need an `s3key` from `COMPOSIO_REMOTE_WORKBENCH` (`uplo
 - Stage **inside** the post-reset run, not hours ahead.
 - One episode at a time: stage → workbench → multipart → thumb before starting the next episode's staging.
 - Never reuse a staging URL across attempts or across nights.
-- **Host order (tick 83):** (1) litterbox.catbox.moe 1h (Ep1-proven) → (2) 0x0.st on POST/download fail → (3) catbox.moe permanent. `litter.catbox.moe` CDN HEAD was 403 from the box; if workbench download 403s, switch hosts. Log which host staged each file.
+- **Host order (tick 83):** (1) litterbox.catbox.moe 1h (Ep1-proven) → (2) 0x0.st on POST/download fail → (3) catbox.moe permanent.
+- **Owned backup (tick 93):** GitHub Release asset on our own public repo. Box `gh` is logged in as `orbbuilds` with `repo` scope; the Composio workbench fetched a public GitHub release asset with HTTP 200 (redirects to `release-assets.githubusercontent.com`) on Oct 15 ~5:40 AM MT. Use it as host (2), ahead of 0x0.st: `gh release create staging-YYYY-MM-DD <file.mp4> <thumb.jpg> -R orbbuilds/orbbuilds --prerelease --title staging --notes 'temp upload staging'` → workbench downloads `https://github.com/orbbuilds/orbbuilds/releases/download/staging-YYYY-MM-DD/<file>` → `upload_local_file`. **Never a draft release** (draft assets need auth). Delete right after the YouTube upload succeeds: `gh release delete staging-YYYY-MM-DD -R orbbuilds/orbbuilds --cleanup-tag -y`. Asset limit 2 GiB; no expiry, so a slow run can't lose its URL. Not pushed to main, so no Vercel deploy. `litter.catbox.moe` CDN HEAD was 403 from the box; if workbench download 403s, switch hosts. Log which host staged each file.
 - On any fail, write the **exact** tool error into the queue status line (`FAILED (...)` or `CARRIED to … (...)`) and GROWTH_LOG — never leave "failed" without the string.
 
 ## Upload args (tick 49)
