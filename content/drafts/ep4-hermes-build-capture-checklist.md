@@ -20,28 +20,42 @@ capture stills for the review `screen` field, and leave a clear pass/fail note f
 ## Ordered steps
 1. **Preflight (Shell, no GUI launch yet)**  
    - Confirm `tools/video/capture.sh` exists and display is `:2` (or set `CAPTURE_DISPLAY`).  
-   - Do **not** test-launch `hermes desktop` first.
-2. **Start recording before first launch**  
+   - Do **not** test-launch `hermes desktop` first.  
+   - **Box state (tick 132, Oct 15 ~12:20 PM MT):** still fresh for the one-shot trial — no `~/.hermes`, `hermes` not on PATH; `node` v20.19.2 + `npm` 9.2.0 + `gcc` 14.2 + `libatomic1` present; `DISPLAY=:2` and `/tmp/.X11-unix/X2` up; `tools/video/capture.sh` present. Public YouTube RSS still **Neither** (Ep0 `aCvkp11w9_8` 6 views / Ep1 `L7fdRoNWEPE` 9 views). Re-check `ls ~/.hermes` + `command -v hermes` at session start; if either exists, stop and ask — the trial may already be burned.
+2. **CLI install first (OK before recording — trial is desktop-only)**  
+   - **Version pin (tick 130; reconfirmed tick 132):** latest GitHub release is still **v0.22.2** (published 2026-10-15 08:21 UTC). Never capture on 0.22.1 (wrong-commit build). Log `hermes --version` in the capture notes.  
+   - Use **`--non-interactive`** so the installer skips `setup` / gateway prompts. An interactive install that configures a provider/key before the first desktop launch kills the "no provider" trial path.  
+   - Paste-ready (do **not** add `--include-desktop` here — build desktop later under the recorder so the first GUI launch is on camera):
+     ```bash
+     curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash -s -- --non-interactive
+     source ~/.bashrc   # or open a fresh shell so ~/.local/bin is on PATH
+     hermes --version   # must show 0.22.2 (or hermes update / reinstall if not)
+     ```
+   - Hard bans still apply after install: no `hermes setup`, `hermes setup --portal`, `hermes model`, `auth upgrade`, `/login`, or connectors before the first `hermes desktop`.
+3. **Start recording before first desktop launch**  
    ```bash
    tools/video/capture.sh start hermes-agent-v0-22
    ```
-3. **Install / launch (computerUse drives the GUI; Shell only for CLI install if needed)**  
-   - **Version pin (tick 130, Oct 15 ~11:58 AM MT):** install **v0.22.2** (GitHub release 2026-10-15 08:21 UTC). Nous says **v0.22.1 was built from the wrong commit** (shipped unreleased gateway work; Microsoft Store app could stick on "Connecting"), so never capture on 0.22.1. Known issue per Nous: sessions run under the 0.22.1 gateway can't be deleted in 0.22.2, which is irrelevant on a fresh box install. Log the exact `hermes --version` (or installer) output in the capture notes.  
-   - Linux path: CLI install then `hermes desktop` (or installer `--include-desktop` from-source).  
-   - Fresh desktop install is required for the guided chat; existing/remote backends skip it.
-4. **Stills at key moments** (labels become filenames under `content/drafts/captures/hermes-agent-v0-22/`):  
+4. **Desktop launch (computerUse drives the GUI)**  
+   - Linux has **no** packaged Desktop download (macOS/Windows only). After CLI install:
+     ```bash
+     hermes desktop
+     ```
+     That builds Electron from source on first run (~114 MB download; budget real minutes). Optional rebuild: `hermes desktop --build-only --force-build`. If the Electron download stalls, docs allow `ELECTRON_MIRROR`.  
+   - Fresh desktop install is required for the guided `nous/welcome` chat; existing/remote backends skip it. CLI/TUI get **no** free trial model.
+5. **Stills at key moments** (labels become filenames under `content/drafts/captures/hermes-agent-v0-22/`):  
    ```bash
    tools/video/capture.sh still hermes-agent-v0-22 welcome   # guided chat / first screen
    tools/video/capture.sh still hermes-agent-v0-22 trial     # nous/welcome or equivalent
    tools/video/capture.sh still hermes-agent-v0-22 reply     # model answering (if it does)
    tools/video/capture.sh still hermes-agent-v0-22 fail      # if key-ask / error instead
    ```
-5. **Stop + extract scene stills**  
+6. **Stop + extract scene stills**  
    ```bash
    tools/video/capture.sh stop hermes-agent-v0-22
    tools/video/capture.sh stills hermes-agent-v0-22 6
    ```
-6. **Write the handoff note** (append to the Ep4 queue or a short note the 9:28 PM run can read):  
+7. **Write the handoff note** (append to the Ep4 queue or a short note the 9:28 PM run can read):  
    - Gate: **PASS** / **FAIL** / **PARTIAL** (one line why).  
    - Paths of 1–3 best PNGs for script `screen` (repo-relative).  
    - Do not invent screenshots if capture failed.
