@@ -401,3 +401,5 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 - Web search: no YouTube video found for Hermes Agent **v0.22** / **no API key** / `nous/welcome` — Ep4's niche looks open vs long full-install tutorials.
 - Live Ep4 chapter label → `Setup: no-key desktop on camera`. Short-meta dry-run (52.6 s) → `Hermes Agent v0.22 setup in 55 seconds (no API key)`.
 - No posts, uploads, comments, channel edits, or pushes from this tick.
+
+- 2026-10-15 ~5:55 PM MT (strategy tick 165): Ep4 cold open rewritten to lead with the on-camera no-key setup so the hook matches the setup-first title; numbers kept as release-note claims. Desk-only.
