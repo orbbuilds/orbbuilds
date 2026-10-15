@@ -7,7 +7,7 @@
 - Status: **PENDING_RENDER** (script PASS-flipped tick 158; no mp4 yet). Production renders → fills paths → flips READY. If it cannot render tonight, leave PENDING; do not invent READY.
 
 - **Title gate (3:23 PM MT Oct 15 build):** **PASS** — see `content/drafts/captures/hermes-agent-v0-22/HANDOFF.md`. Use setup title/thumb/tags. Status remains PENDING_RENDER until mp4s exist.
-- **PASS flip APPLIED (strategy tick 158, ~4:45 PM MT):** live script already has setup `publish_title` / thumb / `publish_description` / setup tags / caveats `say`+`show`+`screen` (`01-welcome.png`, `04-reply.png`) / `short_title` with `[N]` placeholder. 9:28 PM: **do not re-copy** `_on_pass` fields. Render → confirm zero `warn: screen not found` → fill `[N]` from Short duration → regenerate chapter stamps → flip READY.
+- **PASS flip APPLIED (strategy tick 158, ~4:45 PM MT):** live script already has setup `publish_title` / thumb / `publish_description` / setup tags / caveats `say`+`show`+`screen` (`01-welcome.png`, `04-reply.png`) / `short_title` with `{secs}` (auto-filled by `short_publish_meta.py` from the real Short duration, tick 159). 9:28 PM: **do not re-copy** `_on_pass` fields. Render → confirm zero `warn: screen not found` → confirm `-short-meta.json` title starts `Hermes Agent v0.22 setup in` → regenerate chapter stamps → flip READY.
 
 - Script (PASS-flipped tick 158): `content/scripts/2026-10-16-hermes-agent-v0-22.json` — setup title/screens live in meta; still PENDING_RENDER until mp4 exists. Do not treat as READY.
 - Episode: RR-004 / Episode 4 (daily)
@@ -30,7 +30,7 @@
 - Music (#20 / tick 85): confirm `video-build/<slug>/music.wav` came from a **non-1** seed (seed from script name in `make_review.sh`). Log seed in episode notes.
 - Facts from Nous GitHub v0.22.0 release notes only. Allowed: "a third smaller" (Nous claim). Forbidden: AICoder 34%/LOC. Not affiliated.
 
-- Short file: (fill after post_render) `…-hermes-agent-v0-22-short.mp4` + `…-short-meta.json` (CTA end card via `post_render.sh`). Paste full-episode URL. Never burn Short before older CARRIED mains (Ep3, then Ep2). Short title (tick 120): generator now gives `Hermes Agent v0.22 in [N] seconds (is it replacing me?)` via `meta.short_product`. If the build-session title gate PASSES (setup title), copy `meta._short_title_on_pass` into `meta.short_title` with the real N before `post_render.sh`; on FAIL leave it unset.
+- Short file: (fill after post_render) `…-hermes-agent-v0-22-short.mp4` + `…-short-meta.json` (CTA end card via `post_render.sh`). Paste full-episode URL. Never burn Short before older CARRIED mains (Ep3, then Ep2). Short title (tick 120): generator now gives `Hermes Agent v0.22 in [N] seconds (is it replacing me?)` via `meta.short_product`. If the build-session title gate PASSES (setup title), copy `meta._short_title_on_pass` into `meta.short_title` with the real N before `post_render.sh`; on FAIL leave it unset. **(Tick 159: superseded. PASS already applied; `{secs}` fills itself. A literal `[N]` made the generator silently fall back to the news title.)**
 
 - Channel SEO (#11, APPROVED): after main succeeds, apply once per night if not already done. Add this videoId to "AI Release Reviews" playlist. ~50 units — never before main.
 

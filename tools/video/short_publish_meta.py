@@ -62,7 +62,10 @@ def build(meta: dict, *, duration_s: float | None, cta: bool, short_file: str | 
     if len(title) > 70:
         title = f"{product} ({blurb})"
     override = (meta.get("short_title") or "").strip()
-    if override and "[" not in override:
+    # tick 159: "{secs}" in short_title is filled from the real Short duration here,
+    # so a title-gate override no longer needs a manual [N] fill after post_render.
+    override = override.replace("{secs}", str(secs))
+    if override and "[" not in override and "{" not in override:
         title = override
 
     source = meta.get("source") or {}
