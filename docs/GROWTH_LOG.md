@@ -106,3 +106,5 @@ Source of truth for pattern definitions: `docs/AUDIENCE_STRATEGY.md`.
 
 - 2026-10-14 ~8:55 PM MT (audience strategy tick 41): opened experiment #14, a standard YouTube description footer linking the previous live review, the site, code, X and Bluesky. Wired into the publish checklist, script template and Ep3 pack. Baseline to log at first footer upload: Ep1 views (6 on Oct 14). No posts or uploads.
 - 2026-10-14 ~8:56 PM MT (audience strategy tick 42): applied experiment #14 footer to the queued Ep2 script description (Previous → Ep1 `L7fdRoNWEPE`, site, Bluesky added; playlist skipped tonight). So the first upload that uses this meta is the #14 baseline. No posts or uploads.
+
+- 2026-10-14 ~9:25 PM MT (strategy tick 44): Ep5 candidate pack drafted (`content/drafts/ep5-p3-p2-title-pack.md`, Ling-3.1-flash, P3 if N real tasks else P2). Autocomplete: no demand for "ling 3.1 flash"; "ling flash 2.0" exists. No posts or uploads.
