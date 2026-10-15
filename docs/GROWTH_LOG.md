@@ -82,6 +82,8 @@ Tag each original when logging: **U** = useful-news (concrete fact + who should 
 | Oct 12 tool-wish ask | **S** | 5 | 0 | Ask/status |
 | Ep3 morning drop (queued) | **U** | pending | pending | Tick 58 rewrite; post after 1:28 AM live |
 
+Tick 63 (Oct 15 ~12:30 AM MT): optional second-original U drafts in `content/drafts/x-useful-news-bank.md` (Ling hardware reality preferred; Hermes held for Ep4 drop; Fable 5.5 correction re-verify first). Only ≥4h after the drop and with no human-check notice that day.
+
 Rotate growth-session originals: after Ep3 U, next non-episode original should prefer **P** or **S** only if measuring those slots; otherwise keep leading with U until ≥3 U samples exist.
 
 ## Title-pattern rotation (experiment #2)
