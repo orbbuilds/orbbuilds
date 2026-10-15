@@ -70,3 +70,6 @@ Open-ended asks on originals ("what should I build?", "what do you wish existed?
 
 ## Spacing rule (tick 71, Oct 15 ~1:48 AM MT)
 Every X original so far went out in a same-minute pair at ~1:30 PM MT. Today: **one** X original per session and at most one per ~4h window. If the Ep3 U-drop goes out in the ~11:23 AM growth session, the 1:23 PM content run posts no other X original before ~3:30 PM MT. Log the post time (MT) next to the U/P/S tag in GROWTH_LOG.
+
+## Tick 73 note (Oct 15 ~2:10 AM MT)
+RSS re-check ~2:07 AM MT: still Neither. Next upload attempt uses `content/drafts/2026-10-16-publish-recovery.md` (stage fresh in-window; do not pre-stage). Ultramarine first-mover on YouTube still open (0 X→YT links). Social gate unchanged until a real videoId exists.

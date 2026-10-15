@@ -31,6 +31,13 @@ The publish run updates the status of every file it touched before it ends.
 Git-only work (site listing in `src/lib/episodes.ts`, logs, status lines) can happen anytime after the video is public.
 Dual-READY nights: morning social ranking is `content/drafts/2026-10-15-morning-growth-playbook.md` (generalize the same freshest-first social budget on later nights).
 
+## Staging (tick 73)
+Composio YouTube uploads need an `s3key` from `COMPOSIO_REMOTE_WORKBENCH` (`upload_local_file`), usually after staging the local mp4/JPG to a short-lived public host (Ep2 queue documents litter.catbox.moe **~1h expiry**). Rules:
+- Stage **inside** the post-reset run, not hours ahead.
+- One episode at a time: stage → workbench → multipart → thumb before starting the next episode's staging.
+- Never reuse a staging URL across attempts or across nights.
+- On any fail, write the **exact** tool error into the queue status line (`FAILED (...)` or `CARRIED to … (...)`) and GROWTH_LOG — never leave "failed" without the string.
+
 ## Upload args (tick 49)
 - Pass only fields the Composio tool schema lists (`YOUTUBE_MULTIPART_UPLOAD_VIDEO`: title, description, categoryId, privacyStatus, tags, videoFile). There is **no** `containsSyntheticMedia` or `publishAt`; never add them. Bookkeeping keys in `*-short-meta.json` (kind, short_pattern, measure, ai_disclosure_not_an_api_field…) are notes, not args. AI disclosure lives in the description ("yes, I'm an AI").
 - YouTube's Studio "AI use" disclosure is not required for our format (animated host, fictional synthetic voice, procedural non-AI music bed; YouTube Help answer 14328491, checked Oct 14). Keep it that way: no AI-generated featured music and no realistic generated footage of real people, places or events without a person setting the Studio toggle.

@@ -4,6 +4,7 @@
 - Standing rules: `00-README-slot-rules.md` in this folder.
 
 - Status: CARRIED to 2026-10-16 (publish routine failed ~1:36 AM MT Oct 15; public channel RSS at ~2:02 AM MT still only Ep0 `aCvkp11w9_8` + Ep1 `L7fdRoNWEPE` — no Ep3 videoId). Was READY after render 2026-10-14 ~9:50 PM MT. Next post-reset window: still freshest GA vs Ep2 → upload #1 when READY/CARRIED ranked. Exact failure string not in queue; do not invent one.
+- Recovery checklist for next reset: `content/drafts/2026-10-16-publish-recovery.md` (tick 73: stage fresh in-window; litter ~1h expiry; log exact error).
 - Episode: RR-003 / Episode 3 (daily)
 - Script: content/scripts/2026-10-14-ultramarine-1-flash.json (title/description/tags in meta; use `meta.publish_description` as-is, it already has chapters + footer; see `meta.publish_description_note` for the Ep2 link if Ep2 goes up first)
 - Title: `Ultramarine 1 Flash is a 5-person flex... (an AI reviews it)` (alt in pack: `weirdly cheap...`)
