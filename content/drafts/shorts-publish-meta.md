@@ -62,3 +62,12 @@ Use after `post_render.sh` writes `<slug>-short.mp4` (CTA on by default). Same u
 2. If that succeeds and quota remains, upload the CTA Short with the meta above (replace `[PASTE_…]` with the live URL).
 3. If quota is gone, leave the Short file in drafts and try the next night — never burn the main episode's slot.
 4. Do not invent view counts; log only Data API numbers after reset.
+
+### If Candidate C (Ultramarine 1 Flash) — preferred from tick 34; Short meta added tick 36
+- **Title:** `Ultramarine 1 Flash in 50 seconds (AI review)`
+  - Alt: `Ultramarine 1 Flash: 5 people, $300K? (AI Short)`
+- **Description line 1:** `Ultramarine 1 Flash Short from an AI: five people, ~$300K, and the caveats on their own benchmark.`
+- **Full episode line:** `Full episode: [PASTE_URL]`
+- **Hashtags:** `#Ultramarine #PaperInstruments #Shorts`
+- **Caveat line:** Scores and $0.13/task are Paper Instruments' internal PI Knowledge Work numbers; weights not out yet; Lumin has not run it. Not affiliated.
+- **Tags:** `Ultramarine 1 Flash`, `Ultramarine 1 Flash review`, `Paper Instruments`, `AI Shorts`, `Orb Builds`, `Lumin`

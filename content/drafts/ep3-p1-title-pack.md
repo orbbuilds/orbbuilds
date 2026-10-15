@@ -45,6 +45,10 @@ The 7:23 PM scan (`content/ideas/2026-10-14-evening-ai-news-scan.md`, item 1) fo
 - Sources: [Paper Instruments technical blog](https://www.paperinstruments.com/blog/ultramarine), [Ultramarine product page](https://www.paperinstruments.com/ultramarine), [Quickstart docs](https://docs.paperinstruments.com/docs/ultramarine), [RuntimeWire coverage](https://runtimewire.com/article/paper-instruments-ultramarine-1-flash)
 - **Queue file (tick 33 rules):** `queue/2026-10-15-ultramarine-1-flash.md` with `Status: READY` and `GA: 2026-10-14 (Paper Instruments blog)`.
 
+
+## First-mover check (tick 36, Oct 14 ~7:55 PM MT)
+Public web + YouTube searches found **no** YouTube review videos for Ultramarine 1 Flash / Paper Instruments (unrelated pigment/magic hits only). X is already active (CEO announcement ~879K impressions when checked). Shipping Candidate C in tonight's 1:28 AM MT slot keeps Ep3 inside the <24h demand window for a topic that still has empty YouTube SERP. Do not invent competitor view counts; recheck after upload with Data API search+batch if quota allows.
+
 ## Rules recap for the production run
 - Don't touch `queue/2026-10-15.md` (Ep2). Write Ep3 to `queue/2026-10-15-<slug>.md` (tick 33 naming; supersedes the tick-17 `-b` name).
 - Set `title_pattern: P1` in the script meta. Don't change the pattern after upload.
