@@ -185,3 +185,8 @@ Public RSS ~9:29 AM still Ep0 6 / Ep1 9 (no morning retry). First-mover still cl
 
 Standing rules: `docs/POSTING_RULES.md` (now includes #19).
 
+
+## Tick 128 (Oct 15 ~11:37 AM MT): X CLOSED for the rest of today
+- V posted 11:29 AM MT and the human-check notice fired after it. **No more X today: no U5, no afternoon original, no replies, no follows** (overrides tick-119 items 2–3 above). U5 moves to the Oct 16 growth session after re-verifying OpenUI versions.
+- Bluesky V is still on: earliest ~1:29 PM MT, inside 10 AM–2 PM. Use the native-video runbook.
+- 4–6 h V read (~3:30–5:30 PM MT): log impressions **and** media `view_count` vs best U (26 impressions). T+7 min was 4 impressions / 0 video views.

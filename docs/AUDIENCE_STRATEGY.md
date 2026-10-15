@@ -1015,7 +1015,17 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - **Rule for the scans:** treat a jump to roughly **≥3× the plateau (~500+/hr)** in `"Fable 5.5"` counts, or a 5.5 row on the models overview, as the launch signal that triggers `content/drafts/fable-5-5-drop-day-plan.md` + WakeParent. A plateau in the 140–185 band is still rumor; do not pivot Ep4 off Hermes on it. Threshold is a heuristic from one comparison, not a measured law.
 - Read-only (2 X count calls, 1 docs fetch). No uploads, posts, comments, channel edits or signups.
 
+## V went out; human-check notice closes X for the rest of Oct 15 (experiments #22/#17, tick 128, Oct 15 ~11:37 AM MT)
+- Growth session posted V at 11:29 AM MT: [V post](https://x.com/OrbBuilds/status/2110785068839153774) (52.6 s Ultramarine xclip, receipts-only caption). Public metrics at ~11:36 AM MT (T+7 min): **4 impressions**, 0 likes/replies/RTs/bookmarks, media `view_count` **0**. Baseline to beat at the 4–6 h read: best U (vLLM `2110453798120665321`) 26 impressions.
+- The graduated-access human-check notice fired after this **single** post, so per POSTING_RULES rule 2 X is closed for the day. That overrides the tick-119 afternoon plan: **no U5 and no X original from the 1:23 PM content-drafts run or the 3:23 PM build session today**; U5 moves to the Oct 16 growth session (re-verify OpenUI package versions first). The @CorbenicAI thank-you and @somi_ai reply also wait until Oct 16, max one.
+- Bluesky is a separate platform and the notice is X-only, so the deferred Bluesky V (earliest ~1:29 PM MT, inside the 10 AM–2 PM window) still stands.
+- V read now has a second signal: the X API returns media `view_count` for native video, so the 4–6 h read logs impressions **and** video views (watch-through proxy for #22 vs text U posts).
+- Read-only (1 X post read). No uploads, posts, comments, channel edits or signups.
+
 ## Last tick
+- **2026-10-15 ~11:37 AM MT (tick 128).** #22/#17: V posted 11:29 AM MT (T+7 min: 4 impressions, 0 eng, 0 video views). Human-check notice after one post closes X for Oct 15, so U5 and any afternoon X original are cancelled today and move to Oct 16; Bluesky V ~1:29 PM still OK. Playbook updated. No WakeParent (rule already standing; no user decision). Read-only.
+  - Next recommended tick: ~3:30–5:30 PM V read (impressions + media view_count vs best U 26). Confirm the Bluesky V posted after ~1:29 PM. 3:23 PM: Hermes capture + site hero refresh (no X post). 7:23 PM scan: Fable launch-signal rule once. After 9:28 PM confirm Ep4 `-xclip.mp4`. Oct 16 ~10 AM–noon: Ep1 Analytics read. Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot without operator OK.
+
 - **2026-10-15 ~11:31 AM MT (tick 127).** #3/#4: Fable 5.5 still not official (models overview 5.1 only). X rumor plateaued at ~140–185 posts/hr since 4 AM MT, about 2× the real Ultramarine launch's first-hours peak (68–99/hr). Added a launch-signal rule (~500+/hr or a 5.5 row on the models page) so scans stop re-checking a flat rumor; Ep4 stays Hermes. No WakeParent (no launch, no decision). Read-only; no uploads, posts, comments, channel edits or signups.
   - Next recommended tick: ~4–6h after growth posts V, read impressions vs tick-122 baseline (#22). 3:23 PM: Hermes capture + site hero refresh. 7:23 PM scan: apply the Fable launch-signal rule once (one counts call). After 9:28 PM confirm Ep4 `-xclip.mp4`. Oct 16 ~10 AM–noon: Ep1 Analytics read. Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot without operator OK.
 
