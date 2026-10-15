@@ -1,5 +1,5 @@
 {
-  "_how_to_use": "Copy to content/scripts/<yyyy-mm-dd>-<slug>.json, replace every [PLACEHOLDER], keep the six sections in order. 'say' is what Lumin speaks; 'caption' (optional) overrides the on-screen subtitle; 'show' (optional) adds an on-screen bullet when the line starts; 'cite' (what_dropped only) says where in the official announcement the claim comes from; 'pause' is seconds of silence after the line. Aim for 150-420 spoken words (1-3 minutes). Lumin is a he/him character: write 'he/him/his' wherever a third-person pronoun is needed (titles, descriptions, captions); in narration he speaks as 'I'. Optional per line: 'gesture' (wave|point|open_arms|shrug|rest; auto-picked from section/keywords if omitted) and 'cta': 'like_subscribe' to force the like/subscribe button animation ('none' to suppress; it also triggers automatically when a line says both 'like' and 'subscribe').",
+  "_how_to_use": "Copy to content/scripts/<yyyy-mm-dd>-<slug>.json, replace every [PLACEHOLDER], keep the six sections in order. 'say' is what Lumin speaks; 'caption' (optional) overrides the on-screen subtitle; 'show' (optional) adds an on-screen bullet when the line starts; 'cite' (what_dropped only) says where in the official announcement the claim comes from; 'pause' is seconds of silence after the line. Aim for 150-420 spoken words (1-3 minutes). Lumin is a he/him character: write 'he/him/his' wherever a third-person pronoun is needed (titles, descriptions, captions); in narration he speaks as 'I'. Optional per line: 'gesture' (wave|point|open_arms|shrug|rest; auto-picked from section/keywords if omitted) and 'cta': 'like_subscribe' to force the like/subscribe button animation ('none' to suppress; it also triggers automatically when a line says both 'like' and 'subscribe'). Outro must end with a numbered audience vote (reply 1, 2 or 3): three real build options Lumin can actually do with this product; match the pinned comment text. Never leave a vague 'tell me in the comments' ask from Ep3 on.",
   "meta": {
     "series": "Release Reviews",
     "episode_id": "RR-[NNN]",
@@ -31,7 +31,7 @@
       "line1": "[WORD 1]",
       "line2": "[WORD 2 or empty]",
       "hl": 2,
-      "tag": "AI host · [honest status, e.g. not tested yet]"
+      "tag": "AI host \u00b7 [honest status, e.g. not tested yet]"
     }
   },
   "sections": [
@@ -135,8 +135,8 @@
           "gesture": "point"
         },
         {
-          "say": "And if there's something you want me to build, tell me in the comments.",
-          "show": "What should I build next?"
+          "say": "You pick what I throw at [Product] next. Reply 1, 2 or 3. 1: [real build option A]. 2: [real build option B]. 3: [real build option C or skip]. Most replies wins, and I'll show the real count on screen.",
+          "show": "Reply 1, 2 or 3"
         }
       ]
     }

@@ -13,9 +13,11 @@ Template: `content/scripts/templates/new_release_review.json`. Six fixed section
 | 3 | Why I'm hyped | Lumin's opinion, said as opinion ("My opinion:"). Jokes about Lumin, never about people. | `MY OPINION` badge |
 | 4 | Honest caveats | What is unproven or unstated. Say plainly it is untested if it is. | `HONEST CAVEATS` badge |
 | 5 | I'm going to build with it | One-line build plan; this is the promise the next episode keeps. | terminal-style `UP NEXT` panel |
-| 6 | Outro | "I'm an AI, building in public", subscribe, ask what to build next. | `I'M AN AI` badge |
+| 6 | Outro | "I'm an AI, building in public", subscribe, then a **numbered vote** (reply 1, 2 or 3) with three real build options. Match the pinned comment. | `I'M AN AI` badge |
 
-Length: 150-420 spoken words. Captions are word-aligned to the voice, music is ducked under speech, Lumin glows with the voice (his face is a still image).
+Length: 150-420 spoken words.
+
+**Audience vote (experiment #7, from Ep3 on):** the last outro line is always "Reply 1, 2 or 3" with three options Lumin can actually build with that episode's product. The pinned comment after upload uses the same three options. Do not leave a vague "tell me in the comments" ask. If nobody votes, say so on camera and let Lumin pick. Captions are word-aligned to the voice, music is ducked under speech, Lumin glows with the voice (his face is a still image).
 
 Render (local, free, no keys): see section 7.
 
