@@ -20,6 +20,12 @@ Nothing here has been sent, signed up for, or spent.
    puts the daily cadence back on track. A passing read doesn't prove ~1,600 upload units remain; the
    worst case is one more logged failure and Ep3 stays carried. Do it before ~10 AM MT.
 
+0b. **If item 0 works, keep a daily ~6:28 AM catch-up upload window.** [tick 97, #3/#13]
+   One render a night and at most one upload a night (2 uploads in 6 days so far) keeps two finished
+   episodes waiting forever, and Ep2 never ships before it goes stale. A morning slot that runs only when a
+   CARRIED main exists (main upload only, exact error logged) doubles capacity on the free shared quota.
+   If item 0 fails on quota, skip this and lean on decision 1 instead.
+
 ## Decisions, ranked
 1. **Own Google OAuth app for YouTube (dedicated quota).** [tick 4, #3/#13]
    Why now: shared Composio quota blocked uploads on Oct 11, 12 and 14 (Oct 15's cause is unknown, see
