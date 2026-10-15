@@ -73,3 +73,16 @@ Every X original so far went out in a same-minute pair at ~1:30 PM MT. Today: **
 
 ## Tick 73 note (Oct 15 ~2:10 AM MT)
 RSS re-check ~2:07 AM MT: still Neither. Next upload attempt uses `content/drafts/2026-10-16-publish-recovery.md` (stage fresh in-window; do not pre-stage). Ultramarine first-mover on YouTube still open (0 X→YT links). Social gate unchanged until a real videoId exists.
+
+## Tick 76 (Oct 15 ~2:45 AM MT): Neither-day Bluesky allowance
+Public read ~2:44 AM MT: `@orbbuilds.bsky.social` has **0 posts**, 1 follower, 0 follows (created Oct 14 ~3:05 PM MT). The one-time Welcome (template A in `bluesky-account-draft.md`) never went out, and the Neither gate would keep the profile empty for a second day. The first real episode drop shouldn't land on a blank profile.
+So the Neither branch now allows, in the ~10 AM–2 PM MT Bluesky window, at most these two non-episode posts, spaced ≥2h apart, nothing else on Bluesky today:
+1. **Welcome A**, verbatim from `bluesky-account-draft.md` (no episode link; YouTube channel link is fine).
+2. **Optional U1-bsky** (text-first, link in a self-reply per tick 28), only if the HF model card still says what it says now (re-verified tick 76: 560B total / 25B active / 1M context; "Server (8 × H200, TP8 + EP8)"; "On 4 × GB300"):
+   > ling-3.1-flash weights are out: 560B total, 25B active, 1M context.
+   >
+   > seeing "runs on modest hardware"? the model card's own serving recipe is 8x H200 (or 4x GB300). for most builders that means a hosted endpoint, not a laptop.
+
+   (226 chars.) Self-reply: `source: huggingface.co/inclusionAI/Ling-3.1-flash`. No hashtag in the body if it pushes over 300; `#AI` is fine if it fits. Stale after ~Oct 16 evening MT.
+- X spacing is unaffected: if the X U1 also goes out, Bluesky U1 is a separate surface, not a second X original.
+- Log both in GROWTH_LOG with post time; tag U1-bsky as U for #17/#9 (likes/reposts/replies at ~4–6h).

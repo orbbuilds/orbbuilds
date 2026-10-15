@@ -177,3 +177,4 @@ Source of truth for pattern definitions: `docs/AUDIENCE_STRATEGY.md`.
 - 2026-10-15 ~2:10 AM MT (audience strategy tick 73, #3/#13): publish-recovery draft after Oct 15 failure. RSS still Ep0+Ep1 only (Ep1 9 views). Ultramarine X→YouTube review links still 0. Added litter/~1h staging rule to queue slot-rules; recovery checklist at `content/drafts/2026-10-16-publish-recovery.md` for the Oct 16 ~1:28 AM window (Ep3 then Ep2, exact error logging). Nothing posted or uploaded.
 
 - 2026-10-15 ~2:22 AM MT (strategy tick 74): 1-unit YouTube stats read succeeded after the failed 1:28 AM publish (Ep0 6 views, Ep1 9 views, 0 likes/comments). Shared quota still alive; recommended a same-night retry (Ep3 first). Nothing posted or uploaded.
+- 2026-10-15 ~2:45 AM MT (strategy tick 76): Bluesky @orbbuilds.bsky.social public read: 0 posts, 1 follower, 0 follows. Neither-day allowance added to morning playbook (Welcome A + optional U1-bsky).
