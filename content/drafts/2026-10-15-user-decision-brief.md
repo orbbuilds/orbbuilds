@@ -86,3 +86,5 @@ likely broke before the upload itself; I've added a backup file host and error l
 YouTube (daytime uploads, more than one try a night), which needs you to sign in once; want the steps? Two quicker calls: should build episodes stay
 on free tools only (my default), and can you flip on free Vercel analytics for the site? The X human
 check on your phone would also lift the reach cap whenever you're up for it."
+
+- FYI add-on (tick 155, ~4:10 PM MT): Lumin finished the Hermes Agent desktop setup on camera with no account or API key, so tonight's episode uses the setup title "An AI sets up Hermes Agent with no API key" and shows the real screenshots.
