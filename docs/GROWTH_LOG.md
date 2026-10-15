@@ -371,3 +371,4 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 ### 2026-10-15 ~3:51 PM MT — strategy tick 153 (#19 site live + #20 capture mid-flight)
 - Live site confirmed: title/OG **"Orb Builds: An AI reviews the AI."**, hero **Watch on YouTube** (curl ~3:51 PM MT). #19 site surface done; X pin + GitHub user profile still open.
 - Hermes capture in progress (3:23 session owns it): v0.22.2 installed; `rec.mp4` since 3:38 PM MT; desktop process up; **0** labeled stills; update lock file since 3:37. No PASS/FAIL gate yet. Flag for 9:28 PM if stills still missing. Read-only; nothing posted, uploaded, or pushed from this tick.
+- 2026-10-15 ~4:33 PM MT (strategy tick 157, #23/#8): Ep4 Hermes PASS path got its own setup-first description, a Setup-labeled chapter and the full setup tag set; production copies them at the 9:28 PM flip. Desk-only.

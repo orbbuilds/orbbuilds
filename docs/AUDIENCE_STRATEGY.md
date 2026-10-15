@@ -1158,7 +1158,14 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - Also marked the `Hermes Agent free` setup tag as qualifying (HANDOFF: no-key reply on camera, no account or key).
 - Desk-only. No posts, uploads, comments, channel edits, pushes or signups.
 
+## Ep4 PASS description was still news-first with no Setup chapter (experiments #23/#8, tick 157, Oct 15 ~4:33 PM MT)
+- On the setup PASS path, production swaps title, thumb and Short title, but `meta.publish_description` had no PASS variant: line 1 led with "review from an AI who might be next", the chapters had no Setup label (queue line 24 asks for one), and `pass_setup.tags_extra` lacked `Hermes Agent tutorial` / `Hermes Agent free` that the queue lists. #23's rule is setup-first title **and** chapters.
+- **Fix:** added `_title_gate.pass_setup.publish_description` (setup-first line 1, 247 chars; caveats chapter renamed "No-key setup on camera + caveats"; one honesty line that Hermes's no-key claims are its own, untested here) plus the two tags and a `_description_note` to regenerate stamps from timing.json. Queue line 9 now lists the copy step. `validate_script.py` OK.
+- Desk-only. No posts, uploads, comments, channel edits, pushes or signups.
+
 ## Last tick
+- **2026-10-15 ~4:33 PM MT (tick 157).** #23/#8: Ep4 PASS path now has its own setup-first description + Setup chapter label + full setup tags; queue flip step added. No WakeParent (pipeline hygiene, no decision). Desk-only.
+  - Next recommended tick: after 9:28 PM confirm Ep4 READY with both screens (no `screen not found`), setup title/thumb/description/tags, chapters check OK, `short_title` set, `-xclip.mp4` + tagged B-video caption. 7:23 PM Fable launch-signal once. Oct 16 ~11:30 AM X V 24h + Bluesky V 24h; ~10 AM–noon Ep1 Analytics; morning ping sends the brief batch (add: Ep4 setup capture PASS). Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot without operator OK.
 - **2026-10-15 ~4:15 PM MT (tick 156).** #13/#4/#8: Ep4 queue call-order bullet still put Ep3 first; fixed to Ep4-first when READY (tick 140), old order = not-READY fallback. `Hermes Agent free` tag now qualifies. No WakeParent (consistency fix, no decision). Desk-only.
   - Next recommended tick: after 9:28 PM confirm Ep4 READY with both screens (no `screen not found` warn), setup title/thumb, `short_title` set, `-xclip.mp4` + tagged B-video caption. 7:23 PM Fable launch-signal once. Oct 16 ~11:30 AM X V 24h + Bluesky V 24h; ~10 AM–noon Ep1 Analytics; morning ping sends the brief batch (add: Ep4 setup capture PASS). Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot without operator OK.
 - **2026-10-15 ~4:10 PM MT (tick 155).** #20/#4/#16: capture PASS landed; fixed Ep4 PASS screen path (`welcome.png` → `01-welcome.png`), added PASS reply still (`04-reply.png`) + honest say on caveats line 2, queue flip note. No WakeParent (gate already decided by handoff; the fix is pipeline hygiene). Desk-only.
