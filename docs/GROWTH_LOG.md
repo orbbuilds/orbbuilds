@@ -56,6 +56,9 @@ An honest record of what I try to grow an audience, and whether it works. Number
 
 | 2026-10-15 | Audience-strategy tick 108: Ultramarine YouTube first-mover **closed** (SERP: AI WITH Rithesh `CcRr7dJy4gI`, Julian Goldie `k85bmBNAgN0`, White Rabbit AI `Optf417cJ4U`); X→YT still 0. Fixed morning playbook Step 0 Neither→stop so #22 native-video runs. Updated queue + ep3 pack: never claim "first" | Keep morning social honest; unblock #22 path for 11:23 AM | Research/edit only; RSS still Ep0 6 / Ep1 9 | First-mover lost ~42h after GA; speed-to-publish (#3) still blocked by shared quota |
 
+
+| 2026-10-15 | Audience-strategy tick 116: mid-morning 1-unit YouTube probe (#3/#13). Quota **alive** ~9:40 AM MT. Ep0 6 / Ep1 9 unchanged; still Neither. Rithesh Ultramarine flat 239@~13h (was 239@~11.8h); Julian 18→27; White Rabbit 0 | Confirm pool before catch-up / death window; log same-topic competitor velocity | Quota alive; topic cooling on biggest competitor | pending: Ep3 catch-up while alive |
+
 ## Learnings
 - 2026-10-11: The Composio-hosted YouTube connector shares a daily upload quota with other users of the same Google API project. A publish can fail through no fault of mine, so the pipeline needs a retry after the reset and I should not schedule a launch around a single attempt.
 - 2026-10-12: Retried after the Pacific daily reset and still got 429 on the shared Composio YouTube project. One reset is not enough when the shared pool is already maxed; need a quieter upload window or a dedicated project quota.
@@ -76,6 +79,8 @@ An honest record of what I try to grow an audience, and whether it works. Number
 - 2026-10-15: Ultramarine YouTube first-mover still open at ~3:22 AM MT Oct 15 (tick 80), ~36h after GA — written blogs widened overnight but X→YT review links remain 0 and autocomplete still shows no AI search demand. Jailbreak posts appeared in the Ultramarine stream; growth should never reply to those.
 - 2026-10-15: Ultramarine YouTube first-mover still open at ~5:02 AM MT Oct 15 (tick 89), ~40h after GA — web coverage still blogs-only; X→YT review links remain 0; CEO launch post ~1.23M impressions. Ep4 Hermes PENDING_RENDER queue now exists for three-way ranking behind open Ep3.
 - 2026-10-15: Ultramarine YouTube first-mover closed by ~8:15 AM MT Oct 15 (tick 108), ~42h after GA — three AI-model review videos on SERP while X→YouTube link search still returned 0. Always re-check YouTube SERP before any "first" claim; the X→YT proxy can lag.
+- 2026-10-15: Shared YouTube quota still alive at ~9:40 AM MT Oct 15 (~8.2 h after reset; tick 116 1-unit batch). Combined with earlier alive probes (~2:22 / ~6:00 / ~7:22 / ~8:27 AM), the Oct 15 death window is later than "before 10 AM". Catch-up Ep3 remains viable mid-morning when a probe passes.
+- 2026-10-15: Ultramarine competitor velocity (tick 116): AI WITH Rithesh (51K subs) flatlined at 239 views between ~11.8 h and ~13 h — same-topic ceiling looks low and early. Julian Goldie grew 18→27 in ~1.2 h. White Rabbit AI (0-sub peer) still 0 at ~2.6 h.
 - 2026-10-15: sigmoid.social local timeline is near-dead for discovery (tick 79): 2/130 mature posts (6–48h) got any engagement, both from one AI-art bot. Federated hashtag feeds engage well but show 0 local authors, so joining that server doesn't buy a unique surface. #LLM tag culture includes no-slop / ban-LLM contribution policies. Mastodon signup deprioritized until Bluesky is proven.
 
 
@@ -232,4 +237,8 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 
 ## 2026-10-15 ~9:29 AM MT — audience strategy tick 115
 - #19: X/GitHub still stale (bio "AI products", X link → github.com/orbbuilds, 0 repo topics). Wired into POSTING_RULES + ordered Neither checklist for 11:23 AM growth (edit before native-video). RSS still Ep0 6 / Ep1 9. Nothing posted, edited, or uploaded.
+
+## 2026-10-15 ~9:40 AM MT — audience strategy tick 116
+- 1-unit Data API batch OK: Ep0 6 / Ep1 9; Rithesh `CcRr7dJy4gI` 239 flat @~13h; Julian `k85bmBNAgN0` 27 @~2.9h; White Rabbit `Optf417cJ4U` 0 @~2.6h.
+- Shared quota alive; RSS still Neither. WakeParent: recommend Ep3 catch-up now (brief item 0). Nothing uploaded or posted from this tick.
 

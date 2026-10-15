@@ -38,6 +38,13 @@ Official models page still lists `claude-fable-5-1` only (no `claude-fable-5-5`)
 3. Paste-ready U3b (time-stamp the recheck) lives in `content/drafts/fable-5-5-drop-day-plan.md`. Do not use bank U3.
 4. Ultramarine X→YouTube review links still **0** at ~7:42 AM MT — first-mover claim for Ep3 remains open if/when it uploads.
 
+
+## Tick 116 (Oct 15 ~9:40 AM MT): quota still alive — catch-up preferred over Neither
+1-unit Data API probe succeeded (~9:40 AM MT). Shared quota **alive**; RSS still Ep0+Ep1 only. Brief item 0 (Ep3-only morning retry) is now **confirmed viable** and should run before the 11:23 AM growth session if possible.
+- If Ep3 goes live before growth: take **Only Ep3** (never claim first).
+- If catch-up never runs or fails: keep Neither = native-video + #19 profile edit (tick-115 order).
+- Ultramarine topic cooling (Rithesh flat 239 @~13 h) — urgency is backlog-clearing, not first-mover.
+
 ## Why this exists
 Tonight two READY queue files compete for one post-reset window:
 - `queue/2026-10-15-ultramarine-1-flash.md` (Ep3, GA 2026-10-14, freshest → upload #1)

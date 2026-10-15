@@ -5,17 +5,17 @@ pending operator decision, ranked by how much it unblocks, each with a safe defa
 parent can send one short batched message. Sources are the strategy-doc sections named in brackets.
 Nothing here has been sent, signed up for, or spent.
 
-## Status line to lead with (facts, Oct 15 ~9:20 AM MT, refreshed tick 114)
-- The 1:28 AM publish failed (~1:36 AM MT). Exact error never logged; probes after the window worked, so it likely died before the upload call (staging), **not** proven to be quota. Ep2 + Ep3 stay **CARRIED to Oct 16**. Public RSS ~9:19 AM still only Ep0 (6 views) and Ep1 (9 views). No morning Ep3 retry ran. Shared quota was alive at ~6:00 AM and ~8:27 AM (death window still ~8:27 AM–12:45 PM).
-- Ultramarine YouTube first-mover **closed** (tick 108: AI WITH Rithesh / Julian Goldie / White Rabbit AI reviews live; X→YT still 0). Ep3 still ranks #1 for Oct 16 on freshest GA only — never claim first. Recovery: `content/drafts/2026-10-16-publish-recovery.md`. Ep4 Hermes is PENDING_RENDER (script + tags ready; needs 3:23 PM capture → 9:28 PM finalize).
+## Status line to lead with (facts, Oct 15 ~9:40 AM MT, refreshed tick 116)
+- The 1:28 AM publish failed (~1:36 AM MT). Exact error never logged; probes after the window worked, so it likely died before the upload call (staging), **not** proven to be quota. Ep2 + Ep3 stay **CARRIED to Oct 16**. Public RSS + Data API ~9:40 AM still only Ep0 (6 views) and Ep1 (9 views). **No morning Ep3 retry has run.** Shared quota was **alive at ~9:40 AM MT** (1-unit batch OK; also alive ~6:00 / ~7:22 / ~8:27 AM). Prefer Ep3 catch-up **now** while confirmed; historical death by ~12:45 PM Oct 14.
+- Ultramarine YouTube first-mover **closed** (tick 108). Same-topic demand is cooling: Rithesh flat at 239 views from ~11.8 h→~13 h (tick 116). Ep3 still ranks #1 for Oct 16 on freshest GA only — never claim first. Recovery: `content/drafts/2026-10-16-publish-recovery.md`. Ep4 Hermes is PENDING_RENDER (script + tags ready; needs 3:23 PM capture → 9:28 PM finalize).
 
 ## Do now, no user decision needed (tick 95, ~6:00 AM MT)
 0. **Retry the Ep3 Ultramarine publish this morning instead of waiting for 1:28 AM Oct 16.** [tick 95, #13/#3; urgency reframed tick 114]
    Shared quota was alive at ~6:00 AM and ~8:27 AM MT. **First-mover is gone** (tick 108), so this is no
    longer about being first — it clears the CARRIED pile and frees tonight's 1:28 AM slot for Ep4/Ep2.
    Follow `content/drafts/2026-10-16-publish-recovery.md` (Ep3 only; never claim first; log exact error).
-   A passing read doesn't prove upload units remain; worst case is one more logged failure. Prefer before
-   ~10 AM MT while the pool is still likely alive; after ~10–11 AM a 1-unit probe first.
+   A passing read doesn't prove upload units remain; worst case is one more logged failure.    Tick 116 probe at ~9:40 AM confirmed the pool is still alive — **do the Ep3-only
+   retry now** (do not wait for 1:28 AM Oct 16). If this probe had failed, wait for tonight.
 
 0b. **If item 0 works, keep a daily ~6:28 AM catch-up upload window.** [tick 97, #3/#13]
    One render a night and at most one upload a night (2 uploads in 6 days so far) keeps two finished
