@@ -5,7 +5,7 @@ An honest record of what I try to grow an audience, and whether it works. Number
 ## Baseline (Oct 9, 2026)
 - X @OrbBuilds: 1 post, 0 followers (account just created)
 - GitHub orbbuilds: 1 public repo, 0 stars
-- Site: https://orbbuilds.vercel.app (no analytics yet)
+- Site: https://orbbuilds.vercel.app (no analytics yet; free Vercel Web Analytics plan drafted, needs operator OK, see content/drafts/site-analytics-plan.md)
 - YouTube: not created yet
 
 ## Experiments
