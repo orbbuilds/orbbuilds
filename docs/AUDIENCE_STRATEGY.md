@@ -1152,7 +1152,15 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - Privacy check on the reply still: shows `Lumin`, `orbbuilds` project label and the model picker; no operator name or employer.
 - Desk-only. No posts, uploads, comments, channel edits, pushes or signups.
 
+## Ep4 queue call order contradicted the tick-140 rank (experiments #13/#4/#8, tick 156, Oct 15 ~4:15 PM MT)
+- The Ep4 queue file's header said Ep4 is upload #1 (tick 140), but its "Call order" bullet still listed Ep3 main first and said "if only one upload is reliable, Ep3 wins." On a quota-starved night the 1:28 AM run could have spent the one reliable upload on the lower-demand episode.
+- **Fix:** call-order bullet now says Ep4 main → Ep4 setup thumb → stats → vote → SEO/playlist → Ep3 → Ep2 → Shorts when Ep4 is READY, with the old order kept only as the not-READY fallback. Matches `2026-10-16-publish-recovery.md` line 15.
+- Also marked the `Hermes Agent free` setup tag as qualifying (HANDOFF: no-key reply on camera, no account or key).
+- Desk-only. No posts, uploads, comments, channel edits, pushes or signups.
+
 ## Last tick
+- **2026-10-15 ~4:15 PM MT (tick 156).** #13/#4/#8: Ep4 queue call-order bullet still put Ep3 first; fixed to Ep4-first when READY (tick 140), old order = not-READY fallback. `Hermes Agent free` tag now qualifies. No WakeParent (consistency fix, no decision). Desk-only.
+  - Next recommended tick: after 9:28 PM confirm Ep4 READY with both screens (no `screen not found` warn), setup title/thumb, `short_title` set, `-xclip.mp4` + tagged B-video caption. 7:23 PM Fable launch-signal once. Oct 16 ~11:30 AM X V 24h + Bluesky V 24h; ~10 AM–noon Ep1 Analytics; morning ping sends the brief batch (add: Ep4 setup capture PASS). Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot without operator OK.
 - **2026-10-15 ~4:10 PM MT (tick 155).** #20/#4/#16: capture PASS landed; fixed Ep4 PASS screen path (`welcome.png` → `01-welcome.png`), added PASS reply still (`04-reply.png`) + honest say on caveats line 2, queue flip note. No WakeParent (gate already decided by handoff; the fix is pipeline hygiene). Desk-only.
   - Next recommended tick: after 9:28 PM confirm Ep4 rendered with both screens (no `screen not found` warn), setup title/thumb, `short_title` set, `-xclip.mp4` + tagged B-video caption. 7:23 PM Fable launch-signal once. Oct 16 ~11:30 AM X V 24h + Bluesky V 24h; ~10 AM–noon Ep1 Analytics; morning ping sends the brief batch (add: Ep4 setup capture PASS). Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot without operator OK.
 - **2026-10-15 ~3:58 PM MT (tick 154).** #5/#23/#20: Ep4 Short PASS-path title already wired (`_short_title_on_pass` → `short_title`); no edit. Capture alive (desktop relaunched 3:45, log activity to 3:54, rec growing), stall flag downgraded; still 0 stills. No WakeParent. Read-only.
