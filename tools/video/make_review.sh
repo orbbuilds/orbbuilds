@@ -12,7 +12,8 @@ WORK="/workspace/video-build/${NAME}"; mkdir -p "$WORK"
 "$PY" validate_script.py "$SCRIPT" ${ALLOW_PLACEHOLDERS:+--allow-placeholders}
 "$PY" tts.py "$SCRIPT" "$WORK"
 DUR=$("$PY" -c "import json;print(json.load(open('$WORK/timing.json'))['duration'])")
-"$PY" music_bed.py "$WORK/music.wav" "$DUR"
+SEED=$(( $(printf %s "$NAME" | cksum | cut -d" " -f1) % 2147483646 + 2 ))   # per-episode music variation (never 1 = legacy bed)
+"$PY" music_bed.py "$WORK/music.wav" "$DUR" "${MUSIC_SEED:-$SEED}"
 "$PY" review_render.py "$SCRIPT" "$WORK" "$OUT" --music "$WORK/music.wav"
 echo "draft (NOT published): $OUT"
 bash post_render.sh "$SCRIPT" "$OUT" || true

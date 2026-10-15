@@ -8,6 +8,18 @@ def make(dur, seed=1):
     L = np.zeros(N, np.float32); R = np.zeros(N, np.float32)
     bar = 4.8                                        # seconds per chord (100 bpm, 2 beats/bar x ... slow feel)
     prog = [[57, 60, 64], [53, 57, 60], [48, 55, 64], [55, 59, 62]]   # Am F C(add) G
+    arp = [0, 1, 2, 1, 2, 1, 0, 1]
+    if seed != 1:   # per-episode variation (YouTube spam policy: avoid identical music across videos); seed 1 = original bed
+        v = np.random.RandomState(seed)
+        progs = [prog,
+                 [[48, 52, 55], [55, 59, 62], [57, 60, 64], [53, 57, 60]],   # C G Am F
+                 [[57, 60, 64], [55, 59, 62], [53, 57, 60], [55, 59, 62]],   # Am G F G
+                 [[53, 57, 60], [55, 59, 62], [52, 55, 59], [57, 60, 64]],   # F G Em Am
+                 [[50, 53, 57], [55, 59, 62], [48, 52, 55], [57, 60, 64]]]   # Dm G C Am
+        sh = int(v.randint(-3, 4))                                           # transpose -3..+3 semitones
+        prog = [[n + sh for n in c] for c in progs[v.randint(len(progs))]]
+        bar = float(v.choice([4.2, 4.5, 4.8, 5.2]))
+        arp = [[0, 1, 2, 1, 2, 1, 0, 1], [0, 2, 1, 2, 0, 2, 1, 2], [0, 1, 2, 0, 1, 2, 1, 0], [2, 1, 0, 1, 2, 1, 0, 1]][v.randint(4)]
     for b in range(int(dur / bar) + 1):
         a = b * bar; ch = prog[b % 4]
         i0 = int(a * SR); n = min(int((bar + 1.2) * SR), N - i0)
@@ -22,7 +34,7 @@ def make(dur, seed=1):
         # arpeggio (eighth-ish notes)
         step = bar / 8
         for j in range(8):
-            note = ch[[0, 1, 2, 1, 2, 1, 0, 1][j]] + 12
+            note = ch[arp[j]] + 12
             ts = a + j * step + (rng.rand() * 0.01)
             i = int(ts * SR); m = min(int(1.6 * SR), N - i)
             if m <= 0: continue
