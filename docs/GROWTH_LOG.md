@@ -99,10 +99,16 @@ Source of truth for pattern definitions: `docs/AUDIENCE_STRATEGY.md`.
 |---------|---------|------------------------------|------------|------------|--------|
 | Ep1 | P1 | GPT-6 Intelligent UI is WILD (an AI reacts) | — | 6 (as of Oct 14 growth session; age >24h) | Data API earlier Oct 14 |
 | Ep2 | P2 | Gemini 4 Argon is INSANE? An AI reads the receipts | pending publish | pending | queued for ~1:28 AM MT Oct 15 |
-| Ep3 | P1 | TBD when topic locks | | | |
-| Ep4 | P5 | Planned: `I asked Hermes Agent if it's replacing me` (pack filled tick 35; swap if topic changes) | | | |
+| Ep3 | P1 | Ultramarine 1 Flash is a 5-person flex... (an AI reviews it) | pending publish | pending | queued READY #1 for ~1:28 AM MT Oct 15 (GA Oct 14) |
+| Ep4 | P5 (or P5+setup) | Planned: `I asked Hermes Agent if it's replacing me`; `An AI sets up Hermes Agent with no API key` only if the tick-61 gate passes (desktop guided setup or local model, no account) | | | |
 | Ep5 | P3 if real N else P2 | TBD | | | |
 | Ep6 | P4 if real vs else P1 | TBD | | | |
+
+**When to read each row (tick 67, Oct 15 ~1:15 AM MT).** Daytime YouTube reads fail on shared quota, so the ~24h and ~72h reads ride the nightly post-reset window, after that night's uploads succeed (one `YOUTUBE_GET_VIDEO_DETAILS_BATCH` call covers every live episode, ~1 unit):
+- Ep2 + Ep3 (uploaded ~1:30 AM Oct 15): ~24h read in the **Oct 16** window, ~72h read in the **Oct 18** window. Ep1 rides the same batch so its row keeps a dated running total (6 views on Oct 14).
+- Each later episode: +1 night for ~24h, +3 nights for ~72h. Log the actual read time next to the number; a read that slips to the next night goes in as ~48h, not ~24h.
+- Also log GA-to-publish hours per row for #3 (Ep3: GA Oct 14, upload ~Oct 15 1:30 AM MT; Ep2: GA Oct 13). Use the upload time the publish run records, not the planned 1:28.
+- Ep2 and Ep3 go up the same night, so their 24h views split one night's attention and Ep2 (older GA, no social push per the morning playbook) is not a clean P2-vs-P1 comparison. Flag both rows "same-night pair" and don't rank P1 vs P2 from this pair alone.
 
 - 2026-10-14 ~2:05 PM MT (audience strategy tick 5): Shorts groundwork. Built `tools/video/shorts_cut.sh` (1080x1920 stacked re-crop of a finished episode, tested on Ep2). Shorts are classified by file shape alone (vertical, 3 min or less). First Short is held until upload quota allows; on shared quota it only goes after the main episode succeeds. Nothing posted or uploaded.
 
