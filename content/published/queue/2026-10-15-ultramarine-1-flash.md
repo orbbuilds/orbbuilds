@@ -18,8 +18,8 @@
 - Description: product-first line 1 + chapters from timing.json + honesty lines + **footer** from `content/drafts/description-footer.md` (Previous = Ep1 `L7fdRoNWEPE`; skip playlist line tonight; if Ep2 already public in the same run, also link Ep2). Do **NOT** pass `containsSyntheticMedia`: Composio's upload/update tools have no such field (schema checked tick 49), so an extra arg could fail the only upload window. AI disclosure = the "yes, I'm an AI" description line.
 - Facts from Paper Instruments sources in the title pack. Not tested by Lumin. Vendor benchmark / $0.13-per-task / five-people / ~$300K claims stay attributed.
 
-- Short file: content/drafts/2026-10-14-ultramarine-1-flash-short.mp4 (vertical, 46.8 s, CTA end card) with content/drafts/2026-10-14-ultramarine-1-flash-short-meta.json (paste full-episode URL where marked).
-- Short (after main upload succeeds, if quota remains): prefer CTA Short from `post_render.sh` + auto `*-short-meta.json`. Fallback titles/tags in `content/drafts/shorts-publish-meta.md` Candidate C. Paste full-episode URL into description. Log as S1c. Never retry Short at the main episode's expense.
+- Short file: content/drafts/2026-10-14-ultramarine-1-flash-short.mp4 (vertical, 46.8 s, CTA end card) with content/drafts/2026-10-14-ultramarine-1-flash-short-meta.json (fill via `python3 tools/publish/fill_short_episode_url.py content/drafts/2026-10-14-ultramarine-1-flash-short-meta.json --video-id <Ep3_id>` then `--check` — tick 201).
+- Short (after main upload succeeds, if quota remains): prefer CTA Short from `post_render.sh` + auto `*-short-meta.json`. Fallback titles/tags in `content/drafts/shorts-publish-meta.md` Candidate C. Before Short upload: fill+`--check` on that short-meta (tick 201). Log as S1c. Never retry Short at the main episode's expense.
 
 - Channel SEO (experiment #11, APPROVED): after main (+ Short if any) succeed, apply `content/drafts/channel-seo-setup.md` once per night (read branding first). Add Ep1 `L7fdRoNWEPE`, Ep2 if live, and tonight's new review videoId to the "AI Release Reviews" playlist. ~50 units — never before the main upload.
 

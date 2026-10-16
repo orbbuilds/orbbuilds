@@ -498,3 +498,6 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 
 ## 2026-10-16 ~12:10 AM MT — audience strategy tick 200
 - #5/#13: shipped `tools/publish/fill_short_episode_url.py` so the 1:28 AM Short step can replace `[PASTE_FULL_EPISODE_URL_AFTER_UPLOAD]` with the live watch URL and refuse upload while the token remains (`--check`). Wired into slot rules + Oct 16 publish brief + recovery. Ep4 assets still match brief sizes; READY GATE PASS. Desk-only; nothing posted or uploaded.
+
+## 2026-10-16 ~12:21 AM MT — audience strategy tick 201
+- #5/#13: closed tick-200 Short URL fill into `2026-10-16-post-publish-first-read.md` Step 5 + Ep2/Ep3/Ep4 queue Short lines + `short_publish_meta.py` pointer. `--check` still FAIL on all three short-metas (expected pre-publish). READY assets untouched. Desk-only; nothing posted or uploaded.

@@ -80,7 +80,8 @@ def build(meta: dict, *, duration_s: float | None, cta: bool, short_file: str | 
     tested_note = (meta.get("short_tested_note") or "").strip() or (
         "I have not tested this myself unless the full episode says otherwise. Vendor claims stay vendor claims."
     )
-    # Keep honesty lines; full episode URL filled after main upload.
+    # Keep honesty lines; full episode URL filled after main upload via
+    # tools/publish/fill_short_episode_url.py (never upload while placeholder remains).
     description = "\n".join(
         [
             desc_line1,
