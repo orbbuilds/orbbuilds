@@ -1,5 +1,7 @@
 # User decision brief, Oct 15 2026 (for the first daytime ping, ~8 AM MT or later)
 
+> **SUPERSEDED (tick 182, Oct 15 ~8:50 PM MT):** use `2026-10-16-user-decision-brief.md` for the Oct 16 morning ping. This file's status line and suggested message are Oct 15 morning facts.
+
 Built by the continuous audience strategy routine (tick 88, ~4:55 AM MT). One place for every
 pending operator decision, ranked by how much it unblocks, each with a safe default so the
 parent can send one short batched message. Sources are the strategy-doc sections named in brackets.
