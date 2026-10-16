@@ -255,7 +255,11 @@ class Episode:
                 P["bul"][ln["start"]] = (Layer(im, px + 44, yy), ln["end"])
                 yy += h + 36
         # real screenshots / capture frames (experiment #20): line.screen = path relative to repo root
+        # Mixed sections: bullets stay until the first screen starts; each screen only during [start,end]
+        # (previously screens never faded out, so later screens stacked on earlier ones — tick 189).
         P["screens"] = {}
+        P["mixed"] = bool(screen_lines and text_lines)
+        P["first_screen_st"] = min((ln["start"] for ln in screen_lines), default=None) if screen_lines else None
         screen_top = yy + (10 if text_lines and screen_lines else 0)
         max_h = max(160, content_bottom - screen_top)
         max_w = pw - 80
@@ -365,13 +369,22 @@ class Episode:
             for k in ("badge", "head", "src_tag", "src"):
                 if k in cur: cur[k].draw(fr, fi, dy=10 * (1 - fi))
             teaser = kind == "teaser"
+            fst = cur.get("first_screen_st")
             for st, (lay, en) in cur.get("bul", {}).items():
                 a = smooth((t - st) / 0.35)
+                # In mixed text+screen sections, clear bullets before the proof screens take over
+                if fst is not None:
+                    a *= smooth((fst - 0.05 - t) / 0.25)
+                if a <= 0.01:
+                    continue
                 if teaser:
                     prog = min(1.0, max(0.0, (t - st) / max(0.4, (en - st) * 0.8))); lay.draw(fr, 1.0 if prog > 0 else 0, reveal=prog)
                 else: lay.draw(fr, a * fi, dy=14 * (1 - a))
             for st, (lay, en) in cur.get("screens", {}).items():
-                a = smooth((t - st) / 0.35) * fi
+                # Respect line end so successive screens don't stack (tick 189)
+                a = smooth((t - st) / 0.35) * smooth((en + 0.05 - t) / 0.25) * fi
+                if a <= 0.01:
+                    continue
                 lay.draw(fr, a, dy=14 * (1 - a))
         # captions
         for (a, b, lay) in self.caps:

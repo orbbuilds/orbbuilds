@@ -459,3 +459,8 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 - 2026-10-15 ~8:45 PM MT, strategy tick 181: #13 pre-publish infra preflight all green (Composio YouTube active for Orb Builds; litterbox/0x0/catbox reachable; gh orbbuilds repo scope). Read-only; nothing posted or uploaded.
 
 - 2026-10-15 ~9:15 PM MT (strategy tick 184): added `tools/video/verify_ready.py`, a read-only one-command READY gate for rendered episodes (screens, validate, seed, outputs, thumb ref diff, Short title, xclip screen lines, chapters). Ep4 command is in AUDIENCE_STRATEGY.md and the 9:28 PM production brief.
+
+## 2026-10-15 ~10:18 PM MT — audience-strategy tick 189 (#16/#20 screen overlap)
+- Bug: in mixed text+screen sections, `review_render.py` never faded screens at line `end`, so successive caveats screens (01-welcome → 04-reply) drew on top of each other; prior bullet also stayed.
+- Fix: screens alpha out at `end`; mixed-section bullets clear before `first_screen_st`. Ep4 re-rendered (same voice/music, BG_SEED 308857632); Short/xclip/upload refreshed; READY GATE PASS. Short meta title `Hermes Agent v0.22 setup in 55 seconds (no API key)`.
+- No posts/uploads/signups from this tick.

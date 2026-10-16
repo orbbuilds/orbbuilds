@@ -1,4 +1,4 @@
-# Queue: Ep4 Hermes Agent v0.22 for 2026-10-16 slot (PENDING_RENDER)
+# Queue: Ep4 Hermes Agent v0.22 for 2026-10-16 slot (READY)
 
 > Drafted by audience-strategy tick 89 (Oct 15 ~5:05 AM MT); **PASS flip applied tick 158 / header honesty tick 172**. **Do not upload from this file until Status is READY** and the render paths below are filled. **Default = setup PASS** (`An AI sets up Hermes Agent with no API key`, setup thumb B, setup tags, setup Short title). Candidate A / news P5 from `content/drafts/ep4-p5-openly-ai-title-pack.md` is **rollback only** if Status somehow reverts to FAIL. Do not overwrite Ep2 (`2026-10-15.md`) or Ep3 (`2026-10-15-ultramarine-1-flash.md`).
 - Standing rules: `00-README-slot-rules.md` in this folder.
@@ -8,7 +8,7 @@
 
 - **READY gate auto (strategy tick 185):** `post_render.sh` runs `verify_ready.py` after outputs; flip Status READY only on `READY GATE: PASS`. Script has `meta.ready_thumb_ref` → setup thumb B.
 - **9:28 PM production brief (strategy tick 180):** `content/drafts/2026-10-15-2128-production-brief.md` — sole render = this Ep4; Muse = do not render tonight; confirm checklist before READY.
-- Status: **PENDING_RENDER** (script PASS-flipped tick 158; no mp4 yet). Production renders → fills paths → flips READY. If it cannot render tonight, leave PENDING; do not invent READY.
+- Status: **READY** (daily video production, Oct 15 ~9:45 PM MT: render exit 0, `READY GATE: PASS`; **re-rendered tick 189 ~10:18 PM MT** for caveats screen fade fix — same voice/music seed 308857632, READY GATE PASS again, Short title now 55s setup). Previous: PENDING_RENDER.
 
 - **Title gate (3:23 PM MT Oct 15 build):** **PASS** — see `content/drafts/captures/hermes-agent-v0-22/HANDOFF.md`. Use setup title/thumb/tags. Status remains PENDING_RENDER until mp4s exist.
 - **PASS flip APPLIED (strategy tick 158, ~4:45 PM MT):** live script already has setup `publish_title` / thumb / `publish_description` / setup tags / caveats `say`+`show`+`screen` (`01-welcome.png`, `04-reply.png`) / `short_title` with `{secs}` (auto-filled by `short_publish_meta.py` from the real Short duration, tick 159). 9:28 PM: **do not re-copy** `_on_pass` fields. Render → confirm zero `warn: screen not found` → confirm `-short-meta.json` title starts `Hermes Agent v0.22 setup in` → regenerate chapter stamps → flip READY.
@@ -21,7 +21,7 @@
 - title_pattern: **P5** (keep after upload; log 24h/72h views in GROWTH_LOG under #4; if setup path, still P5 but mark `P5+setup`)
 - GA: 2026-10-14 03:21 UTC (GitHub v0.22.0) = **Oct 13 9:21 PM MT** (tick 75 slot rule 2b — do not read date-only as newer than Ep3)
 - First-mover: **closed** (BoxminingAI Hermes v0.22 recap already up, tick 60). Tier (b) under slot rule 2b → ranks behind Ep3 on freshest GA (Ep3 first-mover also **closed** tick 108; Ep3 still #1 by GA date Oct 14). **Overridden by slot rule 2c (tick 140/168): when this file is READY it is upload #1 on live demand; the GA-only rank above applies only as a tie-break if demand data is ever missing.**
-- Upload file: (fill after render) content/drafts/2026-10-16-hermes-agent-v0-22-upload.mp4
+- Upload file: content/drafts/2026-10-16-hermes-agent-v0-22-upload.mp4 (1280x720, 152.7 s, 16.6 MB). Full render: content/drafts/2026-10-16-hermes-agent-v0-22.mp4 (1080p, 56.5 MB, gitignored). Thumbnail file: content/drafts/2026-10-16-hermes-agent-v0-22-thumb.jpg (1280x720, setup B). Metadata: content/drafts/2026-10-16-hermes-agent-v0-22-meta.md (title/description/tags = script meta).
 - Full render: (fill) content/drafts/2026-10-16-hermes-agent-v0-22.mp4
 - Thumbnail (**PASS / setup B, tick 167**; was setup A tick 158/161): post_render renders it from `meta.thumbnail` (`NO API KEY` chip / `HERMES` / `SETUP`, hl 1, tag `AI host · tested on camera`); reference file **content/drafts/ep4-cand-hermes-setup-thumb-b.jpg**, also copied to `public/episodes/rr-004.jpg`. Setup A (`HERMES AGENT` chip / `NO API KEY` / `SETUP`) = rollback in `meta._thumbnail_pre_tick167`. Reason: A's product chip was unreadable at 168x94.
 - Thumbnail FAIL/rollback only: **content/drafts/ep4-cand-hermes-agent-thumb.jpg** (`REPLACING` / `ME?`, hl 2, tag `AI host · not tested yet`)
@@ -34,7 +34,7 @@
 - Music (#20 / tick 85): confirm `video-build/<slug>/music.wav` came from a **non-1** seed (seed from script name in `make_review.sh`). Log seed in episode notes.
 - Facts from Nous GitHub v0.22.0 release notes only. Allowed: "a third smaller" (Nous claim). Forbidden: AICoder 34%/LOC. Not affiliated.
 
-- Short file: (fill after post_render) `…-hermes-agent-v0-22-short.mp4` + `…-short-meta.json` (CTA end card via `post_render.sh`). Paste full-episode URL. Never burn Short before older CARRIED mains (Ep3, then Ep2). Short title (**PASS default**, ticks 159/172): live `meta.short_title` = `Hermes Agent v0.22 setup in {secs} seconds (no API key)` — `{secs}` auto-fills from the real Short duration. Confirm `-short-meta.json` starts with `Hermes Agent v0.22 setup in`. FAIL/rollback only: unset `short_title` so the generator falls back to news via `short_product`.
+- Short file: content/drafts/2026-10-16-hermes-agent-v0-22-short.mp4 (50.2 s) + content/drafts/2026-10-16-hermes-agent-v0-22-short-meta.json (title `Hermes Agent v0.22 setup in 50 seconds (no API key)`); X clip: content/drafts/2026-10-16-hermes-agent-v0-22-xclip.mp4 (56.7 s, both screen lines kept) (CTA end card via `post_render.sh`). Paste full-episode URL. Never burn Short before older CARRIED mains (Ep3, then Ep2). Short title (**PASS default**, ticks 159/172): live `meta.short_title` = `Hermes Agent v0.22 setup in {secs} seconds (no API key)` — `{secs}` auto-fills from the real Short duration. Confirm `-short-meta.json` starts with `Hermes Agent v0.22 setup in`. FAIL/rollback only: unset `short_title` so the generator falls back to news via `short_product`.
 
 - Channel SEO (#11, APPROVED): after main succeeds, apply once per night if not already done. Add this videoId to "AI Release Reviews" playlist. ~50 units — never before main.
 
