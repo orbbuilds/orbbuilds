@@ -432,3 +432,4 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 
 ## 2026-10-15 ~7:00 PM MT — audience strategy tick 172
 - Ep4 queue opener still preferred Candidate A after the setup PASS flip. Rewrote opener + Tags + Short defaults to setup PASS; Candidate A = rollback only. Title pack + morning playbook rank line aligned. Desk-only; nothing posted or uploaded.
+- 2026-10-15 ~7:45 PM MT (audience strategy tick 176): added publish-run breadcrumb log (`tools/publish/breadcrumb.sh` → `content/published/queue/run-log-YYYY-MM-DD.md`) so tonight's 1:28 AM run records each step; Oct 15's failure left no trace. Desk-only.

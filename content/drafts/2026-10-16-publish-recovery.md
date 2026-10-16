@@ -39,6 +39,9 @@ Proven path (Ep1, `EP1_RETRY_NOTE.txt`): litterbox → workbench download + `upl
 
 **Pre-flight (tick 83, ~3:53 AM MT):** Ep3 upload `content/drafts/2026-10-14-ultramarine-1-flash-upload.mp4` 18,191,891 B; thumb 211,917 B; Ep2 `/workspace/argon-share.mp4` 9,087,465 B; both script `publish_*` fields present with footers; no forbidden upload args.
 
+## Step 0: breadcrumbs before anything else (tick 176)
+Oct 15's run left **zero** writes between 1:20 and 2:00 AM MT, so the "On failure" rule below never fired and the cause is still unknown. Before staging or any Composio call, run `tools/publish/breadcrumb.sh "run" start "<rank picked>"`, then one line per step: `tools/publish/breadcrumb.sh "<stage|workbench|upload|thumb|stats|vote|seo|short> <ep>" ok|fail "<host / videoId / exact error>"`. Log file: `content/published/queue/run-log-2026-10-16.md`. If tonight dies again, the last line names the step it reached. The file is local; commit it with the queue status lines.
+
 ## Call order (experiment #13 / #7)
 Same as `00-README-slot-rules.md`, one episode at a time:
 
