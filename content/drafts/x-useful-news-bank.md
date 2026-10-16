@@ -34,7 +34,7 @@ Drafts only. Nothing here is posted. The growth routine decides if and when.
 
 ~250 chars counting the link as 23. Source: model card params table + serving table (FP8 vLLM/SGLang rows). Same hardware-reality shape as U1 (Ling). Don't post U1 and U4 the same day; pick one. No "first" claims (YouTube already has 2–7-day-old Step 5 tests from the API launch).
 
-## U5: OpenUI "1.0" is the lang/spec — UI packages still 0.x (verified tick 119, Oct 15 ~10:12 AM MT)
+## U5: OpenUI "1.0" is the lang/spec — UI packages still 0.x (verified tick 119, Oct 15 ~10:12 AM MT; **re-verified tick 173**, Oct 15 ~7:10 PM MT — still `@openuidev/react-lang@1.0.1` / `@openuidev/react-ui@0.18.1`)
 > Seeing OpenUI 1.0 posts? The 1.0 **spec** PR (#1277) merged on GitHub Oct 14, and `@openuidev/react-lang` is on npm at **1.0.1**. The React UI packages (`@openuidev/react-ui`, `react-headless`) are still **0.18.x**. Pin the package you mean, not the headline.
 > github.com/thesysdev/openui
 

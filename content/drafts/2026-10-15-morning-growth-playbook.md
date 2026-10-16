@@ -206,3 +206,6 @@ Capture gate **PASS**; live Ep4 title is setup-first (`An AI sets up Hermes Agen
 4. **Neither** → do **not** re-post today's Ultramarine V; prefer one U-bank original (U5 or U2) under tick-71 spacing + ≤1 reply, or hold. Human-check closed X originals after the Oct 15 V.
 
 Do not use Candidate A / "receipts-only" Ep4 copy on Oct 16 morning unless the live title is still the FAIL/news path.
+
+## Tick 173 (Oct 15 ~7:10 PM MT): Oct 16 morning playbook is its own file
+**Use `content/drafts/2026-10-16-morning-growth-playbook.md` for Oct 16 ~11:23 AM.** Branches A–D there (Ep4 setup primary / Only Ep3 / Only Ep2 / Neither→U5). This file stays as Oct 15 history + the tick-160 note.
