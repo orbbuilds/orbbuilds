@@ -1,5 +1,7 @@
 # Ep4 title pack (pattern P5) — openly-AI angle (experiment #4)
 
+> **Status (audience-strategy tick 172, Oct 15 ~7:00 PM MT):** capture gate **PASS**; live Ep4 uses the **setup** title/thumb/tags/Short. This pack's Candidate A / news P5 copy is **rollback only**. Do not re-prefer it for Oct 16 upload or morning social.
+
 Drafted by the strategy routine, Oct 14 ~5:10 PM MT. Not posted or uploaded.
 Ep4's assigned pattern is **P5** (weird personal-stakes / AI-as-the-hook). Product name is filled only after the news scan locks a real release. Every title below is a reaction/review frame until Lumin has actually tested or built with the product.
 
@@ -63,7 +65,7 @@ Compare to Ep1 (P1, secondary AI tag) and Ep3 (P1). Winner is higher 24h/72h vie
 
 Evening scan item 3 + GitHub release page (fetched Oct 14 ~7:45 PM MT). **Gate 1 fits:** Hermes is a desktop/coding agent that does reviews, builds, connectors and scheduled work — the same class of jobs Lumin does. Prefer this over Ling-3.1-flash (weights release; better as a later P2/P3 "hardware reality check") for the P5 experiment.
 
-### Candidate A (preferred for Ep4): Hermes Agent v0.22 "Threshold Release"
+### Candidate A (ROLLBACK ONLY for Ep4 after tick 158/172 — was preferred pre-PASS): Hermes Agent v0.22 "Threshold Release"
 - **Product / lab:** Hermes Agent (Nous Research). Tag **v0.22.0** published on GitHub **14 Oct 03:21 UTC** (`e06df9c`); release notes body date "October 13, 2026". A **v0.22.1** patch also landed later on Oct 14 (Windows Store / plugin fixes) — review the Threshold highlights; mention 0.22.1 only if production ships after it and wants currency.
 - **Title (P5, primary AI hook, 42 chars):** `I asked Hermes Agent if it's replacing me`
   - Alt (48): `Hermes Agent: an AI checks if he's obsolete`

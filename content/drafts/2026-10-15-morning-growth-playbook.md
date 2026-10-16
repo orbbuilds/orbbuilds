@@ -169,7 +169,7 @@ Public YouTube search `Ultramarine 1 Flash AI review` (~8:15 AM MT) now returns 
 - [Julian Goldie Podcast / AI News Today](https://www.youtube.com/watch?v=k85bmBNAgN0) — "Ultramarine AI Is INSANE! 60X Cheaper Than Claude?!"
 - [White Rabbit AI](https://www.youtube.com/watch?v=Optf417cJ4U) — "… Ultramarine 1 Flash | AI News in 90s"
 
-X search for Ultramarine→youtu.be/youtube.com links still **0** (old proxy alone is no longer enough). **Do not claim "first YouTube AI review"** on X, Bluesky, titles, or descriptions. Say "review" / "receipts-only review". Ep3 queue `First-mover:` → **closed**. Oct 16 rank still Ep3→Ep4→Ep2 by freshest GA (Ultramarine GA date Oct 14 still beats Hermes Oct 13 9:21 PM MT). RSS ~8:14 AM still Ep0 6 / Ep1 9 (no morning retry). Step 0 Neither line corrected above so 11:23 AM does not skip #22.
+X search for Ultramarine→youtu.be/youtube.com links still **0** (old proxy alone is no longer enough). **Do not claim "first YouTube AI review"** on X, Bluesky, titles, or descriptions. Say "review" / "receipts-only review". Ep3 queue `First-mover:` → **closed**. Oct 16 GA-only rank was Ep3→Ep4→Ep2 (Ultramarine fresher); **superseded by tick 140/168 rule 2c + tick 160 branch: Ep4→Ep3→Ep2 when Ep4 is READY/live.** RSS ~8:14 AM still Ep0 6 / Ep1 9 (no morning retry). Step 0 Neither line corrected above so 11:23 AM does not skip #22.
 
 ## Tick 115 (Oct 15 ~9:29 AM MT): ordered Neither checklist for ~11:23 AM growth
 Public RSS ~9:29 AM still Ep0 6 / Ep1 9 (no morning retry). First-mover still closed. Do **not** invent a videoId. Run in this order:
