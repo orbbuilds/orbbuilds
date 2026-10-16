@@ -412,3 +412,6 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 
 ## 2026-10-15 ~6:40 PM MT — audience strategy tick 169
 - Checked Hermes Agent awesome lists as a discovery path for Ep4. The active one (0xNyk, 5,854 stars) takes issue-only submissions of open-source repos and lists no videos, so Ep4 isn't a fit; smaller lists are inactive. Parked as experiment #24: list a future open-source Hermes build artifact instead. Read-only; nothing submitted.
+
+## 2026-10-15 ~6:45 PM MT — audience strategy tick 170
+- Checked the official Hermes Agent README and docs for a place that links community content. The Community section lists only Discord, the Agent Skills spec site, Issues and two open-source tools; no videos, and Discussions are off. Confirms #24: only an open-source build artifact is listable. Read-only; nothing submitted.
