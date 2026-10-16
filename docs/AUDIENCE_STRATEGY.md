@@ -1392,7 +1392,17 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - **No posts, uploads, comments, channel edits, signups, or WakeParent** (quiet hours; no new user decision).
 
 
+## Ep4 social drafts pass X/Bluesky limits; reply targets still live (experiments #22/#23/#17, tick 197, Oct 15 ~11:40 PM MT)
+- **Why:** tick 192 checked YouTube field limits only; the 11:23 AM growth session will paste X/Bluesky copy straight from `ep4-post-publish-growth-pack.md`, so a too-long post or a deleted reply target would waste the one-or-two-reply budget.
+- **Lengths (URL weighted 23, em dash weight 1):** Post A default **214**/280, Short alt **180**, Reply 1 **241**, Reply 2 **268**, Reply 3 **169** — all fit. Rollback (FAIL) Post A is **300**/280 — would be rejected; rollback-only, flagged here, not edited. Bluesky B-video default 182/300, B-text 267 (prior dry-runs agree).
+- **Targets (X API read ~11:38 PM MT):** Reply 1 `omx0r/2110654882814296117` live, replies open, now **323** impressions / 4 likes / 2 replies (was ~253 @ tick 118). Reply 2 `omx0r/2110306575864758347` live, **139** imp. Reply 3 `mr_r0b0t/2110434516401615260` live, **656** imp, 0 replies. Reply 1 stays preferred.
+- Read-only. No posts, replies, uploads, comments, channel edits or pushes (local commit only).
+
+
 ## Last tick
+- **2026-10-15 ~11:40 PM MT (tick 197).** #22/#23/#17 idle-light: Ep4 X/Bluesky drafts length-checked (Post A 214, Replies 241/268/169, all under 280; rollback FAIL Post A is 300 — over limit, rollback-only) and all three reply targets confirmed live with replies open (Reply 1 now 323 imp). No WakeParent (hygiene; quiet hours). No posts/uploads.
+  - Next recommended tick: after 1:28 AM follow `2026-10-16-post-publish-first-read.md` (channel `/videos` first if RSS 500). First tick at/after ~8 AM MT Oct 16: WakeParent with `2026-10-16-user-decision-brief.md` after Step 0. Oct 16 ~10 AM Muse recheck using tick-194 thresholds. Ticks still before 1:28 AM: stay idle-light. Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot. Do not sign up for Together from this routine.
+
 - **2026-10-15 ~11:25 PM MT (tick 196).** #23/#13 idle-light: pre-publish Hermes SERP refresh via watch-page (returnyoutubedislikeapi **403**; Atom RSS **500**). Setup evergreen still compounding (Metics 526,852 / Sharbel 33,184 / Tim 106,064); v0.22 hype Boxmining 18,802 / Julian 7,102 (Julian +2,179 since tick 173). Our channel still Ep0 6 / Ep1 9 only. Fixed `2026-10-16-post-publish-first-read.md` Step 2 to use `@orbbuilds/videos` + watch-page instead of broken RSS. No WakeParent (research; quiet hours). No uploads/posts.
   - Next recommended tick: after 1:28 AM follow first-read sheet (channel `/videos` first if RSS 500). First tick at/after ~8 AM MT Oct 16: WakeParent with `2026-10-16-user-decision-brief.md` after Step 0. Oct 16 ~10 AM Muse recheck using tick-194 thresholds. Ticks still before 1:28 AM: stay idle-light. Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot. Do not sign up for Together from this routine.
 
