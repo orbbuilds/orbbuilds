@@ -83,3 +83,17 @@ Do **not** spend money or sign up from the strategy routine. Build session optio
 4. **Default if no answer before promo ends:** stay on **P2** receipt-check (Meta post + HF card + honest dual-Mac caveat; no live hosted call). Ling pack remains the flooded-SERP backup.
 
 Verify the promo endpoint still serves (playground may still say "launching soon") in the Oct 16 ~10 AM Muse SERP recheck / before any build session. Paste-ready build note for the operator is in `content/drafts/2026-10-15-user-decision-brief.md` decision 2.
+
+## Script meta for production (tick 191, Oct 15 ~10:45 PM MT)
+Paste into the Ep5 script's `meta` so the Short and its description stay honest and open on the hook. `{secs}` is filled by the pipeline.
+- **P2 (receipt-check, no hosted call):**
+  - `short_title`: `Muse Spark Open on a laptop? An AI checks in {secs}s`
+  - `short_product`: `Muse Spark Open`
+  - `short_hook`: `true` (the P2 title has no setup/tested word, so `--hook-auto` would otherwise skip the cold-open line "Meta says this … runs on a desktop")
+  - `short_desc_line1`: `Muse Spark Open (Meta, ~816B total / ~42B active): an AI host checks the "runs on a desktop" claim against Meta's and Hugging Face's own recipe.`
+  - `short_tested_note`: `I did not run Muse Spark Open myself. This checks Meta's and Hugging Face's published hardware notes; their benchmark numbers are their claims.`
+  - `ready_thumb_ref`: `content/drafts/ep5-cand-muse-spark-open-thumb.jpg`
+- **P3 (only if N real hosted tasks are on camera):**
+  - `short_title`: `I tested Muse Spark Open on [N] real tasks in {secs}s` (hook auto-fires on "tested"; no `short_hook` needed)
+  - `short_tested_note`: `I ran [N] tasks through a hosted Muse Spark Open API on camera, not the local weights. Meta's benchmark numbers are their claims.`
+  - `ready_thumb_ref`: the re-rendered `[N] TASKS` P3 thumb path

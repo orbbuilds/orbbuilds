@@ -13,7 +13,8 @@ fine in the vertical layout, tick 14) as an end card, but only if it costs at mo
 With --hook (tick 188), first prepends the cold open's first spoken line as a window
 tagged `@coldopen` (shorts_cut.sh's cold-open crop), so setup/tested Shorts open on the
 hook instead of a date line; the fact section absorbs the cost. --hook-auto <script.json>
-turns --hook on only when meta.short_title says setup/tested.
+turns --hook on only when meta.short_title says setup/tested, unless meta.short_hook
+(true/false) overrides it.
 
 Usage: short_windows.py <timing.json> [--max 58] [--fact what_dropped] [--verdict caveats] [--cta] [--cta-drop 1] [--hook | --hook-auto script.json]
 Prints windows as `start:end[@mode] ...` for shorts_splice.sh, plus a summary on stderr.
@@ -31,15 +32,19 @@ def main():
     ap.add_argument("--cta", action="store_true", help="append the like/subscribe line as an end card if it fits")
     ap.add_argument("--cta-drop", type=int, default=1, help="max fact lines the CTA may cost")
     ap.add_argument("--hook", action="store_true", help="prepend the cold open's first line (@coldopen crop)")
-    ap.add_argument("--hook-auto", metavar="SCRIPT", help="enable --hook if meta.short_title is setup/tested")
+    ap.add_argument("--hook-auto", metavar="SCRIPT", help="enable --hook if meta.short_title is setup/tested (meta.short_hook bool overrides)")
     ap.add_argument("--hook-section", default="cold_open")
     ap.add_argument("--hook-max", type=float, default=14.0, help="skip the hook if its first line is longer")
     a = ap.parse_args()
     t = json.load(open(a.timing))
     secs = {s["id"]: s for s in t["sections"]}
     if a.hook_auto and not a.hook:
-        st = (json.load(open(a.hook_auto)).get("meta", {}).get("short_title") or "").lower()
-        a.hook = any(w in st for w in ("setup", "set up", "tested", "i tried", "on camera"))
+        m = json.load(open(a.hook_auto)).get("meta", {})
+        if isinstance(m.get("short_hook"), bool):  # explicit override wins (e.g. P2 receipt-check hooks)
+            a.hook = m["short_hook"]
+        else:
+            st = (m.get("short_title") or "").lower()
+            a.hook = any(w in st for w in ("setup", "set up", "tested", "i tried", "on camera"))
     h, hnote = None, ""
     if a.hook:
         hl = secs.get(a.hook_section, {}).get("lines") or []

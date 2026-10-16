@@ -1354,7 +1354,16 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - **Also:** queue Short line synced 50.2s/`…50 seconds` → **55.2s** / `…55 seconds` to match tick-189 short-meta (publish reads the JSON, but the queue note was stale).
 - Desk-only. No posts, uploads, comments, channel edits, Ep4 re-renders or pushes (local commit only).
 
+## Shorts hook can be forced on for non-setup titles (experiments #5/#16, tick 191, Oct 15 ~10:45 PM MT)
+- **Why:** tick 188's `--hook-auto` only fires on setup/tested words in `meta.short_title`. The likely Ep5 (Muse Spark Open, P2 receipt-check) has a strong cold-open line ("Meta says this … runs on a desktop") but a title without those words, so its Short would open on a date line again.
+- **Shipped:** `short_windows.py` honours an explicit `meta.short_hook` (true/false) before the keyword check. Tested on Ep4 timing: no field = unchanged live windows (hook 12.8 s, 55.0 s); `false` = 50.2 s without hook; `true` + non-setup title = hook on. Added a paste-ready script-meta block (P2 and P3: `short_title`, `short_hook`, `short_desc_line1`, honest `short_tested_note`, `ready_thumb_ref`) to `content/drafts/ep5-muse-spark-open-title-pack.md`.
+- **Regression:** Ep4 `verify_ready.py` = READY GATE: PASS before publish; live Ep4 outputs untouched.
+- Desk-only. No posts, uploads, comments, channel edits, renders or pushes (local commit only).
+
 ## Last tick
+- **2026-10-15 ~10:45 PM MT (tick 191).** #5/#16: Ep4 READY gate re-run PASS. Added `meta.short_hook` override to `short_windows.py` so receipt-check (P2) Shorts can open on the cold-open hook; Ep4 default windows unchanged. Wrote Ep5 Muse script-meta block (P2/P3) into the title pack. No WakeParent (pipeline prep; no decision). Desk-only.
+  - Next recommended tick: Oct 16 after 1:28 AM read `run-log-2026-10-16.md`, confirm Ep4 + Short went up (Short description setup line + title `…setup in 55 seconds`). First tick at/after ~8 AM MT Oct 16: WakeParent with `2026-10-16-user-decision-brief.md` after Step 0. Oct 16 ~10 AM Muse recheck (then pick P2 vs P3 meta block, or Ling). Do not re-render Ep4 before publish. Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot. Do not sign up for Together from this routine.
+
 - **2026-10-15 ~10:30 PM MT (tick 190).** #16/#20: confirmed tick-188 caption overlap cleared on live Ep4 main+Short after the 189 re-render; lifted mixed-section screens under the heading in `review_render.py` for Ep5+ (scratch frames ~2.7× screen area; live Ep4 frozen). Synced queue Short note to 55.2s/55s. No WakeParent (layout for next episodes; no decision). Desk-only.
   - Next recommended tick: Oct 16 after 1:28 AM read `run-log-2026-10-16.md`, confirm Ep4 + Short went up (Short description setup line + title `…setup in 55 seconds`). First tick at/after ~8 AM MT Oct 16: WakeParent with `2026-10-16-user-decision-brief.md` after Step 0. Oct 16 ~10 AM Muse recheck. Do not re-render Ep4 before publish. Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot. Do not sign up for Together from this routine.
 

@@ -470,3 +470,9 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 - Shipped for Ep5+: `review_render.py` parks mixed-section screens under the heading (full height) and draws screens before bullets. Scratch preview light area ~2.7×. Live Ep4 READY outputs not re-rendered.
 - Queue Short note synced to 55.2 s / `…setup in 55 seconds` (matches short-meta).
 - No posts, uploads, signups, comments, channel edits, or pushes from this tick.
+
+## 2026-10-15 ~10:45 PM MT — audience-strategy tick 191 (#5/#16 Short hook override)
+- Ep4 READY gate re-run: PASS (nothing drifted before 1:28 AM).
+- `short_windows.py` now honours `meta.short_hook` (true/false) ahead of the setup/tested keyword check, so a P2 receipt-check Short (likely Ep5 Muse) can open on its cold-open line. Ep4 default windows unchanged (55.0 s with hook).
+- Ep5 Muse title pack gained a paste-ready script-meta block for P2 and P3 with honest tested notes.
+- No posts, uploads, signups, comments, channel edits, or pushes from this tick.
