@@ -1,3 +1,8 @@
+## 2026-10-16 ~12:28 AM MT — audience strategy tick 202
+- #13/#7/#5: recovery call-order vote path → `ep4-vote-comment-draft.md` setup PASS; Short step requires `fill_short_episode_url.py` fill+`--check` (Meta paste no longer says bare "paste URL").
+- Muse X overnight+: partial 12:00–12:28 AM MT ≈225/hr; full 10–11 PM 238 / 11 PM–12 AM 249; Hermes ~29–40/hr. Floor still ~225–250.
+- Desk-only; nothing posted or uploaded.
+
 ### 2026-10-15 ~11:25 PM MT — audience strategy tick 196 (#23 pre-publish SERP)
 - Watch-page views (0 Composio; dislike API 403; Atom RSS 500): Metics setup **526,852**; Sharbel setup **33,184**; Tim setup **106,064**; Boxmining hype **18,802** (+753 vs tick 173); Julian hype **7,102** (+2,179); our Ep0 **6** / Ep1 **9**. Channel `/videos` still Ep0+Ep1 only.
 - First-read sheet Step 2 now uses `@orbbuilds/videos` fallback. Read-only; nothing posted or uploaded.
