@@ -72,5 +72,12 @@ Chips (max 3): `816B / 42B ACTIVE · 1M CONTEXT · HOSTED NOT LOCAL` or for P3 `
 - Log pattern **P2** or **P3** in GROWTH_LOG at 24h/72h (views/likes/comments). Flooded-SERP day-0 views will be noisy — compare 7-day views to Ep4 Hermes setup (#23) and to Ling if both ship.
 - Kill "laptop?" P2 if retention at 0:30 is worse than Ep1 once Analytics is in; keep hosted-build P3 if 7-day views beat our news titles.
 
-## Free-path gate (#20 still pending)
-Do **not** spend money from this routine. Build session uses a free hosted tier or skips to P2 receipt-check only (model card + Meta post + one public demo clip fair-use still if allowed — prefer live hosted call with zero spend).
+## Free-path gate (#20 — researched tick 179, Oct 15 ~8:15 PM MT)
+Do **not** spend money or sign up from the strategy routine. Build session options, ranked:
+
+1. **Together AI promo (time-boxed):** [Muse Spark Open promo](https://www.together.ai/models/muse-spark-open-promo) advertises **$0.00 / 1M in+out** on serverless through **October 18, 2026 at 12:00 PM PT** (~1:00 PM MT). Endpoint: `meta-models/Muse-Spark-Open-816B-A42B-promo`. After that, same rates as paid ($1.25 / $4.25 per 1M). Together may end the offer early.
+2. **Activation catch (not true $0 for a new account):** "New accounts must add a payment method and purchase a minimum of **$15** in credits to activate. These credits are not consumed while you use the free model." So P3 via this path needs an **operator OK** to open a Together account on the Orb Builds identity and buy $15 credits (banked, not spent on promo tokens). Do not treat "free promo" as zero-spend without that step.
+3. **Paid fallback (OpenRouter / Fireworks / Together standard / etc.):** OpenRouter lists `meta/muse-spark-open` at **$1.25 / $4.25 per 1M** (providers: Baseten, Fireworks, Together, Nebius). Same ballpark as the post-promo Together rate. Only if decision #2 (build budget) allows.
+4. **Default if no answer before promo ends:** stay on **P2** receipt-check (Meta post + HF card + honest dual-Mac caveat; no live hosted call). Ling pack remains the flooded-SERP backup.
+
+Verify the promo endpoint still serves (playground may still say "launching soon") in the Oct 16 ~10 AM Muse SERP recheck / before any build session. Paste-ready build note for the operator is in `content/drafts/2026-10-15-user-decision-brief.md` decision 2.

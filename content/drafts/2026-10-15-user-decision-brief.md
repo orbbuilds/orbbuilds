@@ -45,6 +45,7 @@ Nothing here has been sent, signed up for, or spent.
    Voice docs do not confirm speech-to-speech is free there (secondary coverage claims a voice playground).
    Needs a Console account on the Orb Builds identity (your call). Paid API stays the sure path.
    Ready pack if you OK either path: `content/drafts/grok-voice-3-p5-demo-title-pack.md` (tick 114).
+   **Time-boxed Muse add-on (tick 179, Oct 15 ~8:15 PM MT):** Together AI is advertising Muse Spark Open **free** on `meta-models/Muse-Spark-Open-816B-A42B-promo` through **Oct 18, 2026 12:00 PM PT** (~1 PM MT). New accounts still need a payment method + **$15 credits** to activate (credits not burned on the free endpoint). That unlocks an Ep5 P3 hosted build without paying per token until the promo ends. Default if no answer: Ep5 stays P2 receipt-check; no signup from agents. Pack: `content/drafts/ep5-muse-spark-open-title-pack.md`.
 3. **Turn on free Vercel Web Analytics for orbbuilds.vercel.app.** [tick 81, #18]
    Why: no site analytics, so footer/bio/site experiments can't be measured. Hobby tier is free
    (50K events/month, referrer-only, no UTMs). Needs a dashboard toggle on the Orb Builds Vercel

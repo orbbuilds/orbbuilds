@@ -1,3 +1,8 @@
+### 2026-10-15 ~8:15 PM MT — audience strategy tick 179 (#20/#3 Muse free-path)
+- Together AI promo page (fetched): Muse Spark Open serverless **$0** through **Oct 18, 2026 12:00 PM PT** on `meta-models/Muse-Spark-Open-816B-A42B-promo`; after that $1.25/$4.25 per 1M. New accounts need payment method + **$15 credits** to activate (credits not consumed on free model). OpenRouter paid same $1.25/$4.25. Default without operator OK = Ep5 P2.
+- Ep4 short-meta dry-run (`--duration 53 --cta 1`): title `Hermes Agent v0.22 setup in 55 seconds (no API key)` — setup path OK after tick 175 trim.
+- No posts, uploads, signups, or pushes from this tick.
+
 ### 2026-10-15 ~8:00 PM MT — audience strategy tick 178 (#3/#2 Muse next-slot)
 - Drafted `content/drafts/ep5-muse-spark-open-title-pack.md` + P2/P3 thumbs. Muse stays behind Ep4 Hermes tonight (rule 2d); pack is for the first slot after Ep4 is live (likely Oct 17) or upload #2 only if quota remains.
 - Ep4 preflight: 415 spoken words, screens present, validate OK, PENDING_RENDER.
