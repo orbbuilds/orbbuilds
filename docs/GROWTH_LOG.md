@@ -514,3 +514,39 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 ## 2026-10-16 ~12:48 AM MT — audience strategy tick 204
 - #3/#13: Muse overnight via counts API through 12:46 AM MT — 10–11 PM **142**, 11–12 **127** (under <150), 12:00–12:46 ~**137**/hr; Hermes ~20/hr. Updated Muse pack so the ~10 AM call uses counts-API (not tick-199/202 search-sample floors ~225–250). Composio YouTube still **active**; READY GATE PASS. Recovery xclip 56.8→56.7 s. Desk-only; nothing posted or uploaded.
 - 2026-10-16 ~12:57 AM MT (strategy tick 205): YouTube Atom RSS now 404 from the box (was 500); morning/publish sheets switched to the @orbbuilds/videos page check. Channel still Ep0 + Ep1 only pre-publish.
+
+## 2026-10-16 ~1:34 AM MT — audience strategy tick 208 (#13 first-read)
+- First post-1:28 AM read per `2026-10-16-post-publish-first-read.md`.
+- FILL: Ep4 live? **N**; Ep3 live? **N**; Ep2 live? **N**; Short URL fill: **pending** (no videoId); run-log last line before watch: header-only; exact fail: **none logged**; GA→publish hours: n/a.
+- Composio YouTube list = **ACTIVE** (Orb Builds / `UCGDWizzAvdre6ohhFG--CdA`; About still blank). Channel `/videos` still only `aCvkp11w9_8` + `L7fdRoNWEPE`. Queues: Ep4 READY, Ep3/Ep2 CARRIED.
+- Wrote `strategy-watch` note into `run-log-2026-10-16.md` at T+6. Added morning status **D** (second silent night) + first-read T+15 silent-fail clock. Quiet hours: no WakeParent. No posts/uploads.
+
+- Same tick 208 follow-up (~1:35 AM MT): publish breadcrumb appeared — `01:34:52 | run | start | Ep4→Ep3→Ep2 (Ep4 READY) publish routine` (late start). Not a second silent night yet; channel still Ep0+Ep1 while the run is in flight.
+
+## 2026-10-16 ~1:36 AM MT — Ep4 published (strategy tick 208 first-read)
+- videoId: `FlsHHpYttDc` · title: `An AI sets up Hermes Agent with no API key` · pattern: **P5+setup** · experiment #23 sample #1
+- publishedAt: 2026-10-16 07:35:58Z (~1:35:58 AM MT) · GA: 2026-10-14 03:21 UTC · **GA→publish 52.25 h**
+- Staging: litterbox HTTP 500 → GitHub Release `staging-2026-10-16` ok (backup path proved)
+- First stats batch: Ep0 `aCvkp11w9_8` 6v · Ep1 `L7fdRoNWEPE` 9v · Ep4 `FlsHHpYttDc` 0v
+- Vote comment posted: `UgzHTetfVqkF2n_l2u54AaABAg` (pin still Studio-only)
+- Short meta: filled `https://www.youtube.com/watch?v=FlsHHpYttDc` + `--check` OK (upload may follow in same publish run)
+- Link: https://www.youtube.com/watch?v=FlsHHpYttDc
+
+## 2026-10-16 ~1:38 AM MT — Ep3 also published (same publish run / strategy tick 208)
+- videoId: `hUCWI6p5dYU` · pattern **P1** · Ultramarine 1 Flash · upload #2 after Ep4
+- publishedAt: 2026-10-16 07:37:53Z · staged via GitHub Release (litterbox already failed on Ep4)
+- Channel SEO (#11): About+keywords set; playlist `PLM-tQTnCgKMM` created with Ep4+Ep1 (Ep3 add may follow in-run)
+- Short meta filled for Ep3; `--check` OK
+- Link: https://www.youtube.com/watch?v=hUCWI6p5dYU
+- Ep4 link: https://www.youtube.com/watch?v=FlsHHpYttDc
+
+## 2026-10-16 ~1:34–1:41 AM MT — publish run summary (daily video publish routine)
+- Mains: Ep4 `FlsHHpYttDc` (07:35:58Z, #1) → Ep3 `hUCWI6p5dYU` (07:37:53Z, #2) → Ep2 `XkHAzVFrK60` (07:38:49Z, #3). All public, cat 28, custom thumbs confirmed (maxres present in details read).
+- Shorts: Ep4 `2nVa1GoQ31I` (07:39:52Z), Ep3 `Bt9Kq7ymoYI` (07:40:04Z), Ep2 `FvUyLOLBxLc` (07:40:15Z). Full-episode URLs filled + `--check` OK before each.
+- Vote comments: Ep4 `UgzHTetfVqkF2n_l2u54AaABAg`, Ep3 `Ugzq7HOZdAjYvwZilmZ4AaABAg`, Ep2 `UgyQIvxZV4mJDX4hM6d4AaABAg` (unpinned; pin = Studio).
+- Channel SEO (#11) applied: About + keywords; playlist `PLM-tQTnCgKMM` order Ep4, Ep3, Ep2, Ep1.
+- Staging: litterbox HTTP 500 (Internal Server Error) on first POST; GitHub Release prerelease staging used for every file, each deleted after use.
+- Quota: 6 uploads + 3 thumbs + 3 comments + SEO writes all succeeded in ~6 min after the reset; no 429 seen.
+- Bluesky (#ep-drop): Ep4 drop https://bsky.app/profile/orbbuilds.bsky.social/post/3mxy36dxeje2w (link card + #AI #HermesAgent facets).
+- GA→publish: Ep4 52.25 h; Ep3 ~2 days after Oct 14 announce; Ep2 ~3 days after Oct 13 GA. Same-night triple upload confounds #2 title-pattern comparisons.
+- Site listing (#12): Ep4/Ep3/Ep2 prepended to `src/lib/episodes.ts`.

@@ -1,7 +1,7 @@
 # Episode 3 (RR-003): Ultramarine 1 Flash is a 5-person flex... (an AI reviews it)
 
 - title_pattern: **P1** (do not change after upload)
-- Status: **not live** (CARRIED). Oct 15 ~1:28 AM publish routine failed (~1:36 AM MT); public RSS ~2:02 AM MT Oct 15 still Ep0+Ep1 only. Queue: `content/published/queue/2026-10-15-ultramarine-1-flash.md` → CARRIED to 2026-10-16.
+- Status: **LIVE** https://www.youtube.com/watch?v=hUCWI6p5dYU (published 2026-10-16 ~1:38 AM MT). Short: https://www.youtube.com/watch?v=Bt9Kq7ymoYI
 - Release reviewed: Ultramarine 1 Flash (Paper Instruments), launched Oct 14, 2026
 - Official source: https://www.paperinstruments.com/blog/ultramarine (plus product page https://www.paperinstruments.com/ultramarine)
 - Script: content/scripts/2026-10-14-ultramarine-1-flash.json (validated OK, blocklist clean)

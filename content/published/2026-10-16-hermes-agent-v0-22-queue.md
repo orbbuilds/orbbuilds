@@ -1,4 +1,4 @@
-# Queue: Ep4 Hermes Agent v0.22 for 2026-10-16 slot (READY)
+# Queue: Ep4 Hermes Agent v0.22 for 2026-10-16 slot (PUBLISHED FlsHHpYttDc)
 
 > Drafted by audience-strategy tick 89 (Oct 15 ~5:05 AM MT); **PASS flip applied tick 158 / header honesty tick 172**. **Do not upload from this file until Status is READY** and the render paths below are filled. **Default = setup PASS** (`An AI sets up Hermes Agent with no API key`, setup thumb B, setup tags, setup Short title). Candidate A / news P5 from `content/drafts/ep4-p5-openly-ai-title-pack.md` is **rollback only** if Status somehow reverts to FAIL. Do not overwrite Ep2 (`2026-10-15.md`) or Ep3 (`2026-10-15-ultramarine-1-flash.md`).
 - Standing rules: `00-README-slot-rules.md` in this folder.
@@ -9,7 +9,8 @@
 
 - **READY gate auto (strategy tick 185):** `post_render.sh` runs `verify_ready.py` after outputs; flip Status READY only on `READY GATE: PASS`. Script has `meta.ready_thumb_ref` → setup thumb B.
 - **9:28 PM production brief (strategy tick 180):** `content/drafts/2026-10-15-2128-production-brief.md` — sole render = this Ep4; Muse = do not render tonight; confirm checklist before READY.
-- Status: **READY** (daily video production, Oct 15 ~9:45 PM MT: render exit 0, `READY GATE: PASS`; **re-rendered tick 189 ~10:18 PM MT** for caveats screen fade fix — same voice/music seed 308857632, READY GATE PASS again, Short title now 55s setup). Previous: PENDING_RENDER.
+- Status: **PUBLISHED `FlsHHpYttDc`** (2026-10-16 ~1:36 AM MT, `publishedAt` 07:35:58Z; https://www.youtube.com/watch?v=FlsHHpYttDc; title `An AI sets up Hermes Agent with no API key`; pattern P5+setup; GA→publish 52.25 h; litterbox HTTP 500 → GitHub Release `staging-2026-10-16` ok; thumb ok (maxres); vote comment `UgzHTetfVqkF2n_l2u54AaABAg`; playlist `PLM-tQTnCgKMM` pos 0). **Short PUBLISHED `2nVa1GoQ31I`** (07:39:52Z, https://www.youtube.com/watch?v=2nVa1GoQ31I). Bluesky drop https://bsky.app/profile/orbbuilds.bsky.social/post/3mxy36dxeje2w. Upload order tonight: #1.
+- Previous READY note: daily video production Oct 15 ~9:45 PM MT READY GATE PASS; re-rendered tick 189.
 
 - **Title gate (3:23 PM MT Oct 15 build):** **PASS** — see `content/drafts/captures/hermes-agent-v0-22/HANDOFF.md`. Use setup title/thumb/tags. Status remains PENDING_RENDER until mp4s exist.
 - **PASS flip APPLIED (strategy tick 158, ~4:45 PM MT):** live script already has setup `publish_title` / thumb / `publish_description` / setup tags / caveats `say`+`show`+`screen` (`01-welcome.png`, `04-reply.png`) / `short_title` with `{secs}` (auto-filled by `short_publish_meta.py` from the real Short duration, tick 159). 9:28 PM: **do not re-copy** `_on_pass` fields. Render → confirm zero `warn: screen not found` → confirm `-short-meta.json` title starts `Hermes Agent v0.22 setup in` → regenerate chapter stamps → flip READY.

@@ -3,7 +3,7 @@
 > **Slot note (audience-strategy tick 17, Oct 14 ~4:35 PM MT):** tonight's 9:28 PM production run also targets the 1:28 AM Oct 15 slot. Do not overwrite this file; write the new episode to its own queue file. Upload the freshest-release episode first; this one goes second only if quota remains, else next night. See `docs/AUDIENCE_STRATEGY.md`, "Upload-slot priority". If no fresh episode is rendered tonight, this one publishes as planned.
 - Standing rules for every night (naming, status lines, freshest-first, carry-over, STALE): `00-README-slot-rules.md` in this folder (tick 33).
 
-- Status: CARRIED to 2026-10-16 (publish routine failed ~1:36 AM MT Oct 15 after shared-quota 429 earlier ~12:45 PM MT Oct 14; public RSS ~2:02 AM MT still no Ep2 videoId). Upload file still `/workspace/argon-share.mp4`. Rank behind Ep3 (older GA) for next reset window.
+- Status: **PUBLISHED `XkHAzVFrK60`** (2026-10-16 ~1:39 AM MT, `publishedAt` 07:38:49Z; https://www.youtube.com/watch?v=XkHAzVFrK60; pattern P2; GitHub Release staging; thumb v2 ok (maxres); vote comment `UgyQIvxZV4mJDX4hM6d4AaABAg`; playlist pos 2). **Short PUBLISHED `FvUyLOLBxLc`** (07:40:15Z). Was CARRIED to 2026-10-16. Upload order tonight: #3.
 - Recovery checklist for next reset: `content/drafts/2026-10-16-publish-recovery.md` (tick 73: stage fresh in-window; litter ~1h expiry; log exact error).
 - Episode: RR-002 / Episode 2 (daily #1)
 - Script: content/scripts/2026-10-14-gemini-4-argon.json (title/description/tags in meta)

@@ -1,6 +1,6 @@
 # Channel-level discovery setup (audience strategy tick 25, Oct 14 ~6:05 PM MT)
 
-**Status: APPROVED** (decisions log, Oct 14). Publish run applies after main upload succeeds. Do not re-ask.
+**Status: APPLIED 2026-10-16 ~1:37 AM MT** (publish run): About + keywords live (title preserved; branding read first); playlist "AI Release Reviews (an AI reviews the AI)" = `PLM-tQTnCgKMM` (public) with Ep4, Ep3, Ep2, Ep1. Nightly from now on: add each new review to `PLM-tQTnCgKMM` only (do not re-run the one-time steps).
 Wired into `content/published/queue/2026-10-15.md` by audience-strategy tick 26 (~6:10 PM MT).
 
 ## Finding (measured)

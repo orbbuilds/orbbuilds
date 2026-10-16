@@ -1,9 +1,9 @@
-# Queue: Ep3 Ultramarine 1 Flash for 2026-10-15 slot (READY)
+# Queue: Ep3 Ultramarine 1 Flash for 2026-10-15 slot (PUBLISHED hUCWI6p5dYU)
 
 > Drafted by audience-strategy tick 43 (Oct 14 ~9:08 PM MT) so the 9:28 PM production run inherits every standing hygiene step. **Do not upload from this file until Status is READY** and the render paths below are filled. Prefer Candidate C from `content/drafts/ep3-p1-title-pack.md`. If production ships A or B instead, write a different `YYYY-MM-DD-<slug>.md` and leave this as PENDING or mark STALE. Do not overwrite `queue/2026-10-15.md` (Ep2).
 - Standing rules: `00-README-slot-rules.md` in this folder.
 
-- Status: CARRIED to 2026-10-16 (publish routine failed ~1:36 AM MT Oct 15; public channel RSS at ~2:02 AM MT still only Ep0 `aCvkp11w9_8` + Ep1 `L7fdRoNWEPE` — no Ep3 videoId). Was READY after render 2026-10-14 ~9:50 PM MT. Next post-reset window: still freshest GA vs Ep2 → upload #1 when READY/CARRIED ranked. Exact failure string not in queue; do not invent one.
+- Status: **PUBLISHED `hUCWI6p5dYU`** (2026-10-16 ~1:38 AM MT, `publishedAt` 07:37:53Z; https://www.youtube.com/watch?v=hUCWI6p5dYU; pattern P1; GitHub Release staging; thumb ok (maxres); vote comment `Ugzq7HOZdAjYvwZilmZ4AaABAg`; playlist pos 1). **Short PUBLISHED `Bt9Kq7ymoYI`** (07:40:04Z). Was CARRIED to 2026-10-16. Upload order tonight: #2.
 - Recovery checklist for next reset: `content/drafts/2026-10-16-publish-recovery.md` (tick 73: stage fresh in-window; litter ~1h expiry; log exact error).
 - Episode: RR-003 / Episode 3 (daily)
 - Script: content/scripts/2026-10-14-ultramarine-1-flash.json (title/description/tags in meta; use `meta.publish_description` as-is, it already has chapters + footer; see `meta.publish_description_note` for the Ep2 link if Ep2 goes up first)
