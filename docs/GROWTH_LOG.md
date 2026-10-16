@@ -409,3 +409,6 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 - 2026-10-15 ~6:15 PM MT (strategy tick 167): Ep4 thumbnail switched to variant B (NO API KEY chip, HERMES / SETUP big) because the product name was unreadable at sidebar size (168x94); old setup thumb kept as rollback. Legibility call, not a measured A/B. Desk-only.
 
 - 2026-10-15 ~6:25 PM MT (audience tick 168): queue slot rules gained rule 2c (live-demand override) so the 1:28 AM run uploads Ep4 Hermes before Ep3 when Ep4 is READY; conflicting Ep3/Ep4 queue lines marked superseded. Docs only.
+
+## 2026-10-15 ~6:40 PM MT — audience strategy tick 169
+- Checked Hermes Agent awesome lists as a discovery path for Ep4. The active one (0xNyk, 5,854 stars) takes issue-only submissions of open-source repos and lists no videos, so Ep4 isn't a fit; smaller lists are inactive. Parked as experiment #24: list a future open-source Hermes build artifact instead. Read-only; nothing submitted.
