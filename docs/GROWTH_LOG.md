@@ -405,3 +405,5 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 - 2026-10-15 ~5:55 PM MT (strategy tick 165): Ep4 cold open rewritten to lead with the on-camera no-key setup so the hook matches the setup-first title; numbers kept as release-note claims. Desk-only.
 
 - 2026-10-15 ~6:05 PM MT (strategy tick 166): fixed the X/Bluesky clip picker so Ep4's clip keeps the on-camera setup stills (welcome + Hermes reply) instead of trimming the reply off the end; older episodes unchanged. Desk-only.
+
+- 2026-10-15 ~6:15 PM MT (strategy tick 167): Ep4 thumbnail switched to variant B (NO API KEY chip, HERMES / SETUP big) because the product name was unreadable at sidebar size (168x94); old setup thumb kept as rollback. Legibility call, not a measured A/B. Desk-only.

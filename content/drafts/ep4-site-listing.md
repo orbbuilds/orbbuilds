@@ -1,6 +1,6 @@
 # Draft: Ep4 site listing — apply only after YouTube is live
 
-Status: ready (audience-strategy tick 118; **setup PASS primary tick 161**, Oct 15 ~5:10 PM MT). Do **not** push the `episodes.ts` change until the Data API (or public RSS) confirms the video is public. Thumbnail asset at `public/episodes/rr-004.jpg` is now the **setup** thumb (`ep4-cand-hermes-setup-thumb.jpg`, tick 161). Candidate A P5 thumb kept at `content/drafts/ep4-cand-hermes-agent-thumb.jpg` for FAIL/rollback only.
+Status: ready (audience-strategy tick 118; **setup PASS primary tick 161**, Oct 15 ~5:10 PM MT). Do **not** push the `episodes.ts` change until the Data API (or public RSS) confirms the video is public. Thumbnail asset at `public/episodes/rr-004.jpg` is now the **setup B** thumb (`ep4-cand-hermes-setup-thumb-b.jpg`, tick 167; setup A from tick 161 = rollback). Candidate A P5 thumb kept at `content/drafts/ep4-cand-hermes-agent-thumb.jpg` for FAIL/rollback only.
 
 **Locked path (tick 158–161):** capture gate **PASS**; live title is `An AI sets up Hermes Agent with no API key`. **Default the listing below to setup.** Candidate A / "not hands-on yet" copy is rollback-only if a future render somehow ships the FAIL path.
 
@@ -33,7 +33,7 @@ Candidate A / FAIL rollback (only if that title actually shipped):
 
 If rollback ships, also re-copy `ep4-cand-hermes-agent-thumb.jpg` over `public/episodes/rr-004.jpg` before push.
 
-3. Confirm `public/episodes/rr-004.jpg` is the setup thumb (tick 161 md5 match to `ep4-cand-hermes-setup-thumb.jpg`) unless FAIL rollback applies.
+3. Confirm `public/episodes/rr-004.jpg` is the setup thumb (tick 167 md5 match to `ep4-cand-hermes-setup-thumb-b.jpg`) unless FAIL rollback applies.
 4. Commit and push to `main` only (no force). Verify https://orbbuilds.vercel.app shows Episode 4 within ~1–2 minutes.
 5. Log in GROWTH_LOG: `site_listing go-live <time MT> | videoId | commit | ep4 | P5+setup`.
 

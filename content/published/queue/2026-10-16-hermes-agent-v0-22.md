@@ -19,7 +19,7 @@
 - First-mover: **closed** (BoxminingAI Hermes v0.22 recap already up, tick 60). Tier (b) under slot rule 2b → ranks behind Ep3 on freshest GA (Ep3 first-mover also **closed** tick 108; Ep3 still #1 by GA date Oct 14).
 - Upload file: (fill after render) content/drafts/2026-10-16-hermes-agent-v0-22-upload.mp4
 - Full render: (fill) content/drafts/2026-10-16-hermes-agent-v0-22.mp4
-- Thumbnail (**PASS / setup, applied tick 158; site asset tick 161**): **content/drafts/ep4-cand-hermes-setup-thumb.jpg** (`NO API KEY` / `SETUP`, hl 1, tag `AI host · tested on camera`) — also copied to `public/episodes/rr-004.jpg`
+- Thumbnail (**PASS / setup B, tick 167**; was setup A tick 158/161): post_render renders it from `meta.thumbnail` (`NO API KEY` chip / `HERMES` / `SETUP`, hl 1, tag `AI host · tested on camera`); reference file **content/drafts/ep4-cand-hermes-setup-thumb-b.jpg**, also copied to `public/episodes/rr-004.jpg`. Setup A (`HERMES AGENT` chip / `NO API KEY` / `SETUP`) = rollback in `meta._thumbnail_pre_tick167`. Reason: A's product chip was unreadable at 168x94.
 - Thumbnail FAIL/rollback only: **content/drafts/ep4-cand-hermes-agent-thumb.jpg** (`REPLACING` / `ME?`, hl 2, tag `AI host · not tested yet`)
 - categoryId 28, privacyStatus public
 - Tags (default): `Hermes Agent review`, `Hermes Agent`, `Hermes Agent v0.22`, `Hermes Agent update`, `Nous Research`, `AI agent desktop`, `local AI agent` (tick 113: `hermes agent 22` + `hermes agent update` are live YouTube autocomplete suggestions). Hashtags: `#AI #Agents #OpenSource`.
