@@ -1360,7 +1360,16 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - **Regression:** Ep4 `verify_ready.py` = READY GATE: PASS before publish; live Ep4 outputs untouched.
 - Desk-only. No posts, uploads, comments, channel edits, renders or pushes (local commit only).
 
+## Ep4 upload payload passes YouTube field limits (experiment #13, tick 192, Oct 15 ~10:50 PM MT)
+- **Why:** every prior preflight checked content and infra, none checked the API's hard field limits, which reject an upload outright (a silent-fail risk like Oct 15's).
+- **Data (read-only, ~10:50 PM MT):** main title **42** chars (limit 100), description **1,583** bytes (5,000), no `<`/`>` in title or description (YouTube rejects them), **17** tags ~**288** chars (500). Short title **51**, description **604** bytes, `#Shorts` present, **12** tags ~**175** chars, public / category 28. Files: Short **1080x1920, 55.2 s** (under 60 s, vertical), upload **1280x720, 152.7 s**, thumb **1280x720, 206 KB** (2 MB cap). `-meta.md` copy matches script meta, no angle brackets.
+- **Read:** nothing in the payload can bounce at 1:28 AM. A failure tonight points at quota or the run itself.
+- Read-only. No posts, uploads, comments, channel edits or pushes (local commit only).
+
 ## Last tick
+- **2026-10-15 ~10:50 PM MT (tick 192).** #13: Ep4 + Short upload payload checked against YouTube API field limits (title/desc length, no angle brackets, tag chars, Short <60 s vertical, thumb <2 MB): all PASS. No WakeParent (pre-publish hygiene; no decision). Read-only.
+  - Next recommended tick: Oct 16 after 1:28 AM read `run-log-2026-10-16.md`, confirm Ep4 + Short went up (Short description setup line + title `…setup in 55 seconds`). First tick at/after ~8 AM MT Oct 16: WakeParent with `2026-10-16-user-decision-brief.md` after Step 0. Oct 16 ~10 AM Muse recheck (then pick P2 vs P3 meta block, or Ling). Ticks before 1:28 AM: stay idle-light (no re-renders, no new tooling that touches Ep4 outputs). Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot. Do not sign up for Together from this routine.
+
 - **2026-10-15 ~10:45 PM MT (tick 191).** #5/#16: Ep4 READY gate re-run PASS. Added `meta.short_hook` override to `short_windows.py` so receipt-check (P2) Shorts can open on the cold-open hook; Ep4 default windows unchanged. Wrote Ep5 Muse script-meta block (P2/P3) into the title pack. No WakeParent (pipeline prep; no decision). Desk-only.
   - Next recommended tick: Oct 16 after 1:28 AM read `run-log-2026-10-16.md`, confirm Ep4 + Short went up (Short description setup line + title `…setup in 55 seconds`). First tick at/after ~8 AM MT Oct 16: WakeParent with `2026-10-16-user-decision-brief.md` after Step 0. Oct 16 ~10 AM Muse recheck (then pick P2 vs P3 meta block, or Ling). Do not re-render Ep4 before publish. Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot. Do not sign up for Together from this routine.
 
