@@ -213,10 +213,13 @@ class Episode:
         screen_lines = [ln for ln in sec["lines"] if ln.get("screen")]
         content_bottom = py + ph - foot - 20
         P["bul"] = {}
-        yy = y + 8
+        content_y = y + 8  # just under heading; screens in mixed mode start here (tick 190)
+        yy = content_y
         if screen_lines and text_lines:
-            # mixed: shrink bullets into the top strip; screens keep >=55% of the content area
-            total_h = max(80, content_bottom - yy)
+            # mixed: bullets stay in a top strip; screens use the full content area under the
+            # heading so there is no empty strip once bullets fade (tick 190). Draw order puts
+            # bullets on top during the brief overlap. Reserve ~45% of height for the strip.
+            total_h = max(80, content_bottom - content_y)
             reserve = int(total_h * 0.55)
             bullets = [ln["show"] for ln in text_lines]
             avail = max(60, total_h - reserve - 16)
@@ -260,7 +263,12 @@ class Episode:
         P["screens"] = {}
         P["mixed"] = bool(screen_lines and text_lines)
         P["first_screen_st"] = min((ln["start"] for ln in screen_lines), default=None) if screen_lines else None
-        screen_top = yy + (10 if text_lines and screen_lines else 0)
+        # Mixed: park screens under the heading (full remaining height). Pure-screen sections
+        # still follow the bullet cursor. Pure-text has no screens.
+        if screen_lines and text_lines:
+            screen_top = content_y
+        else:
+            screen_top = yy + (10 if text_lines and screen_lines else 0)
         max_h = max(160, content_bottom - screen_top)
         max_w = pw - 80
         for ln in screen_lines:
@@ -370,6 +378,13 @@ class Episode:
                 if k in cur: cur[k].draw(fr, fi, dy=10 * (1 - fi))
             teaser = kind == "teaser"
             fst = cur.get("first_screen_st")
+            # Screens first in mixed sections so fading bullets still sit on top (tick 190)
+            for st, (lay, en) in cur.get("screens", {}).items():
+                # Respect line end so successive screens don't stack (tick 189)
+                a = smooth((t - st) / 0.35) * smooth((en + 0.05 - t) / 0.25) * fi
+                if a <= 0.01:
+                    continue
+                lay.draw(fr, a, dy=14 * (1 - a))
             for st, (lay, en) in cur.get("bul", {}).items():
                 a = smooth((t - st) / 0.35)
                 # In mixed text+screen sections, clear bullets before the proof screens take over
@@ -380,12 +395,6 @@ class Episode:
                 if teaser:
                     prog = min(1.0, max(0.0, (t - st) / max(0.4, (en - st) * 0.8))); lay.draw(fr, 1.0 if prog > 0 else 0, reveal=prog)
                 else: lay.draw(fr, a * fi, dy=14 * (1 - a))
-            for st, (lay, en) in cur.get("screens", {}).items():
-                # Respect line end so successive screens don't stack (tick 189)
-                a = smooth((t - st) / 0.35) * smooth((en + 0.05 - t) / 0.25) * fi
-                if a <= 0.01:
-                    continue
-                lay.draw(fr, a, dy=14 * (1 - a))
         # captions
         for (a, b, lay) in self.caps:
             if a - 0.05 <= t <= b + 0.12:
