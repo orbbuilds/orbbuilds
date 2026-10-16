@@ -73,3 +73,7 @@ Update the touched queue file status to `FAILED (<exact error string truncated t
 - Experiment #2: start the 24h clock; same-night pair still confound if both go up.
 - Experiment #2/#16 (tick 78; **moved out of this window by tick 125**): do **not** run the Ep1/Ep0 `YOUTUBE_QUERY_ANALYTICS` read here. Analytics is a separate API, it answered at ~11:10 AM MT Oct 15, and its day rows still stopped at Oct 12 then (no new day in 8+ h), so a 1:30 AM read would most likely log "Ep1 not in yet" and spend window time. The audience-strategy routine does it in daytime Oct 16 (~10 AM–noon MT) instead. Keep this window for uploads, stats, SEO and comments only.
 - First-mover: already closed (tick 108). After Ep3 is public, say "review" not "first"; optional SERP recheck only to name competitors if useful.
+
+
+## Short description URL (tick 200)
+Before any Short upload, fill the placeholder with `python3 tools/publish/fill_short_episode_url.py <slug>-short-meta.json --url 'https://www.youtube.com/watch?v=<id>'` and confirm `--check` exits 0. Never upload with `[PASTE_FULL_EPISODE_URL_AFTER_UPLOAD]` still in the description.

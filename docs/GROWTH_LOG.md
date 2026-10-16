@@ -495,3 +495,6 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 - Muse X overnight (same query as tick 194): 10–11 PM MT **233**/hr → 11 PM–12 AM **247**/hr; Hermes 19 → 25. Overnight floor ≈ 230–250; still ~10× Hermes; not a second wave.
 - Ep4 FAIL rollback Post A trimmed 300→227/280 (desk only). Default setup Post A unchanged at 214.
 - READY GATE: PASS (re-check). No posts/uploads/signups.
+
+## 2026-10-16 ~12:10 AM MT — audience strategy tick 200
+- #5/#13: shipped `tools/publish/fill_short_episode_url.py` so the 1:28 AM Short step can replace `[PASTE_FULL_EPISODE_URL_AFTER_UPLOAD]` with the live watch URL and refuse upload while the token remains (`--check`). Wired into slot rules + Oct 16 publish brief + recovery. Ep4 assets still match brief sizes; READY GATE PASS. Desk-only; nothing posted or uploaded.
