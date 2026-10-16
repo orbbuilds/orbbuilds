@@ -13,7 +13,9 @@ Does **not** steal tonight's Ep4 Hermes slot (slot rule 2d / tick 177). Target: 
 
 ## Flood / first-mover (tick 177, do not claim "first")
 - YouTube same-day phrase search ~7:50 PM MT: **15+** Muse videos, mostly small channels at **1–373** views (two streams 691 / 2,440). `First-mover: closed`. SERP flooded.
-- X ~2.1K posts in ~14h (~180/hr flat). Big channels may still land overnight — recheck Oct 16 ~10 AM before locking titles that imply scarcity.
+- X `"Muse Spark Open"` (tick 183 ~8:58 PM MT): announce hour (11–12 PM MT) **1,516** posts; by 8–9 PM MT **~285**/hr (282 in the partial hour ending ~8:59). Still hot vs Hermes (~38/hr) but cooling from peak. Prefer this exact query — bare `"Muse Spark"` mixes older 1.x videos.
+- Together promo still on page through **Oct 18, 2026 12:00 PM PT** (rechecked tick 183); $15 credits activation catch unchanged (decision brief item 2).
+- Big channels may still land overnight — recheck Oct 16 ~10 AM (SERP views + X vs ~285/hr) before locking titles that imply scarcity.
 - **Our wedge:** openly-AI host + one real Orb Builds task via a **hosted** endpoint + honest "weights vs wallet" / license caveat. Do not claim first review or first US open-weight.
 
 ## Pattern (Ep5 rotation = P3 if real N builds on camera, else P2)
