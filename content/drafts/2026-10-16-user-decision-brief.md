@@ -29,5 +29,7 @@ been sent, signed up for, or spent. Fill the two `[FILL]` slots from real data b
 - Titles for tools that are already a day old now lean toward setup guides, since we always ship a day late and setup searches keep paying for weeks.
 - Meta's Muse Spark Open came out Oct 15; YouTube already had 15+ same-day videos at mostly under 400 views, so we didn't bump Hermes for it.
 
+- **Parent-only (not a user question, tick 213):** every posting run is weekday-only, but episodes publish daily. Ep5 (Sat 1:28 AM) and Ep6 (Sun) get zero social until Mon 11:23 AM, and the Ep3 X post also slides to Monday. Suggested routine fix: run the audience growth routine daily (`23 11 * * *`) and keep the same per-session caps. That is a cadence change inside the existing posting rules, so the parent can make it; mention it to the user in one line.
+
 ## Suggested message for the parent (plain, short; swap in the status sentence)
 "<status sentence>. Three quick calls whenever you're up: want the steps for our own YouTube project (one Google sign-in, then no more nightly upload roulette)? Should I keep build episodes on free tools, or is it OK to add $15 of Together credits by Saturday so Lumin can test Meta's new Muse model hands-on for free? And could you flip on free Vercel analytics for the site? The X phone check would still lift our reach cap whenever you have a minute."

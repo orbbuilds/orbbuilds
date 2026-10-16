@@ -21,6 +21,13 @@ Overnight upload context: `content/drafts/2026-10-16-publish-recovery.md` + slot
 
 ## Branch (pick one)
 
+### Deferred Ep3/Ep2 social: real calendar (tick 213)
+Posting routines are weekday-only (growth 11:23 AM, content drafts 1:23 PM); the 3:23 PM build session and weekends post nothing. "Defer one session" therefore means:
+- **Fri Oct 16 11:23 AM (growth):** Ep4 X Post A (+ optional 1 reply, + pin). No Bluesky (Ep4 card already out 1:40 AM).
+- **Fri Oct 16 1:23 PM (content drafts):** Ep3 **Bluesky B-text** (text-first + self-reply link) from `ep3-post-publish-growth-pack.md`. It's inside the 10 AM–2 PM window and the only Bluesky drop today. **No X original** (rule X1: none before ~3:30 PM after an ~11:30 AM original).
+- **Mon Oct 19 11:23 AM:** Ep3 X Post A, unless the parent adds a weekend posting slot. Ep2 Bluesky + X: Mon 1:23 PM or later, or skip if a newer episode outranks it (Gemini 4 Argon would be 5 days old).
+- Sat/Sun episodes (Ep5 Oct 17, Ep6 Oct 18) have **no posting run** until Monday under the current schedule (flagged to the parent in the Oct 16 brief).
+
 ### A. Ep4 live (alone or with Ep3/Ep2) — default expected path
 Use `content/drafts/ep4-post-publish-growth-pack.md` **setup defaults** only (Post A setup, Bluesky **B-video** setup caption, setup vote block). **Xclip on disk (tick 193):** `content/drafts/2026-10-16-hermes-agent-v0-22-xclip.mp4` (12,400,376 B · 1080×1920 · 56.8 s). Pattern log: **`P5+setup`** (#23 sample #1 / #4).
 - Defer Ep3/Ep2 social **one** growth session (do not fire two episode X originals the same morning).

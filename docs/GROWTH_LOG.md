@@ -561,3 +561,5 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 - Public watch-page (~2:15 AM MT): Ep4/Ep3/Ep2 mains **0/0/0**; Shorts Ep4 `2nVa1GoQ31I` **1**, Ep3 `Bt9Kq7ymoYI` **1**, Ep2 `FvUyLOLBxLc` **0**; Ep0 6 / Ep1 9. Chapters still not rendering.
 - Bluesky Ep4 `3mxy36dxeje2w` T+~35: 0 eng; followers **2** (was 1); new `@silvazada.bsky.social` [counts]. Off-window sample — morning growth skips Ep4 Bluesky re-drop.
 - Quiet hours: no WakeParent. No posts/uploads/edits.
+
+- 2026-10-16 ~2:30 AM MT (strategy tick 213): no posts. Calendar gap found: posting runs are weekday-only while episodes publish daily, so the Ep3 X post slides to Mon Oct 19 and the Sat/Sun episodes get no social until Monday. Plan: Fri 1:23 PM Ep3 Bluesky B-text; suggest the parent run audience growth daily.
