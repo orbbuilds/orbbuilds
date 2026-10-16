@@ -58,4 +58,13 @@ if __name__ == "__main__":
         dur = json.load(open(timing))["duration"]
         desc = json.load(open(sys.argv[3]))["meta"]["publish_description"]
         errs = check(desc, dur)
+        # Alignment (tick 198): a valid stamp can still point mid-section after a re-render
+        # (Ep4 shipped-draft had "0:16 What Nous shipped" while that section starts at 0:23).
+        # Warn-only: every non-zero stamp should sit within 3 s of some section start.
+        starts = [s["start"] for s in json.load(open(timing))["sections"]]
+        for m, s_, l in re.findall(r"^(\d+):(\d{2}) (.+)$", desc, re.M):
+            st = int(m)*60 + int(s_)
+            if st and min(abs(st - x) for x in starts) > 3:
+                near = min(starts, key=lambda x: abs(st - x))
+                print(f"WARN chapter '{m}:{s_} {l}' is {st-near:+.0f} s from nearest section start {fmt(near)}", file=sys.stderr)
         print("chapters OK" if not errs else "chapters BROKEN: " + "; ".join(errs)); sys.exit(1 if errs else 0)

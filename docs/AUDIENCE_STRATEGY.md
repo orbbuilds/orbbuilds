@@ -1399,7 +1399,16 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - Read-only. No posts, replies, uploads, comments, channel edits or pushes (local commit only).
 
 
+## Ep4 chapter stamps pointed mid-section (experiment #8, tick 198, Oct 15 ~11:55 PM MT)
+- **Why:** `verify_ready.py` only checks chapters are *valid* (0:00 first, ascending, >=10 s), not that each stamp lands where its section starts. Idle-light pre-publish check against the final `timing.json` (21:38 render, duration 152.7 s = upload).
+- **Data:** section starts cold_open 0.5 / what_dropped **23.2** / opinion **67.1** / caveats(setup) **87.4** / teaser **117.9** / outro 128.2. Description had `0:16 What Nous shipped` (**7 s early**, lands mid-cold-open), `1:05 Why I'm hyped` (2 s early), `1:28 Setup` (OK), `1:55 What I'll build next + vote` (3 s early).
+- **Fix:** stamps now `0:23` / `1:07` / `1:28` / `1:58` in script `meta.publish_description`, the `_title_gate.pass_setup` copy, and `-meta.md`. Description still **1,583** bytes; `validate_script.py` OK; `READY GATE: PASS` re-run. Added a warn-only alignment check to `chapters.py check` (any stamp >3 s from a section start), which flags the old copy and is silent on the new one.
+- Desk-only. No posts, uploads, comments, channel edits or pushes (local commit only).
+
 ## Last tick
+- **2026-10-15 ~11:55 PM MT (tick 198).** #8 idle-light: Ep4 chapter stamps were valid but misaligned with the final render (`0:16 What Nous shipped` vs section start 0:23; two others 2–3 s early). Fixed to 0:23/1:07/1:28/1:58 in script meta + `-meta.md`; READY GATE re-run PASS; `chapters.py check` now warns on >3 s drift. No WakeParent (hygiene; quiet hours). No posts/uploads.
+  - Next recommended tick: after 1:28 AM follow `2026-10-16-post-publish-first-read.md` (channel `/videos` first if RSS 500); if Ep4 is live, optionally confirm chapters render on the watch page. First tick at/after ~8 AM MT Oct 16: WakeParent with `2026-10-16-user-decision-brief.md` after Step 0. Oct 16 ~10 AM Muse recheck using tick-194 thresholds. Ticks still before 1:28 AM: stay idle-light. Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot. Do not sign up for Together from this routine.
+
 - **2026-10-15 ~11:40 PM MT (tick 197).** #22/#23/#17 idle-light: Ep4 X/Bluesky drafts length-checked (Post A 214, Replies 241/268/169, all under 280; rollback FAIL Post A is 300 — over limit, rollback-only) and all three reply targets confirmed live with replies open (Reply 1 now 323 imp). No WakeParent (hygiene; quiet hours). No posts/uploads.
   - Next recommended tick: after 1:28 AM follow `2026-10-16-post-publish-first-read.md` (channel `/videos` first if RSS 500). First tick at/after ~8 AM MT Oct 16: WakeParent with `2026-10-16-user-decision-brief.md` after Step 0. Oct 16 ~10 AM Muse recheck using tick-194 thresholds. Ticks still before 1:28 AM: stay idle-light. Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot. Do not sign up for Together from this routine.
 

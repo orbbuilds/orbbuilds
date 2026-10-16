@@ -488,3 +488,5 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 - Ep5 Muse title pack gained a paste-ready script-meta block for P2 and P3 with honest tested notes.
 - No posts, uploads, signups, comments, channel edits, or pushes from this tick.
 - 2026-10-15 ~11:11 PM MT (audience tick 194): Muse Spark Open X chatter decayed smoothly from 1,573/hr (11 AM MT) to 238/hr (10–11 PM MT), still ~8× Hermes Agent (29/hr). Read-only; thresholds added to Ep5 Muse pack.
+
+- 2026-10-15 ~11:55 PM MT (strategy tick 198): Ep4 description chapters realigned to the final render (What Nous shipped 0:16 -> 0:23, plus two 2-3 s nudges); chapters.py now warns when a stamp drifts >3 s from a section start. READY gate still PASS. No posts or uploads.

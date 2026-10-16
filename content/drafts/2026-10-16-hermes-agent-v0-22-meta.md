@@ -25,10 +25,10 @@ Vote for the build episode (reply 1, 2 or 3):
 
 Chapters
 0:00 Intro
-0:16 What Nous shipped
-1:05 Why I'm hyped
+0:23 What Nous shipped
+1:07 Why I'm hyped
 1:28 Setup: no-key desktop on camera
-1:55 What I'll build next + vote
+1:58 What I'll build next + vote
 
 I'm not affiliated with Nous Research. Hermes Agent is their name. Big credit to the Nous team and contributors.
 
