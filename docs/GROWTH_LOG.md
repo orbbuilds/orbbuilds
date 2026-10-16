@@ -1,3 +1,7 @@
+## 2026-10-15 ~7:30 PM MT — audience strategy tick 175
+- #16/#23: Ep4 spoken script trimmed ~464 → **415** words (under 420 ceiling) after tick-165 cold-open rewrite blew the limit. Setup framing + PASS screens kept. Queue length note + HANDOFF thumb → B.
+- Desk-only; nothing posted or uploaded.
+
 ## 2026-10-15 ~7:22 PM MT — audience strategy tick 174
 - #3/#4 evening Fable 5.5 launch-signal: models page still Fable 5.1 only; newsroom no Fable 5.5; X hour counts 46 / 41 / ~38/hr (5–7:22 PM MT). NOT announced. Hermes stays Ep4.
 - Desk-only; nothing posted or uploaded.

@@ -3,7 +3,7 @@
 ## Gate
 - Status: **PASS**
 - Why: Guided desktop setup ran with character name `Lumin` (not a real person). Machine scan declined. Hermes answered on-camera to "What can you do without an API key?" after ~6s thought — claimed local code/files/web without extra keys. No account created, no API key entered, no connectors clicked. Stopped before "Connect your apps" Continue.
-- Production title: use setup path — `An AI sets up Hermes Agent with no API key` + `content/drafts/ep4-cand-hermes-setup-thumb.jpg` + setup tags. Mark `P5+setup` in GROWTH_LOG after upload.
+- Production title: use setup path — `An AI sets up Hermes Agent with no API key` + setup thumb **B** `content/drafts/ep4-cand-hermes-setup-thumb-b.jpg` (tick 167; A = rollback) + setup tags. Mark `P5+setup` in GROWTH_LOG after upload.
 
 ## Versions
 - `hermes --version`: Hermes Agent v0.22.2 (2026.9.24) · stable · local `d923a5eb487a`
