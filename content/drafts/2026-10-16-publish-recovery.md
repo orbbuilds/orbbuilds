@@ -38,7 +38,7 @@ For each upload:
 
 Proven path (Ep1, `EP1_RETRY_NOTE.txt`): litterbox → workbench download + `upload_local_file` → multipart → thumbnail.
 
-**Pre-flight (tick 83 Ep3/Ep2; tick 193 Ep4 READY):** Ep4 upload 16,487,127 B / thumb 206,193 B / short 16,355,933 B (55.1 s) / xclip 12,400,376 B (56.8 s); Ep3 upload 18,191,891 B / thumb 211,917 B; Ep2 `/workspace/argon-share.mp4` 9,087,465 B. Ep4 script setup `publish_*` live; no forbidden upload args (tick 192 field-limit PASS).
+**Pre-flight (tick 83 Ep3/Ep2; tick 193 Ep4 READY):** Ep4 upload 16,487,127 B / thumb 206,193 B / short 16,355,933 B (55.1 s) / xclip 12,400,376 B (56.7 s); Ep3 upload 18,191,891 B / thumb 211,917 B; Ep2 `/workspace/argon-share.mp4` 9,087,465 B. Ep4 script setup `publish_*` live; no forbidden upload args (tick 192 field-limit PASS).
 
 ## Step 0: breadcrumbs before anything else (tick 176)
 Oct 15's run left **zero** writes between 1:20 and 2:00 AM MT, so the "On failure" rule below never fired and the cause is still unknown. Before staging or any Composio call, run `tools/publish/breadcrumb.sh "run" start "<rank picked>"`, then one line per step: `tools/publish/breadcrumb.sh "<stage|workbench|upload|thumb|stats|vote|seo|short> <ep>" ok|fail "<host / videoId / exact error>"`. Log file: `content/published/queue/run-log-2026-10-16.md`. If tonight dies again, the last line names the step it reached. The file is local; commit it with the queue status lines.
@@ -50,13 +50,13 @@ Same as `00-README-slot-rules.md`, one episode at a time:
 2. That episode's thumbnail (Ep4 thumb path from its queue file once READY; Ep3 `…-ultramarine-1-flash-thumb.jpg`)
 3. One `YOUTUBE_GET_VIDEO_DETAILS_BATCH` for all live IDs (old + new) → GROWTH_LOG
 4. That episode's vote comment if units remain (Ep4: `ep4-vote-comment-draft.md` **setup PASS block**; Ep3: Candidate C in `ep3-vote-comment-draft.md`). Growth pack is social-only — do not post the vote from it
-5. Channel SEO + playlist (`channel-seo-setup.md`) only after at least one new main succeeds (~50 units)
+5. Channel SEO + playlist (`content/drafts/channel-seo-setup.md`) only after at least one new main succeeds (~50 units)
 6. **#2-ranked main** (Ep3 when Ep4 went first, else Ep2) only if quota remains; then its thumb; vote if units remain. Ep2 main only as #3 (tick 140: Ep2 prefers the native-video lane)
 7. Shorts last, in main-upload order; never upload a Short before its own main is live. **Before each Short upload:** `python3 tools/publish/fill_short_episode_url.py <slug>-short-meta.json --video-id <id>` then `--check` must exit 0 (tick 200/202)
 8. Git-only site listings anytime after each videoId is public (`ep4-site-listing.md` setup-primary, then `ep3-site-listing.md`, `ep2-site-listing.md`)
 
 ## Meta paste (no guessing)
-- **Ep4 (upload #1):** `content/scripts/2026-10-16-hermes-agent-v0-22.json` → `meta.publish_title` = `An AI sets up Hermes Agent with no API key` / `publish_description` / `tags` (17). Thumb `content/drafts/2026-10-16-hermes-agent-v0-22-thumb.jpg` (206,193 B). Short after main: `…-hermes-agent-v0-22-short.mp4` (55.1 s vertical) + `…-short-meta.json` title `Hermes Agent v0.22 setup in 55 seconds (no API key)` (setup description; **fill+`--check` via `fill_short_episode_url.py` before upload** — never leave `[PASTE_FULL_EPISODE_URL_AFTER_UPLOAD]`). Vote: `ep4-vote-comment-draft.md` **setup PASS** block. Site: `ep4-site-listing.md` setup-primary. Xclip for morning Bluesky: `…-hermes-agent-v0-22-xclip.mp4` (56.8 s).
+- **Ep4 (upload #1):** `content/scripts/2026-10-16-hermes-agent-v0-22.json` → `meta.publish_title` = `An AI sets up Hermes Agent with no API key` / `publish_description` / `tags` (17). Thumb `content/drafts/2026-10-16-hermes-agent-v0-22-thumb.jpg` (206,193 B). Short after main: `…-hermes-agent-v0-22-short.mp4` (55.1 s vertical) + `…-short-meta.json` title `Hermes Agent v0.22 setup in 55 seconds (no API key)` (setup description; **fill+`--check` via `fill_short_episode_url.py` before upload** — never leave `[PASTE_FULL_EPISODE_URL_AFTER_UPLOAD]`). Vote: `ep4-vote-comment-draft.md` **setup PASS** block. Site: `ep4-site-listing.md` setup-primary. Xclip for morning Bluesky: `…-hermes-agent-v0-22-xclip.mp4` (56.7 s).
 - Ep3: `content/scripts/2026-10-14-ultramarine-1-flash.json` → `meta.publish_title` / `publish_description` / `tags`. Thumb `…-ultramarine-1-flash-thumb.jpg` (211,917 B). Short: `…-ultramarine-1-flash-short.mp4` + `…-short-meta.json`.
 - Ep2: `content/scripts/2026-10-14-gemini-4-argon.json` → same keys. Thumb `…-gemini-4-argon-thumb-v2.jpg`. Short: `…-gemini-4-argon-short-cta.mp4` + `…-short-meta.json` (fill+`--check` via `fill_short_episode_url.py` before upload; bookkeeping keys are notes, not upload args).
 

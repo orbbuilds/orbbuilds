@@ -510,3 +510,6 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 ## 2026-10-16 ~12:41 AM MT — audience strategy tick 203
 - #5/#13: publish brief call-order step 8 now requires `fill_short_episode_url.py` + `--check` before each Short (was only in Short section + recovery). READY GATE PASS; brief sizes still match disk; short-meta `--check` still FAIL on Ep2/Ep3/Ep4 (expected).
 - #3: Muse counts API overnight 142 → 127 → ~138/hr (12:00–12:40); Hermes 21 → 28 → ~24/hr. Cooling toward <150; Ep4 stays #1. Desk-only; nothing posted or uploaded.
+
+## 2026-10-16 ~12:48 AM MT — audience strategy tick 204
+- #3/#13: Muse overnight via counts API through 12:46 AM MT — 10–11 PM **142**, 11–12 **127** (under <150), 12:00–12:46 ~**137**/hr; Hermes ~20/hr. Updated Muse pack so the ~10 AM call uses counts-API (not tick-199/202 search-sample floors ~225–250). Composio YouTube still **active**; READY GATE PASS. Recovery xclip 56.8→56.7 s. Desk-only; nothing posted or uploaded.
