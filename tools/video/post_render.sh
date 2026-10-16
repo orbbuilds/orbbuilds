@@ -3,6 +3,7 @@
 #   post_render.sh content/scripts/<script>.json <episode.mp4> [outdir]
 # - Thumbnail: if meta.thumbnail = {product, line1, line2?, hl?, tag?} exists, renders <name>-thumb.jpg (P6 grammar).
 # - Short: picks fact+verdict windows from timing.json and splices <name>-short.mp4 (vertical, <=58 s). Skip with NO_SHORT=1.
+#   Setup/tested short_title => opens on the cold-open hook (@coldopen crop); NO_SHORT_HOOK=1 turns that off.
 #   Appends the like/subscribe line (button-click animation) as an end card when it costs <=1 fact line; NO_SHORT_CTA=1 turns that off.
 # - Short publish meta: writes <name>-short-meta.json (title/description/tags/S1c) for the publish routine. Skip with NO_SHORT_META=1.
 # - Xclip: hook-first social cut <name>-xclip.mp4 (cold-open letterbox + caveats + CTA) for native X/Bluesky when YouTube is quota-blocked. Skip with NO_XCLIP=1.
@@ -34,14 +35,15 @@ SHORT_OUT=""
 CTA_USED=0
 if [ -z "${NO_SHORT:-}" ]; then
   CTA_FLAG="--cta"; [ -n "${NO_SHORT_CTA:-}" ] && CTA_FLAG=""
-  WIN=$(python3 short_windows.py "$WORK/timing.json" $CTA_FLAG) || WIN=""
+  HOOK_FLAG=(--hook-auto "$SCRIPT"); [ -n "${NO_SHORT_HOOK:-}" ] && HOOK_FLAG=()
+  WIN=$(python3 short_windows.py "$WORK/timing.json" $CTA_FLAG "${HOOK_FLAG[@]}") || WIN=""
   if [ -n "$WIN" ]; then
     SHORT_OUT="$OUTDIR/${NAME}-short.mp4"
     if bash shorts_splice.sh "$EP" "$SHORT_OUT" $WIN; then
       echo "short: $SHORT_OUT ($WIN)"
       # Detect whether the CTA window was included (third start:end from --cta).
       if [ -n "$CTA_FLAG" ]; then
-        NWIN=$(echo "$WIN" | wc -w | tr -d ' ')
+        NWIN=$(echo "$WIN" | tr ' ' '\n' | grep -vc '@coldopen')
         [ "$NWIN" -ge 3 ] && CTA_USED=1
       fi
     else
