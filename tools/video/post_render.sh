@@ -63,7 +63,7 @@ if [ -z "${NO_SHORT_META:-}" ]; then
 fi
 # Hook-first social cut for X/Bluesky native video (AUDIENCE_STRATEGY #22, tick 121).
 if [ -z "${NO_XCLIP:-}" ] && [ -f "$WORK/timing.json" ]; then
-  XWIN=$(python3 xclip_windows.py "$WORK/timing.json") || XWIN=""
+  XWIN=$(python3 xclip_windows.py "$WORK/timing.json" --script "$SCRIPT") || XWIN=""
   if [ -n "$XWIN" ]; then
     XCLIP_OUT="$OUTDIR/${NAME}-xclip.mp4"
     if bash xclip_splice.sh "$EP" "$XCLIP_OUT" $XWIN; then
