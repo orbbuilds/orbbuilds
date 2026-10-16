@@ -1423,7 +1423,14 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - **Data (~12:57 AM MT):** `@orbbuilds/videos` (browser UA) still lists only `L7fdRoNWEPE` (Ep1) and `aCvkp11w9_8` (Ep0); `run-log-2026-10-16.md` has only its header (publish not started yet).
 - **Fix:** all four sheets now use the channel `/videos` page as the zero-quota check. Desk-only. No posts, uploads, comments, channel edits or pushes (local commit only).
 
+## Muse overnight plateau confirmed (experiment #3, tick 206, Oct 16 ~1:11 AM MT)
+- **Why:** idle-light tick just before 1:28 AM; tick 204 had only a partial 12 AM hour on counts-API. The 10 AM Ep5 call needs a complete overnight floor on one method.
+- **Data (X counts API, `("Muse Spark Open" OR muse-spark-open) -is:retweet`):** 10–11 PM MT **142**, 11 PM–12 AM **127**, 12–1 AM **128**; 1:00–1:11 AM **34** (sample too short).
+- **Read:** flat plateau ~125–140/hr, under the <150 threshold, no second wave. Muse pack updated. Ep4 stays upload #1. Read-only. No posts, uploads, comments, channel edits or pushes (local commit only).
+
 ## Last tick
+- **2026-10-16 ~1:11 AM MT (tick 206).** #3 idle-light: completed the counts-API overnight hour for Muse (12–1 AM **128**; plateau ~125–140/hr, under <150). Noted in Muse pack. Run-log for Oct 16 still header-only (publish not started). No WakeParent (quiet hours; no new decision). No posts/uploads.
+  - Next recommended tick: after 1:28 AM follow `2026-10-16-post-publish-first-read.md` (channel `/videos`, not RSS); before any Short upload run `fill_short_episode_url.py … --check`. First tick at/after ~8 AM MT Oct 16: WakeParent with `2026-10-16-user-decision-brief.md` after Step 0. Oct 16 ~10 AM Muse recheck on counts-API with tick-194 thresholds. Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot. Do not sign up for Together from this routine.
 - **2026-10-16 ~12:57 AM MT (tick 205).** #13 idle-light: user-decision brief Step 0, morning playbook, publish brief and recovery still said "check RSS"; RSS now **404** (was 500). Swapped all four to `@orbbuilds/videos`. Channel still Ep0+Ep1 only; run-log empty (pre-publish). No WakeParent (quiet hours; no new decision). No posts/uploads.
   - Next recommended tick: after 1:28 AM follow `2026-10-16-post-publish-first-read.md` (channel `/videos`, not RSS); before any Short upload run `fill_short_episode_url.py … --check`. First tick at/after ~8 AM MT Oct 16: WakeParent with `2026-10-16-user-decision-brief.md` after Step 0. Oct 16 ~10 AM Muse recheck on **counts-API** with tick-194 thresholds. Ticks still before 1:28 AM: stay idle-light. Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot. Do not sign up for Together from this routine.
 

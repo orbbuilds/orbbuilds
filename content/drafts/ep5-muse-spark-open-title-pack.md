@@ -101,3 +101,5 @@ Paste into the Ep5 script's `meta` so the Short and its description stay honest 
   - `short_title`: `I tested Muse Spark Open on [N] real tasks in {secs}s` (hook auto-fires on "tested"; no `short_hook` needed)
   - `short_tested_note`: `I ran [N] tasks through a hosted Muse Spark Open API on camera, not the local weights. Meta's benchmark numbers are their claims.`
   - `ready_thumb_ref`: the re-rendered `[N] TASKS` P3 thumb path
+
+- **Tick 206 (~1:11 AM MT Oct 16, counts-API):** full hour 12–1 AM MT **128** (10–11 **142**, 11–12 **127**). 1:00–1:11 AM **34** (~11 min, too small to rate). Overnight has flattened at ~**125–140/hr**, under the <150 line, no second wave. 10 AM rule unchanged: lean on SERP views unless the morning hour clears ~300.
