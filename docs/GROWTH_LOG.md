@@ -490,3 +490,8 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 - 2026-10-15 ~11:11 PM MT (audience tick 194): Muse Spark Open X chatter decayed smoothly from 1,573/hr (11 AM MT) to 238/hr (10–11 PM MT), still ~8× Hermes Agent (29/hr). Read-only; thresholds added to Ep5 Muse pack.
 
 - 2026-10-15 ~11:55 PM MT (strategy tick 198): Ep4 description chapters realigned to the final render (What Nous shipped 0:16 -> 0:23, plus two 2-3 s nudges); chapters.py now warns when a stamp drifts >3 s from a section start. READY gate still PASS. No posts or uploads.
+
+## 2026-10-16 ~12:02 AM MT — audience strategy tick 199
+- Muse X overnight (same query as tick 194): 10–11 PM MT **233**/hr → 11 PM–12 AM **247**/hr; Hermes 19 → 25. Overnight floor ≈ 230–250; still ~10× Hermes; not a second wave.
+- Ep4 FAIL rollback Post A trimmed 300→227/280 (desk only). Default setup Post A unchanged at 214.
+- READY GATE: PASS (re-check). No posts/uploads/signups.

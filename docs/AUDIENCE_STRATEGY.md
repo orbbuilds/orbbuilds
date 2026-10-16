@@ -1405,7 +1405,17 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - **Fix:** stamps now `0:23` / `1:07` / `1:28` / `1:58` in script `meta.publish_description`, the `_title_gate.pass_setup` copy, and `-meta.md`. Description still **1,583** bytes; `validate_script.py` OK; `READY GATE: PASS` re-run. Added a warn-only alignment check to `chapters.py check` (any stamp >3 s from a section start), which flags the old copy and is silent on the new one.
 - Desk-only. No posts, uploads, comments, channel edits or pushes (local commit only).
 
+## Muse overnight floor + rollback Post A under 280 (experiments #3/#17/#22, tick 199, Oct 16 ~12:02 AM MT)
+- **Why:** idle-light before 1:28 AM. Tick 194's Muse curve stopped at 10–11 PM; the Oct 16 ~10 AM Ep5 call needs the overnight floor. Tick 197 flagged FAIL rollback Post A at **300**/280 — a mistaken paste would bounce.
+- **Data (X recent counts, `"Muse Spark Open" OR muse-spark-open -is:retweet`, ~12:02 AM MT):** 10–11 PM MT **233** → 11 PM–12 AM **247**. Hermes `"Hermes Agent"` 19 → 25. No second wave (>300); not decayed to <150 either. Floor ≈ 230–250/hr overnight.
+- **Fix:** trimmed Ep4 FAIL rollback Post A to **227**/280 (guided-chat lead, same facts). Default setup Post A still **214**. READY GATE re-run **PASS** (Ep4 untouched). Muse pack got the overnight floor note.
+- Read-only research + desk edit. No posts, uploads, comments, channel edits, signups, or pushes (local commit only).
+
+
 ## Last tick
+- **2026-10-16 ~12:02 AM MT (tick 199).** #3/#17/#22 idle-light: Muse overnight floor **247**/hr at 11 PM–12 AM MT (was 233 at 10–11); Hermes 25. Trimmed FAIL rollback Post A 300→**227**/280. READY GATE still PASS. No WakeParent (quiet hours; no new decision). No posts/uploads.
+  - Next recommended tick: after 1:28 AM follow `2026-10-16-post-publish-first-read.md` (channel `/videos` first if RSS 500). First tick at/after ~8 AM MT Oct 16: WakeParent with `2026-10-16-user-decision-brief.md` after Step 0. Oct 16 ~10 AM Muse recheck using tick-194 thresholds + tick-199 overnight floor (~230–250). Ticks still before 1:28 AM: stay idle-light. Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot. Do not sign up for Together from this routine.
+
 - **2026-10-15 ~11:55 PM MT (tick 198).** #8 idle-light: Ep4 chapter stamps were valid but misaligned with the final render (`0:16 What Nous shipped` vs section start 0:23; two others 2–3 s early). Fixed to 0:23/1:07/1:28/1:58 in script meta + `-meta.md`; READY GATE re-run PASS; `chapters.py check` now warns on >3 s drift. No WakeParent (hygiene; quiet hours). No posts/uploads.
   - Next recommended tick: after 1:28 AM follow `2026-10-16-post-publish-first-read.md` (channel `/videos` first if RSS 500); if Ep4 is live, optionally confirm chapters render on the watch page. First tick at/after ~8 AM MT Oct 16: WakeParent with `2026-10-16-user-decision-brief.md` after Step 0. Oct 16 ~10 AM Muse recheck using tick-194 thresholds. Ticks still before 1:28 AM: stay idle-light. Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot. Do not sign up for Together from this routine.
 

@@ -47,10 +47,10 @@ Hermes Agent v0.22: no-key desktop setup on camera (nous/welcome; trial once per
 [YOUTUBE_URL]
 ```
 
-Rollback only if FAIL / news title somehow shipped (do not use Oct 16 morning):
+Rollback only if FAIL / news title somehow shipped (do not use Oct 16 morning; trimmed tick 199 from **300**/280 → **227**/280 so a mistaken paste still posts):
 
 ```
-Hermes Agent v0.22 "Threshold": a fresh desktop install starts a guided chat on a free trial model — no API key to begin. Trial is desktop-only and once per OS user (Nous's notes). I asked if it's applying for my job. Receipts-only AI review — vote 1/2/3 on what I try first.
+Hermes Agent v0.22 "Threshold": guided chat on a free trial model — no API key to start. Desktop-only, once per OS user (Nous). I asked if it's applying for my job. Receipts-only AI review — vote 1/2/3.
 
 [YOUTUBE_URL]
 ```
