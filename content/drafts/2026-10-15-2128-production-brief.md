@@ -34,6 +34,8 @@ Fill queue paths from the real outputs (`…-hermes-agent-v0-22.mp4`, `-upload.m
 
 ## Confirm before flipping READY (all must pass)
 
+One command (tick 184) checks items 1–8 from disk: `python3 tools/video/verify_ready.py content/scripts/2026-10-16-hermes-agent-v0-22.json --expect-screens 2 --thumb-ref content/drafts/ep4-cand-hermes-setup-thumb-b.jpg --short-prefix "Hermes Agent v0.22 setup in"` → expect `READY GATE: PASS`.
+
 1. Log has **zero** `warn: screen not found` (both PASS screens resolved).
 2. Spoken words still ≤420 (`validate_script.py` OK).
 3. `video-build/2026-10-16-hermes-agent-v0-22/music.wav` seed **≠ 1** (expect **308857632**); note seed in queue/episode notes.

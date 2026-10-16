@@ -454,3 +454,5 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 - Wrote `content/drafts/2026-10-15-2128-production-brief.md` so tonight's 9:28 PM production renders Ep4 Hermes only (Muse Spark Open banned tonight per rule 2d). Preflight: validate OK, 415 spoken words, both PASS screens on disk, expected music seed 308857632. Desk-only; nothing posted or uploaded.
 
 - 2026-10-15 ~8:45 PM MT, strategy tick 181: #13 pre-publish infra preflight all green (Composio YouTube active for Orb Builds; litterbox/0x0/catbox reachable; gh orbbuilds repo scope). Read-only; nothing posted or uploaded.
+
+- 2026-10-15 ~9:15 PM MT (strategy tick 184): added `tools/video/verify_ready.py`, a read-only one-command READY gate for rendered episodes (screens, validate, seed, outputs, thumb ref diff, Short title, xclip screen lines, chapters). Ep4 command is in AUDIENCE_STRATEGY.md and the 9:28 PM production brief.
