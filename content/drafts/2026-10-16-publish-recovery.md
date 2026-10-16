@@ -61,7 +61,7 @@ Same as `00-README-slot-rules.md`, one episode at a time:
 - Ep2: `content/scripts/2026-10-14-gemini-4-argon.json` → same keys. Thumb `…-gemini-4-argon-thumb-v2.jpg`. Short: `…-gemini-4-argon-short-cta.mp4` + `…-short-meta.json` (fill+`--check` via `fill_short_episode_url.py` before upload; bookkeeping keys are notes, not upload args).
 
 ## On failure (mandatory)
-Update the touched queue file status to `FAILED (<exact error string truncated to ~200 chars>)` or `CARRIED to YYYY-MM-DD (<exact error>)` before the routine ends. Also append one GROWTH_LOG line with the tool slug and error. Public RSS re-check (no Composio quota) if unsure whether a videoId landed.
+Update the touched queue file status to `FAILED (<exact error string truncated to ~200 chars>)` or `CARRIED to YYYY-MM-DD (<exact error>)` before the routine ends. Also append one GROWTH_LOG line with the tool slug and error. Public channel-page re-check (`@orbbuilds/videos`, no Composio quota; RSS is broken from the box) if unsure whether a videoId landed.
 
 ## Do not
 - Mid-day YouTube API retries (shared quota).

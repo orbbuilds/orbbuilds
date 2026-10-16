@@ -513,3 +513,4 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 
 ## 2026-10-16 ~12:48 AM MT — audience strategy tick 204
 - #3/#13: Muse overnight via counts API through 12:46 AM MT — 10–11 PM **142**, 11–12 **127** (under <150), 12:00–12:46 ~**137**/hr; Hermes ~20/hr. Updated Muse pack so the ~10 AM call uses counts-API (not tick-199/202 search-sample floors ~225–250). Composio YouTube still **active**; READY GATE PASS. Recovery xclip 56.8→56.7 s. Desk-only; nothing posted or uploaded.
+- 2026-10-16 ~12:57 AM MT (strategy tick 205): YouTube Atom RSS now 404 from the box (was 500); morning/publish sheets switched to the @orbbuilds/videos page check. Channel still Ep0 + Ep1 only pre-publish.

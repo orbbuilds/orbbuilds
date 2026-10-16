@@ -7,7 +7,7 @@ been sent, signed up for, or spent. Fill the two `[FILL]` slots from real data b
 
 ## Step 0 for whoever sends this (read-only, ~1 min)
 1. Read `content/published/queue/run-log-2026-10-16.md` (breadcrumbs from the 1:28 AM run). Last line = step reached.
-2. Check the public RSS (`https://www.youtube.com/feeds/videos.xml?channel_id=UCGDWizzAvdre6ohhFG--CdA`) for a new videoId.
+2. Check the public channel page `https://www.youtube.com/@orbbuilds/videos` (browser UA, collect unique `videoId` values; zero Composio units) for a new videoId. Do not use the Atom RSS feed: it returned 500 (tick 196) and **404** (tick 205, ~12:57 AM MT Oct 16) from the box, which is not the same as "channel empty".
 3. Pick the matching status sentence below. Never claim a link or view count you didn't just read.
 
 ## Status line (pick one)

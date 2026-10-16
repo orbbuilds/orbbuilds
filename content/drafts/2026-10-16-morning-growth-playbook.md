@@ -8,7 +8,7 @@ Overnight upload context: `content/drafts/2026-10-16-publish-recovery.md` + slot
 
 ## Pre-flight (no YouTube quota burn if possible)
 
-1. **Public RSS first** (`https://www.youtube.com/feeds/videos.xml?channel_id=UCGDWizzAvdre6ohhFG--CdA`). Match videoIds to queue `PUBLISHED <id>` lines. Do not invent ids.
+1. **Public channel page first** (`https://www.youtube.com/@orbbuilds/videos` (browser UA, collect unique `videoId` values; zero Composio units); Atom RSS is broken from the box: 500 at tick 196, 404 at tick 205). Match videoIds to queue `PUBLISHED <id>` lines. Do not invent ids.
 2. Re-read queue status lines for Ep4 / Ep3 / Ep2 (`content/published/queue/`). Log any `FAILED (<exact error>)` into GROWTH_LOG if the overnight run wrote one.
 3. If X still shows a human-check notice from Oct 15, treat originals as high-risk: at most **one** original, skip the second; stop after notice.
 
