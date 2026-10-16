@@ -1366,7 +1366,15 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - **Read:** nothing in the payload can bounce at 1:28 AM. A failure tonight points at quota or the run itself.
 - Read-only. No posts, uploads, comments, channel edits or pushes (local commit only).
 
+## Muse X decay curve through 11 PM; Hermes flat (experiments #3/#13, tick 194, Oct 15 ~11:11 PM MT)
+- **Why:** tick 183's Muse baseline stopped at 8–9 PM; the Oct 16 ~10 AM Ep5 call needs a shape, not one point. Idle-light pre-publish tick, read-only.
+- **Data (X recent counts, hourly, MT):** `"Muse Spark Open" OR muse-spark-open` 11 AM–12 PM **1,573** → 1,243 → 772 → 596 → 533 → 490 → 443 → 440 → 369 → 290 → 277 → **10–11 PM 238** (7,311 since 9 AM). `"Hermes Agent"` flat ~26–84/hr all day (**29** at 10–11 PM; 747 total).
+- **Read:** smooth decay to ~15% of peak in 11 h, no second wave; still ~8× Hermes. Added thresholds to the Muse pack for the 10 AM recheck (<~150/hr = lean on SERP views; >~300/hr = second wave, recheck SERP before locking P2).
+- Read-only. No posts, uploads, comments, channel edits or pushes (local commit only).
+
 ## Last tick
+- **2026-10-15 ~11:11 PM MT (tick 194).** #3/#13: Muse X hourly decay through 10–11 PM (1,573 peak → 238/hr, ~8× Hermes at 29/hr); thresholds added to Muse pack for the 10 AM call. No WakeParent (research; no decision). Read-only, Ep4 untouched.
+  - Next recommended tick: Oct 16 after 1:28 AM read `run-log-2026-10-16.md` first (last line = step reached), confirm Ep4 + Short went up (Short title `…setup in 55 seconds`). First tick at/after ~8 AM MT Oct 16: WakeParent with `2026-10-16-user-decision-brief.md` after Step 0. Oct 16 ~10 AM Muse recheck using the tick-194 thresholds (then pick P2 vs P3 meta, or Ling). Ticks still before 1:28 AM: stay idle-light. Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot. Do not sign up for Together from this routine.
 - **2026-10-15 ~11:05 PM MT (tick 193).** #13: Ep4 is READY but the publish-recovery Meta paste still only listed Ep3/Ep2, so wrote paste-ready owner sheet `content/drafts/2026-10-16-0128-publish-brief.md` (Ep4→Ep3→Ep2 rank, verified sizes, breadcrumb Step 0, setup meta/Short/vote/xclip paths, call order). Synced recovery rank table + Meta paste + preflight to Ep4 READY; pointed Ep4 queue + morning playbook at the brief / exact xclip path. No WakeParent (ops handoff for 1:28 AM; no new user decision). Idle-light — no Ep4 re-render, no uploads/posts.
   - Next recommended tick: Oct 16 after 1:28 AM read `run-log-2026-10-16.md` first (last line = step reached), confirm Ep4 + Short went up (Short title `…setup in 55 seconds`). First tick at/after ~8 AM MT Oct 16: WakeParent with `2026-10-16-user-decision-brief.md` after Step 0. Oct 16 ~10 AM Muse recheck (then pick P2 vs P3 meta, or Ling). Ticks still before 1:28 AM: stay idle-light. Do not add Mastodon. Do not retitle Ep4 to vs-Grok-Bot. Do not sign up for Together from this routine.
 
