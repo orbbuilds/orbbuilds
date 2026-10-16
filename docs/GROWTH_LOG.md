@@ -506,3 +506,7 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 
 ## 2026-10-16 ~12:21 AM MT — audience strategy tick 201
 - #5/#13: closed tick-200 Short URL fill into `2026-10-16-post-publish-first-read.md` Step 5 + Ep2/Ep3/Ep4 queue Short lines + `short_publish_meta.py` pointer. `--check` still FAIL on all three short-metas (expected pre-publish). READY assets untouched. Desk-only; nothing posted or uploaded.
+
+## 2026-10-16 ~12:41 AM MT — audience strategy tick 203
+- #5/#13: publish brief call-order step 8 now requires `fill_short_episode_url.py` + `--check` before each Short (was only in Short section + recovery). READY GATE PASS; brief sizes still match disk; short-meta `--check` still FAIL on Ep2/Ep3/Ep4 (expected).
+- #3: Muse counts API overnight 142 → 127 → ~138/hr (12:00–12:40); Hermes 21 → 28 → ~24/hr. Cooling toward <150; Ep4 stays #1. Desk-only; nothing posted or uploaded.
