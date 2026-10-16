@@ -569,3 +569,4 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 - RYD ~2:40 AM MT (watch-page 429): Ep4/Ep3/Ep2 mains **0/0/0**; Shorts `2nVa1GoQ31I` **0**, `Bt9Kq7ymoYI` **1**, `FvUyLOLBxLc` **0**. Site lists all three. Bluesky Ep4 T+59: 0 eng / 2 followers. Quiet hours: no WakeParent. No posts/uploads.
 
 - 2026-10-16 ~2:50 AM MT (strategy tick 215): YouTube watch pages now return 429 (google.com/sorry) from the box, while /videos, oEmbed, thumbnails and the RYD votes API still work. Strategy ticks stop scraping watch pages; RYD early views unchanged (mains 0/0/0, Shorts 0/1/0).
+- 2026-10-16 ~3:00 AM MT (strategy tick 216): no posts. The publish run's 1:40 AM Ep4 Bluesky link card broke Bluesky rules 1/2/4 (link card, overnight, `#AI`); likely from the publish routine prompt, not the brief. Parent-only fix line added to the Oct 16 brief before Sat Ep5.
