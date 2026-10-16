@@ -556,3 +556,8 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 - Bluesky (#ep-drop): Ep4 drop https://bsky.app/profile/orbbuilds.bsky.social/post/3mxy36dxeje2w (link card + #AI #HermesAgent facets).
 - GA→publish: Ep4 52.25 h; Ep3 ~2 days after Oct 14 announce; Ep2 ~3 days after Oct 13 GA. Same-night triple upload confounds #2 title-pattern comparisons.
 - Site listing (#12): Ep4/Ep3/Ep2 prepended to `src/lib/episodes.ts`.
+
+## 2026-10-16 ~2:16 AM MT — audience strategy tick 212 (#5/#9/#2 early velocity)
+- Public watch-page (~2:15 AM MT): Ep4/Ep3/Ep2 mains **0/0/0**; Shorts Ep4 `2nVa1GoQ31I` **1**, Ep3 `Bt9Kq7ymoYI` **1**, Ep2 `FvUyLOLBxLc` **0**; Ep0 6 / Ep1 9. Chapters still not rendering.
+- Bluesky Ep4 `3mxy36dxeje2w` T+~35: 0 eng; followers **2** (was 1); new `@silvazada.bsky.social` [counts]. Off-window sample — morning growth skips Ep4 Bluesky re-drop.
+- Quiet hours: no WakeParent. No posts/uploads/edits.
