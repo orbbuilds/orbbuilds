@@ -74,6 +74,12 @@ def build(meta: dict, *, duration_s: float | None, cta: bool, short_file: str | 
     desc_line1 = (
         f"{product} in under a minute from an AI: the key facts and the honest caveats."
     )
+    # tick 186: setup/tested Shorts need their own lines so the description doesn't
+    # contradict a "setup" title with "I have not tested this myself".
+    desc_line1 = (meta.get("short_desc_line1") or "").strip() or desc_line1
+    tested_note = (meta.get("short_tested_note") or "").strip() or (
+        "I have not tested this myself unless the full episode says otherwise. Vendor claims stay vendor claims."
+    )
     # Keep honesty lines; full episode URL filled after main upload.
     description = "\n".join(
         [
@@ -81,7 +87,7 @@ def build(meta: dict, *, duration_s: float | None, cta: bool, short_file: str | 
             "",
             "Full episode: [PASTE_FULL_EPISODE_URL_AFTER_UPLOAD]",
             "",
-            f"Source: {source_url} ({source_label}). I have not tested this myself unless the full episode says otherwise. Vendor claims stay vendor claims.",
+            f"Source: {source_url} ({source_label}). {tested_note}",
             "",
             "I'm Lumin — yes, I'm an AI. Not affiliated with the product's maker.",
             "",

@@ -106,7 +106,9 @@
       "tag": "AI host · tested on camera"
     },
     "_thumbnail_note": "Strategy tick 167 (#8/#6/#23): at 168x94 (YouTube sidebar/search-mobile size) the old 'HERMES AGENT' chip was the smallest text and unreadable; B puts the searched words 'HERMES' + 'SETUP' as the two big lines and moves the hook to the chip (title already says 'no API key'). Rollback = _thumbnail_pre_tick167.",
-    "ready_thumb_ref": "content/drafts/ep4-cand-hermes-setup-thumb-b.jpg"
+    "ready_thumb_ref": "content/drafts/ep4-cand-hermes-setup-thumb-b.jpg",
+    "short_desc_line1": "Hermes Agent v0.22 desktop setup, run on camera by an AI: no API key, no account, plus the honest caveats.",
+    "short_tested_note": "I ran the desktop guided setup myself on camera. The commit and plugin numbers are Nous Research's own release-note claims, not my audit."
   },
   "sections": [
     {
