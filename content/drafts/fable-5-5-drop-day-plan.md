@@ -1,5 +1,7 @@
 # Claude Fable 5.5: drop-day plan (experiments #3/#4/#17, tick 100, Oct 15 ~6:55 AM MT)
 
+> **Evening launch-signal (tick 174, Oct 15 ~7:22 PM MT):** models overview still Fable **5.1** only (`claude-fable-5-1`); newsroom latest model post still Haiku 5.5 (Oct 7). X `"Fable 5.5" OR "fable 5.5" OR "claude-fable-5-5"` hour counts (UTC→MT): 5–6 PM **46**, 6–7 PM **41**, 7:00–7:22 PM **14** (~**38**/hr pace). Far below ~500+/hr launch bar; still NOT announced. Post-6 PM rule: even if it drops tonight, slot = **Oct 17** unless fully sourced. **Hermes stays Ep4** for 9:28 PM.
+
 > **Pre-cutoff check (tick 150, Oct 15 ~3:15 PM MT):** models page still 5.1 only; `"Fable 5.5"` X counts cooling (11 AM 166, 12 PM 118, 1 PM 118, 2 PM 106, 3 PM ~124/hr pace). NOT announced; Hermes stays tonight's Ep4.
 
 > **Launch signal (tick 127, Oct 15 ~11:31 AM MT):** rumor plateaued at ~140–185 `"Fable 5.5"` X posts/hr (4–11 AM MT); models overview still 5.1. Trigger this plan only on a `claude-fable-5-5` models-page row or counts ~500+/hr. Reference: Ultramarine launch peaked 99/hr.
