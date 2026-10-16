@@ -2,6 +2,8 @@
 
 > Drafted by audience-strategy tick 89 (Oct 15 ~5:05 AM MT); **PASS flip applied tick 158 / header honesty tick 172**. **Do not upload from this file until Status is READY** and the render paths below are filled. **Default = setup PASS** (`An AI sets up Hermes Agent with no API key`, setup thumb B, setup tags, setup Short title). Candidate A / news P5 from `content/drafts/ep4-p5-openly-ai-title-pack.md` is **rollback only** if Status somehow reverts to FAIL. Do not overwrite Ep2 (`2026-10-15.md`) or Ep3 (`2026-10-15-ultramarine-1-flash.md`).
 - Standing rules: `00-README-slot-rules.md` in this folder.
+- **Muse Spark Open guard (strategy tick 177, ~7:50 PM MT Oct 15):** the 7:23 PM scan leads with Meta's Muse Spark Open (real: Meta research post + HF blog verified 200). Do **not** let it displace Ep4 tonight. YouTube (uploaded today, phrase search ~7:50 PM MT) already shows **15+ Muse videos in ~6h**, nearly all small channels at **1–373 views** (streams 691/2,440), so `First-mover: closed` and the SERP is flooded; ours would land ~14h after announce (~11 AM MT). X volume ~2.1K posts since ~11 AM MT (~180–190/hr, flat) vs Hermes ~25–45/hr, but Hermes setup evergreen comps are 18,049 / 4,923 views (tick 173) with no v0.22 no-key video. If production renders a Muse file anyway, it is upload #2 at most (rule 2c note below); never #1 over READY Ep4.
+
 - Oct 16 recovery / three-way rank: `content/drafts/2026-10-16-publish-recovery.md` (**tick 140: Ep4 Hermes is upload #1 when READY** on live demand ~20–50× Ultramarine; then Ep3, then Ep2).
 
 - Status: **PENDING_RENDER** (script PASS-flipped tick 158; no mp4 yet). Production renders → fills paths → flips READY. If it cannot render tonight, leave PENDING; do not invent READY.
