@@ -407,3 +407,5 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 - 2026-10-15 ~6:05 PM MT (strategy tick 166): fixed the X/Bluesky clip picker so Ep4's clip keeps the on-camera setup stills (welcome + Hermes reply) instead of trimming the reply off the end; older episodes unchanged. Desk-only.
 
 - 2026-10-15 ~6:15 PM MT (strategy tick 167): Ep4 thumbnail switched to variant B (NO API KEY chip, HERMES / SETUP big) because the product name was unreadable at sidebar size (168x94); old setup thumb kept as rollback. Legibility call, not a measured A/B. Desk-only.
+
+- 2026-10-15 ~6:25 PM MT (audience tick 168): queue slot rules gained rule 2c (live-demand override) so the 1:28 AM run uploads Ep4 Hermes before Ep3 when Ep4 is READY; conflicting Ep3/Ep4 queue lines marked superseded. Docs only.
