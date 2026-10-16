@@ -12,6 +12,13 @@ Overnight upload context: `content/drafts/2026-10-16-publish-recovery.md` + slot
 2. Re-read queue status lines for Ep4 / Ep3 / Ep2 (`content/published/queue/`). Log any `FAILED (<exact error>)` into GROWTH_LOG if the overnight run wrote one.
 3. If X still shows a human-check notice from Oct 15, treat originals as high-risk: at most **one** original, skip the second; stop after notice.
 
+## Overnight reality (tick 209, Oct 16 ~1:45 AM MT) — read before Branch
+- Run-log `done|ok` 01:42: **all three mains live** — Ep4 `FlsHHpYttDc` (P5+setup), Ep3 `hUCWI6p5dYU` (P1), Ep2 `XkHAzVFrK60` (P2) — plus Shorts Ep4 `2nVa1GoQ31I`, Ep3 `Bt9Kq7ymoYI`, Ep2 `FvUyLOLBxLc`; thumbs, vote comments, reviews playlist, channel About/keywords, site listings (curl confirms all three ids on orbbuilds.vercel.app) all done. Branch = **A**; checklist steps 2 and 6 are already done.
+- **Bluesky Ep4 drop already went out at 01:40 AM MT** from the publish run: link-card text post (`app.bsky.embed.external`), `#AI #HermesAgent` facets, https://bsky.app/profile/orbbuilds.bsky.social/post/3mxy36dxeje2w (0 likes/reposts/replies at 07:40Z). So **skip checklist step 5** (Ep4 B-video): a second Ep4 drop on Bluesky the same morning reads as spam to our ~1 follower audience. Keep the xclip on disk; do not re-post.
+- Log that drop in GROWTH_LOG as a **#9/#22 sample: off-window (1:40 AM MT) tagged link card**, read at the 11:23 AM session (~T+9.7h) for likes/reposts/replies — first tagged Bluesky episode post, so it is the facets data point tick 147 wanted (confound: off-hours).
+- Ep3/Ep2 social still deferred one session (unchanged rule). X Post A (setup) + optional ≤1 Hermes reply + X pin are the only Ep4 actions left this morning.
+- #2 note: Ep2/Ep3/Ep4 went public within 3 minutes of each other, so their 24h views are a same-night trio (not separately rankable at 24h); compare at 7d and read traffic source per video.
+
 ## Branch (pick one)
 
 ### A. Ep4 live (alone or with Ep3/Ep2) — default expected path
