@@ -1,8 +1,8 @@
 # Draft: Ep3 post-publish growth pack — NOT POSTED
 
-Status: draft only (**URLs filled tick 210**, Ep3 LIVE `hUCWI6p5dYU`; defer social one session behind Ep4 per morning playbook). Was: draft only (audience-strategy tick 36; Post A → #17 U-shape tick 58; reply shortlist tick 66→80; Bluesky CTA → 1/2/3 vote tick 70). Nothing posted, replied, liked, followed or uploaded from this file.
-Use: the audience-growth routine after Ep3 is live. Paste the real YouTube URL where marked. Cap X at **1–2 spaced replies** per session while @OrbBuilds is in graduated access. Bluesky morning drop only (~10 AM–2 PM MT).
-**If Ep2 also went live the same night:** follow `content/drafts/2026-10-15-morning-growth-playbook.md` first (Ep3 social wins; do not also fire this pack's X/Bluesky the same morning).
+Status: draft only (**URLs filled tick 210**, Ep3 LIVE `hUCWI6p5dYU`). **Calendar (tick 213/214):** Fri Oct 16 **1:23 PM** content drafts posts Bluesky B-text only — paste-ready handoff `content/drafts/2026-10-16-1323-ep3-bluesky-handoff.md`. Ep3 X Post A = Mon Oct 19 11:23 AM (weekday growth). Nothing posted from this file yet.
+Use: content drafts (Fri 1:23 PM Bluesky) then Monday growth (X). Cap X at **1–2 spaced replies** while graduated access. Bluesky episode drops only ~10 AM–2 PM MT.
+**If Ep2 also went live the same night:** Ep2 social stays behind Ep3 (Mon or skip); do not fire Ep2 Bluesky on Fri.
 
 Assumes production ships **Candidate C (Ultramarine 1 Flash, P1)**. If A or B shipped instead, swap product names and use the matching vote block from `ep3-vote-comment-draft.md`; skip the Ultramarine-specific reply shortlist and refresh targets.
 

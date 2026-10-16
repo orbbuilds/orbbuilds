@@ -24,7 +24,7 @@ Overnight upload context: `content/drafts/2026-10-16-publish-recovery.md` + slot
 ### Deferred Ep3/Ep2 social: real calendar (tick 213)
 Posting routines are weekday-only (growth 11:23 AM, content drafts 1:23 PM); the 3:23 PM build session and weekends post nothing. "Defer one session" therefore means:
 - **Fri Oct 16 11:23 AM (growth):** Ep4 X Post A (+ optional 1 reply, + pin). No Bluesky (Ep4 card already out 1:40 AM).
-- **Fri Oct 16 1:23 PM (content drafts):** Ep3 **Bluesky B-text** (text-first + self-reply link) from `ep3-post-publish-growth-pack.md`. It's inside the 10 AM–2 PM window and the only Bluesky drop today. **No X original** (rule X1: none before ~3:30 PM after an ~11:30 AM original).
+- **Fri Oct 16 1:23 PM (content drafts):** Ep3 **Bluesky B-text** — execute `content/drafts/2026-10-16-1323-ep3-bluesky-handoff.md` (body from `ep3-post-publish-growth-pack.md`, 286/300). Inside 10 AM–2 PM; only Bluesky drop today. **No X original** (rule X1).
 - **Mon Oct 19 11:23 AM:** Ep3 X Post A, unless the parent adds a weekend posting slot. Ep2 Bluesky + X: Mon 1:23 PM or later, or skip if a newer episode outranks it (Gemini 4 Argon would be 5 days old).
 - Sat/Sun episodes (Ep5 Oct 17, Ep6 Oct 18) have **no posting run** until Monday under the current schedule (flagged to the parent in the Oct 16 brief).
 
