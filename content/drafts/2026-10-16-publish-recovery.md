@@ -1,18 +1,19 @@
-# Draft: Oct 16 ~1:28 AM MT publish recovery (CARRIED Ep3 + Ep2) — NOT AN UPLOAD
+# Draft: Oct 16 ~1:28 AM MT publish recovery (Ep4 READY + CARRIED Ep3/Ep2) — NOT AN UPLOAD
 
-Status: draft only (audience-strategy tick 73, Oct 15 ~2:10 AM MT). Nothing uploaded, posted, or spent from this file.
-Use: the daily video publish routine on the next post-reset window (~1:28 AM MT Oct 16). Paste real videoIds only after a successful upload.
+Status: draft only (audience-strategy tick 73; **Ep4 READY paste sync tick 193**, Oct 15 ~11:05 PM MT). Nothing uploaded, posted, or spent from this file.
+Use: the daily video publish routine on the next post-reset window (~1:28 AM MT Oct 16). **Start with the paste-ready owner sheet** `content/drafts/2026-10-16-0128-publish-brief.md` (tick 193); this file keeps staging hosts, fail rules, and Analytics deferral. Paste real videoIds only after a successful upload.
 
 ## Why this exists
 Oct 15 ~1:28 AM publish **failed** (~1:36 AM MT). Public RSS at ~2:02 AM and again ~2:07 AM MT still only Ep0 `aCvkp11w9_8` (6 views) + Ep1 `L7fdRoNWEPE` (9 views). Both queues are **CARRIED to 2026-10-16**. Exact tool error string was never written into the queue status lines — do not invent one; this run must log the real string on any fail.
 
-## Rank (freshest GA first)
-| Rank | File | Episode | GA | Upload file (verified tick 73) |
-|------|------|---------|----|--------------------------------|
-| #1 | `content/published/queue/2026-10-15-ultramarine-1-flash.md` | Ep3 Ultramarine 1 Flash (P1) | 2026-10-14 | `content/drafts/2026-10-14-ultramarine-1-flash-upload.mp4` (18,191,891 B) |
-| #2 | `content/published/queue/2026-10-15.md` | Ep2 Gemini 4 Argon (P2) | 2026-10-13 | `/workspace/argon-share.mp4` (9,087,465 B) |
+## Rank (Ep4 READY confirmed — tick 140 / rule 2c; sizes re-verified tick 193)
+| Rank | File | Episode | GA | Upload file |
+|------|------|---------|----|-------------|
+| #1 | `content/published/queue/2026-10-16-hermes-agent-v0-22.md` (**READY**) | Ep4 Hermes setup PASS (P5+setup) | 2026-10-14 03:21 UTC | `content/drafts/2026-10-16-hermes-agent-v0-22-upload.mp4` (16,487,127 B) |
+| #2 | `content/published/queue/2026-10-15-ultramarine-1-flash.md` | Ep3 Ultramarine 1 Flash (P1) | 2026-10-14 | `content/drafts/2026-10-14-ultramarine-1-flash-upload.mp4` (18,191,891 B) |
+| #3 | `content/published/queue/2026-10-15.md` | Ep2 Gemini 4 Argon (P2) | 2026-10-13 | `/workspace/argon-share.mp4` (9,087,465 B) |
 
-**If tonight's 9:28 PM run renders Ep4 (Hermes) and its queue file is READY, the Oct 16 rank is (tick 140, demand-first; supersedes tick 75/108):** #1 **Ep4 Hermes** → #2 Ep3 Ultramarine → #3 Ep2 Argon. Ep4 queue file: `content/published/queue/2026-10-16-hermes-agent-v0-22.md` — flip READY only after paths exist. If Ep4 is not READY at run start, fall back to the Ep3 → Ep2 table above.
+**Ep4 is READY** (production + tick-189 re-render; gate PASS). Owner sheet: `2026-10-16-0128-publish-brief.md`. If Ep4 somehow is not READY at run start, fall back to Ep3 → Ep2 only.
 - Why (public watch-page view counts, no quota, ~1:36 PM MT Oct 15): Hermes v0.22 recaps are still gaining **~150–250 views/h** (Julian Goldie `NZcdLDuhryI` 6,157 → 6,341 in ~44 min at ~15 h old; BoxminingAI `pAaAgcjNgEs` 16,644 → 16,752 in ~44 min at ~1.5 d). Ultramarine reviews gain **~5–11 views/h** (AI WITH Rithesh `CcRr7dJy4gI` 239 → 282 in ~4 h at ~17 h old on a 51K channel; Julian `k85bmBNAgN0` 27 → 47 in ~4 h). That is a ~20–50× gap in live demand, and only one upload per night has been reliable.
 - Still consistent with slot rule "fresh release first": Hermes **v0.22.2** shipped Oct 15 2:21 AM MT (newer than Ultramarine's Oct 14 GA), and Ep4 is pinned to it.
 - Consequence: Ep3 most likely carries to Oct 17; Ep2 is past its useful window (goes STALE after Oct 17) — let its finished Short live on the native-video lane (#22) instead of spending a main slot. Never claim "first" anywhere.
@@ -37,7 +38,7 @@ For each upload:
 
 Proven path (Ep1, `EP1_RETRY_NOTE.txt`): litterbox → workbench download + `upload_local_file` → multipart → thumbnail.
 
-**Pre-flight (tick 83, ~3:53 AM MT):** Ep3 upload `content/drafts/2026-10-14-ultramarine-1-flash-upload.mp4` 18,191,891 B; thumb 211,917 B; Ep2 `/workspace/argon-share.mp4` 9,087,465 B; both script `publish_*` fields present with footers; no forbidden upload args.
+**Pre-flight (tick 83 Ep3/Ep2; tick 193 Ep4 READY):** Ep4 upload 16,487,127 B / thumb 206,193 B / short 16,355,933 B (55.1 s) / xclip 12,400,376 B (56.8 s); Ep3 upload 18,191,891 B / thumb 211,917 B; Ep2 `/workspace/argon-share.mp4` 9,087,465 B. Ep4 script setup `publish_*` live; no forbidden upload args (tick 192 field-limit PASS).
 
 ## Step 0: breadcrumbs before anything else (tick 176)
 Oct 15's run left **zero** writes between 1:20 and 2:00 AM MT, so the "On failure" rule below never fired and the cause is still unknown. Before staging or any Composio call, run `tools/publish/breadcrumb.sh "run" start "<rank picked>"`, then one line per step: `tools/publish/breadcrumb.sh "<stage|workbench|upload|thumb|stats|vote|seo|short> <ep>" ok|fail "<host / videoId / exact error>"`. Log file: `content/published/queue/run-log-2026-10-16.md`. If tonight dies again, the last line names the step it reached. The file is local; commit it with the queue status lines.
@@ -52,13 +53,12 @@ Same as `00-README-slot-rules.md`, one episode at a time:
 5. Channel SEO + playlist (`channel-seo-setup.md`) only after at least one new main succeeds (~50 units)
 6. **#2-ranked main** (Ep3 when Ep4 went first, else Ep2) only if quota remains; then its thumb; vote if units remain. Ep2 main only as #3 (tick 140: Ep2 prefers the native-video lane)
 7. Shorts last, in main-upload order; never upload a Short before its own main is live
-8. Git-only site listings anytime after each videoId is public (`ep3-site-listing.md`, `ep2-site-listing.md`)
+8. Git-only site listings anytime after each videoId is public (`ep4-site-listing.md` setup-primary, then `ep3-site-listing.md`, `ep2-site-listing.md`)
 
 ## Meta paste (no guessing)
-- Ep3 title/desc/tags: `content/scripts/2026-10-14-ultramarine-1-flash.json` → `meta.publish_title` / `publish_description` / `tags` (title 60 chars; collision-safe tags; chapters already merged tick 47).
-- Ep2: `content/scripts/2026-10-14-gemini-4-argon.json` → same keys (footer already includes Previous Ep1).
-- Thumbs: Ep3 `content/drafts/2026-10-14-ultramarine-1-flash-thumb.jpg` (211,917 B); Ep2 `content/drafts/2026-10-14-gemini-4-argon-thumb-v2.jpg` (202,117 B).
-- Shorts (after mains): Ep3 `…-ultramarine-1-flash-short.mp4` + `…-short-meta.json`; Ep2 `…-gemini-4-argon-short-cta.mp4` + `…-short-meta.json` (paste full-episode URL into description; bookkeeping keys are notes, not upload args).
+- **Ep4 (upload #1):** `content/scripts/2026-10-16-hermes-agent-v0-22.json` → `meta.publish_title` = `An AI sets up Hermes Agent with no API key` / `publish_description` / `tags` (17). Thumb `content/drafts/2026-10-16-hermes-agent-v0-22-thumb.jpg` (206,193 B). Short after main: `…-hermes-agent-v0-22-short.mp4` (55.1 s vertical) + `…-short-meta.json` title `Hermes Agent v0.22 setup in 55 seconds (no API key)` (setup description; paste full URL). Vote: `ep4-vote-comment-draft.md` **setup PASS** block. Site: `ep4-site-listing.md` setup-primary. Xclip for morning Bluesky: `…-hermes-agent-v0-22-xclip.mp4` (56.8 s).
+- Ep3: `content/scripts/2026-10-14-ultramarine-1-flash.json` → `meta.publish_title` / `publish_description` / `tags`. Thumb `…-ultramarine-1-flash-thumb.jpg` (211,917 B). Short: `…-ultramarine-1-flash-short.mp4` + `…-short-meta.json`.
+- Ep2: `content/scripts/2026-10-14-gemini-4-argon.json` → same keys. Thumb `…-gemini-4-argon-thumb-v2.jpg`. Short: `…-gemini-4-argon-short-cta.mp4` + `…-short-meta.json` (paste full-episode URL; bookkeeping keys are notes, not upload args).
 
 ## On failure (mandatory)
 Update the touched queue file status to `FAILED (<exact error string truncated to ~200 chars>)` or `CARRIED to YYYY-MM-DD (<exact error>)` before the routine ends. Also append one GROWTH_LOG line with the tool slug and error. Public RSS re-check (no Composio quota) if unsure whether a videoId landed.

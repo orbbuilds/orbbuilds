@@ -13,6 +13,9 @@
 - Ep4 preflight: 415 spoken words, screens present, validate OK, PENDING_RENDER.
 - No posts, uploads, or pushes from this tick.
 
+## 2026-10-15 ~11:05 PM MT — audience-strategy tick 193 (#13 publish brief)
+- Wrote `content/drafts/2026-10-16-0128-publish-brief.md` so 1:28 AM has one Ep4-first owner sheet (paths/sizes re-verified; Short `…setup in 55 seconds`; xclip for morning Bluesky named). Synced `2026-10-16-publish-recovery.md` Meta paste off the old Ep3/Ep2-only list. Idle-light; no uploads.
+
 ## 2026-10-15 ~9:23 PM MT — audience strategy tick 185
 #13: `post_render.sh` now auto-runs `verify_ready.py` (short_prefix / ready_thumb_ref / screen count from script). Ep4 `meta.ready_thumb_ref` → setup thumb B. Pre-render: inputs PASS, outputs absent. Flip READY only on `READY GATE: PASS`.
 

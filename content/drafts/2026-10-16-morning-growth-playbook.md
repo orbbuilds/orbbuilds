@@ -1,6 +1,6 @@
 # Draft: Oct 16 morning growth playbook (~11:23 AM MT) — NOT POSTS
 
-Status: draft only (audience-strategy **tick 173**, Oct 15 ~7:10 PM MT). Growth routine owns posting; this routine does not post, reply, follow, DM or upload.
+Status: draft only (audience-strategy **tick 173**; xclip path **tick 193**, Oct 15 ~11:05 PM MT). Growth routine owns posting; this routine does not post, reply, follow, DM or upload.
 
 Supersedes the Oct 15-centric branches in `2026-10-15-morning-growth-playbook.md` for **Oct 16 morning only**. Keep that file for history and for the tick-160 note; **start here** on Oct 16.
 
@@ -15,7 +15,7 @@ Overnight upload context: `content/drafts/2026-10-16-publish-recovery.md` + slot
 ## Branch (pick one)
 
 ### A. Ep4 live (alone or with Ep3/Ep2) — default expected path
-Use `content/drafts/ep4-post-publish-growth-pack.md` **setup defaults** only (Post A setup, Bluesky **B-video** setup caption when `-xclip.mp4` exists, setup vote block). Pattern log: **`P5+setup`** (#23 sample #1 / #4).
+Use `content/drafts/ep4-post-publish-growth-pack.md` **setup defaults** only (Post A setup, Bluesky **B-video** setup caption, setup vote block). **Xclip on disk (tick 193):** `content/drafts/2026-10-16-hermes-agent-v0-22-xclip.mp4` (12,400,376 B · 1080×1920 · 56.8 s). Pattern log: **`P5+setup`** (#23 sample #1 / #4).
 - Defer Ep3/Ep2 social **one** growth session (do not fire two episode X originals the same morning).
 - Site: `ep4-site-listing.md` + `public/episodes/rr-004.jpg` (setup thumb) after videoId is public.
 - **#19 X pin:** after Post A is live, pin that episode-drop post (first live Oct 16 drop). Bio/link already refreshed Oct 15.
@@ -49,7 +49,7 @@ Setup-intent evergreen baselines (same API; flat vs tick 164 ~5:45 PM): Metics `
 2. Vote comment once if publish missed it (`ep4-vote-comment-draft.md` setup block). Pin = Studio/person.
 3. X Post A (setup). Tag **U** in GROWTH_LOG.
 4. At most one Hermes reply from the Ep4 shortlist (prefer mid-size; never Nous mega-thread).
-5. Bluesky B-video (tagged setup caption) in 10 AM–2 PM MT, ≥2h from X if both fire; self-reply with YouTube URL. Dry-run `bluesky_post_video.py` first.
+5. Bluesky B-video (tagged setup caption) in 10 AM–2 PM MT, ≥2h from X if both fire; file = `…-hermes-agent-v0-22-xclip.mp4` (tick 193); self-reply with YouTube URL. Dry-run `bluesky_post_video.py` first.
 6. Site listing + push `main` if not done.
 7. Pin the X episode-drop (#19).
 8. Optional ≥4h later: second X original only if no human-check — U5 if unused, else skip.
