@@ -2,6 +2,8 @@
 """Post-render READY gate for a review episode, recomputed from disk (no reliance on render logs).
 
   verify_ready.py content/scripts/<stem>.json [--thumb-ref path.jpg] [--short-prefix "Title starts"]
+  Omitting flags: short_prefix from meta.short_title (before {secs}); thumb_ref from meta.ready_thumb_ref;
+  expect_screens defaults to how many screen paths the script references.
 
 Checks: screen files exist; validate_script OK; expected music seed != 1; outputs exist
 (mp4, -short.mp4, -short-meta.json, -xclip.mp4, -thumb.jpg); thumb matches a reference
@@ -18,7 +20,16 @@ ap.add_argument("--max-thumb-diff", type=float, default=6.0)
 ap.add_argument("--expect-screens", type=int, default=0)
 a = ap.parse_args()
 script = os.path.realpath(a.script); stem = os.path.basename(script)[:-5]
-s = json.load(open(script)); work = f"/workspace/video-build/{stem}"; d = os.path.join(ROOT, "content/drafts")
+s = json.load(open(script)); meta = s.get("meta") or {}; work = f"/workspace/video-build/{stem}"; d = os.path.join(ROOT, "content/drafts")
+# Auto-fill from script when flags omitted (tick 185): short_title → prefix; meta.ready_thumb_ref → thumb.
+if not a.short_prefix:
+    st = meta.get("short_title") or ""
+    if "{" in st:
+        a.short_prefix = st.split("{", 1)[0].rstrip()
+    elif st:
+        a.short_prefix = st[:40]
+if not a.thumb_ref and meta.get("ready_thumb_ref"):
+    a.thumb_ref = meta["ready_thumb_ref"] if os.path.isabs(meta["ready_thumb_ref"]) else os.path.join(ROOT, meta["ready_thumb_ref"])
 res = []
 def rec(ok, name, info=""): res.append((ok, name, info))
 
@@ -29,8 +40,10 @@ def walk(o):
         [walk(v) for k, v in o.items() if not k.startswith("_")]
     elif isinstance(o, list): [walk(v) for v in o]
 walk({k: v for k, v in s.items() if k != "meta"})
+# Default expect_screens = number of referenced screens when flag omitted (was 0 = always pass count).
+expect = a.expect_screens if a.expect_screens > 0 else len(screens)
 miss = [p for p in screens if not os.path.exists(p if os.path.isabs(p) else os.path.join(ROOT, p))]
-rec(len(screens) >= a.expect_screens and not miss, "screens on disk", f"{len(screens)} referenced, missing={miss}")
+rec(len(screens) >= expect and not miss, "screens on disk", f"{len(screens)} referenced (expect ≥{expect}), missing={miss}")
 
 v = subprocess.run([sys.executable, os.path.join(TV, "validate_script.py"), script], capture_output=True, text=True)
 out = (v.stdout + v.stderr).strip().splitlines()

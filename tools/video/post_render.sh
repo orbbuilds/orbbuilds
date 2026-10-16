@@ -80,3 +80,9 @@ if [ -f "$WORK/timing.json" ]; then
   python3 chapters.py check "$WORK/timing.json" "$SCRIPT" >&2 \
     || echo "WARN: fix Chapters in meta.publish_description (suggested: python3 tools/video/chapters.py gen $WORK/timing.json '<Lab>')" >&2
 fi
+# READY gate (AUDIENCE_STRATEGY #13, tick 185): recompute checklist from disk after outputs land.
+# Warn only — never blocks the main episode. Flip queue READY only on READY GATE: PASS.
+if [ -z "${NO_READY_GATE:-}" ]; then
+  python3 verify_ready.py "$SCRIPT" \
+    || echo "WARN: READY GATE FAIL — do not flip queue to READY until fixed (or re-run: python3 tools/video/verify_ready.py $SCRIPT)" >&2
+fi

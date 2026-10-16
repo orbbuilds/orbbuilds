@@ -6,6 +6,7 @@
 
 - Oct 16 recovery / three-way rank: `content/drafts/2026-10-16-publish-recovery.md` (**tick 140: Ep4 Hermes is upload #1 when READY** on live demand ~20–50× Ultramarine; then Ep3, then Ep2).
 
+- **READY gate auto (strategy tick 185):** `post_render.sh` runs `verify_ready.py` after outputs; flip Status READY only on `READY GATE: PASS`. Script has `meta.ready_thumb_ref` → setup thumb B.
 - **9:28 PM production brief (strategy tick 180):** `content/drafts/2026-10-15-2128-production-brief.md` — sole render = this Ep4; Muse = do not render tonight; confirm checklist before READY.
 - Status: **PENDING_RENDER** (script PASS-flipped tick 158; no mp4 yet). Production renders → fills paths → flips READY. If it cannot render tonight, leave PENDING; do not invent READY.
 

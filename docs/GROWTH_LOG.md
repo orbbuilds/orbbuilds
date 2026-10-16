@@ -13,6 +13,9 @@
 - Ep4 preflight: 415 spoken words, screens present, validate OK, PENDING_RENDER.
 - No posts, uploads, or pushes from this tick.
 
+## 2026-10-15 ~9:23 PM MT — audience strategy tick 185
+#13: `post_render.sh` now auto-runs `verify_ready.py` (short_prefix / ready_thumb_ref / screen count from script). Ep4 `meta.ready_thumb_ref` → setup thumb B. Pre-render: inputs PASS, outputs absent. Flip READY only on `READY GATE: PASS`.
+
 ## 2026-10-15 ~7:30 PM MT — audience strategy tick 175
 - #16/#23: Ep4 spoken script trimmed ~464 → **415** words (under 420 ceiling) after tick-165 cold-open rewrite blew the limit. Setup framing + PASS screens kept. Queue length note + HANDOFF thumb → B.
 - Desk-only; nothing posted or uploaded.

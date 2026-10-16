@@ -34,7 +34,7 @@ Fill queue paths from the real outputs (`…-hermes-agent-v0-22.mp4`, `-upload.m
 
 ## Confirm before flipping READY (all must pass)
 
-One command (tick 184) checks items 1–8 from disk: `python3 tools/video/verify_ready.py content/scripts/2026-10-16-hermes-agent-v0-22.json --expect-screens 2 --thumb-ref content/drafts/ep4-cand-hermes-setup-thumb-b.jpg --short-prefix "Hermes Agent v0.22 setup in"` → expect `READY GATE: PASS`.
+`post_render.sh` auto-runs the READY gate (tick 185). After render, look for `READY GATE: PASS` in stdout (or re-run `python3 tools/video/verify_ready.py content/scripts/2026-10-16-hermes-agent-v0-22.json` — flags auto-fill from `meta.short_title` + `meta.ready_thumb_ref`). Skip with `NO_READY_GATE=1`. Manual equivalent still works: `… --expect-screens 2 --thumb-ref content/drafts/ep4-cand-hermes-setup-thumb-b.jpg --short-prefix "Hermes Agent v0.22 setup in"`.
 
 1. Log has **zero** `warn: screen not found` (both PASS screens resolved).
 2. Spoken words still ≤420 (`validate_script.py` OK).
