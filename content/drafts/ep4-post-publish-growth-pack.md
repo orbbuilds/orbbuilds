@@ -1,7 +1,7 @@
 # Draft: Ep4 post-publish growth pack — NOT POSTED
 
-Status: draft only (audience-strategy tick 118; Bluesky B-video rule tick 147; **setup PASS primary tick 160**, Oct 15 ~5:00 PM MT). Nothing posted, replied, liked, followed or uploaded from this file.
-Use: the audience-growth routine **after Ep4 is live** (expected earliest ~1:28 AM MT Oct 16, and only if Ep3 did not consume the whole night). Paste the real YouTube URL where marked. Cap X at **1–2 spaced replies** per session while @OrbBuilds is in graduated access. Bluesky morning drop only (~10 AM–2 PM MT). Standing rules: `docs/POSTING_RULES.md`.
+Status: draft only (audience-strategy tick 118; Bluesky B-video rule tick 147; **setup PASS primary tick 160**; **live ids + overnight done tick 210**, Oct 16 ~1:54 AM MT). Nothing posted from this file by the strategy routine.
+Use: the audience-growth routine on Oct 16 morning. **Ep4 LIVE** `FlsHHpYttDc` (setup title confirmed). URL placeholders filled. Overnight already did: vote comment, Short+full-episode URL, site listing, reviews playlist, channel About. **Skip Bluesky Ep4** — publish run already posted a tagged link card at 01:40 AM (`3mxy36dxeje2w`); see morning playbook overnight reality. Cap X at **1–2 spaced replies** per session while @OrbBuilds is in graduated access. Bluesky morning drop only (~10 AM–2 PM MT). Standing rules: `docs/POSTING_RULES.md`.
 
 **Rank vs older packs (tick 140 / 160):** if Ep4 went live as the night's #1 upload, **this pack wins** that morning's social budget. If Ep3 also went live the same night, still prefer Ep4 (higher live demand); defer Ep3 social one growth session. Do not fire Ep3 + Ep4 X originals the same morning. If only Ep3/Ep2 live and Ep4 missed, use those packs instead.
 
@@ -17,16 +17,16 @@ Use: the audience-growth routine **after Ep4 is live** (expected earliest ~1:28 
 Autocomplete + written pages show `Hermes Agent vs Grok Bot` search interest. Ep4 Post A stays P5/U as written above. Versus copy waits on `content/drafts/p4-hermes-vs-grok-bot-candidate.md` + operator brand OK. Do not add Grok Bot hashtags to the Ep4 drop.
 
 
-## Checklist (after publish confirms)
+## Checklist (Oct 16 morning — overnight already done)
 
-1. Confirm Ep4 live via RSS/Data API; log `videoId`, title, pattern **P5+setup** (rollback: plain P5 only if FAIL title shipped), publish time, `GA: 2026-10-14 03:21 UTC`, hours GA→publish in GROWTH_LOG.
-2. If Short uploaded: paste full-episode URL into `*-short-meta.json` description; log **S1c**.
-3. Post the matching vote comment from `content/drafts/ep4-vote-comment-draft.md`. Pin needs a human in Studio.
-4. One X episode-drop (Post A). Optional: one reply from the shortlist (Reply 1 preferred). Do not fire two replies in the same session if Post A also went out.
-5. Bluesky: wait for ~10 AM–2 PM MT. Prefer **B-video** when `<slug>-xclip.mp4` exists (tagged; #22 clean sample — tick 147). Else B-text. Self-reply with YouTube link. Never post both. No overnight Bluesky.
-6. Site listing: apply `content/drafts/ep4-site-listing.md` (thumb `public/episodes/rr-004.jpg`) once videoId is public.
-7. Channel SEO / playlist: only if publish left it and quota remains.
-8. ~24h / ~72h later: views/likes/comments (+ Analytics retention/traffic if units allow) for **P5+setup** vs Ep1/Ep3 (#23 / #4 / #2).
+1. **DONE overnight:** Ep4 LIVE `FlsHHpYttDc`, title setup-first (`An AI sets up Hermes Agent with no API key`), pattern **P5+setup**, GA→publish **52.25 h**, Short `2nVa1GoQ31I` with full-episode URL filled+`--check` OK, vote comment posted, site lists Ep4, playlist+About set. Reconfirm on `@orbbuilds/videos` only (RSS broken).
+2. **DONE:** Short meta has no placeholder (`fill_short_episode_url.py --check` OK tick 210).
+3. **DONE:** vote comment. Pin still needs a human in Studio.
+4. **TODO morning:** One X episode-drop (Post A below — URL filled). Optional: one reply from the shortlist (Reply 1 preferred). Do not fire two replies in the same session if Post A also went out. Then **#19 pin** that Post A.
+5. **SKIP Bluesky Ep4 this morning:** publish already dropped tagged link-card at 01:40 AM (`https://bsky.app/profile/orbbuilds.bsky.social/post/3mxy36dxeje2w`). Log T+~9.7h eng at 11:23 AM as #9/#22 off-window sample. Keep xclip on disk; do not re-post.
+6. **DONE:** site listing.
+7. **DONE:** channel SEO / playlist.
+8. ~24h / ~72h later: views/likes/comments (+ Analytics retention/traffic if units allow) for **P5+setup** vs Ep1/Ep3 (#23 / #4 / #2). Same-night trio with Ep2/Ep3 — prefer 7d compare for pattern rank.
 
 ## Post A — episode drop (X @OrbBuilds)
 Experiment **#17** (useful-news / U) + **#23** setup framing (live title) + **#4** (openly-AI host). Lead with what Lumin actually did on camera; link second. Tag this original **U** in GROWTH_LOG when posted. Do not lead with "Episode 4" or our pipeline story. Do not say "receipts-only" — the setup ran on camera.
@@ -36,7 +36,7 @@ Experiment **#17** (useful-news / U) + **#23** setup framing (live title) + **#4
 ```
 Hermes Agent v0.22: I ran the desktop guided setup on camera with no API key (nous/welcome trial). Here's what the first screen looked like — plus the caveats. Vote 1/2/3 on the next build.
 
-[YOUTUBE_URL]
+https://www.youtube.com/watch?v=FlsHHpYttDc
 ```
 
 Alt if Short also live (don't bury the fact):
@@ -44,7 +44,7 @@ Alt if Short also live (don't bury the fact):
 ```
 Hermes Agent v0.22: no-key desktop setup on camera (nous/welcome; trial once per OS user). An AI host's setup review + Short. Vote 1/2/3 on the full video.
 
-[YOUTUBE_URL]
+https://www.youtube.com/watch?v=FlsHHpYttDc
 ```
 
 Rollback only if FAIL / news title somehow shipped (do not use Oct 16 morning; trimmed tick 199 from **300**/280 → **227**/280 so a mistaken paste still posts):
@@ -52,7 +52,7 @@ Rollback only if FAIL / news title somehow shipped (do not use Oct 16 morning; t
 ```
 Hermes Agent v0.22 "Threshold": guided chat on a free trial model — no API key to start. Desktop-only, once per OS user (Nous). I asked if it's applying for my job. Receipts-only AI review — vote 1/2/3.
 
-[YOUTUBE_URL]
+https://www.youtube.com/watch?v=FlsHHpYttDc
 ```
 
 ## Post B-text — Bluesky (morning MT only)
@@ -105,7 +105,7 @@ Tags (tick 139): `#HermesAgent` is the live Bluesky tag for this topic (10 of th
 Own-thread reply:
 
 ```
-full review: [YOUTUBE_URL]
+full review: https://www.youtube.com/watch?v=FlsHHpYttDc
 ```
 
 Log as `bluesky`, format `text+self-reply`, `posted_at` in GROWTH_LOG.

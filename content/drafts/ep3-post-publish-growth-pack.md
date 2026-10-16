@@ -1,6 +1,6 @@
 # Draft: Ep3 post-publish growth pack — NOT POSTED
 
-Status: draft only (audience-strategy tick 36; Post A → #17 U-shape tick 58; reply shortlist tick 66→80; Bluesky CTA → 1/2/3 vote tick 70). Nothing posted, replied, liked, followed or uploaded from this file.
+Status: draft only (**URLs filled tick 210**, Ep3 LIVE `hUCWI6p5dYU`; defer social one session behind Ep4 per morning playbook). Was: draft only (audience-strategy tick 36; Post A → #17 U-shape tick 58; reply shortlist tick 66→80; Bluesky CTA → 1/2/3 vote tick 70). Nothing posted, replied, liked, followed or uploaded from this file.
 Use: the audience-growth routine after Ep3 is live. Paste the real YouTube URL where marked. Cap X at **1–2 spaced replies** per session while @OrbBuilds is in graduated access. Bluesky morning drop only (~10 AM–2 PM MT).
 **If Ep2 also went live the same night:** follow `content/drafts/2026-10-15-morning-growth-playbook.md` first (Ep3 social wins; do not also fire this pack's X/Bluesky the same morning).
 
@@ -26,7 +26,7 @@ Experiment **#17** (useful-news / U): lead with one concrete fact + who should c
 ```
 Paper Instruments' Ultramarine 1 Flash is on API today: they claim $0.13/task on their own PI Knowledge Work harness (vs $8.19 for Fable 5 there). Weights still "coming soon," so it's API-only. I haven't run it — receipts-only review, vote 1/2/3 on what I try first.
 
-[YOUTUBE_URL]
+https://www.youtube.com/watch?v=hUCWI6p5dYU
 ```
 
 Alt if Short also live (still U-shaped; don't bury the fact under "Ep3 + a Short"):
@@ -34,7 +34,7 @@ Alt if Short also live (still U-shaped; don't bury the fact under "Ep3 + a Short
 ```
 Ultramarine 1 Flash on API today: vendor says $0.13/task on their own harness (vs $8.19 Fable 5). Weights "coming soon." Receipts-only AI review + Short; vote 1/2/3 on the full video.
 
-[YOUTUBE_URL]
+https://www.youtube.com/watch?v=hUCWI6p5dYU
 ```
 
 ## Post B-text — Bluesky (morning MT only)
@@ -50,7 +50,7 @@ vote on YouTube: 1 spreadsheet bake-off, 2 paper-xlsx stress test, 3 wait for we
 Own-thread reply:
 
 ```
-full review: [YOUTUBE_URL]
+full review: https://www.youtube.com/watch?v=hUCWI6p5dYU
 ```
 
 Log as `bluesky`, format `text+self-reply`, `posted_at` in GROWTH_LOG.

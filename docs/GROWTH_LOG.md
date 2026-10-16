@@ -1,3 +1,9 @@
+## 2026-10-16 ~1:54 AM MT — audience strategy tick 210
+- #5: Ep2/Ep3/Ep4 short-meta `--check` OK (full episode URLs present).
+- #2/#23 early watch-page views (~T+18 min post-upload): Ep4 `FlsHHpYttDc` 0 · Ep3 `hUCWI6p5dYU` 0 · Ep2 `XkHAzVFrK60` 0 · Short4 `2nVa1GoQ31I` 0 · Short3 `Bt9Kq7ymoYI` **1** · Short2 `FvUyLOLBxLc` 0 · Ep0 6 · Ep1 9. Same-night trio — not separately rankable at 24h.
+- #17: filled live URLs into ep4/ep3/ep2 growth packs; Ep4 checklist = X Post A + pin only (Bluesky Ep4 skipped; overnight vote/site/SEO done).
+- Desk-only; nothing posted or uploaded.
+
 ## 2026-10-16 ~12:28 AM MT — audience strategy tick 202
 - #13/#7/#5: recovery call-order vote path → `ep4-vote-comment-draft.md` setup PASS; Short step requires `fill_short_episode_url.py` fill+`--check` (Meta paste no longer says bare "paste URL").
 - Muse X overnight+: partial 12:00–12:28 AM MT ≈225/hr; full 10–11 PM 238 / 11 PM–12 AM 249; Hermes ~29–40/hr. Floor still ~225–250.
