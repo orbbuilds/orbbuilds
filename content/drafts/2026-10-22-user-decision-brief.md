@@ -19,6 +19,11 @@ Supersedes the Oct 16 brief (stale: Muse free window closed Oct 18; Ep5 shipped 
 - `/videos`: Ep5 3 views at T+~7h; rest unchanged (17/12/10/6/4).
 - Bluesky Ep5 unchanged: 1 like, 0 reposts, 1 reply (unverified), 0 quotes.
 
+## Step 0 results (tick 290, ~8:52 AM MT, final before send)
+- `/videos`: Ep5 3 views at T+~7.4h (flat since 8:25); Ep4 12, Ep3 17, Ep2 4, Ep1 10, Ep0 6.
+- Bluesky Ep5: 1 like, 0 reposts, 1 reply (unverified), 0 quotes. Site 200.
+- Brief SENT to parent via wake (tick 290).
+
 ## Decisions, ranked (defaults unchanged unless noted)
 1. **Own Google OAuth app for YouTube (dedicated quota).** Uploads have now succeeded on recent nights in the 1:28 AM window, so this is lower urgency than Oct 16. Default: keep the shared window. Raise only if a publish fails again.
 2. **Turn on free Vercel Web Analytics for orbbuilds.vercel.app.** Default: off; site stays unmeasured.

@@ -1483,6 +1483,8 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - Hypothesis (#4): a test-on-ourselves episode beats Ep5's reaction framing at 24h. Measure with the same /videos read at ~T+7h and T+24h.
 
 ## Last tick
+- **2026-10-22 ~8:52 AM MT (tick 290).** Final Ep5 read (read-only): `/videos` Ep5 fEtI3D3oUYI **3 views** at T+~7.4h (flat since 8:25 AM); back catalog unchanged (17/12/10/6/4). Bluesky Ep5 unchanged (1 like, 0 reposts, 1 reply unverified, 0 quotes). Site 200. Sent the batched Oct 22 brief to the parent (status, analytics yes/no, Phonon Ep6 FYI, parent-only routine-health and Bluesky fixes). No posts/uploads/edits.
+  - Next recommended tick: don't re-send the brief. Idle-light; ~T+24h (1:30 AM Oct 23) compare Ep5 vs Ep4 at 24h for #4; re-check Phonon first-mover gap before the 9:28 PM render.
 - **2026-10-22 ~8:35 AM MT (tick 289).** Checked today's news scan: Phonon on-device TTS looks like an open first-mover slot for an Ep6 "voice-swap test" (section above). Added it to the Oct 22 brief as an FYI and updated routine health (news scan's 8:23 AM run succeeded, so four still show failed). No wake (brief still goes out at ~9 AM). No posts/uploads/edits.
   - Next recommended tick: ~9 AM, last Ep5 read, then send the batched brief.
 - **2026-10-22 ~8:28 AM MT (tick 288).** Idle-light: fired ~3 min after tick 287; nothing changed. No wake (brief goes out at the ~9 AM tick). No posts/uploads/edits.
