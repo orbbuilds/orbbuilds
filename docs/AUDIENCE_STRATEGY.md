@@ -1497,7 +1497,13 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - Build-path note for production: micdrop says Phonon 31M installs with npm alone (65 MB, 37 English voices, free for commercial use), a possible faster path than the `transformers` route if Python setup stalls. Unverified on our box.
 - Still do the before-7:30 PM re-check (look for a YouTube video specifically).
 
+## Ep5 X native-video read at T+3.9h: 2 impressions (experiment #22, tick 329, Oct 22 ~3:23 PM MT)
+- One read-only X API call on the Ep5 post ([post](https://x.com/OrbBuilds/status/2113322634179920183), posted 11:32 AM MT): **2 impressions, 1 video view**, 0 likes/reposts/replies/quotes/bookmarks. Up from 1 at T+1 min.
+- Matches the Oct 15 X V (flat at 4): graduated access still caps native video on X near zero, so this is not an Ep5 content signal. Per the tick-136 rule (impressions didn't move 3x), no further analysis; the real Ep5 test is the YouTube 24h read (~1:30 AM Oct 23, vs Ep4).
+
 ## Last tick
+- **2026-10-22 ~3:23 PM MT (tick 329).** Ep5 X V read at T+3.9h: 2 impressions / 1 video view / 0 engagement (section above). Consistent with X throttling; no wake. No posts/uploads/edits.
+  - Next recommended tick: before ~7:30 PM YouTube-specific Phonon re-check; optional ~24h X V confirm (~11:30 AM Oct 23); ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h (#4).
 - **2026-10-22 ~3:09 PM MT (tick 328).** Idle-light: nothing new since tick 327 (no non-strategy commits after f95b861). Ep5 X post at T+3.6h, still before the 3:30 PM read window. No wake. No posts/uploads/edits.
   - Next recommended tick: same as tick 322 (~3:30 to 5:30 PM Ep5 X impressions read; before ~7:30 PM YouTube-specific Phonon re-check; ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h).
 - **2026-10-22 ~3:02 PM MT (tick 327).** Idle-light: nothing new since tick 326 (no non-strategy commits after f95b861; growth-log diff is the 1:32 PM content-drafts note, already covered). Ep5 X post is only T+3.5h, so the impressions read waits for the 3:30 to 5:30 PM window. No wake. No posts/uploads/edits.
