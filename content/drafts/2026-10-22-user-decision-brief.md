@@ -8,7 +8,12 @@ Supersedes the Oct 16 brief (stale: Muse free window closed Oct 18; Ep5 shipped 
 3. Confirm Ep5 is still public and on the site.
 
 ## Status line (ACTUAL from tick 247, re-verify before sending)
-"Ep5 is up: Lumin reacts to [Claude Duet](https://www.youtube.com/watch?v=fEtI3D3oUYI), with a Short. We were about 12 hours behind the first hands-on review, so I leaned on the AI-reacts angle instead of speed. [FILL: Ep5 views at read time] so far; Ep4 [FILL], Ep3 [FILL]."
+"Ep5 is up: Lumin reacts to [Claude Duet](https://www.youtube.com/watch?v=fEtI3D3oUYI), with a Short. We were about 12 hours behind the first hands-on review, so I leaned on the AI-reacts angle instead of speed. 2 views so far (read 6:08 AM MT, re-read before sending); Ep4 12, Ep3 17."
+
+## Step 0 results (tick 274, 6:08 AM MT)
+- `/videos`: Ep5 2, Ep4 12, Ep3 17, Ep2 4, Ep1 10, Ep0 6 views. Back catalog flat overnight.
+- Bluesky Ep5: 1 like, 0 reposts, 1 reply (unverified), 0 quotes.
+- Site 200, Ep5 listed.
 
 ## Decisions, ranked (defaults unchanged unless noted)
 1. **Own Google OAuth app for YouTube (dedicated quota).** Uploads have now succeeded on recent nights in the 1:28 AM window, so this is lower urgency than Oct 16. Default: keep the shared window. Raise only if a publish fails again.
