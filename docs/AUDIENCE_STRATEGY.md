@@ -1477,25 +1477,7 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - Implication: our edge is the angle, not speed. Keep the P5 "AI host reacts / is it coming for my job" title (no other result is an AI character reacting); do not add "tested"/"hands-on" language. Queue file first-mover line updated. Hypothesis for #4: P5 reaction framing outperforms Ep4's setup framing at 24h even when late to a topic.
 
 ## Last tick
-- **2026-10-22 ~3:24 AM MT (tick 258).** Idle-light: nothing changed since tick 257, Oct 22 decision-brief skeleton still on disk. No wake (quiet hours). No posts/uploads/edits.
-  - Next recommended tick: idle-light until ~6 to 8 AM; then fill the brief's Step 0 reads (views Ep2 to Ep5 + Short, Bluesky Ep5 engagement) and batch one late-morning wake.
-- **2026-10-22 ~3:14 AM MT (tick 257).** Idle-light: nothing changed since tick 256, Oct 22 decision-brief skeleton still on disk. No wake (quiet hours). No posts/uploads/edits.
-  - Next recommended tick: idle-light until ~6 to 8 AM; then fill the brief's Step 0 reads (views Ep2 to Ep5 + Short, Bluesky Ep5 engagement) and batch one late-morning wake.
-- **2026-10-22 ~3:08 AM MT (tick 256).** Idle-light: no changes since tick 255, Oct 22 decision-brief skeleton still on disk. No wake (quiet hours). No posts/uploads/edits.
-  - Next recommended tick: idle-light until ~6 to 8 AM; then fill the brief's Step 0 reads (views Ep2 to Ep5 + Short, Bluesky Ep5 engagement) and batch one late-morning wake.
-- **2026-10-22 ~3:03 AM MT (tick 255).** Idle-light: tree clean at 1015f7f, no reboot (uptime 5 h 7 min), Oct 22 decision-brief skeleton still on disk, nothing changed since tick 254. No wake (quiet hours). No posts/uploads/edits.
-  - Next recommended tick: idle-light until ~6 to 8 AM; then fill the brief's Step 0 reads (views Ep2 to Ep5 + Short, Bluesky Ep5 engagement) and batch one late-morning wake.
-- **2026-10-22 ~2:49 AM MT (tick 254).** Idle-light: tree clean, no reboot, Oct 22 decision-brief skeleton still on disk, nothing changed since tick 253. No wake (quiet hours). No posts/uploads/edits.
-  - Next recommended tick: idle-light until ~6 to 8 AM; then fill the brief's Step 0 reads (views Ep2 to Ep5 + Short, Bluesky Ep5 engagement) and batch one late-morning wake.
-- **2026-10-22 ~2:41 AM MT (tick 253).** Idle-light: tree clean, no reboot, Oct 22 decision-brief skeleton still on disk, nothing changed since tick 252. No wake (quiet hours). No posts/uploads/edits.
-  - Next recommended tick: idle-light until ~6 to 8 AM; then fill the brief's Step 0 reads (views Ep2 to Ep5 + Short, Bluesky Ep5 engagement) and batch one late-morning wake.
-- **2026-10-22 ~2:31 AM MT (tick 252).** Idle-light: tree clean at 8248fdc, no reboot (uptime 4 h 37 min), Oct 22 decision-brief skeleton still on disk, nothing changed since tick 251. No wake (quiet hours). No posts/uploads/edits.
-  - Next recommended tick: idle-light until ~6 to 8 AM; then fill the brief's Step 0 reads (views Ep2 to Ep5 + Short, Bluesky Ep5 engagement) and batch one late-morning wake.
-- **2026-10-22 ~2:21 AM MT (tick 251).** Idle-light: tree clean, no reboot, Oct 22 decision-brief skeleton still on disk, nothing changed since tick 250. No wake (quiet hours). No posts/uploads/edits.
-  - Next recommended tick: idle-light until ~6 to 8 AM; then fill the brief's Step 0 reads (views Ep2 to Ep5 + Short, Bluesky Ep5 engagement) and batch one late-morning wake.
-- **2026-10-22 ~2:11 AM MT (tick 250).** Idle-light: tree clean at 97b00c1, no reboot (uptime 4 h 17 min), Oct 22 decision-brief skeleton still on disk, nothing changed since tick 249. No wake (quiet hours). No posts/uploads/edits.
-  - Next recommended tick: idle-light until ~6 to 8 AM; then fill the brief's Step 0 reads (views Ep2 to Ep5 + Short, Bluesky Ep5 engagement) and batch one late-morning wake.
-- **2026-10-22 ~2:02 AM MT (tick 249).** Idle-light: tree clean at 9a15514, no reboot (uptime 4 h 8 min), Oct 22 decision-brief skeleton still on disk, nothing changed since tick 248. No wake (quiet hours). No posts/uploads/edits.
+- **2026-10-22 ~3:47 AM MT (tick 260).** Idle-light: nothing changed since tick 248; Oct 22 decision-brief skeleton still on disk. Collapsed idle ticks 249 to 259 (2:02 to 3:37 AM, all identical idle-light, no changes) into this line to keep the log readable. No wake (quiet hours). No posts/uploads/edits.
   - Next recommended tick: idle-light until ~6 to 8 AM; then fill the brief's Step 0 reads (views Ep2 to Ep5 + Short, Bluesky Ep5 engagement) and batch one late-morning wake.
 - **2026-10-22 ~1:45 AM MT (tick 248).** Wrote the Oct 22 decision-brief skeleton `content/drafts/2026-10-22-user-decision-brief.md` (Oct 16 brief stale: Muse window closed, OAuth urgency lower after recent successful publishes). Carries the Bluesky `#AI`/overnight fix and weekend-gap fix as parent-only lines, and flags that five Orb Builds routines show `failed` last runs on Oct 21. Stats left as FILL (none read yet). No wake (quiet hours). No posts/uploads/edits.
   - Next recommended tick: idle-light until ~6 to 8 AM; then fill the brief's Step 0 reads (views Ep2 to Ep5 + Short, Bluesky Ep5 engagement) and batch one late-morning wake.
