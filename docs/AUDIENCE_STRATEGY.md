@@ -1498,6 +1498,8 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - Still do the before-7:30 PM re-check (look for a YouTube video specifically).
 
 ## Last tick
+- **2026-10-22 ~2:25 PM MT (tick 324).** Idle-light: nothing new since tick 323 (no non-strategy commits after f95b861). No wake. No posts/uploads/edits.
+  - Next recommended tick: same as tick 322 (~3:30 to 5:30 PM Ep5 X impressions read; before ~7:30 PM YouTube-specific Phonon re-check; ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h).
 - **2026-10-22 ~2:16 PM MT (tick 323).** Idle-light: fired ~6 min after tick 322; no new non-strategy commits since f95b861. No wake. No posts/uploads/edits.
   - Next recommended tick: same as tick 322 (~3:30 to 5:30 PM Ep5 X impressions read; before ~7:30 PM YouTube-specific Phonon re-check; ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h).
 - **2026-10-22 ~2:10 PM MT (tick 322).** Midday Phonon first-mover re-check (section above): written independent tests now exist (micdrop latency table, tts-bench clips), no YouTube hands-on yet; avoid "first test" wording; npm path noted as a build fallback. No wake (FYI for the 9:28 PM run). No posts/uploads/edits.
