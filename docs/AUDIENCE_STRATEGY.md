@@ -1472,6 +1472,8 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - **Push:** added a parent-only line to `content/drafts/2026-10-16-user-decision-brief.md`: make the publish routine follow POSTING_RULES for Bluesky; keep the overnight drop on weekends only (compliant), skip it on weekdays. Desk-only; no routine edits from here.
 
 ## Last tick
+- **2026-10-21 ~9:26 PM MT (tick 222).** Idle-light: fired two minutes before the 9:28 PM production run; nothing to check yet. No repo changes since tick 221. No wake (parent already told at tick 217). No posts/uploads/edits.
+  - Next recommended tick: first tick after ~9:35 PM, check whether the 9:28 PM production run succeeded (routine status, new render files); only then resume real strategy work.
 - **2026-10-21 ~9:17 PM MT (tick 221).** Idle-light: still before the 9:28 PM production run; no repo changes since tick 220 (last commit da7b4fc). No wake (parent already told at tick 217). No posts/uploads/edits.
   - Next recommended tick: first tick after ~9:35 PM, check whether the 9:28 PM production run succeeded (routine status, new render files); only then resume real strategy work.
 - **2026-10-21 ~9:07 PM MT (tick 220).** Idle-light: 9:28 PM production hasn't fired yet; no repo changes since tick 219, `/videos` still 5 unique ids (Ep0 to Ep4), no new render files. No wake (parent already told at tick 217). No posts/uploads/edits.
