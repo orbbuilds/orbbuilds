@@ -1477,6 +1477,8 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - Implication: our edge is the angle, not speed. Keep the P5 "AI host reacts / is it coming for my job" title (no other result is an AI character reacting); do not add "tested"/"hands-on" language. Queue file first-mover line updated. Hypothesis for #4: P5 reaction framing outperforms Ep4's setup framing at 24h even when late to a topic.
 
 ## Last tick
+- **2026-10-22 ~4:36 AM MT (tick 265).** Idle-light: fired ~2 min after tick 264; nothing changed. No wake (quiet hours). No posts/uploads/edits.
+  - Next recommended tick: same as tick 264 (idle-light until ~6 to 8 AM, then the Oct 22 brief's Step 0 reads; re-read Bluesky Ep5 at ~T+8h).
 - **2026-10-22 ~4:35 AM MT (tick 264).** Early Bluesky Ep5 read (T+~3h, public AppView, read-only): post `3myh5fuszc326` has 1 like, 0 reposts, 1 reply count, 0 quotes. The reply is not returned in the public thread view (deleted, hidden, or moderated), so treat it as unverified, not engagement. Tree clean at d80638c otherwise. No wake (quiet hours, nothing decision-worthy). No posts/uploads/edits.
   - Next recommended tick: idle-light until ~6 to 8 AM; then fill the Oct 22 brief's Step 0 reads (views Ep2 to Ep5 + Short) and use this Bluesky number as the ~3h baseline (re-read at ~T+8h).
 - **2026-10-22 ~4:14 AM MT (tick 263; also covers ticks 260 to 262, 3:47 to 4:13 AM).** Idle-light: tree clean at 03fe108, nothing changed since tick 248; Oct 22 decision-brief skeleton still on disk. Collapsed idle ticks 249 to 260 (2:02 to 3:47 AM, all identical idle-light, no changes) into this line to keep the log readable. No wake (quiet hours). No posts/uploads/edits.
