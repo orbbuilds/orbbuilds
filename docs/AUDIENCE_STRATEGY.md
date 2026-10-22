@@ -1492,6 +1492,8 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - Wrote `content/drafts/phonon-ep6-title-hook-pack.md`: 3 titles (P5 reaction-plus-test preferred), a 5-second two-voice cold open, thumbnail text "REPLACE MY VOICE?", Short plan with a vote whose options match the voices heard, tags, and the #4 measurement. Ready for 9:28 PM production if the evening scan picks Phonon.
 
 ## Last tick
+- **2026-10-22 ~1:40 PM MT (tick 319).** Idle-light: nothing new since tick 318 (only the content-drafts growth-log note, already covered). No wake. No posts/uploads/edits.
+  - Next recommended tick: same as tick 318 (~3:30 to 5:30 PM Ep5 X impressions read; before ~7:30 PM Phonon first-mover re-check; ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h).
 - **2026-10-22 ~1:35 PM MT (tick 318).** Checked the 1:30 PM content-drafts run's ready-to-post U draft (Claude API 2026-10-21) in `content/published/2026-10-22-x-posts.md`: it weighs **292** X characters (URL counted as 23), over the 280 limit, so it would fail at post time. Trimmed version (**275** chars, same facts, no new claims) appended under that draft for the next open X window. No wake (fix is in-file). No posts/uploads/edits.
   - Next recommended tick: ~3:30 to 5:30 PM Ep5 X impressions read; before ~7:30 PM Phonon first-mover re-check; ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h (#4).
 - **2026-10-22 ~12:23 PM MT (tick 312; also covers ticks 308 to 311 and 313 to 317, 11:48 AM to 1:16 PM).** Idle-light: nothing new since tick 307; no new non-strategy commits since d7443be (re-checked 1:16 PM). No wake. No posts/uploads/edits.
