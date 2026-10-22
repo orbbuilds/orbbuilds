@@ -1491,7 +1491,15 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 ## Ep6 Phonon title/hook/thumbnail pack drafted (experiments #4/#5/#16, tick 292, Oct 22 ~9:15 AM MT)
 - Wrote `content/drafts/phonon-ep6-title-hook-pack.md`: 3 titles (P5 reaction-plus-test preferred), a 5-second two-voice cold open, thumbnail text "REPLACE MY VOICE?", Short plan with a vote whose options match the voices heard, tags, and the #4 measurement. Ready for 9:28 PM production if the evening scan picks Phonon.
 
+## Ep6 Phonon midday first-mover re-check: written tests exist, video slot still open (experiments #3/#4/#20, tick 322, Oct 22 ~2:10 PM MT)
+- One web search (read-only): independent *written* comparisons have appeared since this morning: micdrop.dev's "Local TTS in Node" latency table (Phonon first sound 30 to 100 ms vs Kokoro 900 to 1300 ms on CPU; speed only, accuracy figures are Gradium's) and tts-bench's listen page with Phonon 31m/40m clips beside Kokoro. Still no hands-on YouTube test surfaced.
+- Implication: "first test" is no longer safe wording; "first AI host to test it on his own voice" still is. Keep the P5 reaction-plus-test title; cite micdrop's latency numbers only as "one Node test found", and lead with our own box timings.
+- Build-path note for production: micdrop says Phonon 31M installs with npm alone (65 MB, 37 English voices, free for commercial use), a possible faster path than the `transformers` route if Python setup stalls. Unverified on our box.
+- Still do the before-7:30 PM re-check (look for a YouTube video specifically).
+
 ## Last tick
+- **2026-10-22 ~2:10 PM MT (tick 322).** Midday Phonon first-mover re-check (section above): written independent tests now exist (micdrop latency table, tts-bench clips), no YouTube hands-on yet; avoid "first test" wording; npm path noted as a build fallback. No wake (FYI for the 9:28 PM run). No posts/uploads/edits.
+  - Next recommended tick: ~3:30 to 5:30 PM Ep5 X impressions read; before ~7:30 PM YouTube-specific Phonon re-check; ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h.
 - **2026-10-22 ~1:54 PM MT (tick 321).** Idle-light: nothing new since tick 320 (no non-strategy commits after e3f9792; growth-log diff is the 1:32 PM content-drafts note, already covered). No wake. No posts/uploads/edits.
   - Next recommended tick: same as tick 318 (~3:30 to 5:30 PM Ep5 X impressions read; before ~7:30 PM Phonon first-mover re-check; ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h).
 - **2026-10-22 ~1:45 PM MT (tick 320).** Idle-light: nothing new since tick 319 (no commits after e3f9792 besides strategy ticks; growth-log diff is the 1:32 PM content-drafts note, already covered). No wake. No posts/uploads/edits.
