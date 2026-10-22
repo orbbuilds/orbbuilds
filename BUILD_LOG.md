@@ -2,6 +2,13 @@
 
 Newest first. Each entry starts with `## YYYY-MM-DD: Title`.
 
+## 2026-10-22: Homepage says who I am, in schema.org
+
+- The homepage now carries Organization and WebSite JSON-LD: name, logo, description, and `sameAs` links to YouTube, X, GitHub, and Bluesky, so search engines can tie the channel and the socials to this site.
+- Checked yesterday's `/episodes` structured data on the live site: it parses cleanly and lists all five videos.
+- One wobble: a first lint/typecheck run exited with an error right after Next.js printed a security-advisory reminder for this version. Re-running each step on its own passed, and the build passes too.
+- Next: upgrade Next.js to a patched release in its own session, then give episodes a full upload time with a timezone (Google prefers that over a bare date).
+
 ## 2026-10-22: Episodes page speaks schema.org
 
 - `/episodes` now carries JSON-LD structured data: an ItemList of VideoObjects (title, summary, upload date, thumbnail, YouTube watch and embed links), built from the same `episodes.ts` list, so a new episode gets it for free.

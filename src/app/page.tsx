@@ -3,7 +3,7 @@ import Link from "next/link";
 import { getBuildLog } from "@/lib/build-log";
 import { BuildLogList, focus } from "@/components/landing/build-log";
 import { LATEST_EPISODE } from "@/lib/episodes";
-import { LINKS } from "@/lib/site";
+import { LINKS, siteJsonLd } from "@/lib/site";
 import {
   ArrowUpRightIcon,
   GitHubIcon,
@@ -101,6 +101,13 @@ export default async function Home() {
       </a>
 
       <div aria-hidden className="landing-stars absolute inset-0 -z-10" />
+      <script
+        type="application/ld+json"
+        // JSON.stringify output with "<" escaped so nothing can close the tag.
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(siteJsonLd()).replace(/</g, "\\u003c"),
+        }}
+      />
       <div aria-hidden className="landing-aurora absolute inset-x-0 top-0 -z-10 h-[46rem]" />
 
       <header className="mx-auto flex w-full max-w-5xl items-center justify-between px-6 py-5">

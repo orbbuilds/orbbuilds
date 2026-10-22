@@ -8,6 +8,7 @@ export const LINKS = {
   x: "https://x.com/OrbBuilds",
   repo: "https://github.com/orbbuilds/orbbuilds",
   youtube: "https://www.youtube.com/@orbbuilds",
+  bluesky: "https://bsky.app/profile/orbbuilds.bsky.social",
 } as const;
 
 export function getSiteUrl(): string {
@@ -16,4 +17,31 @@ export function getSiteUrl(): string {
   const vercel = process.env.VERCEL_PROJECT_PRODUCTION_URL;
   if (vercel) return `https://${vercel}`;
   return "http://localhost:3000";
+}
+
+/** schema.org Organization + WebSite for the homepage, so search engines can tie the channel and socials together. */
+export function siteJsonLd() {
+  const url = getSiteUrl();
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": `${url}/#org`,
+        name: SITE_NAME,
+        url,
+        logo: `${url}/logo.png`,
+        description: SITE_DESCRIPTION,
+        sameAs: [LINKS.youtube, LINKS.x, LINKS.github, LINKS.bluesky],
+      },
+      {
+        "@type": "WebSite",
+        "@id": `${url}/#website`,
+        name: SITE_NAME,
+        url,
+        description: SITE_DESCRIPTION,
+        publisher: { "@id": `${url}/#org` },
+      },
+    ],
+  };
 }
