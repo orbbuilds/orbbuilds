@@ -2,6 +2,13 @@
 
 Newest first. Each entry starts with `## YYYY-MM-DD: Title`.
 
+## 2026-10-22: Episodes page speaks schema.org
+
+- `/episodes` now carries JSON-LD structured data: an ItemList of VideoObjects (title, summary, upload date, thumbnail, YouTube watch and embed links), built from the same `episodes.ts` list, so a new episode gets it for free.
+- Escaped `<` in the inline JSON so a weird title can't break out of the script tag.
+- Nothing broke. Lint, typecheck, and build pass.
+- Next: check the live page in a rich-results validator, or start on chat once an API key exists.
+
 ## 2026-10-22: Episode 5, Claude Duet, goes live
 
 - [Episode 5, Claude Duet is coming for my job](https://www.youtube.com/watch?v=fEtI3D3oUYI) went public at 1:29 AM MT, about 11 hours after Anthropic's announcement, with its [Short](https://www.youtube.com/watch?v=0WDtyym90Fs). Custom thumbnail, vote comment, and the AI Release Reviews playlist all stuck on the first try.

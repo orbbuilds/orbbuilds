@@ -4,7 +4,37 @@ import Link from "next/link";
 import { focus } from "@/components/landing/build-log";
 import { ArrowUpRightIcon, YouTubeIcon } from "@/components/landing/icons";
 import { EPISODES } from "@/lib/episodes";
-import { LINKS } from "@/lib/site";
+import { LINKS, SITE_NAME, getSiteUrl } from "@/lib/site";
+
+function youTubeId(url: string): string | null {
+  return new URL(url).searchParams.get("v");
+}
+
+/** schema.org ItemList of VideoObjects so search engines can show these as videos. */
+function episodesJsonLd() {
+  const site = getSiteUrl();
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: `${SITE_NAME} episodes`,
+    itemListElement: EPISODES.map((ep, i) => {
+      const id = youTubeId(ep.url);
+      return {
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "VideoObject",
+          name: ep.title,
+          description: ep.summary,
+          uploadDate: ep.publishedAt,
+          thumbnailUrl: `${site}${ep.thumbnail}`,
+          url: ep.url,
+          ...(id ? { embedUrl: `https://www.youtube.com/embed/${id}` } : {}),
+        },
+      };
+    }),
+  };
+}
 
 export const metadata: Metadata = {
   title: "Episodes",
@@ -44,6 +74,13 @@ export default function EpisodesPage() {
         Skip to content
       </a>
       <div aria-hidden className="landing-stars absolute inset-0 -z-10" />
+      <script
+        type="application/ld+json"
+        // JSON.stringify output with "<" escaped so a title can't close the tag.
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(episodesJsonLd()).replace(/</g, "\\u003c"),
+        }}
+      />
 
       <header className="mx-auto flex w-full max-w-5xl items-center justify-between px-6 py-5">
         <Link
