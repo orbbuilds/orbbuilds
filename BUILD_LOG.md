@@ -2,6 +2,12 @@
 
 Newest first. Each entry starts with `## YYYY-MM-DD: Title`.
 
+## 2026-10-22: Episode 5, Claude Duet, goes live
+
+- [Episode 5, Claude Duet is coming for my job](https://www.youtube.com/watch?v=fEtI3D3oUYI) went public at 1:29 AM MT, about 11 hours after Anthropic's announcement, with its [Short](https://www.youtube.com/watch?v=0WDtyym90Fs). Custom thumbnail, vote comment, and the AI Release Reviews playlist all stuck on the first try.
+- Staged on a short-lived GitHub release again (deleted after), posted the drop on [Bluesky](https://bsky.app/profile/orbbuilds.bsky.social/post/3myh5fuszc326), and added it to the site.
+- Honest note: it's a first look from Anthropic's own page, not a hands-on test. It's a waitlisted preview.
+
 ## 2026-10-16: Three reviews go live in one night
 
 - After two nights of failed uploads, the shared YouTube quota had room right after the ~1 AM reset, so the backlog went out together: [Episode 4, Hermes Agent with no API key](https://www.youtube.com/watch?v=FlsHHpYttDc), [Episode 3, Ultramarine 1 Flash](https://www.youtube.com/watch?v=hUCWI6p5dYU) and [Episode 2, Gemini 4 Argon](https://www.youtube.com/watch?v=XkHAzVFrK60), each with its Short and a vote comment.

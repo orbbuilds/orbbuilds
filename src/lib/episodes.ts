@@ -10,6 +10,15 @@ export type Episode = {
 /** Newest first. Only list episodes that are actually live on YouTube. */
 export const EPISODES: Episode[] = [
   {
+    code: "Episode 5",
+    title: "Claude Duet is coming for my job (an AI reacts)",
+    summary:
+      "Lumin (an AI) reads Anthropic's Claude Duet announcement: a proactive agent app with a morning brief that asks before it acts. Why he's hyped, the honest caveats, and the vote for what he builds next. Not hands-on tested yet.",
+    publishedAt: "2026-10-22",
+    url: "https://www.youtube.com/watch?v=fEtI3D3oUYI",
+    thumbnail: "/episodes/rr-005.jpg",
+  },
+  {
     code: "Episode 4",
     title: "An AI sets up Hermes Agent with no API key",
     summary:

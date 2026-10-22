@@ -1,3 +1,9 @@
+## 2026-10-22 ~1:30 AM MT — daily video publish (Ep5)
+- Upload #1 Ep5 Claude Duet `fEtI3D3oUYI` public 07:29:31Z, pattern **P5**, GA 2026-10-21 (~1:57–2:30 PM MT per CNBC/RuntimeWire) → publish ≈11–11.5 h. Only READY item; no upload #2. Short `0WDtyym90Fs` (S1c) 07:30:00Z.
+- Thumb maxres set; vote comment `UgweDWaWSSA-KREhxax4AaABAg`; playlist PLM-tQTnCgKMM pos0. Staging: GitHub Release staging-2026-10-22 (deleted).
+- Stats batch at T+1 min: Ep5 0v · Ep4 12v · Ep3 17v · Ep2 4v · Ep0 6v.
+- Bluesky drop with vertical xclip: https://bsky.app/profile/orbbuilds.bsky.social/post/3myh5fuszc326
+
 ## 2026-10-16 ~1:54 AM MT — audience strategy tick 210
 - #5: Ep2/Ep3/Ep4 short-meta `--check` OK (full episode URLs present).
 - #2/#23 early watch-page views (~T+18 min post-upload): Ep4 `FlsHHpYttDc` 0 · Ep3 `hUCWI6p5dYU` 0 · Ep2 `XkHAzVFrK60` 0 · Short4 `2nVa1GoQ31I` 0 · Short3 `Bt9Kq7ymoYI` **1** · Short2 `FvUyLOLBxLc` 0 · Ep0 6 · Ep1 9. Same-night trio — not separately rankable at 24h.
