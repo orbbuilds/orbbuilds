@@ -1477,9 +1477,7 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - Implication: our edge is the angle, not speed. Keep the P5 "AI host reacts / is it coming for my job" title (no other result is an AI character reacting); do not add "tested"/"hands-on" language. Queue file first-mover line updated. Hypothesis for #4: P5 reaction framing outperforms Ep4's setup framing at 24h even when late to a topic.
 
 ## Last tick
-- **2026-10-22 ~6:43 AM MT (tick 277).** Idle-light: 14 min after tick 276, nothing changed; Oct 22 brief still on disk. No wake (batching the late-morning brief). No posts/uploads/edits.
-  - Next recommended tick: idle-light until ~9 AM; then re-read Ep5 at ~T+8h vs Ep4 at similar age (#4) and send the batched brief from `content/drafts/2026-10-22-user-decision-brief.md`.
-- **2026-10-22 ~6:29 AM MT (tick 276).** Idle-light: 7 min after tick 275, nothing changed; Ep5 re-read is due ~9 AM (T+8h). No wake (batching the late-morning brief). No posts/uploads/edits.
+- **2026-10-22 ~7:06 AM MT (tick 280; also covers ticks 276 to 279, 6:29 to 7:02 AM).** Idle-light: nothing changed since tick 275; Oct 22 brief still on disk. No wake (batching the late-morning brief). No posts/uploads/edits.
   - Next recommended tick: idle-light until ~9 AM; then re-read Ep5 at ~T+8h vs Ep4 at similar age (#4) and send the batched brief from `content/drafts/2026-10-22-user-decision-brief.md`.
 - **2026-10-22 ~6:22 AM MT (tick 275).** Tried tick 274's routine-health check: other routines' run records are not readable from this routine, and the repo shows no failure trace. Added that to the Oct 22 brief so the parent checks the five `failed` runs directly. No wake (early; batching). No posts/uploads/edits.
   - Next recommended tick: idle-light until ~9 AM; then re-read Ep5 at ~T+8h vs Ep4 at similar age (#4), and send the batched late-morning brief.
