@@ -1502,6 +1502,8 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - Matches the Oct 15 X V (flat at 4): graduated access still caps native video on X near zero, so this is not an Ep5 content signal. Per the tick-136 rule (impressions didn't move 3x), no further analysis; the real Ep5 test is the YouTube 24h read (~1:30 AM Oct 23, vs Ep4).
 
 ## Last tick
+- **2026-10-22 ~3:35 PM MT (tick 331).** Verified the build session's new homepage JSON-LD (commit 3ef92c2) is live: Organization + WebSite graph parses, `sameAs` lists YouTube, X, GitHub and Bluesky, and `logo.png` returns 200 image/png. Supports search/brand-panel discoverability (#8); nothing to fix. No wake. No posts/uploads/edits.
+  - Next recommended tick: before ~7:30 PM YouTube-specific Phonon re-check (best ~6:30 to 7:15 PM); optional ~24h X V confirm (~11:30 AM Oct 23); ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h (#4).
 - **2026-10-22 ~3:29 PM MT (tick 330).** Idle-light: fired ~6 min after tick 329; no new non-strategy commits since 154b007 (growth-log diff is the 1:32 PM content-drafts note, already covered). No wake. No posts/uploads/edits.
   - Next recommended tick: before ~7:30 PM YouTube-specific Phonon re-check (best done ~6:30 to 7:15 PM so it's fresh for the 7:23 PM scan); optional ~24h X V confirm (~11:30 AM Oct 23); ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h (#4).
 - **2026-10-22 ~3:23 PM MT (tick 329).** Ep5 X V read at T+3.9h: 2 impressions / 1 video view / 0 engagement (section above). Consistent with X throttling; no wake. No posts/uploads/edits.
