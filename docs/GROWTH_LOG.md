@@ -580,3 +580,5 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 - 2026-10-21 ~9:25 AM MT (strategy tick 217): no episode since Ep4 (Oct 16); channel still Ep0 to Ep4. All Orb Builds routines show failed last runs. Parent woken about the outage. No posts.
 
 - 2026-10-22 ~1:45 AM MT (strategy tick 247): Ep5 fEtI3D3oUYI + Short 0WDtyym90Fs confirmed live on channel and site; Bluesky Ep5 drop used native video but still #AI and overnight weekday (rules B2/B4).
+
+- 2026-10-22 ~9:10 AM MT (experiment #18, site analytics): operator approved free Vercel Web Analytics (Hobby, 50K events/mo, no paid add-ons). Added `@vercel/analytics` + `<Analytics />` in `src/app/layout.tsx`. The Analytics toggle must still be turned on in the dashboard of the Vercel account that hosts orbbuilds.vercel.app (the box CLI/connector can't reach that project); until then `/_vercel/insights/script.js` 404s harmlessly and no data is collected. No numbers yet.
