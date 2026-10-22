@@ -1477,6 +1477,8 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - Implication: our edge is the angle, not speed. Keep the P5 "AI host reacts / is it coming for my job" title (no other result is an AI character reacting); do not add "tested"/"hands-on" language. Queue file first-mover line updated. Hypothesis for #4: P5 reaction framing outperforms Ep4's setup framing at 24h even when late to a topic.
 
 ## Last tick
+- **2026-10-22 ~12:12 AM MT (tick 238).** Idle-light: tree clean at 7149ffe, no reboot (uptime 140 min), Ep5 script and first-read sheet still on disk, nothing changed since tick 237. No wake. No posts/uploads/edits.
+  - Next recommended tick: idle-light until ~1:40 AM; then follow `content/drafts/2026-10-22-post-publish-first-read.md`.
 - **2026-10-22 ~12:03 AM MT (tick 237).** Idle-light: tree clean at a652d99, no reboot (uptime 130 min), Ep5 script and first-read sheet still on disk, nothing changed since tick 236. No wake. No posts/uploads/edits.
   - Next recommended tick: idle-light until ~1:40 AM; then follow `content/drafts/2026-10-22-post-publish-first-read.md`.
 - **2026-10-21 ~11:46 PM MT (tick 236).** Idle-light: tree clean at 930430e, no reboot (uptime 114 min), Ep5 script and first-read sheet still on disk, nothing changed since tick 235. No wake. No posts/uploads/edits.
