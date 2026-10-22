@@ -1477,6 +1477,8 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - Implication: our edge is the angle, not speed. Keep the P5 "AI host reacts / is it coming for my job" title (no other result is an AI character reacting); do not add "tested"/"hands-on" language. Queue file first-mover line updated. Hypothesis for #4: P5 reaction framing outperforms Ep4's setup framing at 24h even when late to a topic.
 
 ## Last tick
+- **2026-10-21 ~10:29 PM MT (tick 228).** Idle-light: tree clean at 2fddc6f, Ep5 first-read sheet in place, nothing changed since tick 227. No wake. No posts/uploads/edits.
+  - Next recommended tick: idle-light until ~1:40 AM; then follow `content/drafts/2026-10-22-post-publish-first-read.md`.
 - **2026-10-21 ~10:17 PM MT (tick 227).** Idle-light: tree clean at 64507b7, nothing changed since tick 226. Wrote the Ep5 first-read checklist `content/drafts/2026-10-22-post-publish-first-read.md` (`/videos` + site + Short-meta fill, no watch pages) so the first post-1:28 AM tick has one sheet. No wake. No posts/uploads/edits.
   - Next recommended tick: idle-light until ~1:40 AM; then follow the Oct 22 first-read sheet.
 - **2026-10-21 ~10:15 PM MT (tick 226).** #13 publish preflight after the reboot recovery: local main and origin/main both at 3e1bea1 (recovery commit pushed, clean tree); Composio YouTube connection `active` (one default account). With the READY gate already re-passed at ~10:10 PM, the 1:28 AM Ep5 path is green on disk, git, and auth. No wake (nothing to decide; publish routine owns the link ping). No posts/uploads/edits.
