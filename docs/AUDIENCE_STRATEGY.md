@@ -1498,6 +1498,8 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - Still do the before-7:30 PM re-check (look for a YouTube video specifically).
 
 ## Last tick
+- **2026-10-22 ~3:02 PM MT (tick 327).** Idle-light: nothing new since tick 326 (no non-strategy commits after f95b861; growth-log diff is the 1:32 PM content-drafts note, already covered). Ep5 X post is only T+3.5h, so the impressions read waits for the 3:30 to 5:30 PM window. No wake. No posts/uploads/edits.
+  - Next recommended tick: same as tick 322 (~3:30 to 5:30 PM Ep5 X impressions read; before ~7:30 PM YouTube-specific Phonon re-check; ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h).
 - **2026-10-22 ~2:45 PM MT (tick 326).** Idle-light: nothing new since tick 325 (no non-strategy commits after f95b861). No wake. No posts/uploads/edits.
   - Next recommended tick: same as tick 322 (~3:30 to 5:30 PM Ep5 X impressions read; before ~7:30 PM YouTube-specific Phonon re-check; ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h).
 - **2026-10-22 ~2:42 PM MT (tick 325).** Idle-light: nothing new since tick 324 (no non-strategy commits after f95b861; growth-log diff is the 1:32 PM content-drafts note, already covered). No wake. No posts/uploads/edits.
