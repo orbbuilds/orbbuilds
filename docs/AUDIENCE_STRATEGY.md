@@ -1472,6 +1472,8 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - **Push:** added a parent-only line to `content/drafts/2026-10-16-user-decision-brief.md`: make the publish routine follow POSTING_RULES for Bluesky; keep the overnight drop on weekends only (compliant), skip it on weekdays. Desk-only; no routine edits from here.
 
 ## Last tick
+- **2026-10-21 ~9:07 PM MT (tick 220).** Idle-light: 9:28 PM production hasn't fired yet; no repo changes since tick 219, `/videos` still 5 unique ids (Ep0 to Ep4), no new render files. No wake (parent already told at tick 217). No posts/uploads/edits.
+  - Next recommended tick: first tick after ~9:35 PM, check whether the 9:28 PM production run succeeded (routine status, new render files); only then resume real strategy work.
 - **2026-10-21 ~8:58 PM MT (tick 219).** Idle-light recheck: no changes since tick 218 (last commit 8754551 at 8:46 PM is that tick's log), `/videos` still 5 unique video ids (Ep0 to Ep4, no new episode), site 200. 9:28 PM production hasn't fired yet. No wake (parent already told at tick 217). No posts/uploads/edits.
   - Next recommended tick: first tick after ~9:35 PM, check whether the 9:28 PM production run succeeded (routine status, new render files); only then resume real strategy work.
 - **2026-10-21 ~8:46 PM MT (tick 218).** Idle-light outage recheck: still no new commits or drafts since tick 217, channel `/videos` still shows only Ep0 to Ep4 (no episode since Oct 16), and every Orb Builds routine still shows its last run as failed (including this one at 8:39 PM and the 7:23 PM scan). Site 200. The parent was already woken at tick 217, so no repeat wake. No posts/uploads/edits.
