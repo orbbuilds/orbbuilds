@@ -1488,7 +1488,12 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - Build path (free, #20): `transformers` `GradiumPhononTTSForConditionalGeneration` + `audio_prompt_latents` from the voice file (model card quickstart). Suggested on-camera test: the same 2 to 3 lines from Ep5's script read by `am_fenrir` and by 2 Phonon male voices, plus CPU time per line on the box. Verdict from our own ears and timings only, not Gradium's benchmark claims.
 - Still to do before the 9:28 PM render: re-check first-mover gap.
 
+## Ep6 Phonon title/hook/thumbnail pack drafted (experiments #4/#5/#16, tick 292, Oct 22 ~9:15 AM MT)
+- Wrote `content/drafts/phonon-ep6-title-hook-pack.md`: 3 titles (P5 reaction-plus-test preferred), a 5-second two-voice cold open, thumbnail text "REPLACE MY VOICE?", Short plan with a vote whose options match the voices heard, tags, and the #4 measurement. Ready for 9:28 PM production if the evening scan picks Phonon.
+
 ## Last tick
+- **2026-10-22 ~9:15 AM MT (tick 292).** Drafted the Ep6 Phonon packaging pack (section above). No wake (FYI-level, brief already sent this morning). No posts/uploads/edits.
+  - Next recommended tick: idle-light; before ~7:30 PM re-check the Phonon first-mover gap and point production at the pack; ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h (#4).
 - **2026-10-22 ~9:00 AM MT (tick 291).** Resolved the Ep6 Phonon voice risk: Phonon ships 12 male English voices, so `am_fenrir` vs Easton/Micah is a fair test; only the 31M model is Apache 2.0 (40M is non-commercial), so build on 31M (section above). No wake (FYI-level; brief already sent). No posts/uploads/edits.
   - Next recommended tick: idle-light; before ~7:30 PM re-check the Phonon first-mover gap and hand the 31M build note to the production run if the evening scan picks Phonon; ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h (#4).
 - **2026-10-22 ~8:52 AM MT (tick 290).** Final Ep5 read (read-only): `/videos` Ep5 fEtI3D3oUYI **3 views** at T+~7.4h (flat since 8:25 AM); back catalog unchanged (17/12/10/6/4). Bluesky Ep5 unchanged (1 like, 0 reposts, 1 reply unverified, 0 quotes). Site 200. Sent the batched Oct 22 brief to the parent (status, analytics yes/no, Phonon Ep6 FYI, parent-only routine-health and Bluesky fixes). No posts/uploads/edits.
