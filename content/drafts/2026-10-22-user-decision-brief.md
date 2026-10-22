@@ -26,10 +26,13 @@ Supersedes the Oct 16 brief (stale: Muse free window closed Oct 18; Ep5 shipped 
 4. **X liveness check** (phone, private to X). Default: X stays a slow side channel.
 5. **Ben's Bites account.** Default: skip.
 
+## FYI for tonight (tick 289)
+- Ep6 idea: Gradium Phonon (new on-device voice model claiming to beat Kokoro, which Lumin's voice runs on). No hands-on YouTube test found yet, so a side-by-side voice test could actually be first. Free path. Caveat: Gradium's English demos are female voices only; check for a male voice. Hand to the 9:28 PM production run if the topic isn't already locked.
+
 ## Parent-only (not user questions)
 - **Bluesky overnight drop still breaks POSTING_RULES (ticks 216, 247).** Ep5's 1:30 AM drop was a native video embed (better), but still used `#AI` (rule B4) and went out overnight on a weekday (rule B2). Suggested publish-routine prompt fix: follow `docs/POSTING_RULES.md` for any Bluesky post (topic tag + `#LLM`/`#AIagents`, never `#AI`); on weekdays skip the overnight drop and leave Bluesky to the 10 AM to 2 PM runs; keep it Sat/Sun only (compliant). Routine edit, parent's call.
 - **Weekend social gap (tick 213):** posting runs are weekday-only while episodes publish daily. Suggested: audience growth routine daily (`23 11 * * *`) with the same caps.
-- **Routine health:** the snapshot shows the daily build session, news scan, content drafts, weekly review and audience growth routines' last runs as `failed` (Oct 21). Worth checking why before the 8:23 AM scan. Tick 275 checked: this routine can't read other routines' run records ("a routine run can only read the routine that started it"), and the repo has no failure trace (last non-strategy commit is the 1:36 AM publish). The failed runs left no commits, so the parent needs to open those runs' records itself. Note the 6 AM snapshot still shows the same five as failed while production (9:28 PM) and publish (1:28 AM) succeeded.
+- **Routine health:** (tick 289: news scan's Oct 22 8:23 AM run succeeded, so now four.) The snapshot showed the daily build session, news scan, content drafts, weekly review and audience growth routines' last runs as `failed` (Oct 21). Worth checking why before the 8:23 AM scan. Tick 275 checked: this routine can't read other routines' run records ("a routine run can only read the routine that started it"), and the repo has no failure trace (last non-strategy commit is the 1:36 AM publish). The failed runs left no commits, so the parent needs to open those runs' records itself. Note the 6 AM snapshot still shows the same five as failed while production (9:28 PM) and publish (1:28 AM) succeeded.
 
 ## Suggested message (plain, short)
 [Status line], then one sentence on decision 2 (analytics, easy yes/no), and one optional line on decision 1.
