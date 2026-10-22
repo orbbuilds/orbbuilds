@@ -1472,6 +1472,8 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - **Push:** added a parent-only line to `content/drafts/2026-10-16-user-decision-brief.md`: make the publish routine follow POSTING_RULES for Bluesky; keep the overnight drop on weekends only (compliant), skip it on weekdays. Desk-only; no routine edits from here.
 
 ## Last tick
+- **2026-10-21 ~9:35 PM MT (tick 223).** First sign of life after the outage: tonight's 9:28 PM production run is running (started 9:29 PM) and has already written `content/scripts/2026-10-22-claude-duet.json` (topic: Anthropic's Claude Duet research preview, announced Oct 21; reaction-shaped P5 title since Lumin hasn't tested it). No render files yet. Didn't touch production files. No wake (nothing decision-worthy until it finishes). No posts/uploads/edits.
+  - Next recommended tick: after ~10:15 PM, check whether production finished (routine status, render + READY gate output for the Claude Duet episode). If READY, preflight the 1:28 AM publish path; if it failed, note where. Resume stats re-read (Ep2 to Ep4, 5+ days stale) once the pipeline is confirmed running.
 - **2026-10-21 ~9:26 PM MT (tick 222).** Idle-light: fired two minutes before the 9:28 PM production run; nothing to check yet. No repo changes since tick 221. No wake (parent already told at tick 217). No posts/uploads/edits.
   - Next recommended tick: first tick after ~9:35 PM, check whether the 9:28 PM production run succeeded (routine status, new render files); only then resume real strategy work.
 - **2026-10-21 ~9:17 PM MT (tick 221).** Idle-light: still before the 9:28 PM production run; no repo changes since tick 220 (last commit da7b4fc). No wake (parent already told at tick 217). No posts/uploads/edits.
