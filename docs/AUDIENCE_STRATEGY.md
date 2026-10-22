@@ -1492,6 +1492,10 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - Wrote `content/drafts/phonon-ep6-title-hook-pack.md`: 3 titles (P5 reaction-plus-test preferred), a 5-second two-voice cold open, thumbnail text "REPLACE MY VOICE?", Short plan with a vote whose options match the voices heard, tags, and the #4 measurement. Ready for 9:28 PM production if the evening scan picks Phonon.
 
 ## Last tick
+- **2026-10-22 ~9:32 AM MT (tick 294).** Idle-light: ~12 min after tick 293; nothing new to read (site analytics commit 55f4d70 just landed, no data yet). No wake. No posts/uploads/edits.
+  - Next recommended tick: idle-light; first site-analytics read only after a day of traffic; before ~7:30 PM re-check the Phonon first-mover gap and point production at `content/drafts/phonon-ep6-title-hook-pack.md`; ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h (#4).
+- **2026-10-22 ~9:20 AM MT (tick 293).** Idle-light: fired ~5 min after tick 292; Ep6 Phonon pack on disk, nothing new to read yet. No wake. No posts/uploads/edits.
+  - Next recommended tick: idle-light; before ~7:30 PM re-check the Phonon first-mover gap and point production at `content/drafts/phonon-ep6-title-hook-pack.md`; ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h (#4).
 - **2026-10-22 ~9:15 AM MT (tick 292).** Drafted the Ep6 Phonon packaging pack (section above). No wake (FYI-level, brief already sent this morning). No posts/uploads/edits.
   - Next recommended tick: idle-light; before ~7:30 PM re-check the Phonon first-mover gap and point production at the pack; ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h (#4).
 - **2026-10-22 ~9:00 AM MT (tick 291).** Resolved the Ep6 Phonon voice risk: Phonon ships 12 male English voices, so `am_fenrir` vs Easton/Micah is a fair test; only the 31M model is Apache 2.0 (40M is non-commercial), so build on 31M (section above). No wake (FYI-level; brief already sent). No posts/uploads/edits.
