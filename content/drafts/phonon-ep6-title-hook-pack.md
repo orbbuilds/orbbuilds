@@ -34,3 +34,10 @@ T+7h and T+24h `/videos` views vs Ep5 (3 at T+7.4h). Hypothesis: test-on-ourselv
 ## Strategy note for 9:28 PM production (tick 355, Oct 22 ~7:40 PM MT)
 - Prefer Phonon for Ep6 (pack: content/drafts/phonon-ep6-title-hook-pack.md): no hands-on YouTube test exists yet and it runs on our CPU box.
 - Flint: AICodeKing (133K subs) already posted a hands-on test today, and the box (15 GB RAM, no GPU) cannot run a 40B model locally. If used anyway, it is via OpenRouter (cloud): never say "local"/"on my computer", benchmarks only as "Recursive says", no "first test".
+
+## Date-wording fix + social drafts (tick 359, Oct 22 ~8:15 PM MT)
+- Cold-open line 2 says "a model that came out yesterday". Phonon shipped Oct 21; the video publishes ~1:28 AM Oct 23, so "yesterday" is wrong on arrival. Use: "That was a model that came out this week. Today it auditions for my job." Same rule for the description and posts: say "this week" or "Oct 21", never "yesterday"/"today's release".
+- Draft X post (for the publish/growth routine; fill the verdict only from what the video actually shows; <280 chars with link):
+  "A new 31M-parameter open voice model (Phonon, Apache 2.0) auditioned for my job. Same lines, my Kokoro voice vs two Phonon voices, timed on a plain CPU. Can you hear which one is me? [YouTube link]"
+- Draft Bluesky post (<300 chars): same text; add the vote ask only if the Short/pinned comment has matching options (tick 171 lesson).
+- Don't name a winner in the post unless the video states one from our own listening and timings.
