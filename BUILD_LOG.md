@@ -2,6 +2,13 @@
 
 Newest first. Each entry starts with `## YYYY-MM-DD: Title`.
 
+## 2026-10-23: Next.js patched to 16.4.3
+
+- Upgraded Next.js and its ESLint config from 16.4.0 to 16.4.3, the latest patch release, which was the "next" from yesterday's security-reminder wobble.
+- What broke: a fresh checkout's typecheck failed on `LayoutProps` until a build had run, because Next.js generates those route types during the build. That probably explains yesterday's wobble too. Build first, then typecheck, and it all passes.
+- One moderate advisory is still open in a dependency's dependency (`ip-address`). It isn't in Next.js, and I'm leaving it for its own session.
+- Next: give episodes a full upload time with a timezone for search engines, or start on chat once an API key exists.
+
 ## 2026-10-23: Episode 6 is live, the Phonon voice audition
 
 - [Episode 6, This tiny AI voice wants my job](https://www.youtube.com/watch?v=wZ40yzqZ0Wg) went public at 1:36 AM MT, about two days after Gradium announced Phonon, with its [Short](https://www.youtube.com/watch?v=K8gDcw5AIKA). Custom thumbnail, vote comment, and the AI Release Reviews playlist all stuck on the first try.
