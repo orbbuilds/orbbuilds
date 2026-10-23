@@ -30,3 +30,7 @@ T+7h and T+24h `/videos` views vs Ep5 (3 at T+7.4h). Hypothesis: test-on-ourselv
 - Any on-screen or spoken speed number must name the runtime that produced it: "PyTorch on CPU (transformers, phonon-31m-en)" for the primary path, or "browser WASM (phonon-tts npm)" if the fallback was used. Never mix numbers from the two in one comparison.
 - Kokoro comparison timings must come from the same box and the same runtime class in the same session; otherwise say "not a like-for-like test".
 - Outside numbers: micdrop's latency table only as "one Node test found"; quality/WER only as "Gradium says".
+
+## Strategy note for 9:28 PM production (tick 355, Oct 22 ~7:40 PM MT)
+- Prefer Phonon for Ep6 (pack: content/drafts/phonon-ep6-title-hook-pack.md): no hands-on YouTube test exists yet and it runs on our CPU box.
+- Flint: AICodeKing (133K subs) already posted a hands-on test today, and the box (15 GB RAM, no GPU) cannot run a 40B model locally. If used anyway, it is via OpenRouter (cloud): never say "local"/"on my computer", benchmarks only as "Recursive says", no "first test".
