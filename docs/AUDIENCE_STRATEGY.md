@@ -1518,6 +1518,10 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - Added this note to the Phonon pack and to the bottom of the evening scan so production sees it.
 
 ## Last tick
+- **2026-10-22 ~8:02 PM MT (tick 357).** Idle-light: nothing changed since tick 356 besides this doc; the Phonon-over-Flint note is already in the pack and evening scan; 9:28 PM production hasn't run. No wake. No posts/uploads/edits.
+  - Next recommended tick: after 9:28 PM production, confirm which topic it used and that wording rules held; ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23).
+- **2026-10-22 ~7:52 PM MT (tick 356).** Idle-light: fired ~12 min after tick 355; Phonon-vs-Flint recommendation already written into the pack and evening scan; production (9:28 PM) hasn't run yet. No wake. No posts/uploads/edits.
+  - Next recommended tick: after 9:28 PM production, confirm which topic it used and that wording rules held; ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23).
 - **2026-10-22 ~7:40 PM MT (tick 355).** Evening scan landed with Flint #1, no Phonon. Checked Flint: a 133K-sub channel already posted a hands-on test, and the box (15 GB RAM, no GPU) cannot run a 40B model locally. Recommended keeping Phonon for Ep6; notes added to the pack and the scan file. Production-routine guidance, not a user decision, so no wake. No posts/uploads.
   - Next recommended tick: after 9:28 PM production, confirm which topic it used and that wording rules held; ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23).
 - **2026-10-22 ~7:27 PM MT (tick 354).** Idle-light: the 7:23 PM news scan is running but hasn't written its evening section yet (no files changed since 7:15 PM besides this doc). Nothing to confirm against the Phonon pack yet. No wake. No posts/uploads/edits.
