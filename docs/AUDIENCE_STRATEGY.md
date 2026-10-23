@@ -1518,6 +1518,50 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - Added this note to the Phonon pack and to the bottom of the evening scan so production sees it.
 
 ## Last tick
+- **2026-10-23 ~1:42 AM MT (tick 389).** Confirmed Ep6 Phonon LIVE (`wZ40yzqZ0Wg`, public 07:36Z = 1:36 AM MT, P5) + Short `K8gDcw5AIKA` (publish log, GROWTH_LOG line 1). #4 24h read from the two T+1 min batches (Oct 22 vs Oct 23): Ep5 went 0 to 13 views in its first ~24h, roughly equal to Ep4's whole ~7-day total (12 to 14, +2 that day); Ep5's Short drew 41 views, about 3x its long form. Read: day-1 views are most of an episode's lifetime at our size, and Shorts out-pull long form, so keep the Short on every publish (already default). Not decision-worthy alone; no wake. No posts/uploads/edits.
+  - Next recommended tick: optional ~24h X V confirm (~11:30 AM Oct 23); Ep6 ~24h read in the Oct 24 post-reset batch (compare to Ep5's 13v and Short vs Short); otherwise idle-light overnight.
+- **2026-10-23 ~1:30 AM MT (tick 388).** Idle-light: 1:28 AM publish is still running (queue `2026-10-23.md` still READY, no video id yet). Nothing to confirm until it finishes. No wake. No posts/uploads/edits.
+  - Next recommended tick: ~1:40 AM Oct 23, confirm Ep6 live + Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23).
+- **2026-10-23 ~1:18 AM MT (tick 387).** Idle-light: Ep6 queue READY and wording-checked (tick 367); publish fires at 1:28 AM, nothing new to act on before it. No wake. No posts/uploads/edits.
+  - Next recommended tick: ~1:35 AM Oct 23 after publish, confirm Ep6 live + Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23). Until then, idle-light.
+- **2026-10-23 ~1:11 AM MT (tick 386).** Idle-light: Ep6 queue READY and wording-checked (tick 367); publish fires at 1:28 AM, nothing new to act on before it. No wake. No posts/uploads/edits.
+  - Next recommended tick: ~1:35 AM Oct 23 after publish, confirm Ep6 live + Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23). Until then, idle-light.
+- **2026-10-23 ~1:03 AM MT (tick 385).** Idle-light: Ep6 queue READY and wording-checked (tick 367); publish fires at 1:28 AM, nothing new to act on before it. No wake. No posts/uploads/edits.
+  - Next recommended tick: ~1:35 AM Oct 23 after publish, confirm Ep6 live + Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23). Until then, idle-light.
+- **2026-10-23 ~12:53 AM MT (tick 384).** Idle-light: Ep6 queue READY and wording-checked (tick 367); nothing new before the 1:28 AM publish. No wake. No posts/uploads/edits.
+  - Next recommended tick: ~1:35 AM Oct 23 after publish, confirm Ep6 live + Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23). Until then, idle-light.
+- **2026-10-23 ~12:35 AM MT (tick 383).** Idle-light: Ep6 queue READY and wording-checked (tick 367); nothing new before the 1:28 AM publish. No wake. No posts/uploads/edits.
+  - Next recommended tick: ~1:35 AM Oct 23 after publish, confirm Ep6 live + Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23). Until then, idle-light.
+- **2026-10-23 ~12:31 AM MT (tick 382).** Idle-light: Ep6 queue READY and wording-checked (tick 367); nothing new before the 1:28 AM publish. No wake. No posts/uploads/edits.
+  - Next recommended tick: ~1:35 AM Oct 23 after publish, confirm Ep6 live + Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23). Until then, idle-light.
+- **2026-10-23 ~12:17 AM MT (tick 381).** Idle-light: Ep6 queue READY and wording-checked (tick 367); nothing new before the 1:28 AM publish. No wake. No posts/uploads/edits.
+  - Next recommended tick: ~1:35 AM Oct 23 after publish, confirm Ep6 live + Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23). Until then, idle-light.
+- **2026-10-23 ~12:10 AM MT (tick 380).** Idle-light: Ep6 queue READY and wording-checked (tick 367); nothing new before the 1:28 AM publish. No wake. No posts/uploads/edits.
+  - Next recommended tick: ~1:35 AM Oct 23 after publish, confirm Ep6 live + Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23). Until then, idle-light.
+- **2026-10-22 ~11:58 PM MT (tick 379).** Idle-light: Ep6 queue READY and wording-checked (tick 367); nothing new before the 1:28 AM publish. No wake. No posts/uploads/edits.
+  - Next recommended tick: ~1:35 AM Oct 23 after publish, confirm Ep6 live + Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23). Until then, idle-light.
+- **2026-10-22 ~11:48 PM MT (tick 378).** Idle-light: Ep6 queue READY and wording-checked (tick 367); nothing new before the 1:28 AM publish. No wake. No posts/uploads/edits.
+  - Next recommended tick: ~1:35 AM Oct 23 after publish, confirm Ep6 live + Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23). Until then, idle-light.
+- **2026-10-22 ~11:42 PM MT (tick 377).** Idle-light: Ep6 queue READY and wording-checked (tick 367); nothing new before the 1:28 AM publish. No wake. No posts/uploads/edits.
+  - Next recommended tick: ~1:35 AM Oct 23 after publish, confirm Ep6 live + Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23). Until then, idle-light.
+- **2026-10-22 ~11:33 PM MT (tick 376).** Idle-light: Ep6 queue READY and wording-checked (tick 367); nothing new before the 1:28 AM publish. No wake. No posts/uploads/edits.
+  - Next recommended tick: ~1:35 AM Oct 23 after publish, confirm Ep6 live + Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23). Until then, idle-light.
+- **2026-10-22 ~11:19 PM MT (tick 375).** Idle-light: Ep6 queue READY and wording-checked (tick 367); nothing new before the 1:28 AM publish. No wake. No posts/uploads/edits.
+  - Next recommended tick: ~1:35 AM Oct 23 after publish, confirm Ep6 live + Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23). Until then, idle-light.
+- **2026-10-22 ~11:07 PM MT (tick 374).** Idle-light: Ep6 queue READY and wording-checked (tick 367); nothing new before the 1:28 AM publish. No wake. No posts/uploads/edits.
+  - Next recommended tick: ~1:35 AM Oct 23 after publish, confirm Ep6 live + Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23). Until then, idle-light.
+- **2026-10-22 ~11:03 PM MT (tick 373).** Idle-light: Ep6 queue READY and wording-checked (tick 367); nothing new before the 1:28 AM publish. No wake. No posts/uploads/edits.
+  - Next recommended tick: ~1:35 AM Oct 23 after publish, confirm Ep6 live + Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23). Until then, idle-light.
+- **2026-10-22 ~10:48 PM MT (tick 372).** Idle-light: Ep6 queue READY and wording-checked (tick 367); nothing new before the 1:28 AM publish. No wake. No posts/uploads/edits.
+  - Next recommended tick: ~1:35 AM Oct 23 after publish, confirm Ep6 live + Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23). Until then, idle-light.
+- **2026-10-22 ~10:34 PM MT (tick 371).** Idle-light: Ep6 queue READY and wording-checked (tick 367); nothing new before the 1:28 AM publish. No wake. No posts/uploads/edits.
+  - Next recommended tick: ~1:35 AM Oct 23 after publish, confirm Ep6 live + Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23). Until then, idle-light.
+- **2026-10-22 ~10:34 PM MT (tick 370).** Idle-light: Ep6 queue READY and wording-checked (tick 367); nothing new before the 1:28 AM publish. No wake. No posts/uploads/edits.
+  - Next recommended tick: ~1:35 AM Oct 23 after publish, confirm Ep6 live + Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23). Until then, idle-light.
+- **2026-10-22 ~10:18 PM MT (tick 369).** Idle-light: Ep6 queue READY and wording-checked at tick 367; nothing new before the 1:28 AM publish. No wake. No posts/uploads/edits.
+  - Next recommended tick: ~1:35 AM Oct 23 after publish, confirm Ep6 live + Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23). Until then, idle-light.
+- **2026-10-22 ~10:12 PM MT (tick 368).** Idle-light: fired ~10 min after tick 367; Ep6 queue already READY and wording-checked, nothing new to act on before publish. No wake. No posts/uploads/edits.
+  - Next recommended tick: ~1:35 AM Oct 23 after publish, confirm Ep6 live + Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23). Until then, idle-light.
 - **2026-10-22 ~10:02 PM MT (tick 367).** Production finished: queue `content/published/queue/2026-10-23.md` is **READY** (verify_ready PASS). Confirmed `publish_description` is filled (no placeholder) and honest: names ptts 0.4.1 q8 vs kokoro-onnx, 9.7 to 11.8x vs 4.1 to 6.5x real time matching bench.json, flags different runtimes, Gradium blind-test wins attributed, 40M CC BY-NC models not used; no "first test"/"first video"/"yesterday"/10x borrow, no operator or employer names. Production noted a possible Oct 22 "Gradium Phonon Is WILD" YouTube video (unverified), so the slot is closed-ish; title "I tested it" is still accurate. No wake. No posts/uploads/edits.
   - Next recommended tick: ~1:35 AM Oct 23 after publish, confirm Ep6 live + Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23). Until then, idle-light.
 - **2026-10-22 ~9:52 PM MT (tick 366).** Production (still running) wrote the Ep6 script `content/scripts/2026-10-23-phonon-voice-test.json` and renders. Wording check passed: "this week" (not "yesterday"), q8 named, Gradium claims as "Gradium says", no "first test"/"first video"/10x-latency borrow; speed line "10 to 12x real time vs Kokoro 4 to 6.5" matches bench.json (Phonon 9.7 to 11.8, Kokoro 4.1 to 6.5). Open item: `meta.publish_description` still reads `PLACEHOLDER_SET_BELOW`; production may fill it before finishing. No wake. No posts/uploads/edits.
