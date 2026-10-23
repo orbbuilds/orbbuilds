@@ -53,6 +53,17 @@ def synth(text, voice=DEFAULT_VOICE, speed=DEFAULT_SPEED, pronounce=None):
     assert sr == SR
     return trim(np.asarray(s, np.float32))
 
+def load_clip(path):
+    """A pre-recorded line (e.g. another TTS engine being tested on camera) as float32 mono at SR, trimmed."""
+    root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    path = path if os.path.isabs(path) else os.path.join(root, path)
+    with wave.open(path, "rb") as w:
+        sr, ch, n = w.getframerate(), w.getnchannels(), w.getnframes()
+        x = np.frombuffer(w.readframes(n), np.int16).astype(np.float32) / 32768
+    if ch > 1: x = x.reshape(-1, ch).mean(1)
+    if sr != SR: x = np.interp(np.linspace(0, len(x) - 1, int(len(x) * SR / sr)), np.arange(len(x)), x).astype(np.float32)
+    return trim(x)
+
 def write_wav(path, x, sr=SR):
     with wave.open(path, "wb") as w:
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(sr)
@@ -124,28 +135,45 @@ def build(script_path, outdir, align=True):
     voice = v.get("name", DEFAULT_VOICE); speed = v.get("speed", DEFAULT_SPEED); fx = v.get("fx", "lumin")
     pron = {**DEFAULT_PRONOUNCE, **meta.get("pronounce", {})}
     lead, tail, sec_gap = 0.5, 1.6, 0.55
-    t = lead; pieces = []; sections = []
+    t = lead; pieces = []; dry = []; sections = []
     for sec in S["sections"]:
         t += sec.get("pre", sec_gap if sections else 0.0)
         sdict = {"id": sec["id"], "kind": sec.get("kind", sec["id"]), "heading": sec.get("heading", ""), "badge": sec.get("badge"),
                  "source": sec.get("source"), "start": t, "lines": []}
         for ln in sec["lines"]:
-            x = synth(ln["say"], voice, ln.get("speed", speed), pron)
+            # 'audio': play a pre-recorded clip instead of Lumin's TTS (kept dry: no Lumin FX, own loudness)
+            x = load_clip(ln["audio"]) if ln.get("audio") else synth(ln["say"], voice, ln.get("speed", speed), pron)
             dur = len(x) / SR
             wt = word_times(x) if align and not ln.get("caption") else None
             cap = ln.get("caption") or ln["say"]
             chunks = chunk_caption(cap)
             ct = chunk_times(chunks, dur, ln["say"], wt)
-            sdict["lines"].append({"say": ln["say"], "show": ln.get("show"), "screen": ln.get("screen"), "cite": ln.get("cite"), "gesture": ln.get("gesture"), "cta": ln.get("cta"), "start": t, "end": t + dur,
+            sdict["lines"].append({"say": ln["say"], "show": ln.get("show"), "screen": ln.get("screen"), "cite": ln.get("cite"), "gesture": ln.get("gesture"), "cta": ln.get("cta"), "audio": ln.get("audio"), "start": t, "end": t + dur,
                                    "captions": [{"text": c, "start": t + a, "end": t + b} for c, (a, b) in zip(chunks, ct)]})
-            pieces.append((t, x)); t += dur + ln.get("pause", 0.28)
+            (dry if ln.get("audio") else pieces).append((t, x)); t += dur + ln.get("pause", 0.28)
         sdict["end"] = t; sections.append(sdict)
     total = t + tail
     buf = np.zeros(int(total * SR) + SR, np.float32)
     for st, x in pieces:
         i = int(st * SR); buf[i:i + len(x)] += x
     raw = os.path.join(outdir, "voice_raw.wav"); write_wav(raw, buf[:int(total * SR)])
-    apply_fx(raw, os.path.join(outdir, "voice.wav"), fx, total)
+    if not dry:
+        apply_fx(raw, os.path.join(outdir, "voice.wav"), fx, total)
+    else:
+        # clips: each loudness-matched on its own ("clean" chain), then summed with Lumin's FX'd voice
+        apply_fx(raw, os.path.join(outdir, "voice_lumin.wav"), fx, total)
+        cbuf = np.zeros(int(total * SR) + SR, np.float32)
+        for st, x in dry:
+            tmp_in, tmp_out = os.path.join(outdir, "clip_in.wav"), os.path.join(outdir, "clip_out.wav")
+            write_wav(tmp_in, x); apply_fx(tmp_in, tmp_out, "clean")
+            with wave.open(tmp_out, "rb") as w:
+                y = np.frombuffer(w.readframes(w.getnframes()), np.int16).astype(np.float32) / 32768
+            y = np.interp(np.linspace(0, len(y) - 1, len(x)), np.arange(len(y)), y).astype(np.float32)
+            i = int(st * SR); cbuf[i:i + len(y)] += y
+        craw = os.path.join(outdir, "voice_clips.wav"); write_wav(craw, cbuf[:int(total * SR)])
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", os.path.join(outdir, "voice_lumin.wav"), "-i", craw,
+                        "-filter_complex", "[1:a]aresample=44100[c];[0:a][c]amix=inputs=2:normalize=0:duration=first",
+                        "-ar", str(OUT_SR), "-ac", "1", os.path.join(outdir, "voice.wav")], check=True)
     timing = {"duration": total, "voice": voice, "fx": fx, "sections": sections}
     json.dump(timing, open(os.path.join(outdir, "timing.json"), "w"), indent=1)
     print(f"voice: {total:.1f}s, {sum(len(s['lines']) for s in sections)} lines -> {outdir}")

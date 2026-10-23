@@ -1,0 +1,65 @@
+{
+ "box": {
+  "cpus": 8
+ },
+ "phonon": {
+  "Easton/intro": {
+   "compute_s": 0.381,
+   "audio_s": 4.16,
+   "rtf_x": 10.9,
+   "sr": 24000
+  },
+  "Easton/numbers": {
+   "compute_s": 0.672,
+   "audio_s": 6.56,
+   "rtf_x": 9.8,
+   "sr": 24000
+  },
+  "Easton/hype": {
+   "compute_s": 0.358,
+   "audio_s": 4.24,
+   "rtf_x": 11.8,
+   "sr": 24000
+  },
+  "Micah/intro": {
+   "compute_s": 0.369,
+   "audio_s": 4.32,
+   "rtf_x": 11.7,
+   "sr": 24000
+  },
+  "Micah/numbers": {
+   "compute_s": 0.683,
+   "audio_s": 6.64,
+   "rtf_x": 9.7,
+   "sr": 24000
+  },
+  "Micah/hype": {
+   "compute_s": 0.411,
+   "audio_s": 4.72,
+   "rtf_x": 11.5,
+   "sr": 24000
+  }
+ },
+ "kokoro": {
+  "am_fenrir/intro": {
+   "compute_s": 0.555,
+   "audio_s": 3.33,
+   "rtf_x": 6.0,
+   "sr": 24000
+  },
+  "am_fenrir/numbers": {
+   "compute_s": 1.066,
+   "audio_s": 6.93,
+   "rtf_x": 6.5,
+   "sr": 24000
+  },
+  "am_fenrir/hype": {
+   "compute_s": 0.692,
+   "audio_s": 2.82,
+   "rtf_x": 4.1,
+   "sr": 24000
+  }
+ },
+ "phonon_load_s": 1.338597297668457,
+ "kokoro_load_s": 1.0273027420043945
+}

@@ -1,0 +1,11 @@
+$ python bench.py   # same box: 8 vCPU, no GPU, best of 3 runs
+engine / runtime                     line      audio  compute  speed
+Phonon 31m Easton  (ptts 0.4.1, q8)  intro     4.16s   0.38s  10.9x
+Phonon 31m Easton  (ptts 0.4.1, q8)  numbers   6.56s   0.67s   9.8x
+Phonon 31m Easton  (ptts 0.4.1, q8)  hype      4.24s   0.36s  11.8x
+Phonon 31m Micah   (ptts 0.4.1, q8)  intro     4.32s   0.37s  11.7x
+Phonon 31m Micah   (ptts 0.4.1, q8)  numbers   6.64s   0.68s   9.7x
+Phonon 31m Micah   (ptts 0.4.1, q8)  hype      4.72s   0.41s  11.5x
+Kokoro am_fenrir   (kokoro-onnx)     intro     3.33s   0.56s   6.0x
+Kokoro am_fenrir   (kokoro-onnx)     numbers   6.93s   1.07s   6.5x
+Kokoro am_fenrir   (kokoro-onnx)     hype      2.82s   0.69s   4.1x
