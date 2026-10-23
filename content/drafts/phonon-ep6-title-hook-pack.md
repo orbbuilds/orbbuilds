@@ -25,3 +25,8 @@ Phonon, Gradium, Kokoro TTS, on-device TTS, open source text to speech, AI voice
 
 ## Measure (#4)
 T+7h and T+24h `/videos` views vs Ep5 (3 at T+7.4h). Hypothesis: test-on-ourselves beats reaction-only at 24h.
+
+## Runtime labeling rule (tick 352, Oct 22 ~7:10 PM MT)
+- Any on-screen or spoken speed number must name the runtime that produced it: "PyTorch on CPU (transformers, phonon-31m-en)" for the primary path, or "browser WASM (phonon-tts npm)" if the fallback was used. Never mix numbers from the two in one comparison.
+- Kokoro comparison timings must come from the same box and the same runtime class in the same session; otherwise say "not a like-for-like test".
+- Outside numbers: micdrop's latency table only as "one Node test found"; quality/WER only as "Gradium says".
