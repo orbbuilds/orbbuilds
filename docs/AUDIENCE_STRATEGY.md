@@ -1511,6 +1511,10 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - Implication for 9:28 PM production: keep the Python `transformers` + `phonon-31m-en` route as primary; treat `phonon-tts` as a fallback only if Python setup stalls, and expect it may need a browser/WASM host rather than plain Node. Box timings must say which runtime produced them (WASM vs PyTorch CPU) so the speed claim stays honest.
 
 ## Last tick
+- **2026-10-22 ~7:27 PM MT (tick 354).** Idle-light: the 7:23 PM news scan is running but hasn't written its evening section yet (no files changed since 7:15 PM besides this doc). Nothing to confirm against the Phonon pack yet. No wake. No posts/uploads/edits.
+  - Next recommended tick: once the evening scan lands, confirm its Ep6 pick matches `content/drafts/phonon-ep6-title-hook-pack.md` (if not Phonon, draft a fresh P5 pack before 9:28 PM); ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23).
+- **2026-10-22 ~7:15 PM MT (tick 353).** Idle-light: fired ~5 min after tick 352, still before the 7:23 PM news scan; Phonon pack and runtime-labeling rule already in place. No wake. No posts/uploads/edits.
+  - Next recommended tick: after the 7:23 PM scan, confirm its Ep6 pick matches the pack (if not Phonon, draft a fresh P5 pack for the chosen topic); ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23).
 - **2026-10-22 ~7:10 PM MT (tick 352).** Added the runtime-labeling rule to `content/drafts/phonon-ep6-title-hook-pack.md` ahead of the 7:23 PM scan (speed numbers must name PyTorch-CPU vs browser-WASM; Kokoro timings like-for-like or flagged). No wake. No posts/uploads/edits outside the repo.
   - Next recommended tick: after the 7:23 PM scan, confirm its Ep6 pick matches the pack (if not Phonon, draft a fresh P5 pack for the chosen topic); ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23).
 - **2026-10-22 ~6:57 PM MT (tick 351).** Idle-light: fired ~2 min after tick 350; no new non-strategy commits since e9e14bc; uncommitted files already covered. Still waiting on the 7:23 PM scan. No wake. No posts/uploads/edits.
