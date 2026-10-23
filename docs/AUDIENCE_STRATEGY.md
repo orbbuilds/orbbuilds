@@ -1518,6 +1518,18 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - Added this note to the Phonon pack and to the bottom of the evening scan so production sees it.
 
 ## Last tick
+- **2026-10-22 ~9:45 PM MT (tick 365).** 9:28 PM production is running and picked Phonon (bench + Easton/Micah vs am_fenrir clips in `content/drafts/captures/phonon/`; `tts.py` gained an `audio` clip line). Read its bench: Phonon q8 computes lines ~1.5x to 1.9x faster than Kokoro on our CPU; appended the honest speed wording (name q8, don't borrow micdrop's 10x latency figure) to the Phonon pack. No wake. No posts/uploads.
+  - Next recommended tick: after production finishes (~10:30 PM+), check script/title kept wording rules (q8, "this week", no "first test", Gradium numbers as "Gradium says"); ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23).
+- **2026-10-22 ~9:07 PM MT (tick 364).** Idle-light: no repo changes since tick 363 besides this doc; 9:28 PM production hasn't run yet. Phonon pack, Phonon-over-Flint note and "this week" fix already in place. No wake. No posts/uploads/edits.
+  - Next recommended tick: after 9:28 PM production (~9:45 PM+), confirm topic and wording rules (incl. "this week"); ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23).
+- **2026-10-22 ~8:57 PM MT (tick 363).** Idle-light: no repo changes since tick 362 besides this doc; 9:28 PM production hasn't run. Phonon pack, Phonon-over-Flint note and "this week" fix already in place. No wake. No posts/uploads/edits.
+  - Next recommended tick: after 9:28 PM production, confirm topic and wording rules (incl. "this week"); ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23).
+- **2026-10-22 ~8:45 PM MT (tick 362).** Idle-light: no repo changes since tick 361 besides this doc; 9:28 PM production hasn't run. Phonon pack, Phonon-over-Flint note and "this week" fix already in place. No wake. No posts/uploads/edits.
+  - Next recommended tick: after 9:28 PM production, confirm topic and wording rules (incl. "this week"); ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23).
+- **2026-10-22 ~8:37 PM MT (tick 361).** Idle-light: 9:28 PM production still hasn't run; Phonon pack, Phonon-over-Flint note and "this week" fix already in place. No wake. No posts/uploads/edits.
+  - Next recommended tick: after 9:28 PM production, confirm topic and wording rules (incl. "this week"); ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23).
+- **2026-10-22 ~8:27 PM MT (tick 360).** Idle-light: 9:28 PM production hasn't run; Phonon pack, Phonon-over-Flint note and "this week" wording fix already in place. No wake. No posts/uploads/edits.
+  - Next recommended tick: after 9:28 PM production, confirm topic and wording rules (incl. "this week"); ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23).
 - **2026-10-22 ~8:15 PM MT (tick 359).** Caught a date-wording bug in the Phonon pack: cold open said the model "came out yesterday" but it shipped Oct 21 and the video publishes Oct 23; changed to "this week". Added X/Bluesky post drafts (no verdict until the video shows one). No wake. No posts/uploads.
   - Next recommended tick: after 9:28 PM production, confirm topic and wording rules (incl. "this week"); ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23).
 - **2026-10-22 ~8:07 PM MT (tick 358).** Idle-light: no repo changes since tick 357 besides this doc; 9:28 PM production hasn't run. Phonon-over-Flint guidance already in place. No wake. No posts/uploads/edits.

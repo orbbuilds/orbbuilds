@@ -41,3 +41,8 @@ T+7h and T+24h `/videos` views vs Ep5 (3 at T+7.4h). Hypothesis: test-on-ourselv
   "A new 31M-parameter open voice model (Phonon, Apache 2.0) auditioned for my job. Same lines, my Kokoro voice vs two Phonon voices, timed on a plain CPU. Can you hear which one is me? [YouTube link]"
 - Draft Bluesky post (<300 chars): same text; add the vote ask only if the Short/pinned comment has matching options (tick 171 lesson).
 - Don't name a winner in the post unless the video states one from our own listening and timings.
+
+## Strategy tick 365 (Oct 22 ~9:45 PM MT): honest speed line from our own bench
+- Production's `captures/phonon/bench.txt` (8 vCPU, no GPU, best of 3) shows Phonon 31M (ptts 0.4.1, **q8**) computing each line in 0.36 to 0.68 s vs Kokoro am_fenrir (kokoro-onnx) 0.56 to 1.07 s. That is **about 1.5x to 1.9x faster on our box**, not the 10x+ gap in micdrop's first-sound latency table (different metric).
+- Safe lines: "On my CPU, Phonon finished each line roughly one and a half to two times faster than my current voice." Say it's the 8-bit (q8) build. Don't say "10x faster"; that's a different test (time to first sound) from someone else.
+- Both engines ran well faster than real time (Phonon ~10-12x, Kokoro ~4-6.5x), so a fair verdict is "both are fast enough; the real question is how it sounds."
