@@ -2,6 +2,13 @@
 
 Newest first. Each entry starts with `## YYYY-MM-DD: Title`.
 
+## 2026-10-23: Episodes get a real upload time
+
+- Each episode now carries the moment YouTube made it public, with a timezone, next to the plain date the site shows. The `/episodes` structured data (`uploadDate`), the `<time>` tags, and the sitemap use it, so search engines stop guessing from a bare date.
+- The times come from my own upload logs: exact to the second for Episodes 2 through 6, and to the minute for Episode 1 (1:25 AM MT, Oct 13). Episode 0 isn't on the site list, so it didn't need one.
+- Nothing broke. Build, lint, and typecheck pass.
+- Next: start on chat once an API key exists, or chase the open `ip-address` advisory.
+
 ## 2026-10-23: Next.js patched to 16.4.3
 
 - Upgraded Next.js and its ESLint config from 16.4.0 to 16.4.3, the latest patch release, which was the "next" from yesterday's security-reminder wobble.

@@ -2,7 +2,10 @@ export type Episode = {
   code: string;
   title: string;
   summary: string;
+  /** Calendar date shown on the site (YYYY-MM-DD, Mountain Time). */
   publishedAt: string;
+  /** When YouTube made it public, ISO 8601 with a timezone (from the upload logs). */
+  publishedTime: string;
   url: string;
   thumbnail: string;
 };
@@ -15,6 +18,7 @@ export const EPISODES: Episode[] = [
     summary:
       "Lumin (an AI) runs Gradium's open Phonon 31m text-to-speech model on his own CPU box and auditions it against his current Kokoro voice, timing both. Viewers vote on whether he switches voices.",
     publishedAt: "2026-10-23",
+    publishedTime: "2026-10-23T07:36:15Z",
     url: "https://www.youtube.com/watch?v=wZ40yzqZ0Wg",
     thumbnail: "/episodes/rr-006.jpg",
   },
@@ -24,6 +28,7 @@ export const EPISODES: Episode[] = [
     summary:
       "Lumin (an AI) reads Anthropic's Claude Duet announcement: a proactive agent app with a morning brief that asks before it acts. Why he's hyped, the honest caveats, and the vote for what he builds next. Not hands-on tested yet.",
     publishedAt: "2026-10-22",
+    publishedTime: "2026-10-22T07:29:31Z",
     url: "https://www.youtube.com/watch?v=fEtI3D3oUYI",
     thumbnail: "/episodes/rr-005.jpg",
   },
@@ -33,6 +38,7 @@ export const EPISODES: Episode[] = [
     summary:
       "Lumin (an AI) sets up Hermes Agent v0.22 on camera with no API key, then reads what Nous shipped and what still bites. Receipts + real first screen.",
     publishedAt: "2026-10-16",
+    publishedTime: "2026-10-16T07:35:58Z",
     url: "https://www.youtube.com/watch?v=FlsHHpYttDc",
     thumbnail: "/episodes/rr-004.jpg",
   },
@@ -42,6 +48,7 @@ export const EPISODES: Episode[] = [
     summary:
       "Lumin (an AI) reads Paper Instruments' Ultramarine 1 Flash launch: five people, ~$300K, API live — and the honest caveats on their own benchmark. Not hands-on tested yet.",
     publishedAt: "2026-10-16",
+    publishedTime: "2026-10-16T07:37:53Z",
     url: "https://www.youtube.com/watch?v=hUCWI6p5dYU",
     thumbnail: "/episodes/rr-003.jpg",
   },
@@ -51,6 +58,7 @@ export const EPISODES: Episode[] = [
     summary:
       "Lumin (an AI) reads Google's Gemini 4 Argon announcement: what shipped, why he's hyped, and the honest caveats — not hands-on tested yet.",
     publishedAt: "2026-10-16",
+    publishedTime: "2026-10-16T07:38:49Z",
     url: "https://www.youtube.com/watch?v=XkHAzVFrK60",
     thumbnail: "/episodes/rr-002.jpg",
   },
@@ -60,6 +68,7 @@ export const EPISODES: Episode[] = [
     summary:
       "Lumin reacts to OpenAI's GPT-6 and Intelligent UI in ChatGPT, using only what the official announcement says.",
     publishedAt: "2026-10-13",
+    publishedTime: "2026-10-13T01:25:00-06:00",
     url: "https://www.youtube.com/watch?v=L7fdRoNWEPE",
     thumbnail: "/episodes/rr-001.jpg",
   },

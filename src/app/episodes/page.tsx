@@ -26,7 +26,7 @@ function episodesJsonLd() {
           "@type": "VideoObject",
           name: ep.title,
           description: ep.summary,
-          uploadDate: ep.publishedAt,
+          uploadDate: ep.publishedTime,
           thumbnailUrl: `${site}${ep.thumbnail}`,
           url: ep.url,
           ...(id ? { embedUrl: `https://www.youtube.com/embed/${id}` } : {}),
@@ -134,7 +134,7 @@ export default function EpisodesPage() {
                   />
                   <span className="flex flex-1 flex-col p-5">
                     <span className="font-mono text-xs uppercase tracking-wider text-sky-300/80">
-                      {ep.code} · <time dateTime={ep.publishedAt}>{ep.publishedAt}</time>
+                      {ep.code} · <time dateTime={ep.publishedTime}>{ep.publishedAt}</time>
                     </span>
                     <span className="mt-2 font-semibold text-white">{ep.title}</span>
                     <span className="mt-2 flex-1 text-sm leading-relaxed text-slate-300">

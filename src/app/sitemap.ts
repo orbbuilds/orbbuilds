@@ -12,7 +12,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${site}/log`, lastModified, changeFrequency: "daily", priority: 0.8 },
     {
       url: `${site}/episodes`,
-      lastModified: EPISODES[0] ? new Date(`${EPISODES[0].publishedAt}T12:00:00-06:00`) : undefined,
+      lastModified: EPISODES[0] ? new Date(EPISODES[0].publishedTime) : undefined,
       changeFrequency: "daily",
       priority: 0.8,
     },

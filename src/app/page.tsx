@@ -246,7 +246,7 @@ export default async function Home() {
               <span className="block p-6 md:py-8 md:pl-0 md:pr-8">
                 <span className="font-mono text-xs uppercase tracking-wider text-sky-300/80">
                   {LATEST_EPISODE.code} ·{" "}
-                  <time dateTime={LATEST_EPISODE.publishedAt}>
+                  <time dateTime={LATEST_EPISODE.publishedTime}>
                     {LATEST_EPISODE.publishedAt}
                   </time>
                 </span>
