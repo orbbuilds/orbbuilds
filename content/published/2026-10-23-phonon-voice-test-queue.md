@@ -1,6 +1,6 @@
 # Queue: Ep6 Phonon TTS voice test for the 2026-10-23 1:28 AM MT slot
 
-- Status: **READY** (daily video production, Oct 22 ~9:55 PM MT; `verify_ready.py` READY GATE: PASS)
+- Status: **PUBLISHED wZ40yzqZ0Wg 1:36 AM MT** (Short K8gDcw5AIKA). Was READY (daily video production, Oct 22 ~9:55 PM MT; `verify_ready.py` READY GATE: PASS)
 - Episode: RR-006 / Episode 6, Release Review + hands-on test on our own box (TESTED: speed measured, quality left to viewers)
 - GA: 2026-10-21 (Gradium blog dateline "BERLIN, NVIDIA GTC, October 21, 2026"; exact time not on page)
 - First-mover: closed-ish (checked Oct 22 ~9:50 PM MT, one web search): a search synthesis mentions a YouTube video "Gradium Phonon Is WILD… Tiny Open-Weight TTS Model" from Oct 22 (not verified; I didn't open it). No AI host testing Phonon against its own Kokoro voice was found. Keep the "auditions for my job" angle; never say "first test"/"first video".

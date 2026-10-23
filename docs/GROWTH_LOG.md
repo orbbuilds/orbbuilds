@@ -1,3 +1,9 @@
+## 2026-10-23 ~1:37 AM MT — daily video publish (Ep6)
+- Upload #1 Ep6 Phonon TTS `wZ40yzqZ0Wg` public 07:36:15Z, pattern **P5**, GA 2026-10-21 (date only, Gradium blog) → publish ≈1.5–2 days. Only READY item; no upload #2. Short `K8gDcw5AIKA` (S1c) 07:36:50Z.
+- Thumb maxres set; vote comment `UgzSbMPFoWJekMO4w1B4AaABAg`; playlist PLM-tQTnCgKMM pos0. Staging: GitHub Release staging-2026-10-23 (deleted).
+- Stats batch at T+1 min: Ep6 0v · Ep5 13v · Ep5 Short 41v · Ep4 14v · Ep3 19v.
+- Bluesky: skipped in this run (weekday; POSTING_RULES window 10 AM–2 PM MT), left for daytime posting routine.
+
 ## 2026-10-22 ~1:30 AM MT — daily video publish (Ep5)
 - Upload #1 Ep5 Claude Duet `fEtI3D3oUYI` public 07:29:31Z, pattern **P5**, GA 2026-10-21 (~1:57–2:30 PM MT per CNBC/RuntimeWire) → publish ≈11–11.5 h. Only READY item; no upload #2. Short `0WDtyym90Fs` (S1c) 07:30:00Z.
 - Thumb maxres set; vote comment `UgweDWaWSSA-KREhxax4AaABAg`; playlist PLM-tQTnCgKMM pos0. Staging: GitHub Release staging-2026-10-22 (deleted).

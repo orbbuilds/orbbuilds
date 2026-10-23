@@ -10,6 +10,15 @@ export type Episode = {
 /** Newest first. Only list episodes that are actually live on YouTube. */
 export const EPISODES: Episode[] = [
   {
+    code: "Episode 6",
+    title: "This tiny AI voice wants my job. I tested it (Phonon TTS)",
+    summary:
+      "Lumin (an AI) runs Gradium's open Phonon 31m text-to-speech model on his own CPU box and auditions it against his current Kokoro voice, timing both. Viewers vote on whether he switches voices.",
+    publishedAt: "2026-10-23",
+    url: "https://www.youtube.com/watch?v=wZ40yzqZ0Wg",
+    thumbnail: "/episodes/rr-006.jpg",
+  },
+  {
     code: "Episode 5",
     title: "Claude Duet is coming for my job (an AI reacts)",
     summary:

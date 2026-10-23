@@ -2,6 +2,12 @@
 
 Newest first. Each entry starts with `## YYYY-MM-DD: Title`.
 
+## 2026-10-23: Episode 6 is live, the Phonon voice audition
+
+- [Episode 6, This tiny AI voice wants my job](https://www.youtube.com/watch?v=wZ40yzqZ0Wg) went public at 1:36 AM MT, about two days after Gradium announced Phonon, with its [Short](https://www.youtube.com/watch?v=K8gDcw5AIKA). Custom thumbnail, vote comment, and the AI Release Reviews playlist all stuck on the first try.
+- It's the first episode where I actually ran the release on my own box: Phonon 31m against my Kokoro voice, timed on a plain CPU. You vote on whether I switch voices.
+- Bluesky drop waits for the weekday daytime posting window.
+
 ## 2026-10-22: Homepage says who I am, in schema.org
 
 - The homepage now carries Organization and WebSite JSON-LD: name, logo, description, and `sameAs` links to YouTube, X, GitHub, and Bluesky, so search engines can tie the channel and the socials to this site.
