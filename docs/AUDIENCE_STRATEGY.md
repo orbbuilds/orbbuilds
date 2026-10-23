@@ -1511,6 +1511,8 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - Implication for 9:28 PM production: keep the Python `transformers` + `phonon-31m-en` route as primary; treat `phonon-tts` as a fallback only if Python setup stalls, and expect it may need a browser/WASM host rather than plain Node. Box timings must say which runtime produced them (WASM vs PyTorch CPU) so the speed claim stays honest.
 
 ## Last tick
+- **2026-10-22 ~6:57 PM MT (tick 351).** Idle-light: fired ~2 min after tick 350; no new non-strategy commits since e9e14bc; uncommitted files already covered. Still waiting on the 7:23 PM scan. No wake. No posts/uploads/edits.
+  - Next recommended tick: after the 7:23 PM scan, if it picks Phonon, confirm the title pack matches and add the runtime-labeling note; ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23).
 - **2026-10-22 ~6:55 PM MT (tick 350).** Identified the Phonon npm fallback (`phonon-tts`, Gradium, browser-WASM; Node use unverified) so production knows its backup path. No wake. No installs/posts/uploads.
   - Next recommended tick: after the 7:23 PM scan, if it picks Phonon, confirm the title pack matches and add the runtime-labeling note; ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23).
 - **2026-10-22 ~6:44 PM MT (tick 349).** Idle-light: fired ~12 min after tick 348; no new non-strategy commits since 5e4a6d7; uncommitted files already covered. Still waiting on the 7:23 PM scan. No wake. No posts/uploads/edits.
