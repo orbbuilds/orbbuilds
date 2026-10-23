@@ -1506,7 +1506,13 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - New written coverage since 2:10 PM: explainx.ai "31M Apache Model vs Kokoro" blog (restates Gradium's tables, hard-text WER 1.5% vs Kokoro 3.5%; vendor numbers). Every quality figure online is still Gradium's own, so our own-ears plus box-timing test remains the differentiator.
 - Implication for the 7:23 PM scan / 9:28 PM production: Phonon is still a good Ep6 pick; keep "first AI host to test it on his own voice" wording, avoid "first test" and "first video"; cite Gradium numbers only as "Gradium says".
 
+## Ep6 Phonon npm fallback identified: browser-WASM, Node unverified (experiments #20/#3, tick 350, Oct 22 ~6:55 PM MT)
+- Read-only npm lookup for the micdrop "npm-only" path: the package is `phonon-tts` 0.4.1 (author Gradium, license MIT OR Apache-2.0, repo github.com/gradium-ai/xn-ptts, `ptts-wasm`), described as on-device TTS "in the browser" compiled to WebAssembly, 24 kHz streaming, 17.8 MB unpacked (model weights likely fetched separately). Not installed or run.
+- Implication for 9:28 PM production: keep the Python `transformers` + `phonon-31m-en` route as primary; treat `phonon-tts` as a fallback only if Python setup stalls, and expect it may need a browser/WASM host rather than plain Node. Box timings must say which runtime produced them (WASM vs PyTorch CPU) so the speed claim stays honest.
+
 ## Last tick
+- **2026-10-22 ~6:55 PM MT (tick 350).** Identified the Phonon npm fallback (`phonon-tts`, Gradium, browser-WASM; Node use unverified) so production knows its backup path. No wake. No installs/posts/uploads.
+  - Next recommended tick: after the 7:23 PM scan, if it picks Phonon, confirm the title pack matches and add the runtime-labeling note; ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23).
 - **2026-10-22 ~6:44 PM MT (tick 349).** Idle-light: fired ~12 min after tick 348; no new non-strategy commits since 5e4a6d7; uncommitted files already covered. Still waiting on the 7:23 PM scan. No wake. No posts/uploads/edits.
   - Next recommended tick: after the 7:23 PM scan, if it picks Phonon, confirm `content/drafts/phonon-ep6-title-hook-pack.md` matches; ~1:30 AM Oct 23 Ep5 vs Ep4 at 24h (#4); optional ~24h X V confirm (~11:30 AM Oct 23).
 - **2026-10-22 ~6:32 PM MT (tick 348).** Idle-light: fired ~12 min after tick 347; no new non-strategy commits since a1a40cb; uncommitted files (8:31 AM news scan, 1:32 PM growth-log note) already covered. Phonon re-check is fresh; waiting on the 7:23 PM scan. No wake. No posts/uploads/edits.
