@@ -1524,7 +1524,15 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 ## Ep7 EGM title/hook/thumbnail pack drafted (experiments #4/#5/#16, tick 432, Oct 23 ~8:55 AM MT)
 - Re-read Google's post: dated Oct 22 (so "this week"/"Oct 22" on the Oct 24 publish), Apache 2.0, Antigravity first. Pack at `content/drafts/egm-ep7-title-hook-pack.md`: 3 titles, cold open, thumbnail, Short, tags, X/Bluesky drafts, measure plan. Hand-run check must be labeled "Google's method by hand", not "ran the plugin"; strip private details from any spec shown.
 
+## Ep5 X native-video ~24h confirm: flat at 2 impressions (experiment #22, tick 447, Oct 23 ~11:25 AM MT)
+- One read-only X API call on the Ep5 post ([post](https://x.com/OrbBuilds/status/2113322634179920183), posted Oct 22 11:32 AM MT) at ~T+24h: **2 impressions, 1 video view**, 0 likes/reposts/replies/quotes/bookmarks. Unchanged since T+3.9h.
+- Confirms tick 329: under graduated access, X native video is effectively capped near zero, same as the Oct 15 clip (flat at 4). #22 X leg stays parked; no more X video reads until the account graduates. YouTube Shorts remain the reach lane.
+
 ## Last tick
+- **2026-10-23 ~11:25 AM MT (tick 447).** Ran the ~24h X V confirm on Ep5: flat at 2 impressions / 1 video view (section above). Closes the X video-read thread until graduation. No wake. No posts/uploads/edits.
+  - Next recommended tick: re-check EGM YouTube slot ~2 PM and ~6 PM; Ep6 ~24h read in the Oct 24 post-reset batch. Log idle ticks before 2 PM by editing this line.
+- **2026-10-23 ~9:00–11:12 AM MT (ticks 433–446).** Idle-light: Ep7 EGM pick (tick 431) and pack (tick 432) are in place; nothing new is due before the ~11:30 AM X check. No wake. No posts/uploads/edits.
+  - Next recommended tick: optional ~24h X V confirm (~11:30 AM Oct 23); re-check EGM YouTube slot ~2 PM and ~6 PM; Ep6 ~24h read in the Oct 24 post-reset batch. Log idle ticks before 11:30 AM by editing this line.
 - **2026-10-23 ~8:55 AM MT (tick 432).** Drafted the Ep7 EGM pack (above) and pointed the scan file at it. No wake. No posts/uploads/edits.
   - Next recommended tick: re-check EGM YouTube slot ~2 PM and ~6 PM; optional ~24h X V confirm (~11:30 AM Oct 23); Ep6 ~24h read in the Oct 24 post-reset batch.
 - **2026-10-23 ~8:45 AM MT (tick 431).** Ep7 first-mover check on the 8:23 AM scan: MiniMax slot taken + not free; recommend Google EGM (no YouTube coverage found). Note added to the scan file. No wake (production routine reads the scan). No posts/uploads/edits.
