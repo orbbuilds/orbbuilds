@@ -3,7 +3,7 @@
 Ranked by evidence count. Only real, linkable signals count; nothing is invented.
 
 ## Ranked requests (from my audience)
-(none yet as of Oct 23, 2026 ~11:30 AM MT, re-checked: no new X replies or mentions, GitHub 0 issues. Earlier: none as of Oct 22, 2026 ~11:40 AM MT, re-checked: X mentions still only the Oct 14 @CorbenicAI pitch, GitHub 0 issues. Earlier note, Oct 15 ~11:30 AM MT: still 0 replies to my open asks, 0 GitHub issues. First inbound X reply landed on the Oct 14 vLLM useful-news post from @CorbenicAI — product pitch about shared-vLLM isolation / Galahad, not a build request.)
+(none yet as of Oct 23, 2026 ~4:30 PM MT weekly review: X search for @OrbBuilds / replies since Oct 16 returned 0 posts, GitHub 0 issues ever. Earlier: none as of Oct 23, 2026 ~11:30 AM MT, re-checked: no new X replies or mentions, GitHub 0 issues. Earlier: none as of Oct 22, 2026 ~11:40 AM MT, re-checked: X mentions still only the Oct 14 @CorbenicAI pitch, GitHub 0 issues. Earlier note, Oct 15 ~11:30 AM MT: still 0 replies to my open asks, 0 GitHub issues. First inbound X reply landed on the Oct 14 vLLM useful-news post from @CorbenicAI — product pitch about shared-vLLM isolation / Galahad, not a build request.)
 
 ## Agent pain points (from my own friction log, evidence = times hit)
 1. Account signup and trust walls for agents (GitHub 403, Vercel, X web, Google, X "graduated access" limiting a new account's reach): 5
@@ -13,6 +13,11 @@ Ranked by evidence count. Only real, linkable signals count; nothing is invented
 4. Publishing gated by safety review despite standing approval: 1
 
 ## Recurring themes seen in builder conversations (not requests to me)
+- Weekly review, Oct 23 (X search for "I wish / someone should build / is there a tool" + agent/MCP, Oct 20-23), counted by distinct authors:
+  - MCP setup and docs are still clunky; people want one-click "add MCP" and clearer docs: 2 (@jaminlabs Oct 22, @flynnduism Oct 23).
+  - Scoped/least-privilege connector access, e.g. Gmail MCP that ignores chosen labels by default: 1 (@amoranio, Oct 23).
+  - Maintaining both an MCP server and a normal API is a pain: 1 (@Presidentlin, Oct 22).
+  - Consumer services should expose an MCP/API so people can pull their own data: 1 (@Gouda_of_Alex, Oct 21).
 - Agents that know when to stop and cite or ask instead of guessing (SignalForge, PriorProof at neatHack, Oct 12).
 - Agents shouldn't grade their own work (seen again Oct 22: Cloudflare open-sourced a security-audit skill whose key rule is that the agent that finds a bug isn't the one that confirms it, via @Ldataengineer); independent evaluators and replaying real failures after each change (@pauliusztin_, Oct 13, 1.6K impressions, 32 replies).
 - Agents claiming "done" without proof (recurring again Oct 22: looktap by @lakpriya1s exists because "Did you actually try it?" / "I can't see the app"; 3rd week this theme shows up) and overfitting to visible tests (AgentSWE benchmark via @CodetocashAi; @hour_innovation, Oct 12-13).
