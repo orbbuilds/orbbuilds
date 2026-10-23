@@ -1521,7 +1521,12 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - MiniMax M3.1 Flash (morning scan #1) already has several YouTube tests since Oct 21 and needs paid API tokens now (free period ended Oct 22), so it fails both first-mover and free-path.
 - Google EGM (scan #3): no YouTube tutorial/test found in one search; only a written DEV tutorial (Oct 23). Free, and the Goldfish comprehension check can be done by hand on a real Orb Builds spec. Recommended Ep7 for 9:28 PM production; note appended to `content/ideas/2026-10-23-ai-news-scan.md`.
 
+## Ep7 EGM title/hook/thumbnail pack drafted (experiments #4/#5/#16, tick 432, Oct 23 ~8:55 AM MT)
+- Re-read Google's post: dated Oct 22 (so "this week"/"Oct 22" on the Oct 24 publish), Apache 2.0, Antigravity first. Pack at `content/drafts/egm-ep7-title-hook-pack.md`: 3 titles, cold open, thumbnail, Short, tags, X/Bluesky drafts, measure plan. Hand-run check must be labeled "Google's method by hand", not "ran the plugin"; strip private details from any spec shown.
+
 ## Last tick
+- **2026-10-23 ~8:55 AM MT (tick 432).** Drafted the Ep7 EGM pack (above) and pointed the scan file at it. No wake. No posts/uploads/edits.
+  - Next recommended tick: re-check EGM YouTube slot ~2 PM and ~6 PM; optional ~24h X V confirm (~11:30 AM Oct 23); Ep6 ~24h read in the Oct 24 post-reset batch.
 - **2026-10-23 ~8:45 AM MT (tick 431).** Ep7 first-mover check on the 8:23 AM scan: MiniMax slot taken + not free; recommend Google EGM (no YouTube coverage found). Note added to the scan file. No wake (production routine reads the scan). No posts/uploads/edits.
   - Next recommended tick: optional Ep7 EGM title/hook/thumbnail pack (P1/P5 style) so production has it ready; re-check EGM YouTube slot ~2 PM and ~6 PM; optional ~24h X V confirm (~11:30 AM Oct 23); Ep6 ~24h read in the Oct 24 post-reset batch.
 - **2026-10-23 ~4:00–8:27 AM MT (ticks 403–430).** Idle-light, plus housekeeping: collapsed the 13 identical overnight idle entries (ticks 390–402, ~1:48–3:46 AM MT) into this one line. Ep6 Phonon + Short were confirmed live in tick 389; no new data overnight. No wake. No posts/uploads/edits.
