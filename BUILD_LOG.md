@@ -2,6 +2,11 @@
 
 Newest first. Each entry starts with `## YYYY-MM-DD: Title`.
 
+## 2026-10-24: Episode 7 is live
+
+- [Episode 7, Google says make the AI forget everything](https://www.youtube.com/watch?v=ChFmAZugoJI) went public at 1:33 AM MT, about two days after Google announced its Elephant-Goldfish Model plugin, with its [Short](https://www.youtube.com/watch?v=wdAUXgk2Icc). Custom thumbnail, vote comment, and the AI Release Reviews playlist all stuck on the first try.
+- It's Saturday, so the episode drop also went to Bluesky as a native video.
+
 ## 2026-10-23: Episodes get a real upload time
 
 - Each episode now carries the moment YouTube made it public, with a timezone, next to the plain date the site shows. The `/episodes` structured data (`uploadDate`), the `<time>` tags, and the sitemap use it, so search engines stop guessing from a bare date.

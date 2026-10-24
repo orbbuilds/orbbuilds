@@ -6,6 +6,6 @@
 - Official source: https://gradium.ai/blog/gradium-releases-phonon ; model card https://huggingface.co/gradium/phonon-31m-en
 - Script: content/scripts/2026-10-23-phonon-voice-test.json
 - Thumbnail: content/drafts/2026-10-23-phonon-voice-test-thumb.jpg (site copy public/episodes/rr-006.jpg)
-- Vote comment: `UgzSbMPFoWJekMO4w1B4AaABAg` (pin needs Studio). Playlist: PLM-tQTnCgKMM pos 0. Bluesky drop: not yet (weekday; daytime posting routine owns it).
+- Vote comment: `UgzSbMPFoWJekMO4w1B4AaABAg` (pin needs Studio). Playlist: PLM-tQTnCgKMM pos 0. Bluesky drop: https://bsky.app/profile/orbbuilds.bsky.social/post/3mykw5sxvtb2r (Oct 23 ~1:35 PM MT).
 - Queue note: content/published/2026-10-23-phonon-voice-test-queue.md
 - Hands-on tested (speed only, our own bench). No affiliation with Gradium or the Kokoro project.

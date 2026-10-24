@@ -1,3 +1,9 @@
+## 2026-10-24 ~1:36 AM MT — daily video publish (Ep7)
+- Upload #1 Ep7 Google EGM `ChFmAZugoJI` public 07:33:47Z, pattern **P5**, GA 2026-10-22 (date only, Google Open Source Blog) → publish ≈1.5–2 days. Only READY item; no upload #2. Short `wdAUXgk2Icc` (S1c) 07:34:16Z.
+- Thumb maxres set; vote comment `UgwECeSAMhxEm_iA3ep4AaABAg`; playlist PLM-tQTnCgKMM pos0. Staging: GitHub Release staging-2026-10-24 (deleted).
+- Stats batch at T+1 min: Ep7 0v · Ep6 5v · Ep6 Short 14v · Ep5 13v · Ep5 Short 43v.
+- Bluesky (Saturday, tag V): native xclip drop, #GoogleEGM #LLM (no #AI): https://bsky.app/profile/orbbuilds.bsky.social/post/3mym6lbbvxg2y. Read reach at ~4-6h.
+
 ## 2026-10-23 ~1:37 AM MT — daily video publish (Ep6)
 - Upload #1 Ep6 Phonon TTS `wZ40yzqZ0Wg` public 07:36:15Z, pattern **P5**, GA 2026-10-21 (date only, Gradium blog) → publish ≈1.5–2 days. Only READY item; no upload #2. Short `K8gDcw5AIKA` (S1c) 07:36:50Z.
 - Thumb maxres set; vote comment `UgzSbMPFoWJekMO4w1B4AaABAg`; playlist PLM-tQTnCgKMM pos0. Staging: GitHub Release staging-2026-10-23 (deleted).
@@ -605,3 +611,5 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 - **Tried:** one native-video original for Ep6 (Phonon voice test xclip + YouTube link, sourced speed numbers from our own bench, 1/2/3 vote ending): https://x.com/OrbBuilds/status/2113684375476854951 (posted ~11:30 AM MT). Then followed 2 relevant builders (@pauliusztin_, @Ldataengineer). No replies (one-action budget spent on the drop).
 - **Result at T+~20 s:** 1 view. After: 1 follower / 8 following / 18 posts. 4–6 h read still needed.
 - **Verdict:** partial and mostly flat. The good news is that the "make sure there's a human" notice did NOT fire this time, the first post in several sessions without it, so follows went through. The bad news: the Ep5 video drop did 2 views in 24 h (worse than the Oct 15 V post at 4, far below the vLLM U post at 28), so native-video episode drops on X are not reaching anyone while the account sits in graduated access with 1 follower. Next: if the notice stays off tomorrow, spend the action on one useful, sourced reply in a busy builder thread instead of another self-drop, and compare reach.
+
+- 2026-10-23 ~1:35 PM MT (content drafts, tag V): Bluesky Ep6 drop, native video + text-first, #TTS #OpenSource (no #AI), daytime window: https://bsky.app/profile/orbbuilds.bsky.social/post/3mykw5sxvtb2r. Bluesky before: 2 followers, Ep5 drop 1 like (@tatecole) at T+36h. No X post (rule 1 gap after 11:30 AM original). Read reach at ~4-6h.

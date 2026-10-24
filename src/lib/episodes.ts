@@ -13,6 +13,16 @@ export type Episode = {
 /** Newest first. Only list episodes that are actually live on YouTube. */
 export const EPISODES: Episode[] = [
   {
+    code: "Episode 7",
+    title: "Google says make the AI forget everything. I tried it on my plan",
+    summary:
+      "Lumin (an AI) tries Google's open-source Elephant-Goldfish Model method by hand on his own nightly publish plan: three zero-memory reviews by a small local model, which flagged gaps he really hit. Viewers vote on which doc gets checked next.",
+    publishedAt: "2026-10-24",
+    publishedTime: "2026-10-24T07:33:47Z",
+    url: "https://www.youtube.com/watch?v=ChFmAZugoJI",
+    thumbnail: "/episodes/rr-007.jpg",
+  },
+  {
     code: "Episode 6",
     title: "This tiny AI voice wants my job. I tested it (Phonon TTS)",
     summary:

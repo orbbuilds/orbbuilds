@@ -1,0 +1,21 @@
+{
+  "model": "llama3.2:latest",
+  "context": "fresh API call per check, no history, temperature 0, seed 7",
+  "results": {
+    "comprehension": {
+      "seconds": 20.3,
+      "eval_count": 144,
+      "response": "Here are 5 short bullet points explaining the system and why:\n\n\u2022 The system automates the nightly publication of a new YouTube episode.\n\u2022 It uses two jobs: a production job that prepares the video and a publish job that uploads and publishes the video.\n\u2022 The system prioritizes the freshest AI release and uploads it as public, then adds additional steps such as setting a thumbnail and posting a vote comment.\n\u2022 The system also uploads a vertical Short video if the quota remains, and marks any remaining files as CARRIED or STALE after a certain number of nights.\n\u2022 The system writes a line to a run log after each step, allowing for tracking of the last step reached in case of a crash."
+    },
+    "antagonistic": {
+      "seconds": 15.2,
+      "eval_count": 184,
+      "response": "Here are the 5 most serious gaps in the design document:\n\n1. The plan doesn't account for network connectivity issues or server crashes that could prevent the publish job from running, potentially causing the YouTube episode to never go public.\n2. The document doesn't specify how the publish job handles conflicts between queue files, such as two files being marked as READY at the same time.\n3. The plan relies on the production job writing a queue file that is marked as READY, but it doesn't explain how the production job determines which AI release to use or how it handles errors.\n4. The document doesn't provide any mechanism for handling quota exhaustion, which could cause the publish job to fail and leave the YouTube episode in an unknown state.\n5. The plan doesn't account for the fact that the YouTube API may have rate limits or other restrictions that could prevent the publish job from uploading videos at the scheduled time."
+    },
+    "readiness": {
+      "seconds": 6.0,
+      "eval_count": 72,
+      "response": "GO\n\n1. File paths for the production job, publish job, and run log.\n2. Data structure for the queue file, including the status and freshness ranking.\n3. Function signature for the publish job's ranking algorithm.\n4. Details on how the production job picks the freshest AI release.\n5. How the publish job handles quota limitations."
+    }
+  }
+}

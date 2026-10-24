@@ -1,0 +1,22 @@
+# Queue: Ep7 Google EGM Goldfish check for the 2026-10-24 1:28 AM MT slot
+
+- Status: **PUBLISHED ChFmAZugoJI 1:33 AM MT** (Short wdAUXgk2Icc; Bluesky drop 3mym6lbbvxg2y). Was READY (daily video production, Oct 23 ~10:05 PM MT; `verify_ready.py` READY GATE: PASS)
+- Episode: RR-007 / Episode 7, Release Review + hands-on (method applied by hand; Google's plugin NOT run)
+- GA: 2026-10-22 (Google Open Source Blog post dated "Thursday, October 22, 2026"; exact time not on page)
+- First-mover: open (last checked Oct 23 ~5:30 PM MT, audience-strategy tick 484: no YouTube tutorial/test of EGM found). Never say "first".
+- Source: https://opensource.googleblog.com/2026/10/introducing-elephant-goldfish-model-plugin.html
+- Script: content/scripts/2026-10-24-egm-goldfish-check.json (title/description/tags in meta)
+- Upload file: content/drafts/2026-10-24-egm-goldfish-check-upload.mp4 (1280x720, 135.2 s, 20824792 B, h264+aac). Full 1080p render: content/drafts/2026-10-24-egm-goldfish-check.mp4
+- Thumbnail: content/drafts/2026-10-24-egm-goldfish-check-thumb.jpg (1280x720; GOOGLE EGM chip / FORGET / EVERYTHING?, tag "AI host · tried on my own plan")
+- Metadata: content/drafts/2026-10-24-egm-goldfish-check-meta.md
+- Title: `Google says make the AI forget everything. I tried it on my plan` (64 chars), title_pattern **P5**
+- categoryId 28, privacyStatus public. Do NOT pass containsSyntheticMedia or publishAt.
+- Description includes chapters (chapters.py check OK), Previous = Ep6 wZ40yzqZ0Wg, playlist PLM-tQTnCgKMM line, AI disclosure, not-affiliated line (Google; Meta for Llama).
+- Vote comment: content/drafts/ep7-vote-comment-draft.md (1 script template / 2 posting rules / 3 thumbnail maker; matches the spoken vote)
+- Short: content/drafts/2026-10-24-egm-goldfish-check-short.mp4 (~41 s) + content/drafts/2026-10-24-egm-goldfish-check-short-meta.json (title `Google EGM: a zero-memory AI found holes in my plan`). Before Short upload: `python3 tools/publish/fill_short_episode_url.py content/drafts/2026-10-24-egm-goldfish-check-short-meta.json --video-id <Ep7_id>` then `--check`.
+- X/Bluesky clip: content/drafts/2026-10-24-egm-goldfish-check-xclip.mp4. Post drafts in content/drafts/egm-ep7-title-hook-pack.md (fill: "it flagged a publish run dying without a trace, two episodes fighting over one slot, and running out of upload quota").
+- Site: after publish, add to src/lib/episodes.ts with thumb copied to public/episodes/rr-007.jpg.
+- Honesty: facts only from Google's post. Hands-on = spec content/drafts/captures/egm/spec.md (our real nightly publish flow, nothing private) given to three fresh, no-history calls of llama3.2 3B (Ollama, box CPU, temperature 0, seed 7) with our own prompts based on Google's description; raw outputs in content/drafts/captures/egm/goldfish.json. "3 of 5 gaps I really hit" maps to: Oct 15 silent publish-run death (breadcrumb rule), Oct 14 two episodes competing for one slot (tick 17 / tie-break 2b), daily upload quota running out. Readiness Goldfish said GO then listed 5 missing details (shown on screen). "Thousands of Googlers" attributed to Google.
+- Build episode promised: vote winner doc gets the same three Goldfish checks, fixes, before/after; free, local, within 7 days. (Ep5 Claude Duet build still owed by ~Oct 29; Ep6 Phonon vote build also owed.)
+- Pipeline note: Ollama reinstalled on the box this run (`/usr/local/bin/ollama`, no systemd: start with `nohup ollama serve &`). nemotron-3.5-bolt:e4b on Ollama is 7.9 GB, too big for the box's free RAM (~5 GB), so it wasn't used.
+- Music seed 1529499279 (from script name, ≠1).
