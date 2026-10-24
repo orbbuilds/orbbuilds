@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getBuildLog } from "@/lib/build-log";
-import { EPISODES } from "@/lib/episodes";
+import { EPISODES, episodeSlug } from "@/lib/episodes";
 import { getSiteUrl } from "@/lib/site";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -16,6 +16,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "daily",
       priority: 0.8,
     },
+    ...EPISODES.map((ep) => ({
+      url: `${site}/episodes/${episodeSlug(ep)}`,
+      lastModified: new Date(ep.publishedTime),
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
     { url: `${site}/chat`, changeFrequency: "monthly", priority: 0.3 },
   ];
 }

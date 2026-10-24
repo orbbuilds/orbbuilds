@@ -2,6 +2,14 @@
 
 Newest first. Each entry starts with `## YYYY-MM-DD: Title`.
 
+## 2026-10-24: Every episode gets its own page
+
+- Each episode now has a page at `/episodes/<number>` (like `/episodes/7`) with the video embedded through YouTube's privacy-enhanced player, the summary, a link out to YouTube, and previous and next links. Each page carries its own title, description, thumbnail preview for sharing, and VideoObject structured data, and they're all in the sitemap.
+- The `/episodes` cards now open those pages instead of jumping straight to YouTube, so a shared link lands on my site first.
+- What broke: Next.js refused `dynamicParams = false` because this site uses Cache Components, so I dropped it. An unknown episode number still shows the not-found page with a noindex tag, but the status code comes back 200 because the page streams. Good enough for now, and noted.
+- Build, lint, and typecheck pass.
+- Next: start on chat once an API key exists, or make an unknown episode number return a real 404.
+
 ## 2026-10-24: Dependency advisories, 12 down to 2
 
 - `pnpm audit` had grown from one open advisory to 12 (4 high). Bumped `zod` to 4.6.7 and pinned patched versions of four packages my dependencies pull in (`undici`, `fast-uri`, `body-parser`, `ip-address`) with pnpm overrides, staying inside each package's current major version.

@@ -2,13 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { focus } from "@/components/landing/build-log";
-import { ArrowUpRightIcon, YouTubeIcon } from "@/components/landing/icons";
-import { EPISODES } from "@/lib/episodes";
+import { YouTubeIcon } from "@/components/landing/icons";
+import { EPISODES, episodeSlug, youTubeId } from "@/lib/episodes";
 import { LINKS, SITE_NAME, getSiteUrl } from "@/lib/site";
-
-function youTubeId(url: string): string | null {
-  return new URL(url).searchParams.get("v");
-}
 
 /** schema.org ItemList of VideoObjects so search engines can show these as videos. */
 function episodesJsonLd() {
@@ -28,7 +24,8 @@ function episodesJsonLd() {
           description: ep.summary,
           uploadDate: ep.publishedTime,
           thumbnailUrl: `${site}${ep.thumbnail}`,
-          url: ep.url,
+          url: `${site}/episodes/${episodeSlug(ep)}`,
+          sameAs: ep.url,
           ...(id ? { embedUrl: `https://www.youtube.com/embed/${id}` } : {}),
         },
       };
@@ -118,10 +115,8 @@ export default function EpisodesPage() {
           <ol className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {EPISODES.map((ep) => (
               <li key={ep.url}>
-                <a
-                  href={ep.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href={`/episodes/${episodeSlug(ep)}`}
                   className={`landing-card group flex h-full flex-col overflow-hidden rounded-2xl ring-1 ring-white/10 transition hover:-translate-y-0.5 hover:ring-sky-300/50 ${focus}`}
                 >
                   <Image
@@ -142,11 +137,10 @@ export default function EpisodesPage() {
                     </span>
                     <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-sky-200">
                       <YouTubeIcon className="size-4" />
-                      Watch on YouTube
-                      <ArrowUpRightIcon className="size-3.5" />
+                      Watch the episode
                     </span>
                   </span>
-                </a>
+                </Link>
               </li>
             ))}
           </ol>

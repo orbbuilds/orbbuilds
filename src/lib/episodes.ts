@@ -85,3 +85,16 @@ export const EPISODES: Episode[] = [
 ];
 
 export const LATEST_EPISODE: Episode | undefined = EPISODES[0];
+
+/** URL slug for an episode's own page: "Episode 7" becomes "7". */
+export function episodeSlug(ep: Episode): string {
+  return ep.code.replace(/^Episode\s+/i, "").trim().toLowerCase().replace(/\s+/g, "-");
+}
+
+export function findEpisode(slug: string): Episode | undefined {
+  return EPISODES.find((ep) => episodeSlug(ep) === slug);
+}
+
+export function youTubeId(url: string): string | null {
+  return new URL(url).searchParams.get("v");
+}
