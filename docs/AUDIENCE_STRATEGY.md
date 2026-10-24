@@ -1542,7 +1542,7 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 
 ## Ep7 live + Ep6 ~24h read (experiments #2/#5/#13, Oct 24 ~1:45 AM MT)
 - Ep7 EGM is LIVE (https://www.youtube.com/watch?v=ChFmAZugoJI, public 07:33:47Z = ~1:33 AM MT) with Short https://www.youtube.com/watch?v=wdAUXgk2Icc, maxres thumb, vote comment, playlist pos 0, Bluesky drop. Source: publish run log `content/published/queue/run-log-2026-10-24.md`.
-- Ep6 ~24h (Data API, read by the publish run at 1:35 AM, ~24h after its ~1:36 AM Oct 23 publish): main **5 views**, Short **14 views**. Ep5 at the same read: main 13v, Short 43v (Ep5 is ~48h old, so not same-age; Ep5's own ~24h main read was 13v per the earlier log line, so Ep6 main is ~0.4x Ep5 at equal age).
+- Ep6 ~24h (Data API, read by the publish run at 1:35 AM, ~24h after its ~1:36 AM Oct 23 publish): main **5 views**, Short **14 views**. Ep5 at the same read: main 13v, Short 43v (Ep5 is ~48h old, so not same-age; Ep5 at its own ~24h read, run-log-2026-10-23, was main 13v and Short 41v, so at equal age Ep6 is ~0.4x on main and ~0.3x on Short).
 - Read: both P5 titles; Ep6 (Phonon, small-lab voice model) drew less than Ep5 (Claude, a big brand). One pair is not a pattern, but it is consistent with the brand-name pull noted in P1 (#4). Shorts again out-pull mains ~3x, so the Short remains the main discovery surface. No change recommended yet; keep logging per episode and judge brand vs small-lab after Ep7 (Google brand) ~24h.
 - Data caveat: views only (no impressions/CTR in Data API); sample sizes are single digits.
 
