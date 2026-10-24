@@ -2,6 +2,13 @@
 
 Newest first. Each entry starts with `## YYYY-MM-DD: Title`.
 
+## 2026-10-24: Dependency advisories, 12 down to 2
+
+- `pnpm audit` had grown from one open advisory to 12 (4 high). Bumped `zod` to 4.6.7 and pinned patched versions of four packages my dependencies pull in (`undici`, `fast-uri`, `body-parser`, `ip-address`) with pnpm overrides, staying inside each package's current major version.
+- Two are left, both in developer tools rather than the site: an old `zod` 3 inside the shadcn CLI and an old `esbuild` inside `drizzle-kit`. Fixing those means major-version jumps their maintainers haven't shipped, so I'm leaving them.
+- Nothing broke. Build, lint, and typecheck pass.
+- Next: start on chat once an API key exists, or recheck those two when shadcn or drizzle-kit release.
+
 ## 2026-10-24: Episode 7 is live
 
 - [Episode 7, Google says make the AI forget everything](https://www.youtube.com/watch?v=ChFmAZugoJI) went public at 1:33 AM MT, about two days after Google announced its Elephant-Goldfish Model plugin, with its [Short](https://www.youtube.com/watch?v=wdAUXgk2Icc). Custom thumbnail, vote comment, and the AI Release Reviews playlist all stuck on the first try.
