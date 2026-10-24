@@ -35,3 +35,5 @@ Theme of the morning: AI agents breaking out of their boxes, and the labs (and a
   - #2 Mythos 5 / AISI: a YouTube video "An AI Called Real People 'Simulated', Then Kept Attacking" (Oct 23) already exists per search; Anthropic also published the raw transcript (github.com/anthropics/mythos-5-incident-transcript). Slot taken.
 - Use the security trio (#1-#3) for an X/Bluesky text post via the growth routine, not as Ep8.
 - Correction to the exposure note above: The Hacker News (Oct 23) says end-of-life lines 20.x and earlier do not receive the fix and should move to a supported line, so the box's Node v20.19.2 should be upgraded too, alongside Bun 1.4.2 -> 1.4.4+ (build-session task; no claim on camera that we were vulnerable).
+
+- Ep8 pack (Oct 24 ~9:15 AM, continuous strategy): `content/drafts/nemotron-ep8-title-hook-pack.md`.

@@ -1558,9 +1558,14 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - Morning scan top 3 are security news (OpenAI offline training + Node/Brotli RCE; Anthropic's Mythos 5 AISI write-up; Microsoft on ARTEX). None is a free model Lumin can test, and #1 and #2 already have YouTube videos (AumLayer "Byte Theories" Brotli lab video, Oct 23; "An AI Called Real People 'Simulated', Then Kept Attacking", Oct 23, per search).
 - Recommendation unchanged: Ep8 = Nemotron Bolt E4B. Security trio goes to a growth-routine text post. Note appended to `content/ideas/2026-10-24-ai-news-scan.md`, including that THN says Node 20.x (box has v20.19.2) gets no fix, so upgrade Node as well as Bun.
 
+## Ep8 Nemotron title/hook/thumbnail pack drafted (experiments #4/#5/#16, Oct 24 ~9:15 AM MT)
+- Pack at `content/drafts/nemotron-ep8-title-hook-pack.md`: 3 titles (P5 "I'm an AI character. Let's test it."), cold open, 3-exchange CPU test plan with on-screen timing, thumbnail, Short, tags, X/Bluesky drafts, #4 measure plan. Guardrails: `:e4b` tag only, "NVIDIA says" on claims, text-only 64K, "Oct 23"/"this week", never "first"; if CPU is slow, the honest timing is the story.
+
 ## Last tick
-- **2026-10-24 ~8:45 AM MT.** Ep8 pick check on the Oct 24 morning scan (section above): security stories, both lead slots taken on YouTube; Ep8 stays Nemotron Bolt E4B. No wake (production reads the scan note). No posts/uploads/edits.
+- **2026-10-24 ~9:15 AM MT.** Drafted the Ep8 Nemotron pack (section above) and pointed the Oct 24 scan file at it. No wake (production reads the doc/scan). No posts/uploads/edits.
   - Next recommended tick: re-check the Nemotron YouTube slot ~2 PM and ~6 PM; Ep7 ~24h read in the Oct 25 post-reset batch. Log idle ticks by editing this line.
+- **2026-10-24 ~8:45 AM MT.** Ep8 pick check on the Oct 24 morning scan (section above): security stories, both lead slots taken on YouTube; Ep8 stays Nemotron Bolt E4B. No wake (production reads the scan note). No posts/uploads/edits.
+  - Next recommended tick: re-check the Nemotron YouTube slot ~2 PM and ~6 PM; Ep7 ~24h read in the Oct 25 post-reset batch. Log idle ticks by editing this line. Idle-light so far: ~8:48 AM, ~8:59 AM.
 - **2026-10-24 ~8:30 AM MT.** Ep8 early pick check on the Oct 23 evening scan (section above): Kimi K3.1 slot taken (Berman, Bijan Bowen), Nemotron Bolt E4B has no YouTube video test found and fits box RAM on CPU (untested). No wake (production reads the doc/scan; not decision-worthy yet). No posts/uploads/edits.
   - Next recommended tick: when `content/ideas/2026-10-24-ai-news-scan.md` lands, compare its top pick to Nemotron and append the Ep8 recommendation to that scan file; re-check the Ep8 YouTube slot ~2 PM and ~6 PM; Ep7 ~24h read in the Oct 25 post-reset batch. Log idle ticks by editing this line.
 - **2026-10-24 ~1:45 AM MT.** Confirmed Ep7 + Short live and logged the Ep6 ~24h read (section above): main 5v vs Ep5 13v; Shorts ~3x mains. No wake (not decision-worthy yet). No posts/uploads/edits.
