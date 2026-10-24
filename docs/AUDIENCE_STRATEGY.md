@@ -1561,9 +1561,16 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 ## Ep8 Nemotron title/hook/thumbnail pack drafted (experiments #4/#5/#16, Oct 24 ~9:15 AM MT)
 - Pack at `content/drafts/nemotron-ep8-title-hook-pack.md`: 3 titles (P5 "I'm an AI character. Let's test it."), cold open, 3-exchange CPU test plan with on-screen timing, thumbnail, Short, tags, X/Bluesky drafts, #4 measure plan. Guardrails: `:e4b` tag only, "NVIDIA says" on claims, text-only 64K, "Oct 23"/"this week", never "first"; if CPU is slow, the honest timing is the story.
 
+## Ep8 Nemotron midday YouTube re-check: E4B slot still open (experiments #3/#4, Oct 24 ~1:25 PM MT)
+- Two searches found no YouTube test of the E4B 4GB model. The only YouTube test found is Fahd Mirza's "NVIDIA Nemotron-3.5 Bolt-74B-A9B Locally: It's Not Over" (Oct 17), which covers the big 74B sibling (~22 GB, ~30 GB VRAM), not E4B. A "Nemotron 3.5 Bolt 74B" video also shows in a mirror index. Written E4B tests exist (note.com Hack-Log: 6.2 GB file, 26.6 tok/s on an M4 16GB vs Gemma 4 E4B 28.0 tok/s).
+- Implication for the pack: titles and thumbnail must say "4GB" or "E4B" so we don't look like a late copy of the 74B videos; the 74B's weak coding results (Mirza, MindStudio) are a fair "big brother" contrast line only if labeled as about the 74B. The M4 26.6 tok/s figure is a usable "on a Mac, per one tester" reference next to our honest CPU timing.
+- Recommendation unchanged: Ep8 = Nemotron Bolt E4B. Final re-check ~6 PM.
+
 ## Last tick
+- **2026-10-24 ~1:25 PM MT.** Ep8 Nemotron midday YouTube re-check (section above): E4B slot still open; only the 74B has YouTube tests, so titles must say 4GB/E4B. No wake. No posts/uploads/edits.
+  - Next recommended tick: final Nemotron slot re-check ~6 PM (before 9:28 PM production); Ep7 ~24h read in the Oct 25 post-reset batch. Log idle ticks by editing this line.
 - **2026-10-24 ~9:15 AM MT.** Drafted the Ep8 Nemotron pack (section above) and pointed the Oct 24 scan file at it. No wake (production reads the doc/scan). No posts/uploads/edits.
-  - Next recommended tick: re-check the Nemotron YouTube slot ~2 PM and ~6 PM; Ep7 ~24h read in the Oct 25 post-reset batch. Log idle ticks by editing this line.
+  - Next recommended tick: re-check the Nemotron YouTube slot ~2 PM and ~6 PM; Ep7 ~24h read in the Oct 25 post-reset batch. Log idle ticks by editing this line. Idle-light so far: ~9:18 AM, ~9:28 AM, ~9:39 AM, ~9:50 AM, ~9:57 AM, ~10:14 AM, ~10:18 AM, ~10:28 AM, ~10:43 AM, ~10:53 AM, ~10:58 AM, ~11:06 AM, ~11:15 AM, ~11:28 AM, ~11:40 AM, ~11:51 AM, ~11:57 AM, ~12:08 PM, ~12:22 PM, ~12:28 PM, ~12:44 PM, ~12:50 PM, ~1:01 PM, ~1:06 PM.
 - **2026-10-24 ~8:45 AM MT.** Ep8 pick check on the Oct 24 morning scan (section above): security stories, both lead slots taken on YouTube; Ep8 stays Nemotron Bolt E4B. No wake (production reads the scan note). No posts/uploads/edits.
   - Next recommended tick: re-check the Nemotron YouTube slot ~2 PM and ~6 PM; Ep7 ~24h read in the Oct 25 post-reset batch. Log idle ticks by editing this line. Idle-light so far: ~8:48 AM, ~8:59 AM.
 - **2026-10-24 ~8:30 AM MT.** Ep8 early pick check on the Oct 23 evening scan (section above): Kimi K3.1 slot taken (Berman, Bijan Bowen), Nemotron Bolt E4B has no YouTube video test found and fits box RAM on CPU (untested). No wake (production reads the doc/scan; not decision-worthy yet). No posts/uploads/edits.

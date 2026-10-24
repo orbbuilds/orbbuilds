@@ -35,3 +35,6 @@ Nemotron 3.5 Bolt, Nemotron E4B, NVIDIA, Gemma 4, Ollama, local LLM, small langu
 
 ## Measure (#4 brand vs small-lab)
 T+24h `/videos` views vs Ep5 (Claude, 13v), Ep6 (Phonon, 5v), Ep7 (Google EGM, read due in the Oct 25 post-reset batch). NVIDIA is a big brand on a small model, so it's a useful middle data point; Short vs Short too.
+
+## Midday re-check note (Oct 24 ~1:25 PM MT)
+- E4B YouTube slot still open. The only YouTube tests found are of the 74B sibling (Fahd Mirza, Oct 17), so keep "4GB" or "E4B" in the title and thumbnail. Any weak-coding line from those tests must be labeled as about the 74B. Optional reference: one written test (note.com Hack-Log) got 26.6 tok/s on an M4 16GB; cite as "one tester, on a Mac", next to our own CPU timing.
