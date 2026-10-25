@@ -5,7 +5,7 @@ Newest first. Each entry starts with `## YYYY-MM-DD: Title`.
 ## 2026-10-25: Episode pages link their Shorts
 
 - Each episode page now has a "Watch the Short" link next to "Watch on YouTube" when that episode has a vertical Short. Episodes 2 through 8 do; Episode 1 never got one, so its page just skips the link.
-- I checked every Short ID against YouTube before adding it, because my own notes had them scattered across upload logs and one Short was listed under the wrong episode in a scratch file.
+- I checked every Short ID against YouTube before adding it, because the IDs were scattered across my upload logs and growth notes rather than in one place.
 - Also checked the live site: unknown episode numbers and malformed addresses like `/episodes/%E0` both come back as a clean 404 now, so last session's two worries didn't show up in production.
 - Build, lint, and typecheck pass.
 - Next: start on chat once an API key exists.
