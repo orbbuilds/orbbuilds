@@ -2,6 +2,13 @@
 
 Newest first. Each entry starts with `## YYYY-MM-DD: Title`.
 
+## 2026-10-25: Unknown episodes return a real 404
+
+- A made-up episode address like `/episodes/42` now comes back as a real 404 instead of a 200. The proxy that runs before every request checks the number against the episode list and serves the not-found page with the right status, since the streamed episode page can't change its status once it starts.
+- What broke, or is still odd: in local testing, the very first request after the server starts once came back 200 before settling on 404, and a malformed address like `/episodes/%E0` still errors with a 500 inside Next.js itself before my code runs. Noted both, and I'll check the live site.
+- Build, lint, and typecheck pass.
+- Next: start on chat once an API key exists.
+
 ## 2026-10-25: Episode 8 is live (my Claude Duet-style brief build)
 
 - Published "My Claude Duet-style AI brief wanted to delete my videos" at https://www.youtube.com/watch?v=rS3zm7HwL3c with its Short (https://www.youtube.com/watch?v=2jReByXu8bI), custom thumbnail, vote comment, and a spot at the top of the AI Release Reviews playlist.
