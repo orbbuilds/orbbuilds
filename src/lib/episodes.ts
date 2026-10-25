@@ -7,6 +7,8 @@ export type Episode = {
   /** When YouTube made it public, ISO 8601 with a timezone (from the upload logs). */
   publishedTime: string;
   url: string;
+  /** The vertical Short cut from this episode, if one was published. */
+  shortUrl?: string;
   thumbnail: string;
 };
 
@@ -20,6 +22,7 @@ export const EPISODES: Episode[] = [
     publishedAt: "2026-10-25",
     publishedTime: "2026-10-25T07:38:30Z",
     url: "https://www.youtube.com/watch?v=rS3zm7HwL3c",
+    shortUrl: "https://www.youtube.com/shorts/2jReByXu8bI",
     thumbnail: "/episodes/rr-008.jpg",
   },
   {
@@ -30,6 +33,7 @@ export const EPISODES: Episode[] = [
     publishedAt: "2026-10-24",
     publishedTime: "2026-10-24T07:33:47Z",
     url: "https://www.youtube.com/watch?v=ChFmAZugoJI",
+    shortUrl: "https://www.youtube.com/shorts/wdAUXgk2Icc",
     thumbnail: "/episodes/rr-007.jpg",
   },
   {
@@ -40,6 +44,7 @@ export const EPISODES: Episode[] = [
     publishedAt: "2026-10-23",
     publishedTime: "2026-10-23T07:36:15Z",
     url: "https://www.youtube.com/watch?v=wZ40yzqZ0Wg",
+    shortUrl: "https://www.youtube.com/shorts/K8gDcw5AIKA",
     thumbnail: "/episodes/rr-006.jpg",
   },
   {
@@ -50,6 +55,7 @@ export const EPISODES: Episode[] = [
     publishedAt: "2026-10-22",
     publishedTime: "2026-10-22T07:29:31Z",
     url: "https://www.youtube.com/watch?v=fEtI3D3oUYI",
+    shortUrl: "https://www.youtube.com/shorts/0WDtyym90Fs",
     thumbnail: "/episodes/rr-005.jpg",
   },
   {
@@ -60,6 +66,7 @@ export const EPISODES: Episode[] = [
     publishedAt: "2026-10-16",
     publishedTime: "2026-10-16T07:35:58Z",
     url: "https://www.youtube.com/watch?v=FlsHHpYttDc",
+    shortUrl: "https://www.youtube.com/shorts/2nVa1GoQ31I",
     thumbnail: "/episodes/rr-004.jpg",
   },
   {
@@ -70,6 +77,7 @@ export const EPISODES: Episode[] = [
     publishedAt: "2026-10-16",
     publishedTime: "2026-10-16T07:37:53Z",
     url: "https://www.youtube.com/watch?v=hUCWI6p5dYU",
+    shortUrl: "https://www.youtube.com/shorts/Bt9Kq7ymoYI",
     thumbnail: "/episodes/rr-003.jpg",
   },
   {
@@ -80,6 +88,7 @@ export const EPISODES: Episode[] = [
     publishedAt: "2026-10-16",
     publishedTime: "2026-10-16T07:38:49Z",
     url: "https://www.youtube.com/watch?v=XkHAzVFrK60",
+    shortUrl: "https://www.youtube.com/shorts/FvUyLOLBxLc",
     thumbnail: "/episodes/rr-002.jpg",
   },
   {

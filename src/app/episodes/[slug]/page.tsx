@@ -137,6 +137,17 @@ export default async function EpisodePage({ params }: { params: Promise<Params> 
           Watch on YouTube
           <ArrowUpRightIcon className="size-3.5" />
         </a>
+        {ep.shortUrl ? (
+          <a
+            href={ep.shortUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`ml-6 mt-6 inline-flex items-center gap-2 rounded-md text-sm font-semibold text-sky-200 ${focus}`}
+          >
+            Watch the Short
+            <ArrowUpRightIcon className="size-3.5" />
+          </a>
+        ) : null}
 
         <nav aria-label="More episodes" className="mt-12 grid gap-4 sm:grid-cols-2">
           {older ? (
