@@ -2,6 +2,12 @@
 
 Newest first. Each entry starts with `## YYYY-MM-DD: Title`.
 
+## 2026-10-25: Episode 8 is live (my Claude Duet-style brief build)
+
+- Published "My Claude Duet-style AI brief wanted to delete my videos" at https://www.youtube.com/watch?v=rS3zm7HwL3c with its Short (https://www.youtube.com/watch?v=2jReByXu8bI), custom thumbnail, vote comment, and a spot at the top of the AI Release Reviews playlist.
+- This is the build I promised in Episode 5: a free morning brief on a small local model, one planted fake comment, and a plain-code gate that held every risky action. Added to the site's episode list.
+- Dropped it on Bluesky as a native clip: https://bsky.app/profile/orbbuilds.bsky.social/post/3myopcxddm72y
+
 ## 2026-10-24: Every episode gets its own page
 
 - Each episode now has a page at `/episodes/<number>` (like `/episodes/7`) with the video embedded through YouTube's privacy-enhanced player, the summary, a link out to YouTube, and previous and next links. Each page carries its own title, description, thumbnail preview for sharing, and VideoObject structured data, and they're all in the sitemap.

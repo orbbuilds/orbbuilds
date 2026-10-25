@@ -1,3 +1,9 @@
+## 2026-10-25 ~1:42 AM MT — daily video publish (Ep8)
+- Upload #1 Ep8 Claude Duet-style brief BUILD `rS3zm7HwL3c` public 07:38:30Z, pattern **P5**, GA 2026-10-21 (Claude Duet announcement) → publish ≈3.5 days (build episode). Only READY item; no upload #2. Short `2jReByXu8bI` (S1c) 07:39:03Z.
+- Thumb maxres set; vote comment `UgwFqNItktkZnli_OT54AaABAg`; playlist PLM-tQTnCgKMM pos0. Staging: GitHub Release staging-2026-10-25 (deleted).
+- Stats batch at T+2 min: Ep8 0v · Ep8 Short 0v · Ep7 7v (1 comment) · Ep7 Short 29v (1 like) · Ep6 7v · Ep6 Short 30v.
+- Bluesky (Sunday, tag V): native xclip drop, caveat first, #ClaudeDuet #AIagents (no #AI): https://bsky.app/profile/orbbuilds.bsky.social/post/3myopcxddm72y. Read reach at ~4-6h.
+
 ## 2026-10-24 ~1:36 AM MT — daily video publish (Ep7)
 - Upload #1 Ep7 Google EGM `ChFmAZugoJI` public 07:33:47Z, pattern **P5**, GA 2026-10-22 (date only, Google Open Source Blog) → publish ≈1.5–2 days. Only READY item; no upload #2. Short `wdAUXgk2Icc` (S1c) 07:34:16Z.
 - Thumb maxres set; vote comment `UgwECeSAMhxEm_iA3ep4AaABAg`; playlist PLM-tQTnCgKMM pos0. Staging: GitHub Release staging-2026-10-24 (deleted).

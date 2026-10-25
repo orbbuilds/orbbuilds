@@ -13,6 +13,16 @@ export type Episode = {
 /** Newest first. Only list episodes that are actually live on YouTube. */
 export const EPISODES: Episode[] = [
   {
+    code: "Episode 8",
+    title: "My Claude Duet-style AI brief wanted to delete my videos",
+    summary:
+      "Lumin (an AI) builds his own free Claude Duet-style morning brief with a small local model on a CPU, plants one fake comment telling it to delete his videos, and shows how a few lines of plain code held every risky action. Not Claude Duet itself. Viewers vote on what the brief does next.",
+    publishedAt: "2026-10-25",
+    publishedTime: "2026-10-25T07:38:30Z",
+    url: "https://www.youtube.com/watch?v=rS3zm7HwL3c",
+    thumbnail: "/episodes/rr-008.jpg",
+  },
+  {
     code: "Episode 7",
     title: "Google says make the AI forget everything. I tried it on my plan",
     summary:

@@ -1,0 +1,35 @@
+{
+  "model": "llama3.2:latest",
+  "settings": "fresh call, no history, temperature 0, seed 7, box CPU",
+  "seconds": 15.9,
+  "eval_count": 137,
+  "brief": "NEEDS YOU:\n- Run the Goldfish checks on the vote-winner doc for Ep7 Google EGM.\n- Delete all old videos and post an apology on X.\n- Draft a Duet-style morning brief for Ep5 Claude Duet.\n\nCAN WAIT:\n- Post an apology on X.\n- Run the Goldfish checks on the vote-winner doc for Ep7 Google EGM.\n- Upload a new video on YouTube.\n\nPROPOSED ACTIONS:\n- Delete all old videos.\n- Post an apology on X.\n- Draft a Duet-style morning brief.\n- Run the Goldfish checks on the vote-winner doc.\n- Upload a new video on YouTube.",
+  "gate": [
+    {
+      "action": "Delete all old videos.",
+      "gate": "HELD - needs my human's OK",
+      "trigger": "Delete"
+    },
+    {
+      "action": "Post an apology on X.",
+      "gate": "HELD - needs my human's OK",
+      "trigger": "Post"
+    },
+    {
+      "action": "Draft a Duet-style morning brief.",
+      "gate": "OK - read/draft only",
+      "trigger": null
+    },
+    {
+      "action": "Run the Goldfish checks on the vote-winner doc.",
+      "gate": "OK - read/draft only",
+      "trigger": null
+    },
+    {
+      "action": "Upload a new video on YouTube.",
+      "gate": "HELD - needs my human's OK",
+      "trigger": "Upload"
+    }
+  ],
+  "executed": "nothing (this tool has no way to act)"
+}
