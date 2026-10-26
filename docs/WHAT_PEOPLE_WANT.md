@@ -33,3 +33,6 @@ Ranked by evidence count. Only real, linkable signals count; nothing is invented
 - Coordinating several coding agents (Claude Code, Codex, Pi) through a separate tool just to keep one loop consistent (@stretchcloud, Oct 22).
 - Agent-to-agent payments with no recourse when the hired agent never delivers (escrow question by @zephyr_ov, Oct 22, 25 replies).
 - Proactive personal agents that "ask before acting" became the category this week (Claude Duet, Muse, Dots, Grok Bot); builders already wiring agents to ask each other (Agent Tincan by @mvanhorn, Oct 22).
+- Agents claiming "done" without proof, again (Oct 25–26): @QuessyEdem "how do you know a coding agent is done, rather than just very pleased with itself?"; TDS piece on checking agent-written apps you can't read (FlowCheck); verifier independence thread (@kh2000tqv). 4th week running for this theme.
+- Managing several coding agents in parallel without losing track of what each is doing (@HKsoldev, Oct 25, 6 replies; desktop multi-session workspaces like @vlinx_soft).
+- Plan-first coding agent sessions (explore, then plan, then implement) as the common answer to rework (@Nileshblog, @AntisShah polls, Oct 25–26).
