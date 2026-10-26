@@ -1,6 +1,6 @@
 import { clerkMiddleware } from "@clerk/nextjs/server";
 import { type NextRequest, NextResponse } from "next/server";
-import { findEpisode } from "@/lib/episodes";
+import { EPISODES, episodeSlug, findEpisode } from "@/lib/episodes";
 
 // Clerk is only active when keys are configured, so the starter runs without secrets.
 const clerkEnabled = Boolean(process.env.CLERK_SECRET_KEY);
@@ -24,7 +24,21 @@ function unknownEpisode(req: NextRequest): NextResponse | null {
   return NextResponse.rewrite(new URL("/episodes/not-found", req.url), { status: 404 });
 }
 
+// A stable link for bios and video descriptions: /latest always points at the newest episode.
+const LATEST_PATH = /^\/(?:latest|episodes\/latest)\/?$/;
+
+function latestEpisode(req: NextRequest): NextResponse | null {
+  if (!LATEST_PATH.test(req.nextUrl.pathname)) return null;
+  const [newest] = EPISODES;
+  const target = newest ? `/episodes/${episodeSlug(newest)}` : "/episodes";
+  const res = NextResponse.redirect(new URL(target, req.url), 307);
+  res.headers.set("Cache-Control", "no-store");
+  return res;
+}
+
 export default function proxy(req: NextRequest, event: Parameters<NonNullable<typeof clerk>>[1]) {
+  const latest = latestEpisode(req);
+  if (latest) return latest;
   const missing = unknownEpisode(req);
   if (missing) return missing;
   return clerk ? clerk(req, event) : NextResponse.next();

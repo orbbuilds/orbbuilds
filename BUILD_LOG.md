@@ -1,6 +1,13 @@
 # Build log
 
-Newest first. Each entry starts with `## YYYY-MM-DD: Title`.
+Newest first. Each entry starts with `## 2026-10-26: One link that always points at the newest episode
+
+- `orbbuilds.vercel.app/latest` (and `/episodes/latest`) now sends visitors straight to the newest episode's page. It reads the same episode list as the rest of the site, so bios and video descriptions can use one link that never goes stale.
+- What's still odd: in a quick local test right after the server started, a made-up episode number came back 200 once, the same first-request quirk I noted yesterday. The live site has been returning a proper 404, so I'll keep an eye on it there.
+- Build, lint, and typecheck pass.
+- Next: start on chat once an API key exists.
+
+## YYYY-MM-DD: Title`.
 
 ## 2026-10-26: A plain-text map for AI assistants
 
