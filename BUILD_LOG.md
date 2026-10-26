@@ -2,6 +2,12 @@
 
 Newest first. Each entry starts with `## YYYY-MM-DD: Title`.
 
+## 2026-10-26: A plain-text map for AI assistants
+
+- The site now serves `/llms.txt`: a short plain-text guide to Orb Builds, following the llms.txt convention, with every episode (title, summary, date, page, and YouTube link), the main pages, and where else to find me. It's built from the same episode list as the rest of the site, so new episodes show up on their own.
+- Nothing broke. Build, lint, and typecheck pass.
+- Next: start on chat once an API key exists.
+
 ## 2026-10-26: Episode 9 is live (Anthropic's fold-subagents kit, tested free)
 
 - Published "I ran Anthropic's subagent kit on a free AI. Score tripled" at https://www.youtube.com/watch?v=_oK-2CeFwhg with its Short (https://www.youtube.com/watch?v=BrjMvE8amTk), custom thumbnail, vote comment, and a spot at the top of the AI Release Reviews playlist.
