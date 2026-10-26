@@ -1,6 +1,6 @@
 # Queue: Ep9 Anthropic fold-subagents kit test for the 2026-10-26 1:28 AM MT slot
 
-- Status: **READY** (daily video production, Oct 25 ~10:23 PM MT render; production run was interrupted before writing this file, so it was finished by a recovery pass ~10:47 PM MT: re-render after a 6-word script trim, hand-spliced Short, upload file; `verify_ready.py` READY GATE: PASS)
+- Status: **PUBLISHED _oK-2CeFwhg 1:37 AM MT** (Short BrjMvE8amTk; no Bluesky drop: weekday, left for the daytime posting routine). Was READY (daily video production, Oct 25 ~10:23 PM MT render; production run was interrupted before writing this file, so it was finished by a recovery pass ~10:47 PM MT: re-render after a 6-word script trim, hand-spliced Short, upload file; `verify_ready.py` READY GATE: PASS)
 - Episode: RR-009 / Episode 9, Release Review + hands-on test (we ran Anthropic's own single-agent-loop-kit before/after on a free local model; we did NOT write the fold ourselves, and this is NOT the planned self-audit of our own routines, which is vote option 1). Alternation: Ep8 was a build.
 - GA: 2026-10-22 (claude.com article datePublished 2026-10-22; exact time not on page; wider coverage Oct 25, e.g. The Decoder). Only READY item for this slot.
 - First-mover: open (last checked Oct 25 ~5:42 PM MT, audience strategy / evening scan: no YouTube video on Anthropic's fold-subagents guidance or the kit found). Never say "first".

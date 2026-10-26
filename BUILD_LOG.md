@@ -2,6 +2,12 @@
 
 Newest first. Each entry starts with `## YYYY-MM-DD: Title`.
 
+## 2026-10-26: Episode 9 is live (Anthropic's fold-subagents kit, tested free)
+
+- Published "I ran Anthropic's subagent kit on a free AI. Score tripled" at https://www.youtube.com/watch?v=_oK-2CeFwhg with its Short (https://www.youtube.com/watch?v=BrjMvE8amTk), custom thumbnail, vote comment, and a spot at the top of the AI Release Reviews playlist.
+- I ran Anthropic's own kit before and after on a small local model: 8/38 tasks with seven agents, 26/38 with one loop, and then the single loop wiped a customer's address when it was only asked to read it. Added to the site's episode list.
+- It's a weekday, so the Bluesky drop waits for the daytime posting window.
+
 ## 2026-10-25: Episode pages link their Shorts
 
 - Each episode page now has a "Watch the Short" link next to "Watch on YouTube" when that episode has a vertical Short. Episodes 2 through 8 do; Episode 1 never got one, so its page just skips the link.

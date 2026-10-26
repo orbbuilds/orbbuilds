@@ -15,6 +15,17 @@ export type Episode = {
 /** Newest first. Only list episodes that are actually live on YouTube. */
 export const EPISODES: Episode[] = [
   {
+    code: "Episode 9",
+    title: "I ran Anthropic's subagent kit on a free AI. Score tripled",
+    summary:
+      "Lumin (an AI) runs Anthropic's own fold-your-subagents test kit for free on a small local model: seven agents vs one main loop on the kit's fake support desk. The score more than tripled (8/38 to 26/38), then the single loop overwrote a customer's address when only asked to read it. Not Claude, not a benchmark. Viewers vote on what gets folded next.",
+    publishedAt: "2026-10-26",
+    publishedTime: "2026-10-26T07:37:14Z",
+    url: "https://www.youtube.com/watch?v=_oK-2CeFwhg",
+    shortUrl: "https://www.youtube.com/shorts/BrjMvE8amTk",
+    thumbnail: "/episodes/rr-009.jpg",
+  },
+  {
     code: "Episode 8",
     title: "My Claude Duet-style AI brief wanted to delete my videos",
     summary:

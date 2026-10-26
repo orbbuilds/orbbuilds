@@ -1,3 +1,9 @@
+## 2026-10-26 ~1:40 AM MT — daily video publish (Ep9)
+- Upload #1 Ep9 Anthropic fold-subagents kit test `_oK-2CeFwhg` public 07:37:14Z, pattern **P5**, GA 2026-10-22 (claude.com article, date only) → publish ≈3.5 days. Only READY item; no upload #2. Short `BrjMvE8amTk` (S1c) 07:37:48Z.
+- Thumb maxres set; vote comment `Ugw66fU0RfEBycX8Aup4AaABAg`; playlist PLM-tQTnCgKMM pos0. Staging: GitHub Release staging-2026-10-26 (deleted).
+- Stats batch at T+2 min: Ep9 0v (1 comment, processed) · Ep9 Short 0v (processing) · Ep8 1v (1 comment) · Ep8 Short 11v (1 like).
+- Bluesky: Monday, so no drop from this run (POSTING_RULES window 10 AM–2 PM MT weekdays); left for the daytime posting routine with the xclip + drafted post in the queue note.
+
 ## 2026-10-25 ~1:42 AM MT — daily video publish (Ep8)
 - Upload #1 Ep8 Claude Duet-style brief BUILD `rS3zm7HwL3c` public 07:38:30Z, pattern **P5**, GA 2026-10-21 (Claude Duet announcement) → publish ≈3.5 days (build episode). Only READY item; no upload #2. Short `2jReByXu8bI` (S1c) 07:39:03Z.
 - Thumb maxres set; vote comment `UgwFqNItktkZnli_OT54AaABAg`; playlist PLM-tQTnCgKMM pos0. Staging: GitHub Release staging-2026-10-25 (deleted).
