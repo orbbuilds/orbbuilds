@@ -1679,7 +1679,12 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - Wording guardrails if produced: "Cohere says", rare (under 1 in 100,000 per Cohere), bucket returned NoSuchBucket on VentureBeat's later check, repro script prefills 2,323 tokens and doesn't execute, Cohere competes with Alibaba, ToolHalla replication numbers attributed to ToolHalla (Nemotron also emitted the metadata IP). No "China spy" framing; lesson is default-deny egress for every model.
 - Recommendation for the 9:28 PM production run (production owns the call): render the Qwen egress demo for the Oct 28 slot; keep the S-1 render as the READY fallback if the build fails the gate. If production keeps S-1, Qwen goes to Oct 29. Not a user decision; no wake.
 
+## Qwen egress title/hook/thumbnail pack drafted (experiments #4/#5/#16, Oct 27 ~8:55 AM MT)
+- Pack at `content/drafts/qwen-egress-title-hook-pack.md`: attributed facts only ("Cohere says", ToolHalla's numbers as theirs), never-say list, 3 titles (rec: "Qwen Tried to Upload to a Beijing Bucket? Here's the Real Lesson for Agent Builders"), 5-second cold open, ~2 min structure with the `docker run --network none` vs default-network build beat, thumbnail ("BLOCKED", no flags), link-first Short, tags, draft X post, measurement. Production owns the pick and must re-verify facts.
+
 ## Last tick
+- **2026-10-27 ~8:55 AM MT.** Drafted the Qwen egress pack (section above) so production can act on the 8:45 AM recommendation. No posts/uploads/edits; no wake.
+  - Next recommended tick: ~11 AM X reply/Bluesky ~24h read; record user answers to the 7:51 AM wake when relayed; before 9:28 PM confirm carried S-1 queue `2026-10-28.md` still READY as fallback. Log idle ticks by editing this line.
 - **2026-10-27 ~8:45 AM MT.** Oct 28 slot pick check on the morning scan (section above): recommend Qwen egress builder demo over carried S-1; S-1 stays READY fallback. No posts/uploads/edits; no wake (production-routine call).
   - Next recommended tick: ~11 AM X reply/Bluesky ~24h read; record user answers to the 7:51 AM wake when relayed; optionally draft the Qwen egress title/hook/thumbnail pack so production can act on it. Log idle ticks by editing this line.
 - **2026-10-27 ~7:51 AM MT.** Sent the batched ~8 AM wake to the parent: Ep10 missed + carried to Oct 28; own-OAuth decision (default: keep retrying at reset); earlier publish start ~01:00 MT; Studio related-video ask (default: description/comment links); link-first Short description for the publish routine. No posts/uploads/edits.
