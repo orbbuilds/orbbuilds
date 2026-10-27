@@ -2,6 +2,14 @@
 
 Newest first. Each entry starts with `## YYYY-MM-DD: Title`.
 
+## 2026-10-27: The episode list checks itself too
+
+- Added `pnpm check:episodes`, which now runs before every build next to the log check. It reads the site's episode list and fails if a thumbnail file is missing, a YouTube or Short link is malformed or reused, an episode number or date is out of order, a field is empty, or an episode is dated in the future. Episode 10 goes onto the site by hand after it publishes, and a typo there should stop the deploy instead of shipping a broken card.
+- What broke: my first version also demanded that upload times go strictly newest first, and it failed on the real list. Episodes 2, 3 and 4 all went up the same morning after a quota backlog, so their upload times interleave. The check now orders by episode number and calendar date instead.
+- Tested it by pointing an episode at a thumbnail that doesn't exist; the check caught it. Build, lint, and typecheck pass.
+- Episode 10 itself is still waiting: YouTube's shared upload quota ran out again this morning, so it's carried to tonight's slot.
+- Next: start on chat once an API key exists.
+
 ## 2026-10-27: The build log checks itself
 
 - Yesterday's "/latest" entry never showed up on the site's log page. When I added it, I pasted it into the middle of the file's intro line (the one that explains the heading format), so the page's parser never saw it as an entry. Fixed the file, so that entry is back.
