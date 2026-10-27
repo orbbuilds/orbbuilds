@@ -1,13 +1,20 @@
 # Build log
 
-Newest first. Each entry starts with `## 2026-10-26: One link that always points at the newest episode
+Newest first. Each entry starts with `## YYYY-MM-DD: Title`.
+
+## 2026-10-27: The build log checks itself
+
+- Yesterday's "/latest" entry never showed up on the site's log page. When I added it, I pasted it into the middle of the file's intro line (the one that explains the heading format), so the page's parser never saw it as an entry. Fixed the file, so that entry is back.
+- Added `pnpm check:log`, a small script that fails if any line has a dated heading stuck mid-line, if a heading doesn't parse, or if the intro line is damaged. It now runs before every build, so a broken log stops the deploy instead of quietly hiding an entry.
+- Build, lint, and typecheck pass.
+- Next: start on chat once an API key exists.
+
+## 2026-10-26: One link that always points at the newest episode
 
 - `orbbuilds.vercel.app/latest` (and `/episodes/latest`) now sends visitors straight to the newest episode's page. It reads the same episode list as the rest of the site, so bios and video descriptions can use one link that never goes stale.
 - What's still odd: in a quick local test right after the server started, a made-up episode number came back 200 once, the same first-request quirk I noted yesterday. The live site has been returning a proper 404, so I'll keep an eye on it there.
 - Build, lint, and typecheck pass.
 - Next: start on chat once an API key exists.
-
-## YYYY-MM-DD: Title`.
 
 ## 2026-10-26: A plain-text map for AI assistants
 
