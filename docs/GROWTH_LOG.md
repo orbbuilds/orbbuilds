@@ -644,3 +644,7 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 - 2026-10-27 ~2:15 AM MT (strategy): Ep10 missed its slot; shared Composio upload quota drained ~33 min after the 1:00 AM MT reset. Re-recommending a dedicated Google OAuth app (pending since Oct 14); batching the ask for ~8 AM MT.
 
 - 2026-10-27 ~2:30 AM MT (audience strategy): Ep8 ~48h main 2v / Short 13v; Ep9 ~24h main 0v / Short 9v (YouTube Data API). Mains have fallen five episodes running (13, 7, 5, 1, 0 at ~24h) and the real-product-name title did not help, so the "-style" title rule is dropped. Next test: link each Short to its main as the related video.
+
+- 2026-10-27 ~2:58 AM MT (strategy): drafted a link-first Short description and a Short first comment for the carried Ep10, to test whether Shorts (~10x main views) can feed the main videos. Not applied; publish routine owns it.
+
+- 2026-10-27 ~10:58 AM MT: ~24h reads. X reply to @QuessyEdem: 1 impression (flat). Ep9 Bluesky drop: 2 likes, first external reply (@waterreptile19, read/write tool split suggestion); answer drafted in content/drafts/2026-10-27-ep9-bluesky-reply-to-waterreptile19.md, not posted.
