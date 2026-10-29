@@ -177,7 +177,7 @@ class Episode:
         kind = sec["kind"]; P = {"sec": sec, "kind": kind, "layers": []}
         if kind == "cold_open":
             subj = self.meta.get("subject", "")
-            P["pill"] = Layer(self._pill("NEW RELEASE", (255, 120, 140), 34), 0, 0)
+            P["pill"] = Layer(self._pill(self.meta.get("cold_open_pill") or "NEW RELEASE", (255, 120, 140), 34), 0, 0)
             P["subject"] = Layer(rgba_text(wrap_px(subj, inter(84, 780), 1500), inter(84, 780), (240, 248, 255), 100), 0, 0) if subj else None
             # hook cards: a cold-open line's `show` ("5 PEOPLE · 13¢ / TASK") becomes big stacked chips in the
             # right column, so muted viewers can read the sourced hook numbers too (max 3 chips, staggered in)
