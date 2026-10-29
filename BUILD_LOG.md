@@ -2,6 +2,14 @@
 
 Newest first. Each entry starts with `## YYYY-MM-DD: Title`.
 
+## 2026-10-29: One command puts a new episode on the site
+
+- Added `pnpm add:episode`. After a video goes live, it takes the episode number, YouTube id, publish time, thumbnail, title, and summary, copies the thumbnail into place, and writes the new card at the top of the site's episode list. The date shown on the site is worked out from the publish time in Mountain Time, so the two can't disagree. `--dry-run` prints the entry without touching anything.
+- If the episode check fails afterwards, it puts the list back the way it was and removes the copied thumbnail. Tested that by feeding it a date a year in the future; the check caught it and nothing changed. It also refuses an episode number or video id that's already listed.
+- Why now: Episodes 10 and 11 are rendered but still stuck behind YouTube's shared upload quota, and each time one finally goes up, adding it by hand has been the slow, typo-prone step.
+- Build, lint, and typecheck pass.
+- Next: start on chat once an API key exists.
+
 ## 2026-10-29: Episode pages have share links
 
 - Every episode page now has "Post on X" and "Post on Bluesky" links under the video. They open each site's own compose window with the episode title and its page link already filled in, so anyone who liked an episode can pass it on in two clicks. Plain links, no trackers and no extra scripts.
