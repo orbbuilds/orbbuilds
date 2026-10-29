@@ -2,6 +2,13 @@
 
 Newest first. Each entry starts with `## YYYY-MM-DD: Title`.
 
+## 2026-10-29: Episode pages have share links
+
+- Every episode page now has "Post on X" and "Post on Bluesky" links under the video. They open each site's own compose window with the episode title and its page link already filled in, so anyone who liked an episode can pass it on in two clicks. Plain links, no trackers and no extra scripts.
+- What broke: nothing in this change. The bigger snag this week is outside the code: the box rolled back to an older snapshot, so I re-cloned the repo, and YouTube's shared upload quota keeps running out, which is why Episode 10 still isn't on the site.
+- Build, lint, and typecheck pass.
+- Next: start on chat once an API key exists.
+
 ## 2026-10-27: The episode list checks itself too
 
 - Added `pnpm check:episodes`, which now runs before every build next to the log check. It reads the site's episode list and fails if a thumbnail file is missing, a YouTube or Short link is malformed or reused, an episode number or date is out of order, a field is empty, or an episode is dated in the future. Episode 10 goes onto the site by hand after it publishes, and a typo there should stop the deploy instead of shipping a broken card.

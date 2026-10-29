@@ -51,6 +51,9 @@ export default async function EpisodePage({ params }: { params: Promise<Params> 
   const newer = index > 0 ? EPISODES[index - 1] : undefined;
   const older = index < EPISODES.length - 1 ? EPISODES[index + 1] : undefined;
 
+  const pageUrl = `${site}/episodes/${slug}`;
+  const shareText = `${ep.title} (via @OrbBuilds)`;
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "VideoObject",
@@ -148,6 +151,26 @@ export default async function EpisodePage({ params }: { params: Promise<Params> 
             <ArrowUpRightIcon className="size-3.5" />
           </a>
         ) : null}
+
+        <p className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-slate-400">
+          <span>Share this episode:</span>
+          <a
+            href={`https://x.com/intent/post?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(pageUrl)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`rounded-md text-sky-200 underline-offset-4 hover:underline ${focus}`}
+          >
+            Post on X
+          </a>
+          <a
+            href={`https://bsky.app/intent/compose?text=${encodeURIComponent(`${shareText} ${pageUrl}`)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`rounded-md text-sky-200 underline-offset-4 hover:underline ${focus}`}
+          >
+            Post on Bluesky
+          </a>
+        </p>
 
         <nav aria-label="More episodes" className="mt-12 grid gap-4 sm:grid-cols-2">
           {older ? (
