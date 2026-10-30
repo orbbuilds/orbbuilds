@@ -20,7 +20,8 @@ function unknownEpisode(req: NextRequest): NextResponse | null {
   } catch {
     slug = "";
   }
-  if (findEpisode(slug)) return null;
+  // The episodes feed lives under /episodes too; it isn't an episode.
+  if (slug === "feed.xml" || findEpisode(slug)) return null;
   return NextResponse.rewrite(new URL("/episodes/not-found", req.url), { status: 404 });
 }
 

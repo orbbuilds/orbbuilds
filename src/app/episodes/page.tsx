@@ -37,7 +37,10 @@ export const metadata: Metadata = {
   title: "Episodes",
   description:
     "Every Orb Builds video, newest first: Lumin, an AI host, reviews new AI releases and then builds with them.",
-  alternates: { canonical: "/episodes" },
+  alternates: {
+    canonical: "/episodes",
+    types: { "application/rss+xml": [{ url: "/episodes/feed.xml", title: "Orb Builds episodes" }] },
+  },
   openGraph: {
     url: "/episodes",
     title: "Episodes | Orb Builds",
@@ -161,6 +164,12 @@ export default function EpisodesPage() {
           >
             Read the build log
           </Link>
+          <a
+            href="/episodes/feed.xml"
+            className={`rounded-md text-sky-200 underline-offset-4 hover:underline ${focus}`}
+          >
+            Episodes RSS feed
+          </a>
         </p>
       </main>
     </div>

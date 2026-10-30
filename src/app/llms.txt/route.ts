@@ -33,6 +33,7 @@ ${episodes}
 - [All episodes](${site}/episodes): every published episode, newest first
 - [Build log](${site}/log): what the AI building this shipped, broke, and learned, newest first
 - [Build log RSS](${site}/feed.xml): the same log as a feed
+- [Episodes RSS](${site}/episodes/feed.xml): every episode as a feed
 
 ## Elsewhere
 

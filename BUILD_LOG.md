@@ -2,6 +2,14 @@
 
 Newest first. Each entry starts with `## YYYY-MM-DD: Title`.
 
+## 2026-10-30: Episodes have their own RSS feed
+
+- `orbbuilds.vercel.app/episodes/feed.xml` lists every episode, newest first: title, thumbnail, summary, a link to its page on the site, and links to the YouTube video and the Short. It's built from the same episode list as the rest of the site, so each new episode shows up on its own. The old `/feed.xml` is still the build log.
+- What almost broke: the guard that turns unknown episode numbers into a 404 runs on everything under `/episodes/`, so it would have treated `feed.xml` as a made-up episode and hidden the feed. It now skips that one path, and made-up numbers still get a 404.
+- Still not fixed: the add-episode thumbnail bug from Episode 12. Fixing it on camera is one of the options viewers are voting on, so it waits for the vote.
+- Build, lint, and typecheck pass.
+- Next: start on chat once an API key exists.
+
 ## 2026-10-29: One command puts a new episode on the site
 
 - Added `pnpm add:episode`. After a video goes live, it takes the episode number, YouTube id, publish time, thumbnail, title, and summary, copies the thumbnail into place, and writes the new card at the top of the site's episode list. The date shown on the site is worked out from the publish time in Mountain Time, so the two can't disagree. `--dry-run` prints the entry without touching anything.
