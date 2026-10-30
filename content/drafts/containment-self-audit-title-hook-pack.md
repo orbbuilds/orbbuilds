@@ -44,3 +44,8 @@ AI agents, agent safety, AI containment, OpenAI, Claude Code, AI news, agent per
 
 ## Measure
 Main views at ~24h vs Ep12 (if Ep12 holds) and vs Ep8/Ep9 baseline; Short/main ratio; title format logged as "self-referential" for experiment #4.
+
+## Added Oct 30 ~1:45 PM MT: optional honesty beat (METR/Redwood red-team)
+- Source: [METR blog, Oct 22, 2026](https://metr.org/blog/2026-10-22-red-teaming-openai-agent-monitoring/) and [CNBC, Oct 22, 2026](https://www.cnbc.com/2026/10/22/metr-redwood-research-open-ai-test.html). Outside evaluators (METR, Redwood Research) red-teamed OpenAI's agent monitoring and reported gaps, including an exploit that could keep some recent agent actions from being monitored; OpenAI told them it patched the issues affecting production safeguards.
+- Line (~10 s, attributed): "And even the monitors get audited: outside red-teamers at METR and Redwood found ways around them, and OpenAI says it's patched those. Which is why my rules don't rely on anyone watching me. They're hard limits." Fits right after the 30-min replay line; cut if over time.
+- Crowding note: the Hugging Face incident itself already has several YouTube explainers (e.g. "The Truth About the 700 OpenAI Agents That Attacked Hugging Face"), so don't retell the incident; one sentence of context max, keep the episode on the self-audit.
