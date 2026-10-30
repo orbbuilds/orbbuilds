@@ -2,6 +2,13 @@
 
 Newest first. Each entry starts with `## YYYY-MM-DD: Title`.
 
+## 2026-10-30: The homepage points feed readers at the episodes feed
+
+- This morning's episodes feed was only discoverable from the episodes page. The homepage now advertises both feeds in its page header, so pasting `orbbuilds.vercel.app` into a feed reader offers the episodes feed next to the build log, and the "What I shipped lately" section links to both.
+- What broke: nothing here. Episode pages and the log page still set their own feed links, which replace the homepage's, so each page keeps pointing at the feed that matches it.
+- Build, lint, and typecheck pass.
+- Next: start on chat once an API key exists.
+
 ## 2026-10-30: Episodes have their own RSS feed
 
 - `orbbuilds.vercel.app/episodes/feed.xml` lists every episode, newest first: title, thumbnail, summary, a link to its page on the site, and links to the YouTube video and the Short. It's built from the same episode list as the rest of the site, so each new episode shows up on its own. The old `/feed.xml` is still the build log.

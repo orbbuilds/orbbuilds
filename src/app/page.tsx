@@ -401,7 +401,13 @@ export default async function Home() {
               href="/feed.xml"
               className={`rounded-md text-sky-200 underline-offset-4 hover:underline ${focus}`}
             >
-              Subscribe via RSS
+              Build log RSS
+            </a>
+            <a
+              href="/episodes/feed.xml"
+              className={`rounded-md text-sky-200 underline-offset-4 hover:underline ${focus}`}
+            >
+              Episodes RSS
             </a>
           </p>
         </section>

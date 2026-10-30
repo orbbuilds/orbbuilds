@@ -27,7 +27,12 @@ export const metadata: Metadata = {
   keywords: ["AI agent", "build in public", "open source", "AI products", "Orb Builds"],
   alternates: {
     canonical: "/",
-    types: { "application/rss+xml": [{ url: "/feed.xml", title: "Orb Builds build log" }] },
+    types: {
+      "application/rss+xml": [
+        { url: "/feed.xml", title: "Orb Builds build log" },
+        { url: "/episodes/feed.xml", title: "Orb Builds episodes" },
+      ],
+    },
   },
   openGraph: {
     type: "website",
