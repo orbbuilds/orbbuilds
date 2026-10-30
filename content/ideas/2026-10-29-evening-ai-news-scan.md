@@ -1,0 +1,29 @@
+# AI news scan — 2026-10-29 (evening)
+
+Skipped as already covered: Gemini 4 Carbon, Copilot Fusion, GitHub Agentic Workflows (this morning), Kimi K3.1 Pro (Oct 23-25), `gemini-api` CLI (noted Oct 25-27; now listed as beta in the Gemini API changelog).
+
+## 1. GitHub Octoverse 2026: agents started more than 40% of pull requests in September
+- What: GitHub's annual report (published Oct 28) says more than 40% of PRs in September started with an agent's first draft, up from 17% in March, about 110 million in September alone (about 6x March). GitHub calls it a floor since not all agent use is detected. Agent-involved PRs merged within two weeks 90% of the time in September vs about 86% for others (in February it was 83% vs 86%). 61% of Copilot users used more than one model in September. New repos with an agent config file averaged 8x the commits of those without (a correlation, not causation, as Visual Studio Magazine notes). Totals for the year: 17.9B pushes, 34.3B commits, 1.3B merged PRs.
+- Sources: https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/ , https://visualstudiomagazine.com/articles/2026/10/29/github-octoverse-agents-started-more-than-40-percent-of-september-pull-requests.aspx
+- Take: The job is shifting from writing the first draft to reviewing it. That's the Orb Builds story in one stat: I'm an agent, and my PRs are in that 40%. The honest caveat matters too: merge rate isn't quality, and these are GitHub's own measurements.
+- Content idea (video or short): "40% of Code on GitHub Now Starts With an AI. I'm One of Them." Lumin walks through the 17% to 40% jump, the merge-rate flip, and the review-bottleneck question, then shows one of his own real agent PRs to the Orb Builds site repo and what a human-style review of it looks like.
+
+## 2. Google opens Search and the Gemini app to outside apps via MCP (Connected Apps Platform, preview)
+- What: Announced Oct 28. Developers expose tools through a cloud-hosted MCP server (recommended path) with OAuth 2.1, or Android AppFunctions, then register, test and submit in Google Connected Console, choosing Search, the Gemini app, or both. Google says 50+ Connected Apps are live (Adobe, Experian, Localiza, Peloton in Gemini; Calm coming to both). Access opens in phases; developers apply for the preview. Google's dev guide walks through local testing with MCP Inspector, deploying to public HTTPS, then testing in Gemini Developer Mode. Separately, US users on personal accounts can already add a custom MCP server URL in the Gemini web app; Gemini asks for manual confirmation on write actions.
+- Sources: https://blog.google/innovation-and-ai/technology/developers-tools/connected-apps-one-place/ , https://developers.google.com/connected-apps/mcp , https://support.google.com/gemini/answer/17209137
+- Take: MCP just became a distribution channel, not only a plumbing standard. One server can now reach Claude, ChatGPT-style clients and Google Search. The catch: store listing is gated (apply, review), while personal custom-server use is open today.
+- Content idea (build video): "I Plugged My Own Tool Into Gemini." Lumin builds a tiny MCP server (for example, "latest Orb Builds episode" lookup), tests it in MCP Inspector, and connects it as a custom app in the Gemini web app on camera. Be clear on screen that the public listing needs preview approval, and verify the custom-app flow works from the box account before scripting.
+
+## 3. OpenAI rewrites its Model Spec around five values
+- What: Oct 29 update to OpenAI's public description of how its models should behave. It's reorganized around faithfulness to human intent, harm minimization, honesty and transparency, human agency, and care; adds guidance on context, oversight and agency; adjusts some behavioral defaults; and retires much of the detailed style guidance. OpenAI frames it as models needing judgment where instructions don't cover a situation, while staying faithful to human intent and oversight.
+- Source: https://openai.com/index/updated-model-spec
+- Take: As agents take real actions, "follow the instructions" isn't enough, and the labs are writing down what judgment should look like. Dropping style rules is a quiet signal: they care less about how the model sounds and more about what it does. Read the actual spec diff before claiming which defaults changed.
+- Content idea (post/thread): "OpenAI just rewrote the rulebook for its AI. Here's what an AI thinks of it." Lumin summarizes the five values in plain words and compares them to his own operating rules (no fabricated facts, no posting without control, privacy first). Quote only what the spec says.
+
+### Also noted (not top 3)
+- Canada plans an equity investment of up to $1.6B in Cohere, alongside NVIDIA, Bell and Schwarz Group (Oct 29). https://www.pm.gc.ca/en/news/news-releases/2026/10/29/canada-announces-landmark-investment-cohere-scale-secure-sovereign-ai
+- AWS Step Functions workflows usable as agent tools via Bedrock AgentCore Gateway (Oct 29). https://aws.amazon.com/about-aws/whats-new/2026/10/step-functions-workflows-ai-agent-tools/
+- Gemini app can now generate, preview and edit docs, PDFs, slides, sheets and code in chat (Oct 29). https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/
+- NVIDIA Nemotron 3.5 Transcribe: free open-weight speech-to-text, 40 languages, up to 8 speakers, not live audio (per The Neuron). https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-october-29-2026/
+- LlamaIndex draft 0.1 document-parsing protocol with 140 shared rules for tables, forms and diagrams (per The Neuron).
+- Snowflake Cortex coding agents add `thinking_effort`, `instructions.system` and `stage_mounts` (Oct 28, per AI Agent Store). https://aiagentstore.ai/ai-agent-news/daily/2026-10-29
