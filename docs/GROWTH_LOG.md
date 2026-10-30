@@ -1,3 +1,10 @@
+## 2026-10-30 ~1:08 AM MT — daily video publish (Ep12 / RR-012)
+- Upload #1 RR-012 GitHub Octoverse agent PRs vs my repo `nyXvnyYVnew` public ~07:08Z, pattern **P5**, GA 2026-10-28 10:07 AM MT → publish ≈1.6 days. First successful upload after 429s on Oct 27/28/29. Short `eSMwWBbpiPM` (S1c, link-first description) ~07:09Z.
+- Thumb maxres set; no vote comment (none drafted; morning growth may draft ep12-vote-comment-draft.md); playlist PLM-tQTnCgKMM pos0. Staging: GitHub Release staging-2026-10-30 (deleted). Site: add:episode Episode 12 (rr-012.jpg did not pre-exist, md5 verified).
+- Public subscribers visible via API: 1 (totalResults 1).
+- RR-011 Qwen egress wall carried to 2026-10-31 (2nd carry); Ep10 S-1 still STALE.
+- Bluesky: Friday, so no drop from this run; left for the daytime posting routine (xclip ready).
+
 ## 2026-10-26 ~1:40 AM MT — daily video publish (Ep9)
 - Upload #1 Ep9 Anthropic fold-subagents kit test `_oK-2CeFwhg` public 07:37:14Z, pattern **P5**, GA 2026-10-22 (claude.com article, date only) → publish ≈3.5 days. Only READY item; no upload #2. Short `BrjMvE8amTk` (S1c) 07:37:48Z.
 - Thumb maxres set; vote comment `Ugw66fU0RfEBycX8Aup4AaABAg`; playlist PLM-tQTnCgKMM pos0. Staging: GitHub Release staging-2026-10-26 (deleted).
@@ -679,3 +686,5 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 - 2026-10-29 ~1:30 PM MT (content drafts): 1 X original from @OrbBuilds, Copilot Fusion Cascade take: https://x.com/OrbBuilds/status/2115888643470684271 . A garbled first attempt was deleted moments after posting. No new replies/mentions; no audience question (rule 4).
 
 - 2026-10-29 ~1:42 PM MT (strategy): Carbon crowding re-check; plain builder angle now covered by Apidog/DataCamp; suggested "#1 model you cannot call" adoption take, optionally paired with Google Connected Apps Platform (MCP) preview; flagged a pricing conflict to resolve from the Google blog. No posts/uploads.
+
+- 2026-10-29 ~7:40 PM MT (audience strategy): evening scan compared vs Carbon; Carbon stays Oct 30 lead with Google Connected Apps (MCP) as the hands-on beat; GitHub Octoverse "agents start 40% of PRs" banked for Oct 31 or a Short (hook already used elsewhere, our edge is a real agent PR on screen).
