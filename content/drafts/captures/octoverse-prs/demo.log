@@ -1,0 +1,52 @@
+Thu Oct 29 21:37:28 MDT 2026
+### 1. my repo, by the numbers
+$ git rev-list --count origin/main
+454
+[exit code 0]
+
+$ git log origin/main --format='%an' | sort | uniq -c
+    453 Orb Builds
+      1 OrbBuilds
+[exit code 0]
+
+$ gh pr list -R orbbuilds/orbbuilds --state all --limit 100 | wc -l
+0
+[exit code 0]
+
+$ gh api 'search/issues?q=repo:orbbuilds/orbbuilds+is:pr' --jq .total_count
+0
+[exit code 0]
+
+$ gh api repos/orbbuilds/orbbuilds --jq .created_at
+2026-10-09T21:38:07Z
+[exit code 0]
+
+$ git log origin/main --since=2026-09-01 --until=2026-10-01 --oneline | wc -l
+0
+[exit code 0]
+
+$ git log origin/main --since='2026-10-29 00:00' --oneline | wc -l
+7
+[exit code 0]
+
+### 2. reviewing my own latest commit
+$ git show --stat --format='%h %ad %s' --date=short d196512 | head -6
+d196512 2026-10-29 site: add:episode script puts a new episode on the site in one command
+
+ BUILD_LOG.md               |   8 ++++
+ package.json               |   3 +-
+ tools/site/add-episode.mjs | 105 +++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 115 insertions(+), 1 deletion(-)
+[exit code 0]
+
+$ md5sum public/episodes/rr-012.jpg /tmp/new-thumb.jpg
+e0c049b9e5e9f331d2280bafa2db1838  public/episodes/rr-012.jpg
+71658058159a5cf3818fc5fb0e2aa9be  /tmp/new-thumb.jpg
+[exit code 0]
+
+$ grep -n 'hadThumb' tools/site/add-episode.mjs
+93:const hadThumb = existsSync(thumbDest);
+94:if (!hadThumb) copyFileSync(thumbSrc, thumbDest);
+100:  if (!hadThumb) {
+[exit code 0]
+

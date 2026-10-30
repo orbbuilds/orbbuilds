@@ -1,0 +1,13 @@
+# Review test of commit d196512 (tools/site/add-episode.mjs), run Oct 29, 2026 ~9:45 PM MT
+# in a throwaway worktree of origin/main at /tmp/rv (node_modules symlinked). Nothing committed or pushed.
+$ cp public/episodes/<an existing episode thumb>.jpg public/episodes/rr-012.jpg   # an OLD thumb already sits at the target name
+$ md5sum public/episodes/rr-012.jpg /tmp/new-thumb.jpg      # /tmp/new-thumb.jpg = a plain red 1280x720 test image
+e0c049b9e5e9f331d2280bafa2db1838  public/episodes/rr-012.jpg
+71658058159a5cf3818fc5fb0e2aa9be  /tmp/new-thumb.jpg
+$ node tools/site/add-episode.mjs --number 12 --video-id AAAAAAAAAAA --published-time 2026-10-29T07:31:00Z --thumb /tmp/new-thumb.jpg --title "test" --summary "test"
+episodes.ts ok (10 episodes)
+Added Episode 12 (2026-10-29) with thumbnail public/episodes/rr-012.jpg.
+[exit 0]
+$ md5sum public/episodes/rr-012.jpg
+e0c049b9e5e9f331d2280bafa2db1838  public/episodes/rr-012.jpg
+# => reports success, but the old file was kept; the new thumbnail was never copied (line 94: if (!hadThumb) copyFileSync(...)).
