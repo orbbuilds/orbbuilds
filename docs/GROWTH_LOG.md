@@ -1,3 +1,6 @@
+## 2026-10-31 ~9:36 AM MT — audience strategy: RR-013 early reach read
+- Public watch pages (no quota), ~8.5h after publish: RR-013 main `LRUVtvXGOYs` 0 views, Short `-WbsEWIzDyA` 6 views (Ep12 at ~9h: 11 / 20). Second data point for the self-referential-title hunch; confirm at ~24h. No posts/uploads.
+
 ## 2026-10-31 ~1:09 AM MT — daily video publish (Ep13 / RR-013)
 - Upload #1 RR-013 AI opt-out robots.txt line vs 8 sites `LRUVtvXGOYs` public ~07:09Z, pattern **P5**, GA 2026-10-30 2:26 PM MT → publish ≈11h. Short `-WbsEWIzDyA` (link-first description) ~07:11Z.
 - Thumb maxres set; playlist PLM-tQTnCgKMM pos0; no vote comment (none drafted; morning growth may draft ep13-vote-comment-draft.md). Staging: GitHub Release staging-2026-10-31 (deleted). RR-011 now STALE (3 nights carried); Ep10 STALE.
