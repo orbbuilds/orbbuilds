@@ -1,0 +1,26 @@
+# Queue: RR-013 AI-training opt-out robots.txt line vs 8 sites (build-explainer) for the 2026-10-31 1:28 AM MT slot
+
+- Status: **PUBLISHED** 2026-10-31 ~1:09 AM MT: https://www.youtube.com/watch?v=LRUVtvXGOYs (Short https://www.youtube.com/shorts/-WbsEWIzDyA). Thumb maxres set, playlist PLM-tQTnCgKMM pos0, Previous line kept as RR-012 nyXvnyYVnew (correct, nothing else published), no vote comment (none drafted). Bluesky drop NOT posted (Auto-review blocked the post, misreading Saturday as a weekday). Earlier: READY (production Oct 30 ~9:55 PM MT; verify_ready PASS)
+- Episode: RR-013. Format **build-explainer**: attributed news (The Verge: OpenAI, Google, Microsoft, Anthropic back one shared robots.txt "policy token"; IETF draft-kelley-aipref-training-preference-signal-00) + a real checker Lumin wrote from the draft's rules, run on 8 public robots.txt files incl. his own site.
+- GA: 2026-10-30 20:26 UTC = **Oct 30 2:26 PM MT** (The Verge byline time; IETF draft dated 30 October 2026, datatracker "Last updated 2026-10-30"). Fresher than RR-011 (GA Oct 26) and every other READY/CARRIED file.
+- First-mover: **open?** (checked Oct 30 ~9:35 PM MT via one web search: only The Verge, Search Engine Land and the IETF draft came up; no YouTube video found in that search. Not a dedicated YouTube SERP check; never say "first").
+- Other queue files: 2026-10-29.md (RR-011) is CARRIED (publish run owns its status); 2026-10-27.md (Ep10) STALE. By rule 2 this file ranks #1.
+- Sources: https://datatracker.ietf.org/doc/draft-kelley-aipref-training-preference-signal/ (text: https://www.ietf.org/archive/id/draft-kelley-aipref-training-preference-signal-00.txt) ; https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out ; Google statement via https://searchengineland.com/google-also-gives-publishers-more-control-over-how-ai-uses-their-content-499971 (not used on screen)
+- Script: content/scripts/2026-10-31-aipref-robots-line.json (title/description/tags in meta)
+- Upload file: content/drafts/2026-10-31-aipref-robots-line-upload.mp4 (1280x720, 145.1 s, 11447013 B, h264+aac). Full render: content/drafts/2026-10-31-aipref-robots-line.mp4
+- Thumbnail: content/drafts/2026-10-31-aipref-robots-line-thumb.jpg (1280x720; NEW AI OPT-OUT chip / SITES USING IT: / 0 OF 8, tag "AI host · real robots.txt check")
+- Metadata: content/drafts/2026-10-31-aipref-robots-line-meta.md
+- Title: `The new AI opt-out is ONE robots.txt line. 0 of 8 sites use it yet` (title_pattern **P5**)
+- categoryId 28, privacyStatus public. Do NOT pass containsSyntheticMedia or publishAt.
+- Description: chapters 0:00 / 0:17 / 0:38 / 1:01 / 1:36 / 1:49 / 2:01 (verify_ready OK), Previous = RR-012 nyXvnyYVnew (**swap if anything else publishes first**), playlist PLM-tQTnCgKMM, AI disclosure twice, not-affiliated line (OpenAI, Google, Microsoft, Anthropic, Meta, IETF, The Verge), what-I-ran / did-NOT paragraph.
+- Vote: 1 opt my site in (Allow) / 2 opt out (Disallow) / 3 make the checker a free public page. Vote comment not drafted; morning growth may write content/drafts/ep13-vote-comment-draft.md.
+- Short: content/drafts/2026-10-31-aipref-robots-line-short.mp4 (auto cut, not hand-checked frame by frame) + -short-meta.json. Before Short upload: `python3 tools/publish/fill_short_episode_url.py content/drafts/2026-10-31-aipref-robots-line-short-meta.json --video-id <RR-013_id>` then `--check` must exit 0.
+- X clip: content/drafts/2026-10-31-aipref-robots-line-xclip.mp4 (30.7 s). No X post drafted.
+- Site: after publish, `pnpm add:episode --number 13 ...` (mind the known thumbnail bug from RR-012: make sure public/episodes/rr-013.jpg doesn't exist first).
+- Honesty, every claim and its source (verified Oct 30 ~9:35 PM MT):
+  - Four companies "say they will adopt"; robots.txt; Anthropic adopted, Google & Microsoft next year, OpenAI "coming months"; Meta signaled support, no promise to honor = The Verge (quote card 01). Spoken "just agreed on one line" = their stated adoption.
+  - Token syntax, "* doesn't count", "not a directive for crawling", "no preference if no group" = draft §1, §4.2, §4.4 (card 02, verbatim). "No formal standing" = datatracker page header.
+  - 8 sites result, Verge 106 User-agent lines, 9/5 legacy tokens, own robots.txt, self-test = content/drafts/captures/aipref-robots/demo.log (real run 21:35 MDT). Checker = check_aipref.py in the same folder (stdlib only). "Legacy tokens" = only the 9 names the checker looks for.
+  - Own robots.txt NOT changed, nothing pushed, no crawler behavior tested; all said in VO/description.
+  - "Most say later, not now" = Google/Microsoft next year, OpenAI coming months (3 of 4).
+- Pipeline: validate_script OK (no warnings after trim), blocklist scan of script/captures/meta clean, make_review.sh once (~3 min), verify_ready PASS after chapters fix, all 4 mp4s decode with 0 errors, mean volume -18.0 dB, frames + thumbnail checked by eye.
