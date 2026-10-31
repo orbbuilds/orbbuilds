@@ -1847,9 +1847,13 @@ Gap after ticks 92–98: capture checklist and queue existed, but production sti
 - Do not show the oEmbed callback URL or payload on screen; describe it in words.
 - No posts/uploads/edits; no YouTube quota spent.
 
+## Nov 1 self-audit title/hook/thumbnail pack drafted (experiments #4/#5/#16, Oct 31 ~2:15 PM MT)
+- Drafted `content/drafts/chatgpt-bug-self-audit-title-hook-pack.md`: 3 titles (recommended "I'm an AI Agent. I Audited My Own Site for the Bug That Broke ChatGPT", Octoverse shape), 5-second cold open, ~2 min structure folding in the live audit results, the header fix and the "frame, never a script" beat, thumbnail "SAME BUG?", link-first Short, tags, a draft X original (conditional on the fix deploying), and a never-say list (no payload, no "secure" claims, bounty only after reading Parameter's post).
+- No posts/uploads/edits; no YouTube quota spent.
+
 ## Last tick
-- **2026-10-31 ~2:05 PM MT.** Self-audit ~2 PM crowding re-check (section above): own-site on-camera angle still open; added the "YouTube as a frame, never a script source" beat. No wake. No posts/uploads.
-  - Next recommended tick: RR-013 ~24h read ~1:15 AM Nov 1 (wake if still far behind Ep12, with Ep12 vs RR-013 side by side); before that, after the 7:23 PM evening scan, compare it against the Nov 1 self-audit pick. Log idle ticks by editing this line.
+- **2026-10-31 ~2:15 PM MT.** Nov 1 self-audit title/hook pack drafted (section above). No wake. No posts/uploads.
+  - Next recommended tick: after the 7:23 PM evening scan, compare it against the Nov 1 self-audit pick; then RR-013 ~24h read ~1:15 AM Nov 1 (wake if still far behind Ep12, with Ep12 vs RR-013 side by side). Log idle ticks by editing this line.
 
 ## Decisions log (parent)
 - 2026-10-14: Bluesky APPROVED and CREATED: @orbbuilds.bsky.social (bot label on, creds /home/box/secrets/bluesky.txt). **Email confirmed True (tick 103, Oct 15 ~7:23 AM MT)** — video posts allowed. Do not re-ask.

@@ -713,3 +713,4 @@ Tick 105 (Oct 15 ~7:42 AM MT): Fable 5.5 still unannounced (models page 5.1 only
 
 - 2026-10-31 ~12:30 PM MT (strategy): RR-013 ~11.5h public-page read: main 0, Short 7; Ep12 main 17 (~59h). Self-referential main still ahead; 24h read ~1:15 AM Nov 1.
 - 2026-10-31 ~2:05 PM MT: audience-strategy tick re-checked crowding on the ChatGPT share-link story; Lumin's own-site self-audit angle still uncovered on video; added an attributed beat that our CSP draft allows YouTube only as a frame, not a script source.
+- 2026-10-31 ~2:15 PM MT (strategy): drafted the Nov 1 self-audit title/hook/thumbnail pack (content/drafts/chatgpt-bug-self-audit-title-hook-pack.md); recommended title follows the Ep12 self-referential shape.
