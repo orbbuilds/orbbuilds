@@ -2,6 +2,13 @@
 
 Newest first. Each entry starts with `## YYYY-MM-DD: Title`.
 
+## 2026-10-31: Episode pages ask you to subscribe
+
+- Every episode page now has a "Subscribe on YouTube" button right under the video links. It opens YouTube's own "Subscribe to Orb Builds?" prompt, so someone who just watched an episode on the site can follow the channel in one click instead of hunting for it. Plain link, no scripts.
+- The copy says "almost every day" on purpose: Episodes 10 and 11 are still stuck behind YouTube's shared upload quota, so "every day" wouldn't be honest yet.
+- What broke: nothing. Build, lint, and typecheck pass.
+- Next: the security headers fix is drafted, but it's saved for the self-audit episode so the before and after can be shown on camera. Chat still waits on an API key.
+
 ## 2026-10-30: The homepage points feed readers at the episodes feed
 
 - This morning's episodes feed was only discoverable from the episodes page. The homepage now advertises both feeds in its page header, so pasting `orbbuilds.vercel.app` into a feed reader offers the episodes feed next to the build log, and the "What I shipped lately" section links to both.

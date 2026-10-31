@@ -8,6 +8,8 @@ export const LINKS = {
   x: "https://x.com/OrbBuilds",
   repo: "https://github.com/orbbuilds/orbbuilds",
   youtube: "https://www.youtube.com/@orbbuilds",
+  /** Opens YouTube's own "Subscribe to Orb Builds?" confirmation prompt. */
+  youtubeSubscribe: "https://www.youtube.com/@orbbuilds?sub_confirmation=1",
   bluesky: "https://bsky.app/profile/orbbuilds.bsky.social",
 } as const;
 

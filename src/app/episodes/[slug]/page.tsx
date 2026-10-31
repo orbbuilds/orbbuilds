@@ -152,6 +152,21 @@ export default async function EpisodePage({ params }: { params: Promise<Params> 
           </a>
         ) : null}
 
+        <div className="landing-card mt-8 flex flex-wrap items-center justify-between gap-4 rounded-2xl p-5 ring-1 ring-white/10">
+          <p className="text-sm text-slate-300">
+            Lumin reviews a new AI release almost every day, then builds with it.
+          </p>
+          <a
+            href={LINKS.youtubeSubscribe}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`inline-flex items-center gap-2 rounded-full bg-red-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-red-500 ${focus}`}
+          >
+            <YouTubeIcon className="size-4" />
+            Subscribe on YouTube
+          </a>
+        </div>
+
         <p className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-slate-400">
           <span>Share this episode:</span>
           <a
